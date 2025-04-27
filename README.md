@@ -2,6 +2,8 @@
 
 改進版的半導體製造資料庫管理系統，用於追蹤和分析製造過程中的檢測數據。
 
+![系統預覽圖](https://github.com/fnk59456/Database-manager/raw/main/assets/preview.png)
+
 ## 功能特點
 
 - **模組化設計**: 使用MVC架構，便於擴展和維護
