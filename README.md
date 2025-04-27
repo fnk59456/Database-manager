@@ -13,43 +13,6 @@
 - **直觀的UI**: 改進的用戶界面和反饋機制
 - **數據備份**: 提供數據備份功能
 
-## 安裝指南
-
-### 系統要求
-
-- Python 3.8+
-- Windows 10 或更高版本
-
-### 安裝步驟
-
-1. 克隆或下載本倉庫：
-   ```
-   git clone https://github.com/your-username/dbmplus.git
-   cd dbmplus
-   ```
-
-2. 創建並啟用虛擬環境（推薦）：
-   ```
-   python -m venv venv
-   # Windows
-   venv\Scripts\activate
-   # Linux/Mac
-   source venv/bin/activate
-   ```
-
-3. 安裝依賴：
-   ```
-   pip install -r requirements.txt
-   ```
-
-4. 配置設定：
-   - 檢查 `config/settings.json`，確保資料庫路徑正確設置
-
-5. 運行應用程式：
-   ```
-   python main.py
-   ```
-
 ## 使用指南
 
 ### 主界面
@@ -84,23 +47,3 @@
 - **UI設置**: 在 `ui` 部分調整界面設置
 - **日誌設置**: 在 `logging` 部分調整日誌行為
 
-## 故障排除
-
-常見問題:
-
-1. **無法啟動應用程式**
-   - 確認已安裝所有依賴
-   - 檢查日誌文件 (`logs/app.log`) 查看詳細錯誤信息
-
-2. **找不到數據**
-   - 確認 `settings.json` 中的資料庫路徑設置正確
-   - 使用"重新掃描資料"按鈕刷新資料庫視圖
-
-3. **處理失敗**
-   - 檢查日誌文件查看詳細錯誤信息
-   - 確認選擇的站點有有效的數據
-   - 對於 Lossmap，確保不是選擇第一站
-
-## 開發人員文檔
-
-詳細的設計文檔和API參考請查看 `docs/` 目錄。 
