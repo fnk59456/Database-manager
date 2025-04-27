@@ -1,0 +1,225 @@
+"""
+文件處理工具模塊，提供檔案相關操作和輔助功能
+"""
+import os
+import re
+import shutil
+import pandas as pd
+from pathlib import Path
+from datetime import datetime
+from .logger import get_logger
+from typing import Optional
+
+logger = get_logger("file_utils")
+
+# 檔名正規表達式：{device}_{component}_{time}.csv
+AOI_FILENAME_PATTERN = re.compile(r'^[A-Z0-9]+_([A-Z0-9]+)_\d{12}\.csv$')
+
+# 處理後格式: 僅剩 component.csv
+PROCESSED_FILENAME_PATTERN = re.compile(r'^[A-Z0-9]+\.csv$')
+
+
+def ensure_directory(directory_path):
+    """
+    確保目錄存在，不存在則創建
+    
+    Args:
+        directory_path: 目錄路徑
+    
+    Returns:
+        Path: 目錄路徑物件
+    """
+    path = Path(directory_path)
+    path.mkdir(parents=True, exist_ok=True)
+    return path
+
+
+def list_files(directory, pattern=None):
+    """
+    列出目錄中符合模式的檔案
+    
+    Args:
+        directory: 目錄路徑
+        pattern: 正則表達式模式，默認為None表示列出所有檔案
+    
+    Returns:
+        list: 符合條件的檔案列表
+    """
+    directory = Path(directory)
+    if not directory.exists():
+        logger.warning(f"目錄不存在: {directory}")
+        return []
+        
+    if pattern:
+        return [f for f in os.listdir(directory) if re.match(pattern, f)]
+    return [f for f in os.listdir(directory) if Path(directory / f).is_file()]
+
+
+def list_directories(directory):
+    """
+    列出目錄中的所有子目錄
+    
+    Args:
+        directory: 目錄路徑
+    
+    Returns:
+        list: 子目錄列表
+    """
+    directory = Path(directory)
+    if not directory.exists():
+        logger.warning(f"目錄不存在: {directory}")
+        return []
+        
+    return [f for f in os.listdir(directory) if Path(directory / f).is_dir()]
+
+
+def load_csv(file_path: str) -> Optional[pd.DataFrame]:
+    """
+    讀取CSV檔案為DataFrame
+    
+    Args:
+        file_path: CSV檔案路徑
+        
+    Returns:
+        Optional[DataFrame]: 讀取的DataFrame或None（如果讀取失敗）
+    """
+    try:
+        # 首先嘗試標準讀取
+        return pd.read_csv(file_path)
+    except pd.errors.ParserError as e:
+        # 發生解析錯誤，可能是分隔符或欄位數量不一致
+        logger.warning(f"標準讀取CSV失敗: {file_path}, 嘗試替代方法...")
+        
+        try:
+            # 嘗試使用更靈活的分隔符檢測
+            with open(file_path, 'r') as f:
+                first_line = f.readline().strip()
+            
+            # 檢測可能的分隔符
+            if '\t' in first_line:
+                separator = '\t'
+            elif ',' in first_line:
+                separator = ','
+            elif ';' in first_line:
+                separator = ';'
+            else:
+                separator = None
+                
+            if separator:
+                # 使用檢測到的分隔符再次嘗試
+                df = pd.read_csv(file_path, sep=separator, error_bad_lines=False, warn_bad_lines=True)
+                logger.info(f"使用分隔符 '{separator}' 成功讀取CSV: {file_path}")
+                return df
+                
+            # 如果無法檢測到分隔符，嘗試其他方法
+            df = pd.read_csv(file_path, engine='python', on_bad_lines='skip')
+            logger.info(f"使用Python引擎成功讀取CSV: {file_path}")
+            return df
+            
+        except Exception as inner_e:
+            logger.error(f"載入CSV檔案失敗: {file_path}, 錯誤: {str(inner_e)}")
+            return None
+    except Exception as e:
+        logger.error(f"載入CSV檔案失敗: {file_path}, 錯誤: {str(e)}")
+        return None
+
+
+def find_header_row(csv_path, header_columns=None):
+    """
+    尋找CSV檔案中的標題行
+    
+    Args:
+        csv_path: CSV檔案路徑
+        header_columns: 標題行應包含的列名列表，默認為['Col', 'Row', 'DefectType']
+    
+    Returns:
+        int: 標題行的索引，若找不到則返回None
+    """
+    if header_columns is None:
+        header_columns = ['Col', 'Row', 'DefectType']
+        
+    try:
+        with open(csv_path, 'r', encoding='utf-8-sig') as f:
+            for i, line in enumerate(f):
+                if all(col in line for col in header_columns):
+                    return i
+        return None
+    except Exception as e:
+        logger.error(f"查找標題行失敗: {csv_path}, 錯誤: {e}")
+        return None
+
+
+def save_df_to_csv(df, file_path, index=False, encoding='utf-8-sig'):
+    """
+    安全保存DataFrame到CSV檔案
+    
+    Args:
+        df: 要保存的DataFrame
+        file_path: 保存路徑
+        index: 是否包含索引
+        encoding: 檔案編碼
+    
+    Returns:
+        bool: 是否成功保存
+    """
+    try:
+        ensure_directory(Path(file_path).parent)
+        df.to_csv(file_path, index=index, encoding=encoding)
+        logger.info(f"成功保存CSV檔案: {file_path}")
+        return True
+    except Exception as e:
+        logger.error(f"保存CSV檔案失敗: {file_path}, 錯誤: {e}")
+        return False
+
+
+def backup_file(file_path, backup_dir=None):
+    """
+    備份檔案
+    
+    Args:
+        file_path: 要備份的檔案路徑
+        backup_dir: 備份目錄，若未指定則使用原檔案目錄下的backup資料夾
+    
+    Returns:
+        str: 備份檔案的路徑
+    """
+    file_path = Path(file_path)
+    if not file_path.exists():
+        logger.warning(f"要備份的檔案不存在: {file_path}")
+        return None
+
+    # 設定備份目錄
+    if backup_dir is None:
+        backup_dir = file_path.parent / "backup"
+    
+    backup_dir = Path(backup_dir)
+    ensure_directory(backup_dir)
+    
+    # 生成備份檔名，添加時間戳
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    backup_filename = f"{file_path.stem}_{timestamp}{file_path.suffix}"
+    backup_path = backup_dir / backup_filename
+    
+    try:
+        shutil.copy2(file_path, backup_path)
+        logger.info(f"已備份檔案: {file_path} -> {backup_path}")
+        return str(backup_path)
+    except Exception as e:
+        logger.error(f"備份檔案失敗: {file_path}, 錯誤: {e}")
+        return None
+
+
+def extract_component_from_filename(filename):
+    """
+    從AOI原始檔名提取component ID
+    
+    Args:
+        filename: AOI檔案名，格式為 {device}_{component}_{timestamp}.csv
+    
+    Returns:
+        str: 提取的component ID，若未匹配則返回None
+    """
+    match = AOI_FILENAME_PATTERN.match(filename)
+    if match:
+        return match.group(1)
+    return None 

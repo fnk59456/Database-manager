@@ -1,0 +1,8 @@
+{
+    "step_a": "D:/Database-PC/PVT/csv/WLPF400100/MT",
+    "step_b": "D:/Database-PC/PVT/csv/WLPF400100/DC2",
+    "output": "D:/Database-PC/PVT/map/WLPF400100/LOSS",
+    "rules": "configs/defect_rules.json",
+    "flip": true
+  }
+  

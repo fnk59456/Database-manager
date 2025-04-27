@@ -1,0 +1,298 @@
+2025-04-24 11:23:48,400 - database_manager - INFO - 快取檔案不存在，將掃描資料庫
+2025-04-24 11:23:48,400 - database_manager - INFO - 開始掃描資料庫...
+2025-04-24 11:24:08,700 - database_manager - INFO - 快取檔案不存在，將掃描資料庫
+2025-04-24 11:24:08,701 - database_manager - INFO - 開始掃描資料庫...
+2025-04-24 11:24:47,992 - database_manager - INFO - 快取檔案不存在，將掃描資料庫
+2025-04-24 11:24:47,993 - database_manager - INFO - 開始掃描資料庫...
+2025-04-24 11:36:16,374 - database_manager - INFO - 快取檔案不存在，將掃描資料庫
+2025-04-24 11:36:16,374 - database_manager - INFO - 開始掃描資料庫...
+2025-04-24 11:36:16,402 - database_manager - INFO - 資料庫掃描完成: 4 產品, 5 批次, 235 元件
+2025-04-24 11:36:16,409 - database_manager - INFO - 已保存資料庫快取: D:\Database-PC\database manager\dbmplus\data\db_cache.json
+2025-04-24 11:36:16,420 - main - INFO - 啟動 Database Manager Plus v1.0.0
+2025-04-24 11:36:16,666 - qdarkstyle - INFO - QSS file successfully loaded.
+2025-04-24 11:36:16,701 - qdarkstyle - INFO - Found application patches to be applied.
+2025-04-24 11:36:16,701 - main - INFO - 已載入深色主題樣式
+2025-04-24 11:39:19,464 - database_manager - INFO - 開始掃描資料庫...
+2025-04-24 11:39:19,491 - database_manager - INFO - 資料庫掃描完成: 4 產品, 5 批次, 235 元件
+2025-04-24 11:39:19,500 - database_manager - INFO - 已保存資料庫快取: D:\Database-PC\database manager\dbmplus\data\db_cache.json
+2025-04-24 11:39:44,730 - data_processor - INFO - 開始執行任務: cd9c44bd-a162-499a-8df1-97b5dae8f329 (basemap)
+2025-04-24 11:39:44,768 - file_utils - ERROR - 載入CSV檔案失敗: D:\Database-PC\PVT\csv\WLPF400100\DC2\M1X60_WLPF40010001_202504141022_PC2.csv, 錯誤: Error tokenizing data. C error: Expected 2 fields in line 13, saw 17
+
+2025-04-24 11:39:44,780 - file_utils - ERROR - 載入CSV檔案失敗: D:\Database-PC\PVT\csv\WLPF400100\DC2\M1X60_WLPF40010001_202504141022_PC4.csv, 錯誤: Error tokenizing data. C error: Expected 2 fields in line 13, saw 17
+
+2025-04-24 11:39:44,793 - file_utils - ERROR - 載入CSV檔案失敗: D:\Database-PC\PVT\csv\WLPF400100\DC2\M1X60_WLPF40010001_202504141023_PC1.csv, 錯誤: Error tokenizing data. C error: Expected 2 fields in line 13, saw 17
+
+2025-04-24 11:39:44,806 - file_utils - ERROR - 載入CSV檔案失敗: D:\Database-PC\PVT\csv\WLPF400100\DC2\M1X60_WLPF40010001_202504141026_PC3.csv, 錯誤: Error tokenizing data. C error: Expected 2 fields in line 13, saw 17
+
+2025-04-24 11:39:44,820 - file_utils - ERROR - 載入CSV檔案失敗: D:\Database-PC\PVT\csv\WLPF400100\DC2\M1X60_WLPF40010001_202504141037.csv, 錯誤: Error tokenizing data. C error: Expected 2 fields in line 13, saw 17
+
+2025-04-24 11:39:44,834 - file_utils - ERROR - 載入CSV檔案失敗: D:\Database-PC\PVT\csv\WLPF400100\DC2\M1X60_WLPF40010003_202504141026_PC4.csv, 錯誤: Error tokenizing data. C error: Expected 2 fields in line 13, saw 17
+
+2025-04-24 11:39:44,848 - file_utils - ERROR - 載入CSV檔案失敗: D:\Database-PC\PVT\csv\WLPF400100\DC2\M1X60_WLPF40010003_202504141027_PC1.csv, 錯誤: Error tokenizing data. C error: Expected 2 fields in line 13, saw 17
+
+2025-04-24 11:39:44,865 - file_utils - ERROR - 載入CSV檔案失敗: D:\Database-PC\PVT\csv\WLPF400100\DC2\M1X60_WLPF40010003_202504141027_PC2.csv, 錯誤: Error tokenizing data. C error: Expected 2 fields in line 13, saw 17
+
+2025-04-24 11:39:44,884 - file_utils - ERROR - 載入CSV檔案失敗: D:\Database-PC\PVT\csv\WLPF400100\DC2\M1X60_WLPF40010003_202504141031_PC3.csv, 錯誤: Error tokenizing data. C error: Expected 2 fields in line 13, saw 17
+
+2025-04-24 11:39:44,897 - file_utils - ERROR - 載入CSV檔案失敗: D:\Database-PC\PVT\csv\WLPF400100\DC2\M1X60_WLPF40010003_202504141037.csv, 錯誤: Error tokenizing data. C error: Expected 2 fields in line 13, saw 17
+
+2025-04-24 11:39:44,911 - file_utils - ERROR - 載入CSV檔案失敗: D:\Database-PC\PVT\csv\WLPF400100\DC2\M1X60_WLPF40010004_202504141031_PC2.csv, 錯誤: Error tokenizing data. C error: Expected 2 fields in line 13, saw 17
+
+2025-04-24 11:39:44,927 - file_utils - ERROR - 載入CSV檔案失敗: D:\Database-PC\PVT\csv\WLPF400100\DC2\M1X60_WLPF40010004_202504141031_PC4.csv, 錯誤: Error tokenizing data. C error: Expected 2 fields in line 13, saw 17
+
+2025-04-24 11:39:44,944 - file_utils - ERROR - 載入CSV檔案失敗: D:\Database-PC\PVT\csv\WLPF400100\DC2\M1X60_WLPF40010004_202504141032_PC1.csv, 錯誤: Error tokenizing data. C error: Expected 2 fields in line 13, saw 17
+
+2025-04-24 11:39:44,961 - file_utils - ERROR - 載入CSV檔案失敗: D:\Database-PC\PVT\csv\WLPF400100\DC2\M1X60_WLPF40010004_202504141035_PC3.csv, 錯誤: Error tokenizing data. C error: Expected 2 fields in line 13, saw 17
+
+2025-04-24 11:39:44,980 - file_utils - ERROR - 載入CSV檔案失敗: D:\Database-PC\PVT\csv\WLPF400100\DC2\M1X60_WLPF40010004_202504141037.csv, 錯誤: Error tokenizing data. C error: Expected 2 fields in line 13, saw 17
+
+2025-04-24 11:39:45,111 - data_processor - WARNING - 找不到站點 DC2 的遮罩規則檔案
+2025-04-24 11:39:46,293 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010001.png
+2025-04-24 11:39:46,301 - database_manager - INFO - 已保存資料庫快取: D:\Database-PC\database manager\dbmplus\data\db_cache.json
+2025-04-24 11:39:46,302 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010001.png
+2025-04-24 11:39:46,416 - data_processor - WARNING - 找不到站點 DC2 的遮罩規則檔案
+2025-04-24 11:39:46,828 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010003.png
+2025-04-24 11:39:46,840 - database_manager - INFO - 已保存資料庫快取: D:\Database-PC\database manager\dbmplus\data\db_cache.json
+2025-04-24 11:39:46,841 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010003.png
+2025-04-24 11:39:46,950 - data_processor - WARNING - 找不到站點 DC2 的遮罩規則檔案
+2025-04-24 11:39:47,359 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010004.png
+2025-04-24 11:39:47,369 - database_manager - INFO - 已保存資料庫快取: D:\Database-PC\database manager\dbmplus\data\db_cache.json
+2025-04-24 11:39:47,369 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010004.png
+2025-04-24 13:14:47,618 - database_manager - INFO - 已載入資料庫快取: 4 產品, 5 批次, 235 元件
+2025-04-24 13:14:47,713 - main - INFO - 日誌系統已初始化
+2025-04-24 13:14:47,713 - config_manager - INFO - 成功載入配置文件: D:\Database-PC\database manager\dbmplus\config\settings.json
+2025-04-24 13:14:47,713 - database_manager - WARNING - 站點順序驗證失敗: 未配置的站點: {'LOSS4', 'LOSS3', 'MTIC', 'FPY', 'LOSS1', 'RDLLED', 'MTLED', 'LOSS2'}, 缺失的站點: {'EMC'}
+2025-04-24 13:14:47,714 - main - WARNING - 站點順序配置驗證失敗: {'status': False, 'station_order': ['MT', 'DC2', 'INNER1', 'RDL', 'INNER2', 'EMC'], 'all_stations_in_db': ['MT', 'LOSS4', 'RDL', 'DC2', 'LOSS3', 'MTIC', 'FPY', 'LOSS1', 'INNER1', 'INNER2', 'RDLLED', 'MTLED', 'LOSS2'], 'unconfigured_stations': ['LOSS4', 'LOSS3', 'MTIC', 'FPY', 'LOSS1', 'RDLLED', 'MTLED', 'LOSS2'], 'missing_stations': ['EMC']}
+2025-04-24 13:14:47,797 - qdarkstyle - INFO - QSS file successfully loaded.
+2025-04-24 13:14:47,857 - qdarkstyle - INFO - Found application patches to be applied.
+2025-04-24 13:14:47,857 - main - INFO - 已載入深色主題樣式
+2025-04-24 13:14:47,929 - main - INFO - 啟動 Database Manager Plus v1.0.0
+2025-04-24 13:15:04,611 - data_processor - INFO - 開始執行任務: aa09bb30-1266-4086-a679-b9e4b2c1d9d8 (basemap)
+2025-04-24 13:15:04,717 - file_utils - WARNING - 標準讀取CSV失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010001_202504091029_PC1.csv, 嘗試替代方法...
+2025-04-24 13:15:04,717 - file_utils - ERROR - 載入CSV檔案失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010001_202504091029_PC1.csv, 錯誤: read_csv() got an unexpected keyword argument 'error_bad_lines'
+2025-04-24 13:15:04,728 - file_utils - WARNING - 標準讀取CSV失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010001_202504091029_PC2.csv, 嘗試替代方法...
+2025-04-24 13:15:04,729 - file_utils - ERROR - 載入CSV檔案失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010001_202504091029_PC2.csv, 錯誤: read_csv() got an unexpected keyword argument 'error_bad_lines'
+2025-04-24 13:15:04,740 - file_utils - WARNING - 標準讀取CSV失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010001_202504091029_PC4.csv, 嘗試替代方法...
+2025-04-24 13:15:04,742 - file_utils - ERROR - 載入CSV檔案失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010001_202504091029_PC4.csv, 錯誤: read_csv() got an unexpected keyword argument 'error_bad_lines'
+2025-04-24 13:15:04,753 - file_utils - WARNING - 標準讀取CSV失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010001_202504091032_PC3.csv, 嘗試替代方法...
+2025-04-24 13:15:04,753 - file_utils - ERROR - 載入CSV檔案失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010001_202504091032_PC3.csv, 錯誤: read_csv() got an unexpected keyword argument 'error_bad_lines'
+2025-04-24 13:15:04,765 - file_utils - WARNING - 標準讀取CSV失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010001_202504091051.csv, 嘗試替代方法...
+2025-04-24 13:15:04,765 - file_utils - ERROR - 載入CSV檔案失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010001_202504091051.csv, 錯誤: read_csv() got an unexpected keyword argument 'error_bad_lines'
+2025-04-24 13:15:04,777 - file_utils - WARNING - 標準讀取CSV失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010003_202504091033_PC4.csv, 嘗試替代方法...
+2025-04-24 13:15:04,778 - file_utils - ERROR - 載入CSV檔案失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010003_202504091033_PC4.csv, 錯誤: read_csv() got an unexpected keyword argument 'error_bad_lines'
+2025-04-24 13:15:04,791 - file_utils - WARNING - 標準讀取CSV失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010003_202504091034_PC1.csv, 嘗試替代方法...
+2025-04-24 13:15:04,791 - file_utils - ERROR - 載入CSV檔案失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010003_202504091034_PC1.csv, 錯誤: read_csv() got an unexpected keyword argument 'error_bad_lines'
+2025-04-24 13:15:04,805 - file_utils - WARNING - 標準讀取CSV失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010003_202504091034_PC2.csv, 嘗試替代方法...
+2025-04-24 13:15:04,806 - file_utils - ERROR - 載入CSV檔案失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010003_202504091034_PC2.csv, 錯誤: read_csv() got an unexpected keyword argument 'error_bad_lines'
+2025-04-24 13:15:04,816 - file_utils - WARNING - 標準讀取CSV失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010003_202504091037_PC3.csv, 嘗試替代方法...
+2025-04-24 13:15:04,817 - file_utils - ERROR - 載入CSV檔案失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010003_202504091037_PC3.csv, 錯誤: read_csv() got an unexpected keyword argument 'error_bad_lines'
+2025-04-24 13:15:04,828 - file_utils - WARNING - 標準讀取CSV失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010003_202504091051.csv, 嘗試替代方法...
+2025-04-24 13:15:04,828 - file_utils - ERROR - 載入CSV檔案失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010003_202504091051.csv, 錯誤: read_csv() got an unexpected keyword argument 'error_bad_lines'
+2025-04-24 13:15:04,840 - file_utils - WARNING - 標準讀取CSV失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010004_202504091038_PC4.csv, 嘗試替代方法...
+2025-04-24 13:15:04,841 - file_utils - ERROR - 載入CSV檔案失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010004_202504091038_PC4.csv, 錯誤: read_csv() got an unexpected keyword argument 'error_bad_lines'
+2025-04-24 13:15:04,852 - file_utils - WARNING - 標準讀取CSV失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010004_202504091039_PC1.csv, 嘗試替代方法...
+2025-04-24 13:15:04,853 - file_utils - ERROR - 載入CSV檔案失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010004_202504091039_PC1.csv, 錯誤: read_csv() got an unexpected keyword argument 'error_bad_lines'
+2025-04-24 13:15:04,865 - file_utils - WARNING - 標準讀取CSV失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010004_202504091039_PC2.csv, 嘗試替代方法...
+2025-04-24 13:15:04,866 - file_utils - ERROR - 載入CSV檔案失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010004_202504091039_PC2.csv, 錯誤: read_csv() got an unexpected keyword argument 'error_bad_lines'
+2025-04-24 13:15:04,878 - file_utils - WARNING - 標準讀取CSV失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010004_202504091042_PC3.csv, 嘗試替代方法...
+2025-04-24 13:15:04,878 - file_utils - ERROR - 載入CSV檔案失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010004_202504091042_PC3.csv, 錯誤: read_csv() got an unexpected keyword argument 'error_bad_lines'
+2025-04-24 13:15:04,889 - file_utils - WARNING - 標準讀取CSV失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010004_202504091051.csv, 嘗試替代方法...
+2025-04-24 13:15:04,889 - file_utils - ERROR - 載入CSV檔案失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010004_202504091051.csv, 錯誤: read_csv() got an unexpected keyword argument 'error_bad_lines'
+2025-04-24 13:15:04,904 - file_utils - WARNING - 標準讀取CSV失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010006_202504091044_PC1.csv, 嘗試替代方法...
+2025-04-24 13:15:04,904 - file_utils - ERROR - 載入CSV檔案失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010006_202504091044_PC1.csv, 錯誤: read_csv() got an unexpected keyword argument 'error_bad_lines'
+2025-04-24 13:15:04,917 - file_utils - WARNING - 標準讀取CSV失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010006_202504091044_PC2.csv, 嘗試替代方法...
+2025-04-24 13:15:04,917 - file_utils - ERROR - 載入CSV檔案失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010006_202504091044_PC2.csv, 錯誤: read_csv() got an unexpected keyword argument 'error_bad_lines'
+2025-04-24 13:15:04,928 - file_utils - WARNING - 標準讀取CSV失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010006_202504091044_PC4.csv, 嘗試替代方法...
+2025-04-24 13:15:04,929 - file_utils - ERROR - 載入CSV檔案失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010006_202504091044_PC4.csv, 錯誤: read_csv() got an unexpected keyword argument 'error_bad_lines'
+2025-04-24 13:15:04,941 - file_utils - WARNING - 標準讀取CSV失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010006_202504091047_PC3.csv, 嘗試替代方法...
+2025-04-24 13:15:04,941 - file_utils - ERROR - 載入CSV檔案失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010006_202504091047_PC3.csv, 錯誤: read_csv() got an unexpected keyword argument 'error_bad_lines'
+2025-04-24 13:15:04,952 - file_utils - WARNING - 標準讀取CSV失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010006_202504091051.csv, 嘗試替代方法...
+2025-04-24 13:15:04,952 - file_utils - ERROR - 載入CSV檔案失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010006_202504091051.csv, 錯誤: read_csv() got an unexpected keyword argument 'error_bad_lines'
+2025-04-24 13:15:04,962 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-04-24 13:15:04,964 - data_processor - ERROR - 生成Basemap時發生錯誤: 'Col'
+2025-04-24 13:15:05,078 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-04-24 13:15:05,712 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010001.png
+2025-04-24 13:15:05,722 - database_manager - INFO - 已保存資料庫快取: D:\Database-PC\database manager\dbmplus\data\db_cache.json
+2025-04-24 13:15:05,722 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010001.png
+2025-04-24 13:15:05,833 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-04-24 13:15:06,435 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010003.png
+2025-04-24 13:15:06,447 - database_manager - INFO - 已保存資料庫快取: D:\Database-PC\database manager\dbmplus\data\db_cache.json
+2025-04-24 13:15:06,447 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010003.png
+2025-04-24 13:15:06,558 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-04-24 13:15:07,164 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010004.png
+2025-04-24 13:15:07,178 - database_manager - INFO - 已保存資料庫快取: D:\Database-PC\database manager\dbmplus\data\db_cache.json
+2025-04-24 13:15:07,179 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010004.png
+2025-04-24 13:15:07,290 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-04-24 13:15:07,884 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010006.png
+2025-04-24 13:15:07,894 - database_manager - INFO - 已保存資料庫快取: D:\Database-PC\database manager\dbmplus\data\db_cache.json
+2025-04-24 13:15:07,895 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010006.png
+2025-04-24 13:21:04,617 - database_manager - INFO - 已載入資料庫快取: 4 產品, 5 批次, 235 元件
+2025-04-24 13:21:04,709 - main - INFO - 日誌系統已初始化
+2025-04-24 13:21:04,709 - config_manager - INFO - 成功載入配置文件: D:\Database-PC\database manager\dbmplus\config\settings.json
+2025-04-24 13:21:04,709 - database_manager - WARNING - 站點順序驗證失敗: 未配置的站點: {'LOSS3', 'FPY', 'MTLED', 'LOSS4', 'LOSS2', 'LOSS1', 'MTIC', 'RDLLED'}, 缺失的站點: {'EMC'}
+2025-04-24 13:21:04,710 - main - WARNING - 站點順序配置驗證失敗: {'status': False, 'station_order': ['MT', 'DC2', 'INNER1', 'RDL', 'INNER2', 'EMC'], 'all_stations_in_db': ['LOSS3', 'FPY', 'MTLED', 'LOSS4', 'LOSS2', 'MT', 'RDL', 'LOSS1', 'INNER1', 'DC2', 'INNER2', 'MTIC', 'RDLLED'], 'unconfigured_stations': ['LOSS3', 'FPY', 'MTLED', 'LOSS4', 'LOSS2', 'LOSS1', 'MTIC', 'RDLLED'], 'missing_stations': ['EMC']}
+2025-04-24 13:21:04,790 - qdarkstyle - INFO - QSS file successfully loaded.
+2025-04-24 13:21:04,840 - qdarkstyle - INFO - Found application patches to be applied.
+2025-04-24 13:21:04,841 - main - INFO - 已載入深色主題樣式
+2025-04-24 13:21:04,913 - main - INFO - 啟動 Database Manager Plus v1.0.0
+2025-04-24 13:21:28,592 - data_processor - INFO - 開始執行任務: 9b3c3515-986f-4b42-b306-806df791b35d (basemap)
+2025-04-24 13:21:28,646 - file_utils - WARNING - 標準讀取CSV失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010001_202504091029_PC1.csv, 嘗試替代方法...
+2025-04-24 13:21:28,648 - file_utils - ERROR - 載入CSV檔案失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010001_202504091029_PC1.csv, 錯誤: read_csv() got an unexpected keyword argument 'error_bad_lines'
+2025-04-24 13:21:28,652 - file_utils - WARNING - 標準讀取CSV失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010001_202504091029_PC2.csv, 嘗試替代方法...
+2025-04-24 13:21:28,653 - file_utils - ERROR - 載入CSV檔案失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010001_202504091029_PC2.csv, 錯誤: read_csv() got an unexpected keyword argument 'error_bad_lines'
+2025-04-24 13:21:28,656 - file_utils - WARNING - 標準讀取CSV失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010001_202504091029_PC4.csv, 嘗試替代方法...
+2025-04-24 13:21:28,656 - file_utils - ERROR - 載入CSV檔案失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010001_202504091029_PC4.csv, 錯誤: read_csv() got an unexpected keyword argument 'error_bad_lines'
+2025-04-24 13:21:28,658 - file_utils - WARNING - 標準讀取CSV失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010001_202504091032_PC3.csv, 嘗試替代方法...
+2025-04-24 13:21:28,659 - file_utils - ERROR - 載入CSV檔案失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010001_202504091032_PC3.csv, 錯誤: read_csv() got an unexpected keyword argument 'error_bad_lines'
+2025-04-24 13:21:28,661 - file_utils - WARNING - 標準讀取CSV失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010001_202504091051.csv, 嘗試替代方法...
+2025-04-24 13:21:28,661 - file_utils - ERROR - 載入CSV檔案失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010001_202504091051.csv, 錯誤: read_csv() got an unexpected keyword argument 'error_bad_lines'
+2025-04-24 13:21:28,663 - file_utils - WARNING - 標準讀取CSV失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010003_202504091033_PC4.csv, 嘗試替代方法...
+2025-04-24 13:21:28,664 - file_utils - ERROR - 載入CSV檔案失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010003_202504091033_PC4.csv, 錯誤: read_csv() got an unexpected keyword argument 'error_bad_lines'
+2025-04-24 13:21:28,665 - file_utils - WARNING - 標準讀取CSV失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010003_202504091034_PC1.csv, 嘗試替代方法...
+2025-04-24 13:21:28,665 - file_utils - ERROR - 載入CSV檔案失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010003_202504091034_PC1.csv, 錯誤: read_csv() got an unexpected keyword argument 'error_bad_lines'
+2025-04-24 13:21:28,668 - file_utils - WARNING - 標準讀取CSV失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010003_202504091034_PC2.csv, 嘗試替代方法...
+2025-04-24 13:21:28,668 - file_utils - ERROR - 載入CSV檔案失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010003_202504091034_PC2.csv, 錯誤: read_csv() got an unexpected keyword argument 'error_bad_lines'
+2025-04-24 13:21:28,670 - file_utils - WARNING - 標準讀取CSV失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010003_202504091037_PC3.csv, 嘗試替代方法...
+2025-04-24 13:21:28,671 - file_utils - ERROR - 載入CSV檔案失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010003_202504091037_PC3.csv, 錯誤: read_csv() got an unexpected keyword argument 'error_bad_lines'
+2025-04-24 13:21:28,673 - file_utils - WARNING - 標準讀取CSV失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010003_202504091051.csv, 嘗試替代方法...
+2025-04-24 13:21:28,673 - file_utils - ERROR - 載入CSV檔案失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010003_202504091051.csv, 錯誤: read_csv() got an unexpected keyword argument 'error_bad_lines'
+2025-04-24 13:21:28,675 - file_utils - WARNING - 標準讀取CSV失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010004_202504091038_PC4.csv, 嘗試替代方法...
+2025-04-24 13:21:28,675 - file_utils - ERROR - 載入CSV檔案失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010004_202504091038_PC4.csv, 錯誤: read_csv() got an unexpected keyword argument 'error_bad_lines'
+2025-04-24 13:21:28,678 - file_utils - WARNING - 標準讀取CSV失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010004_202504091039_PC1.csv, 嘗試替代方法...
+2025-04-24 13:21:28,678 - file_utils - ERROR - 載入CSV檔案失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010004_202504091039_PC1.csv, 錯誤: read_csv() got an unexpected keyword argument 'error_bad_lines'
+2025-04-24 13:21:28,680 - file_utils - WARNING - 標準讀取CSV失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010004_202504091039_PC2.csv, 嘗試替代方法...
+2025-04-24 13:21:28,681 - file_utils - ERROR - 載入CSV檔案失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010004_202504091039_PC2.csv, 錯誤: read_csv() got an unexpected keyword argument 'error_bad_lines'
+2025-04-24 13:21:28,683 - file_utils - WARNING - 標準讀取CSV失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010004_202504091042_PC3.csv, 嘗試替代方法...
+2025-04-24 13:21:28,683 - file_utils - ERROR - 載入CSV檔案失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010004_202504091042_PC3.csv, 錯誤: read_csv() got an unexpected keyword argument 'error_bad_lines'
+2025-04-24 13:21:28,685 - file_utils - WARNING - 標準讀取CSV失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010004_202504091051.csv, 嘗試替代方法...
+2025-04-24 13:21:28,686 - file_utils - ERROR - 載入CSV檔案失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010004_202504091051.csv, 錯誤: read_csv() got an unexpected keyword argument 'error_bad_lines'
+2025-04-24 13:21:28,689 - file_utils - WARNING - 標準讀取CSV失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010006_202504091044_PC1.csv, 嘗試替代方法...
+2025-04-24 13:21:28,689 - file_utils - ERROR - 載入CSV檔案失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010006_202504091044_PC1.csv, 錯誤: read_csv() got an unexpected keyword argument 'error_bad_lines'
+2025-04-24 13:21:28,691 - file_utils - WARNING - 標準讀取CSV失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010006_202504091044_PC2.csv, 嘗試替代方法...
+2025-04-24 13:21:28,693 - file_utils - ERROR - 載入CSV檔案失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010006_202504091044_PC2.csv, 錯誤: read_csv() got an unexpected keyword argument 'error_bad_lines'
+2025-04-24 13:21:28,695 - file_utils - WARNING - 標準讀取CSV失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010006_202504091044_PC4.csv, 嘗試替代方法...
+2025-04-24 13:21:28,695 - file_utils - ERROR - 載入CSV檔案失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010006_202504091044_PC4.csv, 錯誤: read_csv() got an unexpected keyword argument 'error_bad_lines'
+2025-04-24 13:21:28,697 - file_utils - WARNING - 標準讀取CSV失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010006_202504091047_PC3.csv, 嘗試替代方法...
+2025-04-24 13:21:28,697 - file_utils - ERROR - 載入CSV檔案失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010006_202504091047_PC3.csv, 錯誤: read_csv() got an unexpected keyword argument 'error_bad_lines'
+2025-04-24 13:21:28,699 - file_utils - WARNING - 標準讀取CSV失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010006_202504091051.csv, 嘗試替代方法...
+2025-04-24 13:21:28,700 - file_utils - ERROR - 載入CSV檔案失敗: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010006_202504091051.csv, 錯誤: read_csv() got an unexpected keyword argument 'error_bad_lines'
+2025-04-24 13:21:28,703 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-04-24 13:21:28,704 - data_processor - ERROR - 生成Basemap時發生錯誤: 'Col'
+2025-04-24 13:21:28,812 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-04-24 13:21:29,484 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010001.png
+2025-04-24 13:21:29,497 - database_manager - INFO - 已保存資料庫快取: D:\Database-PC\database manager\dbmplus\data\db_cache.json
+2025-04-24 13:21:29,497 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010001.png
+2025-04-24 13:21:29,615 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-04-24 13:21:30,265 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010003.png
+2025-04-24 13:21:30,274 - database_manager - INFO - 已保存資料庫快取: D:\Database-PC\database manager\dbmplus\data\db_cache.json
+2025-04-24 13:21:30,275 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010003.png
+2025-04-24 13:21:30,381 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-04-24 13:21:31,028 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010004.png
+2025-04-24 13:21:31,045 - database_manager - INFO - 已保存資料庫快取: D:\Database-PC\database manager\dbmplus\data\db_cache.json
+2025-04-24 13:21:31,046 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010004.png
+2025-04-24 13:21:31,152 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-04-24 13:21:31,809 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010006.png
+2025-04-24 13:21:31,822 - database_manager - INFO - 已保存資料庫快取: D:\Database-PC\database manager\dbmplus\data\db_cache.json
+2025-04-24 13:21:31,823 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010006.png
+2025-04-24 13:21:31,860 - data_processor - INFO - 任務 9b3c3515-986f-4b42-b306-806df791b35d 已完成: True - 已處理 4/25 個元件的 Basemap
+2025-04-24 13:21:42,352 - database_manager - INFO - 開始掃描資料庫...
+2025-04-24 13:21:42,380 - database_manager - INFO - 資料庫掃描完成: 4 產品, 5 批次, 235 元件
+2025-04-24 13:21:42,393 - database_manager - INFO - 已保存資料庫快取: D:\Database-PC\database manager\dbmplus\data\db_cache.json
+2025-04-24 13:21:55,289 - data_processor - INFO - 開始執行任務: 9183bcb7-78c7-428a-88f4-aa4bf7d503a2 (lossmap)
+2025-04-24 13:21:55,343 - data_processor - ERROR - 生成Lossmap時發生錯誤: 'Col'
+2025-04-24 13:21:55,380 - data_processor - INFO - 任務 9183bcb7-78c7-428a-88f4-aa4bf7d503a2 已完成: False - 生成失敗: 'Col'
+2025-04-24 13:22:06,617 - data_processor - INFO - 開始執行任務: cff277d8-4334-4aed-9d18-96d3c30886b7 (lossmap)
+2025-04-24 13:22:07,372 - data_utils - ERROR - DataFrame 缺少 DefectType 欄位
+2025-04-24 13:22:07,372 - data_processor - ERROR - 生成Lossmap時發生錯誤: DataFrame 缺少 DefectType 欄位
+2025-04-24 13:22:07,406 - data_processor - INFO - 任務 cff277d8-4334-4aed-9d18-96d3c30886b7 已完成: False - 生成失敗: DataFrame 缺少 DefectType 欄位
+2025-04-24 13:38:16,964 - data_processor - INFO - 開始執行任務: c209f4d8-93ee-46a8-a8cc-8aed366fae8b (basemap)
+2025-04-24 13:38:17,069 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-04-24 13:38:17,438 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\Cartier\map\dvt1\MT\T63B00267.png
+2025-04-24 13:38:17,442 - database_manager - INFO - 已保存資料庫快取: D:\Database-PC\database manager\dbmplus\data\db_cache.json
+2025-04-24 13:38:17,443 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\Cartier\map\dvt1\MT\T63B00267.png
+2025-04-24 13:38:17,508 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-04-24 13:38:17,866 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\Cartier\map\dvt1\MT\T63C000001.png
+2025-04-24 13:38:17,872 - database_manager - INFO - 已保存資料庫快取: D:\Database-PC\database manager\dbmplus\data\db_cache.json
+2025-04-24 13:38:17,873 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\Cartier\map\dvt1\MT\T63C000001.png
+2025-04-24 13:38:17,903 - data_processor - INFO - 任務 c209f4d8-93ee-46a8-a8cc-8aed366fae8b 已完成: True - 已處理 2/2 個元件的 Basemap
+2025-04-24 13:39:22,142 - data_processor - INFO - 開始執行任務: 58555867-40f5-458c-8bdf-cbba6b030c5c (lossmap)
+2025-04-24 13:39:22,506 - data_utils - INFO - 成功生成損失地圖: D:\Database-PC\Cartier\map\dvt1\LOSS1\T63B00267.png
+2025-04-24 13:39:22,510 - database_manager - INFO - 已保存資料庫快取: D:\Database-PC\database manager\dbmplus\data\db_cache.json
+2025-04-24 13:39:22,510 - data_processor - INFO - Lossmap處理完成: 總計 1, 成功 1, 失敗 0
+2025-04-24 13:39:22,542 - data_processor - INFO - 任務 58555867-40f5-458c-8bdf-cbba6b030c5c 已完成: True - 所有1個元件Lossmap已生成
+2025-04-24 13:39:50,376 - data_processor - INFO - 開始執行任務: 18d62479-9711-4306-a370-2ef83cdd9b19 (fpy_parallel)
+2025-04-24 13:39:51,563 - data_utils - INFO - 成功生成FPY地圖: D:\Database-PC\Cartier\map\dvt1\FPY\T63B00267.png
+2025-04-24 13:39:51,569 - database_manager - INFO - 已保存資料庫快取: D:\Database-PC\database manager\dbmplus\data\db_cache.json
+2025-04-24 13:39:51,585 - file_utils - INFO - 成功保存CSV檔案: D:\Database-PC\Cartier\map\dvt1\FPY\summary_DC2.csv
+2025-04-24 13:39:51,618 - data_utils - INFO - 成功生成FPY長條圖: D:\Database-PC\Cartier\map\dvt1\FPY\summary_DC2.png
+2025-04-24 13:39:51,618 - data_processor - INFO - FPY並行處理完成: 總計 1, 成功 1, 失敗 0
+2025-04-24 13:39:51,648 - data_processor - INFO - 任務 18d62479-9711-4306-a370-2ef83cdd9b19 已完成: True - 所有1個元件FPY已生成
+2025-04-24 14:55:21,269 - database_manager - INFO - 已載入資料庫快取: 4 產品, 5 批次, 235 元件
+2025-04-24 14:55:22,007 - main - INFO - 日誌系統已初始化
+2025-04-24 14:55:22,008 - config_manager - INFO - 成功載入配置文件: D:\Database-PC\database manager\dbmplus\config\settings.json
+2025-04-24 14:55:22,008 - database_manager - WARNING - 站點順序驗證失敗: 未配置的站點: {'MTIC', 'FPY', 'MTLED', 'LOSS3', 'LOSS2', 'LOSS4', 'RDLLED', 'LOSS1'}, 缺失的站點: {'EMC'}
+2025-04-24 14:55:22,009 - main - WARNING - 站點順序配置驗證失敗: {'status': False, 'station_order': ['MT', 'DC2', 'INNER1', 'RDL', 'INNER2', 'EMC'], 'all_stations_in_db': ['MTIC', 'INNER1', 'FPY', 'MT', 'LOSS3', 'MTLED', 'RDL', 'INNER2', 'LOSS2', 'LOSS4', 'DC2', 'RDLLED', 'LOSS1'], 'unconfigured_stations': ['MTIC', 'FPY', 'MTLED', 'LOSS3', 'LOSS2', 'LOSS4', 'RDLLED', 'LOSS1'], 'missing_stations': ['EMC']}
+2025-04-24 14:55:22,494 - qdarkstyle - INFO - QSS file successfully loaded.
+2025-04-24 14:55:22,573 - qdarkstyle - INFO - Found application patches to be applied.
+2025-04-24 14:55:22,573 - main - INFO - 已載入深色主題樣式
+2025-04-24 14:55:22,802 - main - INFO - 啟動 Database Manager Plus v1.0.0
+2025-04-24 14:55:30,532 - data_processor - INFO - 開始執行任務: db3a03dc-8f0a-45d5-8517-41f582fba692 (basemap)
+2025-04-24 14:55:30,733 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-04-24 14:55:31,371 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\Cartier\map\dvt1\MT\T63B00267.png
+2025-04-24 14:55:31,385 - database_manager - INFO - 已保存資料庫快取: D:\Database-PC\database manager\dbmplus\data\db_cache.json
+2025-04-24 14:55:31,387 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\Cartier\map\dvt1\MT\T63B00267.png
+2025-04-24 14:55:31,454 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-04-24 14:55:31,818 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\Cartier\map\dvt1\MT\T63C000001.png
+2025-04-24 14:55:31,829 - database_manager - INFO - 已保存資料庫快取: D:\Database-PC\database manager\dbmplus\data\db_cache.json
+2025-04-24 14:55:31,830 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\Cartier\map\dvt1\MT\T63C000001.png
+2025-04-24 14:55:31,866 - data_processor - INFO - 任務 db3a03dc-8f0a-45d5-8517-41f582fba692 已完成: True - 已處理 2/2 個元件的 Basemap
+2025-04-24 14:55:35,915 - data_processor - INFO - 開始執行任務: d31344e2-538f-4ec9-8819-b89ae51d57ca (lossmap)
+2025-04-24 14:55:36,294 - data_utils - INFO - 成功生成損失地圖: D:\Database-PC\Cartier\map\dvt1\LOSS1\T63B00267.png
+2025-04-24 14:55:36,300 - database_manager - INFO - 已保存資料庫快取: D:\Database-PC\database manager\dbmplus\data\db_cache.json
+2025-04-24 14:55:36,301 - data_processor - INFO - Lossmap處理完成: 總計 1, 成功 1, 失敗 0
+2025-04-24 14:55:36,336 - data_processor - INFO - 任務 d31344e2-538f-4ec9-8819-b89ae51d57ca 已完成: True - 所有1個元件Lossmap已生成
+2025-04-24 14:55:40,604 - data_processor - INFO - 開始執行任務: b16f6e67-21ea-4674-b9b0-ae31b2a9de12 (lossmap)
+2025-04-24 14:55:40,935 - data_utils - INFO - 成功生成損失地圖: D:\Database-PC\Cartier\map\dvt1\LOSS2\T63B00267.png
+2025-04-24 14:55:40,942 - database_manager - INFO - 已保存資料庫快取: D:\Database-PC\database manager\dbmplus\data\db_cache.json
+2025-04-24 14:55:40,942 - data_processor - INFO - Lossmap處理完成: 總計 1, 成功 1, 失敗 0
+2025-04-24 14:55:40,977 - data_processor - INFO - 任務 b16f6e67-21ea-4674-b9b0-ae31b2a9de12 已完成: True - 所有1個元件Lossmap已生成
+2025-04-24 14:55:43,509 - data_processor - INFO - 開始執行任務: a646aabf-8273-46bf-bc1d-b9aae35eb5fa (lossmap)
+2025-04-24 14:55:43,870 - data_utils - INFO - 成功生成損失地圖: D:\Database-PC\Cartier\map\dvt1\LOSS3\T63B00267.png
+2025-04-24 14:55:43,878 - database_manager - INFO - 已保存資料庫快取: D:\Database-PC\database manager\dbmplus\data\db_cache.json
+2025-04-24 14:55:43,879 - data_processor - WARNING - 找不到前站(INNER1)對應的元件: T63C000002
+2025-04-24 14:55:43,879 - data_processor - INFO - Lossmap處理完成: 總計 2, 成功 1, 失敗 1
+2025-04-24 14:55:43,915 - data_processor - INFO - 任務 a646aabf-8273-46bf-bc1d-b9aae35eb5fa 已完成: True - 部分完成: 1/2個元件Lossmap已生成
+2025-04-24 14:55:47,236 - data_processor - INFO - 開始執行任務: d2cebe9d-0ff0-42b6-bda1-01d5e9b774b2 (lossmap)
+2025-04-24 14:55:47,586 - data_utils - INFO - 成功生成損失地圖: D:\Database-PC\Cartier\map\dvt1\LOSS4\T63B00267.png
+2025-04-24 14:55:47,594 - database_manager - INFO - 已保存資料庫快取: D:\Database-PC\database manager\dbmplus\data\db_cache.json
+2025-04-24 14:55:47,595 - data_processor - INFO - Lossmap處理完成: 總計 1, 成功 1, 失敗 0
+2025-04-24 14:55:47,631 - data_processor - INFO - 任務 d2cebe9d-0ff0-42b6-bda1-01d5e9b774b2 已完成: True - 所有1個元件Lossmap已生成
+2025-04-24 14:56:12,653 - data_processor - INFO - 開始執行任務: e6599e84-3da1-472a-b8ba-edd76877530a (fpy_parallel)
+2025-04-24 14:56:14,062 - data_utils - INFO - 成功生成FPY地圖: D:\Database-PC\Cartier\map\dvt1\FPY\T63B00267.png
+2025-04-24 14:56:14,076 - database_manager - INFO - 已保存資料庫快取: D:\Database-PC\database manager\dbmplus\data\db_cache.json
+2025-04-24 14:56:14,105 - file_utils - INFO - 成功保存CSV檔案: D:\Database-PC\Cartier\map\dvt1\FPY\summary_INNER2.csv
+2025-04-24 14:56:14,141 - data_utils - INFO - 成功生成FPY長條圖: D:\Database-PC\Cartier\map\dvt1\FPY\summary_INNER2.png
+2025-04-24 14:56:14,141 - data_processor - INFO - FPY並行處理完成: 總計 1, 成功 1, 失敗 0
+2025-04-24 14:56:14,175 - data_processor - INFO - 任務 e6599e84-3da1-472a-b8ba-edd76877530a 已完成: True - 所有1個元件FPY已生成
+2025-04-24 14:56:18,026 - database_manager - INFO - 開始掃描資料庫...
+2025-04-24 14:56:18,054 - database_manager - INFO - 資料庫掃描完成: 4 產品, 5 批次, 235 元件
+2025-04-24 14:56:18,067 - database_manager - INFO - 已保存資料庫快取: D:\Database-PC\database manager\dbmplus\data\db_cache.json
+2025-04-24 14:56:20,291 - database_manager - INFO - 開始掃描資料庫...
+2025-04-24 14:56:20,320 - database_manager - INFO - 資料庫掃描完成: 4 產品, 5 批次, 235 元件
+2025-04-24 14:56:20,329 - database_manager - INFO - 已保存資料庫快取: D:\Database-PC\database manager\dbmplus\data\db_cache.json
+2025-04-24 14:58:23,562 - data_processor - INFO - 開始執行任務: e6604a6c-619f-4f1d-9cd8-ebca5929cfa5 (basemap)
+2025-04-24 14:58:23,647 - data_processor - WARNING - 找不到站點 INNER1 的遮罩規則檔案
+2025-04-24 14:58:24,036 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\Cartier\map\dvt1\INNER1\T63B00267.png
+2025-04-24 14:58:24,051 - database_manager - INFO - 已保存資料庫快取: D:\Database-PC\database manager\dbmplus\data\db_cache.json
+2025-04-24 14:58:24,052 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\Cartier\map\dvt1\INNER1\T63B00267.png
+2025-04-24 14:58:24,084 - data_processor - INFO - 任務 e6604a6c-619f-4f1d-9cd8-ebca5929cfa5 已完成: True - 已處理 1/1 個元件的 Basemap
+2025-04-24 22:41:49,579 - database_manager - INFO - 已載入資料庫快取: 4 產品, 5 批次, 235 元件
+2025-04-24 22:51:20,311 - database_manager - INFO - 已載入資料庫快取: 4 產品, 5 批次, 235 元件
+2025-04-24 22:51:20,433 - main - INFO - 日誌系統已初始化
+2025-04-24 22:51:20,434 - config_manager - INFO - 成功載入配置文件: C:\Users\Frank hsu\Desktop\database manager\dbmplus\config\settings.json
+2025-04-24 22:51:20,434 - database_manager - WARNING - 站點順序驗證失敗: 未配置的站點: {'LOSS3', 'LOSS1', 'MTIC', 'LOSS4', 'RDLLED', 'LOSS2', 'FPY', 'MTLED'}, 缺失的站點: {'EMC'}
+2025-04-24 22:51:20,434 - main - WARNING - 站點順序配置驗證失敗: {'status': False, 'station_order': ['MT', 'DC2', 'INNER1', 'RDL', 'INNER2', 'EMC'], 'all_stations_in_db': ['DC2', 'LOSS3', 'LOSS1', 'MTIC', 'LOSS4', 'INNER2', 'MTLED', 'RDLLED', 'INNER1', 'LOSS2', 'MT', 'FPY', 'RDL'], 'unconfigured_stations': ['LOSS3', 'LOSS1', 'MTIC', 'LOSS4', 'RDLLED', 'LOSS2', 'FPY', 'MTLED'], 'missing_stations': ['EMC']}
+2025-04-24 22:51:20,555 - qdarkstyle - INFO - QSS file successfully loaded.
+2025-04-24 22:51:20,599 - qdarkstyle - INFO - Found application patches to be applied.
+2025-04-24 22:51:20,600 - main - INFO - 已載入深色主題樣式
+2025-04-24 22:51:20,717 - main - INFO - 啟動 Database Manager Plus v1.0.0

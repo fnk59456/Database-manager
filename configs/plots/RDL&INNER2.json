@@ -1,0 +1,30 @@
+{
+    "map_configurations": {
+        "MT": {
+            "colors": {
+                "alignkey": "silver",
+                "aislekey": "orange",
+                "nokey": "orange",
+                "blank": "white",
+                "dirty": "black",
+                "viafail": "brown",
+                "blackhole": "blue",
+                "shift": "green",
+                "liftofffail": "red",
+                "hurt": "cyan",
+                "ok": "lightgrey",
+                "specialkey": "gold",
+                "cornerkey": "gold",
+		    "blur": "lime",
+		    "srcatch": "deeppink"
+            }
+        }
+    },
+    "map_size": [
+        20,
+        20
+    ],
+    "original_size": 100,
+    "title_fontsize": 20,
+    "invert_x_axis": false
+}

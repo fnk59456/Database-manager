@@ -1,0 +1,42 @@
+{
+    "formulas": {
+        "White Yield": [
+            "ok"
+        ],
+        "All Defect Rate": [
+            "shift",
+            "hurt",
+            "blackhole",
+            "viafail",
+            "liftofffail",
+            "dirty",
+            "blur",
+            "scratch"
+        ],
+        "Shift Rate": [
+            "shift"
+        ],
+        "Hurt Rate": [
+            "hurt"
+        ],
+        "Blackhole Rate": [
+            "blackhole"
+        ],
+        "Viafail Rate": [
+            "viafail"
+        ],
+        "Liftofffail Rate": [
+            "liftofffail"
+        ],
+        "Dirty Rate": [
+            "dirty"
+        ],
+        "Blur Rate": [
+            "blur"
+        ],
+        "Scretch Rate": [
+            "scratch"
+        ]
+    },
+    "Total Count": 155952
+}

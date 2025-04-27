@@ -1,0 +1,151 @@
+{
+    "database": {
+        "base_path": "D:/Database-PC",
+        "structure": {
+            "csv_root": "{base_path}/{product}/csv",
+            "csv": "{base_path}/{product}/csv/{lot}/{station}",
+            "map": "{base_path}/{product}/map/{lot}",
+            "roi": "{base_path}/{product}/roi/{lot}/{station}/{component}",
+            "org": "{base_path}/{product}/org/{lot}/{station}/{component}"
+        }
+    },
+    "processing": {
+        "station_order": [
+            "MT",
+            "DC2",
+            "INNER1",
+            "RDL",
+            "INNER2",
+            "EMC"
+        ],
+        "flip_config": {
+            "MT": true,
+            "DC2": false,
+            "INNER1": false,
+            "RDL": false,
+            "INNER2": true,
+            "EMC": false
+        },
+        "station_recipe": {
+            "MT": "Sapphire A",
+            "DC2": "Sapphire B",
+            "INNER1": "Sapphire B",
+            "RDL": "Sapphire B",
+            "INNER2": "Sapphire B",
+            "EMC": "EMC"
+        },
+        "station_logic": {
+            "MT": {
+                "run_lossmap": false,
+                "run_fpy": false
+            },
+            "DC2": {
+                "run_lossmap": true,
+                "run_fpy": true
+            },
+            "INNER1": {
+                "run_lossmap": true,
+                "run_fpy": true
+            },
+            "RDL": {
+                "run_lossmap": true,
+                "run_fpy": true
+            },
+            "INNER2": {
+                "run_lossmap": true,
+                "run_fpy": true
+            },
+            "EMC": {
+                "run_lossmap": false,
+                "run_fpy": true
+            }
+        }
+    },
+    "defect_rules": {
+        "good": [
+            "key+ok",
+            "ok",
+            0,
+            "Ok"
+        ],
+        "bad": [
+            "miss1",
+            "miss2",
+            "miss3",
+            "miss12",
+            "miss13",
+            "miss23",
+            "miss123",
+            "dirty",
+            "Dirty",
+            "AlignKey",
+            "blank",
+            "Key(Miss123)",
+            "Nokey",
+            "hurt",
+            "cornerkey",
+            "key",
+            "particle failed",
+            "RDL break",
+            "scratch failed",
+            "Via failed",
+            "Black hole",
+            "aislekey",
+            "alignkey",
+            "keypeeling",
+            "mtfail",
+            "nokey",
+            "particle",
+            "shift",
+            "blackhole",
+            "viafail",
+            "specialkey",
+            "liftofffail",
+            "Lose",
+            "fail",
+            "blur",
+            "scratch",
+            -1,
+            4,
+            101,
+            90,
+            80,
+            79,
+            -2
+        ]
+    },
+    "ui": {
+        "window_size": {
+            "width": 950,
+            "min_height": 800
+        },
+        "table_column_widths": {
+            "product": 100,
+            "lot": 100,
+            "station": 100,
+            "lotid": 135,
+            "org": 80,
+            "csv": 80,
+            "basemap": 80,
+            "lossmap": 80,
+            "bar": 80,
+            "fpy": 80
+        },
+        "styles": {
+            "button_background": "tan",
+            "button_text": "black"
+        }
+    },
+    "logging": {
+        "log_dir": "logs",
+        "level": "INFO",
+        "log_format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+        "max_size": 10485760,
+        "backup_count": 10
+    },
+    "backup": {
+        "auto_backup": true,
+        "backup_dir": "backups",
+        "backup_interval_days": 7
+    }
+} 

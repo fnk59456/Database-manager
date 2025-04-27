@@ -1,0 +1,363 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-TW" data-content_root="../">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>main &mdash; Database manager 1.0 說明文件</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=810a708a"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/translations.js?v=cbf116e0"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜尋" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Database manager
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">内容:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../architecture.html">專案架構</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/modules.html">database manager</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Database manager</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">模組原始碼</a></li>
+      <li class="breadcrumb-item active">main</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>main 的原始碼</h1><div class="highlight"><pre>
+<span></span><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">PySide6.QtWidgets</span><span class="w"> </span><span class="kn">import</span> <span class="n">QApplication</span><span class="p">,</span> <span class="n">QWidget</span><span class="p">,</span> <span class="n">QVBoxLayout</span><span class="p">,</span> <span class="n">QHBoxLayout</span><span class="p">,</span> <span class="n">QTableWidget</span><span class="p">,</span> <span class="n">QTableWidgetItem</span><span class="p">,</span> <span class="n">QPushButton</span><span class="p">,</span> <span class="n">QSizePolicy</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">PySide6.QtCore</span><span class="w"> </span><span class="kn">import</span> <span class="n">Qt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">check</span>  <span class="c1"># 引入 check.py，包含處理任務的邏輯</span>
+
+<div class="viewcode-block" id="DatabaseManagerGUI">
+<a class="viewcode-back" href="../api/main.html#main.DatabaseManagerGUI">[文件]</a>
+<span class="k">class</span><span class="w"> </span><span class="nc">DatabaseManagerGUI</span><span class="p">(</span><span class="n">QWidget</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">initUI</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">selected_product</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">selected_number</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">selected_type</span> <span class="o">=</span> <span class="kc">None</span>
+
+<div class="viewcode-block" id="DatabaseManagerGUI.initUI">
+<a class="viewcode-back" href="../api/main.html#main.DatabaseManagerGUI.initUI">[文件]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">initUI</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1"># 主布局</span>
+        <span class="n">main_layout</span> <span class="o">=</span> <span class="n">QVBoxLayout</span><span class="p">()</span>
+
+        <span class="c1"># 定義表格標題</span>
+        <span class="n">headers</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Product&#39;</span><span class="p">,</span> <span class="s1">&#39;LOT&#39;</span><span class="p">,</span> <span class="s1">&#39;MT&#39;</span><span class="p">,</span> <span class="s1">&#39;DC2&#39;</span><span class="p">,</span> <span class="s1">&#39;INNER1&#39;</span><span class="p">,</span> <span class="s1">&#39;RDL&#39;</span><span class="p">,</span> <span class="s1">&#39;INNER2&#39;</span><span class="p">,</span> <span class="s1">&#39;CU&#39;</span><span class="p">,</span> <span class="s1">&#39;EMC&#39;</span><span class="p">]</span>
+
+        <span class="c1"># 創建主表格</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">table_widget</span> <span class="o">=</span> <span class="n">QTableWidget</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">headers</span><span class="p">),</span> <span class="bp">self</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">table_widget</span><span class="o">.</span><span class="n">setHorizontalHeaderLabels</span><span class="p">(</span><span class="n">headers</span><span class="p">)</span>
+
+        <span class="c1"># 填充表格</span>
+        <span class="n">base_dir</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;D:\Database-PC&#39;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">populate_table</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">table_widget</span><span class="p">,</span> <span class="n">base_dir</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">table_widget</span><span class="o">.</span><span class="n">setMaximumHeight</span><span class="p">(</span><span class="mi">335</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">table_widget</span><span class="o">.</span><span class="n">setSizePolicy</span><span class="p">(</span><span class="n">QSizePolicy</span><span class="o">.</span><span class="n">Expanding</span><span class="p">,</span> <span class="n">QSizePolicy</span><span class="o">.</span><span class="n">Minimum</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">table_widget</span><span class="o">.</span><span class="n">cellClicked</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">table_item_clicked</span><span class="p">)</span>
+        <span class="n">main_layout</span><span class="o">.</span><span class="n">addWidget</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">table_widget</span><span class="p">,</span> <span class="n">stretch</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+
+        <span class="c1"># 訊息表格，顯示 LOTID、Org、Csv、Basemap 等資訊</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">info_table</span> <span class="o">=</span> <span class="n">QTableWidget</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>  <span class="c1"># 10 列用於顯示訊息，行數根據 LOTID 動態設置</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">info_table</span><span class="o">.</span><span class="n">setHorizontalHeaderLabels</span><span class="p">([</span><span class="s1">&#39;Product&#39;</span><span class="p">,</span> <span class="s1">&#39;LOT&#39;</span><span class="p">,</span> <span class="s1">&#39;Station&#39;</span><span class="p">,</span> <span class="s1">&#39;LOTID&#39;</span><span class="p">,</span> <span class="s1">&#39;Org&#39;</span><span class="p">,</span> <span class="s1">&#39;Csv&#39;</span><span class="p">,</span> <span class="s1">&#39;Basemap&#39;</span><span class="p">,</span> <span class="s1">&#39;Losemap&#39;</span><span class="p">,</span> <span class="s1">&#39;Bar&#39;</span><span class="p">,</span> <span class="s1">&#39;FPY&#39;</span><span class="p">])</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">info_table</span><span class="o">.</span><span class="n">verticalHeader</span><span class="p">()</span><span class="o">.</span><span class="n">setVisible</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>  <span class="c1"># 隱藏行號</span>
+
+        <span class="c1"># 設置每一欄的寬度</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">info_table</span><span class="o">.</span><span class="n">setColumnWidth</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>  <span class="c1"># Product</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">info_table</span><span class="o">.</span><span class="n">setColumnWidth</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>  <span class="c1"># LOT</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">info_table</span><span class="o">.</span><span class="n">setColumnWidth</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>  <span class="c1"># Station</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">info_table</span><span class="o">.</span><span class="n">setColumnWidth</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">135</span><span class="p">)</span>  <span class="c1"># LOTID</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">info_table</span><span class="o">.</span><span class="n">setColumnWidth</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">80</span><span class="p">)</span>   <span class="c1"># Org</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">info_table</span><span class="o">.</span><span class="n">setColumnWidth</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">80</span><span class="p">)</span>   <span class="c1"># Csv</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">info_table</span><span class="o">.</span><span class="n">setColumnWidth</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">80</span><span class="p">)</span>   <span class="c1"># Basemap</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">info_table</span><span class="o">.</span><span class="n">setColumnWidth</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">80</span><span class="p">)</span>   <span class="c1"># Losemap</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">info_table</span><span class="o">.</span><span class="n">setColumnWidth</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">80</span><span class="p">)</span>   <span class="c1"># Bar</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">info_table</span><span class="o">.</span><span class="n">setColumnWidth</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span> <span class="mi">80</span><span class="p">)</span>   <span class="c1"># FPY</span>
+        <span class="n">main_layout</span><span class="o">.</span><span class="n">addWidget</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">info_table</span><span class="p">)</span>
+
+        <span class="c1"># 下方的按鈕區域</span>
+        <span class="n">bottom_layout</span> <span class="o">=</span> <span class="n">QHBoxLayout</span><span class="p">()</span>
+
+        <span class="c1"># 在按鈕之間添加伸縮空間，讓按鈕平均分布</span>
+        <span class="n">bottom_layout</span><span class="o">.</span><span class="n">addStretch</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>  <span class="c1"># 添加一個伸縮空間</span>
+
+        <span class="n">single_ym_button</span> <span class="o">=</span> <span class="n">QPushButton</span><span class="p">(</span><span class="s1">&#39;Single Y&amp;M&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span>
+        <span class="n">single_ym_button</span><span class="o">.</span><span class="n">setStyleSheet</span><span class="p">(</span><span class="s2">&quot;background-color: tan; color: black;&quot;</span><span class="p">)</span>
+        <span class="n">single_ym_button</span><span class="o">.</span><span class="n">setFixedSize</span><span class="p">(</span><span class="mi">120</span><span class="p">,</span> <span class="mi">40</span><span class="p">)</span>
+        <span class="n">single_ym_button</span><span class="o">.</span><span class="n">clicked</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">run_single_ym</span><span class="p">)</span>
+        <span class="n">bottom_layout</span><span class="o">.</span><span class="n">addWidget</span><span class="p">(</span><span class="n">single_ym_button</span><span class="p">)</span>
+
+        <span class="n">bottom_layout</span><span class="o">.</span><span class="n">addStretch</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>  <span class="c1"># 添加一個伸縮空間</span>
+
+        <span class="n">button2</span> <span class="o">=</span> <span class="n">QPushButton</span><span class="p">(</span><span class="s1">&#39;Schedule Y&amp;M&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span>
+        <span class="n">button2</span><span class="o">.</span><span class="n">setStyleSheet</span><span class="p">(</span><span class="s2">&quot;background-color: tan; color: black;&quot;</span><span class="p">)</span>
+        <span class="n">button2</span><span class="o">.</span><span class="n">setFixedSize</span><span class="p">(</span><span class="mi">120</span><span class="p">,</span> <span class="mi">40</span><span class="p">)</span>
+        <span class="n">bottom_layout</span><span class="o">.</span><span class="n">addWidget</span><span class="p">(</span><span class="n">button2</span><span class="p">)</span>
+
+        <span class="n">bottom_layout</span><span class="o">.</span><span class="n">addStretch</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>  <span class="c1"># 添加一個伸縮空間</span>
+
+        <span class="n">button3</span> <span class="o">=</span> <span class="n">QPushButton</span><span class="p">(</span><span class="s1">&#39;Trigger Y&amp;M&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span>
+        <span class="n">button3</span><span class="o">.</span><span class="n">setStyleSheet</span><span class="p">(</span><span class="s2">&quot;background-color: tan; color: black;&quot;</span><span class="p">)</span>
+        <span class="n">button3</span><span class="o">.</span><span class="n">setFixedSize</span><span class="p">(</span><span class="mi">120</span><span class="p">,</span> <span class="mi">40</span><span class="p">)</span>
+        <span class="n">bottom_layout</span><span class="o">.</span><span class="n">addWidget</span><span class="p">(</span><span class="n">button3</span><span class="p">)</span>
+
+        <span class="n">bottom_layout</span><span class="o">.</span><span class="n">addStretch</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>  <span class="c1"># 添加一個伸縮空間</span>
+
+        <span class="n">button4</span> <span class="o">=</span> <span class="n">QPushButton</span><span class="p">(</span><span class="s1">&#39;Log output&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span>
+        <span class="n">button4</span><span class="o">.</span><span class="n">setStyleSheet</span><span class="p">(</span><span class="s2">&quot;background-color: tan; color: black;&quot;</span><span class="p">)</span>
+        <span class="n">button4</span><span class="o">.</span><span class="n">setFixedSize</span><span class="p">(</span><span class="mi">120</span><span class="p">,</span> <span class="mi">40</span><span class="p">)</span>
+        <span class="n">bottom_layout</span><span class="o">.</span><span class="n">addWidget</span><span class="p">(</span><span class="n">button4</span><span class="p">)</span>
+
+        <span class="n">bottom_layout</span><span class="o">.</span><span class="n">addStretch</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>  <span class="c1"># 添加一個伸縮空間</span>
+
+        <span class="n">button5</span> <span class="o">=</span> <span class="n">QPushButton</span><span class="p">(</span><span class="s1">&#39;Rawdata output&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span>
+        <span class="n">button5</span><span class="o">.</span><span class="n">setStyleSheet</span><span class="p">(</span><span class="s2">&quot;background-color: tan; color: black;&quot;</span><span class="p">)</span>
+        <span class="n">button5</span><span class="o">.</span><span class="n">setFixedSize</span><span class="p">(</span><span class="mi">120</span><span class="p">,</span> <span class="mi">40</span><span class="p">)</span>
+        <span class="n">bottom_layout</span><span class="o">.</span><span class="n">addWidget</span><span class="p">(</span><span class="n">button5</span><span class="p">)</span>
+
+        <span class="n">bottom_layout</span><span class="o">.</span><span class="n">addStretch</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>  <span class="c1"># 添加一個伸縮空間</span>
+
+        <span class="n">main_layout</span><span class="o">.</span><span class="n">addLayout</span><span class="p">(</span><span class="n">bottom_layout</span><span class="p">)</span>
+
+        <span class="c1"># 設置主布局</span>
+        <span class="n">main_layout</span><span class="o">.</span><span class="n">addLayout</span><span class="p">(</span><span class="n">bottom_layout</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">setLayout</span><span class="p">(</span><span class="n">main_layout</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">setWindowTitle</span><span class="p">(</span><span class="s2">&quot;Database Manager&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">setFixedWidth</span><span class="p">(</span><span class="mi">950</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">setMinimumHeight</span><span class="p">(</span><span class="mi">800</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="DatabaseManagerGUI.populate_table">
+<a class="viewcode-back" href="../api/main.html#main.DatabaseManagerGUI.populate_table">[文件]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">populate_table</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">table_widget</span><span class="p">,</span> <span class="n">base_dir</span><span class="p">):</span>
+        <span class="n">folder_names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;MT&#39;</span><span class="p">,</span> <span class="s1">&#39;DC2&#39;</span><span class="p">,</span> <span class="s1">&#39;INNER1&#39;</span><span class="p">,</span> <span class="s1">&#39;RDL&#39;</span><span class="p">,</span> <span class="s1">&#39;INNER2&#39;</span><span class="p">,</span> <span class="s1">&#39;CU&#39;</span><span class="p">,</span> <span class="s1">&#39;EMC&#39;</span><span class="p">]</span>
+
+        <span class="c1"># 遍歷 base_dir 資料夾</span>
+        <span class="k">for</span> <span class="n">product_folder</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">base_dir</span><span class="p">):</span>
+            <span class="n">product_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">base_dir</span><span class="p">,</span> <span class="n">product_folder</span><span class="p">)</span>
+            <span class="n">csv_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">product_path</span><span class="p">,</span> <span class="s1">&#39;csv&#39;</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">csv_path</span><span class="p">):</span>
+                <span class="k">for</span> <span class="n">lot_folder</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">csv_path</span><span class="p">):</span>
+                    <span class="n">lot_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">csv_path</span><span class="p">,</span> <span class="n">lot_folder</span><span class="p">)</span>
+                    <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">lot_path</span><span class="p">):</span>
+                        <span class="n">row_data</span> <span class="o">=</span> <span class="p">[</span><span class="n">product_folder</span><span class="p">,</span> <span class="n">lot_folder</span><span class="p">]</span>
+                        <span class="k">for</span> <span class="n">folder</span> <span class="ow">in</span> <span class="n">folder_names</span><span class="p">:</span>
+                            <span class="n">folder_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">lot_path</span><span class="p">,</span> <span class="n">folder</span><span class="p">)</span>
+                            <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">folder_path</span><span class="p">):</span>
+                                <span class="n">csv_count</span> <span class="o">=</span> <span class="nb">len</span><span class="p">([</span><span class="n">f</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">folder_path</span><span class="p">)</span> <span class="k">if</span> <span class="n">f</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">lot_folder</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span> <span class="ow">and</span> <span class="n">f</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;.csv&#39;</span><span class="p">)])</span>
+                                <span class="n">row_data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">csv_count</span><span class="si">}</span><span class="s2"> PCS&quot;</span><span class="p">)</span>
+                            <span class="k">else</span><span class="p">:</span>
+                                <span class="n">row_data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;0 PCS&quot;</span><span class="p">)</span>
+                        <span class="n">row_position</span> <span class="o">=</span> <span class="n">table_widget</span><span class="o">.</span><span class="n">rowCount</span><span class="p">()</span>
+                        <span class="n">table_widget</span><span class="o">.</span><span class="n">insertRow</span><span class="p">(</span><span class="n">row_position</span><span class="p">)</span>
+                        <span class="k">for</span> <span class="n">col</span><span class="p">,</span> <span class="n">data</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">row_data</span><span class="p">):</span>
+                            <span class="n">item</span> <span class="o">=</span> <span class="n">QTableWidgetItem</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+                            <span class="n">item</span><span class="o">.</span><span class="n">setTextAlignment</span><span class="p">(</span><span class="n">Qt</span><span class="o">.</span><span class="n">AlignCenter</span><span class="p">)</span>
+                            <span class="n">item</span><span class="o">.</span><span class="n">setFlags</span><span class="p">(</span><span class="n">item</span><span class="o">.</span><span class="n">flags</span><span class="p">()</span> <span class="o">&amp;</span> <span class="o">~</span><span class="n">Qt</span><span class="o">.</span><span class="n">ItemIsEditable</span><span class="p">)</span>
+                            <span class="n">table_widget</span><span class="o">.</span><span class="n">setItem</span><span class="p">(</span><span class="n">row_position</span><span class="p">,</span> <span class="n">col</span><span class="p">,</span> <span class="n">item</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="DatabaseManagerGUI.table_item_clicked">
+<a class="viewcode-back" href="../api/main.html#main.DatabaseManagerGUI.table_item_clicked">[文件]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">table_item_clicked</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">row</span><span class="p">,</span> <span class="n">col</span><span class="p">):</span>
+        <span class="c1"># 記錄選中的 product, number 和 type</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">selected_product</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">table_widget</span><span class="o">.</span><span class="n">item</span><span class="p">(</span><span class="n">row</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">text</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">selected_number</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">table_widget</span><span class="o">.</span><span class="n">item</span><span class="p">(</span><span class="n">row</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">text</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">selected_type</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">table_widget</span><span class="o">.</span><span class="n">horizontalHeaderItem</span><span class="p">(</span><span class="n">col</span><span class="p">)</span><span class="o">.</span><span class="n">text</span><span class="p">()</span>
+
+        <span class="c1"># 清空 info_table 並顯示對應 LOTID 的資料</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">info_table</span><span class="o">.</span><span class="n">setRowCount</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">populate_info_table</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">selected_product</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">selected_number</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">selected_type</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="DatabaseManagerGUI.populate_info_table">
+<a class="viewcode-back" href="../api/main.html#main.DatabaseManagerGUI.populate_info_table">[文件]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">populate_info_table</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">product_folder</span><span class="p">,</span> <span class="n">lot_folder</span><span class="p">,</span> <span class="n">folder_name</span><span class="p">):</span>
+        <span class="c1"># 獲取符合 rule_csv 的檔案</span>
+        <span class="n">csv_files</span> <span class="o">=</span> <span class="p">[</span><span class="n">f</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;D:/Database-PC/</span><span class="si">{</span><span class="n">product_folder</span><span class="si">}</span><span class="s2">/csv/</span><span class="si">{</span><span class="n">lot_folder</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">folder_name</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">))</span> <span class="k">if</span> <span class="n">f</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="n">lot_folder</span><span class="p">)</span> <span class="ow">and</span> <span class="n">f</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;.csv&#39;</span><span class="p">)]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">info_table</span><span class="o">.</span><span class="n">setRowCount</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">csv_files</span><span class="p">))</span>  <span class="c1"># 根據 LOTID 的數量創建對應的行</span>
+
+        <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">lotid</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">csv_files</span><span class="p">):</span>
+            <span class="n">lotid</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">splitext</span><span class="p">(</span><span class="n">lotid</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>  <span class="c1"># 去除文件的 .csv 副檔名</span>
+
+            <span class="c1"># 設置每一行的值</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">set_info_table_row</span><span class="p">(</span><span class="n">idx</span><span class="p">,</span> <span class="n">product_folder</span><span class="p">,</span> <span class="n">lot_folder</span><span class="p">,</span> <span class="n">folder_name</span><span class="p">,</span> <span class="n">lotid</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="DatabaseManagerGUI.set_info_table_row">
+<a class="viewcode-back" href="../api/main.html#main.DatabaseManagerGUI.set_info_table_row">[文件]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">set_info_table_row</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">idx</span><span class="p">,</span> <span class="n">product_folder</span><span class="p">,</span> <span class="n">lot_folder</span><span class="p">,</span> <span class="n">folder_name</span><span class="p">,</span> <span class="n">lotid</span><span class="p">):</span>
+        <span class="c1"># 設定表格內容並置中</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">info_table</span><span class="o">.</span><span class="n">setItem</span><span class="p">(</span><span class="n">idx</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">create_centered_item</span><span class="p">(</span><span class="n">product_folder</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">info_table</span><span class="o">.</span><span class="n">setItem</span><span class="p">(</span><span class="n">idx</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">create_centered_item</span><span class="p">(</span><span class="n">lot_folder</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">info_table</span><span class="o">.</span><span class="n">setItem</span><span class="p">(</span><span class="n">idx</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">create_centered_item</span><span class="p">(</span><span class="n">folder_name</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">info_table</span><span class="o">.</span><span class="n">setItem</span><span class="p">(</span><span class="n">idx</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">create_centered_item</span><span class="p">(</span><span class="n">lotid</span><span class="p">))</span>
+
+        <span class="c1"># Org 判斷</span>
+        <span class="n">org_folder</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;D:/Database-PC/</span><span class="si">{</span><span class="n">product_folder</span><span class="si">}</span><span class="s2">/org/</span><span class="si">{</span><span class="n">lot_folder</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">folder_name</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">lotid</span><span class="si">}</span><span class="s2">&quot;</span>
+        <span class="n">tif_files</span> <span class="o">=</span> <span class="nb">len</span><span class="p">([</span><span class="n">f</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">org_folder</span><span class="p">)</span> <span class="k">if</span> <span class="n">f</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;.tif&#39;</span><span class="p">)])</span> <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">org_folder</span><span class="p">)</span> <span class="k">else</span> <span class="mi">0</span>
+        <span class="n">org_status</span> <span class="o">=</span> <span class="s2">&quot;OK&quot;</span> <span class="k">if</span> <span class="n">tif_files</span> <span class="o">&gt;=</span> <span class="mi">7</span> <span class="k">else</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">tif_files</span><span class="si">}</span><span class="s2"> TIF files&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">info_table</span><span class="o">.</span><span class="n">setItem</span><span class="p">(</span><span class="n">idx</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">create_centered_item</span><span class="p">(</span><span class="n">org_status</span><span class="p">))</span>
+
+        <span class="c1"># Csv 判斷</span>
+        <span class="n">csv_path</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;D:/Database-PC/</span><span class="si">{</span><span class="n">product_folder</span><span class="si">}</span><span class="s2">/csv/</span><span class="si">{</span><span class="n">lot_folder</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">folder_name</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">lotid</span><span class="si">}</span><span class="s2">.csv&quot;</span>
+        <span class="n">csv_status</span> <span class="o">=</span> <span class="s2">&quot;OK&quot;</span> <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">csv_path</span><span class="p">)</span> <span class="k">else</span> <span class="s2">&quot;NONE&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">info_table</span><span class="o">.</span><span class="n">setItem</span><span class="p">(</span><span class="n">idx</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">create_centered_item</span><span class="p">(</span><span class="n">csv_status</span><span class="p">))</span>
+
+        <span class="c1"># Basemap 判斷</span>
+        <span class="n">basemap_path</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;D:/Database-PC/</span><span class="si">{</span><span class="n">product_folder</span><span class="si">}</span><span class="s2">/map/</span><span class="si">{</span><span class="n">lot_folder</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">folder_name</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">lotid</span><span class="si">}</span><span class="s2">.png&quot;</span>
+        <span class="n">basemap_status</span> <span class="o">=</span> <span class="s2">&quot;OK&quot;</span> <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">basemap_path</span><span class="p">)</span> <span class="k">else</span> <span class="s2">&quot;NONE&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">info_table</span><span class="o">.</span><span class="n">setItem</span><span class="p">(</span><span class="n">idx</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">create_centered_item</span><span class="p">(</span><span class="n">basemap_status</span><span class="p">))</span>
+
+        <span class="c1"># Losemap 判斷</span>
+        <span class="n">losemap_status</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_losemap_status</span><span class="p">(</span><span class="n">folder_name</span><span class="p">,</span> <span class="n">lotid</span><span class="p">,</span> <span class="n">product_folder</span><span class="p">,</span> <span class="n">lot_folder</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">info_table</span><span class="o">.</span><span class="n">setItem</span><span class="p">(</span><span class="n">idx</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">create_centered_item</span><span class="p">(</span><span class="n">losemap_status</span><span class="p">))</span>
+
+        <span class="c1"># Bar 判斷</span>
+        <span class="n">bar_path</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;D:/Database-PC/</span><span class="si">{</span><span class="n">product_folder</span><span class="si">}</span><span class="s2">/bar/</span><span class="si">{</span><span class="n">lot_folder</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">folder_name</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">folder_name</span><span class="si">}</span><span class="s2">.png&quot;</span>
+        <span class="n">bar_status</span> <span class="o">=</span> <span class="s2">&quot;OK&quot;</span> <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">bar_path</span><span class="p">)</span> <span class="k">else</span> <span class="s2">&quot;NONE&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">info_table</span><span class="o">.</span><span class="n">setItem</span><span class="p">(</span><span class="n">idx</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">create_centered_item</span><span class="p">(</span><span class="n">bar_status</span><span class="p">))</span>
+
+        <span class="c1"># FPY 判斷</span>
+        <span class="n">fpy_path</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;D:/Database-PC/</span><span class="si">{</span><span class="n">product_folder</span><span class="si">}</span><span class="s2">/map/</span><span class="si">{</span><span class="n">lot_folder</span><span class="si">}</span><span class="s2">/FPY/</span><span class="si">{</span><span class="n">lotid</span><span class="si">}</span><span class="s2">.png&quot;</span>
+        <span class="n">fpy_status</span> <span class="o">=</span> <span class="s2">&quot;OK&quot;</span> <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">fpy_path</span><span class="p">)</span> <span class="k">else</span> <span class="s2">&quot;NONE&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">info_table</span><span class="o">.</span><span class="n">setItem</span><span class="p">(</span><span class="n">idx</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">create_centered_item</span><span class="p">(</span><span class="n">fpy_status</span><span class="p">))</span>
+        <span class="n">fpy_path</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;D:/Database-PC/</span><span class="si">{</span><span class="n">product_folder</span><span class="si">}</span><span class="s2">/map/</span><span class="si">{</span><span class="n">lot_folder</span><span class="si">}</span><span class="s2">/FPY/</span><span class="si">{</span><span class="n">lotid</span><span class="si">}</span><span class="s2">.png&quot;</span>
+        <span class="n">fpy_status</span> <span class="o">=</span> <span class="s2">&quot;OK&quot;</span> <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">fpy_path</span><span class="p">)</span> <span class="k">else</span> <span class="s2">&quot;NONE&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">info_table</span><span class="o">.</span><span class="n">setItem</span><span class="p">(</span><span class="n">idx</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">create_centered_item</span><span class="p">(</span><span class="n">fpy_status</span><span class="p">))</span></div>
+
+
+<div class="viewcode-block" id="DatabaseManagerGUI.create_centered_item">
+<a class="viewcode-back" href="../api/main.html#main.DatabaseManagerGUI.create_centered_item">[文件]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">create_centered_item</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">text</span><span class="p">):</span>
+        <span class="c1"># 建立一個文字置中的 QTableWidgetItem</span>
+        <span class="n">item</span> <span class="o">=</span> <span class="n">QTableWidgetItem</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+        <span class="n">item</span><span class="o">.</span><span class="n">setTextAlignment</span><span class="p">(</span><span class="n">Qt</span><span class="o">.</span><span class="n">AlignCenter</span><span class="p">)</span>
+        <span class="n">item</span><span class="o">.</span><span class="n">setFlags</span><span class="p">(</span><span class="n">item</span><span class="o">.</span><span class="n">flags</span><span class="p">()</span> <span class="o">&amp;</span> <span class="o">~</span><span class="n">Qt</span><span class="o">.</span><span class="n">ItemIsEditable</span><span class="p">)</span>  <span class="c1"># 設為不可編輯</span>
+        <span class="k">return</span> <span class="n">item</span></div>
+
+
+<div class="viewcode-block" id="DatabaseManagerGUI.get_losemap_status">
+<a class="viewcode-back" href="../api/main.html#main.DatabaseManagerGUI.get_losemap_status">[文件]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">get_losemap_status</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">folder_name</span><span class="p">,</span> <span class="n">lotid</span><span class="p">,</span> <span class="n">product_folder</span><span class="p">,</span> <span class="n">lot_folder</span><span class="p">):</span>
+        <span class="c1"># 根據 folder_name 判斷 Losemap 狀態</span>
+        <span class="k">if</span> <span class="n">folder_name</span> <span class="o">==</span> <span class="s2">&quot;MT&quot;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="s2">&quot;N/A&quot;</span>
+        <span class="k">elif</span> <span class="n">folder_name</span> <span class="o">==</span> <span class="s2">&quot;DC2&quot;</span><span class="p">:</span>
+            <span class="n">losemap_path</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;D:/Database-PC/</span><span class="si">{</span><span class="n">product_folder</span><span class="si">}</span><span class="s2">/map/</span><span class="si">{</span><span class="n">lot_folder</span><span class="si">}</span><span class="s2">/LOSS1/</span><span class="si">{</span><span class="n">lotid</span><span class="si">}</span><span class="s2">.png&quot;</span>
+        <span class="k">elif</span> <span class="n">folder_name</span> <span class="o">==</span> <span class="s2">&quot;INNER1&quot;</span><span class="p">:</span>
+            <span class="n">losemap_path</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;D:/Database-PC/</span><span class="si">{</span><span class="n">product_folder</span><span class="si">}</span><span class="s2">/map/</span><span class="si">{</span><span class="n">lot_folder</span><span class="si">}</span><span class="s2">/LOSS2/</span><span class="si">{</span><span class="n">lotid</span><span class="si">}</span><span class="s2">.png&quot;</span>
+        <span class="k">elif</span> <span class="n">folder_name</span> <span class="o">==</span> <span class="s2">&quot;RDL&quot;</span><span class="p">:</span>
+            <span class="n">losemap_path</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;D:/Database-PC/</span><span class="si">{</span><span class="n">product_folder</span><span class="si">}</span><span class="s2">/map/</span><span class="si">{</span><span class="n">lot_folder</span><span class="si">}</span><span class="s2">/LOSS3/</span><span class="si">{</span><span class="n">lotid</span><span class="si">}</span><span class="s2">.png&quot;</span>
+        <span class="k">elif</span> <span class="n">folder_name</span> <span class="o">==</span> <span class="s2">&quot;INNER2&quot;</span><span class="p">:</span>
+            <span class="n">losemap_path</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;D:/Database-PC/</span><span class="si">{</span><span class="n">product_folder</span><span class="si">}</span><span class="s2">/map/</span><span class="si">{</span><span class="n">lot_folder</span><span class="si">}</span><span class="s2">/LOSS4/</span><span class="si">{</span><span class="n">lotid</span><span class="si">}</span><span class="s2">.png&quot;</span>
+        <span class="k">elif</span> <span class="n">folder_name</span> <span class="o">==</span> <span class="s2">&quot;CU&quot;</span><span class="p">:</span>
+            <span class="n">losemap_path</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;D:/Database-PC/</span><span class="si">{</span><span class="n">product_folder</span><span class="si">}</span><span class="s2">/map/</span><span class="si">{</span><span class="n">lot_folder</span><span class="si">}</span><span class="s2">/LOSS5/</span><span class="si">{</span><span class="n">lotid</span><span class="si">}</span><span class="s2">.png&quot;</span>
+        <span class="k">elif</span> <span class="n">folder_name</span> <span class="o">==</span> <span class="s2">&quot;EMC&quot;</span><span class="p">:</span>
+            <span class="n">losemap_path</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;D:/Database-PC/</span><span class="si">{</span><span class="n">product_folder</span><span class="si">}</span><span class="s2">/map/</span><span class="si">{</span><span class="n">lot_folder</span><span class="si">}</span><span class="s2">/LOSS6/</span><span class="si">{</span><span class="n">lotid</span><span class="si">}</span><span class="s2">.png&quot;</span>
+        <span class="k">return</span> <span class="s2">&quot;OK&quot;</span> <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">losemap_path</span><span class="p">)</span> <span class="k">else</span> <span class="s2">&quot;NONE&quot;</span></div>
+
+
+<div class="viewcode-block" id="DatabaseManagerGUI.run_single_ym">
+<a class="viewcode-back" href="../api/main.html#main.DatabaseManagerGUI.run_single_ym">[文件]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">run_single_ym</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1"># 檢查是否已選擇product, number 和 type</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">selected_product</span> <span class="ow">or</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">selected_number</span> <span class="ow">or</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">selected_type</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;請先選擇表格中的一項&quot;</span><span class="p">)</span>
+            <span class="k">return</span>
+
+        <span class="c1"># 執行 check.py 中的 process_task 函數，傳遞已選擇的 product, number, type</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;正在處理：</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">selected_product</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">selected_number</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">selected_type</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">check</span><span class="o">.</span><span class="n">process_task</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">selected_product</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">selected_number</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">selected_type</span><span class="p">)</span>  <span class="c1"># 執行 check 中的邏輯</span></div>
+</div>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">app</span> <span class="o">=</span> <span class="n">QApplication</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">)</span>
+    <span class="n">window</span> <span class="o">=</span> <span class="n">DatabaseManagerGUI</span><span class="p">()</span>
+    <span class="n">window</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+    <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">app</span><span class="o">.</span><span class="n">exec</span><span class="p">())</span>
+
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Frank.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

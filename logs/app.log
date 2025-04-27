@@ -1,0 +1,10 @@
+2025-04-24 22:41:21,347 - database_manager - INFO - 已載入資料庫快取: 4 產品, 5 批次, 235 元件
+2025-04-27 21:59:20,966 - database_manager - INFO - 已載入資料庫快取: 4 產品, 5 批次, 235 元件
+2025-04-27 21:59:21,165 - main - INFO - 日誌系統已初始化
+2025-04-27 21:59:21,166 - config_manager - INFO - 成功載入配置文件: c:\Users\Frank hsu\Desktop\database manager\dbmplus\config\settings.json
+2025-04-27 21:59:21,166 - database_manager - WARNING - 站點順序驗證失敗: 未配置的站點: {'LOSS2', 'LOSS1', 'RDLLED', 'MTLED', 'FPY', 'MTIC', 'LOSS4', 'LOSS3'}, 缺失的站點: {'EMC'}
+2025-04-27 21:59:21,166 - main - WARNING - 站點順序配置驗證失敗: {'status': False, 'station_order': ['MT', 'DC2', 'INNER1', 'RDL', 'INNER2', 'EMC'], 'all_stations_in_db': ['DC2', 'LOSS2', 'LOSS1', 'RDLLED', 'INNER2', 'MT', 'MTLED', 'FPY', 'RDL', 'MTIC', 'LOSS4', 'LOSS3', 'INNER1'], 'unconfigured_stations': ['LOSS2', 'LOSS1', 'RDLLED', 'MTLED', 'FPY', 'MTIC', 'LOSS4', 'LOSS3'], 'missing_stations': ['EMC']}
+2025-04-27 21:59:21,340 - qdarkstyle - INFO - QSS file successfully loaded.
+2025-04-27 21:59:21,373 - qdarkstyle - INFO - Found application patches to be applied.
+2025-04-27 21:59:21,375 - main - INFO - 已載入深色主題樣式
+2025-04-27 21:59:21,489 - main - INFO - 啟動 Database Manager Plus v1.0.0
