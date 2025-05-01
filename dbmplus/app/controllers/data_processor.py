@@ -125,7 +125,7 @@ class DataProcessor:
             logger.error(f"載入遮罩規則失敗: {e}")
             return []
     
-    def process_csv_header(self, file_path, skip_lines=20):
+    def process_csv_header(self, file_path, skiprows=20):
         """處理CSV檔案標頭，刪除標頭並重新格式化"""
         try:
             # 檢查檔案是否存在
@@ -139,7 +139,8 @@ class DataProcessor:
                 skip_lines = header_row
                 
             # 讀取並處理CSV
-            df = load_csv(file_path, skip_rows=skip_lines)
+            df = load_csv(file_path, skiprows=skip_lines)
+
             if df is None:
                 return False, "讀取CSV失敗"
                 
@@ -173,6 +174,18 @@ class DataProcessor:
         try:
             if not component.csv_path or not Path(component.csv_path).exists():
                 return False, "找不到CSV檔案"
+                
+            # 首先處理CSV標頭 - 確保標頭被正確處理
+            success, result = self.process_csv_header(component.csv_path)
+            if success:
+                # 更新處理後的CSV路徑
+                processed_csv_path = result
+                component.csv_path = processed_csv_path
+                db_manager.update_component(component)
+                logger.info(f"已處理CSV標頭: {processed_csv_path}")
+            else:
+                logger.warning(f"處理CSV標頭失敗: {result}")
+                # 繼續使用原始CSV路徑
                 
             # 讀取CSV資料
             df = load_csv(component.csv_path)
@@ -715,7 +728,40 @@ class DataProcessor:
                 status="開始"
             )
             
-            if task.task_type == "basemap":
+            if task.task_type == "process_csv":
+                # 處理CSV標頭 - 專門的CSV處理任務
+                if task.component_id:
+                    # 處理單個元件的CSV
+                    component = db_manager.get_component(task.lot_id, task.station, task.component_id)
+                    if component and component.csv_path:
+                        success, result = self.process_csv_header(component.csv_path)
+                        if success:
+                            # 更新處理後的CSV路徑
+                            component.csv_path = result
+                            db_manager.update_component(component)
+                            message = f"已處理CSV標頭: {result}"
+                        else:
+                            message = f"處理CSV標頭失敗: {result}"
+                    else:
+                        success, message = False, f"找不到元件或CSV路徑: {task.component_id}"
+                else:
+                    # 處理整個站點的所有CSV
+                    components = db_manager.get_components_by_lot_station(task.lot_id, task.station)
+                    total = len(components)
+                    success_count = 0
+                    
+                    for component in components:
+                        if component.csv_path and Path(component.csv_path).exists():
+                            result, processed_path = self.process_csv_header(component.csv_path)
+                            if result:
+                                component.csv_path = processed_path
+                                db_manager.update_component(component)
+                                success_count += 1
+                                
+                    success = success_count > 0
+                    message = f"已處理 {success_count}/{total} 個元件的CSV標頭"
+            
+            elif task.task_type == "basemap":
                 if task.component_id:
                     # 處理單個元件的 basemap
                     component = db_manager.get_component(task.lot_id, task.station, task.component_id)

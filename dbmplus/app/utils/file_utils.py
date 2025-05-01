@@ -73,55 +73,51 @@ def list_directories(directory):
     return [f for f in os.listdir(directory) if Path(directory / f).is_dir()]
 
 
-def load_csv(file_path: str) -> Optional[pd.DataFrame]:
+def load_csv(file_path: str, skiprows: int = 0) -> Optional[pd.DataFrame]:
     """
-    讀取CSV檔案為DataFrame
+    讀取CSV檔案為DataFrame，可選擇跳過開頭的行數
     
     Args:
         file_path: CSV檔案路徑
+        skiprows: 要跳過的行數（預設為 0）
         
     Returns:
         Optional[DataFrame]: 讀取的DataFrame或None（如果讀取失敗）
     """
     try:
-        # 首先嘗試標準讀取
-        return pd.read_csv(file_path)
-    except pd.errors.ParserError as e:
-        # 發生解析錯誤，可能是分隔符或欄位數量不一致
+        return pd.read_csv(file_path, skiprows=skiprows)
+    except pd.errors.ParserError:
         logger.warning(f"標準讀取CSV失敗: {file_path}, 嘗試替代方法...")
-        
+
         try:
-            # 嘗試使用更靈活的分隔符檢測
             with open(file_path, 'r') as f:
                 first_line = f.readline().strip()
-            
-            # 檢測可能的分隔符
+
             if '\t' in first_line:
-                separator = '\t'
+                sep = '\t'
             elif ',' in first_line:
-                separator = ','
+                sep = ','
             elif ';' in first_line:
-                separator = ';'
+                sep = ';'
             else:
-                separator = None
-                
-            if separator:
-                # 使用檢測到的分隔符再次嘗試
-                df = pd.read_csv(file_path, sep=separator, error_bad_lines=False, warn_bad_lines=True)
-                logger.info(f"使用分隔符 '{separator}' 成功讀取CSV: {file_path}")
+                sep = None
+
+            if sep:
+                df = pd.read_csv(file_path, sep=sep, skiprows=skiprows, on_bad_lines='skip')
+                logger.info(f"使用分隔符 '{sep}' 成功讀取CSV: {file_path}")
                 return df
-                
-            # 如果無法檢測到分隔符，嘗試其他方法
-            df = pd.read_csv(file_path, engine='python', on_bad_lines='skip')
+
+            df = pd.read_csv(file_path, skiprows=skiprows, engine='python', on_bad_lines='skip')
             logger.info(f"使用Python引擎成功讀取CSV: {file_path}")
             return df
-            
+
         except Exception as inner_e:
             logger.error(f"載入CSV檔案失敗: {file_path}, 錯誤: {str(inner_e)}")
             return None
     except Exception as e:
         logger.error(f"載入CSV檔案失敗: {file_path}, 錯誤: {str(e)}")
         return None
+
 
 
 def find_header_row(csv_path, header_columns=None):
