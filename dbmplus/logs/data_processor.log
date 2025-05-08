@@ -739,3 +739,167 @@
 2025-05-01 16:50:36,029 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
 2025-05-01 16:50:36,700 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010006_202504091051.png
 2025-05-01 16:50:36,731 - data_processor - INFO - 任務 887d840e-9316-4dd6-8bb5-6a46caa0604d 已完成: True - 已處理 20/20 個元件的 Basemap
+2025-05-08 16:21:45,368 - data_processor - INFO - 開始執行任務: 8c1443e4-94cb-4ca7-ac6f-813bd87d206f (basemap)
+2025-05-08 16:21:45,712 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010001_202504091029_PC1.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010001.csv
+2025-05-08 16:21:45,730 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010001.csv
+2025-05-08 16:21:45,772 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:21:46,364 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010001_202504091029_PC1.png
+2025-05-08 16:21:46,530 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010001_202504091029_PC2.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010001.csv
+2025-05-08 16:21:46,547 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010001.csv
+2025-05-08 16:21:46,591 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:21:47,079 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010001_202504091029_PC2.png
+2025-05-08 16:21:47,223 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010001_202504091029_PC4.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010001.csv
+2025-05-08 16:21:47,242 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010001.csv
+2025-05-08 16:21:47,277 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:21:47,743 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010001_202504091029_PC4.png
+2025-05-08 16:21:47,912 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010001_202504091032_PC3.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010001.csv
+2025-05-08 16:21:47,930 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010001.csv
+2025-05-08 16:21:47,972 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:21:48,469 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010001_202504091032_PC3.png
+2025-05-08 16:21:49,042 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010001_202504091051.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010001.csv
+2025-05-08 16:21:49,060 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010001.csv
+2025-05-08 16:21:49,185 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:21:49,957 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010001_202504091051.png
+2025-05-08 16:21:50,089 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010003_202504091033_PC4.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010003.csv
+2025-05-08 16:21:50,105 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010003.csv
+2025-05-08 16:21:50,135 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:21:50,668 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010003_202504091033_PC4.png
+2025-05-08 16:21:50,837 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010003_202504091034_PC1.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010003.csv
+2025-05-08 16:21:50,853 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010003.csv
+2025-05-08 16:21:50,892 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:21:51,370 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010003_202504091034_PC1.png
+2025-05-08 16:21:51,526 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010003_202504091034_PC2.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010003.csv
+2025-05-08 16:21:51,542 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010003.csv
+2025-05-08 16:21:51,579 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:21:52,097 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010003_202504091034_PC2.png
+2025-05-08 16:21:52,282 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010003_202504091037_PC3.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010003.csv
+2025-05-08 16:21:52,297 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010003.csv
+2025-05-08 16:21:52,341 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:21:52,811 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010003_202504091037_PC3.png
+2025-05-08 16:21:53,476 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010003_202504091051.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010003.csv
+2025-05-08 16:21:53,501 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010003.csv
+2025-05-08 16:21:53,655 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:21:54,679 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010003_202504091051.png
+2025-05-08 16:21:54,832 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010004_202504091038_PC4.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010004.csv
+2025-05-08 16:21:54,850 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010004.csv
+2025-05-08 16:21:54,890 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:21:55,547 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010004_202504091038_PC4.png
+2025-05-08 16:21:55,762 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010004_202504091039_PC1.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010004.csv
+2025-05-08 16:21:55,780 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010004.csv
+2025-05-08 16:21:55,822 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:21:56,403 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010004_202504091039_PC1.png
+2025-05-08 16:21:56,582 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010004_202504091039_PC2.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010004.csv
+2025-05-08 16:21:56,599 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010004.csv
+2025-05-08 16:21:56,653 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:21:57,367 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010004_202504091039_PC2.png
+2025-05-08 16:21:57,655 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010004_202504091042_PC3.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010004.csv
+2025-05-08 16:21:57,673 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010004.csv
+2025-05-08 16:21:57,726 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:21:58,603 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010004_202504091042_PC3.png
+2025-05-08 16:21:59,513 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010004_202504091051.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010004.csv
+2025-05-08 16:21:59,545 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010004.csv
+2025-05-08 16:21:59,704 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:22:00,601 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010004_202504091051.png
+2025-05-08 16:22:00,778 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010006_202504091044_PC1.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010006.csv
+2025-05-08 16:22:00,793 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010006.csv
+2025-05-08 16:22:00,834 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:22:01,376 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010006_202504091044_PC1.png
+2025-05-08 16:22:01,543 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010006_202504091044_PC2.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010006.csv
+2025-05-08 16:22:01,569 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010006.csv
+2025-05-08 16:22:01,631 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:22:02,393 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010006_202504091044_PC2.png
+2025-05-08 16:22:02,545 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010006_202504091044_PC4.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010006.csv
+2025-05-08 16:22:02,561 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010006.csv
+2025-05-08 16:22:02,599 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:22:03,147 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010006_202504091044_PC4.png
+2025-05-08 16:22:03,321 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010006_202504091047_PC3.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010006.csv
+2025-05-08 16:22:03,336 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010006.csv
+2025-05-08 16:22:03,383 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:22:04,053 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010006_202504091047_PC3.png
+2025-05-08 16:22:05,054 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010006_202504091051.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010006.csv
+2025-05-08 16:22:05,089 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010006.csv
+2025-05-08 16:22:05,324 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:22:06,681 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010006_202504091051.png
+2025-05-08 16:22:06,735 - data_processor - INFO - 任務 8c1443e4-94cb-4ca7-ac6f-813bd87d206f 已完成: True - 已處理 20/20 個元件的 Basemap
+2025-05-08 16:22:20,000 - data_processor - INFO - 開始執行任務: 80c19aa6-bb7b-433f-a95d-0033ae63abbe (basemap)
+2025-05-08 16:22:20,620 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010001.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010001.csv
+2025-05-08 16:22:20,639 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010001.csv
+2025-05-08 16:22:20,767 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:22:21,573 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010001_202504091029_PC1.png
+2025-05-08 16:22:22,118 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010001.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010001.csv
+2025-05-08 16:22:22,138 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010001.csv
+2025-05-08 16:22:22,270 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:22:23,052 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010001_202504091029_PC2.png
+2025-05-08 16:22:23,630 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010001.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010001.csv
+2025-05-08 16:22:23,650 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010001.csv
+2025-05-08 16:22:23,781 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:22:24,778 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010001_202504091029_PC4.png
+2025-05-08 16:22:25,802 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010001.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010001.csv
+2025-05-08 16:22:25,830 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010001.csv
+2025-05-08 16:22:26,044 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:22:27,407 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010001_202504091032_PC3.png
+2025-05-08 16:22:28,210 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010001.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010001.csv
+2025-05-08 16:22:28,236 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010001.csv
+2025-05-08 16:22:28,411 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:22:29,364 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010001_202504091051.png
+2025-05-08 16:22:30,029 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010003.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010003.csv
+2025-05-08 16:22:30,061 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010003.csv
+2025-05-08 16:22:30,202 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:22:31,187 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010003_202504091033_PC4.png
+2025-05-08 16:22:31,921 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010003.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010003.csv
+2025-05-08 16:22:31,945 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010003.csv
+2025-05-08 16:22:32,129 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:22:33,042 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010003_202504091034_PC1.png
+2025-05-08 16:22:33,698 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010003.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010003.csv
+2025-05-08 16:22:33,718 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010003.csv
+2025-05-08 16:22:33,888 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:22:35,154 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010003_202504091034_PC2.png
+2025-05-08 16:22:35,960 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010003.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010003.csv
+2025-05-08 16:22:35,986 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010003.csv
+2025-05-08 16:22:36,205 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:22:37,449 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010003_202504091037_PC3.png
+2025-05-08 16:22:38,354 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010003.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010003.csv
+2025-05-08 16:22:38,387 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010003.csv
+2025-05-08 16:22:38,599 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:22:39,803 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010003_202504091051.png
+2025-05-08 16:22:40,566 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010004.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010004.csv
+2025-05-08 16:22:40,584 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010004.csv
+2025-05-08 16:22:40,748 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:22:41,671 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010004_202504091038_PC4.png
+2025-05-08 16:22:42,348 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010004.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010004.csv
+2025-05-08 16:22:42,366 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010004.csv
+2025-05-08 16:22:42,544 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:22:43,554 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010004_202504091039_PC1.png
+2025-05-08 16:22:44,352 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010004.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010004.csv
+2025-05-08 16:22:44,388 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010004.csv
+2025-05-08 16:22:44,588 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:22:45,913 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010004_202504091039_PC2.png
+2025-05-08 16:22:46,841 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010004.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010004.csv
+2025-05-08 16:22:46,876 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010004.csv
+2025-05-08 16:22:47,094 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:22:48,373 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010004_202504091042_PC3.png
+2025-05-08 16:22:49,073 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010004.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010004.csv
+2025-05-08 16:22:49,101 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010004.csv
+2025-05-08 16:22:49,268 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:22:50,223 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010004_202504091051.png
+2025-05-08 16:22:50,848 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010006.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010006.csv
+2025-05-08 16:22:50,867 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010006.csv
+2025-05-08 16:22:51,040 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:22:51,978 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010006_202504091044_PC1.png
+2025-05-08 16:22:52,566 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010006.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010006.csv
+2025-05-08 16:22:52,585 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010006.csv
+2025-05-08 16:22:52,750 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:22:53,659 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010006_202504091044_PC2.png
+2025-05-08 16:22:54,514 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010006.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010006.csv
+2025-05-08 16:22:54,540 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010006.csv
+2025-05-08 16:22:54,750 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:22:55,968 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010006_202504091044_PC4.png
+2025-05-08 16:22:56,873 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010006.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010006.csv
+2025-05-08 16:22:56,907 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010006.csv
+2025-05-08 16:22:57,119 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:22:58,392 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010006_202504091047_PC3.png
+2025-05-08 16:22:59,322 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010006.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010006.csv
+2025-05-08 16:22:59,347 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010006.csv
+2025-05-08 16:22:59,495 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:23:00,386 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010006_202504091051.png
+2025-05-08 16:23:00,419 - data_processor - INFO - 任務 80c19aa6-bb7b-433f-a95d-0033ae63abbe 已完成: True - 已處理 20/20 個元件的 Basemap

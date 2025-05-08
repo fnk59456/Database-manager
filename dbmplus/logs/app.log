@@ -1899,3 +1899,348 @@
 2025-05-01 16:50:36,700 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
 2025-05-01 16:50:36,700 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010006_202504091051.png
 2025-05-01 16:50:36,731 - data_processor - INFO - 任務 887d840e-9316-4dd6-8bb5-6a46caa0604d 已完成: True - 已處理 20/20 個元件的 Basemap
+2025-05-07 15:55:04,441 - database_manager - INFO - 已載入資料庫快取: 2 產品, 9 批次, 1164 元件
+2025-05-07 15:55:04,593 - main - INFO - 日誌系統已初始化
+2025-05-07 15:55:04,593 - config_manager - INFO - 成功載入配置文件: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\config\settings.json
+2025-05-07 15:55:04,593 - database_manager - WARNING - 站點順序驗證失敗: 未配置的站點: {'LOSS2', 'LOSS5', 'LOSS6', 'FPY', 'LOSS4', 'LOSS1', 'LOSS3', 'CU'}, 缺失的站點: set()
+2025-05-07 15:55:04,593 - main - WARNING - 站點順序配置驗證失敗: {'status': False, 'station_order': ['MT', 'DC2', 'INNER1', 'RDL', 'INNER2', 'EMC'], 'all_stations_in_db': ['LOSS2', 'INNER2', 'LOSS5', 'RDL', 'LOSS6', 'FPY', 'EMC', 'LOSS4', 'INNER1', 'DC2', 'LOSS1', 'MT', 'LOSS3', 'CU'], 'unconfigured_stations': ['LOSS2', 'LOSS5', 'LOSS6', 'FPY', 'LOSS4', 'LOSS1', 'LOSS3', 'CU'], 'missing_stations': []}
+2025-05-07 15:55:04,779 - qdarkstyle - INFO - QSS file successfully loaded.
+2025-05-07 15:55:04,821 - qdarkstyle - INFO - Found application patches to be applied.
+2025-05-07 15:55:04,821 - main - INFO - 已載入深色主題樣式
+2025-05-07 15:55:04,987 - main - INFO - 啟動 Database Manager Plus v1.0.0
+2025-05-08 16:20:47,807 - database_manager - INFO - 已載入資料庫快取: 2 產品, 9 批次, 1164 元件
+2025-05-08 16:20:47,918 - main - INFO - 日誌系統已初始化
+2025-05-08 16:20:47,918 - config_manager - INFO - 成功載入配置文件: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\config\settings.json
+2025-05-08 16:20:47,918 - database_manager - WARNING - 站點順序驗證失敗: 未配置的站點: {'CU', 'FPY', 'LOSS2', 'LOSS3', 'LOSS5', 'LOSS6', 'LOSS1', 'LOSS4'}, 缺失的站點: set()
+2025-05-08 16:20:47,934 - main - WARNING - 站點順序配置驗證失敗: {'status': False, 'station_order': ['MT', 'DC2', 'INNER1', 'RDL', 'INNER2', 'EMC'], 'all_stations_in_db': ['CU', 'INNER1', 'RDL', 'FPY', 'INNER2', 'LOSS2', 'LOSS3', 'EMC', 'MT', 'LOSS5', 'DC2', 'LOSS6', 'LOSS1', 'LOSS4'], 'unconfigured_stations': ['CU', 'FPY', 'LOSS2', 'LOSS3', 'LOSS5', 'LOSS6', 'LOSS1', 'LOSS4'], 'missing_stations': []}
+2025-05-08 16:20:48,086 - qdarkstyle - INFO - QSS file successfully loaded.
+2025-05-08 16:20:48,138 - qdarkstyle - INFO - Found application patches to be applied.
+2025-05-08 16:20:48,138 - main - INFO - 已載入深色主題樣式
+2025-05-08 16:20:48,279 - main - INFO - 啟動 Database Manager Plus v1.0.0
+2025-05-08 16:21:41,797 - database_manager - INFO - 開始掃描資料庫...
+2025-05-08 16:21:41,913 - database_manager - INFO - 資料庫掃描完成: 2 產品, 9 批次, 1164 元件
+2025-05-08 16:21:41,914 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:21:45,368 - data_processor - INFO - 開始執行任務: 8c1443e4-94cb-4ca7-ac6f-813bd87d206f (basemap)
+2025-05-08 16:21:45,712 - file_utils - INFO - 成功保存CSV檔案: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010001.csv
+2025-05-08 16:21:45,712 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010001_202504091029_PC1.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010001.csv
+2025-05-08 16:21:45,729 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:21:45,730 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010001.csv
+2025-05-08 16:21:45,772 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:21:46,344 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010001_202504091029_PC1.png
+2025-05-08 16:21:46,363 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:21:46,364 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010001_202504091029_PC1.png
+2025-05-08 16:21:46,530 - file_utils - INFO - 成功保存CSV檔案: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010001.csv
+2025-05-08 16:21:46,530 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010001_202504091029_PC2.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010001.csv
+2025-05-08 16:21:46,547 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:21:46,547 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010001.csv
+2025-05-08 16:21:46,591 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:21:47,060 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010001_202504091029_PC2.png
+2025-05-08 16:21:47,078 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:21:47,079 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010001_202504091029_PC2.png
+2025-05-08 16:21:47,222 - file_utils - INFO - 成功保存CSV檔案: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010001.csv
+2025-05-08 16:21:47,223 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010001_202504091029_PC4.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010001.csv
+2025-05-08 16:21:47,242 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:21:47,242 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010001.csv
+2025-05-08 16:21:47,277 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:21:47,725 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010001_202504091029_PC4.png
+2025-05-08 16:21:47,742 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:21:47,743 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010001_202504091029_PC4.png
+2025-05-08 16:21:47,912 - file_utils - INFO - 成功保存CSV檔案: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010001.csv
+2025-05-08 16:21:47,912 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010001_202504091032_PC3.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010001.csv
+2025-05-08 16:21:47,929 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:21:47,930 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010001.csv
+2025-05-08 16:21:47,972 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:21:48,437 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010001_202504091032_PC3.png
+2025-05-08 16:21:48,469 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:21:48,469 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010001_202504091032_PC3.png
+2025-05-08 16:21:49,041 - file_utils - INFO - 成功保存CSV檔案: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010001.csv
+2025-05-08 16:21:49,042 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010001_202504091051.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010001.csv
+2025-05-08 16:21:49,059 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:21:49,060 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010001.csv
+2025-05-08 16:21:49,185 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:21:49,938 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010001_202504091051.png
+2025-05-08 16:21:49,956 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:21:49,957 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010001_202504091051.png
+2025-05-08 16:21:50,089 - file_utils - INFO - 成功保存CSV檔案: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010003.csv
+2025-05-08 16:21:50,089 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010003_202504091033_PC4.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010003.csv
+2025-05-08 16:21:50,104 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:21:50,105 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010003.csv
+2025-05-08 16:21:50,135 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:21:50,652 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010003_202504091033_PC4.png
+2025-05-08 16:21:50,667 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:21:50,668 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010003_202504091033_PC4.png
+2025-05-08 16:21:50,836 - file_utils - INFO - 成功保存CSV檔案: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010003.csv
+2025-05-08 16:21:50,837 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010003_202504091034_PC1.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010003.csv
+2025-05-08 16:21:50,853 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:21:50,853 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010003.csv
+2025-05-08 16:21:50,892 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:21:51,354 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010003_202504091034_PC1.png
+2025-05-08 16:21:51,369 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:21:51,370 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010003_202504091034_PC1.png
+2025-05-08 16:21:51,525 - file_utils - INFO - 成功保存CSV檔案: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010003.csv
+2025-05-08 16:21:51,526 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010003_202504091034_PC2.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010003.csv
+2025-05-08 16:21:51,541 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:21:51,542 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010003.csv
+2025-05-08 16:21:51,579 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:21:52,080 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010003_202504091034_PC2.png
+2025-05-08 16:21:52,096 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:21:52,097 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010003_202504091034_PC2.png
+2025-05-08 16:21:52,282 - file_utils - INFO - 成功保存CSV檔案: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010003.csv
+2025-05-08 16:21:52,282 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010003_202504091037_PC3.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010003.csv
+2025-05-08 16:21:52,297 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:21:52,297 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010003.csv
+2025-05-08 16:21:52,341 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:21:52,795 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010003_202504091037_PC3.png
+2025-05-08 16:21:52,811 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:21:52,811 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010003_202504091037_PC3.png
+2025-05-08 16:21:53,475 - file_utils - INFO - 成功保存CSV檔案: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010003.csv
+2025-05-08 16:21:53,476 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010003_202504091051.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010003.csv
+2025-05-08 16:21:53,500 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:21:53,501 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010003.csv
+2025-05-08 16:21:53,655 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:21:54,658 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010003_202504091051.png
+2025-05-08 16:21:54,678 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:21:54,679 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010003_202504091051.png
+2025-05-08 16:21:54,831 - file_utils - INFO - 成功保存CSV檔案: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010004.csv
+2025-05-08 16:21:54,832 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010004_202504091038_PC4.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010004.csv
+2025-05-08 16:21:54,849 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:21:54,850 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010004.csv
+2025-05-08 16:21:54,890 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:21:55,529 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010004_202504091038_PC4.png
+2025-05-08 16:21:55,547 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:21:55,547 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010004_202504091038_PC4.png
+2025-05-08 16:21:55,762 - file_utils - INFO - 成功保存CSV檔案: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010004.csv
+2025-05-08 16:21:55,762 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010004_202504091039_PC1.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010004.csv
+2025-05-08 16:21:55,780 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:21:55,780 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010004.csv
+2025-05-08 16:21:55,822 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:21:56,383 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010004_202504091039_PC1.png
+2025-05-08 16:21:56,402 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:21:56,403 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010004_202504091039_PC1.png
+2025-05-08 16:21:56,581 - file_utils - INFO - 成功保存CSV檔案: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010004.csv
+2025-05-08 16:21:56,582 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010004_202504091039_PC2.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010004.csv
+2025-05-08 16:21:56,598 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:21:56,599 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010004.csv
+2025-05-08 16:21:56,653 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:21:57,337 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010004_202504091039_PC2.png
+2025-05-08 16:21:57,366 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:21:57,367 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010004_202504091039_PC2.png
+2025-05-08 16:21:57,654 - file_utils - INFO - 成功保存CSV檔案: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010004.csv
+2025-05-08 16:21:57,655 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010004_202504091042_PC3.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010004.csv
+2025-05-08 16:21:57,672 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:21:57,673 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010004.csv
+2025-05-08 16:21:57,726 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:21:58,573 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010004_202504091042_PC3.png
+2025-05-08 16:21:58,603 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:21:58,603 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010004_202504091042_PC3.png
+2025-05-08 16:21:59,513 - file_utils - INFO - 成功保存CSV檔案: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010004.csv
+2025-05-08 16:21:59,513 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010004_202504091051.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010004.csv
+2025-05-08 16:21:59,544 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:21:59,545 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010004.csv
+2025-05-08 16:21:59,704 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:22:00,583 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010004_202504091051.png
+2025-05-08 16:22:00,600 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:22:00,601 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010004_202504091051.png
+2025-05-08 16:22:00,777 - file_utils - INFO - 成功保存CSV檔案: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010006.csv
+2025-05-08 16:22:00,778 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010006_202504091044_PC1.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010006.csv
+2025-05-08 16:22:00,792 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:22:00,793 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010006.csv
+2025-05-08 16:22:00,834 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:22:01,353 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010006_202504091044_PC1.png
+2025-05-08 16:22:01,376 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:22:01,376 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010006_202504091044_PC1.png
+2025-05-08 16:22:01,542 - file_utils - INFO - 成功保存CSV檔案: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010006.csv
+2025-05-08 16:22:01,543 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010006_202504091044_PC2.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010006.csv
+2025-05-08 16:22:01,568 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:22:01,569 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010006.csv
+2025-05-08 16:22:01,631 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:22:02,369 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010006_202504091044_PC2.png
+2025-05-08 16:22:02,392 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:22:02,393 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010006_202504091044_PC2.png
+2025-05-08 16:22:02,545 - file_utils - INFO - 成功保存CSV檔案: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010006.csv
+2025-05-08 16:22:02,545 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010006_202504091044_PC4.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010006.csv
+2025-05-08 16:22:02,561 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:22:02,561 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010006.csv
+2025-05-08 16:22:02,599 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:22:03,131 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010006_202504091044_PC4.png
+2025-05-08 16:22:03,147 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:22:03,147 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010006_202504091044_PC4.png
+2025-05-08 16:22:03,320 - file_utils - INFO - 成功保存CSV檔案: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010006.csv
+2025-05-08 16:22:03,321 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010006_202504091047_PC3.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010006.csv
+2025-05-08 16:22:03,336 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:22:03,336 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010006.csv
+2025-05-08 16:22:03,383 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:22:04,021 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010006_202504091047_PC3.png
+2025-05-08 16:22:04,052 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:22:04,053 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010006_202504091047_PC3.png
+2025-05-08 16:22:05,053 - file_utils - INFO - 成功保存CSV檔案: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010006.csv
+2025-05-08 16:22:05,054 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010006_202504091051.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010006.csv
+2025-05-08 16:22:05,088 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:22:05,089 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010006.csv
+2025-05-08 16:22:05,324 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:22:06,658 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010006_202504091051.png
+2025-05-08 16:22:06,680 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:22:06,681 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010006_202504091051.png
+2025-05-08 16:22:06,735 - data_processor - INFO - 任務 8c1443e4-94cb-4ca7-ac6f-813bd87d206f 已完成: True - 已處理 20/20 個元件的 Basemap
+2025-05-08 16:22:20,000 - data_processor - INFO - 開始執行任務: 80c19aa6-bb7b-433f-a95d-0033ae63abbe (basemap)
+2025-05-08 16:22:20,619 - file_utils - INFO - 成功保存CSV檔案: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010001.csv
+2025-05-08 16:22:20,620 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010001.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010001.csv
+2025-05-08 16:22:20,638 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:22:20,639 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010001.csv
+2025-05-08 16:22:20,767 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:22:21,554 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010001_202504091029_PC1.png
+2025-05-08 16:22:21,573 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:22:21,573 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010001_202504091029_PC1.png
+2025-05-08 16:22:22,117 - file_utils - INFO - 成功保存CSV檔案: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010001.csv
+2025-05-08 16:22:22,118 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010001.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010001.csv
+2025-05-08 16:22:22,137 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:22:22,138 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010001.csv
+2025-05-08 16:22:22,270 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:22:23,032 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010001_202504091029_PC2.png
+2025-05-08 16:22:23,051 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:22:23,052 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010001_202504091029_PC2.png
+2025-05-08 16:22:23,629 - file_utils - INFO - 成功保存CSV檔案: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010001.csv
+2025-05-08 16:22:23,630 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010001.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010001.csv
+2025-05-08 16:22:23,649 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:22:23,650 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010001.csv
+2025-05-08 16:22:23,781 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:22:24,737 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010001_202504091029_PC4.png
+2025-05-08 16:22:24,777 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:22:24,778 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010001_202504091029_PC4.png
+2025-05-08 16:22:25,802 - file_utils - INFO - 成功保存CSV檔案: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010001.csv
+2025-05-08 16:22:25,802 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010001.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010001.csv
+2025-05-08 16:22:25,829 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:22:25,830 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010001.csv
+2025-05-08 16:22:26,044 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:22:27,374 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010001_202504091032_PC3.png
+2025-05-08 16:22:27,406 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:22:27,407 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010001_202504091032_PC3.png
+2025-05-08 16:22:28,209 - file_utils - INFO - 成功保存CSV檔案: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010001.csv
+2025-05-08 16:22:28,210 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010001.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010001.csv
+2025-05-08 16:22:28,235 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:22:28,236 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010001.csv
+2025-05-08 16:22:28,411 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:22:29,346 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010001_202504091051.png
+2025-05-08 16:22:29,363 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:22:29,364 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010001_202504091051.png
+2025-05-08 16:22:30,028 - file_utils - INFO - 成功保存CSV檔案: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010003.csv
+2025-05-08 16:22:30,029 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010003.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010003.csv
+2025-05-08 16:22:30,060 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:22:30,061 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010003.csv
+2025-05-08 16:22:30,202 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:22:31,166 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010003_202504091033_PC4.png
+2025-05-08 16:22:31,186 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:22:31,187 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010003_202504091033_PC4.png
+2025-05-08 16:22:31,920 - file_utils - INFO - 成功保存CSV檔案: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010003.csv
+2025-05-08 16:22:31,921 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010003.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010003.csv
+2025-05-08 16:22:31,944 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:22:31,945 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010003.csv
+2025-05-08 16:22:32,129 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:22:33,021 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010003_202504091034_PC1.png
+2025-05-08 16:22:33,042 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:22:33,042 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010003_202504091034_PC1.png
+2025-05-08 16:22:33,698 - file_utils - INFO - 成功保存CSV檔案: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010003.csv
+2025-05-08 16:22:33,698 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010003.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010003.csv
+2025-05-08 16:22:33,718 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:22:33,718 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010003.csv
+2025-05-08 16:22:33,888 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:22:35,121 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010003_202504091034_PC2.png
+2025-05-08 16:22:35,153 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:22:35,154 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010003_202504091034_PC2.png
+2025-05-08 16:22:35,960 - file_utils - INFO - 成功保存CSV檔案: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010003.csv
+2025-05-08 16:22:35,960 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010003.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010003.csv
+2025-05-08 16:22:35,985 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:22:35,986 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010003.csv
+2025-05-08 16:22:36,205 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:22:37,414 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010003_202504091037_PC3.png
+2025-05-08 16:22:37,448 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:22:37,449 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010003_202504091037_PC3.png
+2025-05-08 16:22:38,353 - file_utils - INFO - 成功保存CSV檔案: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010003.csv
+2025-05-08 16:22:38,354 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010003.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010003.csv
+2025-05-08 16:22:38,386 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:22:38,387 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010003.csv
+2025-05-08 16:22:38,599 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:22:39,784 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010003_202504091051.png
+2025-05-08 16:22:39,802 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:22:39,803 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010003_202504091051.png
+2025-05-08 16:22:40,565 - file_utils - INFO - 成功保存CSV檔案: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010004.csv
+2025-05-08 16:22:40,566 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010004.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010004.csv
+2025-05-08 16:22:40,584 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:22:40,584 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010004.csv
+2025-05-08 16:22:40,748 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:22:41,651 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010004_202504091038_PC4.png
+2025-05-08 16:22:41,670 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:22:41,671 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010004_202504091038_PC4.png
+2025-05-08 16:22:42,347 - file_utils - INFO - 成功保存CSV檔案: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010004.csv
+2025-05-08 16:22:42,348 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010004.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010004.csv
+2025-05-08 16:22:42,365 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:22:42,366 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010004.csv
+2025-05-08 16:22:42,544 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:22:43,536 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010004_202504091039_PC1.png
+2025-05-08 16:22:43,554 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:22:43,554 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010004_202504091039_PC1.png
+2025-05-08 16:22:44,351 - file_utils - INFO - 成功保存CSV檔案: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010004.csv
+2025-05-08 16:22:44,352 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010004.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010004.csv
+2025-05-08 16:22:44,387 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:22:44,388 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010004.csv
+2025-05-08 16:22:44,588 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:22:45,877 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010004_202504091039_PC2.png
+2025-05-08 16:22:45,912 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:22:45,913 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010004_202504091039_PC2.png
+2025-05-08 16:22:46,840 - file_utils - INFO - 成功保存CSV檔案: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010004.csv
+2025-05-08 16:22:46,841 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010004.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010004.csv
+2025-05-08 16:22:46,875 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:22:46,876 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010004.csv
+2025-05-08 16:22:47,094 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:22:48,339 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010004_202504091042_PC3.png
+2025-05-08 16:22:48,373 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:22:48,373 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010004_202504091042_PC3.png
+2025-05-08 16:22:49,073 - file_utils - INFO - 成功保存CSV檔案: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010004.csv
+2025-05-08 16:22:49,073 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010004.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010004.csv
+2025-05-08 16:22:49,100 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:22:49,101 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010004.csv
+2025-05-08 16:22:49,268 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:22:50,203 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010004_202504091051.png
+2025-05-08 16:22:50,222 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:22:50,223 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010004_202504091051.png
+2025-05-08 16:22:50,847 - file_utils - INFO - 成功保存CSV檔案: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010006.csv
+2025-05-08 16:22:50,848 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010006.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010006.csv
+2025-05-08 16:22:50,867 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:22:50,867 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010006.csv
+2025-05-08 16:22:51,040 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:22:51,961 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010006_202504091044_PC1.png
+2025-05-08 16:22:51,978 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:22:51,978 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010006_202504091044_PC1.png
+2025-05-08 16:22:52,565 - file_utils - INFO - 成功保存CSV檔案: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010006.csv
+2025-05-08 16:22:52,566 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010006.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010006.csv
+2025-05-08 16:22:52,585 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:22:52,585 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010006.csv
+2025-05-08 16:22:52,750 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:22:53,638 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010006_202504091044_PC2.png
+2025-05-08 16:22:53,659 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:22:53,659 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010006_202504091044_PC2.png
+2025-05-08 16:22:54,513 - file_utils - INFO - 成功保存CSV檔案: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010006.csv
+2025-05-08 16:22:54,514 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010006.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010006.csv
+2025-05-08 16:22:54,539 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:22:54,540 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010006.csv
+2025-05-08 16:22:54,750 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:22:55,948 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010006_202504091044_PC4.png
+2025-05-08 16:22:55,967 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:22:55,968 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010006_202504091044_PC4.png
+2025-05-08 16:22:56,873 - file_utils - INFO - 成功保存CSV檔案: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010006.csv
+2025-05-08 16:22:56,873 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010006.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010006.csv
+2025-05-08 16:22:56,907 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:22:56,907 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010006.csv
+2025-05-08 16:22:57,119 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:22:58,363 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010006_202504091047_PC3.png
+2025-05-08 16:22:58,391 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:22:58,392 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010006_202504091047_PC3.png
+2025-05-08 16:22:59,321 - file_utils - INFO - 成功保存CSV檔案: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010006.csv
+2025-05-08 16:22:59,322 - data_processor - INFO - 成功處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010006.csv -> D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010006.csv
+2025-05-08 16:22:59,345 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:22:59,347 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010006.csv
+2025-05-08 16:22:59,495 - data_processor - WARNING - 找不到站點 MT 的遮罩規則檔案
+2025-05-08 16:23:00,356 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010006_202504091051.png
+2025-05-08 16:23:00,386 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-08 16:23:00,386 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010006_202504091051.png
+2025-05-08 16:23:00,419 - data_processor - INFO - 任務 80c19aa6-bb7b-433f-a95d-0033ae63abbe 已完成: True - 已處理 20/20 個元件的 Basemap
