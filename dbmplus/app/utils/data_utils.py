@@ -5,6 +5,8 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from pathlib import Path
+import json
+import csv
 from .logger import get_logger
 from .config_manager import config
 
@@ -164,6 +166,43 @@ def plot_basemap(df, output_path, title=None, plot_config=None):
                 }
             }
         
+        # 從databasemanager格式配置中提取所需參數
+        if 'map_configurations' in plot_config:
+            # 處理databasemanager格式的配置
+            map_configs = plot_config.get('map_configurations', {})
+            # 獲取第一個站點的配置或使用默認MT
+            station_config = None
+            for station_key in map_configs:
+                station_config = map_configs[station_key]
+                break
+            
+            if not station_config:
+                station_config = map_configs.get('MT', {})
+            
+            if station_config:
+                color_map = station_config.get('colors', {})
+                plot_config['colors'] = color_map
+        
+        # 處理其他databasemanager格式參數
+        if 'map_size' in plot_config:
+            # 如果是元組格式，直接使用
+            if isinstance(plot_config['map_size'], list):
+                plot_config['map_size'] = tuple(plot_config['map_size'])
+        else:
+            plot_config['map_size'] = (20, 20)
+            
+        # 處理點大小
+        if 'original_size' in plot_config:
+            plot_config['point_size'] = plot_config['original_size'] / 15
+        
+        # 軸反轉配置
+        if 'invert_x_axis' in plot_config:
+            plot_config['invert_x_axis'] = plot_config['invert_x_axis']
+            
+        # 標題字號
+        if 'title_fontsize' in plot_config:
+            plot_config['title_fontsize'] = plot_config['title_fontsize']
+        
         # 根據缺陷類型設置顏色
         df_sorted = df.sort_values(by=['Col', 'Row'])
         color_map = plot_config.get('colors', {})
@@ -204,8 +243,7 @@ def plot_basemap(df, output_path, title=None, plot_config=None):
         ax.legend(title='Defect Type', loc='center left', bbox_to_anchor=(1, 0.5))
         
         # 軸反轉
-        if plot_config.get('invert_y_axis', True):
-            ax.invert_yaxis()
+        ax.invert_yaxis()  # Y軸始終反轉
         if plot_config.get('invert_x_axis', False):
             ax.invert_xaxis()
         
@@ -394,4 +432,84 @@ def plot_fpy_bar(summary_df, output_path):
             plt.close()
         except:
             pass
-        return False 
+        return False
+
+
+def check_csv_alignment(csv_path, recipe, align_config):
+    """
+    檢查CSV檔案是否符合對齊要求 (類似 rawdata_check.py)
+    
+    Args:
+        csv_path: CSV檔案路徑
+        recipe: 對齊配方名稱，例如 'Sapphire A'
+        align_config: 對齊配置字典
+        
+    Returns:
+        Tuple[str, str]: ('success'|'fail'|'error', 詳細訊息)
+    """
+    try:
+        # 讀取檔案前1KB，檢查標頭
+        with open(csv_path, 'r', encoding='utf-8', errors='ignore') as f:
+            content = f.read(1024)
+            
+        # 獲取配方的對齊關鍵字
+        keys = align_config.get(recipe, [])
+        if not keys:
+            logger.warning(f"找不到配方 {recipe} 的對齊關鍵字")
+            return "error", f"找不到配方 {recipe} 的對齊關鍵字"
+            
+        # 檢查關鍵字是否存在
+        for key in keys:
+            if key in content:
+                logger.info(f"檔案 {csv_path} 符合對齊要求，找到關鍵字: {key}")
+                return "success", "對齊正確"
+                
+        logger.warning(f"檔案 {csv_path} 不符合對齊要求，找不到關鍵字: {keys}")
+        return "fail", f"找不到對齊關鍵字: {', '.join(keys)}"
+        
+    except Exception as e:
+        logger.error(f"檢查CSV對齊時發生錯誤: {e}")
+        return "error", f"檢查失敗: {str(e)}"
+
+
+def find_header_row(file_path, max_lines=30):
+    """
+    智能查找CSV檔案中的標頭行
+    
+    Args:
+        file_path: CSV檔案路徑
+        max_lines: 最大檢查行數
+        
+    Returns:
+        int: 標頭行號，如果找不到則返回None
+    """
+    try:
+        with open(file_path, 'r', encoding='utf-8', errors='ignore') as f:
+            lines = []
+            for i in range(max_lines):
+                line = f.readline()
+                if not line:
+                    break
+                lines.append(line.strip())
+        
+        # 尋找包含 "Row", "Col", "DefectType" 的行
+        for i, line in enumerate(lines):
+            if all(field in line for field in ["Row", "Col", "DefectType"]):
+                logger.info(f"在第 {i} 行找到標頭")
+                return i
+                
+        # 第二種啟發式: 尋找包含大量逗號的行
+        comma_counts = [line.count(',') for line in lines]
+        if comma_counts:
+            max_commas = max(comma_counts)
+            if max_commas > 3:  # 假設至少需要有4列
+                header_idx = comma_counts.index(max_commas)
+                logger.info(f"根據逗號數量，在第 {header_idx} 行找到可能的標頭")
+                return header_idx
+                
+        logger.warning(f"在檔案 {file_path} 中找不到標頭行")
+        return None
+        
+    except Exception as e:
+        logger.error(f"查找標頭行時發生錯誤: {e}")
+        return None 

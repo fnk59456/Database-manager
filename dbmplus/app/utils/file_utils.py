@@ -218,4 +218,53 @@ def extract_component_from_filename(filename):
     match = AOI_FILENAME_PATTERN.match(filename)
     if match:
         return match.group(1)
-    return None 
+    return None
+
+
+def remove_header_and_rename(file_path, output_path=None, header_line_auto_detect=True, header_line=0):
+    """
+    移除CSV檔案的表頭並重命名（類似 header_reomve.py)
+    
+    Args:
+        file_path: 原始CSV檔案路徑
+        output_path: 輸出CSV檔案路徑，如果為None則根據原檔名推導
+        header_line_auto_detect: 是否自動偵測標頭行
+        header_line: 固定標頭行位置（若不自動偵測）
+    
+    Returns:
+        Tuple[bool, str]: (成功狀態, 輸出檔案路徑或錯誤訊息)
+    """
+    try:
+        file_path = Path(file_path)
+        
+        # 找到標頭行
+        if header_line_auto_detect:
+            header_row = find_header_row(file_path)
+            if header_row is None:
+                logger.warning(f"無法在檔案中找到標頭行: {file_path}")
+                return False, "無法找到標頭行"
+        else:
+            header_row = header_line
+            
+        # 讀取CSV，跳過標頭前的行
+        df = load_csv(file_path, skiprows=header_row)
+        if df is None:
+            return False, "讀取CSV失敗"
+            
+        # 如果未指定輸出路徑，使用component ID作為新檔名
+        if output_path is None:
+            component_id = extract_component_from_filename(file_path.name)
+            if not component_id:
+                component_id = file_path.stem  # 使用原始檔名（不含副檔名）
+            output_path = file_path.parent / f"{component_id}.csv"
+        
+        # 保存處理後的檔案
+        if save_df_to_csv(df, output_path):
+            logger.info(f"成功處理表頭並重命名: {file_path} -> {output_path}")
+            return True, str(output_path)
+        else:
+            return False, "儲存處理後的CSV失敗"
+            
+    except Exception as e:
+        logger.error(f"移除表頭並重命名時發生錯誤: {e}")
+        return False, f"處理失敗: {str(e)}" 

@@ -390,7 +390,12 @@ class MainWindow(QMainWindow):
         # 創建任務對話框
         dialog = TaskProgressDialog(
             "生成 Basemap", 
-            f"正在為 {self.selected_product}/{self.selected_lot}/{self.selected_station} 生成 Basemap...",
+            f"正在為 {self.selected_product}/{self.selected_lot}/{self.selected_station} 生成 Basemap...\n"
+            f"流程將遵循原始databasemanager的執行順序：\n"
+            f"1. 讀取config參數\n"
+            f"2. 原始 CSV 偏移確認\n"
+            f"3. 去表頭 + rename\n"
+            f"4. 做 Basemap",
             self
         )
         
