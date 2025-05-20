@@ -115,7 +115,7 @@ class DataProcessor:
     
     def _load_mask_rules(self, station):
         """載入指定站點的遮罩規則"""
-        mask_path = Path("configs/masks") / f"{station}.json"
+        mask_path = Path("config/masks") / f"{station}.json"
         if not mask_path.exists():
             logger.warning(f"找不到站點 {station} 的遮罩規則檔案")
             return []
@@ -134,151 +134,128 @@ class DataProcessor:
     def generate_basemap(self, component: ComponentInfo) -> Tuple[bool, str]:
         """
         生成Basemap圖像
-        
+
         流程根據原始databasemanager:
-        1. 讀取config參數(configs/formulas、masks、plots、sample_rule.json等等)
-        2. 原始 CSV 偏移確認
-        3. 去表頭 + rename
-        4. 做 Basemap
-        
-        Args:
-            component: 元件信息
-            
-        Returns:
-            Tuple[bool, str]: (成功狀態, 訊息或路徑)
+        # Step 1: 讀取config參數(configs/formulas、masks、plots、sample_rule.json等等)
+        # Step 2: 原始 CSV 偏移確認 (rawdata_check.py)
+        # Step 3: 去表頭 + rename(head_remove.py)
+        # Step 4: 做 Basemap(basemap_runner.py)
         """
         try:
             if not component.csv_path or not Path(component.csv_path).exists():
                 return False, "找不到CSV檔案"
             
-            # Step 1: 讀取config參數
-            logger.info(f"Step 1: 讀取元件 {component.component_id} 的config參數")
+            csv_filename = Path(component.csv_path).name
             
-            # 讀取sample_rules.json配置
-            sample_rules_path = Path("configs/sample_rules.json")
-            if not sample_rules_path.exists():
-                return False, "找不到sample_rules.json配置檔案"
+            # 如果是原始格式 {device}_{component}_{time}.csv，執行 step1~3
+            if AOI_FILENAME_PATTERN.match(csv_filename):
+                logger.info(f"檔案 {csv_filename} 是原始格式，執行 step1~3")
                 
-            try:
+                # Step 1: 讀取config參數
+                logger.info(f"Step 1: 讀取元件 {component.component_id} 的config參數")
+                sample_rules_path = Path("config/sample_rules.json")
+                if not sample_rules_path.exists():
+                    return False, "找不到sample_rules.json配置檔案"
                 with open(sample_rules_path, 'r', encoding='utf-8') as f:
                     sample_rules = json.load(f)
-            except Exception as e:
-                logger.error(f"讀取sample_rules失敗: {e}")
-                return False, f"讀取sample_rules失敗: {str(e)}"
-            
-            # 獲取站點對應的規則
-            station = component.station
-            rule = sample_rules.get(station, {})
-            if not rule:
-                return False, f"在sample_rules中找不到站點 {station} 的配置"
-            
-            # 檢索公式、遮罩和繪圖配置路徑
-            formula_path = Path(rule.get("formulas", ""))
-            mask_path = Path(rule.get("mask", ""))
-            plot_path = Path(rule.get("plot", ""))
-            
-            if not formula_path.exists():
-                return False, f"找不到formula配置檔案: {formula_path}"
-            if not mask_path.exists():
-                logger.warning(f"找不到mask配置檔案: {mask_path}")
-            if not plot_path.exists():
-                return False, f"找不到plot配置檔案: {plot_path}"
-            
-            # 讀取formula配置
-            try:
-                with open(formula_path, 'r', encoding='utf-8') as f:
-                    formula_data = json.load(f)
-                total_count = formula_data.get("Total Count", 0)
-            except Exception as e:
-                logger.error(f"讀取formula配置失敗: {e}")
-                return False, f"讀取formula配置失敗: {str(e)}"
-            
-            # Step 2: 原始 CSV 偏移確認
-            logger.info(f"Step 2: 執行 {component.component_id} 的原始CSV偏移確認")
-            
-            # 讀取對齊配置
-            align_config_path = Path("configs/align_key_config.json")
-            if not align_config_path.exists():
-                return False, "找不到align_key_config.json配置檔案"
-                
-            try:
+                station = component.station
+                rule = sample_rules.get(station, {})
+                if not rule:
+                    return False, f"在sample_rules中找不到站點 {station} 的配置"
+                formula_path = Path(rule.get("formulas", ""))
+                mask_path = Path(rule.get("mask", ""))
+                plot_path = Path(rule.get("plot", ""))
+                if not formula_path.exists():
+                    return False, f"找不到formula配置檔案: {formula_path}"
+                if not mask_path.exists():
+                    logger.warning(f"找不到mask配置檔案: {mask_path}")
+                if not plot_path.exists():
+                    return False, f"找不到plot配置檔案: {plot_path}"
+
+                # Step 2: 原始 CSV 偏移確認
+                logger.info(f"Step 2: 執行 {component.component_id} 的原始CSV偏移確認")
+                align_config_path = Path("config/align_key_config.json")
+                if not align_config_path.exists():
+                    return False, "找不到align_key_config.json配置檔案"
                 with open(align_config_path, 'r', encoding='utf-8') as f:
                     align_config = json.load(f)
-            except Exception as e:
-                logger.error(f"讀取對齊配置失敗: {e}")
-                return False, f"讀取對齊配置失敗: {str(e)}"
-            
-            # 檢查CSV是否符合對齊要求
-            recipe = self.station_recipes.get(station, "Sapphire A")
-            status, detail = check_csv_alignment(component.csv_path, recipe, align_config)
-            
-            if status == "fail":
-                logger.error(f"偏移錯誤: {component.component_id} -> {detail}")
-                return False, f"CSV檔案偏移錯誤: {detail}"
-            elif status == "error":
-                logger.warning(f"偏移檢查失敗: {component.component_id} -> {detail}")
-                # 繼續處理，但記錄警告
-            
-            # Step 3: 去表頭 + rename
-            logger.info(f"Step 3: 處理 {component.component_id} 的CSV標頭")
-            
-            # 使用新的移除表頭並重命名函數
-            success, result = remove_header_and_rename(component.csv_path)
-            if not success:
-                return False, f"處理CSV標頭失敗: {result}"
-            
-            # 更新處理後的CSV路徑
-            processed_csv_path = result
-            component.csv_path = processed_csv_path
-            db_manager.update_component(component)
-            logger.info(f"已處理CSV標頭: {processed_csv_path}")
+                recipe = self.station_recipes.get(station, "Sapphire A")
+                status, detail = check_csv_alignment(component.csv_path, recipe, align_config)
+                if status == "fail":
+                    return False, f"CSV檔案偏移錯誤: {detail}"
+
+                # Step 3: 去表頭 + rename
+                logger.info(f"Step 3: 處理 {component.component_id} 的CSV標頭")
+                success, result = remove_header_and_rename(component.csv_path)
+                if not success:
+                    return False, f"處理CSV標頭失敗: {result}"
+                processed_csv_path = result
+                component.csv_path = processed_csv_path
+                db_manager.update_component(component)
                 
+                # 更新檔名以便後續檢查
+                csv_filename = Path(component.csv_path).name
+            
+            # 確認檔案是否符合處理後格式，如果不符合則報錯
+            if not PROCESSED_FILENAME_PATTERN.match(csv_filename):
+                return False, f"CSV檔案 {csv_filename} 格式不正確，無法生成Basemap"
+
             # Step 4: 做 Basemap
             logger.info(f"Step 4: 為 {component.component_id} 生成Basemap")
             
-            # 讀取CSV資料
+            # 讀取 config 相關內容（如果 step1 未執行）
+            if not 'sample_rules' in locals():
+                sample_rules_path = Path("config/sample_rules.json")
+                if not sample_rules_path.exists():
+                    return False, "找不到sample_rules.json配置檔案"
+                with open(sample_rules_path, 'r', encoding='utf-8') as f:
+                    sample_rules = json.load(f)
+                station = component.station
+                rule = sample_rules.get(station, {})
+                if not rule:
+                    return False, f"在sample_rules中找不到站點 {station} 的配置"
+                formula_path = Path(rule.get("formulas", ""))
+                mask_path = Path(rule.get("mask", ""))
+                plot_path = Path(rule.get("plot", ""))
+            
+            # 讀取 CSV 資料
             df = load_csv(component.csv_path)
             if df is None:
                 return False, "讀取處理後的CSV失敗"
             
-            # 載入遮罩規則
+            # 應用遮罩
             mask_rules = []
             if mask_path.exists():
                 try:
                     with open(mask_path, 'r', encoding='utf-8') as f:
                         mask_rules = json.load(f)
                 except Exception as e:
-                    logger.error(f"載入遮罩規則失敗: {e}")
                     mask_rules = []
-            
-            # 應用遮罩
             if mask_rules:
                 df = apply_mask(df, mask_rules)
-                
-            # 檢查是否需要翻轉
+            
+            # 執行翻轉
             if self.flip_config.get(component.station, False):
                 df = flip_data(df)
-                
-            # 確定輸出路徑
+            
+            # 輸出圖片
             product_id = db_manager.get_lot(component.lot_id).product_id
             output_dir = self.base_path / product_id / "map" / component.lot_id / component.station
             ensure_directory(output_dir)
-            output_path = output_dir / f"{component.component_id}.png"
+            component_name = Path(component.csv_path).stem
+            output_path = output_dir / f"{component_name}.png"
             
             # 讀取繪圖配置
             try:
                 with open(plot_path, 'r', encoding='utf-8') as f:
                     plot_config = json.load(f)
             except Exception as e:
-                logger.error(f"讀取繪圖配置失敗: {e}")
                 return False, f"讀取繪圖配置失敗: {str(e)}"
             
-            # 生成圖像
+            # 繪製 Basemap
             if plot_basemap(df, str(output_path), plot_config=plot_config):
-                # 更新元件資訊
                 component.basemap_path = str(output_path)
                 db_manager.update_component(component)
-                
                 logger.info(f"成功生成Basemap: {output_path}")
                 return True, str(output_path)
             else:

@@ -1373,3 +1373,239 @@
 2025-05-16 15:29:56,649 - data_processor - INFO - Step 4: 為 M3X60_WLPF40010006_202504091051 生成Basemap
 2025-05-16 15:29:57,371 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010006_202504091051.png
 2025-05-16 15:29:57,402 - data_processor - INFO - 任務 220217ed-0c0f-41ec-b0fe-e83813faf672 已完成: True - 已處理 20/20 個元件的 Basemap
+2025-05-20 10:18:06,985 - data_processor - INFO - 開始執行任務: 88c8e41c-f12a-468d-9383-03bc4df39bb4 (basemap)
+2025-05-20 10:18:07,027 - data_processor - INFO - Step 1: 讀取元件 M3X60_WLPF40010001_202504091029_PC1 的config參數
+2025-05-20 10:18:07,028 - data_processor - INFO - Step 2: 執行 M3X60_WLPF40010001_202504091029_PC1 的原始CSV偏移確認
+2025-05-20 10:18:07,029 - data_processor - WARNING - 偏移檢查失敗: M3X60_WLPF40010001_202504091029_PC1 -> 檢查失敗: 'in <string>' requires string as left operand, not list
+2025-05-20 10:18:07,029 - data_processor - INFO - Step 3: 處理 M3X60_WLPF40010001_202504091029_PC1 的CSV標頭
+2025-05-20 10:18:07,185 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010001_202504091029_PC1.csv
+2025-05-20 10:18:07,185 - data_processor - INFO - Step 4: 為 M3X60_WLPF40010001_202504091029_PC1 生成Basemap
+2025-05-20 10:18:07,599 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010001_202504091029_PC1.png
+2025-05-20 10:18:07,600 - data_processor - INFO - Step 1: 讀取元件 M3X60_WLPF40010001_202504091029_PC2 的config參數
+2025-05-20 10:18:07,600 - data_processor - INFO - Step 2: 執行 M3X60_WLPF40010001_202504091029_PC2 的原始CSV偏移確認
+2025-05-20 10:18:07,601 - data_processor - WARNING - 偏移檢查失敗: M3X60_WLPF40010001_202504091029_PC2 -> 檢查失敗: 'in <string>' requires string as left operand, not list
+2025-05-20 10:18:07,602 - data_processor - INFO - Step 3: 處理 M3X60_WLPF40010001_202504091029_PC2 的CSV標頭
+2025-05-20 10:18:07,731 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010001_202504091029_PC2.csv
+2025-05-20 10:18:07,731 - data_processor - INFO - Step 4: 為 M3X60_WLPF40010001_202504091029_PC2 生成Basemap
+2025-05-20 10:18:08,105 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010001_202504091029_PC2.png
+2025-05-20 10:18:08,106 - data_processor - INFO - Step 1: 讀取元件 M3X60_WLPF40010001_202504091029_PC4 的config參數
+2025-05-20 10:18:08,106 - data_processor - INFO - Step 2: 執行 M3X60_WLPF40010001_202504091029_PC4 的原始CSV偏移確認
+2025-05-20 10:18:08,107 - data_processor - WARNING - 偏移檢查失敗: M3X60_WLPF40010001_202504091029_PC4 -> 檢查失敗: 'in <string>' requires string as left operand, not list
+2025-05-20 10:18:08,107 - data_processor - INFO - Step 3: 處理 M3X60_WLPF40010001_202504091029_PC4 的CSV標頭
+2025-05-20 10:18:08,216 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010001_202504091029_PC4.csv
+2025-05-20 10:18:08,216 - data_processor - INFO - Step 4: 為 M3X60_WLPF40010001_202504091029_PC4 生成Basemap
+2025-05-20 10:18:08,576 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010001_202504091029_PC4.png
+2025-05-20 10:18:08,577 - data_processor - INFO - Step 1: 讀取元件 M3X60_WLPF40010001_202504091032_PC3 的config參數
+2025-05-20 10:18:08,577 - data_processor - INFO - Step 2: 執行 M3X60_WLPF40010001_202504091032_PC3 的原始CSV偏移確認
+2025-05-20 10:18:08,578 - data_processor - WARNING - 偏移檢查失敗: M3X60_WLPF40010001_202504091032_PC3 -> 檢查失敗: 'in <string>' requires string as left operand, not list
+2025-05-20 10:18:08,578 - data_processor - INFO - Step 3: 處理 M3X60_WLPF40010001_202504091032_PC3 的CSV標頭
+2025-05-20 10:18:08,704 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010001_202504091032_PC3.csv
+2025-05-20 10:18:08,704 - data_processor - INFO - Step 4: 為 M3X60_WLPF40010001_202504091032_PC3 生成Basemap
+2025-05-20 10:18:09,085 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010001_202504091032_PC3.png
+2025-05-20 10:18:09,086 - data_processor - INFO - Step 1: 讀取元件 M3X60_WLPF40010001_202504091051 的config參數
+2025-05-20 10:18:09,087 - data_processor - INFO - Step 2: 執行 M3X60_WLPF40010001_202504091051 的原始CSV偏移確認
+2025-05-20 10:18:09,088 - data_processor - WARNING - 偏移檢查失敗: M3X60_WLPF40010001_202504091051 -> 檢查失敗: 'in <string>' requires string as left operand, not list
+2025-05-20 10:18:09,088 - data_processor - INFO - Step 3: 處理 M3X60_WLPF40010001_202504091051 的CSV標頭
+2025-05-20 10:18:09,527 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010001.csv
+2025-05-20 10:18:09,528 - data_processor - INFO - Step 4: 為 M3X60_WLPF40010001_202504091051 生成Basemap
+2025-05-20 10:18:10,261 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010001_202504091051.png
+2025-05-20 10:18:10,264 - data_processor - INFO - Step 1: 讀取元件 M3X60_WLPF40010003_202504091033_PC4 的config參數
+2025-05-20 10:18:10,265 - data_processor - INFO - Step 2: 執行 M3X60_WLPF40010003_202504091033_PC4 的原始CSV偏移確認
+2025-05-20 10:18:10,265 - data_processor - WARNING - 偏移檢查失敗: M3X60_WLPF40010003_202504091033_PC4 -> 檢查失敗: 'in <string>' requires string as left operand, not list
+2025-05-20 10:18:10,265 - data_processor - INFO - Step 3: 處理 M3X60_WLPF40010003_202504091033_PC4 的CSV標頭
+2025-05-20 10:18:10,377 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010003_202504091033_PC4.csv
+2025-05-20 10:18:10,377 - data_processor - INFO - Step 4: 為 M3X60_WLPF40010003_202504091033_PC4 生成Basemap
+2025-05-20 10:18:10,747 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010003_202504091033_PC4.png
+2025-05-20 10:18:10,748 - data_processor - INFO - Step 1: 讀取元件 M3X60_WLPF40010003_202504091034_PC1 的config參數
+2025-05-20 10:18:10,749 - data_processor - INFO - Step 2: 執行 M3X60_WLPF40010003_202504091034_PC1 的原始CSV偏移確認
+2025-05-20 10:18:10,750 - data_processor - WARNING - 偏移檢查失敗: M3X60_WLPF40010003_202504091034_PC1 -> 檢查失敗: 'in <string>' requires string as left operand, not list
+2025-05-20 10:18:10,750 - data_processor - INFO - Step 3: 處理 M3X60_WLPF40010003_202504091034_PC1 的CSV標頭
+2025-05-20 10:18:10,878 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010003_202504091034_PC1.csv
+2025-05-20 10:18:10,878 - data_processor - INFO - Step 4: 為 M3X60_WLPF40010003_202504091034_PC1 生成Basemap
+2025-05-20 10:18:11,269 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010003_202504091034_PC1.png
+2025-05-20 10:18:11,270 - data_processor - INFO - Step 1: 讀取元件 M3X60_WLPF40010003_202504091034_PC2 的config參數
+2025-05-20 10:18:11,271 - data_processor - INFO - Step 2: 執行 M3X60_WLPF40010003_202504091034_PC2 的原始CSV偏移確認
+2025-05-20 10:18:11,271 - data_processor - WARNING - 偏移檢查失敗: M3X60_WLPF40010003_202504091034_PC2 -> 檢查失敗: 'in <string>' requires string as left operand, not list
+2025-05-20 10:18:11,272 - data_processor - INFO - Step 3: 處理 M3X60_WLPF40010003_202504091034_PC2 的CSV標頭
+2025-05-20 10:18:11,402 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010003_202504091034_PC2.csv
+2025-05-20 10:18:11,402 - data_processor - INFO - Step 4: 為 M3X60_WLPF40010003_202504091034_PC2 生成Basemap
+2025-05-20 10:18:11,836 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010003_202504091034_PC2.png
+2025-05-20 10:18:11,837 - data_processor - INFO - Step 1: 讀取元件 M3X60_WLPF40010003_202504091037_PC3 的config參數
+2025-05-20 10:18:11,838 - data_processor - INFO - Step 2: 執行 M3X60_WLPF40010003_202504091037_PC3 的原始CSV偏移確認
+2025-05-20 10:18:11,838 - data_processor - WARNING - 偏移檢查失敗: M3X60_WLPF40010003_202504091037_PC3 -> 檢查失敗: 'in <string>' requires string as left operand, not list
+2025-05-20 10:18:11,839 - data_processor - INFO - Step 3: 處理 M3X60_WLPF40010003_202504091037_PC3 的CSV標頭
+2025-05-20 10:18:11,967 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010003_202504091037_PC3.csv
+2025-05-20 10:18:11,968 - data_processor - INFO - Step 4: 為 M3X60_WLPF40010003_202504091037_PC3 生成Basemap
+2025-05-20 10:18:12,380 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010003_202504091037_PC3.png
+2025-05-20 10:18:12,381 - data_processor - INFO - Step 1: 讀取元件 M3X60_WLPF40010003_202504091051 的config參數
+2025-05-20 10:18:12,381 - data_processor - INFO - Step 2: 執行 M3X60_WLPF40010003_202504091051 的原始CSV偏移確認
+2025-05-20 10:18:12,383 - data_processor - WARNING - 偏移檢查失敗: M3X60_WLPF40010003_202504091051 -> 檢查失敗: 'in <string>' requires string as left operand, not list
+2025-05-20 10:18:12,383 - data_processor - INFO - Step 3: 處理 M3X60_WLPF40010003_202504091051 的CSV標頭
+2025-05-20 10:18:12,831 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010003.csv
+2025-05-20 10:18:12,832 - data_processor - INFO - Step 4: 為 M3X60_WLPF40010003_202504091051 生成Basemap
+2025-05-20 10:18:13,601 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010003_202504091051.png
+2025-05-20 10:18:13,603 - data_processor - INFO - Step 1: 讀取元件 M3X60_WLPF40010004_202504091038_PC4 的config參數
+2025-05-20 10:18:13,604 - data_processor - INFO - Step 2: 執行 M3X60_WLPF40010004_202504091038_PC4 的原始CSV偏移確認
+2025-05-20 10:18:13,605 - data_processor - WARNING - 偏移檢查失敗: M3X60_WLPF40010004_202504091038_PC4 -> 檢查失敗: 'in <string>' requires string as left operand, not list
+2025-05-20 10:18:13,605 - data_processor - INFO - Step 3: 處理 M3X60_WLPF40010004_202504091038_PC4 的CSV標頭
+2025-05-20 10:18:13,717 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010004_202504091038_PC4.csv
+2025-05-20 10:18:13,717 - data_processor - INFO - Step 4: 為 M3X60_WLPF40010004_202504091038_PC4 生成Basemap
+2025-05-20 10:18:14,087 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010004_202504091038_PC4.png
+2025-05-20 10:18:14,088 - data_processor - INFO - Step 1: 讀取元件 M3X60_WLPF40010004_202504091039_PC1 的config參數
+2025-05-20 10:18:14,089 - data_processor - INFO - Step 2: 執行 M3X60_WLPF40010004_202504091039_PC1 的原始CSV偏移確認
+2025-05-20 10:18:14,090 - data_processor - WARNING - 偏移檢查失敗: M3X60_WLPF40010004_202504091039_PC1 -> 檢查失敗: 'in <string>' requires string as left operand, not list
+2025-05-20 10:18:14,090 - data_processor - INFO - Step 3: 處理 M3X60_WLPF40010004_202504091039_PC1 的CSV標頭
+2025-05-20 10:18:14,224 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010004_202504091039_PC1.csv
+2025-05-20 10:18:14,224 - data_processor - INFO - Step 4: 為 M3X60_WLPF40010004_202504091039_PC1 生成Basemap
+2025-05-20 10:18:14,631 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010004_202504091039_PC1.png
+2025-05-20 10:18:14,632 - data_processor - INFO - Step 1: 讀取元件 M3X60_WLPF40010004_202504091039_PC2 的config參數
+2025-05-20 10:18:14,633 - data_processor - INFO - Step 2: 執行 M3X60_WLPF40010004_202504091039_PC2 的原始CSV偏移確認
+2025-05-20 10:18:14,634 - data_processor - WARNING - 偏移檢查失敗: M3X60_WLPF40010004_202504091039_PC2 -> 檢查失敗: 'in <string>' requires string as left operand, not list
+2025-05-20 10:18:14,634 - data_processor - INFO - Step 3: 處理 M3X60_WLPF40010004_202504091039_PC2 的CSV標頭
+2025-05-20 10:18:14,768 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010004_202504091039_PC2.csv
+2025-05-20 10:18:14,769 - data_processor - INFO - Step 4: 為 M3X60_WLPF40010004_202504091039_PC2 生成Basemap
+2025-05-20 10:18:15,155 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010004_202504091039_PC2.png
+2025-05-20 10:18:15,156 - data_processor - INFO - Step 1: 讀取元件 M3X60_WLPF40010004_202504091042_PC3 的config參數
+2025-05-20 10:18:15,157 - data_processor - INFO - Step 2: 執行 M3X60_WLPF40010004_202504091042_PC3 的原始CSV偏移確認
+2025-05-20 10:18:15,158 - data_processor - WARNING - 偏移檢查失敗: M3X60_WLPF40010004_202504091042_PC3 -> 檢查失敗: 'in <string>' requires string as left operand, not list
+2025-05-20 10:18:15,158 - data_processor - INFO - Step 3: 處理 M3X60_WLPF40010004_202504091042_PC3 的CSV標頭
+2025-05-20 10:18:15,286 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010004_202504091042_PC3.csv
+2025-05-20 10:18:15,286 - data_processor - INFO - Step 4: 為 M3X60_WLPF40010004_202504091042_PC3 生成Basemap
+2025-05-20 10:18:15,690 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010004_202504091042_PC3.png
+2025-05-20 10:18:15,691 - data_processor - INFO - Step 1: 讀取元件 M3X60_WLPF40010004_202504091051 的config參數
+2025-05-20 10:18:15,693 - data_processor - INFO - Step 2: 執行 M3X60_WLPF40010004_202504091051 的原始CSV偏移確認
+2025-05-20 10:18:15,694 - data_processor - WARNING - 偏移檢查失敗: M3X60_WLPF40010004_202504091051 -> 檢查失敗: 'in <string>' requires string as left operand, not list
+2025-05-20 10:18:15,694 - data_processor - INFO - Step 3: 處理 M3X60_WLPF40010004_202504091051 的CSV標頭
+2025-05-20 10:18:16,155 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010004.csv
+2025-05-20 10:18:16,156 - data_processor - INFO - Step 4: 為 M3X60_WLPF40010004_202504091051 生成Basemap
+2025-05-20 10:18:16,944 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010004_202504091051.png
+2025-05-20 10:18:16,947 - data_processor - INFO - Step 1: 讀取元件 M3X60_WLPF40010006_202504091044_PC1 的config參數
+2025-05-20 10:18:16,947 - data_processor - INFO - Step 2: 執行 M3X60_WLPF40010006_202504091044_PC1 的原始CSV偏移確認
+2025-05-20 10:18:16,948 - data_processor - WARNING - 偏移檢查失敗: M3X60_WLPF40010006_202504091044_PC1 -> 檢查失敗: 'in <string>' requires string as left operand, not list
+2025-05-20 10:18:16,948 - data_processor - INFO - Step 3: 處理 M3X60_WLPF40010006_202504091044_PC1 的CSV標頭
+2025-05-20 10:18:17,085 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010006_202504091044_PC1.csv
+2025-05-20 10:18:17,086 - data_processor - INFO - Step 4: 為 M3X60_WLPF40010006_202504091044_PC1 生成Basemap
+2025-05-20 10:18:17,486 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010006_202504091044_PC1.png
+2025-05-20 10:18:17,487 - data_processor - INFO - Step 1: 讀取元件 M3X60_WLPF40010006_202504091044_PC2 的config參數
+2025-05-20 10:18:17,487 - data_processor - INFO - Step 2: 執行 M3X60_WLPF40010006_202504091044_PC2 的原始CSV偏移確認
+2025-05-20 10:18:17,488 - data_processor - WARNING - 偏移檢查失敗: M3X60_WLPF40010006_202504091044_PC2 -> 檢查失敗: 'in <string>' requires string as left operand, not list
+2025-05-20 10:18:17,488 - data_processor - INFO - Step 3: 處理 M3X60_WLPF40010006_202504091044_PC2 的CSV標頭
+2025-05-20 10:18:17,619 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010006_202504091044_PC2.csv
+2025-05-20 10:18:17,620 - data_processor - INFO - Step 4: 為 M3X60_WLPF40010006_202504091044_PC2 生成Basemap
+2025-05-20 10:18:18,045 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010006_202504091044_PC2.png
+2025-05-20 10:18:18,046 - data_processor - INFO - Step 1: 讀取元件 M3X60_WLPF40010006_202504091044_PC4 的config參數
+2025-05-20 10:18:18,047 - data_processor - INFO - Step 2: 執行 M3X60_WLPF40010006_202504091044_PC4 的原始CSV偏移確認
+2025-05-20 10:18:18,048 - data_processor - WARNING - 偏移檢查失敗: M3X60_WLPF40010006_202504091044_PC4 -> 檢查失敗: 'in <string>' requires string as left operand, not list
+2025-05-20 10:18:18,048 - data_processor - INFO - Step 3: 處理 M3X60_WLPF40010006_202504091044_PC4 的CSV標頭
+2025-05-20 10:18:18,167 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010006_202504091044_PC4.csv
+2025-05-20 10:18:18,167 - data_processor - INFO - Step 4: 為 M3X60_WLPF40010006_202504091044_PC4 生成Basemap
+2025-05-20 10:18:18,539 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010006_202504091044_PC4.png
+2025-05-20 10:18:18,541 - data_processor - INFO - Step 1: 讀取元件 M3X60_WLPF40010006_202504091047_PC3 的config參數
+2025-05-20 10:18:18,541 - data_processor - INFO - Step 2: 執行 M3X60_WLPF40010006_202504091047_PC3 的原始CSV偏移確認
+2025-05-20 10:18:18,542 - data_processor - WARNING - 偏移檢查失敗: M3X60_WLPF40010006_202504091047_PC3 -> 檢查失敗: 'in <string>' requires string as left operand, not list
+2025-05-20 10:18:18,542 - data_processor - INFO - Step 3: 處理 M3X60_WLPF40010006_202504091047_PC3 的CSV標頭
+2025-05-20 10:18:18,670 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\M3X60_WLPF40010006_202504091047_PC3.csv
+2025-05-20 10:18:18,671 - data_processor - INFO - Step 4: 為 M3X60_WLPF40010006_202504091047_PC3 生成Basemap
+2025-05-20 10:18:19,059 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010006_202504091047_PC3.png
+2025-05-20 10:18:19,060 - data_processor - INFO - Step 1: 讀取元件 M3X60_WLPF40010006_202504091051 的config參數
+2025-05-20 10:18:19,061 - data_processor - INFO - Step 2: 執行 M3X60_WLPF40010006_202504091051 的原始CSV偏移確認
+2025-05-20 10:18:19,061 - data_processor - WARNING - 偏移檢查失敗: M3X60_WLPF40010006_202504091051 -> 檢查失敗: 'in <string>' requires string as left operand, not list
+2025-05-20 10:18:19,062 - data_processor - INFO - Step 3: 處理 M3X60_WLPF40010006_202504091051 的CSV標頭
+2025-05-20 10:18:19,523 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010006.csv
+2025-05-20 10:18:19,523 - data_processor - INFO - Step 4: 為 M3X60_WLPF40010006_202504091051 生成Basemap
+2025-05-20 10:18:20,262 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\M3X60_WLPF40010006_202504091051.png
+2025-05-20 10:18:20,289 - data_processor - INFO - 任務 88c8e41c-f12a-468d-9383-03bc4df39bb4 已完成: True - 已處理 20/20 個元件的 Basemap
+2025-05-20 10:26:38,973 - data_processor - INFO - 開始執行任務: 87c4eb74-54d2-4677-ac0a-08d758eaabfa (basemap)
+2025-05-20 10:26:39,008 - data_processor - INFO - Step 1: 讀取元件 WLPF40010001 的config參數
+2025-05-20 10:26:39,008 - data_processor - INFO - Step 1: 讀取元件 WLPF40010003 的config參數
+2025-05-20 10:26:39,008 - data_processor - INFO - Step 1: 讀取元件 WLPF40010004 的config參數
+2025-05-20 10:26:39,008 - data_processor - INFO - Step 1: 讀取元件 WLPF40010006 的config參數
+2025-05-20 10:26:39,041 - data_processor - INFO - 任務 87c4eb74-54d2-4677-ac0a-08d758eaabfa 已完成: False - 已處理 0/24 個元件的 Basemap
+2025-05-20 10:30:22,154 - data_processor - INFO - 開始執行任務: d32c6761-e3f3-4ab4-9e56-2b5b27fa715f (basemap)
+2025-05-20 10:30:22,192 - data_processor - INFO - Step 1: 讀取元件 WLPF40010001 的config參數
+2025-05-20 10:30:22,192 - data_processor - INFO - Step 1: 讀取元件 WLPF40010003 的config參數
+2025-05-20 10:30:22,192 - data_processor - INFO - Step 1: 讀取元件 WLPF40010004 的config參數
+2025-05-20 10:30:22,192 - data_processor - INFO - Step 1: 讀取元件 WLPF40010006 的config參數
+2025-05-20 10:30:22,231 - data_processor - INFO - 任務 d32c6761-e3f3-4ab4-9e56-2b5b27fa715f 已完成: False - 已處理 0/24 個元件的 Basemap
+2025-05-20 10:31:26,885 - data_processor - INFO - 開始執行任務: 6cbe5f8f-1b0d-48ac-9963-7368e1d223fe (basemap)
+2025-05-20 10:31:26,918 - data_processor - INFO - Step 1: 讀取元件 WLPF40010001 的config參數
+2025-05-20 10:31:26,918 - data_processor - INFO - Step 1: 讀取元件 WLPF40010003 的config參數
+2025-05-20 10:31:26,918 - data_processor - INFO - Step 1: 讀取元件 WLPF40010004 的config參數
+2025-05-20 10:31:26,918 - data_processor - INFO - Step 1: 讀取元件 WLPF40010006 的config參數
+2025-05-20 10:31:26,953 - data_processor - INFO - 任務 6cbe5f8f-1b0d-48ac-9963-7368e1d223fe 已完成: False - 已處理 0/24 個元件的 Basemap
+2025-05-20 10:32:50,065 - data_processor - INFO - 開始執行任務: 55015fdf-d08a-4b0e-ad3d-9606b7b1eb68 (basemap)
+2025-05-20 10:32:50,103 - data_processor - INFO - Step 1: 讀取元件 WLPF40010001 的config參數
+2025-05-20 10:32:50,103 - data_processor - INFO - Step 2: 執行 WLPF40010001 的原始CSV偏移確認
+2025-05-20 10:32:50,103 - data_processor - WARNING - 偏移檢查失敗: WLPF40010001 -> 檢查失敗: 'in <string>' requires string as left operand, not list
+2025-05-20 10:32:50,103 - data_processor - INFO - Step 3: 處理 WLPF40010001 的CSV標頭
+2025-05-20 10:32:50,566 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010001.csv
+2025-05-20 10:32:50,566 - data_processor - INFO - Step 4: 為 WLPF40010001 生成Basemap
+2025-05-20 10:32:51,375 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010001.png
+2025-05-20 10:32:51,378 - data_processor - INFO - Step 1: 讀取元件 WLPF40010003 的config參數
+2025-05-20 10:32:51,379 - data_processor - INFO - Step 2: 執行 WLPF40010003 的原始CSV偏移確認
+2025-05-20 10:32:51,379 - data_processor - WARNING - 偏移檢查失敗: WLPF40010003 -> 檢查失敗: 'in <string>' requires string as left operand, not list
+2025-05-20 10:32:51,380 - data_processor - INFO - Step 3: 處理 WLPF40010003 的CSV標頭
+2025-05-20 10:32:51,835 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010003.csv
+2025-05-20 10:32:51,835 - data_processor - INFO - Step 4: 為 WLPF40010003 生成Basemap
+2025-05-20 10:32:52,629 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010003.png
+2025-05-20 10:32:52,633 - data_processor - INFO - Step 1: 讀取元件 WLPF40010004 的config參數
+2025-05-20 10:32:52,634 - data_processor - INFO - Step 2: 執行 WLPF40010004 的原始CSV偏移確認
+2025-05-20 10:32:52,635 - data_processor - WARNING - 偏移檢查失敗: WLPF40010004 -> 檢查失敗: 'in <string>' requires string as left operand, not list
+2025-05-20 10:32:52,635 - data_processor - INFO - Step 3: 處理 WLPF40010004 的CSV標頭
+2025-05-20 10:32:53,087 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010004.csv
+2025-05-20 10:32:53,087 - data_processor - INFO - Step 4: 為 WLPF40010004 生成Basemap
+2025-05-20 10:32:53,862 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010004.png
+2025-05-20 10:32:53,864 - data_processor - INFO - Step 1: 讀取元件 WLPF40010006 的config參數
+2025-05-20 10:32:53,865 - data_processor - INFO - Step 2: 執行 WLPF40010006 的原始CSV偏移確認
+2025-05-20 10:32:53,866 - data_processor - WARNING - 偏移檢查失敗: WLPF40010006 -> 檢查失敗: 'in <string>' requires string as left operand, not list
+2025-05-20 10:32:53,866 - data_processor - INFO - Step 3: 處理 WLPF40010006 的CSV標頭
+2025-05-20 10:32:54,329 - data_processor - INFO - 已處理CSV標頭: D:\Database-PC\temp\csv\WLPF400100\MT\WLPF40010006.csv
+2025-05-20 10:32:54,330 - data_processor - INFO - Step 4: 為 WLPF40010006 生成Basemap
+2025-05-20 10:32:55,073 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010006.png
+2025-05-20 10:32:55,106 - data_processor - INFO - 任務 55015fdf-d08a-4b0e-ad3d-9606b7b1eb68 已完成: True - 已處理 4/24 個元件的 Basemap
+2025-05-20 10:33:47,005 - data_processor - INFO - 開始執行任務: 6eec9f5f-e93b-4b87-a2ae-fd6f83403d39 (basemap)
+2025-05-20 10:33:47,079 - data_processor - INFO - 任務 6eec9f5f-e93b-4b87-a2ae-fd6f83403d39 已完成: False - 已處理 0/24 個元件的 Basemap
+2025-05-20 10:37:50,050 - data_processor - INFO - 開始執行任務: 2fb89ef1-17e3-4548-8d8d-44875a1788fc (basemap)
+2025-05-20 10:37:50,120 - data_processor - INFO - 任務 2fb89ef1-17e3-4548-8d8d-44875a1788fc 已完成: False - 已處理 0/20 個元件的 Basemap
+2025-05-20 10:39:40,071 - data_processor - INFO - 開始執行任務: 954ff21c-e033-4a10-a197-3bbe822ef759 (basemap)
+2025-05-20 10:39:40,131 - data_processor - INFO - 任務 954ff21c-e033-4a10-a197-3bbe822ef759 已完成: False - 已處理 0/20 個元件的 Basemap
+2025-05-20 10:42:51,805 - data_processor - INFO - 開始執行任務: 05ffb536-bd65-4e00-8a7f-e0062c170bd2 (basemap)
+2025-05-20 10:42:51,882 - data_processor - INFO - 任務 05ffb536-bd65-4e00-8a7f-e0062c170bd2 已完成: False - 已處理 0/20 個元件的 Basemap
+2025-05-20 10:42:54,593 - data_processor - INFO - 開始執行任務: c2c5ca7b-1709-4ef7-a901-f5efdaba978a (basemap)
+2025-05-20 10:42:58,140 - data_processor - INFO - 任務 c2c5ca7b-1709-4ef7-a901-f5efdaba978a 已完成: True - 已處理 3/18 個元件的 Basemap
+2025-05-20 10:45:57,737 - data_processor - INFO - 開始執行任務: 96644027-da13-4899-900d-5bf00544db5d (basemap)
+2025-05-20 10:46:11,084 - data_processor - INFO - 任務 96644027-da13-4899-900d-5bf00544db5d 已完成: True - 已處理 20/20 個元件的 Basemap
+2025-05-20 10:46:19,849 - data_processor - INFO - 開始執行任務: 3e553a79-bf7e-41a3-9598-5dd7fdb798a2 (basemap)
+2025-05-20 10:46:28,144 - data_processor - INFO - 任務 3e553a79-bf7e-41a3-9598-5dd7fdb798a2 已完成: True - 已處理 16/20 個元件的 Basemap
+2025-05-20 10:46:35,914 - data_processor - INFO - 開始執行任務: 78da5929-a694-46ba-abb2-a6bc21f4e7e6 (basemap)
+2025-05-20 10:46:48,874 - data_processor - INFO - 任務 78da5929-a694-46ba-abb2-a6bc21f4e7e6 已完成: True - 已處理 20/20 個元件的 Basemap
+2025-05-20 10:49:33,999 - data_processor - INFO - 開始執行任務: 36147c5d-cc7f-43e5-9c7a-d630e69bc40d (basemap)
+2025-05-20 10:49:34,066 - data_processor - INFO - 任務 36147c5d-cc7f-43e5-9c7a-d630e69bc40d 已完成: False - 已處理 0/20 個元件的 Basemap
+2025-05-20 10:49:39,930 - data_processor - INFO - 開始執行任務: c7613ba1-a605-422e-98e7-b0143392dc14 (basemap)
+2025-05-20 10:49:39,986 - data_processor - INFO - 任務 c7613ba1-a605-422e-98e7-b0143392dc14 已完成: False - 已處理 0/20 個元件的 Basemap
+2025-05-20 10:53:24,018 - data_processor - INFO - 開始執行任務: e543765a-6857-44b6-9af5-2eb2a622d6c4 (basemap)
+2025-05-20 10:53:24,057 - data_processor - INFO - 檔案 M3X60_WLPF40010001_202504091051.csv 是原始格式，執行 step1~3
+2025-05-20 10:53:24,057 - data_processor - INFO - Step 1: 讀取元件 M3X60_WLPF40010001_202504091051 的config參數
+2025-05-20 10:53:24,058 - data_processor - INFO - Step 2: 執行 M3X60_WLPF40010001_202504091051 的原始CSV偏移確認
+2025-05-20 10:53:24,059 - data_processor - INFO - Step 3: 處理 M3X60_WLPF40010001_202504091051 的CSV標頭
+2025-05-20 10:53:24,518 - data_processor - INFO - Step 4: 為 M3X60_WLPF40010001_202504091051 生成Basemap
+2025-05-20 10:53:25,267 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010001.png
+2025-05-20 10:53:25,270 - data_processor - INFO - 檔案 M3X60_WLPF40010003_202504091051.csv 是原始格式，執行 step1~3
+2025-05-20 10:53:25,270 - data_processor - INFO - Step 1: 讀取元件 M3X60_WLPF40010003_202504091051 的config參數
+2025-05-20 10:53:25,270 - data_processor - INFO - Step 2: 執行 M3X60_WLPF40010003_202504091051 的原始CSV偏移確認
+2025-05-20 10:53:25,271 - data_processor - INFO - Step 3: 處理 M3X60_WLPF40010003_202504091051 的CSV標頭
+2025-05-20 10:53:25,722 - data_processor - INFO - Step 4: 為 M3X60_WLPF40010003_202504091051 生成Basemap
+2025-05-20 10:53:26,457 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010003.png
+2025-05-20 10:53:26,460 - data_processor - INFO - 檔案 M3X60_WLPF40010004_202504091051.csv 是原始格式，執行 step1~3
+2025-05-20 10:53:26,460 - data_processor - INFO - Step 1: 讀取元件 M3X60_WLPF40010004_202504091051 的config參數
+2025-05-20 10:53:26,460 - data_processor - INFO - Step 2: 執行 M3X60_WLPF40010004_202504091051 的原始CSV偏移確認
+2025-05-20 10:53:26,461 - data_processor - INFO - Step 3: 處理 M3X60_WLPF40010004_202504091051 的CSV標頭
+2025-05-20 10:53:26,905 - data_processor - INFO - Step 4: 為 M3X60_WLPF40010004_202504091051 生成Basemap
+2025-05-20 10:53:27,650 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010004.png
+2025-05-20 10:53:27,652 - data_processor - INFO - 檔案 M3X60_WLPF40010006_202504091051.csv 是原始格式，執行 step1~3
+2025-05-20 10:53:27,653 - data_processor - INFO - Step 1: 讀取元件 M3X60_WLPF40010006_202504091051 的config參數
+2025-05-20 10:53:27,653 - data_processor - INFO - Step 2: 執行 M3X60_WLPF40010006_202504091051 的原始CSV偏移確認
+2025-05-20 10:53:27,654 - data_processor - INFO - Step 3: 處理 M3X60_WLPF40010006_202504091051 的CSV標頭
+2025-05-20 10:53:28,088 - data_processor - INFO - Step 4: 為 M3X60_WLPF40010006_202504091051 生成Basemap
+2025-05-20 10:53:28,813 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010006.png
+2025-05-20 10:53:28,839 - data_processor - INFO - 任務 e543765a-6857-44b6-9af5-2eb2a622d6c4 已完成: True - 已處理 4/20 個元件的 Basemap
