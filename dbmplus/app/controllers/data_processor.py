@@ -19,7 +19,8 @@ from ..utils import (
     calculate_loss_points, plot_basemap, 
     plot_lossmap, plot_fpy_map, plot_fpy_bar,
     check_csv_alignment, remove_header_and_rename,
-    AOI_FILENAME_PATTERN, PROCESSED_FILENAME_PATTERN
+    AOI_FILENAME_PATTERN, PROCESSED_FILENAME_PATTERN,
+    extract_component_from_filename
 )
 from ..models import (
     db_manager, ComponentInfo, ProcessingTask
@@ -151,6 +152,9 @@ class DataProcessor:
             if AOI_FILENAME_PATTERN.match(csv_filename):
                 logger.info(f"檔案 {csv_filename} 是原始格式，執行 step1~3")
                 
+                # 取得產品ID，用於設定正確的路徑
+                product_id = db_manager.get_lot(component.lot_id).product_id
+                
                 # Step 1: 讀取config參數
                 logger.info(f"Step 1: 讀取元件 {component.component_id} 的config參數")
                 sample_rules_path = Path("config/sample_rules.json")
@@ -184,13 +188,42 @@ class DataProcessor:
                 if status == "fail":
                     return False, f"CSV檔案偏移錯誤: {detail}"
 
-                # Step 3: 去表頭 + rename
+                # Step 3: 去表頭 + rename，並存儲到csv目錄
                 logger.info(f"Step 3: 處理 {component.component_id} 的CSV標頭")
-                success, result = remove_header_and_rename(component.csv_path)
+                
+                # 獲取原始批次ID，用於構建路徑
+                lot_obj = db_manager.get_lot(component.lot_id)
+                product_id = lot_obj.product_id
+                original_lot_id = lot_obj.original_lot_id
+                
+                # 設置csv目錄路徑，使用原始批次ID
+                csv_dir = config.get_path(
+                    "database.structure.csv", 
+                    product=product_id, 
+                    lot=original_lot_id, 
+                    station=component.station
+                )
+                
+                # 確保目錄存在
+                ensure_directory(Path(csv_dir))
+                
+                # 提取component_id用於重命名
+                component_id = extract_component_from_filename(Path(component.csv_path).name)
+                if not component_id:
+                    component_id = component.component_id
+                
+                # 設置處理後文件的目標路徑
+                target_csv_path = os.path.join(csv_dir, f"{component_id}.csv")
+                
+                # 執行去表頭和重命名，並保存到csv目錄
+                success, result = remove_header_and_rename(component.csv_path, output_path=target_csv_path)
                 if not success:
                     return False, f"處理CSV標頭失敗: {result}"
-                processed_csv_path = result
-                component.csv_path = processed_csv_path
+                
+                # 更新組件路徑，保存原始路徑
+                original_csv_path = component.csv_path
+                component.original_csv_path = original_csv_path  # 保存原始路徑
+                component.csv_path = result  # 更新為處理後的路徑
                 db_manager.update_component(component)
                 
                 # 更新檔名以便後續檢查
@@ -238,10 +271,23 @@ class DataProcessor:
             if self.flip_config.get(component.station, False):
                 df = flip_data(df)
             
-            # 輸出圖片
-            product_id = db_manager.get_lot(component.lot_id).product_id
-            output_dir = self.base_path / product_id / "map" / component.lot_id / component.station
+            # 設置輸出路徑，按照設定格式存儲
+            lot_obj = db_manager.get_lot(component.lot_id)
+            product_id = lot_obj.product_id
+            original_lot_id = lot_obj.original_lot_id
+            
+            # 使用配置獲取正確的map目錄路徑
+            map_dir = config.get_path(
+                "database.structure.map",
+                product=product_id,
+                lot=original_lot_id
+            )
+            
+            # 確保站點子目錄存在
+            output_dir = Path(map_dir) / component.station
             ensure_directory(output_dir)
+            
+            # 設置輸出文件名
             component_name = Path(component.csv_path).stem
             output_path = output_dir / f"{component_name}.png"
             
@@ -291,6 +337,10 @@ class DataProcessor:
             success_count = 0
             fail_count = 0
             
+            # 獲取原始批次ID，用於構建路徑
+            lot_obj = db_manager.get_lot(lot_id)
+            original_lot_id = lot_obj.original_lot_id
+            
             for component in components:
                 # 獲取對應的前站元件
                 prev_component = db_manager.get_component(lot_id, prev_station, component.component_id)
@@ -338,7 +388,13 @@ class DataProcessor:
                     continue
                 
                 # 確定輸出路徑
-                output_dir = self.base_path / product_id / "map" / lot_id / f"LOSS{station_idx}"
+                output_dir = config.get_path(
+                    "database.structure.map",
+                    product=product_id,
+                    lot=original_lot_id
+                )
+                # 建立LOSS站點子目錄
+                output_dir = Path(output_dir) / f"LOSS{station_idx}"
                 ensure_directory(output_dir)
                 output_path = output_dir / f"{component.component_id}.png"
                 
@@ -390,6 +446,10 @@ class DataProcessor:
             except ValueError:
                 logger.error(f"站點 {station} 不在 station_order 配置中")
                 return False, f"站點 {station} 未在系統配置中定義"
+            
+            # 獲取原始批次ID，用於構建路徑
+            lot_obj = db_manager.get_lot(lot_id)
+            original_lot_id = lot_obj.original_lot_id
             
             is_first_station = len(prev_stations) == 0
             if is_first_station:
@@ -474,7 +534,13 @@ class DataProcessor:
                 fpy_summary.append({"ID": component.component_id, "FPY": round(fpy, 2)})
                 
                 # 確定輸出路徑
-                output_dir = self.base_path / product_id / "map" / lot_id / "FPY"
+                output_dir = config.get_path(
+                    "database.structure.map",
+                    product=product_id,
+                    lot=original_lot_id
+                )
+                # 建立FPY站點子目錄
+                output_dir = Path(output_dir) / "FPY"
                 ensure_directory(output_dir)
                 output_path = output_dir / f"{component.component_id}.png"
                 
@@ -490,7 +556,17 @@ class DataProcessor:
             # 生成匯總FPY長條圖
             if fpy_summary:
                 summary_df = pd.DataFrame(fpy_summary)
-                summary_path = self.base_path / product_id / "map" / lot_id / "FPY" / f"summary_{station}.csv"
+                
+                # 使用配置的路徑保存匯總數據
+                output_dir = config.get_path(
+                    "database.structure.map",
+                    product=product_id,
+                    lot=original_lot_id
+                )
+                fpy_dir = Path(output_dir) / "FPY"
+                ensure_directory(fpy_dir)
+                
+                summary_path = fpy_dir / f"summary_{station}.csv"
                 save_df_to_csv(summary_df, str(summary_path))
                 
                 bar_path = str(summary_path).replace(".csv", ".png")
@@ -535,6 +611,10 @@ class DataProcessor:
             except ValueError:
                 logger.error(f"站點 {station} 不在 station_order 配置中")
                 return False, f"站點 {station} 未在系統配置中定義"
+            
+            # 獲取原始批次ID，用於構建路徑
+            lot_obj = db_manager.get_lot(lot_id)
+            original_lot_id = lot_obj.original_lot_id
             
             is_first_station = len(prev_stations) == 0
             if is_first_station:
@@ -622,7 +702,13 @@ class DataProcessor:
                     fpy = merged_df["CombinedDefectType"].mean() * 100
                     
                     # 確定輸出路徑
-                    output_dir = self.base_path / product_id / "map" / lot_id / "FPY"
+                    output_dir = config.get_path(
+                        "database.structure.map",
+                        product=product_id,
+                        lot=original_lot_id
+                    )
+                    # 建立FPY站點子目錄
+                    output_dir = Path(output_dir) / "FPY"
                     ensure_directory(output_dir)
                     output_path = output_dir / f"{component.component_id}.png"
                     
@@ -676,7 +762,17 @@ class DataProcessor:
             # 生成匯總FPY長條圖
             if fpy_summary:
                 summary_df = pd.DataFrame(fpy_summary)
-                summary_path = self.base_path / product_id / "map" / lot_id / "FPY" / f"summary_{station}.csv"
+                
+                # 使用配置的路徑保存匯總數據
+                output_dir = config.get_path(
+                    "database.structure.map",
+                    product=product_id,
+                    lot=original_lot_id
+                )
+                fpy_dir = Path(output_dir) / "FPY"
+                ensure_directory(fpy_dir)
+                
+                summary_path = fpy_dir / f"summary_{station}.csv"
                 save_df_to_csv(summary_df, str(summary_path))
                 
                 bar_path = str(summary_path).replace(".csv", ".png")

@@ -1,3 +1,9 @@
 timestamp,function,product_id,lot_id,station,memory_usage_mb,cpu_percent,thread_count,python_version,task_id,status
 2025-05-21 00:02:42,task_basemap,temp,temp_WLPF400100,MT,147.7578125,0.0,19,3.12.7,f557fff4-6561-4137-9f90-8575501b1aff,開始
 2025-05-21 00:02:47,task_basemap,temp,temp_WLPF400100,MT,238.34765625,14.7,20,3.12.7,f557fff4-6561-4137-9f90-8575501b1aff,結束,True,4.936101675033569
+2025-05-21 00:18:05,task_basemap,temp,temp_WLPF400100,MT,147.63671875,0.0,19,3.12.7,774492fb-1a45-4f64-9887-382c64674c77,開始
+2025-05-21 00:18:05,task_basemap,temp,temp_WLPF400100,MT,148.09765625,38.8,20,3.12.7,774492fb-1a45-4f64-9887-382c64674c77,結束,False,0.06815838813781738
+2025-05-21 00:24:26,task_basemap,temp,temp_WLPF400100,MT,147.97265625,0.0,20,3.12.7,f0064fb5-df01-4b16-8fc6-ee2b2afe27ba,開始
+2025-05-21 00:24:31,task_basemap,temp,temp_WLPF400100,MT,238.59375,16.3,21,3.12.7,f0064fb5-df01-4b16-8fc6-ee2b2afe27ba,結束,True,5.200122356414795
+2025-05-21 00:35:26,task_basemap,temp,temp_WLPF400100,MT,147.96875,0.0,20,3.12.7,5307a511-a9d9-4583-beeb-1a63ddc68b32,開始
+2025-05-21 00:35:31,task_basemap,temp,temp_WLPF400100,MT,238.3984375,14.4,21,3.12.7,5307a511-a9d9-4583-beeb-1a63ddc68b32,結束,True,4.998229265213013
