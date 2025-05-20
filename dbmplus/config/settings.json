@@ -4,6 +4,7 @@
         "structure": {
             "csv_root": "{base_path}/{product}/csv",
             "csv": "{base_path}/{product}/csv/{lot}/{station}",
+            "processed_csv": "{base_path}/{product}/processed_csv/{lot}/{station}",
             "map": "{base_path}/{product}/map/{lot}",
             "roi": "{base_path}/{product}/roi/{lot}/{station}/{component}",
             "org": "{base_path}/{product}/org/{lot}/{station}/{component}"

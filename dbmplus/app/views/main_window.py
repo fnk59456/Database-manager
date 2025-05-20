@@ -228,6 +228,7 @@ class MainWindow(QMainWindow):
         # 儲存當前選中的產品/批次/站點
         self.selected_product = None
         self.selected_lot = None
+        self.selected_lot_display = None
         self.selected_station = None
     
     def load_data(self):
@@ -247,8 +248,8 @@ class MainWindow(QMainWindow):
             lots = db_manager.get_lots_by_product(product.product_id)
             
             for lot in lots:
-                # 產品和批次數據
-                row_data = [product.product_id, lot.lot_id]
+                # 產品和批次數據 - 使用原始批次ID顯示
+                row_data = [product.product_id, lot.get_display_id()]
                 
                 # 各站點數據
                 for station in ['MT', 'DC2', 'INNER1', 'RDL', 'INNER2', 'CU', 'EMC']:
@@ -268,6 +269,10 @@ class MainWindow(QMainWindow):
                     item = QTableWidgetItem(data)
                     item.setTextAlignment(Qt.AlignCenter)
                     self.product_table.setItem(row, col, item)
+                    
+                    # 存儲實際的批次ID作為項目數據，用於後續查詢
+                    if col == 1:  # 批次列
+                        item.setData(Qt.UserRole, lot.lot_id)  # 存儲內部批次ID
         
         # 更新統計資訊
         stats = db_manager.get_component_count()
@@ -279,7 +284,11 @@ class MainWindow(QMainWindow):
         """產品資料表點擊事件處理"""
         # 獲取選中的產品和批次
         self.selected_product = self.product_table.item(row, 0).text()
-        self.selected_lot = self.product_table.item(row, 1).text()
+        
+        # 獲取批次 - 從UserRole中獲取內部批次ID，顯示仍使用顯示名稱
+        lot_item = self.product_table.item(row, 1)
+        self.selected_lot = lot_item.data(Qt.UserRole)  # 內部批次ID
+        self.selected_lot_display = lot_item.text()  # 顯示名稱
         
         # 獲取選中的站點
         if col >= 2:
@@ -319,7 +328,7 @@ class MainWindow(QMainWindow):
                 
                 # 產品、批次、站點
                 self.component_table.setItem(row, 0, self._create_table_item(self.selected_product))
-                self.component_table.setItem(row, 1, self._create_table_item(self.selected_lot))
+                self.component_table.setItem(row, 1, self._create_table_item(self.selected_lot_display))
                 self.component_table.setItem(row, 2, self._create_table_item(station))
                 
                 # 元件ID
@@ -390,7 +399,7 @@ class MainWindow(QMainWindow):
         # 創建任務對話框
         dialog = TaskProgressDialog(
             "生成 Basemap", 
-            f"正在為 {self.selected_product}/{self.selected_lot}/{self.selected_station} 生成 Basemap...\n"
+            f"正在為 {self.selected_product}/{self.selected_lot_display}/{self.selected_station} 生成 Basemap...\n"
             f"流程將遵循原始databasemanager的執行順序：\n"
             f"1. 讀取config參數\n"
             f"2. 原始 CSV 偏移確認\n"
@@ -426,7 +435,7 @@ class MainWindow(QMainWindow):
         # 創建任務對話框
         dialog = TaskProgressDialog(
             "生成 Lossmap", 
-            f"正在為 {self.selected_product}/{self.selected_lot}/{self.selected_station} 生成 Lossmap...",
+            f"正在為 {self.selected_product}/{self.selected_lot_display}/{self.selected_station} 生成 Lossmap...",
             self
         )
         
@@ -436,7 +445,6 @@ class MainWindow(QMainWindow):
             self.selected_product, 
             self.selected_lot, 
             self.selected_station,
-            # 不再傳遞回調函數
             # callback=self.on_task_completed
         )
         
@@ -464,7 +472,7 @@ class MainWindow(QMainWindow):
         # 創建任務對話框
         dialog = TaskProgressDialog(
             "生成 FPY", 
-            f"正在為 {self.selected_product}/{self.selected_lot}/{self.selected_station} 生成 FPY" +
+            f"正在為 {self.selected_product}/{self.selected_lot_display}/{self.selected_station} 生成 FPY" +
             (" (並行模式)" if task_type == "fpy_parallel" else "") + "...",
             self
         )

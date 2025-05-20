@@ -1,0 +1,3 @@
+timestamp,function,product_id,lot_id,station,memory_usage_mb,cpu_percent,thread_count,python_version,task_id,status
+2025-05-21 00:02:42,task_basemap,temp,temp_WLPF400100,MT,147.7578125,0.0,19,3.12.7,f557fff4-6561-4137-9f90-8575501b1aff,¶}©l
+2025-05-21 00:02:47,task_basemap,temp,temp_WLPF400100,MT,238.34765625,14.7,20,3.12.7,f557fff4-6561-4137-9f90-8575501b1aff,µ²§ô,True,4.936101675033569

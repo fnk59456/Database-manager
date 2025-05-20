@@ -46,10 +46,22 @@ class LotInfo:
     """批次信息類"""
     lot_id: str
     product_id: str
+    original_lot_id: Optional[str] = None  # 原始批次ID，用於顯示
     stations: List[str] = field(default_factory=list)
     description: Optional[str] = None
     created_at: datetime = field(default_factory=datetime.now)
     modified_at: datetime = field(default_factory=datetime.now)
+
+    def __post_init__(self):
+        """初始化後處理，確保original_lot_id有值"""
+        if self.original_lot_id is None:
+            self.original_lot_id = self.lot_id
+            
+            # 如果lot_id格式是product_id_original_id，提取原始ID
+            if "_" in self.lot_id:
+                parts = self.lot_id.split("_")
+                if len(parts) >= 2 and parts[0] == self.product_id:
+                    self.original_lot_id = "_".join(parts[1:])
 
     def add_station(self, station: str) -> None:
         """添加站點到批次"""
@@ -70,11 +82,16 @@ class LotInfo:
         return {
             "lot_id": self.lot_id,
             "product_id": self.product_id,
+            "original_lot_id": self.original_lot_id,
             "stations": self.stations,
             "description": self.description,
             "created_at": self.created_at.isoformat(),
             "modified_at": self.modified_at.isoformat()
         }
+        
+    def get_display_id(self) -> str:
+        """獲取用於顯示的批次ID"""
+        return self.original_lot_id
 
 
 @dataclass
@@ -87,6 +104,7 @@ class ComponentInfo:
     processed_filename: Optional[str] = None
     org_path: Optional[str] = None
     csv_path: Optional[str] = None
+    original_csv_path: Optional[str] = None  # 存儲processed_csv目錄中的原始CSV文件路徑
     basemap_path: Optional[str] = None
     lossmap_path: Optional[str] = None
     fpy_path: Optional[str] = None
@@ -116,6 +134,7 @@ class ComponentInfo:
             "processed_filename": self.processed_filename,
             "org_path": self.org_path,
             "csv_path": self.csv_path,
+            "original_csv_path": self.original_csv_path,
             "basemap_path": self.basemap_path,
             "lossmap_path": self.lossmap_path,
             "fpy_path": self.fpy_path,
