@@ -29,5 +29,5 @@
     ],
     "original_size": 100,
     "title_fontsize": 20,
-    "invert_x_axis": true
+    "invert_x_axis": false
 }

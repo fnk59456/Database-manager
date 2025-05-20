@@ -1,7 +1,7 @@
 {
     "rules": "configs/rule.json",
     "flip": {
-      "MT": true,
+      "MT": false,
       "DC2": false,
       "INNER1": false,
       "RDL": false,
