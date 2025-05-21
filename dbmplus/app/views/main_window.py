@@ -5,20 +5,21 @@ import os
 import sys
 from pathlib import Path
 from typing import Optional, Dict, List, Any
+from datetime import datetime
 
 from PySide6.QtWidgets import (
     QMainWindow, QWidget, QVBoxLayout, QHBoxLayout, QSplitter,
     QTabWidget, QTableWidget, QTableWidgetItem, QPushButton,
     QLabel, QProgressBar, QMessageBox, QFileDialog, QComboBox,
     QSizePolicy, QHeaderView, QStatusBar, QToolBar, QToolButton,
-    QMenu, QDialog, QApplication
+    QMenu, QDialog, QApplication, QCheckBox, QFrame
 )
 from PySide6.QtCore import Qt, QSize, Signal, Slot, QThread, QTimer
 from PySide6.QtGui import QIcon, QAction, QPixmap, QFont, QColor
 
 from ..utils import get_logger, config
 from ..models import db_manager, ComponentInfo
-from ..controllers import data_processor
+from ..controllers import data_processor, online_manager
 
 logger = get_logger("main_window")
 
@@ -172,6 +173,36 @@ class MainWindow(QMainWindow):
         
         component_layout.addWidget(self.component_table)
         
+        # 创建日志选项卡
+        self.log_tab = QWidget()
+        log_layout = QVBoxLayout(self.log_tab)
+        
+        # 日志表格
+        self.log_table = QTableWidget(0, 7)
+        self.log_table.setHorizontalHeaderLabels(
+            ['時間', '產品', '批次', '站點', '組件', '狀態', '訊息']
+        )
+        self.log_table.setEditTriggers(QTableWidget.NoEditTriggers)
+        self.log_table.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
+        self.log_table.verticalHeader().setVisible(False)
+        self.log_table.setSelectionBehavior(QTableWidget.SelectRows)
+        self.log_table.setAlternatingRowColors(True)
+        
+        log_layout.addWidget(self.log_table)
+        
+        # 日志操作按钮
+        log_button_panel = QWidget()
+        log_button_layout = QHBoxLayout(log_button_panel)
+        log_button_layout.setContentsMargins(0, 0, 0, 0)
+        
+        self.clear_log_btn = QPushButton("清空日誌")
+        self.clear_log_btn.setStyleSheet("background-color: lightblue; color: black;")
+        self.clear_log_btn.setFixedHeight(30)
+        self.clear_log_btn.clicked.connect(self.on_clear_log_clicked)
+        log_button_layout.addWidget(self.clear_log_btn)
+        
+        log_layout.addWidget(log_button_panel)
+        
         # 批次處理按鈕面板
         batch_panel = QWidget()
         batch_layout = QHBoxLayout(batch_panel)
@@ -196,6 +227,14 @@ class MainWindow(QMainWindow):
         self.process_fpy_btn.clicked.connect(self.on_process_fpy_clicked)
         batch_layout.addWidget(self.process_fpy_btn)
         
+        # 添加在线处理按钮
+        self.online_btn = QPushButton("Online")
+        self.online_btn.setStyleSheet("background-color: lightgreen; color: black;")
+        self.online_btn.setFixedHeight(40)
+        self.online_btn.setCheckable(True)  # 使按钮可切换状态
+        self.online_btn.clicked.connect(self.on_online_clicked)
+        batch_layout.addWidget(self.online_btn)
+        
         self.refresh_btn = QPushButton("重新掃描資料")
         self.refresh_btn.setStyleSheet("background-color: lightblue; color: black;")
         self.refresh_btn.setFixedHeight(40)
@@ -204,8 +243,9 @@ class MainWindow(QMainWindow):
         
         component_layout.addWidget(batch_panel)
         
-        # 添加選項卡
+        # 添加选项卡
         self.detail_tabs.addTab(self.component_tab, "元件列表")
+        self.detail_tabs.addTab(self.log_tab, "LOG")
         
         bottom_layout.addWidget(self.detail_tabs)
         splitter.addWidget(bottom_panel)
@@ -225,11 +265,19 @@ class MainWindow(QMainWindow):
         self.stats_label = QLabel("")
         self.statusBar.addPermanentWidget(self.stats_label)
         
+        # Online状态标签
+        self.online_status_label = QLabel("在線監控: 未啟動")
+        self.statusBar.addPermanentWidget(self.online_status_label)
+        
         # 儲存當前選中的產品/批次/站點
         self.selected_product = None
         self.selected_lot = None
         self.selected_lot_display = None
         self.selected_station = None
+        
+        # 连接在线处理管理器的信号
+        online_manager.log_updated.connect(self.on_log_updated)
+        online_manager.processing_status_changed.connect(self.on_processing_status_changed)
     
     def load_data(self):
         """載入資料庫數據"""
@@ -503,3 +551,111 @@ class MainWindow(QMainWindow):
         """任務完成回調 - 使用Qt槽接收信號"""
         # 重新載入元件表格
         self.update_component_table() 
+    
+    def on_online_clicked(self):
+        """在線處理按鈕點擊事件"""
+        if self.online_btn.isChecked():
+            # 启动在线监控
+            online_manager.start()
+            self.online_btn.setText("Online (運行中)")
+            self.online_btn.setStyleSheet("background-color: green; color: white;")
+            self.statusBar.showMessage("在線監控已啟動")
+        else:
+            # 停止在线监控
+            online_manager.stop()
+            self.online_btn.setText("Online")
+            self.online_btn.setStyleSheet("background-color: lightgreen; color: black;")
+            self.statusBar.showMessage("在線監控已停止")
+    
+    def on_log_updated(self, log):
+        """處理日誌更新"""
+        if log is None:
+            # 清空日誌表格
+            self.log_table.setRowCount(0)
+            return
+        
+        # 獲取日誌摘要
+        summary = log.get_summary()
+        component_id = summary["component_id"]
+        current_status = summary["status"]
+        
+        # 檢查是否存在相同組件ID的暫態記錄需要更新
+        existing_row = -1
+        for row in range(self.log_table.rowCount()):
+            row_component_id = self.log_table.item(row, 4).text()
+            row_status = self.log_table.item(row, 5).text()
+            
+            # 只有當組件ID相同，且原狀態為暫態(pending或processing)時才考慮更新
+            if row_component_id == component_id and (row_status == "pending" or row_status == "processing"):
+                existing_row = row
+                break
+                
+        # 如果找到需要更新的行，更新它
+        if existing_row >= 0:
+            self._update_log_row(existing_row, summary)
+        else:
+            # 否則添加新行（當是新組件或者是之前沒有暫態記錄時）
+            row = self.log_table.rowCount()
+            self.log_table.insertRow(row)
+            self._update_log_row(row, summary)
+        
+        # 滾動到最新行
+        self.log_table.scrollToBottom()
+    
+    def _update_log_row(self, row, log_summary):
+        """更新日誌表格行"""
+        # 设置单元格内容
+        self.log_table.setItem(row, 0, QTableWidgetItem(log_summary["timestamp"]))
+        self.log_table.setItem(row, 1, QTableWidgetItem(log_summary["product_id"]))
+        self.log_table.setItem(row, 2, QTableWidgetItem(log_summary["lot_id"]))
+        self.log_table.setItem(row, 3, QTableWidgetItem(log_summary["station"]))
+        self.log_table.setItem(row, 4, QTableWidgetItem(log_summary["component_id"]))
+        
+        # 根据状态设置颜色
+        status_item = QTableWidgetItem(log_summary["status"])
+        if log_summary["status"] == "completed":
+            status_item.setBackground(QColor("green"))
+            status_item.setForeground(QColor("white"))
+        elif log_summary["status"] == "failed":
+            status_item.setBackground(QColor("red"))
+            status_item.setForeground(QColor("white"))
+        elif log_summary["status"] == "processing":
+            status_item.setBackground(QColor("blue"))
+            status_item.setForeground(QColor("white"))
+        self.log_table.setItem(row, 5, status_item)
+        
+        # 设置消息
+        message = f"{log_summary['message']} ({log_summary['duration']})"
+        self.log_table.setItem(row, 6, QTableWidgetItem(message))
+    
+    def on_processing_status_changed(self, status, queue_size, processed_count):
+        """處理在線處理狀態變化"""
+        if status == "running":
+            status_text = f"在線監控: 運行中 | 佇列: {queue_size} | 已處理: {processed_count}"
+        else:
+            status_text = f"在線監控: 已停止 | 佇列: {queue_size} | 已處理: {processed_count}"
+        
+        self.online_status_label.setText(status_text)
+    
+    def on_clear_log_clicked(self):
+        """清空日誌按鈕點擊事件"""
+        reply = QMessageBox.question(
+            self, 
+            "確認清空", 
+            "確定要清空所有日誌記錄嗎？",
+            QMessageBox.Yes | QMessageBox.No,
+            QMessageBox.No
+        )
+        
+        if reply == QMessageBox.Yes:
+            online_manager.clear_logs()
+            self.statusBar.showMessage("日誌已清空")
+    
+    def closeEvent(self, event):
+        """窗口关闭事件处理"""
+        # 确保在线监控正确停止
+        if online_manager.is_running:
+            online_manager.stop()
+        
+        # 接受关闭事件
+        event.accept() 
