@@ -185,6 +185,7 @@ class DataProcessor:
                     align_config = json.load(f)
                 recipe = self.station_recipes.get(station, "Sapphire A")
                 status, detail = check_csv_alignment(component.csv_path, recipe, align_config)
+
                 if status == "fail":
                     return False, f"CSV檔案偏移錯誤: {detail}"
 

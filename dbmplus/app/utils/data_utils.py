@@ -448,24 +448,55 @@ def check_csv_alignment(csv_path, recipe, align_config):
         Tuple[str, str]: ('success'|'fail'|'error', 詳細訊息)
     """
     try:
-        # 讀取檔案前1KB，檢查標頭
-        with open(csv_path, 'r', encoding='utf-8', errors='ignore') as f:
-            content = f.read(1024)
-            
-        # 獲取配方的對齊關鍵字
-        keys = align_config.get(recipe, [])
-        if not keys:
+        # 獲取配方的對齊關鍵字配置
+        alignment_points = align_config.get(recipe, [])
+        if not alignment_points:
             logger.warning(f"找不到配方 {recipe} 的對齊關鍵字")
             return "error", f"找不到配方 {recipe} 的對齊關鍵字"
             
-        # 檢查關鍵字是否存在
-        for key in keys:
-            if key in content:
-                logger.info(f"檔案 {csv_path} 符合對齊要求，找到關鍵字: {key}")
-                return "success", "對齊正確"
+        # 讀取CSV並解析，查找包含標頭行的CSV
+        header_row = find_header_row(csv_path)
+        if header_row is None:
+            return "error", "找不到CSV標頭行"
+            
+        # 使用pandas讀取CSV
+        import pandas as pd
+        try:
+            df = pd.read_csv(csv_path, skiprows=header_row)
+        except Exception as e:
+            logger.error(f"讀取CSV失敗: {e}")
+            return "error", f"讀取CSV失敗: {e}"
+            
+        # 確保必要的列存在
+        required_cols = ['Col', 'Row', 'DefectType']
+        if not all(col in df.columns for col in required_cols):
+            missing_cols = [col for col in required_cols if col not in df.columns]
+            return "error", f"CSV缺少必要列: {', '.join(missing_cols)}"
+            
+        # 檢查對齊點是否存在
+        found_points = 0
+        total_points = len(alignment_points)
+        
+        for point in alignment_points:
+            if isinstance(point, list) and len(point) >= 3:
+                col_val, row_val, defect_type = point[0], point[1], point[2]
                 
-        logger.warning(f"檔案 {csv_path} 不符合對齊要求，找不到關鍵字: {keys}")
-        return "fail", f"找不到對齊關鍵字: {', '.join(keys)}"
+                # 查找匹配的行
+                matches = df[(df['Col'] == col_val) & (df['Row'] == row_val) & (df['DefectType'] == defect_type)]
+                
+                if not matches.empty:
+                    found_points += 1
+                    logger.info(f"找到對齊點: Col={col_val}, Row={row_val}, DefectType={defect_type}")
+                else:
+                    logger.warning(f"找不到對齊點: Col={col_val}, Row={row_val}, DefectType={defect_type}")
+        
+        # 判斷是否有足夠的對齊點匹配
+        if found_points > 0:
+            percentage = (found_points / total_points) * 100
+            # 修改判斷標準：只要有1個點匹配即可
+            return "success", f"對齊正確，找到 {found_points}/{total_points} 個對齊點"
+        else:
+            return "fail", f"找不到任何對齊點，需要至少1個匹配"
         
     except Exception as e:
         logger.error(f"檢查CSV對齊時發生錯誤: {e}")

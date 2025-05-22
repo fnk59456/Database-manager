@@ -2569,3 +2569,681 @@
 2025-05-22 01:08:50,347 - data_processor - INFO - Step 4: 為 WLPF40010006 生成Basemap
 2025-05-22 01:08:51,125 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010006.png
 2025-05-22 01:08:51,155 - data_processor - INFO - 任務 a7729595-66ec-4ca1-a2fd-b388ca969706 已完成: True - D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010006.png
+2025-05-22 09:24:17,198 - data_processor - INFO - 開始執行任務: 38cc0164-ac95-4f86-908c-e8021f530b52 (basemap)
+2025-05-22 09:24:17,199 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 09:24:17,200 - data_processor - INFO - 檔案 M3X60_WLPF40010001_202504091051.csv 是原始格式，執行 step1~3
+2025-05-22 09:24:17,201 - data_processor - INFO - Step 1: 讀取元件 WLPF40010001 的config參數
+2025-05-22 09:24:17,201 - data_processor - INFO - Step 2: 執行 WLPF40010001 的原始CSV偏移確認
+2025-05-22 09:24:17,205 - data_processor - INFO - Step 3: 處理 WLPF40010001 的CSV標頭
+2025-05-22 09:24:17,642 - data_processor - INFO - Step 4: 為 WLPF40010001 生成Basemap
+2025-05-22 09:24:18,204 - data_processor - INFO - 開始執行任務: 9c1e9c32-e0e6-4a4a-b595-bc285db9164d (basemap)
+2025-05-22 09:24:18,230 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 09:24:18,231 - data_processor - INFO - 檔案 M3X60_WLPF40010003_202504091051.csv 是原始格式，執行 step1~3
+2025-05-22 09:24:18,231 - data_processor - INFO - Step 1: 讀取元件 WLPF40010003 的config參數
+2025-05-22 09:24:18,242 - data_processor - INFO - Step 2: 執行 WLPF40010003 的原始CSV偏移確認
+2025-05-22 09:24:18,243 - data_processor - INFO - Step 3: 處理 WLPF40010003 的CSV標頭
+2025-05-22 09:24:19,006 - data_processor - INFO - Step 4: 為 WLPF40010003 生成Basemap
+2025-05-22 09:24:19,059 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010001.png
+2025-05-22 09:24:19,061 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 09:24:19,062 - data_processor - INFO - 任務 38cc0164-ac95-4f86-908c-e8021f530b52 已完成: True - D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010001.png
+2025-05-22 09:24:19,205 - data_processor - INFO - 開始執行任務: a647f0f1-0d28-4940-9b2e-7ab2358eef9b (basemap)
+2025-05-22 09:24:19,206 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 09:24:19,207 - data_processor - INFO - 檔案 M3X60_WLPF40010004_202504091051.csv 是原始格式，執行 step1~3
+2025-05-22 09:24:19,207 - data_processor - INFO - Step 1: 讀取元件 WLPF40010004 的config參數
+2025-05-22 09:24:19,208 - data_processor - INFO - Step 2: 執行 WLPF40010004 的原始CSV偏移確認
+2025-05-22 09:24:19,208 - data_processor - INFO - Step 3: 處理 WLPF40010004 的CSV標頭
+2025-05-22 09:24:20,117 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010003.png
+2025-05-22 09:24:20,123 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 09:24:20,125 - data_processor - INFO - 任務 9c1e9c32-e0e6-4a4a-b595-bc285db9164d 已完成: True - D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010003.png
+2025-05-22 09:24:20,175 - data_processor - INFO - Step 4: 為 WLPF40010004 生成Basemap
+2025-05-22 09:24:20,200 - data_processor - INFO - 開始執行任務: 862a57a6-24ab-484b-9f55-0bc4b9f1131b (basemap)
+2025-05-22 09:24:20,202 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 09:24:20,203 - data_processor - INFO - 檔案 M3X60_WLPF40010006_202504091051.csv 是原始格式，執行 step1~3
+2025-05-22 09:24:20,203 - data_processor - INFO - Step 1: 讀取元件 WLPF40010006 的config參數
+2025-05-22 09:24:20,204 - data_processor - INFO - Step 2: 執行 WLPF40010006 的原始CSV偏移確認
+2025-05-22 09:24:20,207 - data_processor - INFO - Step 3: 處理 WLPF40010006 的CSV標頭
+2025-05-22 09:24:21,090 - data_processor - INFO - Step 4: 為 WLPF40010006 生成Basemap
+2025-05-22 09:24:21,409 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010004.png
+2025-05-22 09:24:21,411 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 09:24:21,412 - data_processor - INFO - 任務 a647f0f1-0d28-4940-9b2e-7ab2358eef9b 已完成: True - D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010004.png
+2025-05-22 09:24:21,996 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010006.png
+2025-05-22 09:24:21,999 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 09:24:21,999 - data_processor - INFO - 任務 862a57a6-24ab-484b-9f55-0bc4b9f1131b 已完成: True - D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010006.png
+2025-05-22 09:24:27,188 - data_processor - INFO - 開始執行任務: d5cdcc16-5280-464e-b74f-17b53a44dee1 (basemap)
+2025-05-22 09:24:27,189 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 09:24:27,190 - data_processor - INFO - 檔案 M1X60_WLPF40010001_202504141037.csv 是原始格式，執行 step1~3
+2025-05-22 09:24:27,190 - data_processor - INFO - Step 1: 讀取元件 WLPF40010001 的config參數
+2025-05-22 09:24:27,190 - data_processor - INFO - Step 2: 執行 WLPF40010001 的原始CSV偏移確認
+2025-05-22 09:24:27,193 - data_processor - INFO - Step 3: 處理 WLPF40010001 的CSV標頭
+2025-05-22 09:24:27,639 - data_processor - INFO - Step 4: 為 WLPF40010001 生成Basemap
+2025-05-22 09:24:28,207 - data_processor - INFO - 開始執行任務: 21bcedaf-373e-469f-9808-c6a6304548a3 (basemap)
+2025-05-22 09:24:28,208 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 09:24:28,211 - data_processor - INFO - 檔案 M1X60_WLPF40010003_202504141037.csv 是原始格式，執行 step1~3
+2025-05-22 09:24:28,211 - data_processor - INFO - Step 1: 讀取元件 WLPF40010003 的config參數
+2025-05-22 09:24:28,298 - data_processor - INFO - Step 2: 執行 WLPF40010003 的原始CSV偏移確認
+2025-05-22 09:24:28,317 - data_processor - INFO - Step 3: 處理 WLPF40010003 的CSV標頭
+2025-05-22 09:24:28,377 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010001.png
+2025-05-22 09:24:28,380 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 09:24:28,380 - data_processor - INFO - 任務 d5cdcc16-5280-464e-b74f-17b53a44dee1 已完成: True - D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010001.png
+2025-05-22 09:24:28,798 - data_processor - INFO - Step 4: 為 WLPF40010003 生成Basemap
+2025-05-22 09:24:29,257 - data_processor - INFO - 開始執行任務: 9cb13496-4c7d-4d8d-9a2e-6820d75f42b0 (basemap)
+2025-05-22 09:24:29,274 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 09:24:29,276 - data_processor - INFO - 檔案 M1X60_WLPF40010004_202504141037.csv 是原始格式，執行 step1~3
+2025-05-22 09:24:29,278 - data_processor - INFO - Step 1: 讀取元件 WLPF40010004 的config參數
+2025-05-22 09:24:29,278 - data_processor - INFO - Step 2: 執行 WLPF40010004 的原始CSV偏移確認
+2025-05-22 09:24:29,283 - data_processor - INFO - Step 3: 處理 WLPF40010004 的CSV標頭
+2025-05-22 09:24:29,580 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010003.png
+2025-05-22 09:24:29,585 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 09:24:29,587 - data_processor - INFO - 任務 21bcedaf-373e-469f-9808-c6a6304548a3 已完成: True - D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010003.png
+2025-05-22 09:24:29,927 - data_processor - INFO - Step 4: 為 WLPF40010004 生成Basemap
+2025-05-22 09:24:30,672 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010004.png
+2025-05-22 09:24:30,676 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 09:24:30,676 - data_processor - INFO - 任務 9cb13496-4c7d-4d8d-9a2e-6820d75f42b0 已完成: True - D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010004.png
+2025-05-22 14:01:29,041 - data_processor - INFO - 開始執行任務: 5546d9f4-ddc4-4835-ba58-02f3d40730d3 (basemap)
+2025-05-22 14:01:29,042 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 14:01:29,042 - data_processor - INFO - 檔案 M3X60_WLPF40010001_202504091051.csv 是原始格式，執行 step1~3
+2025-05-22 14:01:29,042 - data_processor - INFO - Step 1: 讀取元件 WLPF40010001 的config參數
+2025-05-22 14:01:29,043 - data_processor - INFO - Step 2: 執行 WLPF40010001 的原始CSV偏移確認
+2025-05-22 14:01:29,043 - data_processor - INFO - Step 3: 處理 WLPF40010001 的CSV標頭
+2025-05-22 14:01:29,500 - data_processor - INFO - Step 4: 為 WLPF40010001 生成Basemap
+2025-05-22 14:01:30,044 - data_processor - INFO - 開始執行任務: dc98a2a3-cdc3-4dfa-b24e-fe2d6c4270b2 (basemap)
+2025-05-22 14:01:30,045 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 14:01:30,045 - data_processor - INFO - 檔案 M3X60_WLPF40010003_202504091051.csv 是原始格式，執行 step1~3
+2025-05-22 14:01:30,045 - data_processor - INFO - Step 1: 讀取元件 WLPF40010003 的config參數
+2025-05-22 14:01:30,046 - data_processor - INFO - Step 2: 執行 WLPF40010003 的原始CSV偏移確認
+2025-05-22 14:01:30,046 - data_processor - INFO - Step 3: 處理 WLPF40010003 的CSV標頭
+2025-05-22 14:01:30,381 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010001.png
+2025-05-22 14:01:30,389 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 14:01:30,391 - data_processor - INFO - 任務 5546d9f4-ddc4-4835-ba58-02f3d40730d3 已完成: True - D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010001.png
+2025-05-22 14:01:30,647 - data_processor - INFO - Step 4: 為 WLPF40010003 生成Basemap
+2025-05-22 14:01:31,107 - data_processor - INFO - 開始執行任務: da6c0287-f4d6-42a2-9882-5b900cb8199a (basemap)
+2025-05-22 14:01:31,111 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 14:01:31,119 - data_processor - INFO - 檔案 M3X60_WLPF40010004_202504091051.csv 是原始格式，執行 step1~3
+2025-05-22 14:01:31,124 - data_processor - INFO - Step 1: 讀取元件 WLPF40010004 的config參數
+2025-05-22 14:01:31,132 - data_processor - INFO - Step 2: 執行 WLPF40010004 的原始CSV偏移確認
+2025-05-22 14:01:31,133 - data_processor - INFO - Step 3: 處理 WLPF40010004 的CSV標頭
+2025-05-22 14:01:31,603 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010003.png
+2025-05-22 14:01:31,609 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 14:01:31,610 - data_processor - INFO - 任務 dc98a2a3-cdc3-4dfa-b24e-fe2d6c4270b2 已完成: True - D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010003.png
+2025-05-22 14:01:31,790 - data_processor - INFO - Step 4: 為 WLPF40010004 生成Basemap
+2025-05-22 14:01:32,038 - data_processor - INFO - 開始執行任務: 7fd30d35-3b24-4d86-a08f-8100272c4c8a (basemap)
+2025-05-22 14:01:32,038 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 14:01:32,043 - data_processor - INFO - 檔案 M3X60_WLPF40010006_202504091051.csv 是原始格式，執行 step1~3
+2025-05-22 14:01:32,044 - data_processor - INFO - Step 1: 讀取元件 WLPF40010006 的config參數
+2025-05-22 14:01:32,044 - data_processor - INFO - Step 2: 執行 WLPF40010006 的原始CSV偏移確認
+2025-05-22 14:01:32,045 - data_processor - INFO - Step 3: 處理 WLPF40010006 的CSV標頭
+2025-05-22 14:01:32,807 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010004.png
+2025-05-22 14:01:32,815 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 14:01:32,816 - data_processor - INFO - 任務 da6c0287-f4d6-42a2-9882-5b900cb8199a 已完成: True - D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010004.png
+2025-05-22 14:01:32,902 - data_processor - INFO - Step 4: 為 WLPF40010006 生成Basemap
+2025-05-22 14:01:33,745 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010006.png
+2025-05-22 14:01:33,748 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 14:01:33,748 - data_processor - INFO - 任務 7fd30d35-3b24-4d86-a08f-8100272c4c8a 已完成: True - D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010006.png
+2025-05-22 14:01:39,033 - data_processor - INFO - 開始執行任務: e6880b52-3c0a-430f-8596-f592fe6e58f5 (basemap)
+2025-05-22 14:01:39,035 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 14:01:39,035 - data_processor - INFO - 檔案 M1X60_WLPF40010001_202504141037.csv 是原始格式，執行 step1~3
+2025-05-22 14:01:39,035 - data_processor - INFO - Step 1: 讀取元件 WLPF40010001 的config參數
+2025-05-22 14:01:39,036 - data_processor - INFO - Step 2: 執行 WLPF40010001 的原始CSV偏移確認
+2025-05-22 14:01:39,044 - data_processor - INFO - Step 3: 處理 WLPF40010001 的CSV標頭
+2025-05-22 14:01:39,488 - data_processor - INFO - Step 4: 為 WLPF40010001 生成Basemap
+2025-05-22 14:01:40,043 - data_processor - INFO - 開始執行任務: ffa09871-bd8d-4198-abf0-243c3be6aae5 (basemap)
+2025-05-22 14:01:40,127 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 14:01:40,133 - data_processor - INFO - 檔案 M1X60_WLPF40010003_202504141037.csv 是原始格式，執行 step1~3
+2025-05-22 14:01:40,139 - data_processor - INFO - Step 1: 讀取元件 WLPF40010003 的config參數
+2025-05-22 14:01:40,148 - data_processor - INFO - Step 2: 執行 WLPF40010003 的原始CSV偏移確認
+2025-05-22 14:01:40,152 - data_processor - INFO - Step 3: 處理 WLPF40010003 的CSV標頭
+2025-05-22 14:01:40,205 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010001.png
+2025-05-22 14:01:40,207 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 14:01:40,207 - data_processor - INFO - 任務 e6880b52-3c0a-430f-8596-f592fe6e58f5 已完成: True - D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010001.png
+2025-05-22 14:01:40,639 - data_processor - INFO - Step 4: 為 WLPF40010003 生成Basemap
+2025-05-22 14:01:41,078 - data_processor - INFO - 開始執行任務: 1d8a7fac-0f02-4793-82fb-f96a93797f2a (basemap)
+2025-05-22 14:01:41,081 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 14:01:41,084 - data_processor - INFO - 檔案 M1X60_WLPF40010004_202504141037.csv 是原始格式，執行 step1~3
+2025-05-22 14:01:41,088 - data_processor - INFO - Step 1: 讀取元件 WLPF40010004 的config參數
+2025-05-22 14:01:41,093 - data_processor - INFO - Step 2: 執行 WLPF40010004 的原始CSV偏移確認
+2025-05-22 14:01:41,101 - data_processor - INFO - Step 3: 處理 WLPF40010004 的CSV標頭
+2025-05-22 14:01:41,477 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010003.png
+2025-05-22 14:01:41,482 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 14:01:41,484 - data_processor - INFO - 任務 ffa09871-bd8d-4198-abf0-243c3be6aae5 已完成: True - D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010003.png
+2025-05-22 14:01:41,721 - data_processor - INFO - Step 4: 為 WLPF40010004 生成Basemap
+2025-05-22 14:01:42,451 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010004.png
+2025-05-22 14:01:42,453 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 14:01:42,454 - data_processor - INFO - 任務 1d8a7fac-0f02-4793-82fb-f96a93797f2a 已完成: True - D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010004.png
+2025-05-22 14:09:05,881 - data_processor - INFO - 開始執行任務: d82c9745-fc22-4d5b-ba94-1608133ddd06 (basemap)
+2025-05-22 14:09:05,883 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 14:09:05,884 - data_processor - INFO - 檔案 M3X60_WLPF40010001_202504091051.csv 是原始格式，執行 step1~3
+2025-05-22 14:09:05,885 - data_processor - INFO - Step 1: 讀取元件 M3X60_WLPF40010001_202504091051 的config參數
+2025-05-22 14:09:05,886 - data_processor - INFO - Step 2: 執行 M3X60_WLPF40010001_202504091051 的原始CSV偏移確認
+2025-05-22 14:09:05,888 - data_processor - INFO - Step 3: 處理 M3X60_WLPF40010001_202504091051 的CSV標頭
+2025-05-22 14:09:06,364 - data_processor - INFO - Step 4: 為 M3X60_WLPF40010001_202504091051 生成Basemap
+2025-05-22 14:09:07,185 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010001.png
+2025-05-22 14:09:07,188 - data_processor - INFO - 檔案 M3X60_WLPF40010003_202504091051.csv 是原始格式，執行 step1~3
+2025-05-22 14:09:07,188 - data_processor - INFO - Step 1: 讀取元件 M3X60_WLPF40010003_202504091051 的config參數
+2025-05-22 14:09:07,189 - data_processor - INFO - Step 2: 執行 M3X60_WLPF40010003_202504091051 的原始CSV偏移確認
+2025-05-22 14:09:07,190 - data_processor - INFO - Step 3: 處理 M3X60_WLPF40010003_202504091051 的CSV標頭
+2025-05-22 14:09:07,647 - data_processor - INFO - Step 4: 為 M3X60_WLPF40010003_202504091051 生成Basemap
+2025-05-22 14:09:08,425 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010003.png
+2025-05-22 14:09:08,428 - data_processor - INFO - 檔案 M3X60_WLPF40010004_202504091051.csv 是原始格式，執行 step1~3
+2025-05-22 14:09:08,428 - data_processor - INFO - Step 1: 讀取元件 M3X60_WLPF40010004_202504091051 的config參數
+2025-05-22 14:09:08,428 - data_processor - INFO - Step 2: 執行 M3X60_WLPF40010004_202504091051 的原始CSV偏移確認
+2025-05-22 14:09:08,429 - data_processor - INFO - Step 3: 處理 M3X60_WLPF40010004_202504091051 的CSV標頭
+2025-05-22 14:09:08,923 - data_processor - INFO - Step 4: 為 M3X60_WLPF40010004_202504091051 生成Basemap
+2025-05-22 14:09:09,711 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010004.png
+2025-05-22 14:09:09,714 - data_processor - INFO - 檔案 M3X60_WLPF40010006_202504091051.csv 是原始格式，執行 step1~3
+2025-05-22 14:09:09,714 - data_processor - INFO - Step 1: 讀取元件 M3X60_WLPF40010006_202504091051 的config參數
+2025-05-22 14:09:09,714 - data_processor - INFO - Step 2: 執行 M3X60_WLPF40010006_202504091051 的原始CSV偏移確認
+2025-05-22 14:09:09,715 - data_processor - INFO - Step 3: 處理 M3X60_WLPF40010006_202504091051 的CSV標頭
+2025-05-22 14:09:10,204 - data_processor - INFO - Step 4: 為 M3X60_WLPF40010006_202504091051 生成Basemap
+2025-05-22 14:09:10,967 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010006.png
+2025-05-22 14:09:10,970 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 14:09:10,970 - data_processor - INFO - 任務 d82c9745-fc22-4d5b-ba94-1608133ddd06 已完成: True - 已處理 4/20 個元件的 Basemap
+2025-05-22 14:10:34,363 - data_processor - INFO - 開始執行任務: ac1f5369-f81c-4a92-a506-b6697ae371e6 (basemap)
+2025-05-22 14:10:34,365 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 14:10:34,366 - data_processor - INFO - 檔案 M1X60_WLPF40010001_202504141037.csv 是原始格式，執行 step1~3
+2025-05-22 14:10:34,367 - data_processor - INFO - Step 1: 讀取元件 WLPF40010001 的config參數
+2025-05-22 14:10:34,368 - data_processor - INFO - Step 2: 執行 WLPF40010001 的原始CSV偏移確認
+2025-05-22 14:10:34,369 - data_processor - INFO - Step 3: 處理 WLPF40010001 的CSV標頭
+2025-05-22 14:10:34,837 - data_processor - INFO - Step 4: 為 WLPF40010001 生成Basemap
+2025-05-22 14:10:35,361 - data_processor - INFO - 開始執行任務: 3d753c46-e7b6-42c3-9f24-1162366a138a (basemap)
+2025-05-22 14:10:35,362 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 14:10:35,362 - data_processor - INFO - 檔案 M1X60_WLPF40010003_202504141037.csv 是原始格式，執行 step1~3
+2025-05-22 14:10:35,362 - data_processor - INFO - Step 1: 讀取元件 WLPF40010003 的config參數
+2025-05-22 14:10:35,363 - data_processor - INFO - Step 2: 執行 WLPF40010003 的原始CSV偏移確認
+2025-05-22 14:10:35,363 - data_processor - INFO - Step 3: 處理 WLPF40010003 的CSV標頭
+2025-05-22 14:10:35,623 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010001.png
+2025-05-22 14:10:35,629 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 14:10:35,630 - data_processor - INFO - 任務 ac1f5369-f81c-4a92-a506-b6697ae371e6 已完成: True - D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010001.png
+2025-05-22 14:10:35,990 - data_processor - INFO - Step 4: 為 WLPF40010003 生成Basemap
+2025-05-22 14:10:36,370 - data_processor - INFO - 開始執行任務: 9e5d75c0-c1ed-472f-b58b-758202f0045c (basemap)
+2025-05-22 14:10:36,373 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 14:10:36,374 - data_processor - INFO - 檔案 M1X60_WLPF40010004_202504141037.csv 是原始格式，執行 step1~3
+2025-05-22 14:10:36,374 - data_processor - INFO - Step 1: 讀取元件 WLPF40010004 的config參數
+2025-05-22 14:10:36,374 - data_processor - INFO - Step 2: 執行 WLPF40010004 的原始CSV偏移確認
+2025-05-22 14:10:36,465 - data_processor - INFO - Step 3: 處理 WLPF40010004 的CSV標頭
+2025-05-22 14:10:36,874 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010003.png
+2025-05-22 14:10:36,880 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 14:10:36,881 - data_processor - INFO - 任務 3d753c46-e7b6-42c3-9f24-1162366a138a 已完成: True - D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010003.png
+2025-05-22 14:10:37,166 - data_processor - INFO - Step 4: 為 WLPF40010004 生成Basemap
+2025-05-22 14:10:37,954 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010004.png
+2025-05-22 14:10:37,956 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 14:10:37,957 - data_processor - INFO - 任務 9e5d75c0-c1ed-472f-b58b-758202f0045c 已完成: True - D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010004.png
+2025-05-22 14:10:39,364 - data_processor - INFO - 開始執行任務: 50c6091a-6ac9-4e58-a95e-af539affc339 (basemap)
+2025-05-22 14:10:39,365 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 14:10:39,365 - data_processor - INFO - 檔案 M3X60_WLPF40010001_202504091051.csv 是原始格式，執行 step1~3
+2025-05-22 14:10:39,366 - data_processor - INFO - Step 1: 讀取元件 WLPF40010001 的config參數
+2025-05-22 14:10:39,366 - data_processor - INFO - Step 2: 執行 WLPF40010001 的原始CSV偏移確認
+2025-05-22 14:10:39,370 - data_processor - INFO - Step 3: 處理 WLPF40010001 的CSV標頭
+2025-05-22 14:10:39,832 - data_processor - INFO - Step 4: 為 WLPF40010001 生成Basemap
+2025-05-22 14:10:40,381 - data_processor - INFO - 開始執行任務: 62fe20e2-faa6-449f-b926-46eb53714154 (basemap)
+2025-05-22 14:10:40,382 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 14:10:40,382 - data_processor - INFO - 檔案 M3X60_WLPF40010003_202504091051.csv 是原始格式，執行 step1~3
+2025-05-22 14:10:40,383 - data_processor - INFO - Step 1: 讀取元件 WLPF40010003 的config參數
+2025-05-22 14:10:40,383 - data_processor - INFO - Step 2: 執行 WLPF40010003 的原始CSV偏移確認
+2025-05-22 14:10:40,386 - data_processor - INFO - Step 3: 處理 WLPF40010003 的CSV標頭
+2025-05-22 14:10:40,655 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010001.png
+2025-05-22 14:10:40,660 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 14:10:40,661 - data_processor - INFO - 任務 50c6091a-6ac9-4e58-a95e-af539affc339 已完成: True - D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010001.png
+2025-05-22 14:10:41,021 - data_processor - INFO - Step 4: 為 WLPF40010003 生成Basemap
+2025-05-22 14:10:41,413 - data_processor - INFO - 開始執行任務: 2f322e3b-90c6-4429-8b38-db7627ff0984 (basemap)
+2025-05-22 14:10:41,419 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 14:10:41,420 - data_processor - INFO - 檔案 M3X60_WLPF40010004_202504091051.csv 是原始格式，執行 step1~3
+2025-05-22 14:10:41,420 - data_processor - INFO - Step 1: 讀取元件 WLPF40010004 的config參數
+2025-05-22 14:10:41,421 - data_processor - INFO - Step 2: 執行 WLPF40010004 的原始CSV偏移確認
+2025-05-22 14:10:41,448 - data_processor - INFO - Step 3: 處理 WLPF40010004 的CSV標頭
+2025-05-22 14:10:42,106 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010003.png
+2025-05-22 14:10:42,112 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 14:10:42,113 - data_processor - INFO - 任務 62fe20e2-faa6-449f-b926-46eb53714154 已完成: True - D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010003.png
+2025-05-22 14:10:42,242 - data_processor - INFO - Step 4: 為 WLPF40010004 生成Basemap
+2025-05-22 14:10:42,427 - data_processor - INFO - 開始執行任務: 546e21cc-9ce3-4d84-a441-042bf00cc0f7 (basemap)
+2025-05-22 14:10:42,428 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 14:10:42,429 - data_processor - INFO - 檔案 M3X60_WLPF40010006_202504091051.csv 是原始格式，執行 step1~3
+2025-05-22 14:10:42,429 - data_processor - INFO - Step 1: 讀取元件 WLPF40010006 的config參數
+2025-05-22 14:10:42,429 - data_processor - INFO - Step 2: 執行 WLPF40010006 的原始CSV偏移確認
+2025-05-22 14:10:42,441 - data_processor - INFO - Step 3: 處理 WLPF40010006 的CSV標頭
+2025-05-22 14:10:43,297 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010004.png
+2025-05-22 14:10:43,303 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 14:10:43,304 - data_processor - INFO - 任務 2f322e3b-90c6-4429-8b38-db7627ff0984 已完成: True - D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010004.png
+2025-05-22 14:10:43,431 - data_processor - INFO - Step 4: 為 WLPF40010006 生成Basemap
+2025-05-22 14:10:44,217 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010006.png
+2025-05-22 14:10:44,220 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 14:10:44,221 - data_processor - INFO - 任務 546e21cc-9ce3-4d84-a441-042bf00cc0f7 已完成: True - D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010006.png
+2025-05-22 14:55:29,199 - data_processor - INFO - 開始執行任務: d7469fb2-e72e-43d9-b1eb-018a6cf7c070 (basemap)
+2025-05-22 14:55:29,200 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 14:55:29,200 - data_processor - INFO - 檔案 M1X60_WLPF40010001_202504141037.csv 是原始格式，執行 step1~3
+2025-05-22 14:55:29,200 - data_processor - INFO - Step 1: 讀取元件 WLPF40010001 的config參數
+2025-05-22 14:55:29,201 - data_processor - INFO - Step 2: 執行 WLPF40010001 的原始CSV偏移確認
+2025-05-22 14:55:29,201 - data_processor - INFO - Step 3: 處理 WLPF40010001 的CSV標頭
+2025-05-22 14:55:29,644 - data_processor - INFO - Step 4: 為 WLPF40010001 生成Basemap
+2025-05-22 14:55:30,198 - data_processor - INFO - 開始執行任務: 4ef409f5-c786-4225-81d4-0e296efb1fb5 (basemap)
+2025-05-22 14:55:30,198 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 14:55:30,199 - data_processor - INFO - 檔案 M1X60_WLPF40010003_202504141037.csv 是原始格式，執行 step1~3
+2025-05-22 14:55:30,199 - data_processor - INFO - Step 1: 讀取元件 WLPF40010003 的config參數
+2025-05-22 14:55:30,199 - data_processor - INFO - Step 2: 執行 WLPF40010003 的原始CSV偏移確認
+2025-05-22 14:55:30,200 - data_processor - INFO - Step 3: 處理 WLPF40010003 的CSV標頭
+2025-05-22 14:55:30,386 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010001.png
+2025-05-22 14:55:30,389 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 14:55:30,390 - data_processor - INFO - 任務 d7469fb2-e72e-43d9-b1eb-018a6cf7c070 已完成: True - D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010001.png
+2025-05-22 14:55:30,787 - data_processor - INFO - Step 4: 為 WLPF40010003 生成Basemap
+2025-05-22 14:55:31,237 - data_processor - INFO - 開始執行任務: fade315d-8986-4629-a959-750dc21ab849 (basemap)
+2025-05-22 14:55:31,250 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 14:55:31,252 - data_processor - INFO - 檔案 M1X60_WLPF40010004_202504141037.csv 是原始格式，執行 step1~3
+2025-05-22 14:55:31,253 - data_processor - INFO - Step 1: 讀取元件 WLPF40010004 的config參數
+2025-05-22 14:55:31,257 - data_processor - INFO - Step 2: 執行 WLPF40010004 的原始CSV偏移確認
+2025-05-22 14:55:31,258 - data_processor - INFO - Step 3: 處理 WLPF40010004 的CSV標頭
+2025-05-22 14:55:31,627 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010003.png
+2025-05-22 14:55:31,635 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 14:55:31,636 - data_processor - INFO - 任務 4ef409f5-c786-4225-81d4-0e296efb1fb5 已完成: True - D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010003.png
+2025-05-22 14:55:31,877 - data_processor - INFO - Step 4: 為 WLPF40010004 生成Basemap
+2025-05-22 14:55:32,208 - data_processor - INFO - 開始執行任務: 29beef10-96d1-41b5-9fdc-80695c405fc2 (basemap)
+2025-05-22 14:55:32,216 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 14:55:32,219 - data_processor - INFO - 檔案 M3X60_WLPF40010001_202504091051.csv 是原始格式，執行 step1~3
+2025-05-22 14:55:32,219 - data_processor - INFO - Step 1: 讀取元件 WLPF40010001 的config參數
+2025-05-22 14:55:32,220 - data_processor - INFO - Step 2: 執行 WLPF40010001 的原始CSV偏移確認
+2025-05-22 14:55:32,221 - data_processor - INFO - Step 3: 處理 WLPF40010001 的CSV標頭
+2025-05-22 14:55:32,811 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010004.png
+2025-05-22 14:55:32,818 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 14:55:32,819 - data_processor - INFO - 任務 fade315d-8986-4629-a959-750dc21ab849 已完成: True - D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010004.png
+2025-05-22 14:55:32,969 - data_processor - INFO - Step 4: 為 WLPF40010001 生成Basemap
+2025-05-22 14:55:33,190 - data_processor - INFO - 開始執行任務: 5babf2f7-78c4-4c11-9422-26d3c14f0a03 (basemap)
+2025-05-22 14:55:33,191 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 14:55:33,191 - data_processor - INFO - 檔案 M3X60_WLPF40010003_202504091051.csv 是原始格式，執行 step1~3
+2025-05-22 14:55:33,193 - data_processor - INFO - Step 1: 讀取元件 WLPF40010003 的config參數
+2025-05-22 14:55:33,194 - data_processor - INFO - Step 2: 執行 WLPF40010003 的原始CSV偏移確認
+2025-05-22 14:55:33,194 - data_processor - INFO - Step 3: 處理 WLPF40010003 的CSV標頭
+2025-05-22 14:55:33,997 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010001.png
+2025-05-22 14:55:34,004 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 14:55:34,006 - data_processor - INFO - 任務 29beef10-96d1-41b5-9fdc-80695c405fc2 已完成: True - D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010001.png
+2025-05-22 14:55:34,098 - data_processor - INFO - Step 4: 為 WLPF40010003 生成Basemap
+2025-05-22 14:55:34,200 - data_processor - INFO - 開始執行任務: dd0d0cc5-b989-41ee-8360-9586dbe7efd8 (basemap)
+2025-05-22 14:55:34,206 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 14:55:34,206 - data_processor - INFO - 檔案 M3X60_WLPF40010004_202504091051.csv 是原始格式，執行 step1~3
+2025-05-22 14:55:34,206 - data_processor - INFO - Step 1: 讀取元件 WLPF40010004 的config參數
+2025-05-22 14:55:34,207 - data_processor - INFO - Step 2: 執行 WLPF40010004 的原始CSV偏移確認
+2025-05-22 14:55:34,208 - data_processor - INFO - Step 3: 處理 WLPF40010004 的CSV標頭
+2025-05-22 14:55:35,149 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010003.png
+2025-05-22 14:55:35,153 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 14:55:35,154 - data_processor - INFO - 任務 5babf2f7-78c4-4c11-9422-26d3c14f0a03 已完成: True - D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010003.png
+2025-05-22 14:55:35,193 - data_processor - INFO - Step 4: 為 WLPF40010004 生成Basemap
+2025-05-22 14:55:35,202 - data_processor - INFO - 開始執行任務: 01bd5402-0dff-4385-9916-c7d1727afc8b (basemap)
+2025-05-22 14:55:35,203 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 14:55:35,203 - data_processor - INFO - 檔案 M3X60_WLPF40010006_202504091051.csv 是原始格式，執行 step1~3
+2025-05-22 14:55:35,204 - data_processor - INFO - Step 1: 讀取元件 WLPF40010006 的config參數
+2025-05-22 14:55:35,204 - data_processor - INFO - Step 2: 執行 WLPF40010006 的原始CSV偏移確認
+2025-05-22 14:55:35,204 - data_processor - INFO - Step 3: 處理 WLPF40010006 的CSV標頭
+2025-05-22 14:55:36,062 - data_processor - INFO - Step 4: 為 WLPF40010006 生成Basemap
+2025-05-22 14:55:36,357 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010004.png
+2025-05-22 14:55:36,360 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 14:55:36,360 - data_processor - INFO - 任務 dd0d0cc5-b989-41ee-8360-9586dbe7efd8 已完成: True - D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010004.png
+2025-05-22 14:55:36,973 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010006.png
+2025-05-22 14:55:36,976 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 14:55:36,976 - data_processor - INFO - 任務 01bd5402-0dff-4385-9916-c7d1727afc8b 已完成: True - D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010006.png
+2025-05-22 14:57:48,177 - data_processor - INFO - 開始執行任務: dbee7fc2-4b6a-497e-a7d9-790b6e382b41 (basemap)
+2025-05-22 14:57:48,180 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 14:57:48,182 - data_processor - INFO - Step 4: 為 M3X60_WLPF40010001_202504091051 生成Basemap
+2025-05-22 14:57:48,992 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010001.png
+2025-05-22 14:57:48,994 - data_processor - INFO - Step 4: 為 M3X60_WLPF40010003_202504091051 生成Basemap
+2025-05-22 14:57:49,788 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010003.png
+2025-05-22 14:57:49,791 - data_processor - INFO - Step 4: 為 M3X60_WLPF40010004_202504091051 生成Basemap
+2025-05-22 14:57:50,573 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010004.png
+2025-05-22 14:57:50,575 - data_processor - INFO - Step 4: 為 M3X60_WLPF40010006_202504091051 生成Basemap
+2025-05-22 14:57:51,329 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010006.png
+2025-05-22 14:57:51,331 - data_processor - INFO - Step 4: 為 WLPF40010001 生成Basemap
+2025-05-22 14:57:52,101 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010001.png
+2025-05-22 14:57:52,103 - data_processor - INFO - Step 4: 為 WLPF40010003 生成Basemap
+2025-05-22 14:57:52,869 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010003.png
+2025-05-22 14:57:52,872 - data_processor - INFO - Step 4: 為 WLPF40010004 生成Basemap
+2025-05-22 14:57:53,669 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010004.png
+2025-05-22 14:57:53,671 - data_processor - INFO - Step 4: 為 WLPF40010006 生成Basemap
+2025-05-22 14:57:54,410 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010006.png
+2025-05-22 14:57:54,412 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 14:57:54,413 - data_processor - INFO - 任務 dbee7fc2-4b6a-497e-a7d9-790b6e382b41 已完成: True - 已處理 8/24 個元件的 Basemap
+2025-05-22 14:59:32,406 - data_processor - INFO - 開始執行任務: 8c21126f-1dfb-4bb5-a35a-1cf220bb6376 (basemap)
+2025-05-22 14:59:32,408 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 14:59:32,410 - data_processor - INFO - 檔案 M3X60_WLPF40010001_202504091051.csv 是原始格式，執行 step1~3
+2025-05-22 14:59:32,410 - data_processor - INFO - Step 1: 讀取元件 M3X60_WLPF40010001_202504091051 的config參數
+2025-05-22 14:59:32,411 - data_processor - INFO - Step 2: 執行 M3X60_WLPF40010001_202504091051 的原始CSV偏移確認
+2025-05-22 14:59:32,412 - data_processor - INFO - Step 3: 處理 M3X60_WLPF40010001_202504091051 的CSV標頭
+2025-05-22 14:59:32,898 - data_processor - INFO - Step 4: 為 M3X60_WLPF40010001_202504091051 生成Basemap
+2025-05-22 14:59:33,734 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010001.png
+2025-05-22 14:59:33,736 - data_processor - INFO - 檔案 M3X60_WLPF40010003_202504091051.csv 是原始格式，執行 step1~3
+2025-05-22 14:59:33,736 - data_processor - INFO - Step 1: 讀取元件 M3X60_WLPF40010003_202504091051 的config參數
+2025-05-22 14:59:33,737 - data_processor - INFO - Step 2: 執行 M3X60_WLPF40010003_202504091051 的原始CSV偏移確認
+2025-05-22 14:59:33,737 - data_processor - INFO - Step 3: 處理 M3X60_WLPF40010003_202504091051 的CSV標頭
+2025-05-22 14:59:34,199 - data_processor - INFO - Step 4: 為 M3X60_WLPF40010003_202504091051 生成Basemap
+2025-05-22 14:59:34,959 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010003.png
+2025-05-22 14:59:34,962 - data_processor - INFO - 檔案 M3X60_WLPF40010004_202504091051.csv 是原始格式，執行 step1~3
+2025-05-22 14:59:34,962 - data_processor - INFO - Step 1: 讀取元件 M3X60_WLPF40010004_202504091051 的config參數
+2025-05-22 14:59:34,963 - data_processor - INFO - Step 2: 執行 M3X60_WLPF40010004_202504091051 的原始CSV偏移確認
+2025-05-22 14:59:34,963 - data_processor - INFO - Step 3: 處理 M3X60_WLPF40010004_202504091051 的CSV標頭
+2025-05-22 14:59:35,416 - data_processor - INFO - Step 4: 為 M3X60_WLPF40010004_202504091051 生成Basemap
+2025-05-22 14:59:36,188 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010004.png
+2025-05-22 14:59:36,190 - data_processor - INFO - 檔案 M3X60_WLPF40010006_202504091051.csv 是原始格式，執行 step1~3
+2025-05-22 14:59:36,190 - data_processor - INFO - Step 1: 讀取元件 M3X60_WLPF40010006_202504091051 的config參數
+2025-05-22 14:59:36,191 - data_processor - INFO - Step 2: 執行 M3X60_WLPF40010006_202504091051 的原始CSV偏移確認
+2025-05-22 14:59:36,191 - data_processor - INFO - Step 3: 處理 M3X60_WLPF40010006_202504091051 的CSV標頭
+2025-05-22 14:59:36,679 - data_processor - INFO - Step 4: 為 M3X60_WLPF40010006_202504091051 生成Basemap
+2025-05-22 14:59:37,474 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010006.png
+2025-05-22 14:59:37,476 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 14:59:37,477 - data_processor - INFO - 任務 8c21126f-1dfb-4bb5-a35a-1cf220bb6376 已完成: True - 已處理 4/20 個元件的 Basemap
+2025-05-22 15:01:37,766 - data_processor - INFO - 開始執行任務: 8fb3ea77-b4c8-47e4-9d0c-f823ddf4ae87 (basemap)
+2025-05-22 15:01:37,768 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 15:01:37,770 - data_processor - INFO - 檔案 M3X60_WLPF40010001_202504091051.csv 是原始格式，執行 step1~3
+2025-05-22 15:01:37,771 - data_processor - INFO - Step 1: 讀取元件 M3X60_WLPF40010001_202504091051 的config參數
+2025-05-22 15:01:37,772 - data_processor - INFO - Step 2: 執行 M3X60_WLPF40010001_202504091051 的原始CSV偏移確認
+2025-05-22 15:01:37,772 - data_processor - INFO - Step 3: 處理 M3X60_WLPF40010001_202504091051 的CSV標頭
+2025-05-22 15:01:38,245 - data_processor - INFO - Step 4: 為 M3X60_WLPF40010001_202504091051 生成Basemap
+2025-05-22 15:01:39,016 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010001.png
+2025-05-22 15:01:39,020 - data_processor - INFO - 檔案 M3X60_WLPF40010003_202504091051.csv 是原始格式，執行 step1~3
+2025-05-22 15:01:39,020 - data_processor - INFO - Step 1: 讀取元件 M3X60_WLPF40010003_202504091051 的config參數
+2025-05-22 15:01:39,021 - data_processor - INFO - Step 2: 執行 M3X60_WLPF40010003_202504091051 的原始CSV偏移確認
+2025-05-22 15:01:39,021 - data_processor - INFO - Step 3: 處理 M3X60_WLPF40010003_202504091051 的CSV標頭
+2025-05-22 15:01:39,464 - data_processor - INFO - Step 4: 為 M3X60_WLPF40010003_202504091051 生成Basemap
+2025-05-22 15:01:40,223 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010003.png
+2025-05-22 15:01:40,225 - data_processor - INFO - 檔案 M3X60_WLPF40010004_202504091051.csv 是原始格式，執行 step1~3
+2025-05-22 15:01:40,225 - data_processor - INFO - Step 1: 讀取元件 M3X60_WLPF40010004_202504091051 的config參數
+2025-05-22 15:01:40,226 - data_processor - INFO - Step 2: 執行 M3X60_WLPF40010004_202504091051 的原始CSV偏移確認
+2025-05-22 15:01:40,226 - data_processor - INFO - Step 3: 處理 M3X60_WLPF40010004_202504091051 的CSV標頭
+2025-05-22 15:01:40,676 - data_processor - INFO - Step 4: 為 M3X60_WLPF40010004_202504091051 生成Basemap
+2025-05-22 15:01:41,424 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010004.png
+2025-05-22 15:01:41,427 - data_processor - INFO - 檔案 M3X60_WLPF40010006_202504091051.csv 是原始格式，執行 step1~3
+2025-05-22 15:01:41,427 - data_processor - INFO - Step 1: 讀取元件 M3X60_WLPF40010006_202504091051 的config參數
+2025-05-22 15:01:41,427 - data_processor - INFO - Step 2: 執行 M3X60_WLPF40010006_202504091051 的原始CSV偏移確認
+2025-05-22 15:01:41,428 - data_processor - INFO - Step 3: 處理 M3X60_WLPF40010006_202504091051 的CSV標頭
+2025-05-22 15:01:41,878 - data_processor - INFO - Step 4: 為 M3X60_WLPF40010006_202504091051 生成Basemap
+2025-05-22 15:01:42,635 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010006.png
+2025-05-22 15:01:42,640 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 15:01:42,641 - data_processor - INFO - 任務 8fb3ea77-b4c8-47e4-9d0c-f823ddf4ae87 已完成: True - 已處理 4/20 個元件的 Basemap
+2025-05-22 15:07:17,013 - data_processor - INFO - 開始執行任務: 3b730ad0-2017-420c-9b8e-971a962306b8 (basemap)
+2025-05-22 15:07:17,015 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 15:07:17,017 - data_processor - INFO - 檔案 M3X60_WLPF40010001_202504091051.csv 是原始格式，執行 step1~3
+2025-05-22 15:07:17,017 - data_processor - INFO - Step 1: 讀取元件 M3X60_WLPF40010001_202504091051 的config參數
+2025-05-22 15:07:17,018 - data_processor - INFO - Step 2: 執行 M3X60_WLPF40010001_202504091051 的原始CSV偏移確認
+2025-05-22 15:07:17,019 - data_processor - INFO - 檔案 M3X60_WLPF40010003_202504091051.csv 是原始格式，執行 step1~3
+2025-05-22 15:07:17,019 - data_processor - INFO - Step 1: 讀取元件 M3X60_WLPF40010003_202504091051 的config參數
+2025-05-22 15:07:17,020 - data_processor - INFO - Step 2: 執行 M3X60_WLPF40010003_202504091051 的原始CSV偏移確認
+2025-05-22 15:07:17,021 - data_processor - INFO - 檔案 M3X60_WLPF40010004_202504091051.csv 是原始格式，執行 step1~3
+2025-05-22 15:07:17,021 - data_processor - INFO - Step 1: 讀取元件 M3X60_WLPF40010004_202504091051 的config參數
+2025-05-22 15:07:17,022 - data_processor - INFO - Step 2: 執行 M3X60_WLPF40010004_202504091051 的原始CSV偏移確認
+2025-05-22 15:07:17,022 - data_processor - INFO - 檔案 M3X60_WLPF40010006_202504091051.csv 是原始格式，執行 step1~3
+2025-05-22 15:07:17,023 - data_processor - INFO - Step 1: 讀取元件 M3X60_WLPF40010006_202504091051 的config參數
+2025-05-22 15:07:17,023 - data_processor - INFO - Step 2: 執行 M3X60_WLPF40010006_202504091051 的原始CSV偏移確認
+2025-05-22 15:07:17,024 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 15:07:17,024 - data_processor - INFO - 任務 3b730ad0-2017-420c-9b8e-971a962306b8 已完成: False - 已處理 0/20 個元件的 Basemap
+2025-05-22 15:18:00,483 - data_processor - INFO - 開始執行任務: 6b9dd290-c583-4bd2-b4a7-088c45c6f9a0 (basemap)
+2025-05-22 15:18:00,484 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 15:18:00,487 - data_processor - INFO - 檔案 M3X60_WLPF40010001_202504091051.csv 是原始格式，執行 step1~3
+2025-05-22 15:18:00,487 - data_processor - INFO - Step 1: 讀取元件 M3X60_WLPF40010001_202504091051 的config參數
+2025-05-22 15:18:00,488 - data_processor - INFO - Step 2: 執行 M3X60_WLPF40010001_202504091051 的原始CSV偏移確認
+2025-05-22 15:18:00,648 - data_processor - INFO - Step 3: 處理 M3X60_WLPF40010001_202504091051 的CSV標頭
+2025-05-22 15:18:01,109 - data_processor - INFO - Step 4: 為 M3X60_WLPF40010001_202504091051 生成Basemap
+2025-05-22 15:18:01,901 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010001.png
+2025-05-22 15:18:01,903 - data_processor - INFO - 檔案 M3X60_WLPF40010003_202504091051.csv 是原始格式，執行 step1~3
+2025-05-22 15:18:01,903 - data_processor - INFO - Step 1: 讀取元件 M3X60_WLPF40010003_202504091051 的config參數
+2025-05-22 15:18:01,904 - data_processor - INFO - Step 2: 執行 M3X60_WLPF40010003_202504091051 的原始CSV偏移確認
+2025-05-22 15:18:02,037 - data_processor - INFO - Step 3: 處理 M3X60_WLPF40010003_202504091051 的CSV標頭
+2025-05-22 15:18:02,506 - data_processor - INFO - Step 4: 為 M3X60_WLPF40010003_202504091051 生成Basemap
+2025-05-22 15:18:03,260 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010003.png
+2025-05-22 15:18:03,262 - data_processor - INFO - 檔案 M3X60_WLPF40010004_202504091051.csv 是原始格式，執行 step1~3
+2025-05-22 15:18:03,263 - data_processor - INFO - Step 1: 讀取元件 M3X60_WLPF40010004_202504091051 的config參數
+2025-05-22 15:18:03,263 - data_processor - INFO - Step 2: 執行 M3X60_WLPF40010004_202504091051 的原始CSV偏移確認
+2025-05-22 15:18:03,394 - data_processor - INFO - Step 3: 處理 M3X60_WLPF40010004_202504091051 的CSV標頭
+2025-05-22 15:18:03,861 - data_processor - INFO - Step 4: 為 M3X60_WLPF40010004_202504091051 生成Basemap
+2025-05-22 15:18:04,604 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010004.png
+2025-05-22 15:18:04,606 - data_processor - INFO - 檔案 M3X60_WLPF40010006_202504091051.csv 是原始格式，執行 step1~3
+2025-05-22 15:18:04,607 - data_processor - INFO - Step 1: 讀取元件 M3X60_WLPF40010006_202504091051 的config參數
+2025-05-22 15:18:04,607 - data_processor - INFO - Step 2: 執行 M3X60_WLPF40010006_202504091051 的原始CSV偏移確認
+2025-05-22 15:18:04,733 - data_processor - INFO - Step 3: 處理 M3X60_WLPF40010006_202504091051 的CSV標頭
+2025-05-22 15:18:05,180 - data_processor - INFO - Step 4: 為 M3X60_WLPF40010006_202504091051 生成Basemap
+2025-05-22 15:18:05,915 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010006.png
+2025-05-22 15:18:05,918 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 15:18:05,919 - data_processor - INFO - 任務 6b9dd290-c583-4bd2-b4a7-088c45c6f9a0 已完成: True - 已處理 4/20 個元件的 Basemap
+2025-05-22 15:18:17,714 - data_processor - INFO - 開始執行任務: fd74ba18-abd5-4648-a3e2-8e4b8770d58e (basemap)
+2025-05-22 15:18:17,717 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 15:18:17,719 - data_processor - INFO - 檔案 M1X60_WLPF40010001_202504141037.csv 是原始格式，執行 step1~3
+2025-05-22 15:18:17,720 - data_processor - INFO - Step 1: 讀取元件 WLPF40010001 的config參數
+2025-05-22 15:18:17,722 - data_processor - INFO - Step 2: 執行 WLPF40010001 的原始CSV偏移確認
+2025-05-22 15:18:17,854 - data_processor - INFO - Step 3: 處理 WLPF40010001 的CSV標頭
+2025-05-22 15:18:18,284 - data_processor - INFO - Step 4: 為 WLPF40010001 生成Basemap
+2025-05-22 15:18:18,725 - data_processor - INFO - 開始執行任務: 69868105-9644-4814-a6e1-9bbe8493cf84 (basemap)
+2025-05-22 15:18:18,729 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 15:18:18,733 - data_processor - INFO - 檔案 M1X60_WLPF40010003_202504141037.csv 是原始格式，執行 step1~3
+2025-05-22 15:18:18,733 - data_processor - INFO - Step 1: 讀取元件 WLPF40010003 的config參數
+2025-05-22 15:18:18,743 - data_processor - INFO - Step 2: 執行 WLPF40010003 的原始CSV偏移確認
+2025-05-22 15:18:19,003 - data_processor - INFO - Step 3: 處理 WLPF40010003 的CSV標頭
+2025-05-22 15:18:19,036 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010001.png
+2025-05-22 15:18:19,038 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 15:18:19,039 - data_processor - INFO - 任務 fd74ba18-abd5-4648-a3e2-8e4b8770d58e 已完成: True - D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010001.png
+2025-05-22 15:18:19,442 - data_processor - INFO - Step 4: 為 WLPF40010003 生成Basemap
+2025-05-22 15:18:19,730 - data_processor - INFO - 開始執行任務: 1c95a6ae-e3c3-47ab-9f4b-ac5be1a3c4df (basemap)
+2025-05-22 15:18:19,742 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 15:18:19,742 - data_processor - INFO - 檔案 M1X60_WLPF40010004_202504141037.csv 是原始格式，執行 step1~3
+2025-05-22 15:18:19,742 - data_processor - INFO - Step 1: 讀取元件 WLPF40010004 的config參數
+2025-05-22 15:18:19,743 - data_processor - INFO - Step 2: 執行 WLPF40010004 的原始CSV偏移確認
+2025-05-22 15:18:20,031 - data_processor - INFO - Step 3: 處理 WLPF40010004 的CSV標頭
+2025-05-22 15:18:20,185 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010003.png
+2025-05-22 15:18:20,188 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 15:18:20,188 - data_processor - INFO - 任務 69868105-9644-4814-a6e1-9bbe8493cf84 已完成: True - D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010003.png
+2025-05-22 15:18:20,590 - data_processor - INFO - Step 4: 為 WLPF40010004 生成Basemap
+2025-05-22 15:18:20,736 - data_processor - INFO - 開始執行任務: 5041b87a-ef7e-4378-b80f-bc137f56a751 (basemap)
+2025-05-22 15:18:20,738 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 15:18:20,738 - data_processor - INFO - 檔案 M3X60_WLPF40010001_202504091051.csv 是原始格式，執行 step1~3
+2025-05-22 15:18:20,738 - data_processor - INFO - Step 1: 讀取元件 WLPF40010001 的config參數
+2025-05-22 15:18:20,739 - data_processor - INFO - Step 2: 執行 WLPF40010001 的原始CSV偏移確認
+2025-05-22 15:18:21,182 - data_processor - INFO - Step 3: 處理 WLPF40010001 的CSV標頭
+2025-05-22 15:18:21,394 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010004.png
+2025-05-22 15:18:21,397 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 15:18:21,397 - data_processor - INFO - 任務 1c95a6ae-e3c3-47ab-9f4b-ac5be1a3c4df 已完成: True - D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010004.png
+2025-05-22 15:18:21,740 - data_processor - INFO - 開始執行任務: 7adadfa4-bd0e-4656-a8ef-b650242b36f0 (basemap)
+2025-05-22 15:18:21,745 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 15:18:21,749 - data_processor - INFO - 檔案 M3X60_WLPF40010003_202504091051.csv 是原始格式，執行 step1~3
+2025-05-22 15:18:21,751 - data_processor - INFO - Step 1: 讀取元件 WLPF40010003 的config參數
+2025-05-22 15:18:21,754 - data_processor - INFO - Step 2: 執行 WLPF40010003 的原始CSV偏移確認
+2025-05-22 15:18:21,780 - data_processor - INFO - Step 4: 為 WLPF40010001 生成Basemap
+2025-05-22 15:18:21,938 - data_processor - INFO - Step 3: 處理 WLPF40010003 的CSV標頭
+2025-05-22 15:18:22,832 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010001.png
+2025-05-22 15:18:22,837 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 15:18:22,838 - data_processor - INFO - 任務 5041b87a-ef7e-4378-b80f-bc137f56a751 已完成: True - D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010001.png
+2025-05-22 15:18:22,896 - data_processor - INFO - Step 4: 為 WLPF40010003 生成Basemap
+2025-05-22 15:18:23,599 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010003.png
+2025-05-22 15:18:23,601 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 15:18:23,602 - data_processor - INFO - 任務 7adadfa4-bd0e-4656-a8ef-b650242b36f0 已完成: True - D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010003.png
+2025-05-22 15:18:23,766 - data_processor - INFO - 開始執行任務: cd715125-4b7b-440e-9945-896d8934fe43 (basemap)
+2025-05-22 15:18:23,769 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 15:18:23,770 - data_processor - INFO - 檔案 M3X60_WLPF40010004_202504091051.csv 是原始格式，執行 step1~3
+2025-05-22 15:18:23,770 - data_processor - INFO - Step 1: 讀取元件 WLPF40010004 的config參數
+2025-05-22 15:18:23,771 - data_processor - INFO - Step 2: 執行 WLPF40010004 的原始CSV偏移確認
+2025-05-22 15:18:23,893 - data_processor - INFO - Step 3: 處理 WLPF40010004 的CSV標頭
+2025-05-22 15:18:24,322 - data_processor - INFO - Step 4: 為 WLPF40010004 生成Basemap
+2025-05-22 15:18:24,796 - data_processor - INFO - 開始執行任務: f65fda86-86ef-460b-a043-3f0b4ec5c2d0 (basemap)
+2025-05-22 15:18:24,814 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 15:18:24,816 - data_processor - INFO - 檔案 M3X60_WLPF40010006_202504091051.csv 是原始格式，執行 step1~3
+2025-05-22 15:18:24,817 - data_processor - INFO - Step 1: 讀取元件 WLPF40010006 的config參數
+2025-05-22 15:18:24,821 - data_processor - INFO - Step 2: 執行 WLPF40010006 的原始CSV偏移確認
+2025-05-22 15:18:25,080 - data_processor - INFO - Step 3: 處理 WLPF40010006 的CSV標頭
+2025-05-22 15:18:25,128 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010004.png
+2025-05-22 15:18:25,132 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 15:18:25,133 - data_processor - INFO - 任務 cd715125-4b7b-440e-9945-896d8934fe43 已完成: True - D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010004.png
+2025-05-22 15:18:25,535 - data_processor - INFO - Step 4: 為 WLPF40010006 生成Basemap
+2025-05-22 15:18:26,215 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010006.png
+2025-05-22 15:18:26,218 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 15:18:26,218 - data_processor - INFO - 任務 f65fda86-86ef-460b-a043-3f0b4ec5c2d0 已完成: True - D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010006.png
+2025-05-22 15:20:02,546 - data_processor - INFO - 開始執行任務: 45419768-be27-41f5-b762-609e2d17677a (basemap)
+2025-05-22 15:20:02,548 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 15:20:02,550 - data_processor - INFO - 檔案 M3X60_WLPF40010001_202504091051.csv 是原始格式，執行 step1~3
+2025-05-22 15:20:02,551 - data_processor - INFO - Step 1: 讀取元件 M3X60_WLPF40010001_202504091051 的config參數
+2025-05-22 15:20:02,552 - data_processor - INFO - Step 2: 執行 M3X60_WLPF40010001_202504091051 的原始CSV偏移確認
+2025-05-22 15:20:02,701 - data_processor - INFO - Step 3: 處理 M3X60_WLPF40010001_202504091051 的CSV標頭
+2025-05-22 15:20:03,158 - data_processor - INFO - Step 4: 為 M3X60_WLPF40010001_202504091051 生成Basemap
+2025-05-22 15:20:03,931 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010001.png
+2025-05-22 15:20:03,933 - data_processor - INFO - 檔案 M3X60_WLPF40010003_202504091051.csv 是原始格式，執行 step1~3
+2025-05-22 15:20:03,934 - data_processor - INFO - Step 1: 讀取元件 M3X60_WLPF40010003_202504091051 的config參數
+2025-05-22 15:20:03,934 - data_processor - INFO - Step 2: 執行 M3X60_WLPF40010003_202504091051 的原始CSV偏移確認
+2025-05-22 15:20:04,064 - data_processor - INFO - Step 3: 處理 M3X60_WLPF40010003_202504091051 的CSV標頭
+2025-05-22 15:20:04,521 - data_processor - INFO - Step 4: 為 M3X60_WLPF40010003_202504091051 生成Basemap
+2025-05-22 15:20:05,285 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010003.png
+2025-05-22 15:20:05,288 - data_processor - INFO - 檔案 M3X60_WLPF40010004_202504091051.csv 是原始格式，執行 step1~3
+2025-05-22 15:20:05,288 - data_processor - INFO - Step 1: 讀取元件 M3X60_WLPF40010004_202504091051 的config參數
+2025-05-22 15:20:05,289 - data_processor - INFO - Step 2: 執行 M3X60_WLPF40010004_202504091051 的原始CSV偏移確認
+2025-05-22 15:20:05,417 - data_processor - INFO - Step 3: 處理 M3X60_WLPF40010004_202504091051 的CSV標頭
+2025-05-22 15:20:05,883 - data_processor - INFO - Step 4: 為 M3X60_WLPF40010004_202504091051 生成Basemap
+2025-05-22 15:20:06,644 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010004.png
+2025-05-22 15:20:06,647 - data_processor - INFO - 檔案 M3X60_WLPF40010006_202504091051.csv 是原始格式，執行 step1~3
+2025-05-22 15:20:06,647 - data_processor - INFO - Step 1: 讀取元件 M3X60_WLPF40010006_202504091051 的config參數
+2025-05-22 15:20:06,648 - data_processor - INFO - Step 2: 執行 M3X60_WLPF40010006_202504091051 的原始CSV偏移確認
+2025-05-22 15:20:06,779 - data_processor - INFO - Step 3: 處理 M3X60_WLPF40010006_202504091051 的CSV標頭
+2025-05-22 15:20:07,223 - data_processor - INFO - Step 4: 為 M3X60_WLPF40010006_202504091051 生成Basemap
+2025-05-22 15:20:07,981 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010006.png
+2025-05-22 15:20:07,984 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 15:20:07,985 - data_processor - INFO - 任務 45419768-be27-41f5-b762-609e2d17677a 已完成: True - 已處理 4/20 個元件的 Basemap
+2025-05-22 15:20:38,322 - data_processor - INFO - 開始執行任務: 0966a437-78e4-4aae-ad91-1b276db14f6a (basemap)
+2025-05-22 15:20:38,324 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 15:20:38,326 - data_processor - INFO - 檔案 M1X60_WLPF40010001_202504141037.csv 是原始格式，執行 step1~3
+2025-05-22 15:20:38,327 - data_processor - INFO - Step 1: 讀取元件 M1X60_WLPF40010001_202504141037 的config參數
+2025-05-22 15:20:38,329 - data_processor - INFO - Step 2: 執行 M1X60_WLPF40010001_202504141037 的原始CSV偏移確認
+2025-05-22 15:20:38,476 - data_processor - INFO - Step 3: 處理 M1X60_WLPF40010001_202504141037 的CSV標頭
+2025-05-22 15:20:38,922 - data_processor - INFO - Step 4: 為 M1X60_WLPF40010001_202504141037 生成Basemap
+2025-05-22 15:20:39,636 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010001.png
+2025-05-22 15:20:39,639 - data_processor - INFO - 檔案 M1X60_WLPF40010003_202504141037.csv 是原始格式，執行 step1~3
+2025-05-22 15:20:39,639 - data_processor - INFO - Step 1: 讀取元件 M1X60_WLPF40010003_202504141037 的config參數
+2025-05-22 15:20:39,639 - data_processor - INFO - Step 2: 執行 M1X60_WLPF40010003_202504141037 的原始CSV偏移確認
+2025-05-22 15:20:39,766 - data_processor - INFO - Step 3: 處理 M1X60_WLPF40010003_202504141037 的CSV標頭
+2025-05-22 15:20:40,221 - data_processor - INFO - Step 4: 為 M1X60_WLPF40010003_202504141037 生成Basemap
+2025-05-22 15:20:40,949 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010003.png
+2025-05-22 15:20:40,951 - data_processor - INFO - 檔案 M1X60_WLPF40010004_202504141037.csv 是原始格式，執行 step1~3
+2025-05-22 15:20:40,951 - data_processor - INFO - Step 1: 讀取元件 M1X60_WLPF40010004_202504141037 的config參數
+2025-05-22 15:20:40,952 - data_processor - INFO - Step 2: 執行 M1X60_WLPF40010004_202504141037 的原始CSV偏移確認
+2025-05-22 15:20:41,073 - data_processor - INFO - Step 3: 處理 M1X60_WLPF40010004_202504141037 的CSV標頭
+2025-05-22 15:20:41,518 - data_processor - INFO - Step 4: 為 M1X60_WLPF40010004_202504141037 生成Basemap
+2025-05-22 15:20:42,268 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010004.png
+2025-05-22 15:20:42,271 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 15:20:42,271 - data_processor - INFO - 任務 0966a437-78e4-4aae-ad91-1b276db14f6a 已完成: True - 已處理 3/18 個元件的 Basemap
+2025-05-22 15:20:57,377 - data_processor - INFO - 開始執行任務: 77534d9f-3508-49c6-93d5-ee048f0179f0 (basemap)
+2025-05-22 15:20:57,379 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 15:20:57,380 - data_processor - INFO - 檔案 M1X60_WLPF40010001_202504141037.csv 是原始格式，執行 step1~3
+2025-05-22 15:20:57,380 - data_processor - INFO - Step 1: 讀取元件 WLPF40010001 的config參數
+2025-05-22 15:20:57,381 - data_processor - INFO - Step 2: 執行 WLPF40010001 的原始CSV偏移確認
+2025-05-22 15:20:57,505 - data_processor - INFO - Step 3: 處理 WLPF40010001 的CSV標頭
+2025-05-22 15:20:57,957 - data_processor - INFO - Step 4: 為 WLPF40010001 生成Basemap
+2025-05-22 15:20:58,408 - data_processor - INFO - 開始執行任務: c74325df-d9de-4d67-aa11-1eac862d93a6 (basemap)
+2025-05-22 15:20:58,420 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 15:20:58,422 - data_processor - INFO - 檔案 M1X60_WLPF40010003_202504141037.csv 是原始格式，執行 step1~3
+2025-05-22 15:20:58,424 - data_processor - INFO - Step 1: 讀取元件 WLPF40010003 的config參數
+2025-05-22 15:20:58,427 - data_processor - INFO - Step 2: 執行 WLPF40010003 的原始CSV偏移確認
+2025-05-22 15:20:58,723 - data_processor - INFO - Step 3: 處理 WLPF40010003 的CSV標頭
+2025-05-22 15:20:58,734 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010001.png
+2025-05-22 15:20:58,736 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 15:20:58,737 - data_processor - INFO - 任務 77534d9f-3508-49c6-93d5-ee048f0179f0 已完成: True - D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010001.png
+2025-05-22 15:20:59,172 - data_processor - INFO - Step 4: 為 WLPF40010003 生成Basemap
+2025-05-22 15:20:59,399 - data_processor - INFO - 開始執行任務: 855b1f4b-51f6-4a5c-a629-e6ffca4b7d2e (basemap)
+2025-05-22 15:20:59,400 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 15:20:59,400 - data_processor - INFO - 檔案 M1X60_WLPF40010004_202504141037.csv 是原始格式，執行 step1~3
+2025-05-22 15:20:59,401 - data_processor - INFO - Step 1: 讀取元件 WLPF40010004 的config參數
+2025-05-22 15:20:59,401 - data_processor - INFO - Step 2: 執行 WLPF40010004 的原始CSV偏移確認
+2025-05-22 15:20:59,785 - data_processor - INFO - Step 3: 處理 WLPF40010004 的CSV標頭
+2025-05-22 15:20:59,985 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010003.png
+2025-05-22 15:20:59,988 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 15:20:59,988 - data_processor - INFO - 任務 c74325df-d9de-4d67-aa11-1eac862d93a6 已完成: True - D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010003.png
+2025-05-22 15:21:00,394 - data_processor - INFO - Step 4: 為 WLPF40010004 生成Basemap
+2025-05-22 15:21:00,403 - data_processor - INFO - 開始執行任務: deaa0df5-34cc-4dea-899c-c7f750855463 (basemap)
+2025-05-22 15:21:00,404 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 15:21:00,404 - data_processor - INFO - 檔案 M3X60_WLPF40010001_202504091051.csv 是原始格式，執行 step1~3
+2025-05-22 15:21:00,404 - data_processor - INFO - Step 1: 讀取元件 WLPF40010001 的config參數
+2025-05-22 15:21:00,404 - data_processor - INFO - Step 2: 執行 WLPF40010001 的原始CSV偏移確認
+2025-05-22 15:21:00,579 - data_processor - INFO - Step 3: 處理 WLPF40010001 的CSV標頭
+2025-05-22 15:21:01,440 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010004.png
+2025-05-22 15:21:01,445 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 15:21:01,445 - data_processor - INFO - 任務 855b1f4b-51f6-4a5c-a629-e6ffca4b7d2e 已完成: True - D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010004.png
+2025-05-22 15:21:01,523 - data_processor - INFO - Step 4: 為 WLPF40010001 生成Basemap
+2025-05-22 15:21:02,228 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010001.png
+2025-05-22 15:21:02,231 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 15:21:02,231 - data_processor - INFO - 任務 deaa0df5-34cc-4dea-899c-c7f750855463 已完成: True - D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010001.png
+2025-05-22 15:21:02,392 - data_processor - INFO - 開始執行任務: f62f6728-c1b9-429b-8a09-a64ba581ca7c (basemap)
+2025-05-22 15:21:02,394 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 15:21:02,394 - data_processor - INFO - 檔案 M3X60_WLPF40010003_202504091051.csv 是原始格式，執行 step1~3
+2025-05-22 15:21:02,394 - data_processor - INFO - Step 1: 讀取元件 WLPF40010003 的config參數
+2025-05-22 15:21:02,395 - data_processor - INFO - Step 2: 執行 WLPF40010003 的原始CSV偏移確認
+2025-05-22 15:21:02,527 - data_processor - INFO - Step 3: 處理 WLPF40010003 的CSV標頭
+2025-05-22 15:21:02,969 - data_processor - INFO - Step 4: 為 WLPF40010003 生成Basemap
+2025-05-22 15:21:03,426 - data_processor - INFO - 開始執行任務: 87754c3d-6a1e-4954-9a46-b0e0ab830e41 (basemap)
+2025-05-22 15:21:03,437 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 15:21:03,441 - data_processor - INFO - 檔案 M3X60_WLPF40010004_202504091051.csv 是原始格式，執行 step1~3
+2025-05-22 15:21:03,443 - data_processor - INFO - Step 1: 讀取元件 WLPF40010004 的config參數
+2025-05-22 15:21:03,453 - data_processor - INFO - Step 2: 執行 WLPF40010004 的原始CSV偏移確認
+2025-05-22 15:21:03,748 - data_processor - INFO - Step 3: 處理 WLPF40010004 的CSV標頭
+2025-05-22 15:21:03,773 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010003.png
+2025-05-22 15:21:03,776 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 15:21:03,776 - data_processor - INFO - 任務 f62f6728-c1b9-429b-8a09-a64ba581ca7c 已完成: True - D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010003.png
+2025-05-22 15:21:04,211 - data_processor - INFO - Step 4: 為 WLPF40010004 生成Basemap
+2025-05-22 15:21:04,403 - data_processor - INFO - 開始執行任務: 4d28dbf6-b184-4df9-83da-3387e6f87372 (basemap)
+2025-05-22 15:21:04,404 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 15:21:04,404 - data_processor - INFO - 檔案 M3X60_WLPF40010006_202504091051.csv 是原始格式，執行 step1~3
+2025-05-22 15:21:04,405 - data_processor - INFO - Step 1: 讀取元件 WLPF40010006 的config參數
+2025-05-22 15:21:04,405 - data_processor - INFO - Step 2: 執行 WLPF40010006 的原始CSV偏移確認
+2025-05-22 15:21:04,813 - data_processor - INFO - Step 3: 處理 WLPF40010006 的CSV標頭
+2025-05-22 15:21:05,014 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010004.png
+2025-05-22 15:21:05,018 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 15:21:05,019 - data_processor - INFO - 任務 87754c3d-6a1e-4954-9a46-b0e0ab830e41 已完成: True - D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010004.png
+2025-05-22 15:21:05,384 - data_processor - INFO - Step 4: 為 WLPF40010006 生成Basemap
+2025-05-22 15:21:06,098 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010006.png
+2025-05-22 15:21:06,100 - data_processor - ERROR - 記錄性能數據時發生錯誤: No module named 'psutil'
+2025-05-22 15:21:06,100 - data_processor - INFO - 任務 4d28dbf6-b184-4df9-83da-3387e6f87372 已完成: True - D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010006.png
+2025-05-22 15:21:55,498 - data_processor - INFO - 開始執行任務: 7c976879-3723-4cbd-88ff-f142b01da588 (basemap)
+2025-05-22 15:21:55,566 - data_processor - INFO - Step 4: 為 WLPF40010001 生成Basemap
+2025-05-22 15:21:56,381 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010001.png
+2025-05-22 15:21:56,384 - data_processor - INFO - Step 4: 為 WLPF40010003 生成Basemap
+2025-05-22 15:21:57,117 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010003.png
+2025-05-22 15:21:57,120 - data_processor - INFO - Step 4: 為 WLPF40010004 生成Basemap
+2025-05-22 15:21:57,856 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010004.png
+2025-05-22 15:21:57,859 - data_processor - INFO - Step 4: 為 WLPF40010006 生成Basemap
+2025-05-22 15:21:58,602 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010006.png
+2025-05-22 15:21:58,605 - data_processor - INFO - 檔案 M3X60_WLPF40010001_202504091051.csv 是原始格式，執行 step1~3
+2025-05-22 15:21:58,605 - data_processor - INFO - Step 1: 讀取元件 M3X60_WLPF40010001_202504091051 的config參數
+2025-05-22 15:21:58,605 - data_processor - INFO - Step 2: 執行 M3X60_WLPF40010001_202504091051 的原始CSV偏移確認
+2025-05-22 15:21:58,738 - data_processor - INFO - Step 3: 處理 M3X60_WLPF40010001_202504091051 的CSV標頭
+2025-05-22 15:21:59,188 - data_processor - INFO - Step 4: 為 M3X60_WLPF40010001_202504091051 生成Basemap
+2025-05-22 15:21:59,921 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010001.png
+2025-05-22 15:21:59,923 - data_processor - INFO - 檔案 M3X60_WLPF40010003_202504091051.csv 是原始格式，執行 step1~3
+2025-05-22 15:21:59,924 - data_processor - INFO - Step 1: 讀取元件 M3X60_WLPF40010003_202504091051 的config參數
+2025-05-22 15:21:59,924 - data_processor - INFO - Step 2: 執行 M3X60_WLPF40010003_202504091051 的原始CSV偏移確認
+2025-05-22 15:22:00,064 - data_processor - INFO - Step 3: 處理 M3X60_WLPF40010003_202504091051 的CSV標頭
+2025-05-22 15:22:00,515 - data_processor - INFO - Step 4: 為 M3X60_WLPF40010003_202504091051 生成Basemap
+2025-05-22 15:22:01,307 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010003.png
+2025-05-22 15:22:01,309 - data_processor - INFO - 檔案 M3X60_WLPF40010004_202504091051.csv 是原始格式，執行 step1~3
+2025-05-22 15:22:01,310 - data_processor - INFO - Step 1: 讀取元件 M3X60_WLPF40010004_202504091051 的config參數
+2025-05-22 15:22:01,310 - data_processor - INFO - Step 2: 執行 M3X60_WLPF40010004_202504091051 的原始CSV偏移確認
+2025-05-22 15:22:01,444 - data_processor - INFO - Step 3: 處理 M3X60_WLPF40010004_202504091051 的CSV標頭
+2025-05-22 15:22:01,888 - data_processor - INFO - Step 4: 為 M3X60_WLPF40010004_202504091051 生成Basemap
+2025-05-22 15:22:02,655 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010004.png
+2025-05-22 15:22:02,658 - data_processor - INFO - 檔案 M3X60_WLPF40010006_202504091051.csv 是原始格式，執行 step1~3
+2025-05-22 15:22:02,658 - data_processor - INFO - Step 1: 讀取元件 M3X60_WLPF40010006_202504091051 的config參數
+2025-05-22 15:22:02,658 - data_processor - INFO - Step 2: 執行 M3X60_WLPF40010006_202504091051 的原始CSV偏移確認
+2025-05-22 15:22:02,786 - data_processor - INFO - Step 3: 處理 M3X60_WLPF40010006_202504091051 的CSV標頭
+2025-05-22 15:22:03,243 - data_processor - INFO - Step 4: 為 M3X60_WLPF40010006_202504091051 生成Basemap
+2025-05-22 15:22:03,978 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010006.png
+2025-05-22 15:22:04,006 - data_processor - INFO - 任務 7c976879-3723-4cbd-88ff-f142b01da588 已完成: True - 已處理 8/24 個元件的 Basemap
+2025-05-22 15:22:25,002 - data_processor - INFO - 開始執行任務: fafe0487-41da-4f1c-8848-0345e58e07c8 (basemap)
+2025-05-22 15:22:25,025 - data_processor - INFO - 檔案 M3X60_WLPF40010001_202504091051.csv 是原始格式，執行 step1~3
+2025-05-22 15:22:25,025 - data_processor - INFO - Step 1: 讀取元件 M3X60_WLPF40010001_202504091051 的config參數
+2025-05-22 15:22:25,026 - data_processor - INFO - Step 2: 執行 M3X60_WLPF40010001_202504091051 的原始CSV偏移確認
+2025-05-22 15:22:25,161 - data_processor - INFO - Step 3: 處理 M3X60_WLPF40010001_202504091051 的CSV標頭
+2025-05-22 15:22:25,608 - data_processor - INFO - Step 4: 為 M3X60_WLPF40010001_202504091051 生成Basemap
+2025-05-22 15:22:26,309 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010001.png
+2025-05-22 15:22:26,311 - data_processor - INFO - 檔案 M3X60_WLPF40010003_202504091051.csv 是原始格式，執行 step1~3
+2025-05-22 15:22:26,311 - data_processor - INFO - Step 1: 讀取元件 M3X60_WLPF40010003_202504091051 的config參數
+2025-05-22 15:22:26,312 - data_processor - INFO - Step 2: 執行 M3X60_WLPF40010003_202504091051 的原始CSV偏移確認
+2025-05-22 15:22:26,438 - data_processor - INFO - Step 3: 處理 M3X60_WLPF40010003_202504091051 的CSV標頭
+2025-05-22 15:22:26,883 - data_processor - INFO - Step 4: 為 M3X60_WLPF40010003_202504091051 生成Basemap
+2025-05-22 15:22:27,604 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010003.png
+2025-05-22 15:22:27,607 - data_processor - INFO - 檔案 M3X60_WLPF40010004_202504091051.csv 是原始格式，執行 step1~3
+2025-05-22 15:22:27,607 - data_processor - INFO - Step 1: 讀取元件 M3X60_WLPF40010004_202504091051 的config參數
+2025-05-22 15:22:27,607 - data_processor - INFO - Step 2: 執行 M3X60_WLPF40010004_202504091051 的原始CSV偏移確認
+2025-05-22 15:22:27,736 - data_processor - INFO - Step 3: 處理 M3X60_WLPF40010004_202504091051 的CSV標頭
+2025-05-22 15:22:28,177 - data_processor - INFO - Step 4: 為 M3X60_WLPF40010004_202504091051 生成Basemap
+2025-05-22 15:22:28,927 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010004.png
+2025-05-22 15:22:28,929 - data_processor - INFO - 檔案 M3X60_WLPF40010006_202504091051.csv 是原始格式，執行 step1~3
+2025-05-22 15:22:28,930 - data_processor - INFO - Step 1: 讀取元件 M3X60_WLPF40010006_202504091051 的config參數
+2025-05-22 15:22:28,930 - data_processor - INFO - Step 2: 執行 M3X60_WLPF40010006_202504091051 的原始CSV偏移確認
+2025-05-22 15:22:29,060 - data_processor - INFO - Step 3: 處理 M3X60_WLPF40010006_202504091051 的CSV標頭
+2025-05-22 15:22:29,494 - data_processor - INFO - Step 4: 為 M3X60_WLPF40010006_202504091051 生成Basemap
+2025-05-22 15:22:30,210 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010006.png
+2025-05-22 15:22:30,237 - data_processor - INFO - 任務 fafe0487-41da-4f1c-8848-0345e58e07c8 已完成: True - 已處理 4/20 個元件的 Basemap
