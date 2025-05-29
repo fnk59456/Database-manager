@@ -5033,3 +5033,345 @@
 2025-05-29 14:01:11,283 - data_processor - INFO - 任務 f0b32777-313b-4bea-95fd-de275271e730 已完成: True - D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010003.png
 2025-05-29 14:01:11,870 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010004.png
 2025-05-29 14:01:11,903 - data_processor - INFO - 任務 14448cc7-a568-4481-b7dc-9cc4111ed579 已完成: True - D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010004.png
+2025-05-29 14:08:48,992 - data_processor - INFO - 開始執行任務: b1c898ab-9b00-4632-8972-c24b5b2ae503 (basemap)
+2025-05-29 14:08:49,028 - data_processor - INFO - 檔案 M1X60_WLPF40010001_202504141037.csv 是原始格式，執行 step1~3
+2025-05-29 14:08:49,029 - data_processor - INFO - Step 1: 讀取元件 WLPF40010001 的config參數
+2025-05-29 14:08:49,029 - data_processor - INFO - Step 2: 執行 WLPF40010001 的原始CSV偏移確認
+2025-05-29 14:08:49,190 - data_processor - INFO - 任務 b1c898ab-9b00-4632-8972-c24b5b2ae503 已完成: False - CSV檔案偏移錯誤: 找不到任何對齊點，需要至少1個匹配
+2025-05-29 14:08:50,004 - data_processor - INFO - 開始執行任務: 156b6aaf-47f4-4ae0-a9ee-6f537e882031 (basemap)
+2025-05-29 14:08:50,038 - data_processor - INFO - 檔案 M1X60_WLPF40010003_202504141037.csv 是原始格式，執行 step1~3
+2025-05-29 14:08:50,039 - data_processor - INFO - Step 1: 讀取元件 WLPF40010003 的config參數
+2025-05-29 14:08:50,040 - data_processor - INFO - Step 2: 執行 WLPF40010003 的原始CSV偏移確認
+2025-05-29 14:08:50,174 - data_processor - INFO - Step 3: 處理 WLPF40010003 的CSV標頭
+2025-05-29 14:08:50,621 - data_processor - INFO - Step 4: 為 WLPF40010003 生成Basemap
+2025-05-29 14:08:51,052 - data_processor - INFO - 開始執行任務: e7f9b601-438e-4b45-8bf8-b169892a0f58 (basemap)
+2025-05-29 14:08:51,091 - data_processor - INFO - 檔案 M1X60_WLPF40010004_202504141037.csv 是原始格式，執行 step1~3
+2025-05-29 14:08:51,092 - data_processor - INFO - Step 1: 讀取元件 WLPF40010004 的config參數
+2025-05-29 14:08:51,095 - data_processor - INFO - Step 2: 執行 WLPF40010004 的原始CSV偏移確認
+2025-05-29 14:08:51,395 - data_processor - INFO - Step 3: 處理 WLPF40010004 的CSV標頭
+2025-05-29 14:08:51,406 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010003.png
+2025-05-29 14:08:51,441 - data_processor - INFO - 任務 156b6aaf-47f4-4ae0-a9ee-6f537e882031 已完成: True - D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010003.png
+2025-05-29 14:08:51,870 - data_processor - INFO - Step 4: 為 WLPF40010004 生成Basemap
+2025-05-29 14:08:52,018 - data_processor - INFO - 開始執行任務: cd5f59a2-7882-4075-805f-8497bb52be5c (basemap)
+2025-05-29 14:08:52,059 - data_processor - INFO - 檔案 M1X60_WLPF40010003_202504141045.csv 是原始格式，執行 step1~3
+2025-05-29 14:08:52,059 - data_processor - INFO - Step 1: 讀取元件 WLPF40010003 的config參數
+2025-05-29 14:08:52,060 - data_processor - INFO - Step 2: 執行 WLPF40010003 的原始CSV偏移確認
+2025-05-29 14:08:52,517 - data_processor - INFO - Step 3: 處理 WLPF40010003 的CSV標頭
+2025-05-29 14:08:52,718 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010004.png
+2025-05-29 14:08:52,755 - data_processor - INFO - 任務 e7f9b601-438e-4b45-8bf8-b169892a0f58 已完成: True - D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010004.png
+2025-05-29 14:08:53,030 - data_processor - INFO - 開始執行任務: 4f2e4a1d-91ed-43c0-9f0a-f53cf283ae51 (basemap)
+2025-05-29 14:08:53,062 - data_processor - INFO - 檔案 M1X60_WLPF40010003_202504141045.csv 是原始格式，執行 step1~3
+2025-05-29 14:08:53,063 - data_processor - INFO - Step 1: 讀取元件 WLPF40010003 的config參數
+2025-05-29 14:08:53,067 - data_processor - INFO - Step 2: 執行 WLPF40010003 的原始CSV偏移確認
+2025-05-29 14:08:53,177 - data_processor - INFO - Step 4: 為 WLPF40010003 生成Basemap
+2025-05-29 14:08:53,257 - data_processor - INFO - Step 3: 處理 WLPF40010003 的CSV標頭
+2025-05-29 14:08:54,050 - data_processor - INFO - Step 4: 為 WLPF40010003 生成Basemap
+2025-05-29 14:08:54,257 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\INNER1\WLPF40010003.png
+2025-05-29 14:08:54,290 - data_processor - INFO - 任務 cd5f59a2-7882-4075-805f-8497bb52be5c 已完成: True - D:\Database-PC\temp\map\WLPF400100\INNER1\WLPF40010003.png
+2025-05-29 14:08:54,914 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\INNER1\WLPF40010003.png
+2025-05-29 14:08:54,946 - data_processor - INFO - 任務 4f2e4a1d-91ed-43c0-9f0a-f53cf283ae51 已完成: True - D:\Database-PC\temp\map\WLPF400100\INNER1\WLPF40010003.png
+2025-05-29 14:08:55,035 - data_processor - INFO - 開始執行任務: ca77cd8e-d81d-43a2-80d0-7210f1241d76 (basemap)
+2025-05-29 14:08:55,070 - data_processor - INFO - 檔案 M3X60_WLPF40010001_202504091051.csv 是原始格式，執行 step1~3
+2025-05-29 14:08:55,070 - data_processor - INFO - Step 1: 讀取元件 WLPF40010001 的config參數
+2025-05-29 14:08:55,071 - data_processor - INFO - Step 2: 執行 WLPF40010001 的原始CSV偏移確認
+2025-05-29 14:08:55,202 - data_processor - INFO - Step 3: 處理 WLPF40010001 的CSV標頭
+2025-05-29 14:08:55,643 - data_processor - INFO - Step 4: 為 WLPF40010001 生成Basemap
+2025-05-29 14:08:56,109 - data_processor - INFO - 開始執行任務: c2ad862c-e202-4ed7-a987-0f0ff8666111 (basemap)
+2025-05-29 14:08:56,169 - data_processor - INFO - 檔案 M3X60_WLPF40010003_202504091051.csv 是原始格式，執行 step1~3
+2025-05-29 14:08:56,171 - data_processor - INFO - Step 1: 讀取元件 WLPF40010003 的config參數
+2025-05-29 14:08:56,179 - data_processor - INFO - Step 2: 執行 WLPF40010003 的原始CSV偏移確認
+2025-05-29 14:08:56,440 - data_processor - INFO - Step 3: 處理 WLPF40010003 的CSV標頭
+2025-05-29 14:08:56,489 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010001.png
+2025-05-29 14:08:56,520 - data_processor - INFO - 任務 ca77cd8e-d81d-43a2-80d0-7210f1241d76 已完成: True - D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010001.png
+2025-05-29 14:08:56,926 - data_processor - INFO - Step 4: 為 WLPF40010003 生成Basemap
+2025-05-29 14:08:57,074 - data_processor - INFO - 開始執行任務: e15c7412-800c-49ca-a788-3576237de818 (basemap)
+2025-05-29 14:08:57,129 - data_processor - INFO - 檔案 M3X60_WLPF40010004_202504091051.csv 是原始格式，執行 step1~3
+2025-05-29 14:08:57,129 - data_processor - INFO - Step 1: 讀取元件 WLPF40010004 的config參數
+2025-05-29 14:08:57,130 - data_processor - INFO - Step 2: 執行 WLPF40010004 的原始CSV偏移確認
+2025-05-29 14:08:57,567 - data_processor - INFO - Step 3: 處理 WLPF40010004 的CSV標頭
+2025-05-29 14:08:57,772 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010003.png
+2025-05-29 14:08:57,807 - data_processor - INFO - 任務 c2ad862c-e202-4ed7-a987-0f0ff8666111 已完成: True - D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010003.png
+2025-05-29 14:08:58,080 - data_processor - INFO - 開始執行任務: 6879e825-9d38-481a-9bdc-966a7714cdf7 (basemap)
+2025-05-29 14:08:58,111 - data_processor - INFO - 檔案 M3X60_WLPF40010006_202504091051.csv 是原始格式，執行 step1~3
+2025-05-29 14:08:58,116 - data_processor - INFO - Step 1: 讀取元件 WLPF40010006 的config參數
+2025-05-29 14:08:58,126 - data_processor - INFO - Step 2: 執行 WLPF40010006 的原始CSV偏移確認
+2025-05-29 14:08:58,214 - data_processor - INFO - Step 4: 為 WLPF40010004 生成Basemap
+2025-05-29 14:08:58,308 - data_processor - INFO - Step 3: 處理 WLPF40010006 的CSV標頭
+2025-05-29 14:08:59,174 - data_processor - INFO - Step 4: 為 WLPF40010006 生成Basemap
+2025-05-29 14:08:59,399 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010004.png
+2025-05-29 14:08:59,437 - data_processor - INFO - 任務 e15c7412-800c-49ca-a788-3576237de818 已完成: True - D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010004.png
+2025-05-29 14:09:00,063 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010006.png
+2025-05-29 14:09:00,099 - data_processor - INFO - 任務 6879e825-9d38-481a-9bdc-966a7714cdf7 已完成: True - D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010006.png
+2025-05-29 14:56:29,566 - data_processor - INFO - 開始執行任務: 65155383-d4ad-47ff-b855-0f0c49fabbc1 (lossmap)
+2025-05-29 14:56:29,602 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141022_PC2
+2025-05-29 14:56:29,602 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141022_PC4
+2025-05-29 14:56:29,602 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141023_PC1
+2025-05-29 14:56:29,602 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141026_PC3
+2025-05-29 14:56:29,603 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141026_PC4
+2025-05-29 14:56:29,603 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141027_PC1
+2025-05-29 14:56:29,603 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141027_PC2
+2025-05-29 14:56:29,605 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141031_PC3
+2025-05-29 14:56:29,605 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141031_PC2
+2025-05-29 14:56:29,605 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141031_PC4
+2025-05-29 14:56:29,605 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141032_PC1
+2025-05-29 14:56:29,606 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141035_PC3
+2025-05-29 14:56:30,559 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141037
+2025-05-29 14:56:30,560 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141037
+2025-05-29 14:56:30,560 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141037
+2025-05-29 14:56:30,560 - data_processor - INFO - Lossmap處理完成: 總計 17, 成功 2, 失敗 15
+2025-05-29 14:56:30,599 - data_processor - INFO - 任務 65155383-d4ad-47ff-b855-0f0c49fabbc1 已完成: True - 部分完成: 2/17個元件Lossmap已生成
+2025-05-29 14:56:50,882 - data_processor - INFO - 開始執行任務: ce119b86-d93b-4c5a-a411-1082fdd37bdb (fpy_parallel)
+2025-05-29 14:56:51,118 - data_processor - WARNING - 找不到前站(MT)對應的元件CSV: M1X60_WLPF40010003_202504141026_PC4
+2025-05-29 14:56:51,129 - data_processor - WARNING - 找不到前站(MT)對應的元件CSV: M1X60_WLPF40010001_202504141026_PC3
+2025-05-29 14:56:51,142 - data_processor - WARNING - 找不到前站(MT)對應的元件CSV: M1X60_WLPF40010001_202504141023_PC1
+2025-05-29 14:56:51,152 - data_processor - WARNING - 找不到前站(MT)對應的元件CSV: M1X60_WLPF40010003_202504141027_PC2
+2025-05-29 14:56:51,158 - data_processor - WARNING - 找不到前站(MT)對應的元件CSV: M1X60_WLPF40010001_202504141022_PC4
+2025-05-29 14:56:51,165 - data_processor - WARNING - 找不到前站(MT)對應的元件CSV: M1X60_WLPF40010003_202504141027_PC1
+2025-05-29 14:56:51,243 - data_processor - WARNING - 找不到前站(MT)對應的元件CSV: M1X60_WLPF40010001_202504141022_PC2
+2025-05-29 14:56:51,308 - data_processor - WARNING - 找不到前站(MT)對應的元件CSV: M1X60_WLPF40010003_202504141031_PC3
+2025-05-29 14:56:52,749 - data_processor - WARNING - 找不到前站(MT)對應的元件CSV: M1X60_WLPF40010004_202504141031_PC2
+2025-05-29 14:56:53,001 - data_processor - WARNING - 找不到前站(MT)對應的元件CSV: M1X60_WLPF40010004_202504141031_PC4
+2025-05-29 14:56:53,640 - data_processor - WARNING - 找不到前站(MT)對應的元件CSV: M1X60_WLPF40010004_202504141032_PC1
+2025-05-29 14:56:53,820 - data_processor - WARNING - 找不到前站(MT)對應的元件CSV: M1X60_WLPF40010004_202504141035_PC3
+2025-05-29 14:56:55,514 - data_processor - ERROR - 處理元件 M1X60_WLPF40010001_202504141037 FPY時發生錯誤: DataFrame 缺少 DefectType 欄位
+2025-05-29 14:56:55,854 - data_processor - ERROR - 處理元件 M1X60_WLPF40010003_202504141037 FPY時發生錯誤: DataFrame 缺少 DefectType 欄位
+2025-05-29 14:56:56,200 - data_processor - ERROR - 處理元件 M1X60_WLPF40010004_202504141037 FPY時發生錯誤: DataFrame 缺少 DefectType 欄位
+2025-05-29 14:57:00,746 - data_processor - INFO - FPY並行處理完成: 總計 17, 成功 14, 失敗 3
+2025-05-29 14:57:00,769 - data_processor - INFO - 任務 ce119b86-d93b-4c5a-a411-1082fdd37bdb 已完成: True - 部分完成: 14/17個元件FPY已生成
+2025-05-29 15:05:25,850 - data_processor - INFO - 開始執行任務: e202066a-1dc8-4350-a860-37f909ada9ad (basemap)
+2025-05-29 15:05:25,893 - data_processor - INFO - Step 4: 為 WLPF40010003 生成Basemap
+2025-05-29 15:05:26,635 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010003.png
+2025-05-29 15:05:26,637 - data_processor - INFO - Step 4: 為 WLPF40010004 生成Basemap
+2025-05-29 15:05:27,322 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010004.png
+2025-05-29 15:05:27,324 - data_processor - INFO - 檔案 M1X60_WLPF40010001_202504141037.csv 是原始格式，執行 step1~3
+2025-05-29 15:05:27,324 - data_processor - INFO - Step 1: 讀取元件 M1X60_WLPF40010001_202504141037 的config參數
+2025-05-29 15:05:27,325 - data_processor - INFO - Step 2: 執行 M1X60_WLPF40010001_202504141037 的原始CSV偏移確認
+2025-05-29 15:05:27,450 - data_processor - INFO - 檔案 M1X60_WLPF40010003_202504141037.csv 是原始格式，執行 step1~3
+2025-05-29 15:05:27,450 - data_processor - INFO - Step 1: 讀取元件 M1X60_WLPF40010003_202504141037 的config參數
+2025-05-29 15:05:27,451 - data_processor - INFO - Step 2: 執行 M1X60_WLPF40010003_202504141037 的原始CSV偏移確認
+2025-05-29 15:05:27,591 - data_processor - INFO - Step 3: 處理 M1X60_WLPF40010003_202504141037 的CSV標頭
+2025-05-29 15:05:28,046 - data_processor - INFO - Step 4: 為 M1X60_WLPF40010003_202504141037 生成Basemap
+2025-05-29 15:05:28,745 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010003.png
+2025-05-29 15:05:28,747 - data_processor - INFO - 檔案 M1X60_WLPF40010004_202504141037.csv 是原始格式，執行 step1~3
+2025-05-29 15:05:28,747 - data_processor - INFO - Step 1: 讀取元件 M1X60_WLPF40010004_202504141037 的config參數
+2025-05-29 15:05:28,748 - data_processor - INFO - Step 2: 執行 M1X60_WLPF40010004_202504141037 的原始CSV偏移確認
+2025-05-29 15:05:28,878 - data_processor - INFO - Step 3: 處理 M1X60_WLPF40010004_202504141037 的CSV標頭
+2025-05-29 15:05:29,315 - data_processor - INFO - Step 4: 為 M1X60_WLPF40010004_202504141037 生成Basemap
+2025-05-29 15:05:30,037 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010004.png
+2025-05-29 15:05:30,068 - data_processor - INFO - 任務 e202066a-1dc8-4350-a860-37f909ada9ad 已完成: True - 已處理 4/17 個元件的 Basemap
+2025-05-29 15:24:26,429 - data_processor - INFO - 開始執行任務: 2be020dc-5820-481c-8544-76151f563923 (lossmap)
+2025-05-29 15:24:26,463 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141022_PC2
+2025-05-29 15:24:26,463 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141022_PC4
+2025-05-29 15:24:26,463 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141023_PC1
+2025-05-29 15:24:26,463 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141026_PC3
+2025-05-29 15:24:26,464 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141026_PC4
+2025-05-29 15:24:26,464 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141027_PC1
+2025-05-29 15:24:26,464 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141027_PC2
+2025-05-29 15:24:26,464 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141031_PC3
+2025-05-29 15:24:26,464 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141031_PC2
+2025-05-29 15:24:26,464 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141031_PC4
+2025-05-29 15:24:26,464 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141032_PC1
+2025-05-29 15:24:26,464 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141035_PC3
+2025-05-29 15:24:27,394 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141037
+2025-05-29 15:24:27,395 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141037
+2025-05-29 15:24:27,395 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141037
+2025-05-29 15:24:27,395 - data_processor - INFO - Lossmap處理完成: 總計 17, 成功 2, 失敗 15
+2025-05-29 15:24:27,427 - data_processor - INFO - 任務 2be020dc-5820-481c-8544-76151f563923 已完成: True - 部分完成: 2/17個元件Lossmap已生成
+2025-05-29 15:43:17,698 - data_processor - INFO - 開始執行任務: d639411e-fedb-4e17-832e-fcfee7e8e2ee (lossmap)
+2025-05-29 15:43:17,732 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141022_PC2
+2025-05-29 15:43:17,733 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141022_PC4
+2025-05-29 15:43:17,733 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141023_PC1
+2025-05-29 15:43:17,733 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141026_PC3
+2025-05-29 15:43:17,733 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141026_PC4
+2025-05-29 15:43:17,733 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141027_PC1
+2025-05-29 15:43:17,733 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141027_PC2
+2025-05-29 15:43:17,733 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141031_PC3
+2025-05-29 15:43:17,733 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141031_PC2
+2025-05-29 15:43:17,733 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141031_PC4
+2025-05-29 15:43:17,734 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141032_PC1
+2025-05-29 15:43:17,734 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141035_PC3
+2025-05-29 15:43:18,988 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141037
+2025-05-29 15:43:18,988 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141037
+2025-05-29 15:43:18,988 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141037
+2025-05-29 15:43:18,988 - data_processor - INFO - Lossmap處理完成: 總計 17, 成功 2, 失敗 15
+2025-05-29 15:43:19,019 - data_processor - INFO - 任務 d639411e-fedb-4e17-832e-fcfee7e8e2ee 已完成: True - 部分完成: 2/17個元件Lossmap已生成
+2025-05-29 15:44:49,729 - data_processor - INFO - 開始執行任務: 7e08966e-0aaf-4cf4-8478-508729254540 (lossmap)
+2025-05-29 15:44:49,764 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141022_PC2
+2025-05-29 15:44:49,765 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141022_PC4
+2025-05-29 15:44:49,765 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141023_PC1
+2025-05-29 15:44:49,765 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141026_PC3
+2025-05-29 15:44:49,765 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141026_PC4
+2025-05-29 15:44:49,765 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141027_PC1
+2025-05-29 15:44:49,765 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141027_PC2
+2025-05-29 15:44:49,765 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141031_PC3
+2025-05-29 15:44:49,766 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141031_PC2
+2025-05-29 15:44:49,766 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141031_PC4
+2025-05-29 15:44:49,766 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141032_PC1
+2025-05-29 15:44:49,766 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141035_PC3
+2025-05-29 15:44:51,041 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141037
+2025-05-29 15:44:51,041 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141037
+2025-05-29 15:44:51,041 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141037
+2025-05-29 15:44:51,041 - data_processor - INFO - Lossmap處理完成: 總計 17, 成功 2, 失敗 15
+2025-05-29 15:44:51,077 - data_processor - INFO - 任務 7e08966e-0aaf-4cf4-8478-508729254540 已完成: True - 部分完成: 2/17個元件Lossmap已生成
+2025-05-29 15:46:05,368 - data_processor - INFO - 開始執行任務: e93a3248-75f4-4ce4-9ffa-4f5cfa5ddf31 (lossmap)
+2025-05-29 15:46:05,407 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141022_PC2
+2025-05-29 15:46:05,407 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141022_PC4
+2025-05-29 15:46:05,407 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141023_PC1
+2025-05-29 15:46:05,408 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141026_PC3
+2025-05-29 15:46:05,408 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141026_PC4
+2025-05-29 15:46:05,408 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141027_PC1
+2025-05-29 15:46:05,408 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141027_PC2
+2025-05-29 15:46:05,409 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141031_PC3
+2025-05-29 15:46:05,409 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141031_PC2
+2025-05-29 15:46:05,409 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141031_PC4
+2025-05-29 15:46:05,409 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141032_PC1
+2025-05-29 15:46:05,409 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141035_PC3
+2025-05-29 15:46:06,711 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141037
+2025-05-29 15:46:06,711 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141037
+2025-05-29 15:46:06,711 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141037
+2025-05-29 15:46:06,711 - data_processor - INFO - Lossmap處理完成: 總計 17, 成功 2, 失敗 15
+2025-05-29 15:46:06,746 - data_processor - INFO - 任務 e93a3248-75f4-4ce4-9ffa-4f5cfa5ddf31 已完成: True - 部分完成: 2/17個元件Lossmap已生成
+2025-05-29 15:50:18,905 - data_processor - INFO - 開始執行任務: 446b4535-82f7-425a-9b2a-abbaa77316b9 (lossmap)
+2025-05-29 15:50:18,941 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141022_PC2
+2025-05-29 15:50:18,942 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141022_PC4
+2025-05-29 15:50:18,942 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141023_PC1
+2025-05-29 15:50:18,942 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141026_PC3
+2025-05-29 15:50:18,942 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141026_PC4
+2025-05-29 15:50:18,942 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141027_PC1
+2025-05-29 15:50:18,942 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141027_PC2
+2025-05-29 15:50:18,942 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141031_PC3
+2025-05-29 15:50:18,942 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141031_PC2
+2025-05-29 15:50:18,942 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141031_PC4
+2025-05-29 15:50:18,943 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141032_PC1
+2025-05-29 15:50:18,943 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141035_PC3
+2025-05-29 15:50:20,228 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141037
+2025-05-29 15:50:20,229 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141037
+2025-05-29 15:50:20,229 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141037
+2025-05-29 15:50:20,229 - data_processor - INFO - Lossmap處理完成: 總計 17, 成功 2, 失敗 15
+2025-05-29 15:50:20,260 - data_processor - INFO - 任務 446b4535-82f7-425a-9b2a-abbaa77316b9 已完成: True - 部分完成: 2/17個元件Lossmap已生成
+2025-05-29 15:52:18,688 - data_processor - INFO - 開始執行任務: b2583c96-fa31-4276-b62d-307b0e16e7c6 (lossmap)
+2025-05-29 15:52:18,723 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141022_PC2
+2025-05-29 15:52:18,724 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141022_PC4
+2025-05-29 15:52:18,724 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141023_PC1
+2025-05-29 15:52:18,724 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141026_PC3
+2025-05-29 15:52:18,724 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141026_PC4
+2025-05-29 15:52:18,724 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141027_PC1
+2025-05-29 15:52:18,725 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141027_PC2
+2025-05-29 15:52:18,725 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141031_PC3
+2025-05-29 15:52:18,725 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141031_PC2
+2025-05-29 15:52:18,725 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141031_PC4
+2025-05-29 15:52:18,725 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141032_PC1
+2025-05-29 15:52:18,725 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141035_PC3
+2025-05-29 15:52:19,962 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141037
+2025-05-29 15:52:19,962 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141037
+2025-05-29 15:52:19,963 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141037
+2025-05-29 15:52:19,963 - data_processor - INFO - Lossmap處理完成: 總計 17, 成功 2, 失敗 15
+2025-05-29 15:52:19,996 - data_processor - INFO - 任務 b2583c96-fa31-4276-b62d-307b0e16e7c6 已完成: True - 部分完成: 2/17個元件Lossmap已生成
+2025-05-29 15:52:37,160 - data_processor - INFO - 開始執行任務: f6ade038-87b1-483b-b983-848b486b6226 (lossmap)
+2025-05-29 15:52:37,200 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141022_PC2
+2025-05-29 15:52:37,200 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141022_PC4
+2025-05-29 15:52:37,200 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141023_PC1
+2025-05-29 15:52:37,201 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141026_PC3
+2025-05-29 15:52:37,201 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141026_PC4
+2025-05-29 15:52:37,201 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141027_PC1
+2025-05-29 15:52:37,201 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141027_PC2
+2025-05-29 15:52:37,201 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141031_PC3
+2025-05-29 15:52:37,201 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141031_PC2
+2025-05-29 15:52:37,202 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141031_PC4
+2025-05-29 15:52:37,202 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141032_PC1
+2025-05-29 15:52:37,202 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141035_PC3
+2025-05-29 15:52:38,463 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141037
+2025-05-29 15:52:38,463 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141037
+2025-05-29 15:52:38,463 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141037
+2025-05-29 15:52:38,463 - data_processor - INFO - Lossmap處理完成: 總計 17, 成功 2, 失敗 15
+2025-05-29 15:52:38,493 - data_processor - INFO - 任務 f6ade038-87b1-483b-b983-848b486b6226 已完成: True - 部分完成: 2/17個元件Lossmap已生成
+2025-05-29 15:53:08,327 - data_processor - INFO - 開始執行任務: 5e8f9556-ae60-41cf-9cd6-e4f5f1bf089d (lossmap)
+2025-05-29 15:53:08,362 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141022_PC2
+2025-05-29 15:53:08,364 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141022_PC4
+2025-05-29 15:53:08,364 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141023_PC1
+2025-05-29 15:53:08,364 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141026_PC3
+2025-05-29 15:53:08,364 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141026_PC4
+2025-05-29 15:53:08,364 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141027_PC1
+2025-05-29 15:53:08,364 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141027_PC2
+2025-05-29 15:53:08,365 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141031_PC3
+2025-05-29 15:53:08,365 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141031_PC2
+2025-05-29 15:53:08,365 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141031_PC4
+2025-05-29 15:53:08,365 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141032_PC1
+2025-05-29 15:53:08,365 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141035_PC3
+2025-05-29 15:53:09,649 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141037
+2025-05-29 15:53:09,650 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141037
+2025-05-29 15:53:09,650 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141037
+2025-05-29 15:53:09,650 - data_processor - INFO - Lossmap處理完成: 總計 17, 成功 2, 失敗 15
+2025-05-29 15:53:09,684 - data_processor - INFO - 任務 5e8f9556-ae60-41cf-9cd6-e4f5f1bf089d 已完成: True - 部分完成: 2/17個元件Lossmap已生成
+2025-05-29 15:53:18,111 - data_processor - INFO - 開始執行任務: 9caaae10-03d5-40ac-8c61-ca22365f405c (lossmap)
+2025-05-29 15:53:18,137 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141022_PC2
+2025-05-29 15:53:18,137 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141022_PC4
+2025-05-29 15:53:18,138 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141023_PC1
+2025-05-29 15:53:18,138 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141026_PC3
+2025-05-29 15:53:18,138 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141026_PC4
+2025-05-29 15:53:18,138 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141027_PC1
+2025-05-29 15:53:18,138 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141027_PC2
+2025-05-29 15:53:18,139 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141031_PC3
+2025-05-29 15:53:18,139 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141031_PC2
+2025-05-29 15:53:18,139 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141031_PC4
+2025-05-29 15:53:18,140 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141032_PC1
+2025-05-29 15:53:18,140 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141035_PC3
+2025-05-29 15:53:19,373 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141037
+2025-05-29 15:53:19,373 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141037
+2025-05-29 15:53:19,373 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141037
+2025-05-29 15:53:19,374 - data_processor - INFO - Lossmap處理完成: 總計 17, 成功 2, 失敗 15
+2025-05-29 15:53:19,406 - data_processor - INFO - 任務 9caaae10-03d5-40ac-8c61-ca22365f405c 已完成: True - 部分完成: 2/17個元件Lossmap已生成
+2025-05-29 15:53:47,816 - data_processor - INFO - 開始執行任務: 025cb697-f81f-4bb4-a0c8-d616fef03ba8 (lossmap)
+2025-05-29 15:53:47,861 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141022_PC2
+2025-05-29 15:53:47,861 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141022_PC4
+2025-05-29 15:53:47,861 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141023_PC1
+2025-05-29 15:53:47,861 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141026_PC3
+2025-05-29 15:53:47,861 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141026_PC4
+2025-05-29 15:53:47,861 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141027_PC1
+2025-05-29 15:53:47,862 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141027_PC2
+2025-05-29 15:53:47,862 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141031_PC3
+2025-05-29 15:53:47,862 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141031_PC2
+2025-05-29 15:53:47,862 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141031_PC4
+2025-05-29 15:53:47,862 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141032_PC1
+2025-05-29 15:53:47,862 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141035_PC3
+2025-05-29 15:53:49,105 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141037
+2025-05-29 15:53:49,106 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141037
+2025-05-29 15:53:49,106 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141037
+2025-05-29 15:53:49,106 - data_processor - INFO - Lossmap處理完成: 總計 17, 成功 2, 失敗 15
+2025-05-29 15:53:49,136 - data_processor - INFO - 任務 025cb697-f81f-4bb4-a0c8-d616fef03ba8 已完成: True - 部分完成: 2/17個元件Lossmap已生成
+2025-05-29 15:55:32,206 - data_processor - INFO - 開始執行任務: 4ea8bf20-51e3-454c-9725-42baa54012fb (lossmap)
+2025-05-29 15:55:32,237 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141022_PC2
+2025-05-29 15:55:32,237 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141022_PC4
+2025-05-29 15:55:32,237 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141023_PC1
+2025-05-29 15:55:32,238 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141026_PC3
+2025-05-29 15:55:32,238 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141026_PC4
+2025-05-29 15:55:32,238 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141027_PC1
+2025-05-29 15:55:32,238 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141027_PC2
+2025-05-29 15:55:32,238 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141031_PC3
+2025-05-29 15:55:32,238 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141031_PC2
+2025-05-29 15:55:32,238 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141031_PC4
+2025-05-29 15:55:32,239 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141032_PC1
+2025-05-29 15:55:32,239 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141035_PC3
+2025-05-29 15:55:33,430 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141037
+2025-05-29 15:55:33,430 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141037
+2025-05-29 15:55:33,430 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141037
+2025-05-29 15:55:33,431 - data_processor - INFO - Lossmap處理完成: 總計 17, 成功 2, 失敗 15
+2025-05-29 15:55:33,465 - data_processor - INFO - 任務 4ea8bf20-51e3-454c-9725-42baa54012fb 已完成: True - 部分完成: 2/17個元件Lossmap已生成
+2025-05-29 15:57:40,647 - data_processor - INFO - 開始執行任務: fc00a8f8-b120-490a-8931-6d9c8ab29239 (lossmap)
+2025-05-29 15:57:40,691 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141022_PC2
+2025-05-29 15:57:40,692 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141022_PC4
+2025-05-29 15:57:40,692 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141023_PC1
+2025-05-29 15:57:40,692 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141026_PC3
+2025-05-29 15:57:40,692 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141026_PC4
+2025-05-29 15:57:40,692 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141027_PC1
+2025-05-29 15:57:40,692 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141027_PC2
+2025-05-29 15:57:40,692 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141031_PC3
+2025-05-29 15:57:40,693 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141031_PC2
+2025-05-29 15:57:40,693 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141031_PC4
+2025-05-29 15:57:40,693 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141032_PC1
+2025-05-29 15:57:40,693 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141035_PC3
+2025-05-29 15:57:41,927 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141037
+2025-05-29 15:57:41,927 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141037
+2025-05-29 15:57:41,928 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141037
+2025-05-29 15:57:41,928 - data_processor - INFO - Lossmap處理完成: 總計 17, 成功 2, 失敗 15
+2025-05-29 15:57:41,959 - data_processor - INFO - 任務 fc00a8f8-b120-490a-8931-6d9c8ab29239 已完成: True - 部分完成: 2/17個元件Lossmap已生成

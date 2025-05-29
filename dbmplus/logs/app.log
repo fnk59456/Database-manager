@@ -19608,3 +19608,759 @@
 2025-05-29 14:04:06,775 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
 2025-05-29 14:04:06,781 - online_monitor - INFO - 資料庫重新掃描完成
 2025-05-29 14:04:43,612 - online_monitor - INFO - 在線處理已停止
+2025-05-29 14:08:10,043 - database_manager - INFO - 已載入資料庫快取: 3 產品, 10 批次, 1196 元件
+2025-05-29 14:08:10,093 - online_monitor - INFO - 檔案監控已設置：掃描間隔=5秒，重新掃描間隔=60秒
+2025-05-29 14:08:10,115 - main - INFO - 日誌系統已初始化
+2025-05-29 14:08:10,115 - config_manager - INFO - 成功載入配置文件: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\config\settings.json
+2025-05-29 14:08:10,116 - database_manager - WARNING - 站點順序驗證失敗: 未配置的站點: {'LOSS1', 'CU', 'LOSS2', 'LOSS4', 'LOSS6', 'LOSS3', 'LOSS5', 'FPY'}, 缺失的站點: set()
+2025-05-29 14:08:10,116 - main - WARNING - 站點順序配置驗證失敗: {'status': False, 'station_order': ['MT', 'DC2', 'INNER1', 'RDL', 'INNER2', 'EMC'], 'all_stations_in_db': ['INNER1', 'EMC', 'MT', 'LOSS1', 'CU', 'RDL', 'LOSS2', 'LOSS4', 'LOSS6', 'LOSS3', 'LOSS5', 'FPY', 'DC2', 'INNER2'], 'unconfigured_stations': ['LOSS1', 'CU', 'LOSS2', 'LOSS4', 'LOSS6', 'LOSS3', 'LOSS5', 'FPY'], 'missing_stations': []}
+2025-05-29 14:08:10,176 - qdarkstyle - INFO - QSS file successfully loaded.
+2025-05-29 14:08:10,207 - qdarkstyle - INFO - Found application patches to be applied.
+2025-05-29 14:08:10,208 - main - INFO - 已載入深色主題樣式
+2025-05-29 14:08:10,283 - main - INFO - 啟動 Database Manager Plus v1.0.0
+2025-05-29 14:08:47,979 - online_monitor - INFO - 在線處理已啟動
+2025-05-29 14:08:47,981 - online_monitor - INFO - 檔案監控已啟動
+2025-05-29 14:08:47,981 - online_monitor - WARNING - 調用scan_database時發生參數錯誤，嘗試不使用force參數: DatabaseManager.scan_database() got an unexpected keyword argument 'force'
+2025-05-29 14:08:47,982 - database_manager - INFO - 開始掃描資料庫...
+2025-05-29 14:08:48,099 - database_manager - INFO - 資料庫掃描完成: 3 產品, 9 批次, 1188 元件
+2025-05-29 14:08:48,111 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 14:08:48,116 - online_monitor - INFO - 創建新組件: WLPF40010001 (批次: WLPF400100, 站點: DC2)
+2025-05-29 14:08:48,117 - online_monitor - INFO - 資料庫重新掃描完成
+2025-05-29 14:08:48,131 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 14:08:48,131 - online_monitor - INFO - 檔案已加入佇列: D:\Database-PC\temp\processed_csv\WLPF400100\DC2\M1X60_WLPF40010001_202504141037.csv
+2025-05-29 14:08:48,145 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 14:08:48,145 - online_monitor - INFO - 檔案已加入佇列: D:\Database-PC\temp\processed_csv\WLPF400100\DC2\M1X60_WLPF40010003_202504141037.csv
+2025-05-29 14:08:48,158 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 14:08:48,159 - online_monitor - INFO - 檔案已加入佇列: D:\Database-PC\temp\processed_csv\WLPF400100\DC2\M1X60_WLPF40010004_202504141037.csv
+2025-05-29 14:08:48,172 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 14:08:48,172 - online_monitor - INFO - 檔案已加入佇列: D:\Database-PC\temp\processed_csv\WLPF400100\INNER1\M1X60_WLPF40010003_202504141037.csv
+2025-05-29 14:08:48,183 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 14:08:48,184 - online_monitor - INFO - 檔案已加入佇列: D:\Database-PC\temp\processed_csv\WLPF400100\INNER1\M1X60_WLPF40010003_202504141045.csv
+2025-05-29 14:08:48,195 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 14:08:48,196 - online_monitor - INFO - 檔案已加入佇列: D:\Database-PC\temp\processed_csv\WLPF400100\MT\M3X60_WLPF40010001_202504091051.csv
+2025-05-29 14:08:48,207 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 14:08:48,208 - online_monitor - INFO - 檔案已加入佇列: D:\Database-PC\temp\processed_csv\WLPF400100\MT\M3X60_WLPF40010003_202504091051.csv
+2025-05-29 14:08:48,219 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 14:08:48,220 - online_monitor - INFO - 檔案已加入佇列: D:\Database-PC\temp\processed_csv\WLPF400100\MT\M3X60_WLPF40010004_202504091051.csv
+2025-05-29 14:08:48,231 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 14:08:48,232 - online_monitor - INFO - 檔案已加入佇列: D:\Database-PC\temp\processed_csv\WLPF400100\MT\M3X60_WLPF40010006_202504091051.csv
+2025-05-29 14:08:48,992 - data_processor - INFO - 開始執行任務: b1c898ab-9b00-4632-8972-c24b5b2ae503 (basemap)
+2025-05-29 14:08:49,028 - data_processor - INFO - 檔案 M1X60_WLPF40010001_202504141037.csv 是原始格式，執行 step1~3
+2025-05-29 14:08:49,029 - data_processor - INFO - Step 1: 讀取元件 WLPF40010001 的config參數
+2025-05-29 14:08:49,029 - data_processor - INFO - Step 2: 執行 WLPF40010001 的原始CSV偏移確認
+2025-05-29 14:08:49,029 - data_utils - INFO - 在第 20 行找到標頭
+2025-05-29 14:08:49,144 - data_utils - WARNING - 找不到對齊點: Col=175, Row=96, DefectType=alignkey
+2025-05-29 14:08:49,149 - data_utils - WARNING - 找不到對齊點: Col=292, Row=96, DefectType=alignkey
+2025-05-29 14:08:49,154 - data_utils - WARNING - 找不到對齊點: Col=175, Row=369, DefectType=alignkey
+2025-05-29 14:08:49,159 - data_utils - WARNING - 找不到對齊點: Col=292, Row=369, DefectType=alignkey
+2025-05-29 14:08:49,190 - data_processor - INFO - 任務 b1c898ab-9b00-4632-8972-c24b5b2ae503 已完成: False - CSV檔案偏移錯誤: 找不到任何對齊點，需要至少1個匹配
+2025-05-29 14:08:50,004 - data_processor - INFO - 開始執行任務: 156b6aaf-47f4-4ae0-a9ee-6f537e882031 (basemap)
+2025-05-29 14:08:50,038 - data_processor - INFO - 檔案 M1X60_WLPF40010003_202504141037.csv 是原始格式，執行 step1~3
+2025-05-29 14:08:50,039 - data_processor - INFO - Step 1: 讀取元件 WLPF40010003 的config參數
+2025-05-29 14:08:50,040 - data_processor - INFO - Step 2: 執行 WLPF40010003 的原始CSV偏移確認
+2025-05-29 14:08:50,040 - data_utils - INFO - 在第 20 行找到標頭
+2025-05-29 14:08:50,156 - data_utils - INFO - 找到對齊點: Col=175, Row=96, DefectType=alignkey
+2025-05-29 14:08:50,162 - data_utils - INFO - 找到對齊點: Col=292, Row=96, DefectType=alignkey
+2025-05-29 14:08:50,167 - data_utils - INFO - 找到對齊點: Col=175, Row=369, DefectType=alignkey
+2025-05-29 14:08:50,171 - data_utils - INFO - 找到對齊點: Col=292, Row=369, DefectType=alignkey
+2025-05-29 14:08:50,174 - data_processor - INFO - Step 3: 處理 WLPF40010003 的CSV標頭
+2025-05-29 14:08:50,602 - file_utils - INFO - 成功保存CSV檔案: D:/Database-PC/temp/csv/WLPF400100/DC2\WLPF40010003.csv
+2025-05-29 14:08:50,603 - file_utils - INFO - 成功處理表頭並重命名: D:\Database-PC\temp\processed_csv\WLPF400100\DC2\M1X60_WLPF40010003_202504141037.csv -> D:/Database-PC/temp/csv/WLPF400100/DC2\WLPF40010003.csv
+2025-05-29 14:08:50,620 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 14:08:50,621 - data_processor - INFO - Step 4: 為 WLPF40010003 生成Basemap
+2025-05-29 14:08:51,052 - data_processor - INFO - 開始執行任務: e7f9b601-438e-4b45-8bf8-b169892a0f58 (basemap)
+2025-05-29 14:08:51,091 - data_processor - INFO - 檔案 M1X60_WLPF40010004_202504141037.csv 是原始格式，執行 step1~3
+2025-05-29 14:08:51,092 - data_processor - INFO - Step 1: 讀取元件 WLPF40010004 的config參數
+2025-05-29 14:08:51,095 - data_processor - INFO - Step 2: 執行 WLPF40010004 的原始CSV偏移確認
+2025-05-29 14:08:51,102 - data_utils - INFO - 在第 20 行找到標頭
+2025-05-29 14:08:51,363 - data_utils - INFO - 找到對齊點: Col=175, Row=96, DefectType=alignkey
+2025-05-29 14:08:51,370 - data_utils - INFO - 找到對齊點: Col=292, Row=96, DefectType=alignkey
+2025-05-29 14:08:51,380 - data_utils - INFO - 找到對齊點: Col=175, Row=369, DefectType=alignkey
+2025-05-29 14:08:51,383 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010003.png
+2025-05-29 14:08:51,393 - data_utils - INFO - 找到對齊點: Col=292, Row=369, DefectType=alignkey
+2025-05-29 14:08:51,395 - data_processor - INFO - Step 3: 處理 WLPF40010004 的CSV標頭
+2025-05-29 14:08:51,406 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 14:08:51,406 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010003.png
+2025-05-29 14:08:51,441 - data_processor - INFO - 任務 156b6aaf-47f4-4ae0-a9ee-6f537e882031 已完成: True - D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010003.png
+2025-05-29 14:08:51,854 - file_utils - INFO - 成功保存CSV檔案: D:/Database-PC/temp/csv/WLPF400100/DC2\WLPF40010004.csv
+2025-05-29 14:08:51,855 - file_utils - INFO - 成功處理表頭並重命名: D:\Database-PC\temp\processed_csv\WLPF400100\DC2\M1X60_WLPF40010004_202504141037.csv -> D:/Database-PC/temp/csv/WLPF400100/DC2\WLPF40010004.csv
+2025-05-29 14:08:51,870 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 14:08:51,870 - data_processor - INFO - Step 4: 為 WLPF40010004 生成Basemap
+2025-05-29 14:08:52,018 - data_processor - INFO - 開始執行任務: cd5f59a2-7882-4075-805f-8497bb52be5c (basemap)
+2025-05-29 14:08:52,059 - data_processor - INFO - 檔案 M1X60_WLPF40010003_202504141045.csv 是原始格式，執行 step1~3
+2025-05-29 14:08:52,059 - data_processor - INFO - Step 1: 讀取元件 WLPF40010003 的config參數
+2025-05-29 14:08:52,060 - data_processor - INFO - Step 2: 執行 WLPF40010003 的原始CSV偏移確認
+2025-05-29 14:08:52,060 - data_utils - INFO - 在第 20 行找到標頭
+2025-05-29 14:08:52,499 - data_utils - INFO - 找到對齊點: Col=175, Row=96, DefectType=alignkey
+2025-05-29 14:08:52,504 - data_utils - INFO - 找到對齊點: Col=292, Row=96, DefectType=alignkey
+2025-05-29 14:08:52,509 - data_utils - INFO - 找到對齊點: Col=175, Row=369, DefectType=alignkey
+2025-05-29 14:08:52,514 - data_utils - INFO - 找到對齊點: Col=292, Row=369, DefectType=alignkey
+2025-05-29 14:08:52,517 - data_processor - INFO - Step 3: 處理 WLPF40010003 的CSV標頭
+2025-05-29 14:08:52,700 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010004.png
+2025-05-29 14:08:52,717 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 14:08:52,718 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010004.png
+2025-05-29 14:08:52,755 - data_processor - INFO - 任務 e7f9b601-438e-4b45-8bf8-b169892a0f58 已完成: True - D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010004.png
+2025-05-29 14:08:53,030 - data_processor - INFO - 開始執行任務: 4f2e4a1d-91ed-43c0-9f0a-f53cf283ae51 (basemap)
+2025-05-29 14:08:53,062 - data_processor - INFO - 檔案 M1X60_WLPF40010003_202504141045.csv 是原始格式，執行 step1~3
+2025-05-29 14:08:53,063 - data_processor - INFO - Step 1: 讀取元件 WLPF40010003 的config參數
+2025-05-29 14:08:53,067 - data_processor - INFO - Step 2: 執行 WLPF40010003 的原始CSV偏移確認
+2025-05-29 14:08:53,070 - data_utils - INFO - 在第 20 行找到標頭
+2025-05-29 14:08:53,157 - file_utils - INFO - 成功保存CSV檔案: D:/Database-PC/temp/csv/WLPF400100/INNER1\WLPF40010003.csv
+2025-05-29 14:08:53,157 - file_utils - INFO - 成功處理表頭並重命名: D:\Database-PC\temp\processed_csv\WLPF400100\INNER1\M1X60_WLPF40010003_202504141045.csv -> D:/Database-PC/temp/csv/WLPF400100/INNER1\WLPF40010003.csv
+2025-05-29 14:08:53,176 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 14:08:53,177 - data_processor - INFO - Step 4: 為 WLPF40010003 生成Basemap
+2025-05-29 14:08:53,238 - data_utils - INFO - 找到對齊點: Col=175, Row=96, DefectType=alignkey
+2025-05-29 14:08:53,244 - data_utils - INFO - 找到對齊點: Col=292, Row=96, DefectType=alignkey
+2025-05-29 14:08:53,249 - data_utils - INFO - 找到對齊點: Col=175, Row=369, DefectType=alignkey
+2025-05-29 14:08:53,255 - data_utils - INFO - 找到對齊點: Col=292, Row=369, DefectType=alignkey
+2025-05-29 14:08:53,257 - data_processor - INFO - Step 3: 處理 WLPF40010003 的CSV標頭
+2025-05-29 14:08:54,035 - file_utils - INFO - 成功保存CSV檔案: D:/Database-PC/temp/csv/WLPF400100/INNER1\WLPF40010003.csv
+2025-05-29 14:08:54,035 - file_utils - INFO - 成功處理表頭並重命名: D:\Database-PC\temp\csv\WLPF400100\INNER1\WLPF40010003.csv -> D:/Database-PC/temp/csv/WLPF400100/INNER1\WLPF40010003.csv
+2025-05-29 14:08:54,049 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 14:08:54,050 - data_processor - INFO - Step 4: 為 WLPF40010003 生成Basemap
+2025-05-29 14:08:54,239 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\INNER1\WLPF40010003.png
+2025-05-29 14:08:54,257 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 14:08:54,257 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\INNER1\WLPF40010003.png
+2025-05-29 14:08:54,290 - data_processor - INFO - 任務 cd5f59a2-7882-4075-805f-8497bb52be5c 已完成: True - D:\Database-PC\temp\map\WLPF400100\INNER1\WLPF40010003.png
+2025-05-29 14:08:54,898 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\INNER1\WLPF40010003.png
+2025-05-29 14:08:54,913 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 14:08:54,914 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\INNER1\WLPF40010003.png
+2025-05-29 14:08:54,946 - data_processor - INFO - 任務 4f2e4a1d-91ed-43c0-9f0a-f53cf283ae51 已完成: True - D:\Database-PC\temp\map\WLPF400100\INNER1\WLPF40010003.png
+2025-05-29 14:08:55,035 - data_processor - INFO - 開始執行任務: ca77cd8e-d81d-43a2-80d0-7210f1241d76 (basemap)
+2025-05-29 14:08:55,070 - data_processor - INFO - 檔案 M3X60_WLPF40010001_202504091051.csv 是原始格式，執行 step1~3
+2025-05-29 14:08:55,070 - data_processor - INFO - Step 1: 讀取元件 WLPF40010001 的config參數
+2025-05-29 14:08:55,071 - data_processor - INFO - Step 2: 執行 WLPF40010001 的原始CSV偏移確認
+2025-05-29 14:08:55,071 - data_utils - INFO - 在第 20 行找到標頭
+2025-05-29 14:08:55,184 - data_utils - INFO - 找到對齊點: Col=174, Row=96, DefectType=alignkey
+2025-05-29 14:08:55,189 - data_utils - INFO - 找到對齊點: Col=291, Row=96, DefectType=alignkey
+2025-05-29 14:08:55,195 - data_utils - INFO - 找到對齊點: Col=174, Row=369, DefectType=alignkey
+2025-05-29 14:08:55,200 - data_utils - INFO - 找到對齊點: Col=291, Row=369, DefectType=alignkey
+2025-05-29 14:08:55,202 - data_processor - INFO - Step 3: 處理 WLPF40010001 的CSV標頭
+2025-05-29 14:08:55,628 - file_utils - INFO - 成功保存CSV檔案: D:/Database-PC/temp/csv/WLPF400100/MT\WLPF40010001.csv
+2025-05-29 14:08:55,628 - file_utils - INFO - 成功處理表頭並重命名: D:\Database-PC\temp\processed_csv\WLPF400100\MT\M3X60_WLPF40010001_202504091051.csv -> D:/Database-PC/temp/csv/WLPF400100/MT\WLPF40010001.csv
+2025-05-29 14:08:55,642 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 14:08:55,643 - data_processor - INFO - Step 4: 為 WLPF40010001 生成Basemap
+2025-05-29 14:08:56,109 - data_processor - INFO - 開始執行任務: c2ad862c-e202-4ed7-a987-0f0ff8666111 (basemap)
+2025-05-29 14:08:56,169 - data_processor - INFO - 檔案 M3X60_WLPF40010003_202504091051.csv 是原始格式，執行 step1~3
+2025-05-29 14:08:56,171 - data_processor - INFO - Step 1: 讀取元件 WLPF40010003 的config參數
+2025-05-29 14:08:56,179 - data_processor - INFO - Step 2: 執行 WLPF40010003 的原始CSV偏移確認
+2025-05-29 14:08:56,181 - data_utils - INFO - 在第 20 行找到標頭
+2025-05-29 14:08:56,421 - data_utils - INFO - 找到對齊點: Col=174, Row=96, DefectType=alignkey
+2025-05-29 14:08:56,427 - data_utils - INFO - 找到對齊點: Col=291, Row=96, DefectType=alignkey
+2025-05-29 14:08:56,433 - data_utils - INFO - 找到對齊點: Col=174, Row=369, DefectType=alignkey
+2025-05-29 14:08:56,438 - data_utils - INFO - 找到對齊點: Col=291, Row=369, DefectType=alignkey
+2025-05-29 14:08:56,440 - data_processor - INFO - Step 3: 處理 WLPF40010003 的CSV標頭
+2025-05-29 14:08:56,468 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010001.png
+2025-05-29 14:08:56,489 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 14:08:56,489 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010001.png
+2025-05-29 14:08:56,520 - data_processor - INFO - 任務 ca77cd8e-d81d-43a2-80d0-7210f1241d76 已完成: True - D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010001.png
+2025-05-29 14:08:56,910 - file_utils - INFO - 成功保存CSV檔案: D:/Database-PC/temp/csv/WLPF400100/MT\WLPF40010003.csv
+2025-05-29 14:08:56,911 - file_utils - INFO - 成功處理表頭並重命名: D:\Database-PC\temp\processed_csv\WLPF400100\MT\M3X60_WLPF40010003_202504091051.csv -> D:/Database-PC/temp/csv/WLPF400100/MT\WLPF40010003.csv
+2025-05-29 14:08:56,925 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 14:08:56,926 - data_processor - INFO - Step 4: 為 WLPF40010003 生成Basemap
+2025-05-29 14:08:57,074 - data_processor - INFO - 開始執行任務: e15c7412-800c-49ca-a788-3576237de818 (basemap)
+2025-05-29 14:08:57,129 - data_processor - INFO - 檔案 M3X60_WLPF40010004_202504091051.csv 是原始格式，執行 step1~3
+2025-05-29 14:08:57,129 - data_processor - INFO - Step 1: 讀取元件 WLPF40010004 的config參數
+2025-05-29 14:08:57,130 - data_processor - INFO - Step 2: 執行 WLPF40010004 的原始CSV偏移確認
+2025-05-29 14:08:57,131 - data_utils - INFO - 在第 20 行找到標頭
+2025-05-29 14:08:57,546 - data_utils - INFO - 找到對齊點: Col=174, Row=96, DefectType=alignkey
+2025-05-29 14:08:57,551 - data_utils - INFO - 找到對齊點: Col=291, Row=96, DefectType=alignkey
+2025-05-29 14:08:57,556 - data_utils - INFO - 找到對齊點: Col=174, Row=369, DefectType=alignkey
+2025-05-29 14:08:57,563 - data_utils - INFO - 找到對齊點: Col=291, Row=369, DefectType=alignkey
+2025-05-29 14:08:57,567 - data_processor - INFO - Step 3: 處理 WLPF40010004 的CSV標頭
+2025-05-29 14:08:57,754 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010003.png
+2025-05-29 14:08:57,772 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 14:08:57,772 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010003.png
+2025-05-29 14:08:57,807 - data_processor - INFO - 任務 c2ad862c-e202-4ed7-a987-0f0ff8666111 已完成: True - D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010003.png
+2025-05-29 14:08:58,080 - data_processor - INFO - 開始執行任務: 6879e825-9d38-481a-9bdc-966a7714cdf7 (basemap)
+2025-05-29 14:08:58,111 - data_processor - INFO - 檔案 M3X60_WLPF40010006_202504091051.csv 是原始格式，執行 step1~3
+2025-05-29 14:08:58,116 - data_processor - INFO - Step 1: 讀取元件 WLPF40010006 的config參數
+2025-05-29 14:08:58,126 - data_processor - INFO - Step 2: 執行 WLPF40010006 的原始CSV偏移確認
+2025-05-29 14:08:58,129 - data_utils - INFO - 在第 20 行找到標頭
+2025-05-29 14:08:58,194 - file_utils - INFO - 成功保存CSV檔案: D:/Database-PC/temp/csv/WLPF400100/MT\WLPF40010004.csv
+2025-05-29 14:08:58,194 - file_utils - INFO - 成功處理表頭並重命名: D:\Database-PC\temp\processed_csv\WLPF400100\MT\M3X60_WLPF40010004_202504091051.csv -> D:/Database-PC/temp/csv/WLPF400100/MT\WLPF40010004.csv
+2025-05-29 14:08:58,214 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 14:08:58,214 - data_processor - INFO - Step 4: 為 WLPF40010004 生成Basemap
+2025-05-29 14:08:58,286 - data_utils - INFO - 找到對齊點: Col=174, Row=96, DefectType=alignkey
+2025-05-29 14:08:58,292 - data_utils - INFO - 找到對齊點: Col=291, Row=96, DefectType=alignkey
+2025-05-29 14:08:58,300 - data_utils - INFO - 找到對齊點: Col=174, Row=369, DefectType=alignkey
+2025-05-29 14:08:58,305 - data_utils - INFO - 找到對齊點: Col=291, Row=369, DefectType=alignkey
+2025-05-29 14:08:58,308 - data_processor - INFO - Step 3: 處理 WLPF40010006 的CSV標頭
+2025-05-29 14:08:59,158 - file_utils - INFO - 成功保存CSV檔案: D:/Database-PC/temp/csv/WLPF400100/MT\WLPF40010006.csv
+2025-05-29 14:08:59,159 - file_utils - INFO - 成功處理表頭並重命名: D:\Database-PC\temp\processed_csv\WLPF400100\MT\M3X60_WLPF40010006_202504091051.csv -> D:/Database-PC/temp/csv/WLPF400100/MT\WLPF40010006.csv
+2025-05-29 14:08:59,174 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 14:08:59,174 - data_processor - INFO - Step 4: 為 WLPF40010006 生成Basemap
+2025-05-29 14:08:59,379 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010004.png
+2025-05-29 14:08:59,399 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 14:08:59,399 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010004.png
+2025-05-29 14:08:59,437 - data_processor - INFO - 任務 e15c7412-800c-49ca-a788-3576237de818 已完成: True - D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010004.png
+2025-05-29 14:09:00,049 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010006.png
+2025-05-29 14:09:00,062 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 14:09:00,063 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010006.png
+2025-05-29 14:09:00,099 - data_processor - INFO - 任務 6879e825-9d38-481a-9bdc-966a7714cdf7 已完成: True - D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010006.png
+2025-05-29 14:09:48,328 - online_monitor - WARNING - 調用scan_database時發生參數錯誤，嘗試不使用force參數: DatabaseManager.scan_database() got an unexpected keyword argument 'force'
+2025-05-29 14:09:48,329 - database_manager - INFO - 開始掃描資料庫...
+2025-05-29 14:09:48,459 - database_manager - INFO - 資料庫掃描完成: 3 產品, 9 批次, 1188 元件
+2025-05-29 14:09:48,473 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 14:09:48,477 - online_monitor - INFO - 資料庫重新掃描完成
+2025-05-29 14:10:48,609 - online_monitor - WARNING - 調用scan_database時發生參數錯誤，嘗試不使用force參數: DatabaseManager.scan_database() got an unexpected keyword argument 'force'
+2025-05-29 14:10:48,610 - database_manager - INFO - 開始掃描資料庫...
+2025-05-29 14:10:48,740 - database_manager - INFO - 資料庫掃描完成: 3 產品, 9 批次, 1188 元件
+2025-05-29 14:10:48,753 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 14:10:48,761 - online_monitor - INFO - 資料庫重新掃描完成
+2025-05-29 14:11:26,490 - online_monitor - INFO - 在線處理已停止
+2025-05-29 14:18:59,969 - database_manager - INFO - 已載入資料庫快取: 3 產品, 9 批次, 1188 元件
+2025-05-29 14:19:00,026 - online_monitor - INFO - 檔案監控已設置：掃描間隔=5秒，重新掃描間隔=60秒
+2025-05-29 14:19:00,049 - main - INFO - 日誌系統已初始化
+2025-05-29 14:19:00,049 - config_manager - INFO - 成功載入配置文件: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\config\settings.json
+2025-05-29 14:19:00,049 - database_manager - WARNING - 站點順序驗證失敗: 未配置的站點: {'LOSS4', 'LOSS6', 'LOSS2', 'CU', 'LOSS3', 'LOSS5', 'LOSS1', 'FPY'}, 缺失的站點: set()
+2025-05-29 14:19:00,049 - main - WARNING - 站點順序配置驗證失敗: {'status': False, 'station_order': ['MT', 'DC2', 'INNER1', 'RDL', 'INNER2', 'EMC'], 'all_stations_in_db': ['DC2', 'RDL', 'MT', 'LOSS6', 'LOSS4', 'INNER1', 'INNER2', 'CU', 'LOSS2', 'LOSS3', 'LOSS5', 'LOSS1', 'EMC', 'FPY'], 'unconfigured_stations': ['LOSS4', 'LOSS6', 'LOSS2', 'CU', 'LOSS3', 'LOSS5', 'LOSS1', 'FPY'], 'missing_stations': []}
+2025-05-29 14:19:00,113 - qdarkstyle - INFO - QSS file successfully loaded.
+2025-05-29 14:19:00,154 - qdarkstyle - INFO - Found application patches to be applied.
+2025-05-29 14:19:00,155 - main - INFO - 已載入深色主題樣式
+2025-05-29 14:19:00,234 - main - INFO - 啟動 Database Manager Plus v1.0.0
+2025-05-29 14:56:15,683 - database_manager - INFO - 已載入資料庫快取: 3 產品, 9 批次, 1188 元件
+2025-05-29 14:56:15,743 - online_monitor - INFO - 檔案監控已設置：掃描間隔=5秒，重新掃描間隔=60秒
+2025-05-29 14:56:15,765 - main - INFO - 日誌系統已初始化
+2025-05-29 14:56:15,766 - config_manager - INFO - 成功載入配置文件: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\config\settings.json
+2025-05-29 14:56:15,766 - database_manager - WARNING - 站點順序驗證失敗: 未配置的站點: {'LOSS3', 'LOSS6', 'LOSS5', 'LOSS1', 'LOSS2', 'LOSS4', 'CU', 'FPY'}, 缺失的站點: set()
+2025-05-29 14:56:15,766 - main - WARNING - 站點順序配置驗證失敗: {'status': False, 'station_order': ['MT', 'DC2', 'INNER1', 'RDL', 'INNER2', 'EMC'], 'all_stations_in_db': ['DC2', 'EMC', 'LOSS2', 'INNER1', 'LOSS6', 'LOSS1', 'LOSS3', 'LOSS5', 'LOSS4', 'RDL', 'INNER2', 'MT', 'CU', 'FPY'], 'unconfigured_stations': ['LOSS3', 'LOSS6', 'LOSS5', 'LOSS1', 'LOSS2', 'LOSS4', 'CU', 'FPY'], 'missing_stations': []}
+2025-05-29 14:56:15,836 - qdarkstyle - INFO - QSS file successfully loaded.
+2025-05-29 14:56:15,894 - qdarkstyle - INFO - Found application patches to be applied.
+2025-05-29 14:56:15,895 - main - INFO - 已載入深色主題樣式
+2025-05-29 14:56:15,989 - main - INFO - 啟動 Database Manager Plus v1.0.0
+2025-05-29 14:56:29,566 - data_processor - INFO - 開始執行任務: 65155383-d4ad-47ff-b855-0f0c49fabbc1 (lossmap)
+2025-05-29 14:56:29,602 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141022_PC2
+2025-05-29 14:56:29,602 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141022_PC4
+2025-05-29 14:56:29,602 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141023_PC1
+2025-05-29 14:56:29,602 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141026_PC3
+2025-05-29 14:56:29,603 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141026_PC4
+2025-05-29 14:56:29,603 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141027_PC1
+2025-05-29 14:56:29,603 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141027_PC2
+2025-05-29 14:56:29,605 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141031_PC3
+2025-05-29 14:56:29,605 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141031_PC2
+2025-05-29 14:56:29,605 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141031_PC4
+2025-05-29 14:56:29,605 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141032_PC1
+2025-05-29 14:56:29,606 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141035_PC3
+2025-05-29 14:56:30,097 - data_utils - INFO - 成功生成損失地圖: D:\Database-PC\temp\map\WLPF400100\LOSS1\WLPF40010003.png
+2025-05-29 14:56:30,112 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 14:56:30,547 - data_utils - INFO - 成功生成損失地圖: D:\Database-PC\temp\map\WLPF400100\LOSS1\WLPF40010004.png
+2025-05-29 14:56:30,559 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 14:56:30,559 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141037
+2025-05-29 14:56:30,560 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141037
+2025-05-29 14:56:30,560 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141037
+2025-05-29 14:56:30,560 - data_processor - INFO - Lossmap處理完成: 總計 17, 成功 2, 失敗 15
+2025-05-29 14:56:30,599 - data_processor - INFO - 任務 65155383-d4ad-47ff-b855-0f0c49fabbc1 已完成: True - 部分完成: 2/17個元件Lossmap已生成
+2025-05-29 14:56:50,882 - data_processor - INFO - 開始執行任務: ce119b86-d93b-4c5a-a411-1082fdd37bdb (fpy_parallel)
+2025-05-29 14:56:51,118 - data_processor - WARNING - 找不到前站(MT)對應的元件CSV: M1X60_WLPF40010003_202504141026_PC4
+2025-05-29 14:56:51,129 - data_processor - WARNING - 找不到前站(MT)對應的元件CSV: M1X60_WLPF40010001_202504141026_PC3
+2025-05-29 14:56:51,142 - data_processor - WARNING - 找不到前站(MT)對應的元件CSV: M1X60_WLPF40010001_202504141023_PC1
+2025-05-29 14:56:51,152 - data_processor - WARNING - 找不到前站(MT)對應的元件CSV: M1X60_WLPF40010003_202504141027_PC2
+2025-05-29 14:56:51,158 - data_processor - WARNING - 找不到前站(MT)對應的元件CSV: M1X60_WLPF40010001_202504141022_PC4
+2025-05-29 14:56:51,165 - data_processor - WARNING - 找不到前站(MT)對應的元件CSV: M1X60_WLPF40010003_202504141027_PC1
+2025-05-29 14:56:51,243 - data_processor - WARNING - 找不到前站(MT)對應的元件CSV: M1X60_WLPF40010001_202504141022_PC2
+2025-05-29 14:56:51,308 - data_processor - WARNING - 找不到前站(MT)對應的元件CSV: M1X60_WLPF40010003_202504141031_PC3
+2025-05-29 14:56:52,443 - data_utils - INFO - 成功生成FPY地圖: D:\Database-PC\temp\map\WLPF400100\FPY\M1X60_WLPF40010001_202504141026_PC3.png
+2025-05-29 14:56:52,749 - data_processor - WARNING - 找不到前站(MT)對應的元件CSV: M1X60_WLPF40010004_202504141031_PC2
+2025-05-29 14:56:52,775 - data_utils - INFO - 成功生成FPY地圖: D:\Database-PC\temp\map\WLPF400100\FPY\M1X60_WLPF40010001_202504141023_PC1.png
+2025-05-29 14:56:53,001 - data_processor - WARNING - 找不到前站(MT)對應的元件CSV: M1X60_WLPF40010004_202504141031_PC4
+2025-05-29 14:56:53,250 - data_utils - INFO - 成功生成FPY地圖: D:\Database-PC\temp\map\WLPF400100\FPY\M1X60_WLPF40010003_202504141026_PC4.png
+2025-05-29 14:56:53,639 - data_utils - INFO - 成功生成FPY地圖: D:\Database-PC\temp\map\WLPF400100\FPY\M1X60_WLPF40010003_202504141027_PC2.png
+2025-05-29 14:56:53,640 - data_processor - WARNING - 找不到前站(MT)對應的元件CSV: M1X60_WLPF40010004_202504141032_PC1
+2025-05-29 14:56:53,820 - data_processor - WARNING - 找不到前站(MT)對應的元件CSV: M1X60_WLPF40010004_202504141035_PC3
+2025-05-29 14:56:53,983 - data_utils - INFO - 成功生成FPY地圖: D:\Database-PC\temp\map\WLPF400100\FPY\M1X60_WLPF40010001_202504141022_PC4.png
+2025-05-29 14:56:54,444 - data_utils - INFO - 成功生成FPY地圖: D:\Database-PC\temp\map\WLPF400100\FPY\M1X60_WLPF40010001_202504141022_PC2.png
+2025-05-29 14:56:54,893 - data_utils - INFO - 成功生成FPY地圖: D:\Database-PC\temp\map\WLPF400100\FPY\M1X60_WLPF40010003_202504141027_PC1.png
+2025-05-29 14:56:55,280 - data_utils - INFO - 成功生成FPY地圖: D:\Database-PC\temp\map\WLPF400100\FPY\M1X60_WLPF40010003_202504141031_PC3.png
+2025-05-29 14:56:55,288 - file_utils - WARNING - 標準讀取CSV失敗: D:\Database-PC\temp\processed_csv\WLPF400100\DC2\M1X60_WLPF40010003_202504141037.csv, 嘗試替代方法...
+2025-05-29 14:56:55,493 - data_utils - ERROR - DataFrame 缺少 DefectType 欄位
+2025-05-29 14:56:55,514 - data_processor - ERROR - 處理元件 M1X60_WLPF40010001_202504141037 FPY時發生錯誤: DataFrame 缺少 DefectType 欄位
+2025-05-29 14:56:55,576 - file_utils - WARNING - 標準讀取CSV失敗: D:\Database-PC\temp\processed_csv\WLPF400100\DC2\M1X60_WLPF40010004_202504141037.csv, 嘗試替代方法...
+2025-05-29 14:56:55,849 - file_utils - INFO - 使用分隔符 ',' 成功讀取CSV: D:\Database-PC\temp\processed_csv\WLPF400100\DC2\M1X60_WLPF40010003_202504141037.csv
+2025-05-29 14:56:55,851 - data_utils - ERROR - DataFrame 缺少 DefectType 欄位
+2025-05-29 14:56:55,854 - data_processor - ERROR - 處理元件 M1X60_WLPF40010003_202504141037 FPY時發生錯誤: DataFrame 缺少 DefectType 欄位
+2025-05-29 14:56:56,146 - file_utils - INFO - 使用分隔符 ',' 成功讀取CSV: D:\Database-PC\temp\processed_csv\WLPF400100\DC2\M1X60_WLPF40010004_202504141037.csv
+2025-05-29 14:56:56,173 - data_utils - ERROR - DataFrame 缺少 DefectType 欄位
+2025-05-29 14:56:56,200 - data_processor - ERROR - 處理元件 M1X60_WLPF40010004_202504141037 FPY時發生錯誤: DataFrame 缺少 DefectType 欄位
+2025-05-29 14:56:56,323 - data_utils - INFO - 成功生成FPY地圖: D:\Database-PC\temp\map\WLPF400100\FPY\M1X60_WLPF40010004_202504141031_PC2.png
+2025-05-29 14:56:56,741 - data_utils - INFO - 成功生成FPY地圖: D:\Database-PC\temp\map\WLPF400100\FPY\M1X60_WLPF40010004_202504141031_PC4.png
+2025-05-29 14:56:57,407 - data_utils - INFO - 成功生成FPY地圖: D:\Database-PC\temp\map\WLPF400100\FPY\M1X60_WLPF40010004_202504141032_PC1.png
+2025-05-29 14:56:57,783 - data_utils - INFO - 成功生成FPY地圖: D:\Database-PC\temp\map\WLPF400100\FPY\M1X60_WLPF40010004_202504141035_PC3.png
+2025-05-29 14:56:59,733 - data_utils - INFO - 成功生成FPY地圖: D:\Database-PC\temp\map\WLPF400100\FPY\WLPF40010003.png
+2025-05-29 14:57:00,500 - data_utils - INFO - 成功生成FPY地圖: D:\Database-PC\temp\map\WLPF400100\FPY\WLPF40010004.png
+2025-05-29 14:57:00,519 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 14:57:00,532 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 14:57:00,544 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 14:57:00,556 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 14:57:00,568 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 14:57:00,581 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 14:57:00,593 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 14:57:00,604 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 14:57:00,616 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 14:57:00,629 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 14:57:00,641 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 14:57:00,652 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 14:57:00,666 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 14:57:00,677 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 14:57:00,682 - file_utils - INFO - 成功保存CSV檔案: D:\Database-PC\temp\map\WLPF400100\FPY\summary_DC2.csv
+2025-05-29 14:57:00,745 - data_utils - INFO - 成功生成FPY長條圖: D:\Database-PC\temp\map\WLPF400100\FPY\summary_DC2.png
+2025-05-29 14:57:00,746 - data_processor - INFO - FPY並行處理完成: 總計 17, 成功 14, 失敗 3
+2025-05-29 14:57:00,769 - data_processor - INFO - 任務 ce119b86-d93b-4c5a-a411-1082fdd37bdb 已完成: True - 部分完成: 14/17個元件FPY已生成
+2025-05-29 15:05:19,287 - database_manager - INFO - 已載入資料庫快取: 3 產品, 9 批次, 1188 元件
+2025-05-29 15:05:19,342 - online_monitor - INFO - 檔案監控已設置：掃描間隔=5秒，重新掃描間隔=60秒
+2025-05-29 15:05:19,361 - main - INFO - 日誌系統已初始化
+2025-05-29 15:05:19,361 - config_manager - INFO - 成功載入配置文件: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\config\settings.json
+2025-05-29 15:05:19,362 - database_manager - WARNING - 站點順序驗證失敗: 未配置的站點: {'LOSS1', 'CU', 'LOSS6', 'LOSS2', 'FPY', 'LOSS4', 'LOSS3', 'LOSS5'}, 缺失的站點: set()
+2025-05-29 15:05:19,362 - main - WARNING - 站點順序配置驗證失敗: {'status': False, 'station_order': ['MT', 'DC2', 'INNER1', 'RDL', 'INNER2', 'EMC'], 'all_stations_in_db': ['LOSS1', 'RDL', 'EMC', 'MT', 'INNER2', 'CU', 'LOSS6', 'LOSS2', 'FPY', 'LOSS4', 'INNER1', 'LOSS3', 'LOSS5', 'DC2'], 'unconfigured_stations': ['LOSS1', 'CU', 'LOSS6', 'LOSS2', 'FPY', 'LOSS4', 'LOSS3', 'LOSS5'], 'missing_stations': []}
+2025-05-29 15:05:19,420 - qdarkstyle - INFO - QSS file successfully loaded.
+2025-05-29 15:05:19,443 - qdarkstyle - INFO - Found application patches to be applied.
+2025-05-29 15:05:19,444 - main - INFO - 已載入深色主題樣式
+2025-05-29 15:05:19,512 - main - INFO - 啟動 Database Manager Plus v1.0.0
+2025-05-29 15:05:23,000 - database_manager - INFO - 開始掃描資料庫...
+2025-05-29 15:05:23,118 - database_manager - INFO - 資料庫掃描完成: 3 產品, 9 批次, 1188 元件
+2025-05-29 15:05:23,130 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 15:05:25,850 - data_processor - INFO - 開始執行任務: e202066a-1dc8-4350-a860-37f909ada9ad (basemap)
+2025-05-29 15:05:25,893 - data_processor - INFO - Step 4: 為 WLPF40010003 生成Basemap
+2025-05-29 15:05:26,621 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010003.png
+2025-05-29 15:05:26,635 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 15:05:26,635 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010003.png
+2025-05-29 15:05:26,637 - data_processor - INFO - Step 4: 為 WLPF40010004 生成Basemap
+2025-05-29 15:05:27,307 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010004.png
+2025-05-29 15:05:27,321 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 15:05:27,322 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010004.png
+2025-05-29 15:05:27,324 - data_processor - INFO - 檔案 M1X60_WLPF40010001_202504141037.csv 是原始格式，執行 step1~3
+2025-05-29 15:05:27,324 - data_processor - INFO - Step 1: 讀取元件 M1X60_WLPF40010001_202504141037 的config參數
+2025-05-29 15:05:27,325 - data_processor - INFO - Step 2: 執行 M1X60_WLPF40010001_202504141037 的原始CSV偏移確認
+2025-05-29 15:05:27,325 - data_utils - INFO - 在第 20 行找到標頭
+2025-05-29 15:05:27,432 - data_utils - WARNING - 找不到對齊點: Col=175, Row=96, DefectType=alignkey
+2025-05-29 15:05:27,437 - data_utils - WARNING - 找不到對齊點: Col=292, Row=96, DefectType=alignkey
+2025-05-29 15:05:27,442 - data_utils - WARNING - 找不到對齊點: Col=175, Row=369, DefectType=alignkey
+2025-05-29 15:05:27,447 - data_utils - WARNING - 找不到對齊點: Col=292, Row=369, DefectType=alignkey
+2025-05-29 15:05:27,450 - data_processor - INFO - 檔案 M1X60_WLPF40010003_202504141037.csv 是原始格式，執行 step1~3
+2025-05-29 15:05:27,450 - data_processor - INFO - Step 1: 讀取元件 M1X60_WLPF40010003_202504141037 的config參數
+2025-05-29 15:05:27,451 - data_processor - INFO - Step 2: 執行 M1X60_WLPF40010003_202504141037 的原始CSV偏移確認
+2025-05-29 15:05:27,451 - data_utils - INFO - 在第 20 行找到標頭
+2025-05-29 15:05:27,573 - data_utils - INFO - 找到對齊點: Col=175, Row=96, DefectType=alignkey
+2025-05-29 15:05:27,578 - data_utils - INFO - 找到對齊點: Col=292, Row=96, DefectType=alignkey
+2025-05-29 15:05:27,584 - data_utils - INFO - 找到對齊點: Col=175, Row=369, DefectType=alignkey
+2025-05-29 15:05:27,589 - data_utils - INFO - 找到對齊點: Col=292, Row=369, DefectType=alignkey
+2025-05-29 15:05:27,591 - data_processor - INFO - Step 3: 處理 M1X60_WLPF40010003_202504141037 的CSV標頭
+2025-05-29 15:05:28,029 - file_utils - INFO - 成功保存CSV檔案: D:/Database-PC/temp/csv/WLPF400100/DC2\WLPF40010003.csv
+2025-05-29 15:05:28,029 - file_utils - INFO - 成功處理表頭並重命名: D:\Database-PC\temp\processed_csv\WLPF400100\DC2\M1X60_WLPF40010003_202504141037.csv -> D:/Database-PC/temp/csv/WLPF400100/DC2\WLPF40010003.csv
+2025-05-29 15:05:28,045 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 15:05:28,046 - data_processor - INFO - Step 4: 為 M1X60_WLPF40010003_202504141037 生成Basemap
+2025-05-29 15:05:28,730 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010003.png
+2025-05-29 15:05:28,745 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 15:05:28,745 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010003.png
+2025-05-29 15:05:28,747 - data_processor - INFO - 檔案 M1X60_WLPF40010004_202504141037.csv 是原始格式，執行 step1~3
+2025-05-29 15:05:28,747 - data_processor - INFO - Step 1: 讀取元件 M1X60_WLPF40010004_202504141037 的config參數
+2025-05-29 15:05:28,748 - data_processor - INFO - Step 2: 執行 M1X60_WLPF40010004_202504141037 的原始CSV偏移確認
+2025-05-29 15:05:28,748 - data_utils - INFO - 在第 20 行找到標頭
+2025-05-29 15:05:28,858 - data_utils - INFO - 找到對齊點: Col=175, Row=96, DefectType=alignkey
+2025-05-29 15:05:28,864 - data_utils - INFO - 找到對齊點: Col=292, Row=96, DefectType=alignkey
+2025-05-29 15:05:28,869 - data_utils - INFO - 找到對齊點: Col=175, Row=369, DefectType=alignkey
+2025-05-29 15:05:28,874 - data_utils - INFO - 找到對齊點: Col=292, Row=369, DefectType=alignkey
+2025-05-29 15:05:28,878 - data_processor - INFO - Step 3: 處理 M1X60_WLPF40010004_202504141037 的CSV標頭
+2025-05-29 15:05:29,299 - file_utils - INFO - 成功保存CSV檔案: D:/Database-PC/temp/csv/WLPF400100/DC2\WLPF40010004.csv
+2025-05-29 15:05:29,300 - file_utils - INFO - 成功處理表頭並重命名: D:\Database-PC\temp\processed_csv\WLPF400100\DC2\M1X60_WLPF40010004_202504141037.csv -> D:/Database-PC/temp/csv/WLPF400100/DC2\WLPF40010004.csv
+2025-05-29 15:05:29,315 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 15:05:29,315 - data_processor - INFO - Step 4: 為 M1X60_WLPF40010004_202504141037 生成Basemap
+2025-05-29 15:05:30,017 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010004.png
+2025-05-29 15:05:30,036 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 15:05:30,037 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010004.png
+2025-05-29 15:05:30,068 - data_processor - INFO - 任務 e202066a-1dc8-4350-a860-37f909ada9ad 已完成: True - 已處理 4/17 個元件的 Basemap
+2025-05-29 15:24:21,727 - database_manager - INFO - 已載入資料庫快取: 3 產品, 9 批次, 1188 元件
+2025-05-29 15:24:21,780 - online_monitor - INFO - 檔案監控已設置：掃描間隔=5秒，重新掃描間隔=60秒
+2025-05-29 15:24:21,797 - main - INFO - 日誌系統已初始化
+2025-05-29 15:24:21,799 - config_manager - INFO - 成功載入配置文件: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\config\settings.json
+2025-05-29 15:24:21,799 - database_manager - WARNING - 站點順序驗證失敗: 未配置的站點: {'LOSS5', 'FPY', 'LOSS4', 'LOSS6', 'CU', 'LOSS1', 'LOSS2', 'LOSS3'}, 缺失的站點: set()
+2025-05-29 15:24:21,799 - main - WARNING - 站點順序配置驗證失敗: {'status': False, 'station_order': ['MT', 'DC2', 'INNER1', 'RDL', 'INNER2', 'EMC'], 'all_stations_in_db': ['LOSS5', 'FPY', 'LOSS6', 'EMC', 'INNER1', 'CU', 'LOSS4', 'DC2', 'LOSS1', 'INNER2', 'RDL', 'LOSS2', 'MT', 'LOSS3'], 'unconfigured_stations': ['LOSS5', 'FPY', 'LOSS4', 'LOSS6', 'CU', 'LOSS1', 'LOSS2', 'LOSS3'], 'missing_stations': []}
+2025-05-29 15:24:21,861 - qdarkstyle - INFO - QSS file successfully loaded.
+2025-05-29 15:24:21,895 - qdarkstyle - INFO - Found application patches to be applied.
+2025-05-29 15:24:21,895 - main - INFO - 已載入深色主題樣式
+2025-05-29 15:24:21,964 - main - INFO - 啟動 Database Manager Plus v1.0.0
+2025-05-29 15:24:24,692 - database_manager - INFO - 開始掃描資料庫...
+2025-05-29 15:24:24,809 - database_manager - INFO - 資料庫掃描完成: 3 產品, 9 批次, 1188 元件
+2025-05-29 15:24:24,821 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 15:24:26,429 - data_processor - INFO - 開始執行任務: 2be020dc-5820-481c-8544-76151f563923 (lossmap)
+2025-05-29 15:24:26,463 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141022_PC2
+2025-05-29 15:24:26,463 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141022_PC4
+2025-05-29 15:24:26,463 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141023_PC1
+2025-05-29 15:24:26,463 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141026_PC3
+2025-05-29 15:24:26,464 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141026_PC4
+2025-05-29 15:24:26,464 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141027_PC1
+2025-05-29 15:24:26,464 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141027_PC2
+2025-05-29 15:24:26,464 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141031_PC3
+2025-05-29 15:24:26,464 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141031_PC2
+2025-05-29 15:24:26,464 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141031_PC4
+2025-05-29 15:24:26,464 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141032_PC1
+2025-05-29 15:24:26,464 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141035_PC3
+2025-05-29 15:24:26,947 - data_utils - INFO - 成功生成損失地圖: D:\Database-PC\temp\map\WLPF400100\LOSS1\WLPF40010003.png
+2025-05-29 15:24:26,959 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 15:24:27,380 - data_utils - INFO - 成功生成損失地圖: D:\Database-PC\temp\map\WLPF400100\LOSS1\WLPF40010004.png
+2025-05-29 15:24:27,394 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 15:24:27,394 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141037
+2025-05-29 15:24:27,395 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141037
+2025-05-29 15:24:27,395 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141037
+2025-05-29 15:24:27,395 - data_processor - INFO - Lossmap處理完成: 總計 17, 成功 2, 失敗 15
+2025-05-29 15:24:27,427 - data_processor - INFO - 任務 2be020dc-5820-481c-8544-76151f563923 已完成: True - 部分完成: 2/17個元件Lossmap已生成
+2025-05-29 15:43:10,705 - database_manager - INFO - 已載入資料庫快取: 3 產品, 9 批次, 1188 元件
+2025-05-29 15:43:10,764 - online_monitor - INFO - 檔案監控已設置：掃描間隔=5秒，重新掃描間隔=60秒
+2025-05-29 15:43:10,782 - main - INFO - 日誌系統已初始化
+2025-05-29 15:43:10,782 - config_manager - INFO - 成功載入配置文件: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\config\settings.json
+2025-05-29 15:43:10,783 - database_manager - WARNING - 站點順序驗證失敗: 未配置的站點: {'FPY', 'LOSS4', 'LOSS3', 'LOSS2', 'CU', 'LOSS6', 'LOSS1', 'LOSS5'}, 缺失的站點: set()
+2025-05-29 15:43:10,783 - main - WARNING - 站點順序配置驗證失敗: {'status': False, 'station_order': ['MT', 'DC2', 'INNER1', 'RDL', 'INNER2', 'EMC'], 'all_stations_in_db': ['FPY', 'DC2', 'LOSS3', 'INNER2', 'LOSS2', 'LOSS4', 'CU', 'LOSS6', 'LOSS1', 'MT', 'LOSS5', 'INNER1', 'EMC', 'RDL'], 'unconfigured_stations': ['FPY', 'LOSS4', 'LOSS3', 'LOSS2', 'CU', 'LOSS6', 'LOSS1', 'LOSS5'], 'missing_stations': []}
+2025-05-29 15:43:10,838 - qdarkstyle - INFO - QSS file successfully loaded.
+2025-05-29 15:43:10,873 - qdarkstyle - INFO - Found application patches to be applied.
+2025-05-29 15:43:10,874 - main - INFO - 已載入深色主題樣式
+2025-05-29 15:43:10,941 - main - INFO - 啟動 Database Manager Plus v1.0.0
+2025-05-29 15:43:16,152 - database_manager - INFO - 開始掃描資料庫...
+2025-05-29 15:43:16,271 - database_manager - INFO - 資料庫掃描完成: 3 產品, 9 批次, 1188 元件
+2025-05-29 15:43:16,283 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 15:43:17,698 - data_processor - INFO - 開始執行任務: d639411e-fedb-4e17-832e-fcfee7e8e2ee (lossmap)
+2025-05-29 15:43:17,732 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141022_PC2
+2025-05-29 15:43:17,733 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141022_PC4
+2025-05-29 15:43:17,733 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141023_PC1
+2025-05-29 15:43:17,733 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141026_PC3
+2025-05-29 15:43:17,733 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141026_PC4
+2025-05-29 15:43:17,733 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141027_PC1
+2025-05-29 15:43:17,733 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141027_PC2
+2025-05-29 15:43:17,733 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141031_PC3
+2025-05-29 15:43:17,733 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141031_PC2
+2025-05-29 15:43:17,733 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141031_PC4
+2025-05-29 15:43:17,734 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141032_PC1
+2025-05-29 15:43:17,734 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141035_PC3
+2025-05-29 15:43:18,361 - data_utils - INFO - 成功生成損失地圖: D:\Database-PC\temp\map\WLPF400100\LOSS1\WLPF40010003.png
+2025-05-29 15:43:18,374 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 15:43:18,974 - data_utils - INFO - 成功生成損失地圖: D:\Database-PC\temp\map\WLPF400100\LOSS1\WLPF40010004.png
+2025-05-29 15:43:18,987 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 15:43:18,988 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141037
+2025-05-29 15:43:18,988 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141037
+2025-05-29 15:43:18,988 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141037
+2025-05-29 15:43:18,988 - data_processor - INFO - Lossmap處理完成: 總計 17, 成功 2, 失敗 15
+2025-05-29 15:43:19,019 - data_processor - INFO - 任務 d639411e-fedb-4e17-832e-fcfee7e8e2ee 已完成: True - 部分完成: 2/17個元件Lossmap已生成
+2025-05-29 15:44:44,856 - database_manager - INFO - 已載入資料庫快取: 3 產品, 9 批次, 1188 元件
+2025-05-29 15:44:44,908 - online_monitor - INFO - 檔案監控已設置：掃描間隔=5秒，重新掃描間隔=60秒
+2025-05-29 15:44:44,926 - main - INFO - 日誌系統已初始化
+2025-05-29 15:44:44,927 - config_manager - INFO - 成功載入配置文件: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\config\settings.json
+2025-05-29 15:44:44,927 - database_manager - WARNING - 站點順序驗證失敗: 未配置的站點: {'LOSS5', 'LOSS6', 'LOSS4', 'FPY', 'LOSS2', 'CU', 'LOSS3', 'LOSS1'}, 缺失的站點: set()
+2025-05-29 15:44:44,927 - main - WARNING - 站點順序配置驗證失敗: {'status': False, 'station_order': ['MT', 'DC2', 'INNER1', 'RDL', 'INNER2', 'EMC'], 'all_stations_in_db': ['INNER2', 'RDL', 'LOSS5', 'EMC', 'MT', 'LOSS6', 'LOSS4', 'DC2', 'FPY', 'LOSS2', 'CU', 'LOSS3', 'LOSS1', 'INNER1'], 'unconfigured_stations': ['LOSS5', 'LOSS6', 'LOSS4', 'FPY', 'LOSS2', 'CU', 'LOSS3', 'LOSS1'], 'missing_stations': []}
+2025-05-29 15:44:44,984 - qdarkstyle - INFO - QSS file successfully loaded.
+2025-05-29 15:44:45,019 - qdarkstyle - INFO - Found application patches to be applied.
+2025-05-29 15:44:45,020 - main - INFO - 已載入深色主題樣式
+2025-05-29 15:44:45,087 - main - INFO - 啟動 Database Manager Plus v1.0.0
+2025-05-29 15:44:47,631 - database_manager - INFO - 開始掃描資料庫...
+2025-05-29 15:44:47,748 - database_manager - INFO - 資料庫掃描完成: 3 產品, 9 批次, 1188 元件
+2025-05-29 15:44:47,760 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 15:44:49,729 - data_processor - INFO - 開始執行任務: 7e08966e-0aaf-4cf4-8478-508729254540 (lossmap)
+2025-05-29 15:44:49,764 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141022_PC2
+2025-05-29 15:44:49,765 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141022_PC4
+2025-05-29 15:44:49,765 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141023_PC1
+2025-05-29 15:44:49,765 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141026_PC3
+2025-05-29 15:44:49,765 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141026_PC4
+2025-05-29 15:44:49,765 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141027_PC1
+2025-05-29 15:44:49,765 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141027_PC2
+2025-05-29 15:44:49,765 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141031_PC3
+2025-05-29 15:44:49,766 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141031_PC2
+2025-05-29 15:44:49,766 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141031_PC4
+2025-05-29 15:44:49,766 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141032_PC1
+2025-05-29 15:44:49,766 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141035_PC3
+2025-05-29 15:44:50,400 - data_utils - INFO - 成功生成損失地圖: D:\Database-PC\temp\map\WLPF400100\LOSS1\WLPF40010003.png
+2025-05-29 15:44:50,413 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 15:44:51,028 - data_utils - INFO - 成功生成損失地圖: D:\Database-PC\temp\map\WLPF400100\LOSS1\WLPF40010004.png
+2025-05-29 15:44:51,040 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 15:44:51,041 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141037
+2025-05-29 15:44:51,041 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141037
+2025-05-29 15:44:51,041 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141037
+2025-05-29 15:44:51,041 - data_processor - INFO - Lossmap處理完成: 總計 17, 成功 2, 失敗 15
+2025-05-29 15:44:51,077 - data_processor - INFO - 任務 7e08966e-0aaf-4cf4-8478-508729254540 已完成: True - 部分完成: 2/17個元件Lossmap已生成
+2025-05-29 15:45:59,488 - database_manager - INFO - 已載入資料庫快取: 3 產品, 9 批次, 1188 元件
+2025-05-29 15:45:59,539 - online_monitor - INFO - 檔案監控已設置：掃描間隔=5秒，重新掃描間隔=60秒
+2025-05-29 15:45:59,555 - main - INFO - 日誌系統已初始化
+2025-05-29 15:45:59,556 - config_manager - INFO - 成功載入配置文件: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\config\settings.json
+2025-05-29 15:45:59,556 - database_manager - WARNING - 站點順序驗證失敗: 未配置的站點: {'FPY', 'LOSS4', 'LOSS3', 'CU', 'LOSS6', 'LOSS5', 'LOSS1', 'LOSS2'}, 缺失的站點: set()
+2025-05-29 15:45:59,556 - main - WARNING - 站點順序配置驗證失敗: {'status': False, 'station_order': ['MT', 'DC2', 'INNER1', 'RDL', 'INNER2', 'EMC'], 'all_stations_in_db': ['FPY', 'LOSS4', 'MT', 'LOSS3', 'CU', 'INNER1', 'INNER2', 'DC2', 'LOSS6', 'LOSS5', 'EMC', 'LOSS1', 'RDL', 'LOSS2'], 'unconfigured_stations': ['FPY', 'LOSS4', 'LOSS3', 'CU', 'LOSS6', 'LOSS5', 'LOSS1', 'LOSS2'], 'missing_stations': []}
+2025-05-29 15:45:59,618 - qdarkstyle - INFO - QSS file successfully loaded.
+2025-05-29 15:45:59,649 - qdarkstyle - INFO - Found application patches to be applied.
+2025-05-29 15:45:59,650 - main - INFO - 已載入深色主題樣式
+2025-05-29 15:45:59,716 - main - INFO - 啟動 Database Manager Plus v1.0.0
+2025-05-29 15:46:03,200 - database_manager - INFO - 開始掃描資料庫...
+2025-05-29 15:46:03,324 - database_manager - INFO - 資料庫掃描完成: 3 產品, 9 批次, 1188 元件
+2025-05-29 15:46:03,336 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 15:46:05,368 - data_processor - INFO - 開始執行任務: e93a3248-75f4-4ce4-9ffa-4f5cfa5ddf31 (lossmap)
+2025-05-29 15:46:05,407 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141022_PC2
+2025-05-29 15:46:05,407 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141022_PC4
+2025-05-29 15:46:05,407 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141023_PC1
+2025-05-29 15:46:05,408 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141026_PC3
+2025-05-29 15:46:05,408 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141026_PC4
+2025-05-29 15:46:05,408 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141027_PC1
+2025-05-29 15:46:05,408 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141027_PC2
+2025-05-29 15:46:05,409 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141031_PC3
+2025-05-29 15:46:05,409 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141031_PC2
+2025-05-29 15:46:05,409 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141031_PC4
+2025-05-29 15:46:05,409 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141032_PC1
+2025-05-29 15:46:05,409 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141035_PC3
+2025-05-29 15:46:06,077 - data_utils - INFO - 成功生成損失地圖: D:\Database-PC\temp\map\WLPF400100\LOSS1\WLPF40010003.png
+2025-05-29 15:46:06,089 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 15:46:06,698 - data_utils - INFO - 成功生成損失地圖: D:\Database-PC\temp\map\WLPF400100\LOSS1\WLPF40010004.png
+2025-05-29 15:46:06,710 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 15:46:06,711 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141037
+2025-05-29 15:46:06,711 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141037
+2025-05-29 15:46:06,711 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141037
+2025-05-29 15:46:06,711 - data_processor - INFO - Lossmap處理完成: 總計 17, 成功 2, 失敗 15
+2025-05-29 15:46:06,746 - data_processor - INFO - 任務 e93a3248-75f4-4ce4-9ffa-4f5cfa5ddf31 已完成: True - 部分完成: 2/17個元件Lossmap已生成
+2025-05-29 15:50:14,884 - database_manager - INFO - 已載入資料庫快取: 3 產品, 9 批次, 1188 元件
+2025-05-29 15:50:14,939 - online_monitor - INFO - 檔案監控已設置：掃描間隔=5秒，重新掃描間隔=60秒
+2025-05-29 15:50:14,957 - main - INFO - 日誌系統已初始化
+2025-05-29 15:50:14,957 - config_manager - INFO - 成功載入配置文件: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\config\settings.json
+2025-05-29 15:50:14,957 - database_manager - WARNING - 站點順序驗證失敗: 未配置的站點: {'LOSS2', 'LOSS1', 'CU', 'LOSS3', 'LOSS6', 'LOSS4', 'FPY', 'LOSS5'}, 缺失的站點: set()
+2025-05-29 15:50:14,958 - main - WARNING - 站點順序配置驗證失敗: {'status': False, 'station_order': ['MT', 'DC2', 'INNER1', 'RDL', 'INNER2', 'EMC'], 'all_stations_in_db': ['LOSS1', 'CU', 'MT', 'EMC', 'LOSS6', 'LOSS3', 'INNER1', 'INNER2', 'LOSS5', 'LOSS4', 'FPY', 'DC2', 'LOSS2', 'RDL'], 'unconfigured_stations': ['LOSS2', 'LOSS1', 'CU', 'LOSS3', 'LOSS6', 'LOSS4', 'FPY', 'LOSS5'], 'missing_stations': []}
+2025-05-29 15:50:15,016 - qdarkstyle - INFO - QSS file successfully loaded.
+2025-05-29 15:50:15,047 - qdarkstyle - INFO - Found application patches to be applied.
+2025-05-29 15:50:15,048 - main - INFO - 已載入深色主題樣式
+2025-05-29 15:50:15,131 - main - INFO - 啟動 Database Manager Plus v1.0.0
+2025-05-29 15:50:17,150 - database_manager - INFO - 開始掃描資料庫...
+2025-05-29 15:50:17,264 - database_manager - INFO - 資料庫掃描完成: 3 產品, 9 批次, 1188 元件
+2025-05-29 15:50:17,276 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 15:50:18,905 - data_processor - INFO - 開始執行任務: 446b4535-82f7-425a-9b2a-abbaa77316b9 (lossmap)
+2025-05-29 15:50:18,941 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141022_PC2
+2025-05-29 15:50:18,942 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141022_PC4
+2025-05-29 15:50:18,942 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141023_PC1
+2025-05-29 15:50:18,942 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141026_PC3
+2025-05-29 15:50:18,942 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141026_PC4
+2025-05-29 15:50:18,942 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141027_PC1
+2025-05-29 15:50:18,942 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141027_PC2
+2025-05-29 15:50:18,942 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141031_PC3
+2025-05-29 15:50:18,942 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141031_PC2
+2025-05-29 15:50:18,942 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141031_PC4
+2025-05-29 15:50:18,943 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141032_PC1
+2025-05-29 15:50:18,943 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141035_PC3
+2025-05-29 15:50:19,596 - data_utils - INFO - 成功生成損失地圖: D:\Database-PC\temp\map\WLPF400100\LOSS1\WLPF40010003.png
+2025-05-29 15:50:19,609 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 15:50:20,215 - data_utils - INFO - 成功生成損失地圖: D:\Database-PC\temp\map\WLPF400100\LOSS1\WLPF40010004.png
+2025-05-29 15:50:20,228 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 15:50:20,228 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141037
+2025-05-29 15:50:20,229 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141037
+2025-05-29 15:50:20,229 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141037
+2025-05-29 15:50:20,229 - data_processor - INFO - Lossmap處理完成: 總計 17, 成功 2, 失敗 15
+2025-05-29 15:50:20,260 - data_processor - INFO - 任務 446b4535-82f7-425a-9b2a-abbaa77316b9 已完成: True - 部分完成: 2/17個元件Lossmap已生成
+2025-05-29 15:52:15,052 - database_manager - INFO - 已載入資料庫快取: 3 產品, 9 批次, 1188 元件
+2025-05-29 15:52:15,100 - online_monitor - INFO - 檔案監控已設置：掃描間隔=5秒，重新掃描間隔=60秒
+2025-05-29 15:52:15,118 - main - INFO - 日誌系統已初始化
+2025-05-29 15:52:15,119 - config_manager - INFO - 成功載入配置文件: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\config\settings.json
+2025-05-29 15:52:15,119 - database_manager - WARNING - 站點順序驗證失敗: 未配置的站點: {'LOSS6', 'LOSS5', 'LOSS1', 'FPY', 'LOSS4', 'LOSS3', 'LOSS2', 'CU'}, 缺失的站點: set()
+2025-05-29 15:52:15,119 - main - WARNING - 站點順序配置驗證失敗: {'status': False, 'station_order': ['MT', 'DC2', 'INNER1', 'RDL', 'INNER2', 'EMC'], 'all_stations_in_db': ['EMC', 'MT', 'LOSS6', 'RDL', 'LOSS5', 'LOSS1', 'CU', 'FPY', 'LOSS4', 'INNER1', 'LOSS3', 'INNER2', 'LOSS2', 'DC2'], 'unconfigured_stations': ['LOSS6', 'LOSS5', 'LOSS1', 'FPY', 'LOSS4', 'LOSS3', 'LOSS2', 'CU'], 'missing_stations': []}
+2025-05-29 15:52:15,176 - qdarkstyle - INFO - QSS file successfully loaded.
+2025-05-29 15:52:15,208 - qdarkstyle - INFO - Found application patches to be applied.
+2025-05-29 15:52:15,208 - main - INFO - 已載入深色主題樣式
+2025-05-29 15:52:15,272 - main - INFO - 啟動 Database Manager Plus v1.0.0
+2025-05-29 15:52:18,688 - data_processor - INFO - 開始執行任務: b2583c96-fa31-4276-b62d-307b0e16e7c6 (lossmap)
+2025-05-29 15:52:18,723 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141022_PC2
+2025-05-29 15:52:18,724 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141022_PC4
+2025-05-29 15:52:18,724 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141023_PC1
+2025-05-29 15:52:18,724 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141026_PC3
+2025-05-29 15:52:18,724 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141026_PC4
+2025-05-29 15:52:18,724 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141027_PC1
+2025-05-29 15:52:18,725 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141027_PC2
+2025-05-29 15:52:18,725 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141031_PC3
+2025-05-29 15:52:18,725 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141031_PC2
+2025-05-29 15:52:18,725 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141031_PC4
+2025-05-29 15:52:18,725 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141032_PC1
+2025-05-29 15:52:18,725 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141035_PC3
+2025-05-29 15:52:19,351 - data_utils - INFO - 成功生成損失地圖: D:\Database-PC\temp\map\WLPF400100\LOSS1\WLPF40010003.png
+2025-05-29 15:52:19,364 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 15:52:19,948 - data_utils - INFO - 成功生成損失地圖: D:\Database-PC\temp\map\WLPF400100\LOSS1\WLPF40010004.png
+2025-05-29 15:52:19,962 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 15:52:19,962 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141037
+2025-05-29 15:52:19,962 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141037
+2025-05-29 15:52:19,963 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141037
+2025-05-29 15:52:19,963 - data_processor - INFO - Lossmap處理完成: 總計 17, 成功 2, 失敗 15
+2025-05-29 15:52:19,996 - data_processor - INFO - 任務 b2583c96-fa31-4276-b62d-307b0e16e7c6 已完成: True - 部分完成: 2/17個元件Lossmap已生成
+2025-05-29 15:52:31,291 - database_manager - INFO - 已載入資料庫快取: 3 產品, 9 批次, 1188 元件
+2025-05-29 15:52:31,344 - online_monitor - INFO - 檔案監控已設置：掃描間隔=5秒，重新掃描間隔=60秒
+2025-05-29 15:52:31,362 - main - INFO - 日誌系統已初始化
+2025-05-29 15:52:31,363 - config_manager - INFO - 成功載入配置文件: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\config\settings.json
+2025-05-29 15:52:31,363 - database_manager - WARNING - 站點順序驗證失敗: 未配置的站點: {'LOSS4', 'LOSS6', 'LOSS2', 'FPY', 'CU', 'LOSS1', 'LOSS5', 'LOSS3'}, 缺失的站點: set()
+2025-05-29 15:52:31,363 - main - WARNING - 站點順序配置驗證失敗: {'status': False, 'station_order': ['MT', 'DC2', 'INNER1', 'RDL', 'INNER2', 'EMC'], 'all_stations_in_db': ['LOSS3', 'INNER2', 'LOSS6', 'MT', 'INNER1', 'LOSS2', 'EMC', 'LOSS5', 'FPY', 'DC2', 'CU', 'LOSS1', 'LOSS4', 'RDL'], 'unconfigured_stations': ['LOSS4', 'LOSS6', 'LOSS2', 'FPY', 'CU', 'LOSS1', 'LOSS5', 'LOSS3'], 'missing_stations': []}
+2025-05-29 15:52:31,416 - qdarkstyle - INFO - QSS file successfully loaded.
+2025-05-29 15:52:31,435 - qdarkstyle - INFO - Found application patches to be applied.
+2025-05-29 15:52:31,435 - main - INFO - 已載入深色主題樣式
+2025-05-29 15:52:31,511 - main - INFO - 啟動 Database Manager Plus v1.0.0
+2025-05-29 15:52:35,294 - database_manager - INFO - 開始掃描資料庫...
+2025-05-29 15:52:35,416 - database_manager - INFO - 資料庫掃描完成: 3 產品, 9 批次, 1188 元件
+2025-05-29 15:52:35,429 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 15:52:37,160 - data_processor - INFO - 開始執行任務: f6ade038-87b1-483b-b983-848b486b6226 (lossmap)
+2025-05-29 15:52:37,200 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141022_PC2
+2025-05-29 15:52:37,200 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141022_PC4
+2025-05-29 15:52:37,200 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141023_PC1
+2025-05-29 15:52:37,201 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141026_PC3
+2025-05-29 15:52:37,201 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141026_PC4
+2025-05-29 15:52:37,201 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141027_PC1
+2025-05-29 15:52:37,201 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141027_PC2
+2025-05-29 15:52:37,201 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141031_PC3
+2025-05-29 15:52:37,201 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141031_PC2
+2025-05-29 15:52:37,202 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141031_PC4
+2025-05-29 15:52:37,202 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141032_PC1
+2025-05-29 15:52:37,202 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141035_PC3
+2025-05-29 15:52:37,835 - data_utils - INFO - 成功生成損失地圖: D:\Database-PC\temp\map\WLPF400100\LOSS1\WLPF40010003.png
+2025-05-29 15:52:37,848 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 15:52:38,450 - data_utils - INFO - 成功生成損失地圖: D:\Database-PC\temp\map\WLPF400100\LOSS1\WLPF40010004.png
+2025-05-29 15:52:38,462 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 15:52:38,463 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141037
+2025-05-29 15:52:38,463 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141037
+2025-05-29 15:52:38,463 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141037
+2025-05-29 15:52:38,463 - data_processor - INFO - Lossmap處理完成: 總計 17, 成功 2, 失敗 15
+2025-05-29 15:52:38,493 - data_processor - INFO - 任務 f6ade038-87b1-483b-b983-848b486b6226 已完成: True - 部分完成: 2/17個元件Lossmap已生成
+2025-05-29 15:53:03,932 - database_manager - INFO - 已載入資料庫快取: 3 產品, 9 批次, 1188 元件
+2025-05-29 15:53:03,982 - online_monitor - INFO - 檔案監控已設置：掃描間隔=5秒，重新掃描間隔=60秒
+2025-05-29 15:53:04,003 - main - INFO - 日誌系統已初始化
+2025-05-29 15:53:04,004 - config_manager - INFO - 成功載入配置文件: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\config\settings.json
+2025-05-29 15:53:04,004 - database_manager - WARNING - 站點順序驗證失敗: 未配置的站點: {'LOSS2', 'FPY', 'LOSS6', 'LOSS5', 'CU', 'LOSS4', 'LOSS3', 'LOSS1'}, 缺失的站點: set()
+2025-05-29 15:53:04,004 - main - WARNING - 站點順序配置驗證失敗: {'status': False, 'station_order': ['MT', 'DC2', 'INNER1', 'RDL', 'INNER2', 'EMC'], 'all_stations_in_db': ['EMC', 'DC2', 'LOSS2', 'FPY', 'LOSS6', 'LOSS5', 'INNER2', 'LOSS1', 'RDL', 'LOSS4', 'MT', 'INNER1', 'LOSS3', 'CU'], 'unconfigured_stations': ['LOSS2', 'FPY', 'LOSS6', 'LOSS5', 'CU', 'LOSS4', 'LOSS3', 'LOSS1'], 'missing_stations': []}
+2025-05-29 15:53:04,061 - qdarkstyle - INFO - QSS file successfully loaded.
+2025-05-29 15:53:04,081 - qdarkstyle - INFO - Found application patches to be applied.
+2025-05-29 15:53:04,081 - main - INFO - 已載入深色主題樣式
+2025-05-29 15:53:04,156 - main - INFO - 啟動 Database Manager Plus v1.0.0
+2025-05-29 15:53:06,630 - database_manager - INFO - 開始掃描資料庫...
+2025-05-29 15:53:06,748 - database_manager - INFO - 資料庫掃描完成: 3 產品, 9 批次, 1188 元件
+2025-05-29 15:53:06,760 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 15:53:08,327 - data_processor - INFO - 開始執行任務: 5e8f9556-ae60-41cf-9cd6-e4f5f1bf089d (lossmap)
+2025-05-29 15:53:08,362 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141022_PC2
+2025-05-29 15:53:08,364 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141022_PC4
+2025-05-29 15:53:08,364 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141023_PC1
+2025-05-29 15:53:08,364 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141026_PC3
+2025-05-29 15:53:08,364 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141026_PC4
+2025-05-29 15:53:08,364 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141027_PC1
+2025-05-29 15:53:08,364 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141027_PC2
+2025-05-29 15:53:08,365 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141031_PC3
+2025-05-29 15:53:08,365 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141031_PC2
+2025-05-29 15:53:08,365 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141031_PC4
+2025-05-29 15:53:08,365 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141032_PC1
+2025-05-29 15:53:08,365 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141035_PC3
+2025-05-29 15:53:09,010 - data_utils - INFO - 成功生成損失地圖: D:\Database-PC\temp\map\WLPF400100\LOSS1\WLPF40010003.png
+2025-05-29 15:53:09,023 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 15:53:09,636 - data_utils - INFO - 成功生成損失地圖: D:\Database-PC\temp\map\WLPF400100\LOSS1\WLPF40010004.png
+2025-05-29 15:53:09,649 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 15:53:09,649 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141037
+2025-05-29 15:53:09,650 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141037
+2025-05-29 15:53:09,650 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141037
+2025-05-29 15:53:09,650 - data_processor - INFO - Lossmap處理完成: 總計 17, 成功 2, 失敗 15
+2025-05-29 15:53:09,684 - data_processor - INFO - 任務 5e8f9556-ae60-41cf-9cd6-e4f5f1bf089d 已完成: True - 部分完成: 2/17個元件Lossmap已生成
+2025-05-29 15:53:18,111 - data_processor - INFO - 開始執行任務: 9caaae10-03d5-40ac-8c61-ca22365f405c (lossmap)
+2025-05-29 15:53:18,137 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141022_PC2
+2025-05-29 15:53:18,137 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141022_PC4
+2025-05-29 15:53:18,138 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141023_PC1
+2025-05-29 15:53:18,138 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141026_PC3
+2025-05-29 15:53:18,138 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141026_PC4
+2025-05-29 15:53:18,138 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141027_PC1
+2025-05-29 15:53:18,138 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141027_PC2
+2025-05-29 15:53:18,139 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141031_PC3
+2025-05-29 15:53:18,139 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141031_PC2
+2025-05-29 15:53:18,139 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141031_PC4
+2025-05-29 15:53:18,140 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141032_PC1
+2025-05-29 15:53:18,140 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141035_PC3
+2025-05-29 15:53:18,751 - data_utils - INFO - 成功生成損失地圖: D:\Database-PC\temp\map\WLPF400100\LOSS1\WLPF40010003.png
+2025-05-29 15:53:18,763 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 15:53:19,359 - data_utils - INFO - 成功生成損失地圖: D:\Database-PC\temp\map\WLPF400100\LOSS1\WLPF40010004.png
+2025-05-29 15:53:19,373 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 15:53:19,373 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141037
+2025-05-29 15:53:19,373 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141037
+2025-05-29 15:53:19,373 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141037
+2025-05-29 15:53:19,374 - data_processor - INFO - Lossmap處理完成: 總計 17, 成功 2, 失敗 15
+2025-05-29 15:53:19,406 - data_processor - INFO - 任務 9caaae10-03d5-40ac-8c61-ca22365f405c 已完成: True - 部分完成: 2/17個元件Lossmap已生成
+2025-05-29 15:53:44,098 - database_manager - INFO - 已載入資料庫快取: 3 產品, 9 批次, 1188 元件
+2025-05-29 15:53:44,148 - online_monitor - INFO - 檔案監控已設置：掃描間隔=5秒，重新掃描間隔=60秒
+2025-05-29 15:53:44,166 - main - INFO - 日誌系統已初始化
+2025-05-29 15:53:44,166 - config_manager - INFO - 成功載入配置文件: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\config\settings.json
+2025-05-29 15:53:44,167 - database_manager - WARNING - 站點順序驗證失敗: 未配置的站點: {'FPY', 'LOSS6', 'LOSS5', 'LOSS4', 'LOSS3', 'LOSS1', 'CU', 'LOSS2'}, 缺失的站點: set()
+2025-05-29 15:53:44,167 - main - WARNING - 站點順序配置驗證失敗: {'status': False, 'station_order': ['MT', 'DC2', 'INNER1', 'RDL', 'INNER2', 'EMC'], 'all_stations_in_db': ['FPY', 'LOSS6', 'MT', 'DC2', 'LOSS4', 'LOSS5', 'EMC', 'INNER2', 'LOSS3', 'LOSS1', 'CU', 'RDL', 'LOSS2', 'INNER1'], 'unconfigured_stations': ['FPY', 'LOSS6', 'LOSS5', 'LOSS4', 'LOSS3', 'LOSS1', 'CU', 'LOSS2'], 'missing_stations': []}
+2025-05-29 15:53:44,224 - qdarkstyle - INFO - QSS file successfully loaded.
+2025-05-29 15:53:44,244 - qdarkstyle - INFO - Found application patches to be applied.
+2025-05-29 15:53:44,244 - main - INFO - 已載入深色主題樣式
+2025-05-29 15:53:44,315 - main - INFO - 啟動 Database Manager Plus v1.0.0
+2025-05-29 15:53:47,816 - data_processor - INFO - 開始執行任務: 025cb697-f81f-4bb4-a0c8-d616fef03ba8 (lossmap)
+2025-05-29 15:53:47,861 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141022_PC2
+2025-05-29 15:53:47,861 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141022_PC4
+2025-05-29 15:53:47,861 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141023_PC1
+2025-05-29 15:53:47,861 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141026_PC3
+2025-05-29 15:53:47,861 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141026_PC4
+2025-05-29 15:53:47,861 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141027_PC1
+2025-05-29 15:53:47,862 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141027_PC2
+2025-05-29 15:53:47,862 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141031_PC3
+2025-05-29 15:53:47,862 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141031_PC2
+2025-05-29 15:53:47,862 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141031_PC4
+2025-05-29 15:53:47,862 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141032_PC1
+2025-05-29 15:53:47,862 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141035_PC3
+2025-05-29 15:53:48,484 - data_utils - INFO - 成功生成損失地圖: D:\Database-PC\temp\map\WLPF400100\LOSS1\WLPF40010003.png
+2025-05-29 15:53:48,496 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 15:53:49,092 - data_utils - INFO - 成功生成損失地圖: D:\Database-PC\temp\map\WLPF400100\LOSS1\WLPF40010004.png
+2025-05-29 15:53:49,105 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 15:53:49,105 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141037
+2025-05-29 15:53:49,106 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141037
+2025-05-29 15:53:49,106 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141037
+2025-05-29 15:53:49,106 - data_processor - INFO - Lossmap處理完成: 總計 17, 成功 2, 失敗 15
+2025-05-29 15:53:49,136 - data_processor - INFO - 任務 025cb697-f81f-4bb4-a0c8-d616fef03ba8 已完成: True - 部分完成: 2/17個元件Lossmap已生成
+2025-05-29 15:55:27,011 - database_manager - INFO - 已載入資料庫快取: 3 產品, 9 批次, 1188 元件
+2025-05-29 15:55:27,060 - online_monitor - INFO - 檔案監控已設置：掃描間隔=5秒，重新掃描間隔=60秒
+2025-05-29 15:55:27,079 - main - INFO - 日誌系統已初始化
+2025-05-29 15:55:27,079 - config_manager - INFO - 成功載入配置文件: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\config\settings.json
+2025-05-29 15:55:27,079 - database_manager - WARNING - 站點順序驗證失敗: 未配置的站點: {'FPY', 'LOSS3', 'LOSS4', 'CU', 'LOSS1', 'LOSS6', 'LOSS2', 'LOSS5'}, 缺失的站點: set()
+2025-05-29 15:55:27,080 - main - WARNING - 站點順序配置驗證失敗: {'status': False, 'station_order': ['MT', 'DC2', 'INNER1', 'RDL', 'INNER2', 'EMC'], 'all_stations_in_db': ['INNER2', 'RDL', 'FPY', 'INNER1', 'MT', 'LOSS2', 'LOSS3', 'LOSS4', 'CU', 'LOSS1', 'LOSS6', 'DC2', 'LOSS5', 'EMC'], 'unconfigured_stations': ['FPY', 'LOSS3', 'LOSS4', 'CU', 'LOSS1', 'LOSS6', 'LOSS2', 'LOSS5'], 'missing_stations': []}
+2025-05-29 15:55:27,134 - qdarkstyle - INFO - QSS file successfully loaded.
+2025-05-29 15:55:27,168 - qdarkstyle - INFO - Found application patches to be applied.
+2025-05-29 15:55:27,169 - main - INFO - 已載入深色主題樣式
+2025-05-29 15:55:27,238 - main - INFO - 啟動 Database Manager Plus v1.0.0
+2025-05-29 15:55:32,206 - data_processor - INFO - 開始執行任務: 4ea8bf20-51e3-454c-9725-42baa54012fb (lossmap)
+2025-05-29 15:55:32,237 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141022_PC2
+2025-05-29 15:55:32,237 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141022_PC4
+2025-05-29 15:55:32,237 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141023_PC1
+2025-05-29 15:55:32,238 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141026_PC3
+2025-05-29 15:55:32,238 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141026_PC4
+2025-05-29 15:55:32,238 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141027_PC1
+2025-05-29 15:55:32,238 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141027_PC2
+2025-05-29 15:55:32,238 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141031_PC3
+2025-05-29 15:55:32,238 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141031_PC2
+2025-05-29 15:55:32,238 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141031_PC4
+2025-05-29 15:55:32,239 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141032_PC1
+2025-05-29 15:55:32,239 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141035_PC3
+2025-05-29 15:55:32,841 - data_utils - INFO - 成功生成損失地圖: D:\Database-PC\temp\map\WLPF400100\LOSS1\WLPF40010003.png
+2025-05-29 15:55:32,854 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 15:55:33,417 - data_utils - INFO - 成功生成損失地圖: D:\Database-PC\temp\map\WLPF400100\LOSS1\WLPF40010004.png
+2025-05-29 15:55:33,429 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 15:55:33,430 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141037
+2025-05-29 15:55:33,430 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141037
+2025-05-29 15:55:33,430 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141037
+2025-05-29 15:55:33,431 - data_processor - INFO - Lossmap處理完成: 總計 17, 成功 2, 失敗 15
+2025-05-29 15:55:33,465 - data_processor - INFO - 任務 4ea8bf20-51e3-454c-9725-42baa54012fb 已完成: True - 部分完成: 2/17個元件Lossmap已生成
+2025-05-29 15:57:37,149 - database_manager - INFO - 已載入資料庫快取: 3 產品, 9 批次, 1188 元件
+2025-05-29 15:57:37,198 - online_monitor - INFO - 檔案監控已設置：掃描間隔=5秒，重新掃描間隔=60秒
+2025-05-29 15:57:37,216 - main - INFO - 日誌系統已初始化
+2025-05-29 15:57:37,217 - config_manager - INFO - 成功載入配置文件: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\config\settings.json
+2025-05-29 15:57:37,217 - database_manager - WARNING - 站點順序驗證失敗: 未配置的站點: {'LOSS3', 'LOSS6', 'LOSS2', 'LOSS1', 'LOSS5', 'CU', 'LOSS4', 'FPY'}, 缺失的站點: set()
+2025-05-29 15:57:37,217 - main - WARNING - 站點順序配置驗證失敗: {'status': False, 'station_order': ['MT', 'DC2', 'INNER1', 'RDL', 'INNER2', 'EMC'], 'all_stations_in_db': ['LOSS3', 'LOSS4', 'INNER2', 'LOSS6', 'MT', 'LOSS2', 'LOSS1', 'LOSS5', 'RDL', 'INNER1', 'EMC', 'CU', 'DC2', 'FPY'], 'unconfigured_stations': ['LOSS3', 'LOSS6', 'LOSS2', 'LOSS1', 'LOSS5', 'CU', 'LOSS4', 'FPY'], 'missing_stations': []}
+2025-05-29 15:57:37,273 - qdarkstyle - INFO - QSS file successfully loaded.
+2025-05-29 15:57:37,312 - qdarkstyle - INFO - Found application patches to be applied.
+2025-05-29 15:57:37,312 - main - INFO - 已載入深色主題樣式
+2025-05-29 15:57:37,384 - main - INFO - 啟動 Database Manager Plus v1.0.0
+2025-05-29 15:57:40,647 - data_processor - INFO - 開始執行任務: fc00a8f8-b120-490a-8931-6d9c8ab29239 (lossmap)
+2025-05-29 15:57:40,691 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141022_PC2
+2025-05-29 15:57:40,692 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141022_PC4
+2025-05-29 15:57:40,692 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141023_PC1
+2025-05-29 15:57:40,692 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141026_PC3
+2025-05-29 15:57:40,692 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141026_PC4
+2025-05-29 15:57:40,692 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141027_PC1
+2025-05-29 15:57:40,692 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141027_PC2
+2025-05-29 15:57:40,692 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141031_PC3
+2025-05-29 15:57:40,693 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141031_PC2
+2025-05-29 15:57:40,693 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141031_PC4
+2025-05-29 15:57:40,693 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141032_PC1
+2025-05-29 15:57:40,693 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141035_PC3
+2025-05-29 15:57:41,315 - data_utils - INFO - 成功生成損失地圖: D:\Database-PC\temp\map\WLPF400100\LOSS1\WLPF40010003.png
+2025-05-29 15:57:41,328 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 15:57:41,915 - data_utils - INFO - 成功生成損失地圖: D:\Database-PC\temp\map\WLPF400100\LOSS1\WLPF40010004.png
+2025-05-29 15:57:41,927 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 15:57:41,927 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141037
+2025-05-29 15:57:41,927 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141037
+2025-05-29 15:57:41,928 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141037
+2025-05-29 15:57:41,928 - data_processor - INFO - Lossmap處理完成: 總計 17, 成功 2, 失敗 15
+2025-05-29 15:57:41,959 - data_processor - INFO - 任務 fc00a8f8-b120-490a-8931-6d9c8ab29239 已完成: True - 部分完成: 2/17個元件Lossmap已生成

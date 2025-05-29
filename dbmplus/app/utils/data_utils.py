@@ -103,14 +103,17 @@ def apply_mask(df, mask_rules):
 
 def calculate_loss_points(prev_df, curr_df):
     """
-    找出從上一站良品變成下一站缺陷的位置（Good → Bad）
+    計算並分類從上一站到當前站的點位狀態變化
     
     Args:
         prev_df: 前一站點的 DataFrame，需包含 'Col', 'Row', 'binary' 欄位
         curr_df: 當前站點的 DataFrame，需包含 'Col', 'Row', 'binary' 欄位
     
     Returns:
-        DataFrame: 包含 'Col', 'Row' 的損失點 DataFrame
+        DataFrame: 包含 'Col', 'Row', 'status' 的 DataFrame，其中status為:
+                 'good_to_good': 良品→良品
+                 'good_to_bad': 良品→缺陷(損失點)
+                 'bad_to_bad': 缺陷→缺陷
     """
     # 確保輸入的 DataFrame 包含必要欄位
     for df, name in [(prev_df, 'prev_df'), (curr_df, 'curr_df')]:
@@ -118,13 +121,29 @@ def calculate_loss_points(prev_df, curr_df):
             logger.error(f"{name} 缺少必要欄位")
             raise ValueError(f"{name} 缺少必要欄位: 'Col', 'Row', 'binary'")
     
-    # 合併兩個 DataFrame 以查找損失點
+    # 合併兩個 DataFrame 以查找所有重疊點
     merged = pd.merge(prev_df, curr_df, on=['Col', 'Row'], suffixes=('_prev', '_curr'))
     
-    # 找出從良品變為缺陷的點
-    loss_points = merged[(merged['binary_prev'] == 1) & (merged['binary_curr'] == 0)]
+    # 分類三種狀態
+    merged['status'] = 'unknown'  # 初始狀態
     
-    return loss_points[['Col', 'Row']]
+    # 良品→良品 (Good → Good)
+    good_to_good = merged[(merged['binary_prev'] == 1) & (merged['binary_curr'] == 1)]
+    good_to_good['status'] = 'good_to_good'
+    
+    # 良品→缺陷 (Good → Bad，即損失點)
+    good_to_bad = merged[(merged['binary_prev'] == 1) & (merged['binary_curr'] == 0)]
+    good_to_bad['status'] = 'good_to_bad'
+    
+    # 缺陷→缺陷 (Bad → Bad)
+    bad_to_bad = merged[(merged['binary_prev'] == 0) & (merged['binary_curr'] == 0)]
+    bad_to_bad['status'] = 'bad_to_bad'
+    
+    # 合併所有狀態
+    result = pd.concat([good_to_good, good_to_bad, bad_to_bad])
+    
+    # 只返回需要的列
+    return result[['Col', 'Row', 'status']]
 
 
 def plot_basemap(df, output_path, title=None, plot_config=None):
@@ -262,10 +281,15 @@ def plot_basemap(df, output_path, title=None, plot_config=None):
 
 def plot_lossmap(df, output_path, title=None):
     """
-    繪製損失點地圖（LOSS MAP），紅點表示損失點
+    繪製損失點地圖（LOSS MAP），樣式與FPY map保持一致
+    
+    顯示三種狀態:
+    - 良品→良品 (good_to_good): 黑色點
+    - 良品→缺陷 (good_to_bad): 紅色點(損失點)
+    - 缺陷→缺陷 (bad_to_bad): 紅色點
     
     Args:
-        df: 包含 'Col' 和 'Row' 欄位的損失點 DataFrame
+        df: 包含 'Col', 'Row', 'status' 欄位的 DataFrame
         output_path: 圖像保存路徑
         title: 圖像標題，默認為檔名
     
@@ -277,17 +301,62 @@ def plot_lossmap(df, output_path, title=None):
             logger.warning("無法生成損失地圖: DataFrame 為空")
             return False
         
+        # 檢查是否有status欄位
+        has_status = 'status' in df.columns
+        
         # 配置參數
         map_size = (20, 20)
         point_size = 100 / 15
         title_fontsize = 20
         
-        # 創建和配置圖形
-        fig, ax = plt.subplots(figsize=map_size)
+        # 創建新的圖形 - 確保線程安全
+        plt.ioff()  # 關閉交互模式
+        fig = plt.figure(figsize=map_size)
+        ax = fig.add_subplot(111)
         fig.subplots_adjust(left=0.07, right=0.93, bottom=0.07, top=0.93)
         
-        # 繪製紅點表示損失點
-        ax.scatter(df['Col'], df['Row'], c='red', s=point_size, label='Loss', alpha=0.6)
+        # 設置黑色背景
+        ax.set_facecolor('black')
+        
+        if has_status:
+            # 根據status分類點
+            status_colors = {
+                'good_to_good': 'lightgray',  # 良品→良品: 黑色
+                'good_to_bad': 'red',     # 良品→缺陷: 紅色(損失點)
+                'bad_to_bad': 'black'       # 缺陷→缺陷: 紅色
+            }
+            
+            # 為每種狀態繪製散點
+            for status, color in status_colors.items():
+                points = df[df['status'] == status]
+                if not points.empty:
+                    ax.scatter(points['Col'], points['Row'], c=color, s=point_size, 
+                              label=status, alpha=0.6)
+            
+            # 添加自定義圖例
+            from matplotlib.lines import Line2D
+            legend_elements = [
+                Line2D([0], [0], marker='o', color='w', label='Good → Good',
+                      markerfacecolor='lightgray', markersize=8),
+                Line2D([0], [0], marker='o', color='w', label='Good → Bad',
+                      markerfacecolor='red', markersize=8),
+                Line2D([0], [0], marker='o', color='w', label='Bad → Bad',
+                      markerfacecolor='black', markersize=8)
+            ]
+            ax.legend(handles=legend_elements, title='Defect Status', loc='center left', 
+                     bbox_to_anchor=(1, 0.5))
+        else:
+            # 向後兼容，處理舊版本返回的DataFrame
+            ax.scatter(df['Col'], df['Row'], c='red', s=point_size, label='Loss', alpha=0.6)
+            
+            # 簡單圖例
+            from matplotlib.lines import Line2D
+            legend_elements = [
+                Line2D([0], [0], marker='o', color='w', label='Loss Point',
+                      markerfacecolor='red', markersize=8)
+            ]
+            ax.legend(handles=legend_elements, title='Defect Type', loc='center left', 
+                     bbox_to_anchor=(1, 0.5))
         
         # 配置軸和標題
         ax.invert_yaxis()
@@ -298,19 +367,22 @@ def plot_lossmap(df, output_path, title=None):
             title = Path(output_path).stem
         
         ax.set_title(f'Loss Map - {title}', fontsize=title_fontsize)
-        ax.legend(title='Defect Type', loc='center left', bbox_to_anchor=(1, 0.5))
-        ax.grid(True)
         
         # 保存圖像
         Path(output_path).parent.mkdir(parents=True, exist_ok=True)
-        plt.savefig(output_path, bbox_inches='tight')
-        plt.close()
+        fig.savefig(output_path, bbox_inches='tight')
+        plt.close(fig)
         
         logger.info(f"成功生成損失地圖: {output_path}")
         return True
     
     except Exception as e:
         logger.error(f"生成損失地圖時出錯: {e}")
+        # 確保關閉任何開啟的圖形
+        try:
+            plt.close()
+        except:
+            pass
         return False
 
 

@@ -380,11 +380,11 @@ class DataProcessor:
                 df_curr_bin = convert_to_binary(df_curr)
                 df_prev_bin = convert_to_binary(df_prev)
                 
-                # 計算損失點
-                loss_points = calculate_loss_points(df_prev_bin, df_curr_bin)
+                # 計算狀態點 (包括良品→良品、良品→缺陷、缺陷→缺陷)
+                status_points = calculate_loss_points(df_prev_bin, df_curr_bin)
                 
-                if loss_points.empty:
-                    logger.info(f"元件無損失點: {component.component_id}")
+                if status_points.empty:
+                    logger.info(f"元件無數據點: {component.component_id}")
                     success_count += 1
                     continue
                 
@@ -400,7 +400,7 @@ class DataProcessor:
                 output_path = output_dir / f"{component.component_id}.png"
                 
                 # 生成圖像
-                if plot_lossmap(loss_points, str(output_path)):
+                if plot_lossmap(status_points, str(output_path)):
                     # 更新元件資訊
                     component.lossmap_path = str(output_path)
                     db_manager.update_component(component)
