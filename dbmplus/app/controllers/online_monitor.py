@@ -111,19 +111,22 @@ class FileWatcher(QThread):
     """檔案監控執行緒，監控目錄中的新CSV檔案"""
     file_found = Signal(str, str, str, str)  # 產品ID, 批次ID, 站點, 檔案路徑
     
-    def __init__(self, scan_interval: int = 5):
+    def __init__(self, scan_interval: int = 5, rescan_interval: int = 10):
         """
         初始化檔案監控器
         
         Args:
             scan_interval: 掃描間隔（秒）
+            rescan_interval: 重新掃描資料庫間隔（秒）
         """
         super().__init__()
         self.scan_interval = scan_interval
+        self.rescan_interval = rescan_interval
         self.running = False
         self.monitored_dirs = []  # 監控的目錄列表
         self.processed_files = set()  # 已處理檔案集合
         self.base_path = Path(config.get("database.base_path", "D:/Database-PC"))
+        self.last_rescan_time = 0  # 上次重新掃描時間
     
     def stop(self):
         """停止監控"""
@@ -134,9 +137,26 @@ class FileWatcher(QThread):
         self.running = True
         logger.info("檔案監控已啟動")
         
+        # 初始掃描
+        self._rescan_database()
+        
+        # 設置初始的last_rescan_time
+        self.last_rescan_time = time.time()
+        
         while self.running:
             try:
-                self._scan_all_products()
+                # 檢查是否需要重新掃描資料庫
+                current_time = time.time()
+                elapsed_time = current_time - self.last_rescan_time
+                
+                if elapsed_time >= self.rescan_interval:
+                    logger.info(f"執行定期資料庫重新掃描...（距上次掃描: {elapsed_time:.1f}秒）")
+                    self._rescan_database()
+                    self.last_rescan_time = time.time()  # 更新為當前時間
+                else:
+                    # 常規掃描已監控目錄
+                    self._scan_all_products()
+                
                 # 等待指定間隔
                 for _ in range(self.scan_interval):
                     if not self.running:
@@ -146,6 +166,24 @@ class FileWatcher(QThread):
                 logger.error(f"檔案監控過程中發生錯誤: {e}")
                 time.sleep(5)  # 發生錯誤後等待5秒再重試
     
+    def _rescan_database(self):
+        """重新掃描資料庫並更新監控目錄"""
+        try:
+            # 嘗試使用不同方式調用scan_database，處理可能不接受force參數的情況
+            try:
+                # 首先嘗試使用force參數
+                db_manager.scan_database(force=True)
+            except TypeError as e:
+                # 如果發生TypeError（可能是因為不接受force參數），則不使用參數調用
+                logger.warning(f"調用scan_database時發生參數錯誤，嘗試不使用force參數: {e}")
+                db_manager.scan_database()
+            
+            # 掃描所有產品
+            self._scan_all_products()
+            logger.info("資料庫重新掃描完成")
+        except Exception as e:
+            logger.error(f"重新掃描資料庫時發生錯誤: {e}")
+            
     def _scan_all_products(self):
         """掃描所有產品目錄"""
         # 獲取所有產品
