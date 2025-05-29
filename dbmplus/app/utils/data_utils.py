@@ -306,7 +306,7 @@ def plot_lossmap(df, output_path, title=None):
         
         # 配置參數
         map_size = (20, 20)
-        point_size = 100 / 15
+        point_size = 100 / 50
         title_fontsize = 20
         
         # 創建新的圖形 - 確保線程安全

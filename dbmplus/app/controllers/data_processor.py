@@ -459,6 +459,7 @@ class DataProcessor:
             # 處理每個元件
             success_count = 0
             fail_count = 0
+            skipped_count = 0
             fpy_summary = []
             
             # 預先獲取翻轉配置
@@ -470,6 +471,13 @@ class DataProcessor:
                 if not component.csv_path or not Path(component.csv_path).exists():
                     logger.warning(f"找不到當前站CSV: {component.csv_path}")
                     fail_count += 1
+                    continue
+                
+                # 檢查CSV檔名是否符合處理後格式
+                csv_filename = Path(component.csv_path).name
+                if not PROCESSED_FILENAME_PATTERN.match(csv_filename):
+                    logger.warning(f"跳過非處理後格式的CSV: {csv_filename}")
+                    skipped_count += 1
                     continue
                 
                 # 讀取當前站CSV
@@ -495,6 +503,12 @@ class DataProcessor:
                     prev_component = db_manager.get_component(lot_id, prev_station, component.component_id)
                     if not prev_component or not prev_component.csv_path or not Path(prev_component.csv_path).exists():
                         logger.warning(f"找不到前站({prev_station})對應的元件CSV: {component.component_id}")
+                        continue
+                    
+                    # 檢查前站CSV檔名是否符合處理後格式
+                    prev_csv_filename = Path(prev_component.csv_path).name
+                    if not PROCESSED_FILENAME_PATTERN.match(prev_csv_filename):
+                        logger.warning(f"跳過前站非處理後格式的CSV: {prev_csv_filename}")
                         continue
                     
                     df_prev = load_csv(prev_component.csv_path)
@@ -643,6 +657,12 @@ class DataProcessor:
                         logger.warning(f"找不到當前站CSV: {component.csv_path}")
                         return False, None
                     
+                    # 檢查CSV檔名是否符合處理後格式
+                    csv_filename = Path(component.csv_path).name
+                    if not PROCESSED_FILENAME_PATTERN.match(csv_filename):
+                        logger.warning(f"跳過非處理後格式的CSV: {csv_filename}")
+                        return False, None
+                    
                     # 讀取當前站CSV
                     df_curr = load_csv(component.csv_path)
                     if df_curr is None:
@@ -665,6 +685,12 @@ class DataProcessor:
                         prev_component = db_manager.get_component(lot_id, prev_station, component.component_id)
                         if not prev_component or not prev_component.csv_path or not Path(prev_component.csv_path).exists():
                             logger.warning(f"找不到前站({prev_station})對應的元件CSV: {component.component_id}")
+                            continue
+                        
+                        # 檢查前站CSV檔名是否符合處理後格式
+                        prev_csv_filename = Path(prev_component.csv_path).name
+                        if not PROCESSED_FILENAME_PATTERN.match(prev_csv_filename):
+                            logger.warning(f"跳過前站非處理後格式的CSV: {prev_csv_filename}")
                             continue
                         
                         df_prev = load_csv(prev_component.csv_path)

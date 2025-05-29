@@ -20364,3 +20364,470 @@
 2025-05-29 15:57:41,928 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141037
 2025-05-29 15:57:41,928 - data_processor - INFO - Lossmap處理完成: 總計 17, 成功 2, 失敗 15
 2025-05-29 15:57:41,959 - data_processor - INFO - 任務 fc00a8f8-b120-490a-8931-6d9c8ab29239 已完成: True - 部分完成: 2/17個元件Lossmap已生成
+2025-05-29 16:07:13,817 - database_manager - INFO - 已載入資料庫快取: 3 產品, 9 批次, 1188 元件
+2025-05-29 16:07:13,880 - online_monitor - INFO - 檔案監控已設置：掃描間隔=5秒，重新掃描間隔=60秒
+2025-05-29 16:07:13,900 - main - INFO - 日誌系統已初始化
+2025-05-29 16:07:13,900 - config_manager - INFO - 成功載入配置文件: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\config\settings.json
+2025-05-29 16:07:13,900 - database_manager - WARNING - 站點順序驗證失敗: 未配置的站點: {'LOSS3', 'FPY', 'LOSS5', 'CU', 'LOSS6', 'LOSS2', 'LOSS4', 'LOSS1'}, 缺失的站點: set()
+2025-05-29 16:07:13,900 - main - WARNING - 站點順序配置驗證失敗: {'status': False, 'station_order': ['MT', 'DC2', 'INNER1', 'RDL', 'INNER2', 'EMC'], 'all_stations_in_db': ['LOSS3', 'FPY', 'LOSS5', 'DC2', 'CU', 'EMC', 'LOSS4', 'RDL', 'INNER1', 'LOSS2', 'INNER2', 'MT', 'LOSS6', 'LOSS1'], 'unconfigured_stations': ['LOSS3', 'FPY', 'LOSS5', 'CU', 'LOSS6', 'LOSS2', 'LOSS4', 'LOSS1'], 'missing_stations': []}
+2025-05-29 16:07:13,958 - qdarkstyle - INFO - QSS file successfully loaded.
+2025-05-29 16:07:13,991 - qdarkstyle - INFO - Found application patches to be applied.
+2025-05-29 16:07:13,991 - main - INFO - 已載入深色主題樣式
+2025-05-29 16:07:14,065 - main - INFO - 啟動 Database Manager Plus v1.0.0
+2025-05-29 16:08:55,587 - online_monitor - INFO - 在線處理已啟動
+2025-05-29 16:08:55,589 - online_monitor - INFO - 檔案監控已啟動
+2025-05-29 16:08:55,589 - online_monitor - WARNING - 調用scan_database時發生參數錯誤，嘗試不使用force參數: DatabaseManager.scan_database() got an unexpected keyword argument 'force'
+2025-05-29 16:08:55,590 - database_manager - INFO - 開始掃描資料庫...
+2025-05-29 16:08:55,711 - database_manager - INFO - 資料庫掃描完成: 3 產品, 9 批次, 1188 元件
+2025-05-29 16:08:55,723 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 16:08:55,728 - online_monitor - INFO - 創建新組件: WLPF40010001 (批次: WLPF400100, 站點: DC2)
+2025-05-29 16:08:55,732 - online_monitor - INFO - 資料庫重新掃描完成
+2025-05-29 16:08:55,741 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 16:08:55,742 - online_monitor - INFO - 檔案已加入佇列: D:\Database-PC\temp\processed_csv\WLPF400100\DC2\M1X60_WLPF40010001_202504141037.csv
+2025-05-29 16:08:55,756 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 16:08:55,756 - online_monitor - INFO - 檔案已加入佇列: D:\Database-PC\temp\processed_csv\WLPF400100\DC2\M1X60_WLPF40010003_202504141037.csv
+2025-05-29 16:08:55,770 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 16:08:55,770 - online_monitor - INFO - 檔案已加入佇列: D:\Database-PC\temp\processed_csv\WLPF400100\DC2\M1X60_WLPF40010004_202504141037.csv
+2025-05-29 16:08:55,782 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 16:08:55,783 - online_monitor - INFO - 檔案已加入佇列: D:\Database-PC\temp\processed_csv\WLPF400100\INNER1\M1X60_WLPF40010003_202504141037.csv
+2025-05-29 16:08:55,794 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 16:08:55,794 - online_monitor - INFO - 檔案已加入佇列: D:\Database-PC\temp\processed_csv\WLPF400100\INNER1\M1X60_WLPF40010003_202504141045.csv
+2025-05-29 16:08:55,806 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 16:08:55,806 - online_monitor - INFO - 檔案已加入佇列: D:\Database-PC\temp\processed_csv\WLPF400100\MT\M3X60_WLPF40010001_202504091051.csv
+2025-05-29 16:08:55,818 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 16:08:55,819 - online_monitor - INFO - 檔案已加入佇列: D:\Database-PC\temp\processed_csv\WLPF400100\MT\M3X60_WLPF40010003_202504091051.csv
+2025-05-29 16:08:55,830 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 16:08:55,830 - online_monitor - INFO - 檔案已加入佇列: D:\Database-PC\temp\processed_csv\WLPF400100\MT\M3X60_WLPF40010004_202504091051.csv
+2025-05-29 16:08:55,842 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 16:08:55,842 - online_monitor - INFO - 檔案已加入佇列: D:\Database-PC\temp\processed_csv\WLPF400100\MT\M3X60_WLPF40010006_202504091051.csv
+2025-05-29 16:08:56,585 - data_processor - INFO - 開始執行任務: 00a49c34-8d94-45e8-ac85-5ccce11dcfdb (basemap)
+2025-05-29 16:08:56,620 - data_processor - INFO - 檔案 M1X60_WLPF40010001_202504141037.csv 是原始格式，執行 step1~3
+2025-05-29 16:08:56,620 - data_processor - INFO - Step 1: 讀取元件 WLPF40010001 的config參數
+2025-05-29 16:08:56,621 - data_processor - INFO - Step 2: 執行 WLPF40010001 的原始CSV偏移確認
+2025-05-29 16:08:56,621 - data_utils - INFO - 在第 20 行找到標頭
+2025-05-29 16:08:56,734 - data_utils - WARNING - 找不到對齊點: Col=175, Row=96, DefectType=alignkey
+2025-05-29 16:08:56,739 - data_utils - WARNING - 找不到對齊點: Col=292, Row=96, DefectType=alignkey
+2025-05-29 16:08:56,745 - data_utils - WARNING - 找不到對齊點: Col=175, Row=369, DefectType=alignkey
+2025-05-29 16:08:56,750 - data_utils - WARNING - 找不到對齊點: Col=292, Row=369, DefectType=alignkey
+2025-05-29 16:08:56,777 - data_processor - INFO - 任務 00a49c34-8d94-45e8-ac85-5ccce11dcfdb 已完成: False - CSV檔案偏移錯誤: 找不到任何對齊點，需要至少1個匹配
+2025-05-29 16:08:57,594 - data_processor - INFO - 開始執行任務: 351abb00-0075-4459-b7bd-da83590a4ed1 (basemap)
+2025-05-29 16:08:57,624 - data_processor - INFO - 檔案 M1X60_WLPF40010003_202504141037.csv 是原始格式，執行 step1~3
+2025-05-29 16:08:57,624 - data_processor - INFO - Step 1: 讀取元件 WLPF40010003 的config參數
+2025-05-29 16:08:57,625 - data_processor - INFO - Step 2: 執行 WLPF40010003 的原始CSV偏移確認
+2025-05-29 16:08:57,625 - data_utils - INFO - 在第 20 行找到標頭
+2025-05-29 16:08:57,734 - data_utils - INFO - 找到對齊點: Col=175, Row=96, DefectType=alignkey
+2025-05-29 16:08:57,739 - data_utils - INFO - 找到對齊點: Col=292, Row=96, DefectType=alignkey
+2025-05-29 16:08:57,744 - data_utils - INFO - 找到對齊點: Col=175, Row=369, DefectType=alignkey
+2025-05-29 16:08:57,749 - data_utils - INFO - 找到對齊點: Col=292, Row=369, DefectType=alignkey
+2025-05-29 16:08:57,753 - data_processor - INFO - Step 3: 處理 WLPF40010003 的CSV標頭
+2025-05-29 16:08:58,177 - file_utils - INFO - 成功保存CSV檔案: D:/Database-PC/temp/csv/WLPF400100/DC2\WLPF40010003.csv
+2025-05-29 16:08:58,177 - file_utils - INFO - 成功處理表頭並重命名: D:\Database-PC\temp\processed_csv\WLPF400100\DC2\M1X60_WLPF40010003_202504141037.csv -> D:/Database-PC/temp/csv/WLPF400100/DC2\WLPF40010003.csv
+2025-05-29 16:08:58,191 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 16:08:58,192 - data_processor - INFO - Step 4: 為 WLPF40010003 生成Basemap
+2025-05-29 16:08:58,655 - data_processor - INFO - 開始執行任務: 31926ef7-e462-4d9a-b464-4d6e3f9a96f5 (basemap)
+2025-05-29 16:08:58,696 - data_processor - INFO - 檔案 M1X60_WLPF40010004_202504141037.csv 是原始格式，執行 step1~3
+2025-05-29 16:08:58,697 - data_processor - INFO - Step 1: 讀取元件 WLPF40010004 的config參數
+2025-05-29 16:08:58,698 - data_processor - INFO - Step 2: 執行 WLPF40010004 的原始CSV偏移確認
+2025-05-29 16:08:58,700 - data_utils - INFO - 在第 20 行找到標頭
+2025-05-29 16:08:58,914 - data_utils - INFO - 找到對齊點: Col=175, Row=96, DefectType=alignkey
+2025-05-29 16:08:58,923 - data_utils - INFO - 找到對齊點: Col=292, Row=96, DefectType=alignkey
+2025-05-29 16:08:58,943 - data_utils - INFO - 找到對齊點: Col=175, Row=369, DefectType=alignkey
+2025-05-29 16:08:58,950 - data_utils - INFO - 找到對齊點: Col=292, Row=369, DefectType=alignkey
+2025-05-29 16:08:58,953 - data_processor - INFO - Step 3: 處理 WLPF40010004 的CSV標頭
+2025-05-29 16:08:58,992 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010003.png
+2025-05-29 16:08:59,008 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 16:08:59,008 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010003.png
+2025-05-29 16:08:59,036 - data_processor - INFO - 任務 351abb00-0075-4459-b7bd-da83590a4ed1 已完成: True - D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010003.png
+2025-05-29 16:08:59,428 - file_utils - INFO - 成功保存CSV檔案: D:/Database-PC/temp/csv/WLPF400100/DC2\WLPF40010004.csv
+2025-05-29 16:08:59,429 - file_utils - INFO - 成功處理表頭並重命名: D:\Database-PC\temp\processed_csv\WLPF400100\DC2\M1X60_WLPF40010004_202504141037.csv -> D:/Database-PC/temp/csv/WLPF400100/DC2\WLPF40010004.csv
+2025-05-29 16:08:59,444 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 16:08:59,445 - data_processor - INFO - Step 4: 為 WLPF40010004 生成Basemap
+2025-05-29 16:08:59,607 - data_processor - INFO - 開始執行任務: 0f780afb-b44d-4742-bfb2-f8598571e8ef (basemap)
+2025-05-29 16:08:59,634 - data_processor - INFO - 檔案 M1X60_WLPF40010003_202504141045.csv 是原始格式，執行 step1~3
+2025-05-29 16:08:59,635 - data_processor - INFO - Step 1: 讀取元件 WLPF40010003 的config參數
+2025-05-29 16:08:59,645 - data_processor - INFO - Step 2: 執行 WLPF40010003 的原始CSV偏移確認
+2025-05-29 16:08:59,646 - data_utils - INFO - 在第 20 行找到標頭
+2025-05-29 16:09:00,042 - data_utils - INFO - 找到對齊點: Col=175, Row=96, DefectType=alignkey
+2025-05-29 16:09:00,047 - data_utils - INFO - 找到對齊點: Col=292, Row=96, DefectType=alignkey
+2025-05-29 16:09:00,052 - data_utils - INFO - 找到對齊點: Col=175, Row=369, DefectType=alignkey
+2025-05-29 16:09:00,057 - data_utils - INFO - 找到對齊點: Col=292, Row=369, DefectType=alignkey
+2025-05-29 16:09:00,061 - data_processor - INFO - Step 3: 處理 WLPF40010003 的CSV標頭
+2025-05-29 16:09:00,245 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010004.png
+2025-05-29 16:09:00,262 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 16:09:00,263 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010004.png
+2025-05-29 16:09:00,309 - data_processor - INFO - 任務 31926ef7-e462-4d9a-b464-4d6e3f9a96f5 已完成: True - D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010004.png
+2025-05-29 16:09:00,613 - data_processor - INFO - 開始執行任務: 3fade76f-8292-416e-b909-6fbda0c05bfb (basemap)
+2025-05-29 16:09:00,643 - data_processor - INFO - 檔案 M1X60_WLPF40010003_202504141045.csv 是原始格式，執行 step1~3
+2025-05-29 16:09:00,643 - data_processor - INFO - Step 1: 讀取元件 WLPF40010003 的config參數
+2025-05-29 16:09:00,646 - data_processor - INFO - Step 2: 執行 WLPF40010003 的原始CSV偏移確認
+2025-05-29 16:09:00,649 - data_utils - INFO - 在第 20 行找到標頭
+2025-05-29 16:09:00,720 - file_utils - INFO - 成功保存CSV檔案: D:/Database-PC/temp/csv/WLPF400100/INNER1\WLPF40010003.csv
+2025-05-29 16:09:00,720 - file_utils - INFO - 成功處理表頭並重命名: D:\Database-PC\temp\processed_csv\WLPF400100\INNER1\M1X60_WLPF40010003_202504141045.csv -> D:/Database-PC/temp/csv/WLPF400100/INNER1\WLPF40010003.csv
+2025-05-29 16:09:00,739 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 16:09:00,739 - data_processor - INFO - Step 4: 為 WLPF40010003 生成Basemap
+2025-05-29 16:09:00,809 - data_utils - INFO - 找到對齊點: Col=175, Row=96, DefectType=alignkey
+2025-05-29 16:09:00,815 - data_utils - INFO - 找到對齊點: Col=292, Row=96, DefectType=alignkey
+2025-05-29 16:09:00,821 - data_utils - INFO - 找到對齊點: Col=175, Row=369, DefectType=alignkey
+2025-05-29 16:09:00,828 - data_utils - INFO - 找到對齊點: Col=292, Row=369, DefectType=alignkey
+2025-05-29 16:09:00,831 - data_processor - INFO - Step 3: 處理 WLPF40010003 的CSV標頭
+2025-05-29 16:09:01,627 - file_utils - INFO - 成功保存CSV檔案: D:/Database-PC/temp/csv/WLPF400100/INNER1\WLPF40010003.csv
+2025-05-29 16:09:01,628 - file_utils - INFO - 成功處理表頭並重命名: D:\Database-PC\temp\csv\WLPF400100\INNER1\WLPF40010003.csv -> D:/Database-PC/temp/csv/WLPF400100/INNER1\WLPF40010003.csv
+2025-05-29 16:09:01,643 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 16:09:01,643 - data_processor - INFO - Step 4: 為 WLPF40010003 生成Basemap
+2025-05-29 16:09:01,808 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\INNER1\WLPF40010003.png
+2025-05-29 16:09:01,829 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 16:09:01,830 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\INNER1\WLPF40010003.png
+2025-05-29 16:09:01,862 - data_processor - INFO - 任務 0f780afb-b44d-4742-bfb2-f8598571e8ef 已完成: True - D:\Database-PC\temp\map\WLPF400100\INNER1\WLPF40010003.png
+2025-05-29 16:09:02,459 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\INNER1\WLPF40010003.png
+2025-05-29 16:09:02,472 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 16:09:02,472 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\INNER1\WLPF40010003.png
+2025-05-29 16:09:02,500 - data_processor - INFO - 任務 3fade76f-8292-416e-b909-6fbda0c05bfb 已完成: True - D:\Database-PC\temp\map\WLPF400100\INNER1\WLPF40010003.png
+2025-05-29 16:09:02,626 - data_processor - INFO - 開始執行任務: 3ed6cb33-1cf9-40ad-9606-34476d6e294e (basemap)
+2025-05-29 16:09:02,653 - data_processor - INFO - 檔案 M3X60_WLPF40010001_202504091051.csv 是原始格式，執行 step1~3
+2025-05-29 16:09:02,654 - data_processor - INFO - Step 1: 讀取元件 WLPF40010001 的config參數
+2025-05-29 16:09:02,654 - data_processor - INFO - Step 2: 執行 WLPF40010001 的原始CSV偏移確認
+2025-05-29 16:09:02,655 - data_utils - INFO - 在第 20 行找到標頭
+2025-05-29 16:09:02,771 - data_utils - INFO - 找到對齊點: Col=174, Row=96, DefectType=alignkey
+2025-05-29 16:09:02,778 - data_utils - INFO - 找到對齊點: Col=291, Row=96, DefectType=alignkey
+2025-05-29 16:09:02,783 - data_utils - INFO - 找到對齊點: Col=174, Row=369, DefectType=alignkey
+2025-05-29 16:09:02,788 - data_utils - INFO - 找到對齊點: Col=291, Row=369, DefectType=alignkey
+2025-05-29 16:09:02,790 - data_processor - INFO - Step 3: 處理 WLPF40010001 的CSV標頭
+2025-05-29 16:09:03,207 - file_utils - INFO - 成功保存CSV檔案: D:/Database-PC/temp/csv/WLPF400100/MT\WLPF40010001.csv
+2025-05-29 16:09:03,208 - file_utils - INFO - 成功處理表頭並重命名: D:\Database-PC\temp\processed_csv\WLPF400100\MT\M3X60_WLPF40010001_202504091051.csv -> D:/Database-PC/temp/csv/WLPF400100/MT\WLPF40010001.csv
+2025-05-29 16:09:03,222 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 16:09:03,223 - data_processor - INFO - Step 4: 為 WLPF40010001 生成Basemap
+2025-05-29 16:09:03,691 - data_processor - INFO - 開始執行任務: ad639857-cdd4-469f-85f4-3e0390bbbc46 (basemap)
+2025-05-29 16:09:03,728 - data_processor - INFO - 檔案 M3X60_WLPF40010003_202504091051.csv 是原始格式，執行 step1~3
+2025-05-29 16:09:03,730 - data_processor - INFO - Step 1: 讀取元件 WLPF40010003 的config參數
+2025-05-29 16:09:03,736 - data_processor - INFO - Step 2: 執行 WLPF40010003 的原始CSV偏移確認
+2025-05-29 16:09:03,738 - data_utils - INFO - 在第 20 行找到標頭
+2025-05-29 16:09:03,979 - data_utils - INFO - 找到對齊點: Col=174, Row=96, DefectType=alignkey
+2025-05-29 16:09:03,986 - data_utils - INFO - 找到對齊點: Col=291, Row=96, DefectType=alignkey
+2025-05-29 16:09:03,998 - data_utils - INFO - 找到對齊點: Col=174, Row=369, DefectType=alignkey
+2025-05-29 16:09:04,007 - data_utils - INFO - 找到對齊點: Col=291, Row=369, DefectType=alignkey
+2025-05-29 16:09:04,010 - data_processor - INFO - Step 3: 處理 WLPF40010003 的CSV標頭
+2025-05-29 16:09:04,030 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010001.png
+2025-05-29 16:09:04,062 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 16:09:04,063 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010001.png
+2025-05-29 16:09:04,092 - data_processor - INFO - 任務 3ed6cb33-1cf9-40ad-9606-34476d6e294e 已完成: True - D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010001.png
+2025-05-29 16:09:04,512 - file_utils - INFO - 成功保存CSV檔案: D:/Database-PC/temp/csv/WLPF400100/MT\WLPF40010003.csv
+2025-05-29 16:09:04,513 - file_utils - INFO - 成功處理表頭並重命名: D:\Database-PC\temp\processed_csv\WLPF400100\MT\M3X60_WLPF40010003_202504091051.csv -> D:/Database-PC/temp/csv/WLPF400100/MT\WLPF40010003.csv
+2025-05-29 16:09:04,528 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 16:09:04,528 - data_processor - INFO - Step 4: 為 WLPF40010003 生成Basemap
+2025-05-29 16:09:04,631 - data_processor - INFO - 開始執行任務: 24c4ca41-a6fa-47bb-9c2d-4c3a62b34bb2 (basemap)
+2025-05-29 16:09:04,664 - data_processor - INFO - 檔案 M3X60_WLPF40010004_202504091051.csv 是原始格式，執行 step1~3
+2025-05-29 16:09:04,665 - data_processor - INFO - Step 1: 讀取元件 WLPF40010004 的config參數
+2025-05-29 16:09:04,665 - data_processor - INFO - Step 2: 執行 WLPF40010004 的原始CSV偏移確認
+2025-05-29 16:09:04,666 - data_utils - INFO - 在第 20 行找到標頭
+2025-05-29 16:09:04,985 - data_utils - INFO - 找到對齊點: Col=174, Row=96, DefectType=alignkey
+2025-05-29 16:09:04,992 - data_utils - INFO - 找到對齊點: Col=291, Row=96, DefectType=alignkey
+2025-05-29 16:09:04,998 - data_utils - INFO - 找到對齊點: Col=174, Row=369, DefectType=alignkey
+2025-05-29 16:09:05,003 - data_utils - INFO - 找到對齊點: Col=291, Row=369, DefectType=alignkey
+2025-05-29 16:09:05,005 - data_processor - INFO - Step 3: 處理 WLPF40010004 的CSV標頭
+2025-05-29 16:09:05,620 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010003.png
+2025-05-29 16:09:05,659 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 16:09:05,660 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010003.png
+2025-05-29 16:09:05,692 - data_processor - INFO - 任務 ad639857-cdd4-469f-85f4-3e0390bbbc46 已完成: True - D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010003.png
+2025-05-29 16:09:05,806 - file_utils - INFO - 成功保存CSV檔案: D:/Database-PC/temp/csv/WLPF400100/MT\WLPF40010004.csv
+2025-05-29 16:09:05,806 - file_utils - INFO - 成功處理表頭並重命名: D:\Database-PC\temp\processed_csv\WLPF400100\MT\M3X60_WLPF40010004_202504091051.csv -> D:/Database-PC/temp/csv/WLPF400100/MT\WLPF40010004.csv
+2025-05-29 16:09:05,821 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 16:09:05,821 - data_processor - INFO - Step 4: 為 WLPF40010004 生成Basemap
+2025-05-29 16:09:06,612 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010004.png
+2025-05-29 16:09:06,630 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 16:09:06,630 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010004.png
+2025-05-29 16:09:06,659 - data_processor - INFO - 開始執行任務: 4390496c-1df2-449f-a076-4cd9ae706393 (basemap)
+2025-05-29 16:09:06,689 - data_processor - INFO - 任務 24c4ca41-a6fa-47bb-9c2d-4c3a62b34bb2 已完成: True - D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010004.png
+2025-05-29 16:09:06,693 - data_processor - INFO - 檔案 M3X60_WLPF40010006_202504091051.csv 是原始格式，執行 step1~3
+2025-05-29 16:09:06,693 - data_processor - INFO - Step 1: 讀取元件 WLPF40010006 的config參數
+2025-05-29 16:09:06,693 - data_processor - INFO - Step 2: 執行 WLPF40010006 的原始CSV偏移確認
+2025-05-29 16:09:06,694 - data_utils - INFO - 在第 20 行找到標頭
+2025-05-29 16:09:06,811 - data_utils - INFO - 找到對齊點: Col=174, Row=96, DefectType=alignkey
+2025-05-29 16:09:06,818 - data_utils - INFO - 找到對齊點: Col=291, Row=96, DefectType=alignkey
+2025-05-29 16:09:06,823 - data_utils - INFO - 找到對齊點: Col=174, Row=369, DefectType=alignkey
+2025-05-29 16:09:06,828 - data_utils - INFO - 找到對齊點: Col=291, Row=369, DefectType=alignkey
+2025-05-29 16:09:06,831 - data_processor - INFO - Step 3: 處理 WLPF40010006 的CSV標頭
+2025-05-29 16:09:07,263 - file_utils - INFO - 成功保存CSV檔案: D:/Database-PC/temp/csv/WLPF400100/MT\WLPF40010006.csv
+2025-05-29 16:09:07,263 - file_utils - INFO - 成功處理表頭並重命名: D:\Database-PC\temp\processed_csv\WLPF400100\MT\M3X60_WLPF40010006_202504091051.csv -> D:/Database-PC/temp/csv/WLPF400100/MT\WLPF40010006.csv
+2025-05-29 16:09:07,278 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 16:09:07,279 - data_processor - INFO - Step 4: 為 WLPF40010006 生成Basemap
+2025-05-29 16:09:08,010 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010006.png
+2025-05-29 16:09:08,024 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 16:09:08,024 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010006.png
+2025-05-29 16:09:08,053 - data_processor - INFO - 任務 4390496c-1df2-449f-a076-4cd9ae706393 已完成: True - D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010006.png
+2025-05-29 16:09:56,061 - online_monitor - WARNING - 調用scan_database時發生參數錯誤，嘗試不使用force參數: DatabaseManager.scan_database() got an unexpected keyword argument 'force'
+2025-05-29 16:09:56,061 - database_manager - INFO - 開始掃描資料庫...
+2025-05-29 16:09:56,187 - database_manager - INFO - 資料庫掃描完成: 3 產品, 10 批次, 1192 元件
+2025-05-29 16:09:56,200 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 16:09:56,206 - online_monitor - INFO - 創建新組件: WLPF50010001 (批次: WLPF500100, 站點: MT)
+2025-05-29 16:09:56,206 - online_monitor - INFO - 資料庫重新掃描完成
+2025-05-29 16:09:56,217 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 16:09:56,218 - online_monitor - INFO - 檔案已加入佇列: D:\Database-PC\temp\processed_csv\WLPF500100\MT\M3X60_WLPF50010001_202504091051.csv
+2025-05-29 16:09:56,218 - online_monitor - INFO - 創建新組件: WLPF50010002 (批次: WLPF500100, 站點: MT)
+2025-05-29 16:09:56,230 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 16:09:56,231 - online_monitor - INFO - 檔案已加入佇列: D:\Database-PC\temp\processed_csv\WLPF500100\MT\M3X60_WLPF50010002_202504091051.csv
+2025-05-29 16:09:56,231 - online_monitor - INFO - 創建新組件: WLPF50010003 (批次: WLPF500100, 站點: MT)
+2025-05-29 16:09:56,246 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 16:09:56,246 - online_monitor - INFO - 檔案已加入佇列: D:\Database-PC\temp\processed_csv\WLPF500100\MT\M3X60_WLPF50010003_202504091051.csv
+2025-05-29 16:09:56,246 - online_monitor - INFO - 創建新組件: WLPF50010004 (批次: WLPF500100, 站點: MT)
+2025-05-29 16:09:56,260 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 16:09:56,261 - online_monitor - INFO - 檔案已加入佇列: D:\Database-PC\temp\processed_csv\WLPF500100\MT\M3X60_WLPF50010004_202504091051.csv
+2025-05-29 16:09:56,817 - data_processor - INFO - 開始執行任務: 75830a5b-aff7-4b5c-b0c6-15cd2f3d9808 (basemap)
+2025-05-29 16:09:56,845 - data_processor - INFO - 檔案 M3X60_WLPF50010001_202504091051.csv 是原始格式，執行 step1~3
+2025-05-29 16:09:56,846 - data_processor - INFO - Step 1: 讀取元件 WLPF50010001 的config參數
+2025-05-29 16:09:56,846 - data_processor - INFO - Step 2: 執行 WLPF50010001 的原始CSV偏移確認
+2025-05-29 16:09:56,847 - data_utils - INFO - 在第 20 行找到標頭
+2025-05-29 16:09:56,960 - data_utils - INFO - 找到對齊點: Col=174, Row=96, DefectType=alignkey
+2025-05-29 16:09:56,965 - data_utils - INFO - 找到對齊點: Col=291, Row=96, DefectType=alignkey
+2025-05-29 16:09:56,970 - data_utils - INFO - 找到對齊點: Col=174, Row=369, DefectType=alignkey
+2025-05-29 16:09:56,975 - data_utils - INFO - 找到對齊點: Col=291, Row=369, DefectType=alignkey
+2025-05-29 16:09:56,978 - data_processor - INFO - Step 3: 處理 WLPF50010001 的CSV標頭
+2025-05-29 16:09:57,401 - file_utils - INFO - 成功保存CSV檔案: D:/Database-PC/temp/csv/WLPF500100/MT\WLPF50010001.csv
+2025-05-29 16:09:57,401 - file_utils - INFO - 成功處理表頭並重命名: D:\Database-PC\temp\processed_csv\WLPF500100\MT\M3X60_WLPF50010001_202504091051.csv -> D:/Database-PC/temp/csv/WLPF500100/MT\WLPF50010001.csv
+2025-05-29 16:09:57,415 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 16:09:57,416 - data_processor - INFO - Step 4: 為 WLPF50010001 生成Basemap
+2025-05-29 16:09:57,907 - data_processor - INFO - 開始執行任務: 6e3afe34-d755-4b70-914e-5b1901494459 (basemap)
+2025-05-29 16:09:57,943 - data_processor - INFO - 檔案 M3X60_WLPF50010002_202504091051.csv 是原始格式，執行 step1~3
+2025-05-29 16:09:57,944 - data_processor - INFO - Step 1: 讀取元件 WLPF50010002 的config參數
+2025-05-29 16:09:57,949 - data_processor - INFO - Step 2: 執行 WLPF50010002 的原始CSV偏移確認
+2025-05-29 16:09:57,953 - data_utils - INFO - 在第 20 行找到標頭
+2025-05-29 16:09:58,219 - data_utils - INFO - 找到對齊點: Col=174, Row=96, DefectType=alignkey
+2025-05-29 16:09:58,226 - data_utils - INFO - 找到對齊點: Col=291, Row=96, DefectType=alignkey
+2025-05-29 16:09:58,227 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010001.png
+2025-05-29 16:09:58,236 - data_utils - INFO - 找到對齊點: Col=174, Row=369, DefectType=alignkey
+2025-05-29 16:09:58,243 - data_utils - INFO - 找到對齊點: Col=291, Row=369, DefectType=alignkey
+2025-05-29 16:09:58,246 - data_processor - INFO - Step 3: 處理 WLPF50010002 的CSV標頭
+2025-05-29 16:09:58,258 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 16:09:58,259 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010001.png
+2025-05-29 16:09:58,290 - data_processor - INFO - 任務 75830a5b-aff7-4b5c-b0c6-15cd2f3d9808 已完成: True - D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010001.png
+2025-05-29 16:09:58,703 - file_utils - INFO - 成功保存CSV檔案: D:/Database-PC/temp/csv/WLPF500100/MT\WLPF50010002.csv
+2025-05-29 16:09:58,703 - file_utils - INFO - 成功處理表頭並重命名: D:\Database-PC\temp\processed_csv\WLPF500100\MT\M3X60_WLPF50010002_202504091051.csv -> D:/Database-PC/temp/csv/WLPF500100/MT\WLPF50010002.csv
+2025-05-29 16:09:58,717 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 16:09:58,717 - data_processor - INFO - Step 4: 為 WLPF50010002 生成Basemap
+2025-05-29 16:09:58,854 - data_processor - INFO - 開始執行任務: 49b4e56d-8a12-45d9-aece-8981dcf49af7 (basemap)
+2025-05-29 16:09:58,881 - data_processor - INFO - 檔案 M3X60_WLPF50010003_202504091051.csv 是原始格式，執行 step1~3
+2025-05-29 16:09:58,881 - data_processor - INFO - Step 1: 讀取元件 WLPF50010003 的config參數
+2025-05-29 16:09:58,882 - data_processor - INFO - Step 2: 執行 WLPF50010003 的原始CSV偏移確認
+2025-05-29 16:09:58,882 - data_utils - INFO - 在第 20 行找到標頭
+2025-05-29 16:09:59,333 - data_utils - INFO - 找到對齊點: Col=174, Row=96, DefectType=alignkey
+2025-05-29 16:09:59,338 - data_utils - INFO - 找到對齊點: Col=291, Row=96, DefectType=alignkey
+2025-05-29 16:09:59,343 - data_utils - INFO - 找到對齊點: Col=174, Row=369, DefectType=alignkey
+2025-05-29 16:09:59,349 - data_utils - INFO - 找到對齊點: Col=291, Row=369, DefectType=alignkey
+2025-05-29 16:09:59,353 - data_processor - INFO - Step 3: 處理 WLPF50010003 的CSV標頭
+2025-05-29 16:09:59,534 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010002.png
+2025-05-29 16:09:59,552 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 16:09:59,554 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010002.png
+2025-05-29 16:09:59,583 - data_processor - INFO - 任務 6e3afe34-d755-4b70-914e-5b1901494459 已完成: True - D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010002.png
+2025-05-29 16:09:59,862 - data_processor - INFO - 開始執行任務: 4be52223-5307-4093-b539-b2700a6e8676 (basemap)
+2025-05-29 16:09:59,896 - data_processor - INFO - 檔案 M3X60_WLPF50010004_202504091051.csv 是原始格式，執行 step1~3
+2025-05-29 16:09:59,896 - data_processor - INFO - Step 1: 讀取元件 WLPF50010004 的config參數
+2025-05-29 16:09:59,899 - data_processor - INFO - Step 2: 執行 WLPF50010004 的原始CSV偏移確認
+2025-05-29 16:09:59,904 - data_utils - INFO - 在第 20 行找到標頭
+2025-05-29 16:10:00,014 - file_utils - INFO - 成功保存CSV檔案: D:/Database-PC/temp/csv/WLPF500100/MT\WLPF50010003.csv
+2025-05-29 16:10:00,014 - file_utils - INFO - 成功處理表頭並重命名: D:\Database-PC\temp\processed_csv\WLPF500100\MT\M3X60_WLPF50010003_202504091051.csv -> D:/Database-PC/temp/csv/WLPF500100/MT\WLPF50010003.csv
+2025-05-29 16:10:00,038 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 16:10:00,038 - data_processor - INFO - Step 4: 為 WLPF50010003 生成Basemap
+2025-05-29 16:10:00,085 - data_utils - INFO - 找到對齊點: Col=174, Row=96, DefectType=alignkey
+2025-05-29 16:10:00,091 - data_utils - INFO - 找到對齊點: Col=291, Row=96, DefectType=alignkey
+2025-05-29 16:10:00,097 - data_utils - INFO - 找到對齊點: Col=174, Row=369, DefectType=alignkey
+2025-05-29 16:10:00,102 - data_utils - INFO - 找到對齊點: Col=291, Row=369, DefectType=alignkey
+2025-05-29 16:10:00,105 - data_processor - INFO - Step 3: 處理 WLPF50010004 的CSV標頭
+2025-05-29 16:10:00,894 - file_utils - INFO - 成功保存CSV檔案: D:/Database-PC/temp/csv/WLPF500100/MT\WLPF50010004.csv
+2025-05-29 16:10:00,894 - file_utils - INFO - 成功處理表頭並重命名: D:\Database-PC\temp\processed_csv\WLPF500100\MT\M3X60_WLPF50010004_202504091051.csv -> D:/Database-PC/temp/csv/WLPF500100/MT\WLPF50010004.csv
+2025-05-29 16:10:00,926 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 16:10:00,927 - data_processor - INFO - Step 4: 為 WLPF50010004 生成Basemap
+2025-05-29 16:10:01,181 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010003.png
+2025-05-29 16:10:01,216 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 16:10:01,217 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010003.png
+2025-05-29 16:10:01,254 - data_processor - INFO - 任務 49b4e56d-8a12-45d9-aece-8981dcf49af7 已完成: True - D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010003.png
+2025-05-29 16:10:01,801 - data_utils - INFO - 成功生成基本地圖: D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010004.png
+2025-05-29 16:10:01,816 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 16:10:01,817 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010004.png
+2025-05-29 16:10:01,847 - data_processor - INFO - 任務 4be52223-5307-4093-b539-b2700a6e8676 已完成: True - D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010004.png
+2025-05-29 16:10:56,398 - online_monitor - WARNING - 調用scan_database時發生參數錯誤，嘗試不使用force參數: DatabaseManager.scan_database() got an unexpected keyword argument 'force'
+2025-05-29 16:10:56,398 - database_manager - INFO - 開始掃描資料庫...
+2025-05-29 16:10:56,524 - database_manager - INFO - 資料庫掃描完成: 3 產品, 10 批次, 1196 元件
+2025-05-29 16:10:56,536 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 16:10:56,541 - online_monitor - INFO - 資料庫重新掃描完成
+2025-05-29 16:11:25,251 - online_monitor - INFO - 在線處理已停止
+2025-05-29 16:11:37,134 - database_manager - INFO - 已載入資料庫快取: 3 產品, 10 批次, 1196 元件
+2025-05-29 16:11:37,184 - online_monitor - INFO - 檔案監控已設置：掃描間隔=5秒，重新掃描間隔=60秒
+2025-05-29 16:11:37,203 - main - INFO - 日誌系統已初始化
+2025-05-29 16:11:37,204 - config_manager - INFO - 成功載入配置文件: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\config\settings.json
+2025-05-29 16:11:37,204 - database_manager - WARNING - 站點順序驗證失敗: 未配置的站點: {'LOSS4', 'FPY', 'LOSS1', 'LOSS5', 'CU', 'LOSS3', 'LOSS2', 'LOSS6'}, 缺失的站點: set()
+2025-05-29 16:11:37,204 - main - WARNING - 站點順序配置驗證失敗: {'status': False, 'station_order': ['MT', 'DC2', 'INNER1', 'RDL', 'INNER2', 'EMC'], 'all_stations_in_db': ['LOSS4', 'FPY', 'LOSS1', 'DC2', 'LOSS5', 'EMC', 'RDL', 'INNER1', 'CU', 'LOSS3', 'LOSS2', 'LOSS6', 'INNER2', 'MT'], 'unconfigured_stations': ['LOSS4', 'FPY', 'LOSS1', 'LOSS5', 'CU', 'LOSS3', 'LOSS2', 'LOSS6'], 'missing_stations': []}
+2025-05-29 16:11:37,260 - qdarkstyle - INFO - QSS file successfully loaded.
+2025-05-29 16:11:37,314 - qdarkstyle - INFO - Found application patches to be applied.
+2025-05-29 16:11:37,314 - main - INFO - 已載入深色主題樣式
+2025-05-29 16:11:37,385 - main - INFO - 啟動 Database Manager Plus v1.0.0
+2025-05-29 16:12:20,666 - database_manager - INFO - 開始掃描資料庫...
+2025-05-29 16:12:20,787 - database_manager - INFO - 資料庫掃描完成: 3 產品, 10 批次, 1196 元件
+2025-05-29 16:12:20,799 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 16:12:26,387 - online_monitor - INFO - 在線處理已啟動
+2025-05-29 16:12:26,388 - online_monitor - INFO - 檔案監控已啟動
+2025-05-29 16:12:26,389 - online_monitor - WARNING - 調用scan_database時發生參數錯誤，嘗試不使用force參數: DatabaseManager.scan_database() got an unexpected keyword argument 'force'
+2025-05-29 16:12:26,389 - database_manager - INFO - 開始掃描資料庫...
+2025-05-29 16:12:26,507 - database_manager - INFO - 資料庫掃描完成: 3 產品, 10 批次, 1196 元件
+2025-05-29 16:12:26,519 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 16:12:26,523 - online_monitor - INFO - 創建新組件: WLPF40010001 (批次: WLPF400100, 站點: DC2)
+2025-05-29 16:12:26,527 - online_monitor - INFO - 資料庫重新掃描完成
+2025-05-29 16:12:26,536 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 16:12:26,537 - online_monitor - INFO - 檔案已加入佇列: D:\Database-PC\temp\processed_csv\WLPF400100\DC2\M1X60_WLPF40010001_202504141037.csv
+2025-05-29 16:12:26,550 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 16:12:26,551 - online_monitor - INFO - 檔案已加入佇列: D:\Database-PC\temp\processed_csv\WLPF400100\DC2\M1X60_WLPF40010003_202504141037.csv
+2025-05-29 16:12:26,564 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 16:12:26,564 - online_monitor - INFO - 檔案已加入佇列: D:\Database-PC\temp\processed_csv\WLPF400100\DC2\M1X60_WLPF40010004_202504141037.csv
+2025-05-29 16:12:26,577 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 16:12:26,577 - online_monitor - INFO - 檔案已加入佇列: D:\Database-PC\temp\processed_csv\WLPF400100\INNER1\M1X60_WLPF40010003_202504141037.csv
+2025-05-29 16:12:26,589 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 16:12:26,589 - online_monitor - INFO - 檔案已加入佇列: D:\Database-PC\temp\processed_csv\WLPF400100\INNER1\M1X60_WLPF40010003_202504141045.csv
+2025-05-29 16:12:26,602 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 16:12:26,603 - online_monitor - INFO - 檔案已加入佇列: D:\Database-PC\temp\processed_csv\WLPF400100\MT\M3X60_WLPF40010001_202504091051.csv
+2025-05-29 16:12:26,614 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 16:12:26,615 - online_monitor - INFO - 檔案已加入佇列: D:\Database-PC\temp\processed_csv\WLPF400100\MT\M3X60_WLPF40010003_202504091051.csv
+2025-05-29 16:12:26,628 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 16:12:26,628 - online_monitor - INFO - 檔案已加入佇列: D:\Database-PC\temp\processed_csv\WLPF400100\MT\M3X60_WLPF40010004_202504091051.csv
+2025-05-29 16:12:26,640 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 16:12:26,642 - online_monitor - INFO - 檔案已加入佇列: D:\Database-PC\temp\processed_csv\WLPF400100\MT\M3X60_WLPF40010006_202504091051.csv
+2025-05-29 16:12:26,655 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 16:12:26,655 - online_monitor - INFO - 檔案已加入佇列: D:\Database-PC\temp\processed_csv\WLPF500100\MT\M3X60_WLPF50010001_202504091051.csv
+2025-05-29 16:12:26,668 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 16:12:26,669 - online_monitor - INFO - 檔案已加入佇列: D:\Database-PC\temp\processed_csv\WLPF500100\MT\M3X60_WLPF50010002_202504091051.csv
+2025-05-29 16:12:26,682 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 16:12:26,683 - online_monitor - INFO - 檔案已加入佇列: D:\Database-PC\temp\processed_csv\WLPF500100\MT\M3X60_WLPF50010003_202504091051.csv
+2025-05-29 16:12:26,695 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 16:12:26,695 - online_monitor - INFO - 檔案已加入佇列: D:\Database-PC\temp\processed_csv\WLPF500100\MT\M3X60_WLPF50010004_202504091051.csv
+2025-05-29 16:12:27,380 - data_processor - INFO - 開始執行任務: bbe3fdb3-3182-4273-abcf-2ca6d3cd7e0c (basemap)
+2025-05-29 16:12:27,420 - data_processor - INFO - 檔案 M1X60_WLPF40010001_202504141037.csv 是原始格式，執行 step1~3
+2025-05-29 16:12:27,420 - data_processor - INFO - Step 1: 讀取元件 WLPF40010001 的config參數
+2025-05-29 16:12:27,421 - data_processor - INFO - Step 2: 執行 WLPF40010001 的原始CSV偏移確認
+2025-05-29 16:12:27,421 - data_utils - INFO - 在第 20 行找到標頭
+2025-05-29 16:12:27,522 - online_monitor - INFO - 在線處理已停止
+2025-05-29 16:12:27,539 - data_utils - WARNING - 找不到對齊點: Col=175, Row=96, DefectType=alignkey
+2025-05-29 16:12:27,545 - data_utils - WARNING - 找不到對齊點: Col=292, Row=96, DefectType=alignkey
+2025-05-29 16:12:27,550 - data_utils - WARNING - 找不到對齊點: Col=175, Row=369, DefectType=alignkey
+2025-05-29 16:12:27,554 - data_utils - WARNING - 找不到對齊點: Col=292, Row=369, DefectType=alignkey
+2025-05-29 16:12:27,594 - data_processor - INFO - 任務 bbe3fdb3-3182-4273-abcf-2ca6d3cd7e0c 已完成: False - CSV檔案偏移錯誤: 找不到任何對齊點，需要至少1個匹配
+2025-05-29 16:12:33,781 - data_processor - INFO - 開始執行任務: 105f44f1-26a1-433f-ba1e-e1e6edf8aa54 (lossmap)
+2025-05-29 16:12:33,831 - data_processor - INFO - Lossmap處理完成: 總計 0, 成功 0, 失敗 0
+2025-05-29 16:12:33,870 - data_processor - INFO - 任務 105f44f1-26a1-433f-ba1e-e1e6edf8aa54 已完成: True - 所有0個元件Lossmap已生成
+2025-05-29 16:12:43,926 - data_processor - INFO - 開始執行任務: 723d06dc-9d5c-4828-b21d-cd27e730b06a (lossmap)
+2025-05-29 16:12:43,960 - file_utils - WARNING - 標準讀取CSV失敗: D:\Database-PC\temp\processed_csv\WLPF400100\INNER1\M1X60_WLPF40010003_202504141045.csv, 嘗試替代方法...
+2025-05-29 16:12:44,052 - file_utils - INFO - 使用分隔符 ',' 成功讀取CSV: D:\Database-PC\temp\processed_csv\WLPF400100\INNER1\M1X60_WLPF40010003_202504141045.csv
+2025-05-29 16:12:44,054 - file_utils - WARNING - 標準讀取CSV失敗: D:\Database-PC\temp\processed_csv\WLPF400100\DC2\M1X60_WLPF40010003_202504141037.csv, 嘗試替代方法...
+2025-05-29 16:12:44,132 - file_utils - INFO - 使用分隔符 ',' 成功讀取CSV: D:\Database-PC\temp\processed_csv\WLPF400100\DC2\M1X60_WLPF40010003_202504141037.csv
+2025-05-29 16:12:44,132 - data_utils - ERROR - DataFrame 缺少 DefectType 欄位
+2025-05-29 16:12:44,133 - data_processor - ERROR - 生成Lossmap時發生錯誤: DataFrame 缺少 DefectType 欄位
+2025-05-29 16:12:44,162 - data_processor - INFO - 任務 723d06dc-9d5c-4828-b21d-cd27e730b06a 已完成: False - 生成失敗: DataFrame 缺少 DefectType 欄位
+2025-05-29 16:13:04,666 - database_manager - INFO - 開始掃描資料庫...
+2025-05-29 16:13:04,793 - database_manager - INFO - 資料庫掃描完成: 3 產品, 10 批次, 1196 元件
+2025-05-29 16:13:04,805 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 16:13:07,740 - data_processor - INFO - 開始執行任務: 7bc11e22-9d9c-4558-951a-e12f9f38dbce (lossmap)
+2025-05-29 16:13:08,399 - data_utils - INFO - 成功生成損失地圖: D:\Database-PC\temp\map\WLPF400100\LOSS2\WLPF40010003.png
+2025-05-29 16:13:08,413 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 16:13:08,415 - file_utils - WARNING - 標準讀取CSV失敗: D:\Database-PC\temp\processed_csv\WLPF400100\INNER1\M1X60_WLPF40010003_202504141037.csv, 嘗試替代方法...
+2025-05-29 16:13:08,493 - file_utils - INFO - 使用分隔符 ',' 成功讀取CSV: D:\Database-PC\temp\processed_csv\WLPF400100\INNER1\M1X60_WLPF40010003_202504141037.csv
+2025-05-29 16:13:08,499 - file_utils - WARNING - 標準讀取CSV失敗: D:\Database-PC\temp\processed_csv\WLPF400100\DC2\M1X60_WLPF40010003_202504141037.csv, 嘗試替代方法...
+2025-05-29 16:13:08,573 - file_utils - INFO - 使用分隔符 ',' 成功讀取CSV: D:\Database-PC\temp\processed_csv\WLPF400100\DC2\M1X60_WLPF40010003_202504141037.csv
+2025-05-29 16:13:08,578 - data_utils - ERROR - DataFrame 缺少 DefectType 欄位
+2025-05-29 16:13:08,580 - data_processor - ERROR - 生成Lossmap時發生錯誤: DataFrame 缺少 DefectType 欄位
+2025-05-29 16:13:08,614 - data_processor - INFO - 任務 7bc11e22-9d9c-4558-951a-e12f9f38dbce 已完成: False - 生成失敗: DataFrame 缺少 DefectType 欄位
+2025-05-29 16:13:27,234 - data_processor - INFO - 開始執行任務: ee00eaa2-0edc-4ee9-b134-1f98c89067d0 (fpy_parallel)
+2025-05-29 16:13:27,269 - file_utils - WARNING - 標準讀取CSV失敗: D:\Database-PC\temp\processed_csv\WLPF400100\INNER1\M1X60_WLPF40010003_202504141045.csv, 嘗試替代方法...
+2025-05-29 16:13:27,270 - file_utils - WARNING - 標準讀取CSV失敗: D:\Database-PC\temp\processed_csv\WLPF400100\INNER1\M1X60_WLPF40010003_202504141037.csv, 嘗試替代方法...
+2025-05-29 16:13:27,381 - file_utils - INFO - 使用分隔符 ',' 成功讀取CSV: D:\Database-PC\temp\processed_csv\WLPF400100\INNER1\M1X60_WLPF40010003_202504141045.csv
+2025-05-29 16:13:27,383 - file_utils - INFO - 使用分隔符 ',' 成功讀取CSV: D:\Database-PC\temp\processed_csv\WLPF400100\INNER1\M1X60_WLPF40010003_202504141037.csv
+2025-05-29 16:13:27,383 - data_utils - ERROR - DataFrame 缺少 DefectType 欄位
+2025-05-29 16:13:27,383 - data_utils - ERROR - DataFrame 缺少 DefectType 欄位
+2025-05-29 16:13:27,384 - data_processor - ERROR - 處理元件 M1X60_WLPF40010003_202504141045 FPY時發生錯誤: DataFrame 缺少 DefectType 欄位
+2025-05-29 16:13:27,384 - data_processor - ERROR - 處理元件 M1X60_WLPF40010003_202504141037 FPY時發生錯誤: DataFrame 缺少 DefectType 欄位
+2025-05-29 16:13:29,493 - data_utils - INFO - 成功生成FPY地圖: D:\Database-PC\temp\map\WLPF400100\FPY\WLPF40010003.png
+2025-05-29 16:13:29,511 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 16:13:29,514 - file_utils - INFO - 成功保存CSV檔案: D:\Database-PC\temp\map\WLPF400100\FPY\summary_INNER1.csv
+2025-05-29 16:13:29,547 - data_utils - INFO - 成功生成FPY長條圖: D:\Database-PC\temp\map\WLPF400100\FPY\summary_INNER1.png
+2025-05-29 16:13:29,547 - data_processor - INFO - FPY並行處理完成: 總計 3, 成功 1, 失敗 2
+2025-05-29 16:13:29,571 - data_processor - INFO - 任務 ee00eaa2-0edc-4ee9-b134-1f98c89067d0 已完成: True - 部分完成: 1/3個元件FPY已生成
+2025-05-29 16:30:34,141 - database_manager - INFO - 已載入資料庫快取: 3 產品, 10 批次, 1196 元件
+2025-05-29 16:30:34,191 - online_monitor - INFO - 檔案監控已設置：掃描間隔=5秒，重新掃描間隔=60秒
+2025-05-29 16:30:34,212 - main - INFO - 日誌系統已初始化
+2025-05-29 16:30:34,212 - config_manager - INFO - 成功載入配置文件: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\config\settings.json
+2025-05-29 16:30:34,212 - database_manager - WARNING - 站點順序驗證失敗: 未配置的站點: {'CU', 'LOSS2', 'LOSS3', 'FPY', 'LOSS4', 'LOSS1', 'LOSS5', 'LOSS6'}, 缺失的站點: set()
+2025-05-29 16:30:34,212 - main - WARNING - 站點順序配置驗證失敗: {'status': False, 'station_order': ['MT', 'DC2', 'INNER1', 'RDL', 'INNER2', 'EMC'], 'all_stations_in_db': ['DC2', 'CU', 'LOSS2', 'FPY', 'LOSS3', 'RDL', 'LOSS4', 'INNER1', 'MT', 'LOSS1', 'LOSS5', 'INNER2', 'LOSS6', 'EMC'], 'unconfigured_stations': ['CU', 'LOSS2', 'LOSS3', 'FPY', 'LOSS4', 'LOSS1', 'LOSS5', 'LOSS6'], 'missing_stations': []}
+2025-05-29 16:30:34,271 - qdarkstyle - INFO - QSS file successfully loaded.
+2025-05-29 16:30:34,305 - qdarkstyle - INFO - Found application patches to be applied.
+2025-05-29 16:30:34,306 - main - INFO - 已載入深色主題樣式
+2025-05-29 16:30:34,377 - main - INFO - 啟動 Database Manager Plus v1.0.0
+2025-05-29 16:30:38,609 - data_processor - INFO - 開始執行任務: 0726eb5b-473f-4377-a17e-83fa37e78944 (lossmap)
+2025-05-29 16:30:39,227 - data_utils - INFO - 成功生成損失地圖: D:\Database-PC\temp\map\WLPF400100\LOSS2\WLPF40010003.png
+2025-05-29 16:30:39,242 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 16:30:39,244 - file_utils - WARNING - 標準讀取CSV失敗: D:\Database-PC\temp\processed_csv\WLPF400100\INNER1\M1X60_WLPF40010003_202504141037.csv, 嘗試替代方法...
+2025-05-29 16:30:39,326 - file_utils - INFO - 使用分隔符 ',' 成功讀取CSV: D:\Database-PC\temp\processed_csv\WLPF400100\INNER1\M1X60_WLPF40010003_202504141037.csv
+2025-05-29 16:30:39,330 - file_utils - WARNING - 標準讀取CSV失敗: D:\Database-PC\temp\processed_csv\WLPF400100\DC2\M1X60_WLPF40010003_202504141037.csv, 嘗試替代方法...
+2025-05-29 16:30:39,405 - file_utils - INFO - 使用分隔符 ',' 成功讀取CSV: D:\Database-PC\temp\processed_csv\WLPF400100\DC2\M1X60_WLPF40010003_202504141037.csv
+2025-05-29 16:30:39,408 - data_utils - ERROR - DataFrame 缺少 DefectType 欄位
+2025-05-29 16:30:39,408 - data_processor - ERROR - 生成Lossmap時發生錯誤: DataFrame 缺少 DefectType 欄位
+2025-05-29 16:30:39,432 - data_processor - INFO - 任務 0726eb5b-473f-4377-a17e-83fa37e78944 已完成: False - 生成失敗: DataFrame 缺少 DefectType 欄位
+2025-05-29 16:50:02,387 - database_manager - INFO - 已載入資料庫快取: 3 產品, 10 批次, 1196 元件
+2025-05-29 16:50:02,460 - online_monitor - INFO - 檔案監控已設置：掃描間隔=5秒，重新掃描間隔=60秒
+2025-05-29 16:50:02,478 - main - INFO - 日誌系統已初始化
+2025-05-29 16:50:02,478 - config_manager - INFO - 成功載入配置文件: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\config\settings.json
+2025-05-29 16:50:02,479 - database_manager - WARNING - 站點順序驗證失敗: 未配置的站點: {'LOSS3', 'LOSS2', 'LOSS6', 'CU', 'FPY', 'LOSS4', 'LOSS5', 'LOSS1'}, 缺失的站點: set()
+2025-05-29 16:50:02,479 - main - WARNING - 站點順序配置驗證失敗: {'status': False, 'station_order': ['MT', 'DC2', 'INNER1', 'RDL', 'INNER2', 'EMC'], 'all_stations_in_db': ['RDL', 'EMC', 'LOSS6', 'LOSS2', 'LOSS3', 'DC2', 'CU', 'MT', 'FPY', 'INNER2', 'INNER1', 'LOSS4', 'LOSS5', 'LOSS1'], 'unconfigured_stations': ['LOSS3', 'LOSS2', 'LOSS6', 'CU', 'FPY', 'LOSS4', 'LOSS5', 'LOSS1'], 'missing_stations': []}
+2025-05-29 16:50:02,538 - qdarkstyle - INFO - QSS file successfully loaded.
+2025-05-29 16:50:02,575 - qdarkstyle - INFO - Found application patches to be applied.
+2025-05-29 16:50:02,576 - main - INFO - 已載入深色主題樣式
+2025-05-29 16:50:02,656 - main - INFO - 啟動 Database Manager Plus v1.0.0
+2025-05-29 16:50:12,069 - data_processor - INFO - 開始執行任務: e00ea2ce-6723-40d9-ace3-e5b1b0d15816 (lossmap)
+2025-05-29 16:50:12,115 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141022_PC2
+2025-05-29 16:50:12,116 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141022_PC4
+2025-05-29 16:50:12,116 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141023_PC1
+2025-05-29 16:50:12,116 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141026_PC3
+2025-05-29 16:50:12,117 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141026_PC4
+2025-05-29 16:50:12,117 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141027_PC1
+2025-05-29 16:50:12,117 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141027_PC2
+2025-05-29 16:50:12,117 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141031_PC3
+2025-05-29 16:50:12,117 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141031_PC2
+2025-05-29 16:50:12,117 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141031_PC4
+2025-05-29 16:50:12,118 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141032_PC1
+2025-05-29 16:50:12,118 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141035_PC3
+2025-05-29 16:50:12,748 - data_utils - INFO - 成功生成損失地圖: D:\Database-PC\temp\map\WLPF400100\LOSS1\WLPF40010003.png
+2025-05-29 16:50:12,760 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 16:50:13,374 - data_utils - INFO - 成功生成損失地圖: D:\Database-PC\temp\map\WLPF400100\LOSS1\WLPF40010004.png
+2025-05-29 16:50:13,386 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 16:50:13,386 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010001_202504141037
+2025-05-29 16:50:13,386 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010003_202504141037
+2025-05-29 16:50:13,387 - data_processor - WARNING - 找不到前站(MT)對應的元件: M1X60_WLPF40010004_202504141037
+2025-05-29 16:50:13,387 - data_processor - INFO - Lossmap處理完成: 總計 17, 成功 2, 失敗 15
+2025-05-29 16:50:13,422 - data_processor - INFO - 任務 e00ea2ce-6723-40d9-ace3-e5b1b0d15816 已完成: True - 部分完成: 2/17個元件Lossmap已生成
+2025-05-29 16:50:39,748 - data_processor - INFO - 開始執行任務: 4ed17c29-3451-4265-9655-ab5071752b22 (fpy_parallel)
+2025-05-29 16:50:39,775 - data_processor - WARNING - 跳過非處理後格式的CSV: M1X60_WLPF40010001_202504141022_PC2.csv
+2025-05-29 16:50:39,775 - data_processor - WARNING - 跳過非處理後格式的CSV: M1X60_WLPF40010001_202504141022_PC4.csv
+2025-05-29 16:50:39,776 - data_processor - WARNING - 跳過非處理後格式的CSV: M1X60_WLPF40010001_202504141023_PC1.csv
+2025-05-29 16:50:39,778 - data_processor - WARNING - 跳過非處理後格式的CSV: M1X60_WLPF40010003_202504141026_PC4.csv
+2025-05-29 16:50:39,778 - data_processor - WARNING - 跳過非處理後格式的CSV: M1X60_WLPF40010001_202504141026_PC3.csv
+2025-05-29 16:50:39,778 - data_processor - WARNING - 跳過非處理後格式的CSV: M1X60_WLPF40010003_202504141027_PC1.csv
+2025-05-29 16:50:39,778 - data_processor - WARNING - 跳過非處理後格式的CSV: M1X60_WLPF40010003_202504141031_PC3.csv
+2025-05-29 16:50:39,778 - data_processor - WARNING - 跳過非處理後格式的CSV: M1X60_WLPF40010003_202504141027_PC2.csv
+2025-05-29 16:50:39,779 - data_processor - WARNING - 跳過非處理後格式的CSV: M1X60_WLPF40010004_202504141031_PC2.csv
+2025-05-29 16:50:39,779 - data_processor - WARNING - 跳過非處理後格式的CSV: M1X60_WLPF40010004_202504141031_PC4.csv
+2025-05-29 16:50:39,779 - data_processor - WARNING - 跳過非處理後格式的CSV: M1X60_WLPF40010004_202504141032_PC1.csv
+2025-05-29 16:50:39,779 - data_processor - WARNING - 跳過非處理後格式的CSV: M1X60_WLPF40010004_202504141035_PC3.csv
+2025-05-29 16:50:39,780 - data_processor - WARNING - 跳過非處理後格式的CSV: M1X60_WLPF40010001_202504141037.csv
+2025-05-29 16:50:39,780 - data_processor - WARNING - 跳過非處理後格式的CSV: M1X60_WLPF40010003_202504141037.csv
+2025-05-29 16:50:39,781 - data_processor - WARNING - 跳過非處理後格式的CSV: M1X60_WLPF40010004_202504141037.csv
+2025-05-29 16:50:42,937 - data_utils - INFO - 成功生成FPY地圖: D:\Database-PC\temp\map\WLPF400100\FPY\WLPF40010004.png
+2025-05-29 16:50:43,888 - data_utils - INFO - 成功生成FPY地圖: D:\Database-PC\temp\map\WLPF400100\FPY\WLPF40010003.png
+2025-05-29 16:50:43,908 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 16:50:43,921 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 16:50:43,923 - file_utils - INFO - 成功保存CSV檔案: D:\Database-PC\temp\map\WLPF400100\FPY\summary_DC2.csv
+2025-05-29 16:50:43,960 - data_utils - INFO - 成功生成FPY長條圖: D:\Database-PC\temp\map\WLPF400100\FPY\summary_DC2.png
+2025-05-29 16:50:43,961 - data_processor - INFO - FPY並行處理完成: 總計 17, 成功 2, 失敗 15
+2025-05-29 16:50:43,987 - data_processor - INFO - 任務 4ed17c29-3451-4265-9655-ab5071752b22 已完成: True - 部分完成: 2/17個元件FPY已生成
+2025-05-29 16:51:00,516 - data_processor - INFO - 開始執行任務: 2e546e38-4dc7-4517-9a23-527e5991efe7 (fpy_parallel)
+2025-05-29 16:51:00,543 - data_processor - WARNING - 跳過非處理後格式的CSV: M1X60_WLPF40010003_202504141037.csv
+2025-05-29 16:51:00,543 - data_processor - WARNING - 跳過非處理後格式的CSV: M1X60_WLPF40010003_202504141045.csv
+2025-05-29 16:51:03,037 - data_utils - INFO - 成功生成FPY地圖: D:\Database-PC\temp\map\WLPF400100\FPY\WLPF40010003.png
+2025-05-29 16:51:03,055 - database_manager - INFO - 已保存資料庫快取: C:\Users\Administrator\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-05-29 16:51:03,057 - file_utils - INFO - 成功保存CSV檔案: D:\Database-PC\temp\map\WLPF400100\FPY\summary_INNER1.csv
+2025-05-29 16:51:03,090 - data_utils - INFO - 成功生成FPY長條圖: D:\Database-PC\temp\map\WLPF400100\FPY\summary_INNER1.png
+2025-05-29 16:51:03,090 - data_processor - INFO - FPY並行處理完成: 總計 3, 成功 1, 失敗 2
+2025-05-29 16:51:03,114 - data_processor - INFO - 任務 2e546e38-4dc7-4517-9a23-527e5991efe7 已完成: True - 部分完成: 1/3個元件FPY已生成
