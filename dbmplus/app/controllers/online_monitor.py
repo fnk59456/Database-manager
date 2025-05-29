@@ -111,17 +111,21 @@ class FileWatcher(QThread):
     """檔案監控執行緒，監控目錄中的新CSV檔案"""
     file_found = Signal(str, str, str, str)  # 產品ID, 批次ID, 站點, 檔案路徑
     
-    def __init__(self, scan_interval: int = 5, rescan_interval: int = 30):
+    def __init__(self, scan_interval: int = None, rescan_interval: int = None):
         """
         初始化檔案監控器
         
         Args:
-            scan_interval: 掃描間隔（秒）
-            rescan_interval: 重新掃描資料庫間隔（秒）
+            scan_interval: 掃描間隔（秒），如果為None則從設定讀取
+            rescan_interval: 重新掃描資料庫間隔（秒），如果為None則從設定讀取
         """
         super().__init__()
-        self.scan_interval = scan_interval
-        self.rescan_interval = rescan_interval
+        # 從設定檔讀取掃描間隔，如果未設定則使用默認值
+        self.scan_interval = scan_interval if scan_interval is not None else config.get("monitoring.scan_interval", 5)
+        self.rescan_interval = rescan_interval if rescan_interval is not None else config.get("monitoring.rescan_interval", 30)
+        
+        logger.info(f"檔案監控已設置：掃描間隔={self.scan_interval}秒，重新掃描間隔={self.rescan_interval}秒")
+        
         self.running = False
         self.monitored_dirs = []  # 監控的目錄列表
         self.processed_files = set()  # 已處理檔案集合
@@ -142,11 +146,28 @@ class FileWatcher(QThread):
         
         # 設置初始的last_rescan_time
         self.last_rescan_time = time.time()
+        last_config_check = time.time()  # 上次檢查配置的時間
+        config_check_interval = 60  # 每60秒檢查一次配置更新
         
         while self.running:
             try:
-                # 檢查是否需要重新掃描資料庫
+                # 檢查是否需要更新配置設置
                 current_time = time.time()
+                if current_time - last_config_check >= config_check_interval:
+                    # 從配置中重新讀取掃描間隔設置
+                    new_scan_interval = config.get("monitoring.scan_interval", 5)
+                    new_rescan_interval = config.get("monitoring.rescan_interval", 30)
+                    
+                    # 如果設置已更改，則更新並記錄
+                    if new_scan_interval != self.scan_interval or new_rescan_interval != self.rescan_interval:
+                        logger.info(f"檢測到掃描設置變更: 掃描間隔 {self.scan_interval}→{new_scan_interval}秒, "
+                                   f"重新掃描間隔 {self.rescan_interval}→{new_rescan_interval}秒")
+                        self.scan_interval = new_scan_interval
+                        self.rescan_interval = new_rescan_interval
+                    
+                    last_config_check = current_time
+                
+                # 檢查是否需要重新掃描資料庫
                 elapsed_time = current_time - self.last_rescan_time
                 
                 if elapsed_time >= self.rescan_interval:
@@ -261,7 +282,7 @@ class OnlineProcessManager(QObject):
         super().__init__()
         self.processing_queue = Queue()  # 處理佇列
         self.processing_logs = []  # 處理日誌列表
-        self.file_watcher = FileWatcher()  # 檔案監控器
+        self.file_watcher = FileWatcher()  # 檔案監控器（使用配置中的設置）
         self.max_concurrent_tasks = max_concurrent_tasks
         self.current_tasks = 0
         self.is_running = False

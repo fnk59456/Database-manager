@@ -10,6 +10,11 @@
             "org": "{base_path}/{product}/org/{lot}/{station}/{component}"
         }
     },
+    "monitoring": {
+        "scan_interval": 5,
+        "rescan_interval": 60,
+        "enable_debug_logs": false
+    },
     "processing": {
         "station_order": [
             "MT",
