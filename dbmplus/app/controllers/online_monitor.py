@@ -111,7 +111,7 @@ class FileWatcher(QThread):
     """檔案監控執行緒，監控目錄中的新CSV檔案"""
     file_found = Signal(str, str, str, str)  # 產品ID, 批次ID, 站點, 檔案路徑
     
-    def __init__(self, scan_interval: int = 5, rescan_interval: int = 10):
+    def __init__(self, scan_interval: int = 5, rescan_interval: int = 30):
         """
         初始化檔案監控器
         
@@ -150,7 +150,7 @@ class FileWatcher(QThread):
                 elapsed_time = current_time - self.last_rescan_time
                 
                 if elapsed_time >= self.rescan_interval:
-                    logger.info(f"執行定期資料庫重新掃描...（距上次掃描: {elapsed_time:.1f}秒）")
+                    #logger.info(f"執行定期資料庫重新掃描...（距上次掃描: {elapsed_time:.1f}秒）")
                     self._rescan_database()
                     self.last_rescan_time = time.time()  # 更新為當前時間
                 else:

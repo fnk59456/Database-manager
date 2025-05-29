@@ -4411,3 +4411,524 @@
 2025-05-29 10:16:14,358 - data_processor - INFO - Step 4: 為 WLPF50010004 生成Basemap
 2025-05-29 10:16:15,107 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010004.png
 2025-05-29 10:16:15,144 - data_processor - INFO - 任務 3bd07ba5-7c2c-4561-82f4-ad8ac4635023 已完成: True - D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010004.png
+2025-05-29 10:30:12,884 - data_processor - INFO - 開始執行任務: e3e56d5d-6d30-4557-94d8-604fdb265444 (basemap)
+2025-05-29 10:30:12,923 - data_processor - INFO - 檔案 M1X60_WLPF40010001_202504141037.csv 是原始格式，執行 step1~3
+2025-05-29 10:30:12,924 - data_processor - INFO - Step 1: 讀取元件 WLPF40010001 的config參數
+2025-05-29 10:30:12,924 - data_processor - INFO - Step 2: 執行 WLPF40010001 的原始CSV偏移確認
+2025-05-29 10:30:13,094 - data_processor - INFO - 任務 e3e56d5d-6d30-4557-94d8-604fdb265444 已完成: False - CSV檔案偏移錯誤: 找不到任何對齊點，需要至少1個匹配
+2025-05-29 10:30:13,892 - data_processor - INFO - 開始執行任務: af1bd8e7-47eb-4879-9aeb-35d75ba1cbe9 (basemap)
+2025-05-29 10:30:13,932 - data_processor - INFO - 檔案 M1X60_WLPF40010003_202504141037.csv 是原始格式，執行 step1~3
+2025-05-29 10:30:13,932 - data_processor - INFO - Step 1: 讀取元件 WLPF40010003 的config參數
+2025-05-29 10:30:13,933 - data_processor - INFO - Step 2: 執行 WLPF40010003 的原始CSV偏移確認
+2025-05-29 10:30:14,061 - data_processor - INFO - Step 3: 處理 WLPF40010003 的CSV標頭
+2025-05-29 10:30:14,517 - data_processor - INFO - Step 4: 為 WLPF40010003 生成Basemap
+2025-05-29 10:30:14,885 - data_processor - INFO - 開始執行任務: 0fa692ab-55d8-4883-b0d3-4629e02c4b28 (basemap)
+2025-05-29 10:30:14,926 - data_processor - INFO - 檔案 M1X60_WLPF40010004_202504141037.csv 是原始格式，執行 step1~3
+2025-05-29 10:30:14,927 - data_processor - INFO - Step 1: 讀取元件 WLPF40010004 的config參數
+2025-05-29 10:30:15,022 - data_processor - INFO - Step 2: 執行 WLPF40010004 的原始CSV偏移確認
+2025-05-29 10:30:15,164 - data_processor - INFO - Step 3: 處理 WLPF40010004 的CSV標頭
+2025-05-29 10:30:15,685 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010003.png
+2025-05-29 10:30:15,724 - data_processor - INFO - 任務 af1bd8e7-47eb-4879-9aeb-35d75ba1cbe9 已完成: True - D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010003.png
+2025-05-29 10:30:15,817 - data_processor - INFO - Step 4: 為 WLPF40010004 生成Basemap
+2025-05-29 10:30:15,880 - data_processor - INFO - 開始執行任務: a377517f-b9d1-4538-a041-3549bc7f23a3 (basemap)
+2025-05-29 10:30:15,909 - data_processor - INFO - 檔案 M1X60_WLPF40010003_202504141045.csv 是原始格式，執行 step1~3
+2025-05-29 10:30:15,909 - data_processor - INFO - Step 1: 讀取元件 WLPF40010003 的config參數
+2025-05-29 10:30:15,910 - data_processor - INFO - Step 2: 執行 WLPF40010003 的原始CSV偏移確認
+2025-05-29 10:30:16,208 - data_processor - INFO - Step 3: 處理 WLPF40010003 的CSV標頭
+2025-05-29 10:30:16,848 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010004.png
+2025-05-29 10:30:16,883 - data_processor - INFO - 任務 0fa692ab-55d8-4883-b0d3-4629e02c4b28 已完成: True - D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010004.png
+2025-05-29 10:30:17,000 - data_processor - INFO - Step 4: 為 WLPF40010003 生成Basemap
+2025-05-29 10:30:17,690 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\INNER1\WLPF40010003.png
+2025-05-29 10:30:17,725 - data_processor - INFO - 任務 a377517f-b9d1-4538-a041-3549bc7f23a3 已完成: True - D:\Database-PC\temp\map\WLPF400100\INNER1\WLPF40010003.png
+2025-05-29 10:30:17,883 - data_processor - INFO - 開始執行任務: 0e43a4a5-1914-400d-aa50-45072bee1a3a (basemap)
+2025-05-29 10:30:17,917 - data_processor - INFO - Step 4: 為 WLPF40010003 生成Basemap
+2025-05-29 10:30:18,619 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\INNER1\WLPF40010003.png
+2025-05-29 10:30:18,652 - data_processor - INFO - 任務 0e43a4a5-1914-400d-aa50-45072bee1a3a 已完成: True - D:\Database-PC\temp\map\WLPF400100\INNER1\WLPF40010003.png
+2025-05-29 10:30:18,894 - data_processor - INFO - 開始執行任務: 99f54468-aa37-42d7-8091-3340910df287 (basemap)
+2025-05-29 10:30:18,927 - data_processor - INFO - 檔案 M3X60_WLPF40010001_202504091051.csv 是原始格式，執行 step1~3
+2025-05-29 10:30:18,927 - data_processor - INFO - Step 1: 讀取元件 WLPF40010001 的config參數
+2025-05-29 10:30:18,927 - data_processor - INFO - Step 2: 執行 WLPF40010001 的原始CSV偏移確認
+2025-05-29 10:30:19,046 - data_processor - INFO - Step 3: 處理 WLPF40010001 的CSV標頭
+2025-05-29 10:30:19,479 - data_processor - INFO - Step 4: 為 WLPF40010001 生成Basemap
+2025-05-29 10:30:19,918 - data_processor - INFO - 開始執行任務: 90d10130-c932-4e13-9e98-a8ac30404c54 (basemap)
+2025-05-29 10:30:19,959 - data_processor - INFO - 檔案 M3X60_WLPF40010003_202504091051.csv 是原始格式，執行 step1~3
+2025-05-29 10:30:19,960 - data_processor - INFO - Step 1: 讀取元件 WLPF40010003 的config參數
+2025-05-29 10:30:19,970 - data_processor - INFO - Step 2: 執行 WLPF40010003 的原始CSV偏移確認
+2025-05-29 10:30:20,236 - data_processor - INFO - Step 3: 處理 WLPF40010003 的CSV標頭
+2025-05-29 10:30:20,284 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010001.png
+2025-05-29 10:30:20,317 - data_processor - INFO - 任務 99f54468-aa37-42d7-8091-3340910df287 已完成: True - D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010001.png
+2025-05-29 10:30:20,745 - data_processor - INFO - Step 4: 為 WLPF40010003 生成Basemap
+2025-05-29 10:30:20,890 - data_processor - INFO - 開始執行任務: 34838080-1ad6-447a-9623-d776d7e0543a (basemap)
+2025-05-29 10:30:20,931 - data_processor - INFO - 檔案 M3X60_WLPF40010004_202504091051.csv 是原始格式，執行 step1~3
+2025-05-29 10:30:20,932 - data_processor - INFO - Step 1: 讀取元件 WLPF40010004 的config參數
+2025-05-29 10:30:20,933 - data_processor - INFO - Step 2: 執行 WLPF40010004 的原始CSV偏移確認
+2025-05-29 10:30:21,362 - data_processor - INFO - Step 3: 處理 WLPF40010004 的CSV標頭
+2025-05-29 10:30:21,580 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010003.png
+2025-05-29 10:30:21,614 - data_processor - INFO - 任務 90d10130-c932-4e13-9e98-a8ac30404c54 已完成: True - D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010003.png
+2025-05-29 10:30:21,879 - data_processor - INFO - 開始執行任務: 3afad823-9184-43c6-9d33-0a03e1c35a5e (basemap)
+2025-05-29 10:30:21,913 - data_processor - INFO - 檔案 M3X60_WLPF40010006_202504091051.csv 是原始格式，執行 step1~3
+2025-05-29 10:30:21,914 - data_processor - INFO - Step 1: 讀取元件 WLPF40010006 的config參數
+2025-05-29 10:30:21,917 - data_processor - INFO - Step 2: 執行 WLPF40010006 的原始CSV偏移確認
+2025-05-29 10:30:22,029 - data_processor - INFO - Step 4: 為 WLPF40010004 生成Basemap
+2025-05-29 10:30:22,098 - data_processor - INFO - Step 3: 處理 WLPF40010006 的CSV標頭
+2025-05-29 10:30:22,920 - data_processor - INFO - Step 4: 為 WLPF40010006 生成Basemap
+2025-05-29 10:30:23,213 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010004.png
+2025-05-29 10:30:23,254 - data_processor - INFO - 任務 34838080-1ad6-447a-9623-d776d7e0543a 已完成: True - D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010004.png
+2025-05-29 10:30:23,813 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010006.png
+2025-05-29 10:30:23,844 - data_processor - INFO - 任務 3afad823-9184-43c6-9d33-0a03e1c35a5e 已完成: True - D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010006.png
+2025-05-29 10:30:23,887 - data_processor - INFO - 開始執行任務: 32e1c724-0d6d-45b1-a9d7-4e93abd5a151 (basemap)
+2025-05-29 10:30:23,919 - data_processor - INFO - 檔案 M3X60_WLPF50010001_202504091051.csv 是原始格式，執行 step1~3
+2025-05-29 10:30:23,919 - data_processor - INFO - Step 1: 讀取元件 WLPF50010001 的config參數
+2025-05-29 10:30:23,920 - data_processor - INFO - Step 2: 執行 WLPF50010001 的原始CSV偏移確認
+2025-05-29 10:30:24,045 - data_processor - INFO - Step 3: 處理 WLPF50010001 的CSV標頭
+2025-05-29 10:30:24,470 - data_processor - INFO - Step 4: 為 WLPF50010001 生成Basemap
+2025-05-29 10:30:24,920 - data_processor - INFO - 開始執行任務: 042367c7-63f0-4c6b-86e6-3d1d12c92734 (basemap)
+2025-05-29 10:30:24,962 - data_processor - INFO - 檔案 M3X60_WLPF50010002_202504091051.csv 是原始格式，執行 step1~3
+2025-05-29 10:30:24,963 - data_processor - INFO - Step 1: 讀取元件 WLPF50010002 的config參數
+2025-05-29 10:30:24,964 - data_processor - INFO - Step 2: 執行 WLPF50010002 的原始CSV偏移確認
+2025-05-29 10:30:25,239 - data_processor - INFO - Step 3: 處理 WLPF50010002 的CSV標頭
+2025-05-29 10:30:25,266 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010001.png
+2025-05-29 10:30:25,300 - data_processor - INFO - 任務 32e1c724-0d6d-45b1-a9d7-4e93abd5a151 已完成: True - D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010001.png
+2025-05-29 10:30:25,732 - data_processor - INFO - Step 4: 為 WLPF50010002 生成Basemap
+2025-05-29 10:30:25,894 - data_processor - INFO - 開始執行任務: f89ade80-dbfd-4d1c-9812-b3b5a7394078 (basemap)
+2025-05-29 10:30:25,932 - data_processor - INFO - 檔案 M3X60_WLPF50010003_202504091051.csv 是原始格式，執行 step1~3
+2025-05-29 10:30:25,933 - data_processor - INFO - Step 1: 讀取元件 WLPF50010003 的config參數
+2025-05-29 10:30:25,933 - data_processor - INFO - Step 2: 執行 WLPF50010003 的原始CSV偏移確認
+2025-05-29 10:30:26,356 - data_processor - INFO - Step 3: 處理 WLPF50010003 的CSV標頭
+2025-05-29 10:30:26,578 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010002.png
+2025-05-29 10:30:26,611 - data_processor - INFO - 任務 042367c7-63f0-4c6b-86e6-3d1d12c92734 已完成: True - D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010002.png
+2025-05-29 10:30:26,883 - data_processor - INFO - 開始執行任務: 3c0d096e-a409-4656-a4e8-a3958aa66070 (basemap)
+2025-05-29 10:30:26,915 - data_processor - INFO - 檔案 M3X60_WLPF50010004_202504091051.csv 是原始格式，執行 step1~3
+2025-05-29 10:30:26,915 - data_processor - INFO - Step 1: 讀取元件 WLPF50010004 的config參數
+2025-05-29 10:30:26,919 - data_processor - INFO - Step 2: 執行 WLPF50010004 的原始CSV偏移確認
+2025-05-29 10:30:27,019 - data_processor - INFO - Step 4: 為 WLPF50010003 生成Basemap
+2025-05-29 10:30:27,103 - data_processor - INFO - Step 3: 處理 WLPF50010004 的CSV標頭
+2025-05-29 10:30:27,916 - data_processor - INFO - Step 4: 為 WLPF50010004 生成Basemap
+2025-05-29 10:30:28,187 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010003.png
+2025-05-29 10:30:28,222 - data_processor - INFO - 任務 f89ade80-dbfd-4d1c-9812-b3b5a7394078 已完成: True - D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010003.png
+2025-05-29 10:30:28,835 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010004.png
+2025-05-29 10:30:28,866 - data_processor - INFO - 任務 3c0d096e-a409-4656-a4e8-a3958aa66070 已完成: True - D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010004.png
+2025-05-29 10:30:46,739 - data_processor - INFO - 開始執行任務: b7aa7c69-5b7f-4b2f-8516-b0977b44127d (basemap)
+2025-05-29 10:30:46,774 - data_processor - INFO - 檔案 M1X60_WLPF40010001_202504141037.csv 是原始格式，執行 step1~3
+2025-05-29 10:30:46,775 - data_processor - INFO - Step 1: 讀取元件 WLPF40010001 的config參數
+2025-05-29 10:30:46,775 - data_processor - INFO - Step 2: 執行 WLPF40010001 的原始CSV偏移確認
+2025-05-29 10:30:46,943 - data_processor - INFO - 任務 b7aa7c69-5b7f-4b2f-8516-b0977b44127d 已完成: False - CSV檔案偏移錯誤: 找不到任何對齊點，需要至少1個匹配
+2025-05-29 10:30:47,746 - data_processor - INFO - 開始執行任務: ba4d6f7c-6f3f-409f-893c-c7bc46717cff (basemap)
+2025-05-29 10:30:47,784 - data_processor - INFO - 檔案 M1X60_WLPF40010003_202504141037.csv 是原始格式，執行 step1~3
+2025-05-29 10:30:47,784 - data_processor - INFO - Step 1: 讀取元件 WLPF40010003 的config參數
+2025-05-29 10:30:47,784 - data_processor - INFO - Step 2: 執行 WLPF40010003 的原始CSV偏移確認
+2025-05-29 10:30:47,917 - data_processor - INFO - Step 3: 處理 WLPF40010003 的CSV標頭
+2025-05-29 10:30:48,364 - data_processor - INFO - Step 4: 為 WLPF40010003 生成Basemap
+2025-05-29 10:30:48,745 - data_processor - INFO - 開始執行任務: a8a0cbf2-822e-4160-9945-9d6d0ba8efde (basemap)
+2025-05-29 10:30:48,791 - data_processor - INFO - 檔案 M1X60_WLPF40010004_202504141037.csv 是原始格式，執行 step1~3
+2025-05-29 10:30:48,867 - data_processor - INFO - Step 1: 讀取元件 WLPF40010004 的config參數
+2025-05-29 10:30:48,872 - data_processor - INFO - Step 2: 執行 WLPF40010004 的原始CSV偏移確認
+2025-05-29 10:30:49,137 - data_processor - INFO - Step 3: 處理 WLPF40010004 的CSV標頭
+2025-05-29 10:30:49,193 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010003.png
+2025-05-29 10:30:49,227 - data_processor - INFO - 任務 ba4d6f7c-6f3f-409f-893c-c7bc46717cff 已完成: True - D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010003.png
+2025-05-29 10:30:49,632 - data_processor - INFO - Step 4: 為 WLPF40010004 生成Basemap
+2025-05-29 10:30:49,739 - data_processor - INFO - 開始執行任務: f8a734fa-6ff3-45e3-a608-3a478452154e (basemap)
+2025-05-29 10:30:49,786 - data_processor - INFO - 檔案 M1X60_WLPF40010003_202504141045.csv 是原始格式，執行 step1~3
+2025-05-29 10:30:49,786 - data_processor - INFO - Step 1: 讀取元件 WLPF40010003 的config參數
+2025-05-29 10:30:49,787 - data_processor - INFO - Step 2: 執行 WLPF40010003 的原始CSV偏移確認
+2025-05-29 10:30:50,249 - data_processor - INFO - Step 3: 處理 WLPF40010003 的CSV標頭
+2025-05-29 10:30:50,467 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010004.png
+2025-05-29 10:30:50,508 - data_processor - INFO - 任務 a8a0cbf2-822e-4160-9945-9d6d0ba8efde 已完成: True - D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010004.png
+2025-05-29 10:30:50,754 - data_processor - INFO - 開始執行任務: 3851860f-8b56-4943-b520-a1027ab69d74 (basemap)
+2025-05-29 10:30:50,789 - data_processor - INFO - 檔案 M1X60_WLPF40010003_202504141045.csv 是原始格式，執行 step1~3
+2025-05-29 10:30:50,791 - data_processor - INFO - Step 1: 讀取元件 WLPF40010003 的config參數
+2025-05-29 10:30:50,796 - data_processor - INFO - Step 2: 執行 WLPF40010003 的原始CSV偏移確認
+2025-05-29 10:30:50,918 - data_processor - INFO - Step 4: 為 WLPF40010003 生成Basemap
+2025-05-29 10:30:50,986 - data_processor - INFO - Step 3: 處理 WLPF40010003 的CSV標頭
+2025-05-29 10:30:51,811 - data_processor - INFO - Step 4: 為 WLPF40010003 生成Basemap
+2025-05-29 10:30:52,099 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\INNER1\WLPF40010003.png
+2025-05-29 10:30:52,140 - data_processor - INFO - 任務 f8a734fa-6ff3-45e3-a608-3a478452154e 已完成: True - D:\Database-PC\temp\map\WLPF400100\INNER1\WLPF40010003.png
+2025-05-29 10:30:52,675 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\INNER1\WLPF40010003.png
+2025-05-29 10:30:52,713 - data_processor - INFO - 任務 3851860f-8b56-4943-b520-a1027ab69d74 已完成: True - D:\Database-PC\temp\map\WLPF400100\INNER1\WLPF40010003.png
+2025-05-29 10:30:52,749 - data_processor - INFO - 開始執行任務: 6459bff4-1261-4401-9c82-0d53c10f1d7a (basemap)
+2025-05-29 10:30:52,781 - data_processor - INFO - 檔案 M3X60_WLPF40010001_202504091051.csv 是原始格式，執行 step1~3
+2025-05-29 10:30:52,782 - data_processor - INFO - Step 1: 讀取元件 WLPF40010001 的config參數
+2025-05-29 10:30:52,782 - data_processor - INFO - Step 2: 執行 WLPF40010001 的原始CSV偏移確認
+2025-05-29 10:30:52,907 - data_processor - INFO - Step 3: 處理 WLPF40010001 的CSV標頭
+2025-05-29 10:30:53,353 - data_processor - INFO - Step 4: 為 WLPF40010001 生成Basemap
+2025-05-29 10:30:53,814 - data_processor - INFO - 開始執行任務: cdb9f9d5-fbd5-4c49-ab09-61b6fa4125c4 (basemap)
+2025-05-29 10:30:53,863 - data_processor - INFO - 檔案 M3X60_WLPF40010003_202504091051.csv 是原始格式，執行 step1~3
+2025-05-29 10:30:53,863 - data_processor - INFO - Step 1: 讀取元件 WLPF40010003 的config參數
+2025-05-29 10:30:53,869 - data_processor - INFO - Step 2: 執行 WLPF40010003 的原始CSV偏移確認
+2025-05-29 10:30:54,131 - data_processor - INFO - Step 3: 處理 WLPF40010003 的CSV標頭
+2025-05-29 10:30:54,180 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010001.png
+2025-05-29 10:30:54,215 - data_processor - INFO - 任務 6459bff4-1261-4401-9c82-0d53c10f1d7a 已完成: True - D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010001.png
+2025-05-29 10:30:54,610 - data_processor - INFO - Step 4: 為 WLPF40010003 生成Basemap
+2025-05-29 10:30:54,748 - data_processor - INFO - 開始執行任務: 510c0c47-d098-4ca2-b1f8-1d2073f2443a (basemap)
+2025-05-29 10:30:54,796 - data_processor - INFO - 檔案 M3X60_WLPF40010004_202504091051.csv 是原始格式，執行 step1~3
+2025-05-29 10:30:54,796 - data_processor - INFO - Step 1: 讀取元件 WLPF40010004 的config參數
+2025-05-29 10:30:54,797 - data_processor - INFO - Step 2: 執行 WLPF40010004 的原始CSV偏移確認
+2025-05-29 10:30:55,247 - data_processor - INFO - Step 3: 處理 WLPF40010004 的CSV標頭
+2025-05-29 10:30:55,631 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010003.png
+2025-05-29 10:30:55,669 - data_processor - INFO - 任務 cdb9f9d5-fbd5-4c49-ab09-61b6fa4125c4 已完成: True - D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010003.png
+2025-05-29 10:30:55,746 - data_processor - INFO - 開始執行任務: e7c02206-2842-4565-97a7-6411de7a661c (basemap)
+2025-05-29 10:30:55,786 - data_processor - INFO - 檔案 M3X60_WLPF40010006_202504091051.csv 是原始格式，執行 step1~3
+2025-05-29 10:30:55,787 - data_processor - INFO - Step 1: 讀取元件 WLPF40010006 的config參數
+2025-05-29 10:30:55,790 - data_processor - INFO - Step 2: 執行 WLPF40010006 的原始CSV偏移確認
+2025-05-29 10:30:55,989 - data_processor - INFO - Step 4: 為 WLPF40010004 生成Basemap
+2025-05-29 10:30:55,998 - data_processor - INFO - Step 3: 處理 WLPF40010006 的CSV標頭
+2025-05-29 10:30:56,298 - data_processor - ERROR - 生成Basemap時發生錯誤: 'NoneType' object has no attribute 'product_id'
+2025-05-29 10:30:56,335 - data_processor - INFO - 任務 510c0c47-d098-4ca2-b1f8-1d2073f2443a 已完成: False - 生成失敗: 'NoneType' object has no attribute 'product_id'
+2025-05-29 10:30:56,616 - data_processor - INFO - Step 4: 為 WLPF40010006 生成Basemap
+2025-05-29 10:30:57,379 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010006.png
+2025-05-29 10:30:57,416 - data_processor - INFO - 任務 e7c02206-2842-4565-97a7-6411de7a661c 已完成: True - D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010006.png
+2025-05-29 10:30:57,739 - data_processor - INFO - 開始執行任務: 2012c10b-1e37-4a20-9f5a-096b5b8b2d8c (basemap)
+2025-05-29 10:30:57,776 - data_processor - INFO - Step 4: 為 WLPF50010002 生成Basemap
+2025-05-29 10:30:58,498 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010002.png
+2025-05-29 10:30:58,533 - data_processor - INFO - 任務 2012c10b-1e37-4a20-9f5a-096b5b8b2d8c 已完成: True - D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010002.png
+2025-05-29 10:30:58,744 - data_processor - INFO - 開始執行任務: 43e9c2e7-c264-4e84-bbbe-fad96bd1ed6c (basemap)
+2025-05-29 10:30:58,776 - data_processor - INFO - Step 4: 為 WLPF50010003 生成Basemap
+2025-05-29 10:30:59,491 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010003.png
+2025-05-29 10:30:59,526 - data_processor - INFO - 任務 43e9c2e7-c264-4e84-bbbe-fad96bd1ed6c 已完成: True - D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010003.png
+2025-05-29 10:30:59,746 - data_processor - INFO - 開始執行任務: 4e9641f8-7a59-486c-934e-f9f6a02328ed (basemap)
+2025-05-29 10:30:59,787 - data_processor - INFO - Step 4: 為 WLPF50010004 生成Basemap
+2025-05-29 10:31:00,517 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010004.png
+2025-05-29 10:31:00,551 - data_processor - INFO - 任務 4e9641f8-7a59-486c-934e-f9f6a02328ed 已完成: True - D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010004.png
+2025-05-29 10:33:53,105 - data_processor - INFO - 開始執行任務: 1e70970e-7176-4aed-96ad-0cbc92411bd5 (basemap)
+2025-05-29 10:33:53,143 - data_processor - INFO - 檔案 M1X60_WLPF40010001_202504141037.csv 是原始格式，執行 step1~3
+2025-05-29 10:33:53,143 - data_processor - INFO - Step 1: 讀取元件 WLPF40010001 的config參數
+2025-05-29 10:33:53,144 - data_processor - INFO - Step 2: 執行 WLPF40010001 的原始CSV偏移確認
+2025-05-29 10:33:53,306 - data_processor - INFO - 任務 1e70970e-7176-4aed-96ad-0cbc92411bd5 已完成: False - CSV檔案偏移錯誤: 找不到任何對齊點，需要至少1個匹配
+2025-05-29 10:33:54,106 - data_processor - INFO - 開始執行任務: 90f7dc25-9590-4a04-8134-74895d348c48 (basemap)
+2025-05-29 10:33:54,140 - data_processor - INFO - 檔案 M1X60_WLPF40010003_202504141037.csv 是原始格式，執行 step1~3
+2025-05-29 10:33:54,140 - data_processor - INFO - Step 1: 讀取元件 WLPF40010003 的config參數
+2025-05-29 10:33:54,141 - data_processor - INFO - Step 2: 執行 WLPF40010003 的原始CSV偏移確認
+2025-05-29 10:33:54,268 - data_processor - INFO - Step 3: 處理 WLPF40010003 的CSV標頭
+2025-05-29 10:33:54,706 - data_processor - INFO - Step 4: 為 WLPF40010003 生成Basemap
+2025-05-29 10:33:55,149 - data_processor - INFO - 開始執行任務: da774e30-34a1-4dc6-9b10-dfd4b7ac68a0 (basemap)
+2025-05-29 10:33:55,189 - data_processor - INFO - 檔案 M1X60_WLPF40010004_202504141037.csv 是原始格式，執行 step1~3
+2025-05-29 10:33:55,189 - data_processor - INFO - Step 1: 讀取元件 WLPF40010004 的config參數
+2025-05-29 10:33:55,191 - data_processor - INFO - Step 2: 執行 WLPF40010004 的原始CSV偏移確認
+2025-05-29 10:33:55,444 - data_processor - INFO - Step 3: 處理 WLPF40010004 的CSV標頭
+2025-05-29 10:33:55,495 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010003.png
+2025-05-29 10:33:55,535 - data_processor - INFO - 任務 90f7dc25-9590-4a04-8134-74895d348c48 已完成: True - D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010003.png
+2025-05-29 10:33:55,932 - data_processor - INFO - Step 4: 為 WLPF40010004 生成Basemap
+2025-05-29 10:33:56,118 - data_processor - INFO - 開始執行任務: 915ebcc1-22fb-416f-8cf0-bcd32c02c919 (basemap)
+2025-05-29 10:33:56,154 - data_processor - INFO - 檔案 M1X60_WLPF40010003_202504141045.csv 是原始格式，執行 step1~3
+2025-05-29 10:33:56,154 - data_processor - INFO - Step 1: 讀取元件 WLPF40010003 的config參數
+2025-05-29 10:33:56,155 - data_processor - INFO - Step 2: 執行 WLPF40010003 的原始CSV偏移確認
+2025-05-29 10:33:56,532 - data_processor - INFO - Step 3: 處理 WLPF40010003 的CSV標頭
+2025-05-29 10:33:56,717 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010004.png
+2025-05-29 10:33:56,754 - data_processor - INFO - 任務 da774e30-34a1-4dc6-9b10-dfd4b7ac68a0 已完成: True - D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010004.png
+2025-05-29 10:33:57,102 - data_processor - INFO - 開始執行任務: 8a1e1ada-648b-4302-b7d7-327d9220a3ad (basemap)
+2025-05-29 10:33:57,136 - data_processor - INFO - 檔案 M1X60_WLPF40010003_202504141045.csv 是原始格式，執行 step1~3
+2025-05-29 10:33:57,137 - data_processor - INFO - Step 1: 讀取元件 WLPF40010003 的config參數
+2025-05-29 10:33:57,140 - data_processor - INFO - Step 2: 執行 WLPF40010003 的原始CSV偏移確認
+2025-05-29 10:33:57,168 - data_processor - INFO - Step 4: 為 WLPF40010003 生成Basemap
+2025-05-29 10:33:57,321 - data_processor - INFO - Step 3: 處理 WLPF40010003 的CSV標頭
+2025-05-29 10:33:58,184 - data_processor - INFO - Step 4: 為 WLPF40010003 生成Basemap
+2025-05-29 10:33:58,233 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\INNER1\WLPF40010003.png
+2025-05-29 10:33:58,266 - data_processor - INFO - 任務 915ebcc1-22fb-416f-8cf0-bcd32c02c919 已完成: True - D:\Database-PC\temp\map\WLPF400100\INNER1\WLPF40010003.png
+2025-05-29 10:33:58,905 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\INNER1\WLPF40010003.png
+2025-05-29 10:33:58,938 - data_processor - INFO - 任務 8a1e1ada-648b-4302-b7d7-327d9220a3ad 已完成: True - D:\Database-PC\temp\map\WLPF400100\INNER1\WLPF40010003.png
+2025-05-29 10:33:59,099 - data_processor - INFO - 開始執行任務: e9a5a07b-fcce-4505-a7a0-9c09c254d494 (basemap)
+2025-05-29 10:33:59,134 - data_processor - INFO - 檔案 M3X60_WLPF40010001_202504091051.csv 是原始格式，執行 step1~3
+2025-05-29 10:33:59,134 - data_processor - INFO - Step 1: 讀取元件 WLPF40010001 的config參數
+2025-05-29 10:33:59,135 - data_processor - INFO - Step 2: 執行 WLPF40010001 的原始CSV偏移確認
+2025-05-29 10:33:59,260 - data_processor - INFO - Step 3: 處理 WLPF40010001 的CSV標頭
+2025-05-29 10:33:59,694 - data_processor - INFO - Step 4: 為 WLPF40010001 生成Basemap
+2025-05-29 10:34:00,168 - data_processor - INFO - 開始執行任務: 4bcc1edc-ed67-4a1a-8d43-596c2b4b6fb9 (basemap)
+2025-05-29 10:34:00,212 - data_processor - INFO - 檔案 M3X60_WLPF40010003_202504091051.csv 是原始格式，執行 step1~3
+2025-05-29 10:34:00,217 - data_processor - INFO - Step 1: 讀取元件 WLPF40010003 的config參數
+2025-05-29 10:34:00,218 - data_processor - INFO - Step 2: 執行 WLPF40010003 的原始CSV偏移確認
+2025-05-29 10:34:00,502 - data_processor - INFO - Step 3: 處理 WLPF40010003 的CSV標頭
+2025-05-29 10:34:00,532 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010001.png
+2025-05-29 10:34:00,563 - data_processor - INFO - 任務 e9a5a07b-fcce-4505-a7a0-9c09c254d494 已完成: True - D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010001.png
+2025-05-29 10:34:00,995 - data_processor - INFO - Step 4: 為 WLPF40010003 生成Basemap
+2025-05-29 10:34:01,103 - data_processor - INFO - 開始執行任務: 3e86d6ad-3fde-4a93-ba4e-60499bc13038 (basemap)
+2025-05-29 10:34:01,143 - data_processor - INFO - 檔案 M3X60_WLPF40010004_202504091051.csv 是原始格式，執行 step1~3
+2025-05-29 10:34:01,143 - data_processor - INFO - Step 1: 讀取元件 WLPF40010004 的config參數
+2025-05-29 10:34:01,144 - data_processor - INFO - Step 2: 執行 WLPF40010004 的原始CSV偏移確認
+2025-05-29 10:34:01,581 - data_processor - INFO - Step 3: 處理 WLPF40010004 的CSV標頭
+2025-05-29 10:34:02,100 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010003.png
+2025-05-29 10:34:02,140 - data_processor - INFO - 任務 4bcc1edc-ed67-4a1a-8d43-596c2b4b6fb9 已完成: True - D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010003.png
+2025-05-29 10:34:02,243 - data_processor - INFO - Step 4: 為 WLPF40010004 生成Basemap
+2025-05-29 10:34:02,480 - data_processor - ERROR - 生成Basemap時發生錯誤: 'NoneType' object has no attribute 'product_id'
+2025-05-29 10:34:02,510 - data_processor - INFO - 任務 3e86d6ad-3fde-4a93-ba4e-60499bc13038 已完成: False - 生成失敗: 'NoneType' object has no attribute 'product_id'
+2025-05-29 10:34:03,101 - data_processor - INFO - 開始執行任務: d4cdaf86-4ccf-448c-85a4-b9b9c8d19b56 (basemap)
+2025-05-29 10:34:03,141 - data_processor - INFO - Step 4: 為 WLPF40010006 生成Basemap
+2025-05-29 10:34:03,851 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010006.png
+2025-05-29 10:34:03,881 - data_processor - INFO - 任務 d4cdaf86-4ccf-448c-85a4-b9b9c8d19b56 已完成: True - D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010006.png
+2025-05-29 10:34:04,099 - data_processor - INFO - 開始執行任務: c5705a8c-f5d3-421d-b933-1ba980520cd0 (basemap)
+2025-05-29 10:34:04,136 - data_processor - INFO - Step 4: 為 WLPF50010001 生成Basemap
+2025-05-29 10:34:04,833 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010001.png
+2025-05-29 10:34:04,865 - data_processor - INFO - 任務 c5705a8c-f5d3-421d-b933-1ba980520cd0 已完成: True - D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010001.png
+2025-05-29 10:34:05,101 - data_processor - INFO - 開始執行任務: 2c3a4acb-70c5-48fd-8d6e-6156bdf9b34f (basemap)
+2025-05-29 10:34:05,139 - data_processor - INFO - Step 4: 為 WLPF50010002 生成Basemap
+2025-05-29 10:34:05,857 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010002.png
+2025-05-29 10:34:05,888 - data_processor - INFO - 任務 2c3a4acb-70c5-48fd-8d6e-6156bdf9b34f 已完成: True - D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010002.png
+2025-05-29 10:34:06,103 - data_processor - INFO - 開始執行任務: a96f8821-3425-425f-beeb-b351810f05f8 (basemap)
+2025-05-29 10:34:06,142 - data_processor - INFO - Step 4: 為 WLPF50010003 生成Basemap
+2025-05-29 10:34:06,839 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010003.png
+2025-05-29 10:34:06,872 - data_processor - INFO - 任務 a96f8821-3425-425f-beeb-b351810f05f8 已完成: True - D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010003.png
+2025-05-29 10:34:07,104 - data_processor - INFO - 開始執行任務: 9152c56b-edb0-499e-bfea-692350200c78 (basemap)
+2025-05-29 10:34:07,143 - data_processor - INFO - Step 4: 為 WLPF50010004 生成Basemap
+2025-05-29 10:34:07,857 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010004.png
+2025-05-29 10:34:07,888 - data_processor - INFO - 任務 9152c56b-edb0-499e-bfea-692350200c78 已完成: True - D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010004.png
+2025-05-29 13:39:03,947 - data_processor - INFO - 開始執行任務: 2f3d1b16-33d2-4d9a-a8d9-7430a3137995 (basemap)
+2025-05-29 13:39:04,003 - data_processor - INFO - 檔案 M1X60_WLPF40010001_202504141037.csv 是原始格式，執行 step1~3
+2025-05-29 13:39:04,003 - data_processor - INFO - Step 1: 讀取元件 WLPF40010001 的config參數
+2025-05-29 13:39:04,004 - data_processor - INFO - Step 2: 執行 WLPF40010001 的原始CSV偏移確認
+2025-05-29 13:39:04,160 - data_processor - INFO - 任務 2f3d1b16-33d2-4d9a-a8d9-7430a3137995 已完成: False - CSV檔案偏移錯誤: 找不到任何對齊點，需要至少1個匹配
+2025-05-29 13:39:04,953 - data_processor - INFO - 開始執行任務: 495a7a09-c040-4895-8904-d7f25baa156a (basemap)
+2025-05-29 13:39:04,988 - data_processor - INFO - 檔案 M1X60_WLPF40010003_202504141037.csv 是原始格式，執行 step1~3
+2025-05-29 13:39:04,989 - data_processor - INFO - Step 1: 讀取元件 WLPF40010003 的config參數
+2025-05-29 13:39:04,992 - data_processor - INFO - Step 2: 執行 WLPF40010003 的原始CSV偏移確認
+2025-05-29 13:39:05,124 - data_processor - INFO - Step 3: 處理 WLPF40010003 的CSV標頭
+2025-05-29 13:39:05,560 - data_processor - INFO - Step 4: 為 WLPF40010003 生成Basemap
+2025-05-29 13:39:06,014 - data_processor - INFO - 開始執行任務: d06cb972-ccfb-47d7-a7e1-42c006e1c8aa (basemap)
+2025-05-29 13:39:06,057 - data_processor - INFO - 檔案 M1X60_WLPF40010004_202504141037.csv 是原始格式，執行 step1~3
+2025-05-29 13:39:06,058 - data_processor - INFO - Step 1: 讀取元件 WLPF40010004 的config參數
+2025-05-29 13:39:06,062 - data_processor - INFO - Step 2: 執行 WLPF40010004 的原始CSV偏移確認
+2025-05-29 13:39:06,197 - data_processor - INFO - Step 3: 處理 WLPF40010004 的CSV標頭
+2025-05-29 13:39:06,523 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010003.png
+2025-05-29 13:39:06,558 - data_processor - INFO - 任務 495a7a09-c040-4895-8904-d7f25baa156a 已完成: True - D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010003.png
+2025-05-29 13:39:06,842 - data_processor - INFO - Step 4: 為 WLPF40010004 生成Basemap
+2025-05-29 13:39:06,968 - data_processor - INFO - 開始執行任務: b1a51b2c-3628-498d-9add-dda0dedfd400 (basemap)
+2025-05-29 13:39:06,999 - data_processor - INFO - 檔案 M1X60_WLPF40010003_202504141045.csv 是原始格式，執行 step1~3
+2025-05-29 13:39:06,999 - data_processor - INFO - Step 1: 讀取元件 WLPF40010003 的config參數
+2025-05-29 13:39:07,007 - data_processor - INFO - Step 2: 執行 WLPF40010003 的原始CSV偏移確認
+2025-05-29 13:39:07,441 - data_processor - INFO - Step 3: 處理 WLPF40010003 的CSV標頭
+2025-05-29 13:39:07,641 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010004.png
+2025-05-29 13:39:07,674 - data_processor - INFO - 任務 d06cb972-ccfb-47d7-a7e1-42c006e1c8aa 已完成: True - D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010004.png
+2025-05-29 13:39:07,956 - data_processor - INFO - 開始執行任務: 3c3d9d90-3ad3-470f-b1d3-aac728aa028c (basemap)
+2025-05-29 13:39:07,987 - data_processor - INFO - 檔案 M1X60_WLPF40010003_202504141045.csv 是原始格式，執行 step1~3
+2025-05-29 13:39:07,988 - data_processor - INFO - Step 1: 讀取元件 WLPF40010003 的config參數
+2025-05-29 13:39:07,991 - data_processor - INFO - Step 2: 執行 WLPF40010003 的原始CSV偏移確認
+2025-05-29 13:39:08,082 - data_processor - INFO - Step 4: 為 WLPF40010003 生成Basemap
+2025-05-29 13:39:08,167 - data_processor - INFO - Step 3: 處理 WLPF40010003 的CSV標頭
+2025-05-29 13:39:08,969 - data_processor - INFO - Step 4: 為 WLPF40010003 生成Basemap
+2025-05-29 13:39:09,183 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\INNER1\WLPF40010003.png
+2025-05-29 13:39:09,219 - data_processor - INFO - 任務 b1a51b2c-3628-498d-9add-dda0dedfd400 已完成: True - D:\Database-PC\temp\map\WLPF400100\INNER1\WLPF40010003.png
+2025-05-29 13:39:09,826 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\INNER1\WLPF40010003.png
+2025-05-29 13:39:09,867 - data_processor - INFO - 任務 3c3d9d90-3ad3-470f-b1d3-aac728aa028c 已完成: True - D:\Database-PC\temp\map\WLPF400100\INNER1\WLPF40010003.png
+2025-05-29 13:39:09,965 - data_processor - INFO - 開始執行任務: ba223fb4-b0d8-4ce7-931a-5f17b334328b (basemap)
+2025-05-29 13:39:10,005 - data_processor - INFO - 檔案 M3X60_WLPF40010001_202504091051.csv 是原始格式，執行 step1~3
+2025-05-29 13:39:10,005 - data_processor - INFO - Step 1: 讀取元件 WLPF40010001 的config參數
+2025-05-29 13:39:10,006 - data_processor - INFO - Step 2: 執行 WLPF40010001 的原始CSV偏移確認
+2025-05-29 13:39:10,143 - data_processor - INFO - Step 3: 處理 WLPF40010001 的CSV標頭
+2025-05-29 13:39:10,588 - data_processor - INFO - Step 4: 為 WLPF40010001 生成Basemap
+2025-05-29 13:39:10,966 - data_processor - INFO - 開始執行任務: 6518fdfe-68eb-4d44-b10a-c8e7c00098cb (basemap)
+2025-05-29 13:39:11,001 - data_processor - INFO - 檔案 M3X60_WLPF40010003_202504091051.csv 是原始格式，執行 step1~3
+2025-05-29 13:39:11,001 - data_processor - INFO - Step 1: 讀取元件 WLPF40010003 的config參數
+2025-05-29 13:39:11,003 - data_processor - INFO - Step 2: 執行 WLPF40010003 的原始CSV偏移確認
+2025-05-29 13:39:11,242 - data_processor - INFO - Step 3: 處理 WLPF40010003 的CSV標頭
+2025-05-29 13:39:11,743 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010001.png
+2025-05-29 13:39:11,783 - data_processor - INFO - 任務 ba223fb4-b0d8-4ce7-931a-5f17b334328b 已完成: True - D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010001.png
+2025-05-29 13:39:11,888 - data_processor - INFO - Step 4: 為 WLPF40010003 生成Basemap
+2025-05-29 13:39:11,983 - data_processor - INFO - 開始執行任務: 13610295-6984-4990-a788-726db069d200 (basemap)
+2025-05-29 13:39:12,025 - data_processor - INFO - 檔案 M3X60_WLPF40010004_202504091051.csv 是原始格式，執行 step1~3
+2025-05-29 13:39:12,026 - data_processor - INFO - Step 1: 讀取元件 WLPF40010004 的config參數
+2025-05-29 13:39:12,027 - data_processor - INFO - Step 2: 執行 WLPF40010004 的原始CSV偏移確認
+2025-05-29 13:39:12,445 - data_processor - INFO - Step 3: 處理 WLPF40010004 的CSV標頭
+2025-05-29 13:39:12,988 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010003.png
+2025-05-29 13:39:13,022 - data_processor - INFO - 任務 6518fdfe-68eb-4d44-b10a-c8e7c00098cb 已完成: True - D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010003.png
+2025-05-29 13:39:13,134 - data_processor - INFO - Step 4: 為 WLPF40010004 生成Basemap
+2025-05-29 13:39:13,353 - data_processor - ERROR - 生成Basemap時發生錯誤: 'NoneType' object has no attribute 'product_id'
+2025-05-29 13:39:13,383 - data_processor - INFO - 任務 13610295-6984-4990-a788-726db069d200 已完成: False - 生成失敗: 'NoneType' object has no attribute 'product_id'
+2025-05-29 13:39:13,994 - data_processor - INFO - 開始執行任務: 37479db6-0fee-436f-b09b-8752826d24c2 (basemap)
+2025-05-29 13:39:14,033 - data_processor - INFO - Step 4: 為 WLPF40010006 生成Basemap
+2025-05-29 13:39:14,780 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010006.png
+2025-05-29 13:39:14,812 - data_processor - INFO - 任務 37479db6-0fee-436f-b09b-8752826d24c2 已完成: True - D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010006.png
+2025-05-29 13:39:34,061 - data_processor - INFO - 開始執行任務: 5f44569a-fcb4-4661-9fc3-632444a9fad2 (basemap)
+2025-05-29 13:39:34,100 - data_processor - INFO - 檔案 M3X60_WLPF50010001_202504091051.csv 是原始格式，執行 step1~3
+2025-05-29 13:39:34,100 - data_processor - INFO - Step 1: 讀取元件 WLPF50010001 的config參數
+2025-05-29 13:39:34,101 - data_processor - INFO - Step 2: 執行 WLPF50010001 的原始CSV偏移確認
+2025-05-29 13:39:34,230 - data_processor - INFO - Step 3: 處理 WLPF50010001 的CSV標頭
+2025-05-29 13:39:34,684 - data_processor - INFO - Step 4: 為 WLPF50010001 生成Basemap
+2025-05-29 13:39:35,066 - data_processor - INFO - 開始執行任務: 21a95ab7-3c87-41af-b2b7-0c770461bd8b (basemap)
+2025-05-29 13:39:35,181 - data_processor - INFO - 檔案 M3X60_WLPF50010002_202504091051.csv 是原始格式，執行 step1~3
+2025-05-29 13:39:35,182 - data_processor - INFO - Step 1: 讀取元件 WLPF50010002 的config參數
+2025-05-29 13:39:35,191 - data_processor - INFO - Step 2: 執行 WLPF50010002 的原始CSV偏移確認
+2025-05-29 13:39:35,484 - data_processor - INFO - Step 3: 處理 WLPF50010002 的CSV標頭
+2025-05-29 13:39:35,501 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010001.png
+2025-05-29 13:39:35,542 - data_processor - INFO - 任務 5f44569a-fcb4-4661-9fc3-632444a9fad2 已完成: True - D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010001.png
+2025-05-29 13:39:35,997 - data_processor - INFO - Step 4: 為 WLPF50010002 生成Basemap
+2025-05-29 13:39:36,065 - data_processor - INFO - 開始執行任務: 2a660c0d-c851-42c9-8615-6a5be4fd9652 (basemap)
+2025-05-29 13:39:36,101 - data_processor - INFO - 檔案 M3X60_WLPF50010003_202504091051.csv 是原始格式，執行 step1~3
+2025-05-29 13:39:36,102 - data_processor - INFO - Step 1: 讀取元件 WLPF50010003 的config參數
+2025-05-29 13:39:36,102 - data_processor - INFO - Step 2: 執行 WLPF50010003 的原始CSV偏移確認
+2025-05-29 13:39:36,418 - data_processor - INFO - Step 3: 處理 WLPF50010003 的CSV標頭
+2025-05-29 13:39:37,148 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010002.png
+2025-05-29 13:39:37,192 - data_processor - INFO - 任務 21a95ab7-3c87-41af-b2b7-0c770461bd8b 已完成: True - D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010002.png
+2025-05-29 13:39:37,258 - data_processor - INFO - Step 4: 為 WLPF50010003 生成Basemap
+2025-05-29 13:39:38,033 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010003.png
+2025-05-29 13:39:38,071 - data_processor - INFO - 開始執行任務: be75a943-27eb-40fe-b553-097d26232744 (basemap)
+2025-05-29 13:39:38,106 - data_processor - INFO - 任務 2a660c0d-c851-42c9-8615-6a5be4fd9652 已完成: True - D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010003.png
+2025-05-29 13:39:38,108 - data_processor - INFO - 檔案 M3X60_WLPF50010004_202504091051.csv 是原始格式，執行 step1~3
+2025-05-29 13:39:38,109 - data_processor - INFO - Step 1: 讀取元件 WLPF50010004 的config參數
+2025-05-29 13:39:38,109 - data_processor - INFO - Step 2: 執行 WLPF50010004 的原始CSV偏移確認
+2025-05-29 13:39:38,237 - data_processor - INFO - Step 3: 處理 WLPF50010004 的CSV標頭
+2025-05-29 13:39:38,674 - data_processor - INFO - Step 4: 為 WLPF50010004 生成Basemap
+2025-05-29 13:39:39,398 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010004.png
+2025-05-29 13:39:39,439 - data_processor - INFO - 任務 be75a943-27eb-40fe-b553-097d26232744 已完成: True - D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010004.png
+2025-05-29 13:40:50,903 - data_processor - INFO - 開始執行任務: 26b00d62-bd05-4f32-88da-9a6ae0526eb3 (basemap)
+2025-05-29 13:40:50,940 - data_processor - INFO - 檔案 M1X60_WLPF40010001_202504141037.csv 是原始格式，執行 step1~3
+2025-05-29 13:40:50,940 - data_processor - INFO - Step 1: 讀取元件 WLPF40010001 的config參數
+2025-05-29 13:40:50,941 - data_processor - INFO - Step 2: 執行 WLPF40010001 的原始CSV偏移確認
+2025-05-29 13:40:51,111 - data_processor - INFO - 任務 26b00d62-bd05-4f32-88da-9a6ae0526eb3 已完成: False - CSV檔案偏移錯誤: 找不到任何對齊點，需要至少1個匹配
+2025-05-29 13:40:51,908 - data_processor - INFO - 開始執行任務: c624d9bc-c7ef-43c5-879b-aecd553ae5f7 (basemap)
+2025-05-29 13:40:51,948 - data_processor - INFO - 檔案 M1X60_WLPF40010003_202504141037.csv 是原始格式，執行 step1~3
+2025-05-29 13:40:51,948 - data_processor - INFO - Step 1: 讀取元件 WLPF40010003 的config參數
+2025-05-29 13:40:51,949 - data_processor - INFO - Step 2: 執行 WLPF40010003 的原始CSV偏移確認
+2025-05-29 13:40:52,075 - data_processor - INFO - Step 3: 處理 WLPF40010003 的CSV標頭
+2025-05-29 13:40:52,501 - data_processor - INFO - Step 4: 為 WLPF40010003 生成Basemap
+2025-05-29 13:40:52,950 - data_processor - INFO - 開始執行任務: 231058f8-e986-4205-ad00-2d604efacf0d (basemap)
+2025-05-29 13:40:52,996 - data_processor - INFO - 檔案 M1X60_WLPF40010004_202504141037.csv 是原始格式，執行 step1~3
+2025-05-29 13:40:52,996 - data_processor - INFO - Step 1: 讀取元件 WLPF40010004 的config參數
+2025-05-29 13:40:52,998 - data_processor - INFO - Step 2: 執行 WLPF40010004 的原始CSV偏移確認
+2025-05-29 13:40:53,273 - data_processor - INFO - Step 3: 處理 WLPF40010004 的CSV標頭
+2025-05-29 13:40:53,320 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010003.png
+2025-05-29 13:40:53,353 - data_processor - INFO - 任務 c624d9bc-c7ef-43c5-879b-aecd553ae5f7 已完成: True - D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010003.png
+2025-05-29 13:40:53,760 - data_processor - INFO - Step 4: 為 WLPF40010004 生成Basemap
+2025-05-29 13:40:53,926 - data_processor - INFO - 開始執行任務: 6e17259a-58be-4946-bd03-4e83f9e0ce48 (basemap)
+2025-05-29 13:40:53,964 - data_processor - INFO - 檔案 M1X60_WLPF40010003_202504141045.csv 是原始格式，執行 step1~3
+2025-05-29 13:40:53,964 - data_processor - INFO - Step 1: 讀取元件 WLPF40010003 的config參數
+2025-05-29 13:40:53,964 - data_processor - INFO - Step 2: 執行 WLPF40010003 的原始CSV偏移確認
+2025-05-29 13:40:54,367 - data_processor - INFO - Step 3: 處理 WLPF40010003 的CSV標頭
+2025-05-29 13:40:54,560 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010004.png
+2025-05-29 13:40:54,595 - data_processor - INFO - 任務 231058f8-e986-4205-ad00-2d604efacf0d 已完成: True - D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010004.png
+2025-05-29 13:40:54,932 - data_processor - INFO - 開始執行任務: e586efb5-b58e-4612-a90d-5310cc4bfdc1 (basemap)
+2025-05-29 13:40:54,973 - data_processor - INFO - 檔案 M1X60_WLPF40010003_202504141045.csv 是原始格式，執行 step1~3
+2025-05-29 13:40:54,974 - data_processor - INFO - Step 1: 讀取元件 WLPF40010003 的config參數
+2025-05-29 13:40:54,976 - data_processor - INFO - Step 2: 執行 WLPF40010003 的原始CSV偏移確認
+2025-05-29 13:40:55,030 - data_processor - INFO - Step 4: 為 WLPF40010003 生成Basemap
+2025-05-29 13:40:55,147 - data_processor - INFO - Step 3: 處理 WLPF40010003 的CSV標頭
+2025-05-29 13:40:56,042 - data_processor - INFO - Step 4: 為 WLPF40010003 生成Basemap
+2025-05-29 13:40:56,094 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\INNER1\WLPF40010003.png
+2025-05-29 13:40:56,135 - data_processor - INFO - 任務 6e17259a-58be-4946-bd03-4e83f9e0ce48 已完成: True - D:\Database-PC\temp\map\WLPF400100\INNER1\WLPF40010003.png
+2025-05-29 13:40:56,785 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\INNER1\WLPF40010003.png
+2025-05-29 13:40:56,823 - data_processor - INFO - 任務 e586efb5-b58e-4612-a90d-5310cc4bfdc1 已完成: True - D:\Database-PC\temp\map\WLPF400100\INNER1\WLPF40010003.png
+2025-05-29 13:40:56,965 - data_processor - INFO - 開始執行任務: b10d8133-5cde-4b01-b7a5-1d817f035bba (basemap)
+2025-05-29 13:40:56,996 - data_processor - INFO - 檔案 M3X60_WLPF40010001_202504091051.csv 是原始格式，執行 step1~3
+2025-05-29 13:40:56,997 - data_processor - INFO - Step 1: 讀取元件 WLPF40010001 的config參數
+2025-05-29 13:40:56,997 - data_processor - INFO - Step 2: 執行 WLPF40010001 的原始CSV偏移確認
+2025-05-29 13:40:57,139 - data_processor - INFO - Step 3: 處理 WLPF40010001 的CSV標頭
+2025-05-29 13:40:57,565 - data_processor - INFO - Step 4: 為 WLPF40010001 生成Basemap
+2025-05-29 13:40:58,003 - data_processor - INFO - 開始執行任務: cc22dbfe-3912-48bd-84c8-6119d958eef6 (basemap)
+2025-05-29 13:40:58,045 - data_processor - INFO - 檔案 M3X60_WLPF40010003_202504091051.csv 是原始格式，執行 step1~3
+2025-05-29 13:40:58,046 - data_processor - INFO - Step 1: 讀取元件 WLPF40010003 的config參數
+2025-05-29 13:40:58,050 - data_processor - INFO - Step 2: 執行 WLPF40010003 的原始CSV偏移確認
+2025-05-29 13:40:58,335 - data_processor - INFO - Step 3: 處理 WLPF40010003 的CSV標頭
+2025-05-29 13:40:58,363 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010001.png
+2025-05-29 13:40:58,395 - data_processor - INFO - 任務 b10d8133-5cde-4b01-b7a5-1d817f035bba 已完成: True - D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010001.png
+2025-05-29 13:40:58,808 - data_processor - INFO - Step 4: 為 WLPF40010003 生成Basemap
+2025-05-29 13:40:58,982 - data_processor - INFO - 開始執行任務: b874af26-0025-4f2c-8b8c-9ddf97a05fb4 (basemap)
+2025-05-29 13:40:59,027 - data_processor - INFO - 檔案 M3X60_WLPF40010004_202504091051.csv 是原始格式，執行 step1~3
+2025-05-29 13:40:59,028 - data_processor - INFO - Step 1: 讀取元件 WLPF40010004 的config參數
+2025-05-29 13:40:59,028 - data_processor - INFO - Step 2: 執行 WLPF40010004 的原始CSV偏移確認
+2025-05-29 13:40:59,437 - data_processor - INFO - Step 3: 處理 WLPF40010004 的CSV標頭
+2025-05-29 13:40:59,646 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010003.png
+2025-05-29 13:40:59,683 - data_processor - INFO - 任務 cc22dbfe-3912-48bd-84c8-6119d958eef6 已完成: True - D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010003.png
+2025-05-29 13:40:59,977 - data_processor - INFO - 開始執行任務: 99d60799-2f8f-4fd9-86c8-0cb079301bef (basemap)
+2025-05-29 13:41:00,013 - data_processor - INFO - 檔案 M3X60_WLPF40010006_202504091051.csv 是原始格式，執行 step1~3
+2025-05-29 13:41:00,013 - data_processor - INFO - Step 1: 讀取元件 WLPF40010006 的config參數
+2025-05-29 13:41:00,016 - data_processor - INFO - Step 2: 執行 WLPF40010006 的原始CSV偏移確認
+2025-05-29 13:41:00,089 - data_processor - INFO - Step 4: 為 WLPF40010004 生成Basemap
+2025-05-29 13:41:00,193 - data_processor - INFO - Step 3: 處理 WLPF40010006 的CSV標頭
+2025-05-29 13:41:00,194 - data_processor - ERROR - 生成Basemap時發生錯誤: 'NoneType' object has no attribute 'product_id'
+2025-05-29 13:41:00,225 - data_processor - INFO - 任務 99d60799-2f8f-4fd9-86c8-0cb079301bef 已完成: False - 生成失敗: 'NoneType' object has no attribute 'product_id'
+2025-05-29 13:41:00,377 - data_processor - ERROR - 生成Basemap時發生錯誤: 'NoneType' object has no attribute 'product_id'
+2025-05-29 13:41:00,407 - data_processor - INFO - 任務 b874af26-0025-4f2c-8b8c-9ddf97a05fb4 已完成: False - 生成失敗: 'NoneType' object has no attribute 'product_id'
+2025-05-29 13:43:21,129 - data_processor - INFO - 開始執行任務: b527c4a3-1574-44b3-af4e-063916bb0cdc (basemap)
+2025-05-29 13:43:21,163 - data_processor - INFO - 檔案 M1X60_WLPF40010001_202504141037.csv 是原始格式，執行 step1~3
+2025-05-29 13:43:21,163 - data_processor - INFO - Step 1: 讀取元件 WLPF40010001 的config參數
+2025-05-29 13:43:21,163 - data_processor - INFO - Step 2: 執行 WLPF40010001 的原始CSV偏移確認
+2025-05-29 13:43:21,327 - data_processor - INFO - 任務 b527c4a3-1574-44b3-af4e-063916bb0cdc 已完成: False - CSV檔案偏移錯誤: 找不到任何對齊點，需要至少1個匹配
+2025-05-29 13:43:22,133 - data_processor - INFO - 開始執行任務: 334bcebf-edd8-4968-bb9e-74c24ef61d08 (basemap)
+2025-05-29 13:43:22,163 - data_processor - INFO - 檔案 M1X60_WLPF40010003_202504141037.csv 是原始格式，執行 step1~3
+2025-05-29 13:43:22,163 - data_processor - INFO - Step 1: 讀取元件 WLPF40010003 的config參數
+2025-05-29 13:43:22,164 - data_processor - INFO - Step 2: 執行 WLPF40010003 的原始CSV偏移確認
+2025-05-29 13:43:22,283 - data_processor - INFO - Step 3: 處理 WLPF40010003 的CSV標頭
+2025-05-29 13:43:22,708 - data_processor - INFO - Step 4: 為 WLPF40010003 生成Basemap
+2025-05-29 13:43:23,144 - data_processor - INFO - 開始執行任務: fba6161c-a420-401c-9861-ffb6a4b22f2e (basemap)
+2025-05-29 13:43:23,182 - data_processor - INFO - 檔案 M1X60_WLPF40010004_202504141037.csv 是原始格式，執行 step1~3
+2025-05-29 13:43:23,182 - data_processor - INFO - Step 1: 讀取元件 WLPF40010004 的config參數
+2025-05-29 13:43:23,184 - data_processor - INFO - Step 2: 執行 WLPF40010004 的原始CSV偏移確認
+2025-05-29 13:43:23,441 - data_processor - INFO - Step 3: 處理 WLPF40010004 的CSV標頭
+2025-05-29 13:43:23,492 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010003.png
+2025-05-29 13:43:23,526 - data_processor - INFO - 任務 334bcebf-edd8-4968-bb9e-74c24ef61d08 已完成: True - D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010003.png
+2025-05-29 13:43:23,926 - data_processor - INFO - Step 4: 為 WLPF40010004 生成Basemap
+2025-05-29 13:43:24,142 - data_processor - INFO - 開始執行任務: 82871048-a0f2-4b3f-a24f-fcf60f731525 (basemap)
+2025-05-29 13:43:24,192 - data_processor - INFO - 檔案 M1X60_WLPF40010003_202504141045.csv 是原始格式，執行 step1~3
+2025-05-29 13:43:24,196 - data_processor - INFO - Step 1: 讀取元件 WLPF40010003 的config參數
+2025-05-29 13:43:24,196 - data_processor - INFO - Step 2: 執行 WLPF40010003 的原始CSV偏移確認
+2025-05-29 13:43:24,532 - data_processor - INFO - Step 3: 處理 WLPF40010003 的CSV標頭
+2025-05-29 13:43:24,704 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010004.png
+2025-05-29 13:43:24,740 - data_processor - INFO - 任務 fba6161c-a420-401c-9861-ffb6a4b22f2e 已完成: True - D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010004.png
+2025-05-29 13:43:25,127 - data_processor - INFO - Step 4: 為 WLPF40010003 生成Basemap
+2025-05-29 13:43:25,151 - data_processor - INFO - 開始執行任務: a0f1354e-0c02-46d1-837e-bbdbc5e94fc8 (basemap)
+2025-05-29 13:43:25,183 - data_processor - INFO - Step 4: 為 WLPF40010003 生成Basemap
+2025-05-29 13:43:26,140 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\INNER1\WLPF40010003.png
+2025-05-29 13:43:26,176 - data_processor - INFO - 任務 82871048-a0f2-4b3f-a24f-fcf60f731525 已完成: True - D:\Database-PC\temp\map\WLPF400100\INNER1\WLPF40010003.png
+2025-05-29 13:43:26,318 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\INNER1\WLPF40010003.png
+2025-05-29 13:43:26,360 - data_processor - INFO - 任務 a0f1354e-0c02-46d1-837e-bbdbc5e94fc8 已完成: True - D:\Database-PC\temp\map\WLPF400100\INNER1\WLPF40010003.png
+2025-05-29 13:43:27,182 - data_processor - INFO - 開始執行任務: a21bc274-f04b-45ce-8e5d-cf4e93c77f2c (basemap)
+2025-05-29 13:43:27,213 - data_processor - INFO - 檔案 M3X60_WLPF40010001_202504091051.csv 是原始格式，執行 step1~3
+2025-05-29 13:43:27,213 - data_processor - INFO - Step 1: 讀取元件 WLPF40010001 的config參數
+2025-05-29 13:43:27,214 - data_processor - INFO - Step 2: 執行 WLPF40010001 的原始CSV偏移確認
+2025-05-29 13:43:27,336 - data_processor - INFO - Step 3: 處理 WLPF40010001 的CSV標頭
+2025-05-29 13:43:27,765 - data_processor - INFO - Step 4: 為 WLPF40010001 生成Basemap
+2025-05-29 13:43:28,204 - data_processor - INFO - 開始執行任務: b0e9bae2-6fdd-481b-89f8-5e017ac59f23 (basemap)
+2025-05-29 13:43:28,251 - data_processor - INFO - 檔案 M3X60_WLPF40010003_202504091051.csv 是原始格式，執行 step1~3
+2025-05-29 13:43:28,254 - data_processor - INFO - Step 1: 讀取元件 WLPF40010003 的config參數
+2025-05-29 13:43:28,257 - data_processor - INFO - Step 2: 執行 WLPF40010003 的原始CSV偏移確認
+2025-05-29 13:43:28,545 - data_processor - INFO - Step 3: 處理 WLPF40010003 的CSV標頭
+2025-05-29 13:43:28,571 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010001.png
+2025-05-29 13:43:28,608 - data_processor - INFO - 任務 a21bc274-f04b-45ce-8e5d-cf4e93c77f2c 已完成: True - D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010001.png
+2025-05-29 13:43:29,005 - data_processor - INFO - Step 4: 為 WLPF40010003 生成Basemap
+2025-05-29 13:43:29,180 - data_processor - INFO - 開始執行任務: bcedd415-76d7-40a2-a86d-3a87eeef8d3c (basemap)
+2025-05-29 13:43:29,219 - data_processor - INFO - 檔案 M3X60_WLPF40010004_202504091051.csv 是原始格式，執行 step1~3
+2025-05-29 13:43:29,226 - data_processor - INFO - Step 1: 讀取元件 WLPF40010004 的config參數
+2025-05-29 13:43:29,227 - data_processor - INFO - Step 2: 執行 WLPF40010004 的原始CSV偏移確認
+2025-05-29 13:43:29,627 - data_processor - INFO - Step 3: 處理 WLPF40010004 的CSV標頭
+2025-05-29 13:43:29,831 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010003.png
+2025-05-29 13:43:29,871 - data_processor - INFO - 任務 b0e9bae2-6fdd-481b-89f8-5e017ac59f23 已完成: True - D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010003.png
+2025-05-29 13:43:30,191 - data_processor - INFO - 開始執行任務: 1a0db14c-a9e6-4f18-9aa2-1e89e485875d (basemap)
+2025-05-29 13:43:30,224 - data_processor - INFO - 檔案 M3X60_WLPF40010006_202504091051.csv 是原始格式，執行 step1~3
+2025-05-29 13:43:30,224 - data_processor - INFO - Step 1: 讀取元件 WLPF40010006 的config參數
+2025-05-29 13:43:30,227 - data_processor - INFO - Step 2: 執行 WLPF40010006 的原始CSV偏移確認
+2025-05-29 13:43:30,250 - data_processor - INFO - Step 4: 為 WLPF40010004 生成Basemap
+2025-05-29 13:43:30,383 - data_processor - INFO - Step 3: 處理 WLPF40010006 的CSV標頭
+2025-05-29 13:43:31,321 - data_processor - INFO - Step 4: 為 WLPF40010006 生成Basemap
+2025-05-29 13:43:31,517 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010004.png
+2025-05-29 13:43:31,566 - data_processor - INFO - 任務 bcedd415-76d7-40a2-a86d-3a87eeef8d3c 已完成: True - D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010004.png
+2025-05-29 13:43:32,096 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010006.png
+2025-05-29 13:43:32,130 - data_processor - INFO - 任務 1a0db14c-a9e6-4f18-9aa2-1e89e485875d 已完成: True - D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010006.png
+2025-05-29 13:43:41,257 - data_processor - INFO - 開始執行任務: 869c36ac-2d7a-4db7-8fef-ebdfcf2d8846 (basemap)
+2025-05-29 13:43:41,290 - data_processor - INFO - 檔案 M3X60_WLPF50010001_202504091051.csv 是原始格式，執行 step1~3
+2025-05-29 13:43:41,291 - data_processor - INFO - Step 1: 讀取元件 WLPF50010001 的config參數
+2025-05-29 13:43:41,291 - data_processor - INFO - Step 2: 執行 WLPF50010001 的原始CSV偏移確認
+2025-05-29 13:43:41,423 - data_processor - INFO - Step 3: 處理 WLPF50010001 的CSV標頭
+2025-05-29 13:43:41,862 - data_processor - INFO - Step 4: 為 WLPF50010001 生成Basemap
+2025-05-29 13:43:42,325 - data_processor - INFO - 開始執行任務: 59320044-aba4-406f-9117-7c8060d2421d (basemap)
+2025-05-29 13:43:42,365 - data_processor - INFO - 檔案 M3X60_WLPF50010002_202504091051.csv 是原始格式，執行 step1~3
+2025-05-29 13:43:42,368 - data_processor - INFO - Step 1: 讀取元件 WLPF50010002 的config參數
+2025-05-29 13:43:42,371 - data_processor - INFO - Step 2: 執行 WLPF50010002 的原始CSV偏移確認
+2025-05-29 13:43:42,676 - data_processor - INFO - Step 3: 處理 WLPF50010002 的CSV標頭
+2025-05-29 13:43:42,696 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010001.png
+2025-05-29 13:43:42,727 - data_processor - INFO - 任務 869c36ac-2d7a-4db7-8fef-ebdfcf2d8846 已完成: True - D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010001.png
+2025-05-29 13:43:43,148 - data_processor - INFO - Step 4: 為 WLPF50010002 生成Basemap
+2025-05-29 13:43:43,301 - data_processor - INFO - 開始執行任務: 867f4f28-5fa4-49a8-b2e9-f736eb6eb682 (basemap)
+2025-05-29 13:43:43,339 - data_processor - INFO - 檔案 M3X60_WLPF50010003_202504091051.csv 是原始格式，執行 step1~3
+2025-05-29 13:43:43,339 - data_processor - INFO - Step 1: 讀取元件 WLPF50010003 的config參數
+2025-05-29 13:43:43,340 - data_processor - INFO - Step 2: 執行 WLPF50010003 的原始CSV偏移確認
+2025-05-29 13:43:43,777 - data_processor - INFO - Step 3: 處理 WLPF50010003 的CSV標頭
+2025-05-29 13:43:43,996 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010002.png
+2025-05-29 13:43:44,028 - data_processor - INFO - 任務 59320044-aba4-406f-9117-7c8060d2421d 已完成: True - D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010002.png
+2025-05-29 13:43:44,298 - data_processor - INFO - 開始執行任務: eac98969-48aa-4599-8ded-070221a5399d (basemap)
+2025-05-29 13:43:44,335 - data_processor - INFO - 檔案 M3X60_WLPF50010004_202504091051.csv 是原始格式，執行 step1~3
+2025-05-29 13:43:44,336 - data_processor - INFO - Step 1: 讀取元件 WLPF50010004 的config參數
+2025-05-29 13:43:44,338 - data_processor - INFO - Step 2: 執行 WLPF50010004 的原始CSV偏移確認
+2025-05-29 13:43:44,445 - data_processor - INFO - Step 4: 為 WLPF50010003 生成Basemap
+2025-05-29 13:43:44,519 - data_processor - INFO - Step 3: 處理 WLPF50010004 的CSV標頭
+2025-05-29 13:43:45,344 - data_processor - INFO - Step 4: 為 WLPF50010004 生成Basemap
+2025-05-29 13:43:45,657 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010003.png
+2025-05-29 13:43:45,689 - data_processor - INFO - 任務 867f4f28-5fa4-49a8-b2e9-f736eb6eb682 已完成: True - D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010003.png
+2025-05-29 13:43:46,286 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010004.png
+2025-05-29 13:43:46,318 - data_processor - INFO - 任務 eac98969-48aa-4599-8ded-070221a5399d 已完成: True - D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010004.png
