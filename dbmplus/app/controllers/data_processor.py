@@ -9,8 +9,9 @@ import threading
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple, Any, Callable
 import datetime
-from concurrent.futures import ThreadPoolExecutor
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from PySide6.QtCore import QObject, Signal, QMetaObject, Qt
+import shutil
 
 from ..utils import (
     get_logger, config, ensure_directory, 
@@ -820,17 +821,18 @@ class DataProcessor:
             return False, f"生成失敗: {str(e)}"
     
     def create_task(self, task_type: str, product_id: str, lot_id: str, station: str = None, 
-                   component_id: str = None, callback: Callable = None) -> str:
+                   component_id: str = None, callback: Callable = None, **kwargs) -> str:
         """
         創建並啟動一個處理任務
         
         Args:
-            task_type: 任務類型，'basemap', 'lossmap', 'fpy'
+            task_type: 任務類型，'basemap', 'lossmap', 'fpy', 'move_files'
             product_id: 產品ID
             lot_id: 批次ID
             station: 站點名稱
             component_id: 元件ID
             callback: 任務完成後的回調函數（可選，優先使用信號槽連接）
+            **kwargs: 其他任務參數（如move_files的move_params）
             
         Returns:
             str: 任務ID
@@ -844,6 +846,14 @@ class DataProcessor:
             station=station,
             component_id=component_id
         )
+        
+        # 如果是移動檔案任務，保存額外的參數
+        if task_type == "move_files" and "move_params" in kwargs:
+            task.move_params = kwargs["move_params"]
+        
+        # 如果是批量移動檔案任務，保存額外的參數
+        if task_type == "batch_move_files" and "batch_move_params" in kwargs:
+            task.batch_move_params = kwargs["batch_move_params"]
         
         self.active_tasks[task_id] = task
         
@@ -955,6 +965,34 @@ class DataProcessor:
                 
             elif task.task_type == "fpy_parallel":
                 success, message = self.generate_fpy_parallel(task.product_id, task.lot_id, task.station)
+                
+            elif task.task_type == "move_files":
+                # 移動檔案任務
+                # 從task的自定義屬性中獲取參數
+                if hasattr(task, 'move_params'):
+                    params = task.move_params
+                    success, message = self.move_files(
+                        component_id=task.component_id,
+                        lot_id=task.lot_id,
+                        station=task.station,
+                        source_product=params['source_product'],
+                        target_product=params['target_product'],
+                        file_types=params['file_types']
+                    )
+                else:
+                    success, message = False, "移動檔案任務缺少必要參數"
+                
+            elif task.task_type == "batch_move_files":
+                # 批量移動檔案任務
+                if hasattr(task, 'batch_move_params'):
+                    params = task.batch_move_params
+                    success, message = self.batch_move_files(
+                        components_data=params['components_data'],
+                        target_product=params['target_product'],
+                        file_types=params['file_types']
+                    )
+                else:
+                    success, message = False, "批量移動檔案任務缺少必要參數"
                 
             else:
                 success, message = False, f"未知的任務類型: {task.task_type}"
@@ -1260,6 +1298,341 @@ class DataProcessor:
         
         logger.info(f"函數 {func_name} 執行時間: {elapsed_time:.2f}秒")
         return result
+
+    def move_files(self, component_id: str, lot_id: str, station: str, 
+                   source_product: str, target_product: str, 
+                   file_types: List[str]) -> Tuple[bool, str]:
+        """
+        移動組件相關檔案從源產品到目標產品
+        
+        Args:
+            component_id: 組件ID
+            lot_id: 批次ID
+            station: 站點名稱
+            source_product: 源產品ID
+            target_product: 目標產品ID
+            file_types: 要移動的檔案類型列表 ['csv', 'map', 'org', 'roi']
+            
+        Returns:
+            Tuple[bool, str]: (成功狀態, 訊息)
+        """
+        try:
+            # 獲取組件信息
+            component = db_manager.get_component(lot_id, station, component_id)
+            if not component:
+                return False, f"找不到組件: {component_id}"
+            
+            # 獲取批次信息以取得原始批次ID
+            lot_obj = db_manager.get_lot(lot_id)
+            if not lot_obj:
+                return False, f"找不到批次: {lot_id}"
+            
+            original_lot_id = lot_obj.original_lot_id
+            
+            moved_files = []
+            failed_files = []
+            
+            # 處理每種檔案類型
+            for file_type in file_types:
+                try:
+                    if file_type == 'csv':
+                        # CSV檔案移動
+                        source_path = config.get_path(
+                            "database.structure.csv",
+                            product=source_product,
+                            lot=original_lot_id,
+                            station=station
+                        )
+                        target_path = config.get_path(
+                            "database.structure.csv",
+                            product=target_product,
+                            lot=original_lot_id,
+                            station=station
+                        )
+                        
+                        source_file = Path(source_path) / f"{component_id}.csv"
+                        target_file = Path(target_path) / f"{component_id}.csv"
+                        
+                        if source_file.exists():
+                            ensure_directory(target_file.parent)
+                            shutil.move(str(source_file), str(target_file))
+                            moved_files.append(f"CSV: {source_file} -> {target_file}")
+                            
+                            # 更新組件的CSV路徑
+                            component.csv_path = str(target_file)
+                        else:
+                            failed_files.append(f"CSV檔案不存在: {source_file}")
+                    
+                    elif file_type == 'map':
+                        # Map檔案移動 (可能包含多種類型的map)
+                        source_map_base = config.get_path(
+                            "database.structure.map",
+                            product=source_product,
+                            lot=original_lot_id
+                        )
+                        target_map_base = config.get_path(
+                            "database.structure.map",
+                            product=target_product,
+                            lot=original_lot_id
+                        )
+                        
+                        # 檢查並移動各種類型的map檔案
+                        map_types = [
+                            (f"{station}/{component_id}.png", "basemap_path"),
+                            (f"LOSS{self.station_order.index(station)}/{component_id}.png", "lossmap_path"),
+                            (f"FPY/{component_id}.png", "fpy_path")
+                        ]
+                        
+                        for map_subpath, attr_name in map_types:
+                            source_map = Path(source_map_base) / map_subpath
+                            target_map = Path(target_map_base) / map_subpath
+                            
+                            if source_map.exists():
+                                ensure_directory(target_map.parent)
+                                shutil.move(str(source_map), str(target_map))
+                                moved_files.append(f"Map: {source_map} -> {target_map}")
+                                
+                                # 更新組件的map路徑
+                                setattr(component, attr_name, str(target_map))
+                    
+                    elif file_type == 'org':
+                        # Org資料夾移動
+                        source_org = Path(config.get_path(
+                            "database.structure.org",
+                            product=source_product,
+                            lot=original_lot_id,
+                            station=station,
+                            component=component_id
+                        ))
+                        target_org = Path(config.get_path(
+                            "database.structure.org",
+                            product=target_product,
+                            lot=original_lot_id,
+                            station=station,
+                            component=component_id
+                        ))
+                        
+                        if source_org.exists():
+                            ensure_directory(target_org.parent)
+                            shutil.move(str(source_org), str(target_org))
+                            moved_files.append(f"Org: {source_org} -> {target_org}")
+                        else:
+                            failed_files.append(f"Org資料夾不存在: {source_org}")
+                    
+                    elif file_type == 'roi':
+                        # ROI資料夾移動
+                        source_roi = Path(config.get_path(
+                            "database.structure.roi",
+                            product=source_product,
+                            lot=original_lot_id,
+                            station=station,
+                            component=component_id
+                        ))
+                        target_roi = Path(config.get_path(
+                            "database.structure.roi",
+                            product=target_product,
+                            lot=original_lot_id,
+                            station=station,
+                            component=component_id
+                        ))
+                        
+                        if source_roi.exists():
+                            ensure_directory(target_roi.parent)
+                            shutil.move(str(source_roi), str(target_roi))
+                            moved_files.append(f"ROI: {source_roi} -> {target_roi}")
+                        else:
+                            failed_files.append(f"ROI資料夾不存在: {source_roi}")
+                            
+                except Exception as e:
+                    failed_files.append(f"{file_type}移動失敗: {str(e)}")
+            
+            # 更新組件的product_id
+            component.product_id = target_product
+            db_manager.update_component(component)
+            
+            # 構建結果訊息
+            success_count = len(moved_files)
+            fail_count = len(failed_files)
+            
+            result_parts = []
+            if success_count > 0:
+                result_parts.append(f"成功移動 {success_count} 個檔案")
+            if fail_count > 0:
+                result_parts.append(f"失敗 {fail_count} 個檔案")
+            
+            message = "; ".join(result_parts) if result_parts else "沒有檔案需要移動"
+            
+            # 記錄詳細信息
+            if moved_files:
+                logger.info(f"成功移動的檔案: {moved_files}")
+            if failed_files:
+                logger.warning(f"移動失敗的檔案: {failed_files}")
+            
+            return success_count > 0 or fail_count == 0, message
+            
+        except Exception as e:
+            logger.error(f"移動檔案時發生錯誤: {e}")
+            return False, f"移動失敗: {str(e)}"
+
+    def batch_move_files(self, components_data: List[Tuple[str, str, str, str]], 
+                        target_product: str, file_types: List[str]) -> Tuple[bool, str]:
+        """
+        批量移動多個組件的檔案 - 多線程版本
+        
+        Args:
+            components_data: 組件數據列表 [(component_id, lot_id, station, source_product), ...]
+            target_product: 目標產品ID
+            file_types: 要移動的檔案類型列表 ['csv', 'map', 'org', 'roi']
+            
+        Returns:
+            Tuple[bool, str]: (成功狀態, 訊息)
+        """
+        try:
+            from concurrent.futures import ThreadPoolExecutor, as_completed
+            from ..controllers.online_monitor import online_manager
+            import time
+            
+            total_components = len(components_data)
+            success_count = 0
+            fail_count = 0
+            all_moved_files = []
+            all_failed_files = []
+            
+            logger.info(f"開始批量移動 {total_components} 個組件的檔案 (多線程模式)")
+            
+            # 創建總體進度日誌
+            batch_log = online_manager.create_log(
+                product_id=target_product,
+                lot_id="BATCH",
+                station="BATCH_MOVE",
+                component_id=f"BATCH_{total_components}_COMPONENTS"
+            )
+            batch_log.start_processing(f"批量移動 {total_components} 個組件")
+            
+            def move_single_component(component_data, index):
+                """移動單個組件的檔案"""
+                component_id, lot_id, station, source_product = component_data
+                
+                try:
+                    # 為每個組件創建單獨的日誌
+                    component_log = online_manager.create_log(
+                        product_id=target_product,
+                        lot_id=lot_id,
+                        station=station,
+                        component_id=component_id
+                    )
+                    component_log.start_processing(f"移動檔案 ({index+1}/{total_components})")
+                    
+                    # 調用單個檔案移動功能
+                    success, message = self.move_files(
+                        component_id=component_id,
+                        lot_id=lot_id,
+                        station=station,
+                        source_product=source_product,
+                        target_product=target_product,
+                        file_types=file_types
+                    )
+                    
+                    if success:
+                        component_log.complete(f"移動成功: {message}")
+                        online_manager.log_updated.emit(component_log)  # 觸發組件日誌更新
+                        return True, f"{component_id}: {message}"
+                    else:
+                        component_log.fail(f"移動失敗: {message}")
+                        online_manager.log_updated.emit(component_log)  # 觸發組件日誌更新
+                        return False, f"{component_id}: {message}"
+                        
+                except Exception as e:
+                    error_msg = f"{component_id}: 處理失敗 - {str(e)}"
+                    logger.error(f"移動組件 {component_id} 時發生錯誤: {e}")
+                    
+                    # 更新組件日誌
+                    if 'component_log' in locals():
+                        component_log.fail(f"移動失敗: {str(e)}")
+                        online_manager.log_updated.emit(component_log)  # 觸發組件日誌更新
+                    
+                    return False, error_msg
+            
+            # 使用線程池並行處理，限制並發數量避免資源競爭
+            max_workers = min(4, total_components)  # 最多4個並發線程
+            processed_count = 0
+            
+            with ThreadPoolExecutor(max_workers=max_workers) as executor:
+                # 提交所有任務
+                future_to_component = {
+                    executor.submit(move_single_component, comp_data, idx): (comp_data, idx)
+                    for idx, comp_data in enumerate(components_data)
+                }
+                
+                # 處理完成的任務
+                for future in as_completed(future_to_component):
+                    component_data, index = future_to_component[future]
+                    component_id = component_data[0]
+                    processed_count += 1
+                    
+                    try:
+                        success, message = future.result()
+                        
+                        if success:
+                            success_count += 1
+                            all_moved_files.append(message)
+                        else:
+                            fail_count += 1
+                            all_failed_files.append(message)
+                        
+                        # 更新批次進度
+                        progress_msg = f"處理進度: {processed_count}/{total_components} (成功: {success_count}, 失敗: {fail_count})"
+                        batch_log.update_status("processing", progress_msg)
+                        online_manager.log_updated.emit(batch_log)  # 手動觸發更新信號
+                        logger.info(f"批量移動進度: {progress_msg}")
+                        
+                    except Exception as e:
+                        fail_count += 1
+                        error_msg = f"{component_id}: 執行異常 - {str(e)}"
+                        all_failed_files.append(error_msg)
+                        logger.error(f"處理組件 {component_id} 的Future時發生錯誤: {e}")
+                        
+                        # 更新批次進度 (即使出錯也要更新)
+                        progress_msg = f"處理進度: {processed_count}/{total_components} (成功: {success_count}, 失敗: {fail_count})"
+                        batch_log.update_status("processing", progress_msg)
+                        online_manager.log_updated.emit(batch_log)  # 手動觸發更新信號
+            
+            # 構建結果訊息
+            result_parts = []
+            if success_count > 0:
+                result_parts.append(f"成功處理 {success_count} 個組件")
+            if fail_count > 0:
+                result_parts.append(f"失敗 {fail_count} 個組件")
+            
+            message = "; ".join(result_parts) if result_parts else "沒有組件需要處理"
+            
+            # 記錄詳細信息
+            if all_moved_files:
+                logger.info(f"批量移動成功的組件: {all_moved_files}")
+            if all_failed_files:
+                logger.warning(f"批量移動失敗的組件: {all_failed_files}")
+            
+            overall_success = success_count > 0 or fail_count == 0
+            
+            # 完成批次日誌
+            if overall_success:
+                batch_log.complete(f"批量移動完成: {message}")
+            else:
+                batch_log.fail(f"批量移動失敗: {message}")
+            
+            # 手動觸發最終更新信號
+            online_manager.log_updated.emit(batch_log)
+            
+            return overall_success, message
+            
+        except Exception as e:
+            logger.error(f"批量移動檔案時發生錯誤: {e}")
+            
+            # 如果批次日誌已創建，更新其狀態
+            if 'batch_log' in locals():
+                batch_log.fail(f"批量移動異常: {str(e)}")
+            
+            return False, f"批量移動失敗: {str(e)}"
 
 
 # 創建全局數據處理器實例

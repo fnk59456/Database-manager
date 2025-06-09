@@ -20,6 +20,7 @@ from PySide6.QtGui import QIcon, QAction, QPixmap, QFont, QColor
 from ..utils import get_logger, config
 from ..models import db_manager, ComponentInfo
 from ..controllers import data_processor, online_manager
+from .dialogs import MoveFileDialog, BatchMoveFileDialog
 
 logger = get_logger("main_window")
 
@@ -163,7 +164,12 @@ class MainWindow(QMainWindow):
         self.component_table.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
         self.component_table.verticalHeader().setVisible(False)
         self.component_table.setSelectionBehavior(QTableWidget.SelectRows)
+        self.component_table.setSelectionMode(QTableWidget.ExtendedSelection)  # 支持多選
         self.component_table.setAlternatingRowColors(True)
+        
+        # 設置右鍵選單
+        self.component_table.setContextMenuPolicy(Qt.CustomContextMenu)
+        self.component_table.customContextMenuRequested.connect(self.show_component_context_menu)
         
         # 設置欄寬
         col_widths = config.get("ui.table_column_widths", {})
@@ -438,6 +444,215 @@ class MainWindow(QMainWindow):
             f"FPY: {component.fpy_path}"
         )
     
+    def show_component_context_menu(self, position):
+        """顯示元件表格的右鍵選單"""
+        # 獲取選中的行
+        selected_rows = set()
+        for item in self.component_table.selectedItems():
+            selected_rows.add(item.row())
+        
+        if not selected_rows:
+            return
+        
+        # 創建右鍵選單
+        context_menu = QMenu(self)
+        
+        if len(selected_rows) == 1:
+            # 單選情況 - 原有的單個移動功能
+            row = list(selected_rows)[0]
+            
+            # 獲取該行的組件信息
+            product_item = self.component_table.item(row, 0)
+            lot_item = self.component_table.item(row, 1)
+            station_item = self.component_table.item(row, 2)
+            component_id_item = self.component_table.item(row, 3)
+            
+            if not all([product_item, lot_item, station_item, component_id_item]):
+                return
+            
+            product = product_item.text()
+            lot_display = lot_item.text()
+            station = station_item.text()
+            component_id = component_id_item.text()
+            
+            # 獲取實際的批次ID
+            lot_id = self.selected_lot  # 使用當前選擇的lot_id
+            
+            # 添加移動檔案選項
+            move_action = QAction("移動檔案", self)
+            move_action.triggered.connect(
+                lambda: self.show_move_file_dialog(component_id, lot_id, station, product)
+            )
+            context_menu.addAction(move_action)
+            
+            # 添加分隔線
+            context_menu.addSeparator()
+            
+            # 添加查看詳情選項
+            view_action = QAction("查看詳情", self)
+            view_action.triggered.connect(
+                lambda: self.view_component_details(component_id, lot_id, station)
+            )
+            context_menu.addAction(view_action)
+            
+        else:
+            # 多選情況 - 批量移動功能
+            # 添加批量移動檔案選項
+            batch_move_action = QAction(f"批量移動檔案 ({len(selected_rows)} 個項目)", self)
+            batch_move_action.triggered.connect(
+                lambda: self.show_batch_move_file_dialog(selected_rows)
+            )
+            context_menu.addAction(batch_move_action)
+        
+        # 顯示選單
+        context_menu.exec(self.component_table.mapToGlobal(position))
+    
+    def show_move_file_dialog(self, component_id: str, lot_id: str, station: str, source_product: str):
+        """顯示移動檔案對話框"""
+        try:
+            # 創建移動檔案對話框
+            dialog = MoveFileDialog(component_id, lot_id, station, source_product, self)
+            
+            # 連接移動請求信號
+            dialog.move_requested.connect(self.handle_move_file_request)
+            
+            # 顯示對話框
+            dialog.exec()
+            
+        except Exception as e:
+            logger.error(f"顯示移動檔案對話框失敗: {e}")
+            QMessageBox.critical(self, "錯誤", f"無法顯示移動檔案對話框: {str(e)}")
+    
+    def handle_move_file_request(self, component_id: str, lot_id: str, station: str, 
+                               source_product: str, target_product: str, file_types: list):
+        """處理移動檔案請求"""
+        try:
+            # 創建移動檔案任務
+            move_params = {
+                'source_product': source_product,
+                'target_product': target_product,
+                'file_types': file_types
+            }
+            
+            # 創建任務對話框
+            file_types_str = ", ".join(file_types)
+            dialog = TaskProgressDialog(
+                "移動檔案", 
+                f"正在移動組件 {component_id} 的檔案...\n"
+                f"從 {source_product} 到 {target_product}\n"
+                f"檔案類型: {file_types_str}",
+                self
+            )
+            
+            # 創建移動檔案任務
+            task_id = data_processor.create_task(
+                "move_files",
+                target_product,  # 使用目標產品作為product_id
+                lot_id,
+                station,
+                component_id=component_id,
+                move_params=move_params
+            )
+            
+            dialog.set_task_id(task_id)
+            dialog.exec()
+            
+            # 刷新資料
+            self.update_component_table()
+            
+        except Exception as e:
+            logger.error(f"處理移動檔案請求失敗: {e}")
+            QMessageBox.critical(self, "錯誤", f"移動檔案失敗: {str(e)}")
+    
+    def view_component_details(self, component_id: str, lot_id: str, station: str):
+        """查看組件詳細信息"""
+        try:
+            component = db_manager.get_component(lot_id, station, component_id)
+            if component:
+                self.on_view_component(component)
+            else:
+                QMessageBox.warning(self, "警告", f"找不到組件: {component_id}")
+        except Exception as e:
+            logger.error(f"查看組件詳情失敗: {e}")
+            QMessageBox.critical(self, "錯誤", f"無法查看組件詳情: {str(e)}")
+    
+    def show_batch_move_file_dialog(self, selected_rows: set):
+        """顯示批量移動檔案對話框"""
+        try:
+            # 從選中的行收集組件數據
+            components_data = []
+            for row in selected_rows:
+                product_item = self.component_table.item(row, 0)
+                lot_item = self.component_table.item(row, 1)
+                station_item = self.component_table.item(row, 2)
+                component_id_item = self.component_table.item(row, 3)
+                
+                if all([product_item, lot_item, station_item, component_id_item]):
+                    components_data.append((
+                        component_id_item.text(),  # component_id
+                        self.selected_lot,         # lot_id (使用內部ID)
+                        station_item.text(),       # station
+                        product_item.text()        # source_product
+                    ))
+            
+            if not components_data:
+                QMessageBox.warning(self, "警告", "無法獲取選中的組件信息")
+                return
+            
+            # 創建批量移動檔案對話框
+            dialog = BatchMoveFileDialog(components_data, self)
+            
+            # 連接批量移動請求信號
+            dialog.batch_move_requested.connect(self.handle_batch_move_file_request)
+            
+            # 顯示對話框
+            dialog.exec()
+            
+        except Exception as e:
+            logger.error(f"顯示批量移動檔案對話框失敗: {e}")
+            QMessageBox.critical(self, "錯誤", f"無法顯示批量移動檔案對話框: {str(e)}")
+    
+    def handle_batch_move_file_request(self, components_data: list, target_product: str, file_types: list):
+        """處理批量移動檔案請求"""
+        try:
+            # 創建批量移動檔案任務參數
+            batch_move_params = {
+                'components_data': components_data,
+                'target_product': target_product,
+                'file_types': file_types
+            }
+            
+            # 使用第一個組件的信息創建任務（批量移動將在後台處理所有組件）
+            first_component = components_data[0]
+            task_id = data_processor.create_task(
+                "batch_move_files",
+                target_product,  # 使用目標產品作為product_id
+                first_component[1],  # lot_id
+                first_component[2],  # station
+                component_id=first_component[0],  # component_id
+                batch_move_params=batch_move_params
+            )
+            
+            # 顯示開始訊息，但不阻塞界面
+            file_types_str = ", ".join(file_types)
+            source_products = set(comp[3] for comp in components_data)
+            source_products_str = ", ".join(source_products)
+            
+            self.statusBar.showMessage(
+                f"已開始批量移動 {len(components_data)} 個組件的檔案 "
+                f"(從 {source_products_str} 到 {target_product})，請查看LOG頁面了解進度",
+                5000
+            )
+            
+            # 自動切換到LOG頁面
+            self.detail_tabs.setCurrentIndex(1)  # 切換到LOG頁面
+            
+            logger.info(f"已啟動批量移動任務 {task_id}: {len(components_data)} 個組件")
+            
+        except Exception as e:
+            logger.error(f"處理批量移動檔案請求失敗: {e}")
+            QMessageBox.critical(self, "錯誤", f"批量移動檔案失敗: {str(e)}")
+    
     def on_process_basemap_clicked(self):
         """生成 Basemap 按鈕點擊事件"""
         if not self.selected_product or not self.selected_lot or not self.selected_station:
@@ -549,8 +764,21 @@ class MainWindow(QMainWindow):
     @Slot(str, bool, str)
     def on_task_completed(self, task_id, success, message):
         """任務完成回調 - 使用Qt槽接收信號"""
+        # 獲取任務信息
+        task_status = data_processor.get_task_status(task_id)
+        if task_status and "task" in task_status:
+            task = task_status["task"]
+            task_type = task.get("task_type", "")
+            
+            # 如果是批量移動任務，顯示完成訊息
+            if task_type == "batch_move_files":
+                if success:
+                    self.statusBar.showMessage(f"批量移動檔案完成: {message}", 5000)
+                else:
+                    self.statusBar.showMessage(f"批量移動檔案失敗: {message}", 5000)
+        
         # 重新載入元件表格
-        self.update_component_table() 
+        self.update_component_table()
     
     def on_online_clicked(self):
         """在線處理按鈕點擊事件"""

@@ -30,7 +30,7 @@ class ProcessingLog:
                  lot_id: str, 
                  station: str, 
                  component_id: str,
-                 file_path: str):
+                 file_path: str = ""):
         self.timestamp = datetime.now()
         self.product_id = product_id
         self.lot_id = lot_id  # 內部批次ID
@@ -43,10 +43,13 @@ class ProcessingLog:
         self.message = ""
         self.duration = None  # 處理耗時
         
-        # 獲取顯示用批次ID
-        lot_obj = db_manager.get_lot(lot_id)
-        if lot_obj:
-            self.original_lot_id = lot_obj.original_lot_id
+        # 獲取顯示用批次ID (如果lot_id不是特殊值)
+        if lot_id not in ["BATCH", "BATCH_MOVE"]:
+            lot_obj = db_manager.get_lot(lot_id)
+            if lot_obj:
+                self.original_lot_id = lot_obj.original_lot_id
+            else:
+                self.original_lot_id = lot_id
         else:
             self.original_lot_id = lot_id
     
@@ -59,24 +62,38 @@ class ProcessingLog:
             "message": message
         })
     
-    def start_processing(self):
+    def start_processing(self, message: str = ""):
         """標記為處理中"""
         self.status = "processing"
+        self.message = message
         self.start_time = datetime.now()
+    
+    def update_status(self, status: str, message: str = ""):
+        """更新狀態和訊息 (用於進度更新)"""
+        if status == "processing":
+            self.status = status
+            self.message = message
+        elif status in ["completed", "failed"]:
+            if status == "completed":
+                self.complete(message)
+            else:
+                self.fail(message)
     
     def complete(self, message: str = ""):
         """標記為完成"""
         self.status = "completed"
         self.message = message
         self.end_time = datetime.now()
-        self.duration = (self.end_time - self.start_time).total_seconds()
+        if hasattr(self, 'start_time'):
+            self.duration = (self.end_time - self.start_time).total_seconds()
     
     def fail(self, message: str):
         """標記為失敗"""
         self.status = "failed"
         self.message = message
         self.end_time = datetime.now()
-        self.duration = (self.end_time - self.start_time).total_seconds()
+        if hasattr(self, 'start_time'):
+            self.duration = (self.end_time - self.start_time).total_seconds()
     
     def to_dict(self) -> Dict[str, Any]:
         """轉換為字典"""
@@ -470,6 +487,13 @@ class OnlineProcessManager(QObject):
         self.processing_logs = []
         self.log_updated.emit(None)  # 發送空日誌通知界面更新
         logger.info("處理日誌已清空")
+    
+    def create_log(self, product_id: str, lot_id: str, station: str, component_id: str, file_path: str = "") -> ProcessingLog:
+        """創建新的處理日誌"""
+        log = ProcessingLog(product_id, lot_id, station, component_id, file_path)
+        self.processing_logs.append(log)
+        self.log_updated.emit(log)
+        return log
     
     def get_logs(self) -> List[Dict[str, Any]]:
         """獲取所有日誌摘要"""
