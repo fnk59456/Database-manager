@@ -1,5 +1,0 @@
-timestamp,function,product_id,lot_id,station,memory_usage_mb,cpu_percent,thread_count,python_version,task_id,status
-2025-05-16 15:29:16,task_basemap,temp,WLPF400100,MT,143.015625,0.0,28,3.12.4,8f0d466c-e493-4aaa-86d5-0a48d0bdef3e,開始
-2025-05-16 15:29:29,task_basemap,temp,WLPF400100,MT,235.28515625,2.4,29,3.12.4,8f0d466c-e493-4aaa-86d5-0a48d0bdef3e,結束,True,12.845051765441895
-2025-05-16 15:29:44,task_basemap,temp,WLPF400100,MT,235.1015625,0.0,29,3.12.4,220217ed-0c0f-41ec-b0fe-e83813faf672,開始
-2025-05-16 15:29:57,task_basemap,temp,WLPF400100,MT,272.2734375,2.7,29,3.12.4,220217ed-0c0f-41ec-b0fe-e83813faf672,結束,True,12.726020336151123

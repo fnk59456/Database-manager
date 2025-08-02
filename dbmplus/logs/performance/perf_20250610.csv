@@ -1,3 +1,0 @@
-timestamp,function,product_id,lot_id,station,memory_usage_mb,cpu_percent,thread_count,python_version,task_id,status
-2025-06-10 09:33:35,task_batch_move_files,i-Pixel,WLPF500100,MT,150.26171875,0.0,29,3.13.2,39b668c2-2f22-4d23-b731-f05282090263,¶}©l
-2025-06-10 09:33:35,task_batch_move_files,i-Pixel,WLPF500100,MT,152.69921875,1.0,29,3.13.2,39b668c2-2f22-4d23-b731-f05282090263,µ²§ô,True,0.11766982078552246
