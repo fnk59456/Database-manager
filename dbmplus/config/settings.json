@@ -29,7 +29,7 @@
             "DC2": false,
             "INNER1": false,
             "RDL": false,
-            "INNER2": true,
+            "INNER2": false,
             "EMC": false
         },
         "station_recipe": {
@@ -153,5 +153,22 @@
         "auto_backup": true,
         "backup_dir": "backups",
         "backup_interval_days": 7
+    },
+    "auto_move": {
+        "enabled": true,
+        "target_product": "i-Pixel",
+        "immediate": {
+            "enabled": true,
+            "file_types": ["csv", "map"],
+            "delay_minutes": 1
+        },
+        "delayed": {
+            "enabled": true,
+            "file_types": ["org", "roi"],
+            "schedule": {
+                "time": "14:33",
+                "days": ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]
+            }
+        }
     }
 } 

@@ -498,6 +498,18 @@ class OnlineProcessManager(QObject):
     def get_logs(self) -> List[Dict[str, Any]]:
         """獲取所有日誌摘要"""
         return [log.get_summary() for log in self.processing_logs]
+    
+    def start_auto_move(self):
+        """啟動自動移動功能"""
+        if hasattr(self, 'data_processor') and hasattr(self.data_processor, 'delayed_move_manager'):
+            self.data_processor.delayed_move_manager.start_scheduler()
+            logger.info("自動移動功能已啟動")
+    
+    def stop_auto_move(self):
+        """停止自動移動功能"""
+        if hasattr(self, 'data_processor') and hasattr(self.data_processor, 'delayed_move_manager'):
+            self.data_processor.delayed_move_manager.stop_scheduler()
+            logger.info("自動移動功能已停止")
 
 
 # 創建全局實例

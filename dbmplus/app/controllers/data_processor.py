@@ -10,8 +10,10 @@ from pathlib import Path
 from typing import Dict, List, Optional, Tuple, Any, Callable
 import datetime
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from PySide6.QtCore import QObject, Signal, QMetaObject, Qt
+from PySide6.QtCore import QObject, Signal, QMetaObject, Qt, QTimer
 import shutil
+from queue import Queue, Empty
+from datetime import timedelta
 
 from ..utils import (
     get_logger, config, ensure_directory, 
@@ -83,6 +85,137 @@ class TaskSignaler(QObject):
     task_completed = Signal(str, bool, str)
 
 
+class DelayedMoveManager(QObject):
+    """延遲移動管理器，處理大量檔案的延遲移動"""
+    
+    def __init__(self):
+        super().__init__()
+        self.move_queue = Queue()
+        self.scheduler = QTimer()
+        self.scheduler.setSingleShot(True)  # 設置為單次觸發
+        self.scheduler.timeout.connect(self.process_delayed_moves)
+        self.is_running = False
+        logger.info("延遲移動管理器已初始化")
+        
+    def add_to_delayed_queue(self, component_id: str, lot_id: str, station: str, 
+                            source_product: str, target_product: str):
+        """添加到延遲移動隊列"""
+        self.move_queue.put({
+            'component_id': component_id,
+            'lot_id': lot_id,
+            'station': station,
+            'source_product': source_product,
+            'target_product': target_product,
+            'timestamp': datetime.datetime.now()
+        })
+        logger.info(f"已添加到延遲移動隊列: {component_id}")
+    
+    def start_scheduler(self, interval_hours: int = 24):
+        """啟動定時器（根據配置的時間執行）"""
+        if self.is_running:
+            logger.info("延遲移動調度器已在運行中")
+            return
+            
+        self.is_running = True
+        
+        # 從配置中讀取時間設定
+        schedule_config = config.get("auto_move.delayed.schedule", {})
+        scheduled_time = schedule_config.get("time", "02:00")  # 默認凌晨2點
+        scheduled_days = schedule_config.get("days", ["monday", "tuesday", "wednesday", "thursday", "friday"])
+        
+        logger.info(f"延遲移動配置 - 時間: {scheduled_time}, 天數: {scheduled_days}")
+        
+        # 解析時間
+        try:
+            hour, minute = map(int, scheduled_time.split(":"))
+            logger.info(f"解析時間成功 - 小時: {hour}, 分鐘: {minute}")
+        except ValueError:
+            logger.error(f"無效的時間格式: {scheduled_time}，使用默認時間 02:00")
+            hour, minute = 2, 0
+        
+        # 計算到下次執行時間的毫秒數
+        now = datetime.datetime.now()
+        next_run = now.replace(hour=hour, minute=minute, second=0, microsecond=0)
+        
+        # 如果今天的時間已過，設定為明天
+        if next_run <= now:
+            next_run += timedelta(days=1)
+            logger.info(f"今天的時間已過，設定為明天執行")
+        
+        delay_ms = (next_run - now).total_seconds() * 1000
+        logger.info(f"延遲時間: {delay_ms} 毫秒 ({delay_ms/1000/60:.1f} 分鐘)")
+        
+        self.scheduler.start(delay_ms)
+        logger.info(f"延遲移動管理器已啟動，下次執行時間: {next_run} (配置時間: {scheduled_time})")
+    
+    def stop_scheduler(self):
+        """停止定時器"""
+        self.is_running = False
+        self.scheduler.stop()
+        logger.info("延遲移動管理器已停止")
+    
+    def process_delayed_moves(self):
+        """處理延遲移動隊列"""
+        logger.info("延遲移動管理器開始處理隊列")
+        
+        if self.move_queue.empty():
+            logger.info("延遲移動隊列為空")
+            # 即使隊列為空，也要重新啟動調度器
+            self.start_scheduler()
+            return
+        
+        logger.info("開始處理延遲移動隊列")
+        
+        # 獲取目標產品
+        target_product = config.get("auto_move.target_product", "i-Pixel")
+        
+        # 收集所有需要移動的組件
+        components_to_move = []
+        queue_size = self.move_queue.qsize()
+        logger.info(f"延遲移動隊列中有 {queue_size} 個項目")
+        
+        while not self.move_queue.empty():
+            try:
+                item = self.move_queue.get_nowait()
+                components_to_move.append((
+                    item['component_id'],
+                    item['lot_id'],
+                    item['station'],
+                    item['source_product']
+                ))
+            except Empty:
+                break
+        
+        logger.info(f"收集到 {len(components_to_move)} 個組件需要移動")
+        
+        if components_to_move:
+            # 獲取延遲移動的檔案類型
+            delayed_file_types = config.get("auto_move.delayed.file_types", ["org", "roi"])
+            logger.info(f"延遲移動檔案類型: {delayed_file_types}")
+            
+            # 創建批量移動任務
+            task_id = data_processor.create_task(
+                "batch_move_files",
+                target_product,  # 使用配置的目標產品
+                components_to_move[0][1],  # lot_id
+                components_to_move[0][2],  # station
+                component_id=components_to_move[0][0],  # component_id
+                batch_move_params={
+                    'components_data': components_to_move,
+                    'target_product': target_product,  # 使用配置的目標產品
+                    'file_types': delayed_file_types  # 使用配置的檔案類型
+                }
+            )
+            logger.info(f"已創建延遲移動任務: {task_id}")
+        else:
+            logger.info("沒有組件需要移動")
+        
+        # 重新啟動定時器
+        logger.info("重新啟動延遲移動調度器")
+        self.is_running = False  # 重置狀態
+        self.start_scheduler()
+
+
 class DataProcessor:
     """數據處理控制器，提供數據處理與圖像生成功能"""
     
@@ -114,6 +247,8 @@ class DataProcessor:
         
         # 創建信號器對象，用於線程安全的回調
         self.signaler = TaskSignaler()
+        
+        # 注意：延遲移動管理器現在在主視窗中初始化，以確保在正確的線程中運行
     
     def _load_mask_rules(self, station):
         """載入指定站點的遮罩規則"""
@@ -304,6 +439,10 @@ class DataProcessor:
             if plot_basemap(df, str(output_path), plot_config=plot_config):
                 component.basemap_path = str(output_path)
                 db_manager.update_component(component)
+                
+                # 新增：自動移動即時檔案（CSV 和 Map）
+                self._auto_move_immediate_files(component)
+                
                 logger.info(f"成功生成Basemap: {output_path}")
                 return True, str(output_path)
             else:
@@ -1633,6 +1772,107 @@ class DataProcessor:
                 batch_log.fail(f"批量移動異常: {str(e)}")
             
             return False, f"批量移動失敗: {str(e)}"
+
+    def _auto_move_immediate_files(self, component: ComponentInfo):
+        """
+        自動移動即時生成的檔案（CSV 和 Map）
+        
+        Args:
+            component: 組件資訊
+        """
+        try:
+            # 檢查自動移動是否啟用
+            if not config.get("auto_move.enabled", False):
+                logger.info("自動移動功能已禁用")
+                return
+            
+            # 獲取目標產品
+            target_product = config.get("auto_move.target_product", "i-Pixel")
+            
+            # 獲取批次信息以取得產品ID
+            lot_obj = db_manager.get_lot(component.lot_id)
+            if not lot_obj:
+                logger.warning(f"找不到批次: {component.lot_id}，無法移動即時檔案")
+                return
+            
+            source_product = lot_obj.product_id
+            
+            # 如果組件已經在目標產品中，不需要移動
+            if source_product == target_product:
+                logger.info(f"組件 {component.component_id} 已在目標產品 {target_product} 中")
+                return
+            
+            original_lot_id = lot_obj.original_lot_id
+            station = component.station
+            component_id = component.component_id
+            
+            # 獲取即時檔案類型
+            immediate_file_types = config.get("auto_move.immediate.file_types", ["csv", "map"])
+            
+            # 執行移動
+            success, message = self.move_files(
+                component_id=component_id,
+                lot_id=component.lot_id,
+                station=station,
+                source_product=source_product,
+                target_product=target_product,
+                file_types=immediate_file_types
+            )
+            
+            if success:
+                logger.info(f"自動移動即時檔案成功: {component_id} -> {target_product}")
+                
+                # 添加到延遲移動隊列（如果啟用）
+                if config.get("auto_move.delayed.enabled", False):
+                    # 嘗試從主視窗獲取延遲移動管理器
+                    try:
+                        from PySide6.QtWidgets import QApplication
+                        app = QApplication.instance()
+                        if app:
+                            main_window = app.activeWindow()
+                            if hasattr(main_window, 'delayed_move_manager'):
+                                main_window.delayed_move_manager.add_to_delayed_queue(
+                                    component_id, component.lot_id, station, 
+                                    source_product, target_product
+                                )
+                            else:
+                                logger.warning("主視窗中沒有延遲移動管理器")
+                        else:
+                            logger.warning("無法獲取應用程式實例")
+                    except Exception as e:
+                        logger.error(f"添加到延遲移動隊列時發生錯誤: {e}")
+            else:
+                logger.error(f"自動移動即時檔案失敗: {message}")
+                
+        except Exception as e:
+            logger.error(f"自動移動即時檔案時發生錯誤: {e}")
+
+    def _move_file_or_folder(self, source_path: str, target_path: str, attr_name: str):
+        """
+        移動單個檔案或資料夾
+        
+        Args:
+            source_path: 源路徑
+            target_path: 目標路徑
+            attr_name: 組件屬性名稱 (e.g., 'basemap_path', 'lossmap_path', 'fpy_path', 'csv_path')
+        """
+        try:
+            # 確保目標目錄存在
+            ensure_directory(target_path)
+            
+            # 檢查源檔案是否存在
+            if Path(source_path).exists():
+                # 檢查源檔案是否為資料夾
+                if Path(source_path).is_dir():
+                    shutil.move(str(source_path), str(target_path))
+                else:
+                    # 檔案移動
+                    shutil.move(str(source_path), str(target_path))
+            else:
+                logger.warning(f"源檔案不存在，無法移動: {source_path}")
+                
+        except Exception as e:
+            logger.error(f"移動檔案或資料夾時發生錯誤 ({attr_name}): {e}")
 
 
 # 創建全局數據處理器實例

@@ -107,6 +107,23 @@ class MainWindow(QMainWindow):
         
         # 連接數據處理器的信號
         data_processor.signaler.task_completed.connect(self.on_task_completed)
+        
+        # 初始化延遲移動管理器（在主線程中）
+        self.init_delayed_move_manager()
+    
+    def init_delayed_move_manager(self):
+        """初始化延遲移動管理器"""
+        from ..controllers.data_processor import DelayedMoveManager
+        
+        # 創建延遲移動管理器（在主線程中）
+        self.delayed_move_manager = DelayedMoveManager()
+        
+        # 如果延遲移動啟用，啟動調度器
+        if config.get("auto_move.delayed.enabled", False):
+            logger.info("主視窗：延遲移動功能已啟用，正在啟動調度器...")
+            self.delayed_move_manager.start_scheduler()
+        else:
+            logger.info("主視窗：延遲移動功能已禁用")
     
     def init_ui(self):
         """初始化用戶界面"""
@@ -240,6 +257,14 @@ class MainWindow(QMainWindow):
         self.online_btn.setCheckable(True)  # 使按钮可切换状态
         self.online_btn.clicked.connect(self.on_online_clicked)
         batch_layout.addWidget(self.online_btn)
+        
+        # 添加自動移動控制按鈕
+        self.auto_move_btn = QPushButton("AutoMove")
+        self.auto_move_btn.setStyleSheet("background-color: orange; color: black;")
+        self.auto_move_btn.setFixedHeight(40)
+        self.auto_move_btn.setCheckable(True)  # 使按鈕可切換狀態
+        self.auto_move_btn.clicked.connect(self.on_auto_move_clicked)
+        batch_layout.addWidget(self.auto_move_btn)
         
         self.refresh_btn = QPushButton("重新掃描資料")
         self.refresh_btn.setStyleSheet("background-color: lightblue; color: black;")
@@ -794,6 +819,19 @@ class MainWindow(QMainWindow):
             self.online_btn.setText("Online")
             self.online_btn.setStyleSheet("background-color: lightgreen; color: black;")
             self.statusBar.showMessage("在線監控已停止")
+    
+    def on_auto_move_clicked(self):
+        """自動移動控制按鈕點擊事件"""
+        if self.auto_move_btn.isChecked():
+            online_manager.start_auto_move()
+            self.auto_move_btn.setText("自動移動 (運行中)")
+            self.auto_move_btn.setStyleSheet("background-color: darkgreen; color: white;")
+            self.statusBar.showMessage("自動移動已啟動")
+        else:
+            online_manager.stop_auto_move()
+            self.auto_move_btn.setText("自動移動")
+            self.auto_move_btn.setStyleSheet("background-color: orange; color: black;")
+            self.statusBar.showMessage("自動移動已停止")
     
     def on_log_updated(self, log):
         """處理日誌更新"""
