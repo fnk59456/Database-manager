@@ -11248,3 +11248,782 @@
 2025-08-02 14:34:14,352 - data_processor - WARNING - 找不到前站(MT)對應的元件CSV: WLPF50020004
 2025-08-02 14:34:23,757 - data_processor - INFO - FPY並行處理完成: 總計 5, 成功 5, 失敗 0
 2025-08-02 14:34:23,781 - data_processor - INFO - 任務 6a930aac-1af3-4803-8a2e-e422e4a0a79f 已完成: True - 所有5個元件FPY已生成
+2025-08-02 15:35:33,885 - data_processor - INFO - 延遲移動管理器已初始化
+2025-08-02 15:35:33,886 - data_processor - INFO - 延遲移動配置 - 時間: 12:35, 天數: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
+2025-08-02 15:35:33,886 - data_processor - INFO - 解析時間成功 - 小時: 12, 分鐘: 35
+2025-08-02 15:35:33,886 - data_processor - INFO - 今天的時間已過，設定為明天執行
+2025-08-02 15:35:33,886 - data_processor - INFO - 延遲時間: 75566113.40699999 毫秒 (1259.4 分鐘)
+2025-08-02 15:35:33,887 - data_processor - INFO - 延遲移動管理器已啟動，下次執行時間: 2025-08-03 12:35:00 (配置時間: 12:35)
+2025-08-02 15:36:15,254 - data_processor - INFO - 延遲移動管理器已初始化
+2025-08-02 15:36:15,254 - data_processor - INFO - 延遲移動配置 - 時間: 12:35, 天數: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
+2025-08-02 15:36:15,254 - data_processor - INFO - 解析時間成功 - 小時: 12, 分鐘: 35
+2025-08-02 15:36:15,254 - data_processor - INFO - 今天的時間已過，設定為明天執行
+2025-08-02 15:36:15,254 - data_processor - INFO - 延遲時間: 75524745.279 毫秒 (1258.7 分鐘)
+2025-08-02 15:36:15,254 - data_processor - INFO - 延遲移動管理器已啟動，下次執行時間: 2025-08-03 12:35:00 (配置時間: 12:35)
+2025-08-02 15:52:02,506 - data_processor - INFO - 延遲移動管理器已初始化
+2025-08-02 15:52:02,506 - data_processor - INFO - 延遲移動配置 - 時間: 12:35, 天數: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
+2025-08-02 15:52:02,506 - data_processor - INFO - 解析時間成功 - 小時: 12, 分鐘: 35
+2025-08-02 15:52:02,507 - data_processor - INFO - 今天的時間已過，設定為明天執行
+2025-08-02 15:52:02,507 - data_processor - INFO - 延遲時間: 74577492.91600001 毫秒 (1243.0 分鐘)
+2025-08-02 15:52:02,507 - data_processor - INFO - 延遲移動管理器已啟動，下次執行時間: 2025-08-03 12:35:00 (配置時間: 12:35)
+2025-08-02 15:53:06,878 - data_processor - INFO - 延遲移動管理器已初始化
+2025-08-02 15:53:06,878 - data_processor - INFO - 延遲移動配置 - 時間: 12:35, 天數: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
+2025-08-02 15:53:06,878 - data_processor - INFO - 解析時間成功 - 小時: 12, 分鐘: 35
+2025-08-02 15:53:06,879 - data_processor - INFO - 今天的時間已過，設定為明天執行
+2025-08-02 15:53:06,879 - data_processor - INFO - 延遲時間: 74513120.85700001 毫秒 (1241.9 分鐘)
+2025-08-02 15:53:06,879 - data_processor - INFO - 延遲移動管理器已啟動，下次執行時間: 2025-08-03 12:35:00 (配置時間: 12:35)
+2025-08-02 16:14:14,192 - data_processor - INFO - 延遲移動管理器已初始化
+2025-08-02 16:14:14,192 - data_processor - INFO - 延遲移動配置 - 時間: 12:35, 天數: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
+2025-08-02 16:14:14,193 - data_processor - INFO - 解析時間成功 - 小時: 12, 分鐘: 35
+2025-08-02 16:14:14,193 - data_processor - INFO - 今天的時間已過，設定為明天執行
+2025-08-02 16:14:14,193 - data_processor - INFO - 延遲時間: 73245806.773 毫秒 (1220.8 分鐘)
+2025-08-02 16:14:14,193 - data_processor - INFO - 延遲移動管理器已啟動，下次執行時間: 2025-08-03 12:35:00 (配置時間: 12:35)
+2025-08-02 16:14:35,028 - data_processor - INFO - 延遲移動管理器已初始化
+2025-08-02 16:14:35,028 - data_processor - INFO - 延遲移動配置 - 時間: 12:35, 天數: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
+2025-08-02 16:14:35,028 - data_processor - INFO - 解析時間成功 - 小時: 12, 分鐘: 35
+2025-08-02 16:14:35,028 - data_processor - INFO - 今天的時間已過，設定為明天執行
+2025-08-02 16:14:35,028 - data_processor - INFO - 延遲時間: 73224971.182 毫秒 (1220.4 分鐘)
+2025-08-02 16:14:35,029 - data_processor - INFO - 延遲移動管理器已啟動，下次執行時間: 2025-08-03 12:35:00 (配置時間: 12:35)
+2025-08-02 16:39:17,781 - data_processor - INFO - 延遲移動管理器已初始化
+2025-08-02 16:39:17,782 - data_processor - INFO - 延遲移動配置 - 時間: 12:35, 天數: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
+2025-08-02 16:39:17,782 - data_processor - INFO - 解析時間成功 - 小時: 12, 分鐘: 35
+2025-08-02 16:39:17,782 - data_processor - INFO - 今天的時間已過，設定為明天執行
+2025-08-02 16:39:17,782 - data_processor - INFO - 延遲時間: 71742217.399 毫秒 (1195.7 分鐘)
+2025-08-02 16:39:17,783 - data_processor - INFO - 延遲移動管理器已啟動，下次執行時間: 2025-08-03 12:35:00 (配置時間: 12:35)
+2025-08-04 08:50:40,174 - data_processor - INFO - 延遲移動管理器已初始化
+2025-08-04 08:50:40,175 - data_processor - INFO - 延遲移動配置 - 時間: 12:35, 天數: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
+2025-08-04 08:50:40,175 - data_processor - INFO - 解析時間成功 - 小時: 12, 分鐘: 35
+2025-08-04 08:50:40,175 - data_processor - INFO - 延遲時間: 13459824.683 毫秒 (224.3 分鐘)
+2025-08-04 08:50:40,175 - data_processor - INFO - 延遲移動管理器已啟動，下次執行時間: 2025-08-04 12:35:00 (配置時間: 12:35)
+2025-08-04 09:07:29,771 - data_processor - INFO - 延遲移動管理器已初始化
+2025-08-04 09:07:29,772 - data_processor - INFO - 延遲移動配置 - 時間: 12:35, 天數: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
+2025-08-04 09:07:29,772 - data_processor - INFO - 解析時間成功 - 小時: 12, 分鐘: 35
+2025-08-04 09:07:29,772 - data_processor - INFO - 延遲時間: 12450227.435 毫秒 (207.5 分鐘)
+2025-08-04 09:07:29,772 - data_processor - INFO - 延遲移動管理器已啟動，下次執行時間: 2025-08-04 12:35:00 (配置時間: 12:35)
+2025-08-04 09:19:15,150 - data_processor - INFO - 延遲移動管理器已初始化
+2025-08-04 09:19:15,151 - data_processor - INFO - 延遲移動配置 - 時間: 12:35, 天數: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
+2025-08-04 09:19:15,151 - data_processor - INFO - 解析時間成功 - 小時: 12, 分鐘: 35
+2025-08-04 09:19:15,151 - data_processor - INFO - 延遲時間: 11744848.238 毫秒 (195.7 分鐘)
+2025-08-04 09:19:15,151 - data_processor - INFO - 延遲移動管理器已啟動，下次執行時間: 2025-08-04 12:35:00 (配置時間: 12:35)
+2025-08-04 09:25:42,259 - data_processor - INFO - 延遲移動管理器已初始化
+2025-08-04 09:25:42,260 - data_processor - INFO - 延遲移動配置 - 時間: 12:35, 天數: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
+2025-08-04 09:25:42,260 - data_processor - INFO - 解析時間成功 - 小時: 12, 分鐘: 35
+2025-08-04 09:25:42,260 - data_processor - INFO - 延遲時間: 11357739.512 毫秒 (189.3 分鐘)
+2025-08-04 09:25:42,260 - data_processor - INFO - 延遲移動管理器已啟動，下次執行時間: 2025-08-04 12:35:00 (配置時間: 12:35)
+2025-08-04 09:42:04,962 - data_processor - INFO - 延遲移動管理器已初始化
+2025-08-04 09:42:04,963 - data_processor - INFO - 延遲移動配置 - 時間: 12:35, 天數: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
+2025-08-04 09:42:04,963 - data_processor - INFO - 解析時間成功 - 小時: 12, 分鐘: 35
+2025-08-04 09:42:04,963 - data_processor - INFO - 延遲時間: 10375036.641999999 毫秒 (172.9 分鐘)
+2025-08-04 09:42:04,963 - data_processor - INFO - 延遲移動管理器已啟動，下次執行時間: 2025-08-04 12:35:00 (配置時間: 12:35)
+2025-08-04 09:44:43,143 - data_processor - INFO - 延遲移動管理器已初始化
+2025-08-04 09:44:43,143 - data_processor - INFO - 延遲移動配置 - 時間: 12:35, 天數: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
+2025-08-04 09:44:43,144 - data_processor - INFO - 解析時間成功 - 小時: 12, 分鐘: 35
+2025-08-04 09:44:43,144 - data_processor - INFO - 延遲時間: 10216855.773 毫秒 (170.3 分鐘)
+2025-08-04 09:44:43,144 - data_processor - INFO - 延遲移動管理器已啟動，下次執行時間: 2025-08-04 12:35:00 (配置時間: 12:35)
+2025-08-04 09:49:32,233 - data_processor - INFO - 延遲移動管理器已初始化
+2025-08-04 09:49:32,233 - data_processor - INFO - 延遲移動配置 - 時間: 12:35, 天數: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
+2025-08-04 09:49:32,234 - data_processor - INFO - 解析時間成功 - 小時: 12, 分鐘: 35
+2025-08-04 09:49:32,234 - data_processor - INFO - 延遲時間: 9927765.777 毫秒 (165.5 分鐘)
+2025-08-04 09:49:32,234 - data_processor - INFO - 延遲移動管理器已啟動，下次執行時間: 2025-08-04 12:35:00 (配置時間: 12:35)
+2025-08-04 09:50:38,742 - data_processor - INFO - 延遲移動管理器已初始化
+2025-08-04 09:50:38,742 - data_processor - INFO - 延遲移動配置 - 時間: 12:35, 天數: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
+2025-08-04 09:50:38,742 - data_processor - INFO - 解析時間成功 - 小時: 12, 分鐘: 35
+2025-08-04 09:50:38,743 - data_processor - INFO - 延遲時間: 9861257.014999999 毫秒 (164.4 分鐘)
+2025-08-04 09:50:38,743 - data_processor - INFO - 延遲移動管理器已啟動，下次執行時間: 2025-08-04 12:35:00 (配置時間: 12:35)
+2025-08-04 10:04:01,029 - data_processor - INFO - 延遲移動管理器已初始化
+2025-08-04 10:04:01,029 - data_processor - INFO - 延遲移動配置 - 時間: 12:35, 天數: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
+2025-08-04 10:04:01,029 - data_processor - INFO - 解析時間成功 - 小時: 12, 分鐘: 35
+2025-08-04 10:04:01,030 - data_processor - INFO - 延遲時間: 9058969.989 毫秒 (151.0 分鐘)
+2025-08-04 10:04:01,030 - data_processor - INFO - 延遲移動管理器已啟動，下次執行時間: 2025-08-04 12:35:00 (配置時間: 12:35)
+2025-08-04 10:10:24,654 - data_processor - INFO - 延遲移動管理器已初始化
+2025-08-04 10:10:24,655 - data_processor - INFO - 延遲移動配置 - 時間: 12:35, 天數: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
+2025-08-04 10:10:24,655 - data_processor - INFO - 解析時間成功 - 小時: 12, 分鐘: 35
+2025-08-04 10:10:24,655 - data_processor - INFO - 延遲時間: 8675344.513 毫秒 (144.6 分鐘)
+2025-08-04 10:10:24,655 - data_processor - INFO - 延遲移動管理器已啟動，下次執行時間: 2025-08-04 12:35:00 (配置時間: 12:35)
+2025-08-04 10:31:10,132 - data_processor - INFO - 延遲移動管理器已初始化
+2025-08-04 10:31:10,132 - data_processor - INFO - 延遲移動配置 - 時間: 12:35, 天數: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
+2025-08-04 10:31:10,132 - data_processor - INFO - 解析時間成功 - 小時: 12, 分鐘: 35
+2025-08-04 10:31:10,132 - data_processor - INFO - 延遲時間: 7429867.166 毫秒 (123.8 分鐘)
+2025-08-04 10:31:10,132 - data_processor - INFO - 延遲移動管理器已啟動，下次執行時間: 2025-08-04 12:35:00 (配置時間: 12:35)
+2025-08-04 10:36:05,650 - data_processor - INFO - 延遲移動管理器已初始化
+2025-08-04 10:36:05,651 - data_processor - INFO - 延遲移動配置 - 時間: 12:35, 天數: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
+2025-08-04 10:36:05,651 - data_processor - INFO - 解析時間成功 - 小時: 12, 分鐘: 35
+2025-08-04 10:36:05,651 - data_processor - INFO - 延遲時間: 7134348.103999999 毫秒 (118.9 分鐘)
+2025-08-04 10:36:05,652 - data_processor - INFO - 延遲移動管理器已啟動，下次執行時間: 2025-08-04 12:35:00 (配置時間: 12:35)
+2025-08-04 10:38:53,559 - data_processor - INFO - 延遲移動管理器已初始化
+2025-08-04 10:38:53,560 - data_processor - INFO - 延遲移動配置 - 時間: 12:35, 天數: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
+2025-08-04 10:38:53,560 - data_processor - INFO - 解析時間成功 - 小時: 12, 分鐘: 35
+2025-08-04 10:38:53,560 - data_processor - INFO - 延遲時間: 6966439.473999999 毫秒 (116.1 分鐘)
+2025-08-04 10:38:53,560 - data_processor - INFO - 延遲移動管理器已啟動，下次執行時間: 2025-08-04 12:35:00 (配置時間: 12:35)
+2025-08-04 10:52:50,927 - data_processor - INFO - 延遲移動管理器已初始化
+2025-08-04 10:52:50,927 - data_processor - INFO - 延遲移動配置 - 時間: 12:35, 天數: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
+2025-08-04 10:52:50,928 - data_processor - INFO - 解析時間成功 - 小時: 12, 分鐘: 35
+2025-08-04 10:52:50,928 - data_processor - INFO - 延遲時間: 6129071.796999999 毫秒 (102.2 分鐘)
+2025-08-04 10:52:50,928 - data_processor - INFO - 延遲移動管理器已啟動，下次執行時間: 2025-08-04 12:35:00 (配置時間: 12:35)
+2025-08-04 10:58:50,942 - data_processor - INFO - 延遲移動管理器已初始化
+2025-08-04 10:58:50,943 - data_processor - INFO - 延遲移動配置 - 時間: 12:35, 天數: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
+2025-08-04 10:58:50,943 - data_processor - INFO - 解析時間成功 - 小時: 12, 分鐘: 35
+2025-08-04 10:58:50,943 - data_processor - INFO - 延遲時間: 5769056.2129999995 毫秒 (96.2 分鐘)
+2025-08-04 10:58:50,943 - data_processor - INFO - 延遲移動管理器已啟動，下次執行時間: 2025-08-04 12:35:00 (配置時間: 12:35)
+2025-08-04 12:34:59,947 - data_processor - INFO - 延遲移動管理器開始處理隊列
+2025-08-04 12:34:59,948 - data_processor - INFO - 延遲移動隊列為空
+2025-08-04 12:34:59,948 - data_processor - INFO - 延遲移動調度器已在運行中
+2025-08-04 13:49:00,698 - data_processor - INFO - 延遲移動管理器已初始化
+2025-08-04 13:49:00,699 - data_processor - INFO - 延遲移動配置 - 時間: 12:35, 天數: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
+2025-08-04 13:49:00,699 - data_processor - INFO - 解析時間成功 - 小時: 12, 分鐘: 35
+2025-08-04 13:49:00,699 - data_processor - INFO - 今天的時間已過，設定為明天執行
+2025-08-04 13:49:00,699 - data_processor - INFO - 延遲時間: 81959300.728 毫秒 (1366.0 分鐘)
+2025-08-04 13:49:00,699 - data_processor - INFO - 延遲移動管理器已啟動，下次執行時間: 2025-08-05 12:35:00 (配置時間: 12:35)
+2025-08-04 13:56:55,117 - data_processor - INFO - 延遲移動管理器已初始化
+2025-08-04 13:56:55,118 - data_processor - INFO - 延遲移動配置 - 時間: 12:35, 天數: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
+2025-08-04 13:56:55,118 - data_processor - INFO - 解析時間成功 - 小時: 12, 分鐘: 35
+2025-08-04 13:56:55,118 - data_processor - INFO - 今天的時間已過，設定為明天執行
+2025-08-04 13:56:55,118 - data_processor - INFO - 延遲時間: 81484881.73799999 毫秒 (1358.1 分鐘)
+2025-08-04 13:56:55,118 - data_processor - INFO - 延遲移動管理器已啟動，下次執行時間: 2025-08-05 12:35:00 (配置時間: 12:35)
+2025-08-04 14:03:16,500 - data_processor - INFO - 延遲移動管理器已初始化
+2025-08-04 14:03:16,501 - data_processor - INFO - 延遲移動配置 - 時間: 12:35, 天數: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
+2025-08-04 14:03:16,501 - data_processor - INFO - 解析時間成功 - 小時: 12, 分鐘: 35
+2025-08-04 14:03:16,502 - data_processor - INFO - 今天的時間已過，設定為明天執行
+2025-08-04 14:03:16,502 - data_processor - INFO - 延遲時間: 81103497.993 毫秒 (1351.7 分鐘)
+2025-08-04 14:03:16,502 - data_processor - INFO - 延遲移動管理器已啟動，下次執行時間: 2025-08-05 12:35:00 (配置時間: 12:35)
+2025-08-04 14:03:57,203 - data_processor - INFO - 延遲移動管理器已初始化
+2025-08-04 14:03:57,204 - data_processor - INFO - 延遲移動配置 - 時間: 12:35, 天數: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
+2025-08-04 14:03:57,205 - data_processor - INFO - 解析時間成功 - 小時: 12, 分鐘: 35
+2025-08-04 14:03:57,206 - data_processor - INFO - 今天的時間已過，設定為明天執行
+2025-08-04 14:03:57,206 - data_processor - INFO - 延遲時間: 81062793.903 毫秒 (1351.0 分鐘)
+2025-08-04 14:03:57,206 - data_processor - INFO - 延遲移動管理器已啟動，下次執行時間: 2025-08-05 12:35:00 (配置時間: 12:35)
+2025-08-04 14:11:03,937 - data_processor - INFO - 開始執行任務: 4f53bf54-1241-4667-959e-a9feba8f3e20 (basemap)
+2025-08-04 14:11:03,981 - data_processor - INFO - 檔案 M1X60_WLPF40010001_202504141037.csv 是原始格式，執行 step1~3
+2025-08-04 14:11:03,981 - data_processor - INFO - Step 1: 讀取元件 WLPF40010001 的config參數
+2025-08-04 14:11:03,982 - data_processor - INFO - Step 2: 執行 WLPF40010001 的原始CSV偏移確認
+2025-08-04 14:11:04,136 - data_processor - INFO - 任務 4f53bf54-1241-4667-959e-a9feba8f3e20 已完成: False - CSV檔案偏移錯誤: 找不到任何對齊點，需要至少1個匹配
+2025-08-04 14:11:04,945 - data_processor - INFO - 開始執行任務: 5ce111f3-91f9-4ee0-949d-035ed3dae098 (basemap)
+2025-08-04 14:11:04,963 - data_processor - INFO - 檔案 M1X60_WLPF40010003_202504141037.csv 是原始格式，執行 step1~3
+2025-08-04 14:11:04,964 - data_processor - INFO - Step 1: 讀取元件 WLPF40010003 的config參數
+2025-08-04 14:11:04,964 - data_processor - INFO - Step 2: 執行 WLPF40010003 的原始CSV偏移確認
+2025-08-04 14:11:05,088 - data_processor - INFO - Step 3: 處理 WLPF40010003 的CSV標頭
+2025-08-04 14:11:05,538 - data_processor - INFO - Step 4: 為 WLPF40010003 生成Basemap
+2025-08-04 14:11:05,942 - data_processor - INFO - 開始執行任務: 30880ef2-615e-496c-bdba-bc059194566c (basemap)
+2025-08-04 14:11:06,052 - data_processor - INFO - 檔案 M1X60_WLPF40010004_202504141037.csv 是原始格式，執行 step1~3
+2025-08-04 14:11:06,053 - data_processor - INFO - Step 1: 讀取元件 WLPF40010004 的config參數
+2025-08-04 14:11:06,060 - data_processor - INFO - Step 2: 執行 WLPF40010004 的原始CSV偏移確認
+2025-08-04 14:11:06,333 - data_processor - INFO - Step 3: 處理 WLPF40010004 的CSV標頭
+2025-08-04 14:11:06,436 - data_processor - INFO - 成功移動的檔案: ['CSV: D:\\Database-PC\\temp\\csv\\WLPF400100\\DC2\\WLPF40010003.csv -> D:\\Database-PC\\i-Pixel\\csv\\WLPF400100\\DC2\\WLPF40010003.csv', 'Map: D:\\Database-PC\\temp\\map\\WLPF400100\\DC2\\WLPF40010003.png -> D:\\Database-PC\\i-Pixel\\map\\WLPF400100\\DC2\\WLPF40010003.png']
+2025-08-04 14:11:06,436 - data_processor - INFO - 自動移動即時檔案成功: WLPF40010003 -> i-Pixel
+2025-08-04 14:11:06,436 - data_processor - INFO - 已添加到延遲移動隊列: WLPF40010003
+2025-08-04 14:11:06,436 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010003.png
+2025-08-04 14:11:06,459 - data_processor - INFO - 任務 5ce111f3-91f9-4ee0-949d-035ed3dae098 已完成: True - D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010003.png
+2025-08-04 14:11:06,868 - data_processor - INFO - Step 4: 為 WLPF40010004 生成Basemap
+2025-08-04 14:11:06,944 - data_processor - INFO - 開始執行任務: 401745d6-7214-45b1-8757-76607b4e7a01 (basemap)
+2025-08-04 14:11:06,966 - data_processor - INFO - 檔案 M1X60_WLPF40010003_202504141045.csv 是原始格式，執行 step1~3
+2025-08-04 14:11:06,966 - data_processor - INFO - Step 1: 讀取元件 WLPF40010003 的config參數
+2025-08-04 14:11:06,966 - data_processor - INFO - Step 2: 執行 WLPF40010003 的原始CSV偏移確認
+2025-08-04 14:11:07,441 - data_processor - INFO - Step 3: 處理 WLPF40010003 的CSV標頭
+2025-08-04 14:11:07,795 - data_processor - INFO - 成功移動的檔案: ['CSV: D:\\Database-PC\\temp\\csv\\WLPF400100\\DC2\\WLPF40010004.csv -> D:\\Database-PC\\i-Pixel\\csv\\WLPF400100\\DC2\\WLPF40010004.csv', 'Map: D:\\Database-PC\\temp\\map\\WLPF400100\\DC2\\WLPF40010004.png -> D:\\Database-PC\\i-Pixel\\map\\WLPF400100\\DC2\\WLPF40010004.png']
+2025-08-04 14:11:07,795 - data_processor - INFO - 自動移動即時檔案成功: WLPF40010004 -> i-Pixel
+2025-08-04 14:11:07,795 - data_processor - WARNING - 主視窗中沒有延遲移動管理器
+2025-08-04 14:11:07,795 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010004.png
+2025-08-04 14:11:07,822 - data_processor - INFO - 任務 30880ef2-615e-496c-bdba-bc059194566c 已完成: True - D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010004.png
+2025-08-04 14:11:07,947 - data_processor - INFO - 開始執行任務: db2c65d0-d6f1-4bb5-89c4-ecaf5e43e3d5 (basemap)
+2025-08-04 14:11:07,972 - data_processor - INFO - 檔案 M1X60_WLPF40010003_202504141045.csv 是原始格式，執行 step1~3
+2025-08-04 14:11:07,973 - data_processor - INFO - Step 1: 讀取元件 WLPF40010003 的config參數
+2025-08-04 14:11:07,976 - data_processor - INFO - Step 2: 執行 WLPF40010003 的原始CSV偏移確認
+2025-08-04 14:11:08,202 - data_processor - INFO - Step 3: 處理 WLPF40010003 的CSV標頭
+2025-08-04 14:11:08,229 - data_processor - INFO - Step 4: 為 WLPF40010003 生成Basemap
+2025-08-04 14:11:09,024 - data_processor - INFO - Step 4: 為 WLPF40010003 生成Basemap
+2025-08-04 14:11:09,358 - data_processor - INFO - 成功移動的檔案: ['CSV: D:\\Database-PC\\temp\\csv\\WLPF400100\\INNER1\\WLPF40010003.csv -> D:\\Database-PC\\i-Pixel\\csv\\WLPF400100\\INNER1\\WLPF40010003.csv', 'Map: D:\\Database-PC\\temp\\map\\WLPF400100\\INNER1\\WLPF40010003.png -> D:\\Database-PC\\i-Pixel\\map\\WLPF400100\\INNER1\\WLPF40010003.png']
+2025-08-04 14:11:09,358 - data_processor - INFO - 自動移動即時檔案成功: WLPF40010003 -> i-Pixel
+2025-08-04 14:11:09,358 - data_processor - WARNING - 主視窗中沒有延遲移動管理器
+2025-08-04 14:11:09,358 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\INNER1\WLPF40010003.png
+2025-08-04 14:11:09,380 - data_processor - INFO - 任務 401745d6-7214-45b1-8757-76607b4e7a01 已完成: True - D:\Database-PC\temp\map\WLPF400100\INNER1\WLPF40010003.png
+2025-08-04 14:11:09,912 - data_processor - INFO - 成功移動的檔案: ['Map: D:\\Database-PC\\temp\\map\\WLPF400100\\INNER1\\WLPF40010003.png -> D:\\Database-PC\\i-Pixel\\map\\WLPF400100\\INNER1\\WLPF40010003.png']
+2025-08-04 14:11:09,912 - data_processor - WARNING - 移動失敗的檔案: ['CSV檔案不存在: D:\\Database-PC\\temp\\csv\\WLPF400100\\INNER1\\WLPF40010003.csv']
+2025-08-04 14:11:09,913 - data_processor - INFO - 自動移動即時檔案成功: WLPF40010003 -> i-Pixel
+2025-08-04 14:11:09,914 - data_processor - WARNING - 主視窗中沒有延遲移動管理器
+2025-08-04 14:11:09,914 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\INNER1\WLPF40010003.png
+2025-08-04 14:11:09,938 - data_processor - INFO - 任務 db2c65d0-d6f1-4bb5-89c4-ecaf5e43e3d5 已完成: True - D:\Database-PC\temp\map\WLPF400100\INNER1\WLPF40010003.png
+2025-08-04 14:11:09,947 - data_processor - INFO - 開始執行任務: fa81c066-a48a-44f3-b6f8-1ba81c9235b7 (basemap)
+2025-08-04 14:11:09,968 - data_processor - INFO - 檔案 M3X60_WLPF40010001_202504091051.csv 是原始格式，執行 step1~3
+2025-08-04 14:11:09,968 - data_processor - INFO - Step 1: 讀取元件 WLPF40010001 的config參數
+2025-08-04 14:11:09,968 - data_processor - INFO - Step 2: 執行 WLPF40010001 的原始CSV偏移確認
+2025-08-04 14:11:10,108 - data_processor - INFO - Step 3: 處理 WLPF40010001 的CSV標頭
+2025-08-04 14:11:10,554 - data_processor - INFO - Step 4: 為 WLPF40010001 生成Basemap
+2025-08-04 14:11:10,960 - data_processor - INFO - 開始執行任務: 2f50f3ad-4071-476d-8a3e-758ac02a1b02 (basemap)
+2025-08-04 14:11:11,073 - data_processor - INFO - 檔案 M3X60_WLPF40010003_202504091051.csv 是原始格式，執行 step1~3
+2025-08-04 14:11:11,077 - data_processor - INFO - Step 1: 讀取元件 WLPF40010003 的config參數
+2025-08-04 14:11:11,081 - data_processor - INFO - Step 2: 執行 WLPF40010003 的原始CSV偏移確認
+2025-08-04 14:11:11,357 - data_processor - INFO - Step 3: 處理 WLPF40010003 的CSV標頭
+2025-08-04 14:11:11,451 - data_processor - INFO - 成功移動的檔案: ['CSV: D:\\Database-PC\\temp\\csv\\WLPF400100\\MT\\WLPF40010001.csv -> D:\\Database-PC\\i-Pixel\\csv\\WLPF400100\\MT\\WLPF40010001.csv', 'Map: D:\\Database-PC\\temp\\map\\WLPF400100\\MT\\WLPF40010001.png -> D:\\Database-PC\\i-Pixel\\map\\WLPF400100\\MT\\WLPF40010001.png']
+2025-08-04 14:11:11,451 - data_processor - INFO - 自動移動即時檔案成功: WLPF40010001 -> i-Pixel
+2025-08-04 14:11:11,451 - data_processor - WARNING - 主視窗中沒有延遲移動管理器
+2025-08-04 14:11:11,452 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010001.png
+2025-08-04 14:11:11,475 - data_processor - INFO - 任務 fa81c066-a48a-44f3-b6f8-1ba81c9235b7 已完成: True - D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010001.png
+2025-08-04 14:11:11,877 - data_processor - INFO - Step 4: 為 WLPF40010003 生成Basemap
+2025-08-04 14:11:11,954 - data_processor - INFO - 開始執行任務: 1dd72d49-b03a-4824-bd9a-c28121e6f409 (basemap)
+2025-08-04 14:11:11,977 - data_processor - INFO - 檔案 M3X60_WLPF40010004_202504091051.csv 是原始格式，執行 step1~3
+2025-08-04 14:11:11,978 - data_processor - INFO - Step 1: 讀取元件 WLPF40010004 的config參數
+2025-08-04 14:11:11,978 - data_processor - INFO - Step 2: 執行 WLPF40010004 的原始CSV偏移確認
+2025-08-04 14:11:12,329 - data_processor - INFO - Step 3: 處理 WLPF40010004 的CSV標頭
+2025-08-04 14:11:13,021 - data_processor - INFO - 成功移動的檔案: ['CSV: D:\\Database-PC\\temp\\csv\\WLPF400100\\MT\\WLPF40010003.csv -> D:\\Database-PC\\i-Pixel\\csv\\WLPF400100\\MT\\WLPF40010003.csv', 'Map: D:\\Database-PC\\temp\\map\\WLPF400100\\MT\\WLPF40010003.png -> D:\\Database-PC\\i-Pixel\\map\\WLPF400100\\MT\\WLPF40010003.png']
+2025-08-04 14:11:13,023 - data_processor - INFO - 自動移動即時檔案成功: WLPF40010003 -> i-Pixel
+2025-08-04 14:11:13,025 - data_processor - WARNING - 主視窗中沒有延遲移動管理器
+2025-08-04 14:11:13,025 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010003.png
+2025-08-04 14:11:13,053 - data_processor - INFO - 任務 2f50f3ad-4071-476d-8a3e-758ac02a1b02 已完成: True - D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010003.png
+2025-08-04 14:11:13,134 - data_processor - INFO - Step 4: 為 WLPF40010004 生成Basemap
+2025-08-04 14:11:13,914 - data_processor - INFO - 成功移動的檔案: ['CSV: D:\\Database-PC\\temp\\csv\\WLPF400100\\MT\\WLPF40010004.csv -> D:\\Database-PC\\i-Pixel\\csv\\WLPF400100\\MT\\WLPF40010004.csv', 'Map: D:\\Database-PC\\temp\\map\\WLPF400100\\MT\\WLPF40010004.png -> D:\\Database-PC\\i-Pixel\\map\\WLPF400100\\MT\\WLPF40010004.png']
+2025-08-04 14:11:13,914 - data_processor - INFO - 自動移動即時檔案成功: WLPF40010004 -> i-Pixel
+2025-08-04 14:11:13,914 - data_processor - WARNING - 主視窗中沒有延遲移動管理器
+2025-08-04 14:11:13,915 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010004.png
+2025-08-04 14:11:13,943 - data_processor - INFO - 任務 1dd72d49-b03a-4824-bd9a-c28121e6f409 已完成: True - D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010004.png
+2025-08-04 14:11:13,974 - data_processor - INFO - 開始執行任務: 7a43bf6c-8250-4396-b7ba-9927d84babfe (basemap)
+2025-08-04 14:11:13,996 - data_processor - INFO - 檔案 M3X60_WLPF40010006_202504091051.csv 是原始格式，執行 step1~3
+2025-08-04 14:11:13,997 - data_processor - INFO - Step 1: 讀取元件 WLPF40010006 的config參數
+2025-08-04 14:11:13,997 - data_processor - INFO - Step 2: 執行 WLPF40010006 的原始CSV偏移確認
+2025-08-04 14:11:14,130 - data_processor - INFO - Step 3: 處理 WLPF40010006 的CSV標頭
+2025-08-04 14:11:14,589 - data_processor - INFO - Step 4: 為 WLPF40010006 生成Basemap
+2025-08-04 14:11:15,065 - data_processor - INFO - 開始執行任務: f5b4d641-b290-4ded-9982-2c90732d8999 (basemap)
+2025-08-04 14:11:15,099 - data_processor - INFO - 檔案 M3X60_WLPF50010001_202504091051.csv 是原始格式，執行 step1~3
+2025-08-04 14:11:15,100 - data_processor - INFO - Step 1: 讀取元件 WLPF50010001 的config參數
+2025-08-04 14:11:15,106 - data_processor - INFO - Step 2: 執行 WLPF50010001 的原始CSV偏移確認
+2025-08-04 14:11:15,407 - data_processor - INFO - Step 3: 處理 WLPF50010001 的CSV標頭
+2025-08-04 14:11:15,478 - data_processor - INFO - 成功移動的檔案: ['CSV: D:\\Database-PC\\temp\\csv\\WLPF400100\\MT\\WLPF40010006.csv -> D:\\Database-PC\\i-Pixel\\csv\\WLPF400100\\MT\\WLPF40010006.csv', 'Map: D:\\Database-PC\\temp\\map\\WLPF400100\\MT\\WLPF40010006.png -> D:\\Database-PC\\i-Pixel\\map\\WLPF400100\\MT\\WLPF40010006.png']
+2025-08-04 14:11:15,478 - data_processor - INFO - 自動移動即時檔案成功: WLPF40010006 -> i-Pixel
+2025-08-04 14:11:15,479 - data_processor - WARNING - 主視窗中沒有延遲移動管理器
+2025-08-04 14:11:15,479 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010006.png
+2025-08-04 14:11:15,503 - data_processor - INFO - 任務 7a43bf6c-8250-4396-b7ba-9927d84babfe 已完成: True - D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010006.png
+2025-08-04 14:11:15,913 - data_processor - INFO - Step 4: 為 WLPF50010001 生成Basemap
+2025-08-04 14:11:15,986 - data_processor - INFO - 開始執行任務: f557e686-4b5c-4d8a-a8bd-ad2397a98ab0 (basemap)
+2025-08-04 14:11:16,010 - data_processor - INFO - 檔案 M3X60_WLPF50010002_202504091051.csv 是原始格式，執行 step1~3
+2025-08-04 14:11:16,011 - data_processor - INFO - Step 1: 讀取元件 WLPF50010002 的config參數
+2025-08-04 14:11:16,011 - data_processor - INFO - Step 2: 執行 WLPF50010002 的原始CSV偏移確認
+2025-08-04 14:11:16,292 - data_processor - INFO - Step 3: 處理 WLPF50010002 的CSV標頭
+2025-08-04 14:11:17,095 - data_processor - INFO - 成功移動的檔案: ['CSV: D:\\Database-PC\\temp\\csv\\WLPF500100\\MT\\WLPF50010001.csv -> D:\\Database-PC\\i-Pixel\\csv\\WLPF500100\\MT\\WLPF50010001.csv', 'Map: D:\\Database-PC\\temp\\map\\WLPF500100\\MT\\WLPF50010001.png -> D:\\Database-PC\\i-Pixel\\map\\WLPF500100\\MT\\WLPF50010001.png']
+2025-08-04 14:11:17,096 - data_processor - INFO - 自動移動即時檔案成功: WLPF50010001 -> i-Pixel
+2025-08-04 14:11:17,096 - data_processor - WARNING - 主視窗中沒有延遲移動管理器
+2025-08-04 14:11:17,097 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010001.png
+2025-08-04 14:11:17,130 - data_processor - INFO - 任務 f5b4d641-b290-4ded-9982-2c90732d8999 已完成: True - D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010001.png
+2025-08-04 14:11:17,171 - data_processor - INFO - Step 4: 為 WLPF50010002 生成Basemap
+2025-08-04 14:11:17,954 - data_processor - INFO - 成功移動的檔案: ['CSV: D:\\Database-PC\\temp\\csv\\WLPF500100\\MT\\WLPF50010002.csv -> D:\\Database-PC\\i-Pixel\\csv\\WLPF500100\\MT\\WLPF50010002.csv', 'Map: D:\\Database-PC\\temp\\map\\WLPF500100\\MT\\WLPF50010002.png -> D:\\Database-PC\\i-Pixel\\map\\WLPF500100\\MT\\WLPF50010002.png']
+2025-08-04 14:11:17,954 - data_processor - INFO - 自動移動即時檔案成功: WLPF50010002 -> i-Pixel
+2025-08-04 14:11:17,954 - data_processor - WARNING - 主視窗中沒有延遲移動管理器
+2025-08-04 14:11:17,954 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010002.png
+2025-08-04 14:11:17,979 - data_processor - INFO - 任務 f557e686-4b5c-4d8a-a8bd-ad2397a98ab0 已完成: True - D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010002.png
+2025-08-04 14:11:17,988 - data_processor - INFO - 開始執行任務: 124c036e-535d-4479-8580-c169d7b1b6f5 (basemap)
+2025-08-04 14:11:18,009 - data_processor - INFO - 檔案 M3X60_WLPF50010003_202504091051.csv 是原始格式，執行 step1~3
+2025-08-04 14:11:18,009 - data_processor - INFO - Step 1: 讀取元件 WLPF50010003 的config參數
+2025-08-04 14:11:18,010 - data_processor - INFO - Step 2: 執行 WLPF50010003 的原始CSV偏移確認
+2025-08-04 14:11:18,145 - data_processor - INFO - Step 3: 處理 WLPF50010003 的CSV標頭
+2025-08-04 14:11:18,618 - data_processor - INFO - Step 4: 為 WLPF50010003 生成Basemap
+2025-08-04 14:11:18,998 - data_processor - INFO - 開始執行任務: 7a57751b-2573-47fd-85bf-f14d892eba5e (basemap)
+2025-08-04 14:11:19,018 - data_processor - INFO - 檔案 M3X60_WLPF50010004_202504091051.csv 是原始格式，執行 step1~3
+2025-08-04 14:11:19,018 - data_processor - INFO - Step 1: 讀取元件 WLPF50010004 的config參數
+2025-08-04 14:11:19,024 - data_processor - INFO - Step 2: 執行 WLPF50010004 的原始CSV偏移確認
+2025-08-04 14:11:19,422 - data_processor - INFO - Step 3: 處理 WLPF50010004 的CSV標頭
+2025-08-04 14:11:19,527 - data_processor - INFO - 成功移動的檔案: ['CSV: D:\\Database-PC\\temp\\csv\\WLPF500100\\MT\\WLPF50010003.csv -> D:\\Database-PC\\i-Pixel\\csv\\WLPF500100\\MT\\WLPF50010003.csv', 'Map: D:\\Database-PC\\temp\\map\\WLPF500100\\MT\\WLPF50010003.png -> D:\\Database-PC\\i-Pixel\\map\\WLPF500100\\MT\\WLPF50010003.png']
+2025-08-04 14:11:19,528 - data_processor - INFO - 自動移動即時檔案成功: WLPF50010003 -> i-Pixel
+2025-08-04 14:11:19,528 - data_processor - INFO - 已添加到延遲移動隊列: WLPF50010003
+2025-08-04 14:11:19,528 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010003.png
+2025-08-04 14:11:19,551 - data_processor - INFO - 任務 124c036e-535d-4479-8580-c169d7b1b6f5 已完成: True - D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010003.png
+2025-08-04 14:11:19,937 - data_processor - INFO - Step 4: 為 WLPF50010004 生成Basemap
+2025-08-04 14:11:20,005 - data_processor - INFO - 開始執行任務: bd8fdaf9-5cc3-4afb-918d-cddcf6e4456b (basemap)
+2025-08-04 14:11:20,026 - data_processor - INFO - 檔案 M1X60_WLPF50020001_202506171003.csv 是原始格式，執行 step1~3
+2025-08-04 14:11:20,026 - data_processor - INFO - Step 1: 讀取元件 WLPF50020001 的config參數
+2025-08-04 14:11:20,029 - data_processor - INFO - Step 2: 執行 WLPF50020001 的原始CSV偏移確認
+2025-08-04 14:11:20,280 - data_processor - INFO - Step 3: 處理 WLPF50020001 的CSV標頭
+2025-08-04 14:11:21,093 - data_processor - INFO - 成功移動的檔案: ['CSV: D:\\Database-PC\\temp\\csv\\WLPF500100\\MT\\WLPF50010004.csv -> D:\\Database-PC\\i-Pixel\\csv\\WLPF500100\\MT\\WLPF50010004.csv', 'Map: D:\\Database-PC\\temp\\map\\WLPF500100\\MT\\WLPF50010004.png -> D:\\Database-PC\\i-Pixel\\map\\WLPF500100\\MT\\WLPF50010004.png']
+2025-08-04 14:11:21,096 - data_processor - INFO - 自動移動即時檔案成功: WLPF50010004 -> i-Pixel
+2025-08-04 14:11:21,097 - data_processor - INFO - 已添加到延遲移動隊列: WLPF50010004
+2025-08-04 14:11:21,097 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010004.png
+2025-08-04 14:11:21,123 - data_processor - INFO - 任務 7a57751b-2573-47fd-85bf-f14d892eba5e 已完成: True - D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010004.png
+2025-08-04 14:11:21,148 - data_processor - INFO - Step 4: 為 WLPF50020001 生成Basemap
+2025-08-04 14:11:21,860 - data_processor - INFO - 成功移動的檔案: ['CSV: D:\\Database-PC\\temp\\csv\\WLPF500200\\DC2\\WLPF50020001.csv -> D:\\Database-PC\\i-Pixel\\csv\\WLPF500200\\DC2\\WLPF50020001.csv', 'Map: D:\\Database-PC\\temp\\map\\WLPF500200\\DC2\\WLPF50020001.png -> D:\\Database-PC\\i-Pixel\\map\\WLPF500200\\DC2\\WLPF50020001.png']
+2025-08-04 14:11:21,861 - data_processor - INFO - 自動移動即時檔案成功: WLPF50020001 -> i-Pixel
+2025-08-04 14:11:21,861 - data_processor - INFO - 已添加到延遲移動隊列: WLPF50020001
+2025-08-04 14:11:21,861 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF500200\DC2\WLPF50020001.png
+2025-08-04 14:11:21,883 - data_processor - INFO - 任務 bd8fdaf9-5cc3-4afb-918d-cddcf6e4456b 已完成: True - D:\Database-PC\temp\map\WLPF500200\DC2\WLPF50020001.png
+2025-08-04 14:11:22,026 - data_processor - INFO - 開始執行任務: 83ad2232-7561-41a2-aeca-0fb159716a93 (basemap)
+2025-08-04 14:11:22,049 - data_processor - INFO - 檔案 M1X60_WLPF50020002_202506170936.csv 是原始格式，執行 step1~3
+2025-08-04 14:11:22,049 - data_processor - INFO - Step 1: 讀取元件 WLPF50020002 的config參數
+2025-08-04 14:11:22,049 - data_processor - INFO - Step 2: 執行 WLPF50020002 的原始CSV偏移確認
+2025-08-04 14:11:22,178 - data_processor - INFO - Step 3: 處理 WLPF50020002 的CSV標頭
+2025-08-04 14:11:22,613 - data_processor - INFO - Step 4: 為 WLPF50020002 生成Basemap
+2025-08-04 14:11:23,053 - data_processor - INFO - 開始執行任務: 7f18884f-52a0-407e-bd24-7c29925f7b95 (basemap)
+2025-08-04 14:11:23,087 - data_processor - INFO - 檔案 M1X60_WLPF50020004_202506170936.csv 是原始格式，執行 step1~3
+2025-08-04 14:11:23,088 - data_processor - INFO - Step 1: 讀取元件 WLPF50020004 的config參數
+2025-08-04 14:11:23,090 - data_processor - INFO - Step 2: 執行 WLPF50020004 的原始CSV偏移確認
+2025-08-04 14:11:23,235 - data_processor - INFO - Step 3: 處理 WLPF50020004 的CSV標頭
+2025-08-04 14:11:23,420 - data_processor - INFO - 成功移動的檔案: ['CSV: D:\\Database-PC\\temp\\csv\\WLPF500200\\DC2\\WLPF50020002.csv -> D:\\Database-PC\\i-Pixel\\csv\\WLPF500200\\DC2\\WLPF50020002.csv', 'Map: D:\\Database-PC\\temp\\map\\WLPF500200\\DC2\\WLPF50020002.png -> D:\\Database-PC\\i-Pixel\\map\\WLPF500200\\DC2\\WLPF50020002.png']
+2025-08-04 14:11:23,421 - data_processor - INFO - 自動移動即時檔案成功: WLPF50020002 -> i-Pixel
+2025-08-04 14:11:23,421 - data_processor - INFO - 已添加到延遲移動隊列: WLPF50020002
+2025-08-04 14:11:23,421 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF500200\DC2\WLPF50020002.png
+2025-08-04 14:11:23,443 - data_processor - INFO - 任務 83ad2232-7561-41a2-aeca-0fb159716a93 已完成: True - D:\Database-PC\temp\map\WLPF500200\DC2\WLPF50020002.png
+2025-08-04 14:11:23,821 - data_processor - INFO - Step 4: 為 WLPF50020004 生成Basemap
+2025-08-04 14:11:24,054 - data_processor - INFO - 開始執行任務: cd0ccd30-a01f-4e8b-92a3-eacbc42cd6c0 (basemap)
+2025-08-04 14:11:24,087 - data_processor - INFO - 檔案 M1X60_WLPF50020005_202506170936.csv 是原始格式，執行 step1~3
+2025-08-04 14:11:24,087 - data_processor - INFO - Step 1: 讀取元件 WLPF50020005 的config參數
+2025-08-04 14:11:24,088 - data_processor - INFO - Step 2: 執行 WLPF50020005 的原始CSV偏移確認
+2025-08-04 14:11:24,433 - data_processor - INFO - Step 3: 處理 WLPF50020005 的CSV標頭
+2025-08-04 14:11:24,632 - data_processor - INFO - 成功移動的檔案: ['CSV: D:\\Database-PC\\temp\\csv\\WLPF500200\\DC2\\WLPF50020004.csv -> D:\\Database-PC\\i-Pixel\\csv\\WLPF500200\\DC2\\WLPF50020004.csv', 'Map: D:\\Database-PC\\temp\\map\\WLPF500200\\DC2\\WLPF50020004.png -> D:\\Database-PC\\i-Pixel\\map\\WLPF500200\\DC2\\WLPF50020004.png']
+2025-08-04 14:11:24,632 - data_processor - INFO - 自動移動即時檔案成功: WLPF50020004 -> i-Pixel
+2025-08-04 14:11:24,633 - data_processor - INFO - 已添加到延遲移動隊列: WLPF50020004
+2025-08-04 14:11:24,633 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF500200\DC2\WLPF50020004.png
+2025-08-04 14:11:24,656 - data_processor - INFO - 任務 7f18884f-52a0-407e-bd24-7c29925f7b95 已完成: True - D:\Database-PC\temp\map\WLPF500200\DC2\WLPF50020004.png
+2025-08-04 14:11:25,027 - data_processor - INFO - Step 4: 為 WLPF50020005 生成Basemap
+2025-08-04 14:11:25,044 - data_processor - INFO - 開始執行任務: ae058950-2a0c-4543-9908-b44bd3f8e8dd (basemap)
+2025-08-04 14:11:25,069 - data_processor - INFO - 檔案 M1X60_WLPF50020006_202506170936.csv 是原始格式，執行 step1~3
+2025-08-04 14:11:25,070 - data_processor - INFO - Step 1: 讀取元件 WLPF50020006 的config參數
+2025-08-04 14:11:25,070 - data_processor - INFO - Step 2: 執行 WLPF50020006 的原始CSV偏移確認
+2025-08-04 14:11:25,299 - data_processor - INFO - Step 3: 處理 WLPF50020006 的CSV標頭
+2025-08-04 14:11:25,981 - data_processor - INFO - 成功移動的檔案: ['CSV: D:\\Database-PC\\temp\\csv\\WLPF500200\\DC2\\WLPF50020005.csv -> D:\\Database-PC\\i-Pixel\\csv\\WLPF500200\\DC2\\WLPF50020005.csv', 'Map: D:\\Database-PC\\temp\\map\\WLPF500200\\DC2\\WLPF50020005.png -> D:\\Database-PC\\i-Pixel\\map\\WLPF500200\\DC2\\WLPF50020005.png']
+2025-08-04 14:11:25,982 - data_processor - INFO - 自動移動即時檔案成功: WLPF50020005 -> i-Pixel
+2025-08-04 14:11:25,983 - data_processor - INFO - 已添加到延遲移動隊列: WLPF50020005
+2025-08-04 14:11:25,984 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF500200\DC2\WLPF50020005.png
+2025-08-04 14:11:26,015 - data_processor - INFO - 任務 cd0ccd30-a01f-4e8b-92a3-eacbc42cd6c0 已完成: True - D:\Database-PC\temp\map\WLPF500200\DC2\WLPF50020005.png
+2025-08-04 14:11:26,033 - data_processor - INFO - 開始執行任務: 96c9e5d3-5acf-4193-a872-b2756f3f777f (basemap)
+2025-08-04 14:11:26,056 - data_processor - INFO - 檔案 M4X60_WLPF50020001_202506170943.csv 是原始格式，執行 step1~3
+2025-08-04 14:11:26,057 - data_processor - INFO - Step 1: 讀取元件 WLPF50020001 的config參數
+2025-08-04 14:11:26,059 - data_processor - INFO - Step 2: 執行 WLPF50020001 的原始CSV偏移確認
+2025-08-04 14:11:26,253 - data_processor - INFO - Step 3: 處理 WLPF50020001 的CSV標頭
+2025-08-04 14:11:26,264 - data_processor - INFO - Step 4: 為 WLPF50020006 生成Basemap
+2025-08-04 14:11:27,037 - data_processor - INFO - Step 4: 為 WLPF50020001 生成Basemap
+2025-08-04 14:11:27,472 - data_processor - INFO - 成功移動的檔案: ['CSV: D:\\Database-PC\\temp\\csv\\WLPF500200\\DC2\\WLPF50020006.csv -> D:\\Database-PC\\i-Pixel\\csv\\WLPF500200\\DC2\\WLPF50020006.csv', 'Map: D:\\Database-PC\\temp\\map\\WLPF500200\\DC2\\WLPF50020006.png -> D:\\Database-PC\\i-Pixel\\map\\WLPF500200\\DC2\\WLPF50020006.png']
+2025-08-04 14:11:27,473 - data_processor - INFO - 自動移動即時檔案成功: WLPF50020006 -> i-Pixel
+2025-08-04 14:11:27,481 - data_processor - INFO - 已添加到延遲移動隊列: WLPF50020006
+2025-08-04 14:11:27,481 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF500200\DC2\WLPF50020006.png
+2025-08-04 14:11:27,534 - data_processor - INFO - 任務 ae058950-2a0c-4543-9908-b44bd3f8e8dd 已完成: True - D:\Database-PC\temp\map\WLPF500200\DC2\WLPF50020006.png
+2025-08-04 14:11:27,958 - data_processor - INFO - 成功移動的檔案: ['CSV: D:\\Database-PC\\temp\\csv\\WLPF500200\\INNER1\\WLPF50020001.csv -> D:\\Database-PC\\i-Pixel\\csv\\WLPF500200\\INNER1\\WLPF50020001.csv', 'Map: D:\\Database-PC\\temp\\map\\WLPF500200\\INNER1\\WLPF50020001.png -> D:\\Database-PC\\i-Pixel\\map\\WLPF500200\\INNER1\\WLPF50020001.png']
+2025-08-04 14:11:27,958 - data_processor - INFO - 自動移動即時檔案成功: WLPF50020001 -> i-Pixel
+2025-08-04 14:11:27,958 - data_processor - INFO - 已添加到延遲移動隊列: WLPF50020001
+2025-08-04 14:11:27,958 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF500200\INNER1\WLPF50020001.png
+2025-08-04 14:11:27,980 - data_processor - INFO - 任務 96c9e5d3-5acf-4193-a872-b2756f3f777f 已完成: True - D:\Database-PC\temp\map\WLPF500200\INNER1\WLPF50020001.png
+2025-08-04 14:11:28,036 - data_processor - INFO - 開始執行任務: 6b110906-380d-4323-b5e6-aa7f20ca4e18 (basemap)
+2025-08-04 14:11:28,056 - data_processor - INFO - 檔案 M4X60_WLPF50020002_202506170943.csv 是原始格式，執行 step1~3
+2025-08-04 14:11:28,056 - data_processor - INFO - Step 1: 讀取元件 WLPF50020002 的config參數
+2025-08-04 14:11:28,057 - data_processor - INFO - Step 2: 執行 WLPF50020002 的原始CSV偏移確認
+2025-08-04 14:11:28,180 - data_processor - INFO - Step 3: 處理 WLPF50020002 的CSV標頭
+2025-08-04 14:11:28,615 - data_processor - INFO - Step 4: 為 WLPF50020002 生成Basemap
+2025-08-04 14:11:29,082 - data_processor - INFO - 開始執行任務: 4c36c23b-71ea-4acd-b440-5cabb3028c55 (basemap)
+2025-08-04 14:11:29,118 - data_processor - INFO - 檔案 M4X60_WLPF50020004_202506170943.csv 是原始格式，執行 step1~3
+2025-08-04 14:11:29,119 - data_processor - INFO - Step 1: 讀取元件 WLPF50020004 的config參數
+2025-08-04 14:11:29,123 - data_processor - INFO - Step 2: 執行 WLPF50020004 的原始CSV偏移確認
+2025-08-04 14:11:29,364 - data_processor - INFO - Step 3: 處理 WLPF50020004 的CSV標頭
+2025-08-04 14:11:29,443 - data_processor - INFO - 成功移動的檔案: ['CSV: D:\\Database-PC\\temp\\csv\\WLPF500200\\INNER1\\WLPF50020002.csv -> D:\\Database-PC\\i-Pixel\\csv\\WLPF500200\\INNER1\\WLPF50020002.csv', 'Map: D:\\Database-PC\\temp\\map\\WLPF500200\\INNER1\\WLPF50020002.png -> D:\\Database-PC\\i-Pixel\\map\\WLPF500200\\INNER1\\WLPF50020002.png']
+2025-08-04 14:11:29,443 - data_processor - INFO - 自動移動即時檔案成功: WLPF50020002 -> i-Pixel
+2025-08-04 14:11:29,444 - data_processor - INFO - 已添加到延遲移動隊列: WLPF50020002
+2025-08-04 14:11:29,444 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF500200\INNER1\WLPF50020002.png
+2025-08-04 14:11:29,467 - data_processor - INFO - 任務 6b110906-380d-4323-b5e6-aa7f20ca4e18 已完成: True - D:\Database-PC\temp\map\WLPF500200\INNER1\WLPF50020002.png
+2025-08-04 14:11:29,846 - data_processor - INFO - Step 4: 為 WLPF50020004 生成Basemap
+2025-08-04 14:11:30,060 - data_processor - INFO - 開始執行任務: 797c6d19-cdac-42d3-884d-a3c46f24568e (basemap)
+2025-08-04 14:11:30,106 - data_processor - INFO - 檔案 M4X60_WLPF50020005_202506170943.csv 是原始格式，執行 step1~3
+2025-08-04 14:11:30,106 - data_processor - INFO - Step 1: 讀取元件 WLPF50020005 的config參數
+2025-08-04 14:11:30,107 - data_processor - INFO - Step 2: 執行 WLPF50020005 的原始CSV偏移確認
+2025-08-04 14:11:30,459 - data_processor - INFO - Step 3: 處理 WLPF50020005 的CSV標頭
+2025-08-04 14:11:30,652 - data_processor - INFO - 成功移動的檔案: ['CSV: D:\\Database-PC\\temp\\csv\\WLPF500200\\INNER1\\WLPF50020004.csv -> D:\\Database-PC\\i-Pixel\\csv\\WLPF500200\\INNER1\\WLPF50020004.csv', 'Map: D:\\Database-PC\\temp\\map\\WLPF500200\\INNER1\\WLPF50020004.png -> D:\\Database-PC\\i-Pixel\\map\\WLPF500200\\INNER1\\WLPF50020004.png']
+2025-08-04 14:11:30,653 - data_processor - INFO - 自動移動即時檔案成功: WLPF50020004 -> i-Pixel
+2025-08-04 14:11:30,653 - data_processor - INFO - 已添加到延遲移動隊列: WLPF50020004
+2025-08-04 14:11:30,653 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF500200\INNER1\WLPF50020004.png
+2025-08-04 14:11:30,676 - data_processor - INFO - 任務 4c36c23b-71ea-4acd-b440-5cabb3028c55 已完成: True - D:\Database-PC\temp\map\WLPF500200\INNER1\WLPF50020004.png
+2025-08-04 14:11:31,051 - data_processor - INFO - Step 4: 為 WLPF50020005 生成Basemap
+2025-08-04 14:11:31,066 - data_processor - INFO - 開始執行任務: 1e939e24-6aea-40a6-8212-693b78f81721 (basemap)
+2025-08-04 14:11:31,087 - data_processor - INFO - 檔案 M4X60_WLPF50020006_202506170943.csv 是原始格式，執行 step1~3
+2025-08-04 14:11:31,087 - data_processor - INFO - Step 1: 讀取元件 WLPF50020006 的config參數
+2025-08-04 14:11:31,088 - data_processor - INFO - Step 2: 執行 WLPF50020006 的原始CSV偏移確認
+2025-08-04 14:11:31,274 - data_processor - INFO - Step 3: 處理 WLPF50020006 的CSV標頭
+2025-08-04 14:11:32,180 - data_processor - INFO - 成功移動的檔案: ['CSV: D:\\Database-PC\\temp\\csv\\WLPF500200\\INNER1\\WLPF50020005.csv -> D:\\Database-PC\\i-Pixel\\csv\\WLPF500200\\INNER1\\WLPF50020005.csv', 'Map: D:\\Database-PC\\temp\\map\\WLPF500200\\INNER1\\WLPF50020005.png -> D:\\Database-PC\\i-Pixel\\map\\WLPF500200\\INNER1\\WLPF50020005.png']
+2025-08-04 14:11:32,181 - data_processor - INFO - Step 4: 為 WLPF50020006 生成Basemap
+2025-08-04 14:11:32,181 - data_processor - INFO - 自動移動即時檔案成功: WLPF50020005 -> i-Pixel
+2025-08-04 14:11:32,181 - data_processor - INFO - 已添加到延遲移動隊列: WLPF50020005
+2025-08-04 14:11:32,181 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF500200\INNER1\WLPF50020005.png
+2025-08-04 14:11:32,207 - data_processor - INFO - 任務 797c6d19-cdac-42d3-884d-a3c46f24568e 已完成: True - D:\Database-PC\temp\map\WLPF500200\INNER1\WLPF50020005.png
+2025-08-04 14:11:32,884 - data_processor - INFO - 成功移動的檔案: ['CSV: D:\\Database-PC\\temp\\csv\\WLPF500200\\INNER1\\WLPF50020006.csv -> D:\\Database-PC\\i-Pixel\\csv\\WLPF500200\\INNER1\\WLPF50020006.csv', 'Map: D:\\Database-PC\\temp\\map\\WLPF500200\\INNER1\\WLPF50020006.png -> D:\\Database-PC\\i-Pixel\\map\\WLPF500200\\INNER1\\WLPF50020006.png']
+2025-08-04 14:11:32,884 - data_processor - INFO - 自動移動即時檔案成功: WLPF50020006 -> i-Pixel
+2025-08-04 14:11:32,885 - data_processor - INFO - 已添加到延遲移動隊列: WLPF50020006
+2025-08-04 14:11:32,885 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF500200\INNER1\WLPF50020006.png
+2025-08-04 14:11:32,907 - data_processor - INFO - 任務 1e939e24-6aea-40a6-8212-693b78f81721 已完成: True - D:\Database-PC\temp\map\WLPF500200\INNER1\WLPF50020006.png
+2025-08-04 14:11:33,085 - data_processor - INFO - 開始執行任務: e7ae5e29-16e5-4066-922c-9e285a15c384 (basemap)
+2025-08-04 14:11:33,109 - data_processor - INFO - 檔案 M5X60_WLPF50020001_202506121009.csv 是原始格式，執行 step1~3
+2025-08-04 14:11:33,109 - data_processor - INFO - Step 1: 讀取元件 WLPF50020001 的config參數
+2025-08-04 14:11:33,110 - data_processor - INFO - Step 2: 執行 WLPF50020001 的原始CSV偏移確認
+2025-08-04 14:11:33,239 - data_processor - INFO - Step 3: 處理 WLPF50020001 的CSV標頭
+2025-08-04 14:11:33,661 - data_processor - INFO - Step 4: 為 WLPF50020001 生成Basemap
+2025-08-04 14:11:34,099 - data_processor - INFO - 開始執行任務: bb9b97c3-cca4-429a-a456-1e3291b2452a (basemap)
+2025-08-04 14:11:34,129 - data_processor - INFO - 檔案 M5X60_WLPF50020002_202506121039.csv 是原始格式，執行 step1~3
+2025-08-04 14:11:34,129 - data_processor - INFO - Step 1: 讀取元件 WLPF50020002 的config參數
+2025-08-04 14:11:34,131 - data_processor - INFO - Step 2: 執行 WLPF50020002 的原始CSV偏移確認
+2025-08-04 14:11:34,372 - data_processor - INFO - Step 3: 處理 WLPF50020002 的CSV標頭
+2025-08-04 14:11:34,452 - data_processor - INFO - 成功移動的檔案: ['CSV: D:\\Database-PC\\temp\\csv\\WLPF500200\\RDL\\WLPF50020001.csv -> D:\\Database-PC\\i-Pixel\\csv\\WLPF500200\\RDL\\WLPF50020001.csv', 'Map: D:\\Database-PC\\temp\\map\\WLPF500200\\RDL\\WLPF50020001.png -> D:\\Database-PC\\i-Pixel\\map\\WLPF500200\\RDL\\WLPF50020001.png']
+2025-08-04 14:11:34,452 - data_processor - INFO - 自動移動即時檔案成功: WLPF50020001 -> i-Pixel
+2025-08-04 14:11:34,452 - data_processor - INFO - 已添加到延遲移動隊列: WLPF50020001
+2025-08-04 14:11:34,453 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF500200\RDL\WLPF50020001.png
+2025-08-04 14:11:34,476 - data_processor - INFO - 任務 e7ae5e29-16e5-4066-922c-9e285a15c384 已完成: True - D:\Database-PC\temp\map\WLPF500200\RDL\WLPF50020001.png
+2025-08-04 14:11:34,855 - data_processor - INFO - Step 4: 為 WLPF50020002 生成Basemap
+2025-08-04 14:11:35,113 - data_processor - INFO - 開始執行任務: 37ca2698-0864-42d2-88d3-69c40a122129 (basemap)
+2025-08-04 14:11:35,142 - data_processor - INFO - 檔案 M5X60_WLPF50020004_202506121104.csv 是原始格式，執行 step1~3
+2025-08-04 14:11:35,143 - data_processor - INFO - Step 1: 讀取元件 WLPF50020004 的config參數
+2025-08-04 14:11:35,160 - data_processor - INFO - Step 2: 執行 WLPF50020004 的原始CSV偏移確認
+2025-08-04 14:11:35,449 - data_processor - INFO - Step 3: 處理 WLPF50020004 的CSV標頭
+2025-08-04 14:11:35,641 - data_processor - INFO - 成功移動的檔案: ['CSV: D:\\Database-PC\\temp\\csv\\WLPF500200\\RDL\\WLPF50020002.csv -> D:\\Database-PC\\i-Pixel\\csv\\WLPF500200\\RDL\\WLPF50020002.csv', 'Map: D:\\Database-PC\\temp\\map\\WLPF500200\\RDL\\WLPF50020002.png -> D:\\Database-PC\\i-Pixel\\map\\WLPF500200\\RDL\\WLPF50020002.png']
+2025-08-04 14:11:35,641 - data_processor - INFO - 自動移動即時檔案成功: WLPF50020002 -> i-Pixel
+2025-08-04 14:11:35,641 - data_processor - INFO - 已添加到延遲移動隊列: WLPF50020002
+2025-08-04 14:11:35,641 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF500200\RDL\WLPF50020002.png
+2025-08-04 14:11:35,664 - data_processor - INFO - 任務 bb9b97c3-cca4-429a-a456-1e3291b2452a 已完成: True - D:\Database-PC\temp\map\WLPF500200\RDL\WLPF50020002.png
+2025-08-04 14:11:36,028 - data_processor - INFO - Step 4: 為 WLPF50020004 生成Basemap
+2025-08-04 14:11:36,103 - data_processor - INFO - 開始執行任務: b39fdbee-59b0-47f8-aed7-32007d6334c6 (basemap)
+2025-08-04 14:11:36,127 - data_processor - INFO - 檔案 M5X60_WLPF50020005_202506121005.csv 是原始格式，執行 step1~3
+2025-08-04 14:11:36,127 - data_processor - INFO - Step 1: 讀取元件 WLPF50020005 的config參數
+2025-08-04 14:11:36,128 - data_processor - INFO - Step 2: 執行 WLPF50020005 的原始CSV偏移確認
+2025-08-04 14:11:36,586 - data_processor - INFO - Step 3: 處理 WLPF50020005 的CSV標頭
+2025-08-04 14:11:37,146 - data_processor - INFO - 成功移動的檔案: ['CSV: D:\\Database-PC\\temp\\csv\\WLPF500200\\RDL\\WLPF50020004.csv -> D:\\Database-PC\\i-Pixel\\csv\\WLPF500200\\RDL\\WLPF50020004.csv', 'Map: D:\\Database-PC\\temp\\map\\WLPF500200\\RDL\\WLPF50020004.png -> D:\\Database-PC\\i-Pixel\\map\\WLPF500200\\RDL\\WLPF50020004.png']
+2025-08-04 14:11:37,147 - data_processor - INFO - 自動移動即時檔案成功: WLPF50020004 -> i-Pixel
+2025-08-04 14:11:37,148 - data_processor - INFO - 已添加到延遲移動隊列: WLPF50020004
+2025-08-04 14:11:37,149 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF500200\RDL\WLPF50020004.png
+2025-08-04 14:11:37,179 - data_processor - INFO - 任務 37ca2698-0864-42d2-88d3-69c40a122129 已完成: True - D:\Database-PC\temp\map\WLPF500200\RDL\WLPF50020004.png
+2025-08-04 14:11:37,247 - data_processor - INFO - Step 4: 為 WLPF50020005 生成Basemap
+2025-08-04 14:11:37,960 - data_processor - INFO - 成功移動的檔案: ['CSV: D:\\Database-PC\\temp\\csv\\WLPF500200\\RDL\\WLPF50020005.csv -> D:\\Database-PC\\i-Pixel\\csv\\WLPF500200\\RDL\\WLPF50020005.csv', 'Map: D:\\Database-PC\\temp\\map\\WLPF500200\\RDL\\WLPF50020005.png -> D:\\Database-PC\\i-Pixel\\map\\WLPF500200\\RDL\\WLPF50020005.png']
+2025-08-04 14:11:37,960 - data_processor - INFO - 自動移動即時檔案成功: WLPF50020005 -> i-Pixel
+2025-08-04 14:11:37,960 - data_processor - INFO - 已添加到延遲移動隊列: WLPF50020005
+2025-08-04 14:11:37,961 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF500200\RDL\WLPF50020005.png
+2025-08-04 14:11:37,984 - data_processor - INFO - 任務 b39fdbee-59b0-47f8-aed7-32007d6334c6 已完成: True - D:\Database-PC\temp\map\WLPF500200\RDL\WLPF50020005.png
+2025-08-04 14:11:38,120 - data_processor - INFO - 開始執行任務: 2f048b09-9cf9-4e1f-89c6-10d786c5866a (basemap)
+2025-08-04 14:11:38,140 - data_processor - INFO - 檔案 M5X60_WLPF50020006_202506121005.csv 是原始格式，執行 step1~3
+2025-08-04 14:11:38,141 - data_processor - INFO - Step 1: 讀取元件 WLPF50020006 的config參數
+2025-08-04 14:11:38,141 - data_processor - INFO - Step 2: 執行 WLPF50020006 的原始CSV偏移確認
+2025-08-04 14:11:38,265 - data_processor - INFO - Step 3: 處理 WLPF50020006 的CSV標頭
+2025-08-04 14:11:38,693 - data_processor - INFO - Step 4: 為 WLPF50020006 生成Basemap
+2025-08-04 14:11:39,377 - data_processor - INFO - 成功移動的檔案: ['CSV: D:\\Database-PC\\temp\\csv\\WLPF500200\\RDL\\WLPF50020006.csv -> D:\\Database-PC\\i-Pixel\\csv\\WLPF500200\\RDL\\WLPF50020006.csv', 'Map: D:\\Database-PC\\temp\\map\\WLPF500200\\RDL\\WLPF50020006.png -> D:\\Database-PC\\i-Pixel\\map\\WLPF500200\\RDL\\WLPF50020006.png']
+2025-08-04 14:11:39,377 - data_processor - INFO - 自動移動即時檔案成功: WLPF50020006 -> i-Pixel
+2025-08-04 14:11:39,378 - data_processor - INFO - 已添加到延遲移動隊列: WLPF50020006
+2025-08-04 14:11:39,378 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF500200\RDL\WLPF50020006.png
+2025-08-04 14:11:39,399 - data_processor - INFO - 任務 2f048b09-9cf9-4e1f-89c6-10d786c5866a 已完成: True - D:\Database-PC\temp\map\WLPF500200\RDL\WLPF50020006.png
+2025-08-04 14:12:35,229 - data_processor - INFO - 開始執行任務: c20ec75f-57de-4db5-b907-d04fbd1cbd7d (lossmap)
+2025-08-04 14:12:38,062 - data_processor - INFO - Lossmap處理完成: 總計 5, 成功 5, 失敗 0
+2025-08-04 14:12:38,088 - data_processor - INFO - 任務 c20ec75f-57de-4db5-b907-d04fbd1cbd7d 已完成: True - 所有5個元件Lossmap已生成
+2025-08-04 14:12:44,189 - data_processor - INFO - 開始執行任務: 724b0fea-cf75-4a1a-baf9-c18f6b1e8454 (fpy_parallel)
+2025-08-04 14:12:44,530 - data_processor - WARNING - 找不到前站(MT)對應的元件CSV: WLPF50020001
+2025-08-04 14:12:44,597 - data_processor - WARNING - 找不到前站(MT)對應的元件CSV: WLPF50020006
+2025-08-04 14:12:44,700 - data_processor - WARNING - 找不到前站(MT)對應的元件CSV: WLPF50020002
+2025-08-04 14:12:44,713 - data_processor - WARNING - 找不到前站(MT)對應的元件CSV: WLPF50020005
+2025-08-04 14:12:44,767 - data_processor - WARNING - 找不到前站(MT)對應的元件CSV: WLPF50020004
+2025-08-04 14:12:54,182 - data_processor - INFO - FPY並行處理完成: 總計 5, 成功 5, 失敗 0
+2025-08-04 14:12:54,209 - data_processor - INFO - 任務 724b0fea-cf75-4a1a-baf9-c18f6b1e8454 已完成: True - 所有5個元件FPY已生成
+2025-08-04 14:18:55,790 - data_processor - INFO - 延遲移動管理器已初始化
+2025-08-04 14:18:55,791 - data_processor - INFO - 延遲移動配置 - 時間: 12:35, 天數: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
+2025-08-04 14:18:55,791 - data_processor - INFO - 解析時間成功 - 小時: 12, 分鐘: 35
+2025-08-04 14:18:55,791 - data_processor - INFO - 今天的時間已過，設定為明天執行
+2025-08-04 14:18:55,791 - data_processor - INFO - 延遲時間: 80164208.73 毫秒 (1336.1 分鐘)
+2025-08-04 14:18:55,791 - data_processor - INFO - 延遲移動管理器已啟動，下次執行時間: 2025-08-05 12:35:00 (配置時間: 12:35)
+2025-08-04 14:19:09,888 - data_processor - INFO - 開始執行任務: 8188f84c-68b6-41e1-b797-4518b2fba0f2 (basemap)
+2025-08-04 14:19:09,913 - data_processor - INFO - 檔案 M1X60_WLPF40010001_202504141037.csv 是原始格式，執行 step1~3
+2025-08-04 14:19:09,914 - data_processor - INFO - Step 1: 讀取元件 WLPF40010001 的config參數
+2025-08-04 14:19:09,914 - data_processor - INFO - Step 2: 執行 WLPF40010001 的原始CSV偏移確認
+2025-08-04 14:19:10,072 - data_processor - INFO - 任務 8188f84c-68b6-41e1-b797-4518b2fba0f2 已完成: False - CSV檔案偏移錯誤: 找不到任何對齊點，需要至少1個匹配
+2025-08-04 14:19:10,884 - data_processor - INFO - 開始執行任務: 7b0e35c0-a72a-45f3-a7a7-833c41d9a53d (basemap)
+2025-08-04 14:19:10,906 - data_processor - INFO - 檔案 M1X60_WLPF40010003_202504141037.csv 是原始格式，執行 step1~3
+2025-08-04 14:19:10,906 - data_processor - INFO - Step 1: 讀取元件 WLPF40010003 的config參數
+2025-08-04 14:19:10,907 - data_processor - INFO - Step 2: 執行 WLPF40010003 的原始CSV偏移確認
+2025-08-04 14:19:11,042 - data_processor - INFO - Step 3: 處理 WLPF40010003 的CSV標頭
+2025-08-04 14:19:11,482 - data_processor - INFO - Step 4: 為 WLPF40010003 生成Basemap
+2025-08-04 14:19:11,933 - data_processor - INFO - 開始執行任務: 8cd2a6c0-17c0-497b-8eec-3903732d26d0 (basemap)
+2025-08-04 14:19:11,966 - data_processor - INFO - 檔案 M1X60_WLPF40010004_202504141037.csv 是原始格式，執行 step1~3
+2025-08-04 14:19:11,969 - data_processor - INFO - Step 1: 讀取元件 WLPF40010004 的config參數
+2025-08-04 14:19:11,971 - data_processor - INFO - Step 2: 執行 WLPF40010004 的原始CSV偏移確認
+2025-08-04 14:19:12,239 - data_processor - INFO - Step 3: 處理 WLPF40010004 的CSV標頭
+2025-08-04 14:19:12,315 - data_processor - INFO - 成功移動的檔案: ['CSV: D:\\Database-PC\\temp\\csv\\WLPF400100\\DC2\\WLPF40010003.csv -> D:\\Database-PC\\i-Pixel\\csv\\WLPF400100\\DC2\\WLPF40010003.csv', 'Map: D:\\Database-PC\\temp\\map\\WLPF400100\\DC2\\WLPF40010003.png -> D:\\Database-PC\\i-Pixel\\map\\WLPF400100\\DC2\\WLPF40010003.png']
+2025-08-04 14:19:12,316 - data_processor - INFO - 自動移動即時檔案成功: WLPF40010003 -> i-Pixel
+2025-08-04 14:19:12,317 - data_processor - INFO - 已添加到延遲移動隊列: WLPF40010003
+2025-08-04 14:19:12,317 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010003.png
+2025-08-04 14:19:12,352 - data_processor - INFO - 任務 7b0e35c0-a72a-45f3-a7a7-833c41d9a53d 已完成: True - D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010003.png
+2025-08-04 14:19:12,736 - data_processor - INFO - Step 4: 為 WLPF40010004 生成Basemap
+2025-08-04 14:19:12,903 - data_processor - INFO - 開始執行任務: 4d50fbfb-2ee9-4d6c-a23e-b75b84858631 (basemap)
+2025-08-04 14:19:12,924 - data_processor - INFO - 檔案 M1X60_WLPF40010003_202504141045.csv 是原始格式，執行 step1~3
+2025-08-04 14:19:12,924 - data_processor - INFO - Step 1: 讀取元件 WLPF40010003 的config參數
+2025-08-04 14:19:12,924 - data_processor - INFO - Step 2: 執行 WLPF40010003 的原始CSV偏移確認
+2025-08-04 14:19:13,340 - data_processor - INFO - Step 3: 處理 WLPF40010003 的CSV標頭
+2025-08-04 14:19:13,577 - data_processor - INFO - 成功移動的檔案: ['CSV: D:\\Database-PC\\temp\\csv\\WLPF400100\\DC2\\WLPF40010004.csv -> D:\\Database-PC\\i-Pixel\\csv\\WLPF400100\\DC2\\WLPF40010004.csv', 'Map: D:\\Database-PC\\temp\\map\\WLPF400100\\DC2\\WLPF40010004.png -> D:\\Database-PC\\i-Pixel\\map\\WLPF400100\\DC2\\WLPF40010004.png']
+2025-08-04 14:19:13,577 - data_processor - INFO - 自動移動即時檔案成功: WLPF40010004 -> i-Pixel
+2025-08-04 14:19:13,578 - data_processor - INFO - 已添加到延遲移動隊列: WLPF40010004
+2025-08-04 14:19:13,578 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010004.png
+2025-08-04 14:19:13,611 - data_processor - INFO - 任務 8cd2a6c0-17c0-497b-8eec-3903732d26d0 已完成: True - D:\Database-PC\temp\map\WLPF400100\DC2\WLPF40010004.png
+2025-08-04 14:19:13,908 - data_processor - INFO - 開始執行任務: ac732555-7749-4419-b659-4f68a4ac0231 (basemap)
+2025-08-04 14:19:13,929 - data_processor - INFO - 檔案 M1X60_WLPF40010003_202504141045.csv 是原始格式，執行 step1~3
+2025-08-04 14:19:13,930 - data_processor - INFO - Step 1: 讀取元件 WLPF40010003 的config參數
+2025-08-04 14:19:13,933 - data_processor - INFO - Step 2: 執行 WLPF40010003 的原始CSV偏移確認
+2025-08-04 14:19:13,986 - data_processor - INFO - Step 4: 為 WLPF40010003 生成Basemap
+2025-08-04 14:19:14,097 - data_processor - INFO - Step 3: 處理 WLPF40010003 的CSV標頭
+2025-08-04 14:19:14,877 - data_processor - INFO - Step 4: 為 WLPF40010003 生成Basemap
+2025-08-04 14:19:15,136 - data_processor - INFO - 成功移動的檔案: ['Map: D:\\Database-PC\\temp\\map\\WLPF400100\\INNER1\\WLPF40010003.png -> D:\\Database-PC\\i-Pixel\\map\\WLPF400100\\INNER1\\WLPF40010003.png']
+2025-08-04 14:19:15,136 - data_processor - WARNING - 移動失敗的檔案: ["csv移動失敗: [WinError 32] 程序無法存取檔案，因為檔案正由另一個程序使用。: 'D:\\\\Database-PC\\\\temp\\\\csv\\\\WLPF400100\\\\INNER1\\\\WLPF40010003.csv'"]
+2025-08-04 14:19:15,137 - data_processor - INFO - 自動移動即時檔案成功: WLPF40010003 -> i-Pixel
+2025-08-04 14:19:15,137 - data_processor - INFO - 已添加到延遲移動隊列: WLPF40010003
+2025-08-04 14:19:15,137 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\INNER1\WLPF40010003.png
+2025-08-04 14:19:15,174 - data_processor - INFO - 任務 4d50fbfb-2ee9-4d6c-a23e-b75b84858631 已完成: True - D:\Database-PC\temp\map\WLPF400100\INNER1\WLPF40010003.png
+2025-08-04 14:19:15,778 - data_processor - INFO - 成功移動的檔案: ['CSV: D:\\Database-PC\\temp\\csv\\WLPF400100\\INNER1\\WLPF40010003.csv -> D:\\Database-PC\\i-Pixel\\csv\\WLPF400100\\INNER1\\WLPF40010003.csv', 'Map: D:\\Database-PC\\temp\\map\\WLPF400100\\INNER1\\WLPF40010003.png -> D:\\Database-PC\\i-Pixel\\map\\WLPF400100\\INNER1\\WLPF40010003.png']
+2025-08-04 14:19:15,778 - data_processor - INFO - 自動移動即時檔案成功: WLPF40010003 -> i-Pixel
+2025-08-04 14:19:15,778 - data_processor - INFO - 已添加到延遲移動隊列: WLPF40010003
+2025-08-04 14:19:15,778 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\INNER1\WLPF40010003.png
+2025-08-04 14:19:15,802 - data_processor - INFO - 任務 ac732555-7749-4419-b659-4f68a4ac0231 已完成: True - D:\Database-PC\temp\map\WLPF400100\INNER1\WLPF40010003.png
+2025-08-04 14:19:15,934 - data_processor - INFO - 開始執行任務: 99b81b9d-5f3c-4532-bfdf-369c2b9f2c3b (basemap)
+2025-08-04 14:19:15,955 - data_processor - INFO - 檔案 M3X60_WLPF40010001_202504091051.csv 是原始格式，執行 step1~3
+2025-08-04 14:19:15,955 - data_processor - INFO - Step 1: 讀取元件 WLPF40010001 的config參數
+2025-08-04 14:19:15,956 - data_processor - INFO - Step 2: 執行 WLPF40010001 的原始CSV偏移確認
+2025-08-04 14:19:16,096 - data_processor - INFO - Step 3: 處理 WLPF40010001 的CSV標頭
+2025-08-04 14:19:16,534 - data_processor - INFO - Step 4: 為 WLPF40010001 生成Basemap
+2025-08-04 14:19:17,015 - data_processor - INFO - 開始執行任務: 52209a23-da0a-4ea2-aecd-228ac8e26839 (basemap)
+2025-08-04 14:19:17,049 - data_processor - INFO - 檔案 M3X60_WLPF40010003_202504091051.csv 是原始格式，執行 step1~3
+2025-08-04 14:19:17,050 - data_processor - INFO - Step 1: 讀取元件 WLPF40010003 的config參數
+2025-08-04 14:19:17,051 - data_processor - INFO - Step 2: 執行 WLPF40010003 的原始CSV偏移確認
+2025-08-04 14:19:17,327 - data_processor - INFO - Step 3: 處理 WLPF40010003 的CSV標頭
+2025-08-04 14:19:17,408 - data_processor - INFO - 成功移動的檔案: ['CSV: D:\\Database-PC\\temp\\csv\\WLPF400100\\MT\\WLPF40010001.csv -> D:\\Database-PC\\i-Pixel\\csv\\WLPF400100\\MT\\WLPF40010001.csv', 'Map: D:\\Database-PC\\temp\\map\\WLPF400100\\MT\\WLPF40010001.png -> D:\\Database-PC\\i-Pixel\\map\\WLPF400100\\MT\\WLPF40010001.png']
+2025-08-04 14:19:17,408 - data_processor - INFO - 自動移動即時檔案成功: WLPF40010001 -> i-Pixel
+2025-08-04 14:19:17,408 - data_processor - INFO - 已添加到延遲移動隊列: WLPF40010001
+2025-08-04 14:19:17,408 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010001.png
+2025-08-04 14:19:17,434 - data_processor - INFO - 任務 99b81b9d-5f3c-4532-bfdf-369c2b9f2c3b 已完成: True - D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010001.png
+2025-08-04 14:19:17,830 - data_processor - INFO - Step 4: 為 WLPF40010003 生成Basemap
+2025-08-04 14:19:17,951 - data_processor - INFO - 開始執行任務: 998d97f7-d4d2-46d7-9a65-b75357c258a1 (basemap)
+2025-08-04 14:19:17,983 - data_processor - INFO - 檔案 M3X60_WLPF40010004_202504091051.csv 是原始格式，執行 step1~3
+2025-08-04 14:19:17,984 - data_processor - INFO - Step 1: 讀取元件 WLPF40010004 的config參數
+2025-08-04 14:19:17,984 - data_processor - INFO - Step 2: 執行 WLPF40010004 的原始CSV偏移確認
+2025-08-04 14:19:18,416 - data_processor - INFO - Step 3: 處理 WLPF40010004 的CSV標頭
+2025-08-04 14:19:18,983 - data_processor - INFO - 成功移動的檔案: ['CSV: D:\\Database-PC\\temp\\csv\\WLPF400100\\MT\\WLPF40010003.csv -> D:\\Database-PC\\i-Pixel\\csv\\WLPF400100\\MT\\WLPF40010003.csv', 'Map: D:\\Database-PC\\temp\\map\\WLPF400100\\MT\\WLPF40010003.png -> D:\\Database-PC\\i-Pixel\\map\\WLPF400100\\MT\\WLPF40010003.png']
+2025-08-04 14:19:18,984 - data_processor - INFO - 自動移動即時檔案成功: WLPF40010003 -> i-Pixel
+2025-08-04 14:19:18,986 - data_processor - INFO - 已添加到延遲移動隊列: WLPF40010003
+2025-08-04 14:19:18,986 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010003.png
+2025-08-04 14:19:19,014 - data_processor - INFO - 任務 52209a23-da0a-4ea2-aecd-228ac8e26839 已完成: True - D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010003.png
+2025-08-04 14:19:19,093 - data_processor - INFO - Step 4: 為 WLPF40010004 生成Basemap
+2025-08-04 14:19:19,865 - data_processor - INFO - 成功移動的檔案: ['CSV: D:\\Database-PC\\temp\\csv\\WLPF400100\\MT\\WLPF40010004.csv -> D:\\Database-PC\\i-Pixel\\csv\\WLPF400100\\MT\\WLPF40010004.csv', 'Map: D:\\Database-PC\\temp\\map\\WLPF400100\\MT\\WLPF40010004.png -> D:\\Database-PC\\i-Pixel\\map\\WLPF400100\\MT\\WLPF40010004.png']
+2025-08-04 14:19:19,866 - data_processor - INFO - 自動移動即時檔案成功: WLPF40010004 -> i-Pixel
+2025-08-04 14:19:19,866 - data_processor - INFO - 已添加到延遲移動隊列: WLPF40010004
+2025-08-04 14:19:19,866 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010004.png
+2025-08-04 14:19:19,895 - data_processor - INFO - 任務 998d97f7-d4d2-46d7-9a65-b75357c258a1 已完成: True - D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010004.png
+2025-08-04 14:19:19,955 - data_processor - INFO - 開始執行任務: 39ae6f24-7e98-4cb9-8407-45ac7d82c076 (basemap)
+2025-08-04 14:19:19,978 - data_processor - INFO - 檔案 M3X60_WLPF40010006_202504091051.csv 是原始格式，執行 step1~3
+2025-08-04 14:19:19,979 - data_processor - INFO - Step 1: 讀取元件 WLPF40010006 的config參數
+2025-08-04 14:19:19,979 - data_processor - INFO - Step 2: 執行 WLPF40010006 的原始CSV偏移確認
+2025-08-04 14:19:20,107 - data_processor - INFO - Step 3: 處理 WLPF40010006 的CSV標頭
+2025-08-04 14:19:20,555 - data_processor - INFO - Step 4: 為 WLPF40010006 生成Basemap
+2025-08-04 14:19:21,011 - data_processor - INFO - 開始執行任務: 72148d66-a998-463f-b49f-0f265468a5ce (basemap)
+2025-08-04 14:19:21,052 - data_processor - INFO - 檔案 M3X60_WLPF50010001_202504091051.csv 是原始格式，執行 step1~3
+2025-08-04 14:19:21,052 - data_processor - INFO - Step 1: 讀取元件 WLPF50010001 的config參數
+2025-08-04 14:19:21,057 - data_processor - INFO - Step 2: 執行 WLPF50010001 的原始CSV偏移確認
+2025-08-04 14:19:21,312 - data_processor - INFO - Step 3: 處理 WLPF50010001 的CSV標頭
+2025-08-04 14:19:21,400 - data_processor - INFO - 成功移動的檔案: ['CSV: D:\\Database-PC\\temp\\csv\\WLPF400100\\MT\\WLPF40010006.csv -> D:\\Database-PC\\i-Pixel\\csv\\WLPF400100\\MT\\WLPF40010006.csv', 'Map: D:\\Database-PC\\temp\\map\\WLPF400100\\MT\\WLPF40010006.png -> D:\\Database-PC\\i-Pixel\\map\\WLPF400100\\MT\\WLPF40010006.png']
+2025-08-04 14:19:21,401 - data_processor - INFO - 自動移動即時檔案成功: WLPF40010006 -> i-Pixel
+2025-08-04 14:19:21,401 - data_processor - INFO - 已添加到延遲移動隊列: WLPF40010006
+2025-08-04 14:19:21,401 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010006.png
+2025-08-04 14:19:21,424 - data_processor - INFO - 任務 39ae6f24-7e98-4cb9-8407-45ac7d82c076 已完成: True - D:\Database-PC\temp\map\WLPF400100\MT\WLPF40010006.png
+2025-08-04 14:19:21,813 - data_processor - INFO - Step 4: 為 WLPF50010001 生成Basemap
+2025-08-04 14:19:21,958 - data_processor - INFO - 開始執行任務: 8c936e98-3096-458d-a990-12c6b3b5db72 (basemap)
+2025-08-04 14:19:21,992 - data_processor - INFO - 檔案 M3X60_WLPF50010002_202504091051.csv 是原始格式，執行 step1~3
+2025-08-04 14:19:21,993 - data_processor - INFO - Step 1: 讀取元件 WLPF50010002 的config參數
+2025-08-04 14:19:21,993 - data_processor - INFO - Step 2: 執行 WLPF50010002 的原始CSV偏移確認
+2025-08-04 14:19:22,438 - data_processor - INFO - Step 3: 處理 WLPF50010002 的CSV標頭
+2025-08-04 14:19:22,734 - data_processor - INFO - 成功移動的檔案: ['CSV: D:\\Database-PC\\temp\\csv\\WLPF500100\\MT\\WLPF50010001.csv -> D:\\Database-PC\\i-Pixel\\csv\\WLPF500100\\MT\\WLPF50010001.csv', 'Map: D:\\Database-PC\\temp\\map\\WLPF500100\\MT\\WLPF50010001.png -> D:\\Database-PC\\i-Pixel\\map\\WLPF500100\\MT\\WLPF50010001.png']
+2025-08-04 14:19:22,735 - data_processor - INFO - 自動移動即時檔案成功: WLPF50010001 -> i-Pixel
+2025-08-04 14:19:22,736 - data_processor - INFO - 已添加到延遲移動隊列: WLPF50010001
+2025-08-04 14:19:22,737 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010001.png
+2025-08-04 14:19:22,762 - data_processor - INFO - 任務 72148d66-a998-463f-b49f-0f265468a5ce 已完成: True - D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010001.png
+2025-08-04 14:19:22,968 - data_processor - INFO - 開始執行任務: 5bba8cf6-77d1-4f3a-8a28-48fe8ebf5fc6 (basemap)
+2025-08-04 14:19:22,991 - data_processor - INFO - 檔案 M3X60_WLPF50010003_202504091051.csv 是原始格式，執行 step1~3
+2025-08-04 14:19:22,992 - data_processor - INFO - Step 1: 讀取元件 WLPF50010003 的config參數
+2025-08-04 14:19:22,995 - data_processor - INFO - Step 2: 執行 WLPF50010003 的原始CSV偏移確認
+2025-08-04 14:19:23,105 - data_processor - INFO - Step 4: 為 WLPF50010002 生成Basemap
+2025-08-04 14:19:23,176 - data_processor - INFO - Step 3: 處理 WLPF50010003 的CSV標頭
+2025-08-04 14:19:23,999 - data_processor - INFO - Step 4: 為 WLPF50010003 生成Basemap
+2025-08-04 14:19:24,342 - data_processor - INFO - 成功移動的檔案: ['CSV: D:\\Database-PC\\temp\\csv\\WLPF500100\\MT\\WLPF50010002.csv -> D:\\Database-PC\\i-Pixel\\csv\\WLPF500100\\MT\\WLPF50010002.csv', 'Map: D:\\Database-PC\\temp\\map\\WLPF500100\\MT\\WLPF50010002.png -> D:\\Database-PC\\i-Pixel\\map\\WLPF500100\\MT\\WLPF50010002.png']
+2025-08-04 14:19:24,342 - data_processor - INFO - 自動移動即時檔案成功: WLPF50010002 -> i-Pixel
+2025-08-04 14:19:24,343 - data_processor - INFO - 已添加到延遲移動隊列: WLPF50010002
+2025-08-04 14:19:24,343 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010002.png
+2025-08-04 14:19:24,386 - data_processor - INFO - 任務 8c936e98-3096-458d-a990-12c6b3b5db72 已完成: True - D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010002.png
+2025-08-04 14:19:24,932 - data_processor - INFO - 成功移動的檔案: ['CSV: D:\\Database-PC\\temp\\csv\\WLPF500100\\MT\\WLPF50010003.csv -> D:\\Database-PC\\i-Pixel\\csv\\WLPF500100\\MT\\WLPF50010003.csv', 'Map: D:\\Database-PC\\temp\\map\\WLPF500100\\MT\\WLPF50010003.png -> D:\\Database-PC\\i-Pixel\\map\\WLPF500100\\MT\\WLPF50010003.png']
+2025-08-04 14:19:24,933 - data_processor - INFO - 自動移動即時檔案成功: WLPF50010003 -> i-Pixel
+2025-08-04 14:19:24,933 - data_processor - INFO - 已添加到延遲移動隊列: WLPF50010003
+2025-08-04 14:19:24,933 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010003.png
+2025-08-04 14:19:24,960 - data_processor - INFO - 任務 5bba8cf6-77d1-4f3a-8a28-48fe8ebf5fc6 已完成: True - D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010003.png
+2025-08-04 14:19:24,992 - data_processor - INFO - 開始執行任務: 840f2aa9-e99a-4d65-a81a-e33ca1a8b02b (basemap)
+2025-08-04 14:19:25,015 - data_processor - INFO - 檔案 M3X60_WLPF50010004_202504091051.csv 是原始格式，執行 step1~3
+2025-08-04 14:19:25,015 - data_processor - INFO - Step 1: 讀取元件 WLPF50010004 的config參數
+2025-08-04 14:19:25,016 - data_processor - INFO - Step 2: 執行 WLPF50010004 的原始CSV偏移確認
+2025-08-04 14:19:25,140 - data_processor - INFO - Step 3: 處理 WLPF50010004 的CSV標頭
+2025-08-04 14:19:25,589 - data_processor - INFO - Step 4: 為 WLPF50010004 生成Basemap
+2025-08-04 14:19:25,989 - data_processor - INFO - 開始執行任務: 77d7cb9b-3693-418a-8561-0b8793af4ca3 (basemap)
+2025-08-04 14:19:26,100 - data_processor - INFO - 檔案 M1X60_WLPF50020001_202506171003.csv 是原始格式，執行 step1~3
+2025-08-04 14:19:26,103 - data_processor - INFO - Step 1: 讀取元件 WLPF50020001 的config參數
+2025-08-04 14:19:26,109 - data_processor - INFO - Step 2: 執行 WLPF50020001 的原始CSV偏移確認
+2025-08-04 14:19:26,381 - data_processor - INFO - Step 3: 處理 WLPF50020001 的CSV標頭
+2025-08-04 14:19:26,473 - data_processor - INFO - 成功移動的檔案: ['CSV: D:\\Database-PC\\temp\\csv\\WLPF500100\\MT\\WLPF50010004.csv -> D:\\Database-PC\\i-Pixel\\csv\\WLPF500100\\MT\\WLPF50010004.csv', 'Map: D:\\Database-PC\\temp\\map\\WLPF500100\\MT\\WLPF50010004.png -> D:\\Database-PC\\i-Pixel\\map\\WLPF500100\\MT\\WLPF50010004.png']
+2025-08-04 14:19:26,474 - data_processor - INFO - 自動移動即時檔案成功: WLPF50010004 -> i-Pixel
+2025-08-04 14:19:26,474 - data_processor - INFO - 已添加到延遲移動隊列: WLPF50010004
+2025-08-04 14:19:26,474 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010004.png
+2025-08-04 14:19:26,507 - data_processor - INFO - 任務 840f2aa9-e99a-4d65-a81a-e33ca1a8b02b 已完成: True - D:\Database-PC\temp\map\WLPF500100\MT\WLPF50010004.png
+2025-08-04 14:19:26,886 - data_processor - INFO - Step 4: 為 WLPF50020001 生成Basemap
+2025-08-04 14:19:26,996 - data_processor - INFO - 開始執行任務: da5a8b06-2f44-4f52-803f-7ed954f2ab42 (basemap)
+2025-08-04 14:19:27,018 - data_processor - INFO - 檔案 M1X60_WLPF50020002_202506170936.csv 是原始格式，執行 step1~3
+2025-08-04 14:19:27,019 - data_processor - INFO - Step 1: 讀取元件 WLPF50020002 的config參數
+2025-08-04 14:19:27,019 - data_processor - INFO - Step 2: 執行 WLPF50020002 的原始CSV偏移確認
+2025-08-04 14:19:27,457 - data_processor - INFO - Step 3: 處理 WLPF50020002 的CSV標頭
+2025-08-04 14:19:27,755 - data_processor - INFO - 成功移動的檔案: ['CSV: D:\\Database-PC\\temp\\csv\\WLPF500200\\DC2\\WLPF50020001.csv -> D:\\Database-PC\\i-Pixel\\csv\\WLPF500200\\DC2\\WLPF50020001.csv', 'Map: D:\\Database-PC\\temp\\map\\WLPF500200\\DC2\\WLPF50020001.png -> D:\\Database-PC\\i-Pixel\\map\\WLPF500200\\DC2\\WLPF50020001.png']
+2025-08-04 14:19:27,756 - data_processor - INFO - 自動移動即時檔案成功: WLPF50020001 -> i-Pixel
+2025-08-04 14:19:27,757 - data_processor - INFO - 已添加到延遲移動隊列: WLPF50020001
+2025-08-04 14:19:27,757 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF500200\DC2\WLPF50020001.png
+2025-08-04 14:19:27,785 - data_processor - INFO - 任務 77d7cb9b-3693-418a-8561-0b8793af4ca3 已完成: True - D:\Database-PC\temp\map\WLPF500200\DC2\WLPF50020001.png
+2025-08-04 14:19:27,997 - data_processor - INFO - 開始執行任務: a387823c-d661-4e9d-9981-5a9951703058 (basemap)
+2025-08-04 14:19:28,019 - data_processor - INFO - 檔案 M1X60_WLPF50020004_202506170936.csv 是原始格式，執行 step1~3
+2025-08-04 14:19:28,020 - data_processor - INFO - Step 1: 讀取元件 WLPF50020004 的config參數
+2025-08-04 14:19:28,022 - data_processor - INFO - Step 2: 執行 WLPF50020004 的原始CSV偏移確認
+2025-08-04 14:19:28,143 - data_processor - INFO - Step 4: 為 WLPF50020002 生成Basemap
+2025-08-04 14:19:28,206 - data_processor - INFO - Step 3: 處理 WLPF50020004 的CSV標頭
+2025-08-04 14:19:28,990 - data_processor - INFO - Step 4: 為 WLPF50020004 生成Basemap
+2025-08-04 14:19:29,260 - data_processor - INFO - 成功移動的檔案: ['CSV: D:\\Database-PC\\temp\\csv\\WLPF500200\\DC2\\WLPF50020002.csv -> D:\\Database-PC\\i-Pixel\\csv\\WLPF500200\\DC2\\WLPF50020002.csv', 'Map: D:\\Database-PC\\temp\\map\\WLPF500200\\DC2\\WLPF50020002.png -> D:\\Database-PC\\i-Pixel\\map\\WLPF500200\\DC2\\WLPF50020002.png']
+2025-08-04 14:19:29,261 - data_processor - INFO - 自動移動即時檔案成功: WLPF50020002 -> i-Pixel
+2025-08-04 14:19:29,261 - data_processor - INFO - 已添加到延遲移動隊列: WLPF50020002
+2025-08-04 14:19:29,261 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF500200\DC2\WLPF50020002.png
+2025-08-04 14:19:29,295 - data_processor - INFO - 任務 da5a8b06-2f44-4f52-803f-7ed954f2ab42 已完成: True - D:\Database-PC\temp\map\WLPF500200\DC2\WLPF50020002.png
+2025-08-04 14:19:29,868 - data_processor - INFO - 成功移動的檔案: ['CSV: D:\\Database-PC\\temp\\csv\\WLPF500200\\DC2\\WLPF50020004.csv -> D:\\Database-PC\\i-Pixel\\csv\\WLPF500200\\DC2\\WLPF50020004.csv', 'Map: D:\\Database-PC\\temp\\map\\WLPF500200\\DC2\\WLPF50020004.png -> D:\\Database-PC\\i-Pixel\\map\\WLPF500200\\DC2\\WLPF50020004.png']
+2025-08-04 14:19:29,869 - data_processor - INFO - 自動移動即時檔案成功: WLPF50020004 -> i-Pixel
+2025-08-04 14:19:29,869 - data_processor - INFO - 已添加到延遲移動隊列: WLPF50020004
+2025-08-04 14:19:29,870 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF500200\DC2\WLPF50020004.png
+2025-08-04 14:19:29,893 - data_processor - INFO - 任務 a387823c-d661-4e9d-9981-5a9951703058 已完成: True - D:\Database-PC\temp\map\WLPF500200\DC2\WLPF50020004.png
+2025-08-04 14:19:30,016 - data_processor - INFO - 開始執行任務: 430d3e38-9b57-4ef7-8389-98e433eda8e7 (basemap)
+2025-08-04 14:19:30,038 - data_processor - INFO - 檔案 M1X60_WLPF50020005_202506170936.csv 是原始格式，執行 step1~3
+2025-08-04 14:19:30,038 - data_processor - INFO - Step 1: 讀取元件 WLPF50020005 的config參數
+2025-08-04 14:19:30,039 - data_processor - INFO - Step 2: 執行 WLPF50020005 的原始CSV偏移確認
+2025-08-04 14:19:30,159 - data_processor - INFO - Step 3: 處理 WLPF50020005 的CSV標頭
+2025-08-04 14:19:30,591 - data_processor - INFO - Step 4: 為 WLPF50020005 生成Basemap
+2025-08-04 14:19:31,024 - data_processor - INFO - 開始執行任務: 61d6cf26-0866-40cc-829a-09c6f780168f (basemap)
+2025-08-04 14:19:31,055 - data_processor - INFO - 檔案 M1X60_WLPF50020006_202506170936.csv 是原始格式，執行 step1~3
+2025-08-04 14:19:31,055 - data_processor - INFO - Step 1: 讀取元件 WLPF50020006 的config參數
+2025-08-04 14:19:31,056 - data_processor - INFO - Step 2: 執行 WLPF50020006 的原始CSV偏移確認
+2025-08-04 14:19:31,199 - data_processor - INFO - Step 3: 處理 WLPF50020006 的CSV標頭
+2025-08-04 14:19:31,375 - data_processor - INFO - 成功移動的檔案: ['CSV: D:\\Database-PC\\temp\\csv\\WLPF500200\\DC2\\WLPF50020005.csv -> D:\\Database-PC\\i-Pixel\\csv\\WLPF500200\\DC2\\WLPF50020005.csv', 'Map: D:\\Database-PC\\temp\\map\\WLPF500200\\DC2\\WLPF50020005.png -> D:\\Database-PC\\i-Pixel\\map\\WLPF500200\\DC2\\WLPF50020005.png']
+2025-08-04 14:19:31,375 - data_processor - INFO - 自動移動即時檔案成功: WLPF50020005 -> i-Pixel
+2025-08-04 14:19:31,375 - data_processor - INFO - 已添加到延遲移動隊列: WLPF50020005
+2025-08-04 14:19:31,376 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF500200\DC2\WLPF50020005.png
+2025-08-04 14:19:31,403 - data_processor - INFO - 任務 430d3e38-9b57-4ef7-8389-98e433eda8e7 已完成: True - D:\Database-PC\temp\map\WLPF500200\DC2\WLPF50020005.png
+2025-08-04 14:19:31,790 - data_processor - INFO - Step 4: 為 WLPF50020006 生成Basemap
+2025-08-04 14:19:32,025 - data_processor - INFO - 開始執行任務: eac2ca20-695a-4430-ad15-4842417a9018 (basemap)
+2025-08-04 14:19:32,051 - data_processor - INFO - 檔案 M4X60_WLPF50020001_202506170943.csv 是原始格式，執行 step1~3
+2025-08-04 14:19:32,052 - data_processor - INFO - Step 1: 讀取元件 WLPF50020001 的config參數
+2025-08-04 14:19:32,052 - data_processor - INFO - Step 2: 執行 WLPF50020001 的原始CSV偏移確認
+2025-08-04 14:19:32,382 - data_processor - INFO - Step 3: 處理 WLPF50020001 的CSV標頭
+2025-08-04 14:19:32,596 - data_processor - INFO - 成功移動的檔案: ['CSV: D:\\Database-PC\\temp\\csv\\WLPF500200\\DC2\\WLPF50020006.csv -> D:\\Database-PC\\i-Pixel\\csv\\WLPF500200\\DC2\\WLPF50020006.csv', 'Map: D:\\Database-PC\\temp\\map\\WLPF500200\\DC2\\WLPF50020006.png -> D:\\Database-PC\\i-Pixel\\map\\WLPF500200\\DC2\\WLPF50020006.png']
+2025-08-04 14:19:32,597 - data_processor - INFO - 自動移動即時檔案成功: WLPF50020006 -> i-Pixel
+2025-08-04 14:19:32,597 - data_processor - INFO - 已添加到延遲移動隊列: WLPF50020006
+2025-08-04 14:19:32,598 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF500200\DC2\WLPF50020006.png
+2025-08-04 14:19:32,627 - data_processor - INFO - 任務 61d6cf26-0866-40cc-829a-09c6f780168f 已完成: True - D:\Database-PC\temp\map\WLPF500200\DC2\WLPF50020006.png
+2025-08-04 14:19:32,987 - data_processor - INFO - Step 4: 為 WLPF50020001 生成Basemap
+2025-08-04 14:19:33,031 - data_processor - INFO - 開始執行任務: 0651779d-4d6d-465c-867a-3ed6d54fe221 (basemap)
+2025-08-04 14:19:33,056 - data_processor - INFO - 檔案 M4X60_WLPF50020002_202506170943.csv 是原始格式，執行 step1~3
+2025-08-04 14:19:33,056 - data_processor - INFO - Step 1: 讀取元件 WLPF50020002 的config參數
+2025-08-04 14:19:33,057 - data_processor - INFO - Step 2: 執行 WLPF50020002 的原始CSV偏移確認
+2025-08-04 14:19:33,284 - data_processor - INFO - Step 3: 處理 WLPF50020002 的CSV標頭
+2025-08-04 14:19:34,109 - data_processor - INFO - 成功移動的檔案: ['CSV: D:\\Database-PC\\temp\\csv\\WLPF500200\\INNER1\\WLPF50020001.csv -> D:\\Database-PC\\i-Pixel\\csv\\WLPF500200\\INNER1\\WLPF50020001.csv', 'Map: D:\\Database-PC\\temp\\map\\WLPF500200\\INNER1\\WLPF50020001.png -> D:\\Database-PC\\i-Pixel\\map\\WLPF500200\\INNER1\\WLPF50020001.png']
+2025-08-04 14:19:34,110 - data_processor - INFO - 自動移動即時檔案成功: WLPF50020001 -> i-Pixel
+2025-08-04 14:19:34,110 - data_processor - INFO - 已添加到延遲移動隊列: WLPF50020001
+2025-08-04 14:19:34,112 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF500200\INNER1\WLPF50020001.png
+2025-08-04 14:19:34,142 - data_processor - INFO - 任務 eac2ca20-695a-4430-ad15-4842417a9018 已完成: True - D:\Database-PC\temp\map\WLPF500200\INNER1\WLPF50020001.png
+2025-08-04 14:19:34,205 - data_processor - INFO - Step 4: 為 WLPF50020002 生成Basemap
+2025-08-04 14:19:34,928 - data_processor - INFO - 成功移動的檔案: ['CSV: D:\\Database-PC\\temp\\csv\\WLPF500200\\INNER1\\WLPF50020002.csv -> D:\\Database-PC\\i-Pixel\\csv\\WLPF500200\\INNER1\\WLPF50020002.csv', 'Map: D:\\Database-PC\\temp\\map\\WLPF500200\\INNER1\\WLPF50020002.png -> D:\\Database-PC\\i-Pixel\\map\\WLPF500200\\INNER1\\WLPF50020002.png']
+2025-08-04 14:19:34,929 - data_processor - INFO - 自動移動即時檔案成功: WLPF50020002 -> i-Pixel
+2025-08-04 14:19:34,929 - data_processor - INFO - 已添加到延遲移動隊列: WLPF50020002
+2025-08-04 14:19:34,929 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF500200\INNER1\WLPF50020002.png
+2025-08-04 14:19:34,957 - data_processor - INFO - 任務 0651779d-4d6d-465c-867a-3ed6d54fe221 已完成: True - D:\Database-PC\temp\map\WLPF500200\INNER1\WLPF50020002.png
+2025-08-04 14:19:35,034 - data_processor - INFO - 開始執行任務: 7a633d5f-34ca-4e41-bed2-e0cd33f8fe94 (basemap)
+2025-08-04 14:19:35,059 - data_processor - INFO - 檔案 M4X60_WLPF50020004_202506170943.csv 是原始格式，執行 step1~3
+2025-08-04 14:19:35,059 - data_processor - INFO - Step 1: 讀取元件 WLPF50020004 的config參數
+2025-08-04 14:19:35,060 - data_processor - INFO - Step 2: 執行 WLPF50020004 的原始CSV偏移確認
+2025-08-04 14:19:35,177 - data_processor - INFO - Step 3: 處理 WLPF50020004 的CSV標頭
+2025-08-04 14:19:35,595 - data_processor - INFO - Step 4: 為 WLPF50020004 生成Basemap
+2025-08-04 14:19:36,053 - data_processor - INFO - 開始執行任務: 78978a90-f50e-48a8-b6a9-1ec34c47bcdd (basemap)
+2025-08-04 14:19:36,089 - data_processor - INFO - 檔案 M4X60_WLPF50020005_202506170943.csv 是原始格式，執行 step1~3
+2025-08-04 14:19:36,090 - data_processor - INFO - Step 1: 讀取元件 WLPF50020005 的config參數
+2025-08-04 14:19:36,092 - data_processor - INFO - Step 2: 執行 WLPF50020005 的原始CSV偏移確認
+2025-08-04 14:19:36,365 - data_processor - INFO - Step 3: 處理 WLPF50020005 的CSV標頭
+2025-08-04 14:19:36,425 - data_processor - INFO - 成功移動的檔案: ['CSV: D:\\Database-PC\\temp\\csv\\WLPF500200\\INNER1\\WLPF50020004.csv -> D:\\Database-PC\\i-Pixel\\csv\\WLPF500200\\INNER1\\WLPF50020004.csv', 'Map: D:\\Database-PC\\temp\\map\\WLPF500200\\INNER1\\WLPF50020004.png -> D:\\Database-PC\\i-Pixel\\map\\WLPF500200\\INNER1\\WLPF50020004.png']
+2025-08-04 14:19:36,426 - data_processor - INFO - 自動移動即時檔案成功: WLPF50020004 -> i-Pixel
+2025-08-04 14:19:36,426 - data_processor - INFO - 已添加到延遲移動隊列: WLPF50020004
+2025-08-04 14:19:36,426 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF500200\INNER1\WLPF50020004.png
+2025-08-04 14:19:36,450 - data_processor - INFO - 任務 7a633d5f-34ca-4e41-bed2-e0cd33f8fe94 已完成: True - D:\Database-PC\temp\map\WLPF500200\INNER1\WLPF50020004.png
+2025-08-04 14:19:36,846 - data_processor - INFO - Step 4: 為 WLPF50020005 生成Basemap
+2025-08-04 14:19:37,032 - data_processor - INFO - 開始執行任務: 42ba5a48-712f-42c7-83d2-6fbaa3f2cab6 (basemap)
+2025-08-04 14:19:37,054 - data_processor - INFO - 檔案 M4X60_WLPF50020006_202506170943.csv 是原始格式，執行 step1~3
+2025-08-04 14:19:37,054 - data_processor - INFO - Step 1: 讀取元件 WLPF50020006 的config參數
+2025-08-04 14:19:37,055 - data_processor - INFO - Step 2: 執行 WLPF50020006 的原始CSV偏移確認
+2025-08-04 14:19:37,454 - data_processor - INFO - Step 3: 處理 WLPF50020006 的CSV標頭
+2025-08-04 14:19:37,677 - data_processor - INFO - 成功移動的檔案: ['CSV: D:\\Database-PC\\temp\\csv\\WLPF500200\\INNER1\\WLPF50020005.csv -> D:\\Database-PC\\i-Pixel\\csv\\WLPF500200\\INNER1\\WLPF50020005.csv', 'Map: D:\\Database-PC\\temp\\map\\WLPF500200\\INNER1\\WLPF50020005.png -> D:\\Database-PC\\i-Pixel\\map\\WLPF500200\\INNER1\\WLPF50020005.png']
+2025-08-04 14:19:37,679 - data_processor - INFO - 自動移動即時檔案成功: WLPF50020005 -> i-Pixel
+2025-08-04 14:19:37,680 - data_processor - INFO - 已添加到延遲移動隊列: WLPF50020005
+2025-08-04 14:19:37,682 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF500200\INNER1\WLPF50020005.png
+2025-08-04 14:19:37,713 - data_processor - INFO - 任務 78978a90-f50e-48a8-b6a9-1ec34c47bcdd 已完成: True - D:\Database-PC\temp\map\WLPF500200\INNER1\WLPF50020005.png
+2025-08-04 14:19:38,039 - data_processor - INFO - 開始執行任務: d1a05a09-8f92-4cca-8a6d-f40be2f08148 (basemap)
+2025-08-04 14:19:38,060 - data_processor - INFO - 檔案 M5X60_WLPF50020001_202506121009.csv 是原始格式，執行 step1~3
+2025-08-04 14:19:38,060 - data_processor - INFO - Step 1: 讀取元件 WLPF50020001 的config參數
+2025-08-04 14:19:38,065 - data_processor - INFO - Step 2: 執行 WLPF50020001 的原始CSV偏移確認
+2025-08-04 14:19:38,081 - data_processor - INFO - Step 4: 為 WLPF50020006 生成Basemap
+2025-08-04 14:19:38,206 - data_processor - INFO - Step 3: 處理 WLPF50020001 的CSV標頭
+2025-08-04 14:19:39,095 - data_processor - INFO - Step 4: 為 WLPF50020001 生成Basemap
+2025-08-04 14:19:39,184 - data_processor - INFO - 成功移動的檔案: ['CSV: D:\\Database-PC\\temp\\csv\\WLPF500200\\INNER1\\WLPF50020006.csv -> D:\\Database-PC\\i-Pixel\\csv\\WLPF500200\\INNER1\\WLPF50020006.csv', 'Map: D:\\Database-PC\\temp\\map\\WLPF500200\\INNER1\\WLPF50020006.png -> D:\\Database-PC\\i-Pixel\\map\\WLPF500200\\INNER1\\WLPF50020006.png']
+2025-08-04 14:19:39,185 - data_processor - INFO - 自動移動即時檔案成功: WLPF50020006 -> i-Pixel
+2025-08-04 14:19:39,186 - data_processor - INFO - 已添加到延遲移動隊列: WLPF50020006
+2025-08-04 14:19:39,186 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF500200\INNER1\WLPF50020006.png
+2025-08-04 14:19:39,210 - data_processor - INFO - 任務 42ba5a48-712f-42c7-83d2-6fbaa3f2cab6 已完成: True - D:\Database-PC\temp\map\WLPF500200\INNER1\WLPF50020006.png
+2025-08-04 14:19:39,848 - data_processor - INFO - 成功移動的檔案: ['CSV: D:\\Database-PC\\temp\\csv\\WLPF500200\\RDL\\WLPF50020001.csv -> D:\\Database-PC\\i-Pixel\\csv\\WLPF500200\\RDL\\WLPF50020001.csv', 'Map: D:\\Database-PC\\temp\\map\\WLPF500200\\RDL\\WLPF50020001.png -> D:\\Database-PC\\i-Pixel\\map\\WLPF500200\\RDL\\WLPF50020001.png']
+2025-08-04 14:19:39,848 - data_processor - INFO - 自動移動即時檔案成功: WLPF50020001 -> i-Pixel
+2025-08-04 14:19:39,849 - data_processor - INFO - 已添加到延遲移動隊列: WLPF50020001
+2025-08-04 14:19:39,849 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF500200\RDL\WLPF50020001.png
+2025-08-04 14:19:39,876 - data_processor - INFO - 任務 d1a05a09-8f92-4cca-8a6d-f40be2f08148 已完成: True - D:\Database-PC\temp\map\WLPF500200\RDL\WLPF50020001.png
+2025-08-04 14:19:40,052 - data_processor - INFO - 開始執行任務: 945667b7-e0e4-4ce6-b2b8-f5098e3fbb14 (basemap)
+2025-08-04 14:19:40,074 - data_processor - INFO - 檔案 M5X60_WLPF50020002_202506121039.csv 是原始格式，執行 step1~3
+2025-08-04 14:19:40,075 - data_processor - INFO - Step 1: 讀取元件 WLPF50020002 的config參數
+2025-08-04 14:19:40,075 - data_processor - INFO - Step 2: 執行 WLPF50020002 的原始CSV偏移確認
+2025-08-04 14:19:40,201 - data_processor - INFO - Step 3: 處理 WLPF50020002 的CSV標頭
+2025-08-04 14:19:40,618 - data_processor - INFO - Step 4: 為 WLPF50020002 生成Basemap
+2025-08-04 14:19:41,050 - data_processor - INFO - 開始執行任務: 425fa73d-296e-49fa-b45d-88f52111997b (basemap)
+2025-08-04 14:19:41,083 - data_processor - INFO - 檔案 M5X60_WLPF50020004_202506121104.csv 是原始格式，執行 step1~3
+2025-08-04 14:19:41,083 - data_processor - INFO - Step 1: 讀取元件 WLPF50020004 的config參數
+2025-08-04 14:19:41,095 - data_processor - INFO - Step 2: 執行 WLPF50020004 的原始CSV偏移確認
+2025-08-04 14:19:41,349 - data_processor - INFO - Step 3: 處理 WLPF50020004 的CSV標頭
+2025-08-04 14:19:41,402 - data_processor - INFO - 成功移動的檔案: ['CSV: D:\\Database-PC\\temp\\csv\\WLPF500200\\RDL\\WLPF50020002.csv -> D:\\Database-PC\\i-Pixel\\csv\\WLPF500200\\RDL\\WLPF50020002.csv', 'Map: D:\\Database-PC\\temp\\map\\WLPF500200\\RDL\\WLPF50020002.png -> D:\\Database-PC\\i-Pixel\\map\\WLPF500200\\RDL\\WLPF50020002.png']
+2025-08-04 14:19:41,402 - data_processor - INFO - 自動移動即時檔案成功: WLPF50020002 -> i-Pixel
+2025-08-04 14:19:41,402 - data_processor - INFO - 已添加到延遲移動隊列: WLPF50020002
+2025-08-04 14:19:41,402 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF500200\RDL\WLPF50020002.png
+2025-08-04 14:19:41,429 - data_processor - INFO - 任務 945667b7-e0e4-4ce6-b2b8-f5098e3fbb14 已完成: True - D:\Database-PC\temp\map\WLPF500200\RDL\WLPF50020002.png
+2025-08-04 14:19:41,813 - data_processor - INFO - Step 4: 為 WLPF50020004 生成Basemap
+2025-08-04 14:19:42,065 - data_processor - INFO - 開始執行任務: 934ed42d-9e9a-49fa-9d7c-4e73a0e8bd72 (basemap)
+2025-08-04 14:19:42,092 - data_processor - INFO - 檔案 M5X60_WLPF50020005_202506121005.csv 是原始格式，執行 step1~3
+2025-08-04 14:19:42,092 - data_processor - INFO - Step 1: 讀取元件 WLPF50020005 的config參數
+2025-08-04 14:19:42,101 - data_processor - INFO - Step 2: 執行 WLPF50020005 的原始CSV偏移確認
+2025-08-04 14:19:42,420 - data_processor - INFO - Step 3: 處理 WLPF50020005 的CSV標頭
+2025-08-04 14:19:42,617 - data_processor - INFO - 成功移動的檔案: ['CSV: D:\\Database-PC\\temp\\csv\\WLPF500200\\RDL\\WLPF50020004.csv -> D:\\Database-PC\\i-Pixel\\csv\\WLPF500200\\RDL\\WLPF50020004.csv', 'Map: D:\\Database-PC\\temp\\map\\WLPF500200\\RDL\\WLPF50020004.png -> D:\\Database-PC\\i-Pixel\\map\\WLPF500200\\RDL\\WLPF50020004.png']
+2025-08-04 14:19:42,617 - data_processor - INFO - 自動移動即時檔案成功: WLPF50020004 -> i-Pixel
+2025-08-04 14:19:42,617 - data_processor - INFO - 已添加到延遲移動隊列: WLPF50020004
+2025-08-04 14:19:42,618 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF500200\RDL\WLPF50020004.png
+2025-08-04 14:19:42,643 - data_processor - INFO - 任務 425fa73d-296e-49fa-b45d-88f52111997b 已完成: True - D:\Database-PC\temp\map\WLPF500200\RDL\WLPF50020004.png
+2025-08-04 14:19:42,997 - data_processor - INFO - Step 4: 為 WLPF50020005 生成Basemap
+2025-08-04 14:19:43,057 - data_processor - INFO - 開始執行任務: b9d03516-330b-4ad1-981f-2232d0856ba5 (basemap)
+2025-08-04 14:19:43,084 - data_processor - INFO - 檔案 M5X60_WLPF50020006_202506121005.csv 是原始格式，執行 step1~3
+2025-08-04 14:19:43,085 - data_processor - INFO - Step 1: 讀取元件 WLPF50020006 的config參數
+2025-08-04 14:19:43,085 - data_processor - INFO - Step 2: 執行 WLPF50020006 的原始CSV偏移確認
+2025-08-04 14:19:43,413 - data_processor - INFO - Step 3: 處理 WLPF50020006 的CSV標頭
+2025-08-04 14:19:44,056 - data_processor - INFO - 成功移動的檔案: ['CSV: D:\\Database-PC\\temp\\csv\\WLPF500200\\RDL\\WLPF50020005.csv -> D:\\Database-PC\\i-Pixel\\csv\\WLPF500200\\RDL\\WLPF50020005.csv', 'Map: D:\\Database-PC\\temp\\map\\WLPF500200\\RDL\\WLPF50020005.png -> D:\\Database-PC\\i-Pixel\\map\\WLPF500200\\RDL\\WLPF50020005.png']
+2025-08-04 14:19:44,058 - data_processor - INFO - 自動移動即時檔案成功: WLPF50020005 -> i-Pixel
+2025-08-04 14:19:44,059 - data_processor - INFO - 已添加到延遲移動隊列: WLPF50020005
+2025-08-04 14:19:44,059 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF500200\RDL\WLPF50020005.png
+2025-08-04 14:19:44,091 - data_processor - INFO - 任務 934ed42d-9e9a-49fa-9d7c-4e73a0e8bd72 已完成: True - D:\Database-PC\temp\map\WLPF500200\RDL\WLPF50020005.png
+2025-08-04 14:19:44,201 - data_processor - INFO - Step 4: 為 WLPF50020006 生成Basemap
+2025-08-04 14:19:44,920 - data_processor - INFO - 成功移動的檔案: ['CSV: D:\\Database-PC\\temp\\csv\\WLPF500200\\RDL\\WLPF50020006.csv -> D:\\Database-PC\\i-Pixel\\csv\\WLPF500200\\RDL\\WLPF50020006.csv', 'Map: D:\\Database-PC\\temp\\map\\WLPF500200\\RDL\\WLPF50020006.png -> D:\\Database-PC\\i-Pixel\\map\\WLPF500200\\RDL\\WLPF50020006.png']
+2025-08-04 14:19:44,921 - data_processor - INFO - 自動移動即時檔案成功: WLPF50020006 -> i-Pixel
+2025-08-04 14:19:44,921 - data_processor - INFO - 已添加到延遲移動隊列: WLPF50020006
+2025-08-04 14:19:44,921 - data_processor - INFO - 成功生成Basemap: D:\Database-PC\temp\map\WLPF500200\RDL\WLPF50020006.png
+2025-08-04 14:19:44,947 - data_processor - INFO - 任務 b9d03516-330b-4ad1-981f-2232d0856ba5 已完成: True - D:\Database-PC\temp\map\WLPF500200\RDL\WLPF50020006.png
+2025-08-04 14:21:21,726 - data_processor - INFO - 延遲移動管理器已初始化
+2025-08-04 14:21:21,727 - data_processor - INFO - 延遲移動配置 - 時間: 12:35, 天數: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
+2025-08-04 14:21:21,727 - data_processor - INFO - 解析時間成功 - 小時: 12, 分鐘: 35
+2025-08-04 14:21:21,727 - data_processor - INFO - 今天的時間已過，設定為明天執行
+2025-08-04 14:21:21,727 - data_processor - INFO - 延遲時間: 80018272.29900001 毫秒 (1333.6 分鐘)
+2025-08-04 14:21:21,728 - data_processor - INFO - 延遲移動管理器已啟動，下次執行時間: 2025-08-05 12:35:00 (配置時間: 12:35)
+2025-08-04 14:27:11,208 - data_processor - INFO - 延遲移動管理器已初始化
+2025-08-04 14:27:11,209 - data_processor - INFO - 延遲移動配置 - 時間: 12:35, 天數: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
+2025-08-04 14:27:11,209 - data_processor - INFO - 解析時間成功 - 小時: 12, 分鐘: 35
+2025-08-04 14:27:11,210 - data_processor - INFO - 今天的時間已過，設定為明天執行
+2025-08-04 14:27:11,210 - data_processor - INFO - 延遲時間: 79668789.881 毫秒 (1327.8 分鐘)
+2025-08-04 14:27:11,210 - data_processor - INFO - 延遲移動管理器已啟動，下次執行時間: 2025-08-05 12:35:00 (配置時間: 12:35)

@@ -166,8 +166,79 @@
             "enabled": true,
             "file_types": ["org", "roi"],
             "schedule": {
-                "time": "14:33",
+                "time": "12:35",
                 "days": ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]
+            }
+        }
+    },
+    "storage_management": {
+        "enabled": true,
+        "monitoring": {
+            "scan_interval_seconds": 60,
+            "error_retry_interval_seconds": 60,
+            "scheduler_check_interval_seconds": 60,
+            "description": "存儲監控掃描頻率設定"
+        },
+        "local_storage": {
+            "path": "D:/Database-PC",
+            "warning_threshold_percent": 37,
+            "critical_threshold_percent": 50
+        },
+        "archive_storage": {
+            "path": "E:/Database-PC",
+            "structure": "{product}/org/{lot}/{station}/{component}"
+        },
+        "file_formats": {
+            "org": {
+                "extensions": [".tif", ".tiff"],
+                "description": "原始圖像檔案"
+            },
+            "roi": {
+                "extensions": [".tif", ".tiff"],
+                "description": "ROI圖像檔案"
+            },
+            "csv": {
+                "extensions": [".csv"],
+                "description": "CSV數據檔案"
+            },
+            "map": {
+                "extensions": [".tif", ".tiff"],
+                "description": "地圖檔案"
+            }
+        },
+        "move_rules": {
+            "priority_file_types": ["org"],
+            "min_age_days": 7,
+            "max_concurrent_moves": 3,
+            "batch_size": 10
+        },
+        "scheduled_archive": {
+            "enabled": true,
+            "schedule": {
+                "time": "14:05",
+                "days": ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]
+            },
+            "archive_rules": {
+                "org": {
+                    "enabled": true,
+                    "min_age_days": 7,
+                    "batch_size": 20
+                },
+                "roi": {
+                    "enabled": false,
+                    "min_age_days": 14,
+                    "batch_size": 15
+                },
+                "csv": {
+                    "enabled": false,
+                    "min_age_days": 30,
+                    "batch_size": 10
+                }
+            },
+            "reporting": {
+                "enabled": true,
+                "log_file": "logs/archive_reports.log",
+                "keep_reports_days": 30
             }
         }
     }

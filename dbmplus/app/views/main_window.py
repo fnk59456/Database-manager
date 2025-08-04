@@ -20,6 +20,7 @@ from PySide6.QtGui import QIcon, QAction, QPixmap, QFont, QColor
 from ..utils import get_logger, config
 from ..models import db_manager, ComponentInfo
 from ..controllers import data_processor, online_manager
+from ..controllers.storage_manager import storage_manager
 from .dialogs import MoveFileDialog, BatchMoveFileDialog
 
 logger = get_logger("main_window")
@@ -110,6 +111,9 @@ class MainWindow(QMainWindow):
         
         # 初始化延遲移動管理器（在主線程中）
         self.init_delayed_move_manager()
+        
+        # 初始化存儲管理
+        self.init_storage_management()
     
     def init_delayed_move_manager(self):
         """初始化延遲移動管理器"""
@@ -124,6 +128,15 @@ class MainWindow(QMainWindow):
             self.delayed_move_manager.start_scheduler()
         else:
             logger.info("主視窗：延遲移動功能已禁用")
+    
+    def init_storage_management(self):
+        """初始化存儲管理"""
+        # 如果存儲管理啟用，啟動監控
+        if config.get("storage_management.enabled", False):
+            logger.info("主視窗：存儲管理功能已啟用")
+            # 注意：存儲管理器的啟動由按鈕控制，不在初始化時啟動
+        else:
+            logger.info("主視窗：存儲管理功能已禁用")
     
     def init_ui(self):
         """初始化用戶界面"""
@@ -259,12 +272,20 @@ class MainWindow(QMainWindow):
         batch_layout.addWidget(self.online_btn)
         
         # 添加自動移動控制按鈕
-        self.auto_move_btn = QPushButton("AutoMove")
+        self.auto_move_btn = QPushButton("自動移動")
         self.auto_move_btn.setStyleSheet("background-color: orange; color: black;")
         self.auto_move_btn.setFixedHeight(40)
         self.auto_move_btn.setCheckable(True)  # 使按鈕可切換狀態
         self.auto_move_btn.clicked.connect(self.on_auto_move_clicked)
         batch_layout.addWidget(self.auto_move_btn)
+        
+        # 添加存儲管理按鈕
+        self.storage_btn = QPushButton("存儲管理")
+        self.storage_btn.setStyleSheet("background-color: purple; color: white;")
+        self.storage_btn.setFixedHeight(40)
+        self.storage_btn.setCheckable(True)
+        self.storage_btn.clicked.connect(self.on_storage_clicked)
+        batch_layout.addWidget(self.storage_btn)
         
         self.refresh_btn = QPushButton("重新掃描資料")
         self.refresh_btn.setStyleSheet("background-color: lightblue; color: black;")
@@ -299,6 +320,10 @@ class MainWindow(QMainWindow):
         # Online状态标签
         self.online_status_label = QLabel("在線監控: 未啟動")
         self.statusBar.addPermanentWidget(self.online_status_label)
+        
+        # 添加存儲狀態標籤
+        self.storage_status_label = QLabel("存儲狀態: 未監控")
+        self.statusBar.addPermanentWidget(self.storage_status_label)
         
         # 儲存當前選中的產品/批次/站點
         self.selected_product = None
@@ -832,6 +857,35 @@ class MainWindow(QMainWindow):
             self.auto_move_btn.setText("自動移動")
             self.auto_move_btn.setStyleSheet("background-color: orange; color: black;")
             self.statusBar.showMessage("自動移動已停止")
+    
+    def on_storage_clicked(self):
+        """存儲管理按鈕點擊事件"""
+        if self.storage_btn.isChecked():
+            storage_manager.start_storage_management()
+            self.storage_btn.setText("存儲管理 (運行中)")
+            self.storage_btn.setStyleSheet("background-color: darkpurple; color: white;")
+            self.statusBar.showMessage("存儲管理已啟動")
+            
+            # 啟動存儲狀態更新定時器
+            self.storage_timer = QTimer()
+            self.storage_timer.timeout.connect(self.update_storage_status)
+            self.storage_timer.start(30000)  # 每30秒更新一次
+        else:
+            storage_manager.stop_storage_management()
+            self.storage_btn.setText("存儲管理")
+            self.storage_btn.setStyleSheet("background-color: purple; color: white;")
+            self.statusBar.showMessage("存儲管理已停止")
+            
+            if hasattr(self, 'storage_timer'):
+                self.storage_timer.stop()
+    
+    def update_storage_status(self):
+        """更新存儲狀態"""
+        try:
+            status_info = storage_manager.monitor.get_storage_info()
+            self.storage_status_label.setText(f"存儲: {status_info}")
+        except Exception as e:
+            logger.error(f"更新存儲狀態失敗: {e}")
     
     def on_log_updated(self, log):
         """處理日誌更新"""
