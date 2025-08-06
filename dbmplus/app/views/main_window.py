@@ -6,13 +6,14 @@ import sys
 from pathlib import Path
 from typing import Optional, Dict, List, Any
 from datetime import datetime
+import psutil
 
 from PySide6.QtWidgets import (
     QMainWindow, QWidget, QVBoxLayout, QHBoxLayout, QSplitter,
     QTabWidget, QTableWidget, QTableWidgetItem, QPushButton,
     QLabel, QProgressBar, QMessageBox, QFileDialog, QComboBox,
     QSizePolicy, QHeaderView, QStatusBar, QToolBar, QToolButton,
-    QMenu, QDialog, QApplication, QCheckBox, QFrame
+    QMenu, QDialog, QApplication, QCheckBox, QFrame, QTextEdit
 )
 from PySide6.QtCore import Qt, QSize, Signal, Slot, QThread, QTimer
 from PySide6.QtGui import QIcon, QAction, QPixmap, QFont, QColor
@@ -239,6 +240,82 @@ class MainWindow(QMainWindow):
         
         log_layout.addWidget(log_button_panel)
         
+        # 创建Info选项卡
+        self.info_tab = QWidget()
+        info_layout = QVBoxLayout(self.info_tab)
+        
+        # 终端风格日志面板
+        terminal_log_panel = QWidget()
+        terminal_log_layout = QVBoxLayout(terminal_log_panel)
+        
+        # 终端日志标题
+        terminal_log_title = QLabel("終端機日誌")
+        terminal_log_title.setStyleSheet("font-size: 14px; font-weight: bold; color: white; padding: 5px;")
+        terminal_log_layout.addWidget(terminal_log_title)
+        
+        # 终端风格日志文本区域
+        self.terminal_log_text = QTextEdit()
+        self.terminal_log_text.setReadOnly(True)
+        self.terminal_log_text.setStyleSheet("background-color: #1e1e1e; color: #ffffff; font-family: 'Consolas', 'Monaco', monospace; font-size: 10px;")
+        terminal_log_layout.addWidget(self.terminal_log_text)
+        
+        # 终端日志操作按钮
+        terminal_log_button_panel = QWidget()
+        terminal_log_button_layout = QHBoxLayout(terminal_log_button_panel)
+        terminal_log_button_layout.setContentsMargins(0, 0, 0, 0)
+        
+        self.clear_terminal_log_btn = QPushButton("清空終端日誌")
+        self.clear_terminal_log_btn.setStyleSheet("background-color: lightcoral; color: black;")
+        self.clear_terminal_log_btn.setFixedHeight(30)
+        self.clear_terminal_log_btn.clicked.connect(self.on_clear_terminal_log_clicked)
+        terminal_log_button_layout.addWidget(self.clear_terminal_log_btn)
+        
+        self.export_terminal_log_btn = QPushButton("匯出終端日誌")
+        self.export_terminal_log_btn.setStyleSheet("background-color: lightblue; color: black;")
+        self.export_terminal_log_btn.setFixedHeight(30)
+        self.export_terminal_log_btn.clicked.connect(self.on_export_terminal_log_clicked)
+        terminal_log_button_layout.addWidget(self.export_terminal_log_btn)
+        
+        # 添加系統資訊按鈕
+        self.add_system_info_btn = QPushButton("添加系統資訊")
+        self.add_system_info_btn.setStyleSheet("background-color: lightyellow; color: black;")
+        self.add_system_info_btn.setFixedHeight(30)
+        self.add_system_info_btn.clicked.connect(self.on_add_system_info_clicked)
+        terminal_log_button_layout.addWidget(self.add_system_info_btn)
+        
+        # 添加日誌更新頻率選擇
+        self.log_frequency_label = QLabel("更新頻率:")
+        self.log_frequency_label.setStyleSheet("color: white;")
+        terminal_log_button_layout.addWidget(self.log_frequency_label)
+        
+        self.log_frequency_combo = QComboBox()
+        self.log_frequency_combo.addItems(["1秒", "5秒", "10秒", "30秒", "1分鐘"])
+        self.log_frequency_combo.setCurrentText("10秒")
+        self.log_frequency_combo.setFixedHeight(30)
+        self.log_frequency_combo.currentTextChanged.connect(self.on_log_frequency_changed)
+        terminal_log_button_layout.addWidget(self.log_frequency_combo)
+        
+        # 添加日誌顯示行數選擇
+        self.log_lines_label = QLabel("顯示行數:")
+        self.log_lines_label.setStyleSheet("color: white;")
+        terminal_log_button_layout.addWidget(self.log_lines_label)
+        
+        self.log_lines_combo = QComboBox()
+        self.log_lines_combo.addItems(["50行", "100行", "200行", "500行"])
+        self.log_lines_combo.setCurrentText("100行")
+        self.log_lines_combo.setFixedHeight(30)
+        self.log_lines_combo.currentTextChanged.connect(self.on_log_lines_changed)
+        terminal_log_button_layout.addWidget(self.log_lines_combo)
+        
+        terminal_log_layout.addWidget(terminal_log_button_panel)
+        info_layout.addWidget(terminal_log_panel)
+        
+        # 初始化日誌檔案監控
+        self.setup_log_file_monitor()
+        
+        # 啟動系統監控定時器
+        self.start_system_monitoring()
+        
         # 批次處理按鈕面板
         batch_panel = QWidget()
         batch_layout = QHBoxLayout(batch_panel)
@@ -298,6 +375,7 @@ class MainWindow(QMainWindow):
         # 添加选项卡
         self.detail_tabs.addTab(self.component_tab, "元件列表")
         self.detail_tabs.addTab(self.log_tab, "LOG")
+        self.detail_tabs.addTab(self.info_tab, "Info")
         
         bottom_layout.addWidget(self.detail_tabs)
         splitter.addWidget(bottom_panel)
@@ -921,6 +999,9 @@ class MainWindow(QMainWindow):
         
         # 滾動到最新行
         self.log_table.scrollToBottom()
+        
+        # 添加到詳細日誌區域
+        # self.add_to_detailed_log(summary) # 移除此行
     
     def _update_log_row(self, row, log_summary):
         """更新日誌表格行"""
@@ -948,6 +1029,87 @@ class MainWindow(QMainWindow):
         message = f"{log_summary['message']} ({log_summary['duration']})"
         self.log_table.setItem(row, 6, QTableWidgetItem(message))
     
+    def add_system_info_to_log(self):
+        """添加系統資訊到終端日誌"""
+        try:
+            import psutil
+            from datetime import datetime
+            
+            # 獲取系統資訊
+            cpu_percent = psutil.cpu_percent(interval=1)
+            memory_info = psutil.Process(os.getpid()).memory_info()
+            memory_mb = memory_info.rss / (1024 * 1024)
+            disk_usage = psutil.disk_usage('C:/')
+            disk_percent = disk_usage.percent
+            disk_free_gb = disk_usage.free / (1024 * 1024 * 1024)
+            
+            # 獲取應用程式狀態
+            online_status = "運行中" if online_manager.is_running else "已停止"
+            auto_move_status = "運行中" if hasattr(online_manager, 'is_auto_move_running') and online_manager.is_auto_move_running else "已停止"
+            storage_status = "運行中" if storage_manager.is_running else "已停止"
+            
+            # 格式化系統資訊日誌
+            timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            system_log = f"[{timestamp}] 🔧 系統監控 - CPU: {cpu_percent}% | 記憶體: {memory_mb:.1f}MB | 磁碟: {disk_percent}% ({disk_free_gb:.1f}GB可用) | 在線監控: {online_status} | 自動移動: {auto_move_status} | 存儲管理: {storage_status}"
+            
+            # 直接添加到終端日誌
+            logger.info(system_log)
+            
+        except Exception as e:
+            logger.error(f"添加系統資訊到日誌失敗: {e}")
+    
+    def _manage_log_size(self):
+        """管理日誌大小，避免過度累積"""
+        try:
+            # 從配置獲取日誌管理設定
+            max_lines = config.get("ui.log_max_lines", 1000)
+            keep_lines = config.get("ui.log_keep_lines", 500)
+            
+            # 獲取當前日誌內容
+            log_content = self.detailed_log_text.toPlainText()
+            lines = log_content.split('\n')
+            
+            # 如果行數超過限制，保留指定行數
+            if len(lines) > max_lines:
+                # 保留最後指定行數
+                kept_lines = lines[-keep_lines:]
+                self.detailed_log_text.setPlainText('\n'.join(kept_lines))
+                
+                # 添加清理提示
+                timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                cleanup_notice = f"[{timestamp}] 🧹 日誌已自動清理，保留最新{keep_lines}行記錄\n"
+                self.detailed_log_text.append(cleanup_notice)
+                
+                logger.info(f"詳細日誌已自動清理，保留最新{keep_lines}行")
+            
+        except Exception as e:
+            logger.error(f"管理日誌大小失敗: {e}")
+    
+    def start_system_monitoring(self):
+        """啟動系統監控定時器"""
+        try:
+            # 從配置獲取監控頻率，預設30秒
+            monitor_interval = config.get("ui.system_monitor_interval_seconds", 30)
+            
+            # 創建系統監控定時器
+            self.system_monitor_timer = QTimer()
+            self.system_monitor_timer.timeout.connect(self.add_system_info_to_log)
+            self.system_monitor_timer.start(monitor_interval * 1000)  # 轉換為毫秒
+            
+            logger.info(f"系統監控定時器已啟動，每{monitor_interval}秒記錄系統資訊")
+            
+        except Exception as e:
+            logger.error(f"啟動系統監控失敗: {e}")
+    
+    def stop_system_monitoring(self):
+        """停止系統監控定時器"""
+        try:
+            if hasattr(self, 'system_monitor_timer'):
+                self.system_monitor_timer.stop()
+                logger.info("系統監控定時器已停止")
+        except Exception as e:
+            logger.error(f"停止系統監控失敗: {e}")
+    
     def on_processing_status_changed(self, status, queue_size, processed_count):
         """處理在線處理狀態變化"""
         if status == "running":
@@ -971,8 +1133,447 @@ class MainWindow(QMainWindow):
             online_manager.clear_logs()
             self.statusBar.showMessage("日誌已清空")
     
+    def on_refresh_info_clicked(self):
+        """刷新資訊按鈕點擊事件"""
+        # 現在這個按鈕用於手動觸發系統資訊記錄
+        self.add_system_info_to_log()
+        self.statusBar.showMessage("系統資訊已添加到終端日誌")
+    
+    def on_add_system_info_clicked(self):
+        """添加系統資訊按鈕點擊事件"""
+        self.add_system_info_to_log()
+        self.statusBar.showMessage("系統資訊已添加到終端日誌")
+    
+    def on_filter_log_clicked(self):
+        """日誌過濾按鈕點擊事件"""
+        if self.filter_log_btn.isChecked():
+            # 啟用日誌過濾
+            self.enable_log_filter()
+            self.filter_log_btn.setText("日誌過濾 (開啟)")
+            self.filter_log_btn.setStyleSheet("background-color: darkgreen; color: white;")
+            self.statusBar.showMessage("日誌過濾已開啟，只顯示重要日誌")
+        else:
+            # 關閉日誌過濾
+            self.disable_log_filter()
+            self.filter_log_btn.setText("日誌過濾")
+            self.filter_log_btn.setStyleSheet("background-color: lightgreen; color: black;")
+            self.statusBar.showMessage("日誌過濾已關閉，顯示所有日誌")
+    
+    def enable_log_filter(self):
+        """啟用日誌過濾"""
+        try:
+            if hasattr(self, 'terminal_log_handler'):
+                # 設置過濾器，只顯示重要日誌
+                self.terminal_log_handler.setLevel(logging.WARNING)
+                logger.info("日誌過濾已啟用，只顯示警告及以上級別的日誌")
+        except Exception as e:
+            logger.error(f"啟用日誌過濾失敗: {e}")
+    
+    def disable_log_filter(self):
+        """關閉日誌過濾"""
+        try:
+            if hasattr(self, 'terminal_log_handler'):
+                # 恢復顯示所有日誌
+                self.terminal_log_handler.setLevel(logging.INFO)
+                logger.info("日誌過濾已關閉，顯示所有日誌")
+        except Exception as e:
+            logger.error(f"關閉日誌過濾失敗: {e}")
+    
+    def on_emergency_stop_clicked(self):
+        """緊急停止按鈕點擊事件"""
+        reply = QMessageBox.question(
+            self, 
+            "確認緊急停止", 
+            "確定要緊急停止所有日誌捕獲和輸出嗎？這將會關閉所有日誌輸出，並停止系統監控。",
+            QMessageBox.Yes | QMessageBox.No,
+            QMessageBox.No
+        )
+        
+        if reply == QMessageBox.Yes:
+            self.stop_system_monitoring()
+            self.terminal_log_text.clear()
+            self.statusBar.showMessage("緊急停止成功，所有日誌已清除。")
+            logger.warning("緊急停止：所有日誌捕獲和輸出已關閉。")
+        else:
+            logger.info("緊急停止已取消。")
+    
     def closeEvent(self, event):
         """窗口关闭事件处理"""
+        # 停止系統監控定時器
+        self.stop_system_monitoring()
+        
+        # 停止日誌檔案監控定時器
+        if hasattr(self, 'log_update_timer'):
+            self.log_update_timer.stop()
+        
+        # 确保在线监控正确停止
+        if online_manager.is_running:
+            online_manager.stop()
+        
+        # 接受关闭事件
+        event.accept() 
+
+    def setup_terminal_log_capture(self):
+        """設置終端日誌捕獲"""
+        try:
+            import logging
+            import sys
+            from io import StringIO
+            import threading
+            import queue
+            
+            # 創建自定義日誌處理器
+            class TerminalLogHandler(logging.Handler):
+                def __init__(self, text_widget):
+                    super().__init__()
+                    self.text_widget = text_widget
+                    self.setFormatter(logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s'))
+                    
+                    # 使用線程安全的隊列
+                    self.log_queue = queue.Queue()
+                    self.buffer_size = 20  # 更小的緩衝區
+                    self.last_update = 0
+                    self.update_interval = 200  # 200毫秒更新一次
+                    self.max_log_lines = 200  # 更嚴格的限制
+                    self.keep_log_lines = 100  # 更少的保留行數
+                    
+                    # 啟動更新線程
+                    self.update_thread = threading.Thread(target=self._update_worker, daemon=True)
+                    self.update_thread.start()
+                    
+                def emit(self, record):
+                    try:
+                        msg = self.format(record)
+                        # 根據日誌級別設置顏色
+                        color = {
+                            'DEBUG': '#888888',
+                            'INFO': '#ffffff',
+                            'WARNING': '#ffaa00',
+                            'ERROR': '#ff4444',
+                            'CRITICAL': '#ff0000'
+                        }.get(record.levelname, '#ffffff')
+                        
+                        # 添加到隊列
+                        log_entry = f'<span style="color: {color};">{msg}</span>'
+                        self.log_queue.put(log_entry)
+                        
+                        # 限制隊列大小
+                        while self.log_queue.qsize() > self.buffer_size:
+                            try:
+                                self.log_queue.get_nowait()
+                            except queue.Empty:
+                                break
+                        
+                    except Exception as e:
+                        print(f"日誌處理錯誤: {e}")
+                
+                def _update_worker(self):
+                    """更新工作線程"""
+                    import time
+                    while True:
+                        try:
+                            # 收集所有待處理的日誌
+                            logs_to_add = []
+                            while not self.log_queue.empty() and len(logs_to_add) < 10:
+                                try:
+                                    log_entry = self.log_queue.get_nowait()
+                                    logs_to_add.append(log_entry)
+                                except queue.Empty:
+                                    break
+                            
+                            # 如果有日誌要添加
+                            if logs_to_add:
+                                # 使用QTimer在主線程中更新UI
+                                from PySide6.QtCore import QTimer
+                                QTimer.singleShot(0, lambda: self._safe_update_ui(logs_to_add))
+                            
+                            time.sleep(0.1)  # 100毫秒檢查一次
+                            
+                        except Exception as e:
+                            print(f"更新工作線程錯誤: {e}")
+                            time.sleep(0.5)
+                
+                def _safe_update_ui(self, logs_to_add):
+                    """安全地更新UI"""
+                    try:
+                        # 檢查日誌大小並清理
+                        self._manage_log_size()
+                        
+                        # 批量添加日誌
+                        for log_entry in logs_to_add:
+                            self.text_widget.append(log_entry)
+                        
+                        # 自動滾動到底部
+                        self.text_widget.verticalScrollBar().setValue(
+                            self.text_widget.verticalScrollBar().maximum()
+                        )
+                        
+                    except Exception as e:
+                        print(f"安全更新UI失敗: {e}")
+                
+                def _manage_log_size(self):
+                    """管理日誌大小"""
+                    try:
+                        # 獲取當前日誌內容
+                        log_content = self.text_widget.toPlainText()
+                        lines = log_content.split('\n')
+                        
+                        # 如果行數超過限制，保留指定行數
+                        if len(lines) > self.max_log_lines:
+                            # 保留最後指定行數
+                            kept_lines = lines[-self.keep_log_lines:]
+                            self.text_widget.setPlainText('\n'.join(kept_lines))
+                            
+                            # 添加清理提示
+                            from datetime import datetime
+                            timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                            cleanup_notice = f"[{timestamp}] 🧹 終端日誌已自動清理，保留最新{self.keep_log_lines}行記錄"
+                            self.text_widget.append(cleanup_notice)
+                            
+                    except Exception as e:
+                        print(f"管理終端日誌大小失敗: {e}")
+            
+            # 創建並設置日誌處理器
+            self.terminal_log_handler = TerminalLogHandler(self.terminal_log_text)
+            self.terminal_log_handler.setLevel(logging.INFO)
+            
+            # 添加到根日誌記錄器
+            logging.getLogger().addHandler(self.terminal_log_handler)
+            
+            # 添加啟動訊息
+            from datetime import datetime
+            startup_msg = f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] 🚀 終端日誌捕獲已啟動 (優化模式)"
+            self.terminal_log_text.append(startup_msg)
+            
+            logger.info("終端日誌捕獲已設置 (優化模式)")
+            
+        except Exception as e:
+            logger.error(f"設置終端日誌捕獲失敗: {e}")
+    
+    def setup_log_file_monitor(self):
+        """設置日誌檔案監控"""
+        try:
+            # 日誌檔案路徑列表
+            self.log_file_paths = [
+                Path("logs/data_processor.log"),
+                Path("logs/app.log")
+            ]
+            
+            # 監控設定
+            self.log_update_interval = 10  # 預設10秒
+            self.log_display_lines = 100   # 預設100行
+            self.last_log_size = 0         # 記錄上次檔案大小
+            
+            # 創建日誌更新定時器
+            self.log_update_timer = QTimer()
+            self.log_update_timer.timeout.connect(self.update_log_display)
+            self.log_update_timer.start(self.log_update_interval * 1000)  # 轉換為毫秒
+            
+            # 初始化顯示
+            self.update_log_display()
+            
+            logger.info("日誌檔案監控已設置 (支持多個日誌檔案)")
+            
+        except Exception as e:
+            logger.error(f"設置日誌檔案監控失敗: {e}")
+    
+    def update_log_display(self):
+        """更新日誌顯示"""
+        try:
+            all_log_lines = []
+            total_lines = 0
+            existing_files = 0
+            
+            # 讀取所有日誌檔案
+            for log_path in self.log_file_paths:
+                if log_path.exists():
+                    existing_files += 1
+                    try:
+                        with open(log_path, 'r', encoding='utf-8') as f:
+                            lines = f.readlines()
+                        
+                        # 為每行添加檔案標識
+                        for line in lines:
+                            # 添加檔案標識到行首
+                            file_name = log_path.name
+                            timestamp = line.split(' - ')[0] if ' - ' in line else ''
+                            if timestamp:
+                                # 如果行有時間戳，在時間戳後添加檔案標識
+                                parts = line.split(' - ', 1)
+                                if len(parts) == 2:
+                                    timestamp_part = parts[0]
+                                    content_part = parts[1]
+                                    marked_line = f"{timestamp_part} [{file_name}] - {content_part}"
+                                else:
+                                    marked_line = f"{line.rstrip()} [{file_name}]"
+                            else:
+                                marked_line = f"{line.rstrip()} [{file_name}]"
+                            
+                            all_log_lines.append(marked_line)
+                        
+                        total_lines += len(lines)
+                        
+                    except Exception as e:
+                        logger.error(f"讀取日誌檔案 {log_path} 失敗: {e}")
+                        error_line = f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] ERROR - 讀取日誌檔案 {log_path.name} 失敗: {str(e)} [{log_path.name}]"
+                        all_log_lines.append(error_line)
+                else:
+                    # 如果檔案不存在，添加提示
+                    missing_line = f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] INFO - 日誌檔案不存在: {log_path.name} [{log_path.name}]"
+                    all_log_lines.append(missing_line)
+            
+            # 如果沒有找到任何日誌檔案
+            if existing_files == 0:
+                self.terminal_log_text.setPlainText("未找到任何日誌檔案:\n- logs/data_processor.log\n- logs/app.log\n\n請確保應用程式已運行並產生日誌。")
+                return
+            
+            # 按時間戳排序所有日誌行
+            def extract_timestamp(line):
+                try:
+                    # 嘗試提取時間戳
+                    if '[' in line and ']' in line:
+                        # 移除檔案標識後提取時間戳
+                        clean_line = line.split(' [')[0]
+                        if ' - ' in clean_line:
+                            timestamp_str = clean_line.split(' - ')[0]
+                            # 嘗試解析時間戳
+                            from datetime import datetime
+                            return datetime.strptime(timestamp_str, '%Y-%m-%d %H:%M:%S')
+                except:
+                    pass
+                # 如果無法解析，返回最小時間
+                from datetime import datetime
+                return datetime.min
+            
+            # 排序日誌行
+            all_log_lines.sort(key=extract_timestamp)
+            
+            # 獲取最新的指定行數
+            display_lines = all_log_lines[-self.log_display_lines:] if len(all_log_lines) > self.log_display_lines else all_log_lines
+            
+            # 格式化日誌內容
+            formatted_lines = []
+            for line in display_lines:
+                # 根據日誌級別添加顏色
+                if "ERROR" in line or "CRITICAL" in line:
+                    formatted_lines.append(f'<span style="color: #ff4444;">{line.rstrip()}</span>')
+                elif "WARNING" in line:
+                    formatted_lines.append(f'<span style="color: #ffaa00;">{line.rstrip()}</span>')
+                elif "DEBUG" in line:
+                    formatted_lines.append(f'<span style="color: #888888;">{line.rstrip()}</span>')
+                else:
+                    formatted_lines.append(f'<span style="color: #ffffff;">{line.rstrip()}</span>')
+            
+            # 更新顯示
+            self.terminal_log_text.setHtml('<br>'.join(formatted_lines))
+            
+            # 自動滾動到底部
+            self.terminal_log_text.verticalScrollBar().setValue(
+                self.terminal_log_text.verticalScrollBar().maximum()
+            )
+            
+            # 更新狀態欄
+            self.statusBar.showMessage(f"日誌已更新 - 顯示最新 {len(display_lines)} 行，總共 {total_lines} 行，來自 {existing_files} 個檔案")
+            
+        except Exception as e:
+            logger.error(f"更新日誌顯示失敗: {e}")
+            self.terminal_log_text.setPlainText(f"讀取日誌檔案失敗: {str(e)}")
+    
+    def on_log_frequency_changed(self, frequency_text):
+        """日誌更新頻率改變事件"""
+        try:
+            # 解析頻率設定
+            frequency_map = {
+                "1秒": 1,
+                "5秒": 5,
+                "10秒": 10,
+                "30秒": 30,
+                "1分鐘": 60
+            }
+            
+            new_interval = frequency_map.get(frequency_text, 10)
+            self.log_update_interval = new_interval
+            
+            # 重新啟動定時器
+            self.log_update_timer.stop()
+            self.log_update_timer.start(new_interval * 1000)
+            
+            logger.info(f"日誌更新頻率已更改為: {frequency_text}")
+            self.statusBar.showMessage(f"日誌更新頻率已更改為: {frequency_text}")
+            
+        except Exception as e:
+            logger.error(f"更改日誌更新頻率失敗: {e}")
+    
+    def on_log_lines_changed(self, lines_text):
+        """日誌顯示行數改變事件"""
+        try:
+            # 解析行數設定
+            lines_map = {
+                "50行": 50,
+                "100行": 100,
+                "200行": 200,
+                "500行": 500
+            }
+            
+            new_lines = lines_map.get(lines_text, 100)
+            self.log_display_lines = new_lines
+            
+            # 立即更新顯示
+            self.update_log_display()
+            
+            logger.info(f"日誌顯示行數已更改為: {lines_text}")
+            self.statusBar.showMessage(f"日誌顯示行數已更改為: {lines_text}")
+            
+        except Exception as e:
+            logger.error(f"更改日誌顯示行數失敗: {e}")
+    
+    def on_clear_terminal_log_clicked(self):
+        """清空終端日誌按鈕點擊事件"""
+        reply = QMessageBox.question(
+            self, 
+            "確認清空", 
+            "確定要清空終端日誌顯示嗎？\n注意：這只會清空顯示，不會刪除實際的日誌檔案。",
+            QMessageBox.Yes | QMessageBox.No,
+            QMessageBox.No
+        )
+        
+        if reply == QMessageBox.Yes:
+            self.terminal_log_text.clear()
+            self.statusBar.showMessage("終端日誌顯示已清空")
+    
+    def on_export_terminal_log_clicked(self):
+        """匯出終端日誌按鈕點擊事件"""
+        try:
+            file_path, _ = QFileDialog.getSaveFileName(
+                self, 
+                "匯出終端日誌", 
+                "terminal_log.txt", 
+                "Text Files (*.txt);;All Files (*)"
+            )
+            
+            if file_path:
+                # 匯出當前顯示的日誌內容
+                with open(file_path, "w", encoding="utf-8") as f:
+                    f.write(self.terminal_log_text.toPlainText())
+                QMessageBox.information(self, "成功", f"終端日誌已匯出到 {file_path}")
+        except Exception as e:
+            logger.error(f"匯出終端日誌失敗: {e}")
+            QMessageBox.critical(self, "錯誤", f"無法匯出終端日誌: {str(e)}")
+    
+    def on_add_system_info_clicked(self):
+        """添加系統資訊按鈕點擊事件"""
+        self.add_system_info_to_log()
+        self.statusBar.showMessage("系統資訊已添加到日誌檔案")
+    
+    def closeEvent(self, event):
+        """窗口关闭事件处理"""
+        # 停止系統監控定時器
+        self.stop_system_monitoring()
+        
+        # 停止日誌檔案監控定時器
+        if hasattr(self, 'log_update_timer'):
+            self.log_update_timer.stop()
+        
         # 确保在线监控正确停止
         if online_manager.is_running:
             online_manager.stop()

@@ -140,7 +140,10 @@
         "styles": {
             "button_background": "tan",
             "button_text": "black"
-        }
+        },
+        "system_monitor_interval_seconds": 60,
+        "log_max_lines": 200,
+        "log_keep_lines": 100
     },
     "logging": {
         "log_dir": "logs",
@@ -166,7 +169,7 @@
             "enabled": true,
             "file_types": ["org", "roi"],
             "schedule": {
-                "time": "12:35",
+                "time": "15:55",
                 "days": ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]
             }
         }
