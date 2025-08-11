@@ -1353,10 +1353,41 @@ class MainWindow(QMainWindow):
     def setup_log_file_monitor(self):
         """設置日誌檔案監控"""
         try:
-            # 日誌檔案路徑列表
+            # 採用與 logger.py 相同的路徑解析邏輯
+            def get_base_dir() -> Path:
+                """取得主程式或執行檔所在目錄"""
+                if getattr(sys, 'frozen', False):
+                    return Path(sys.executable).parent
+                return Path(sys.argv[0]).resolve().parent
+            
+            def resolve_log_dir(config_dir: str) -> Path:
+                """依據相對或絕對路徑建立 log 目錄"""
+                raw_path = Path(config_dir)
+                if raw_path.is_absolute():
+                    return raw_path
+                return get_base_dir() / raw_path
+            
+            # 動態確定日誌目錄路徑
+            base_dir = get_base_dir()
+            logs_dir = resolve_log_dir("logs")
+            
+            logger.info(f"基礎目錄: {base_dir}")
+            logger.info(f"日誌目錄: {logs_dir}")
+            
+            # 確保日誌目錄存在
+            if not logs_dir.exists():
+                logger.warning(f"日誌目錄不存在: {logs_dir}")
+                # 嘗試創建日誌目錄
+                try:
+                    logs_dir.mkdir(parents=True, exist_ok=True)
+                    logger.info(f"已創建日誌目錄: {logs_dir}")
+                except Exception as e:
+                    logger.error(f"創建日誌目錄失敗: {e}")
+            
+            # 日誌檔案路徑列表（使用絕對路徑）
             self.log_file_paths = [
-                Path("logs/data_processor.log"),
-                Path("logs/app.log")
+                logs_dir / "data_processor.log",
+                logs_dir / "app.log"
             ]
             
             # 監控設定
@@ -1386,9 +1417,16 @@ class MainWindow(QMainWindow):
             
             # 讀取所有日誌檔案
             for log_path in self.log_file_paths:
+                absolute_path = log_path.absolute()
                 if log_path.exists():
                     existing_files += 1
                     try:
+                        # 檢查檔案大小
+                        file_size = absolute_path.stat().st_size
+                        if file_size == 0:
+                            logger.debug(f"日誌檔案為空: {absolute_path}")
+                            continue
+                        
                         with open(log_path, 'r', encoding='utf-8') as f:
                             lines = f.readlines()
                         
@@ -1412,19 +1450,44 @@ class MainWindow(QMainWindow):
                             all_log_lines.append(marked_line)
                         
                         total_lines += len(lines)
+                        logger.debug(f"成功讀取日誌檔案: {absolute_path} ({len(lines)} 行)")
                         
+                    except UnicodeDecodeError as e:
+                        logger.error(f"日誌檔案編碼錯誤 {absolute_path}: {e}")
+                        error_line = f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] ERROR - 日誌檔案編碼錯誤: {log_path.name} [{log_path.name}]"
+                        all_log_lines.append(error_line)
+                    except PermissionError as e:
+                        logger.error(f"日誌檔案權限錯誤 {absolute_path}: {e}")
+                        error_line = f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] ERROR - 日誌檔案權限錯誤: {log_path.name} [{log_path.name}]"
+                        all_log_lines.append(error_line)
                     except Exception as e:
-                        logger.error(f"讀取日誌檔案 {log_path} 失敗: {e}")
+                        logger.error(f"讀取日誌檔案 {absolute_path} 失敗: {e}")
                         error_line = f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] ERROR - 讀取日誌檔案 {log_path.name} 失敗: {str(e)} [{log_path.name}]"
                         all_log_lines.append(error_line)
                 else:
                     # 如果檔案不存在，添加提示
-                    missing_line = f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] INFO - 日誌檔案不存在: {log_path.name} [{log_path.name}]"
+                    missing_line = f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] INFO - 日誌檔案不存在: {log_path.name} (路徑: {absolute_path}) [{log_path.name}]"
                     all_log_lines.append(missing_line)
+                    logger.debug(f"日誌檔案不存在: {absolute_path}")
             
             # 如果沒有找到任何日誌檔案
             if existing_files == 0:
-                self.terminal_log_text.setPlainText("未找到任何日誌檔案:\n- logs/data_processor.log\n- logs/app.log\n\n請確保應用程式已運行並產生日誌。")
+                # 獲取基礎目錄信息
+                def get_base_dir() -> Path:
+                    if getattr(sys, 'frozen', False):
+                        return Path(sys.executable).parent
+                    return Path(sys.argv[0]).resolve().parent
+                
+                base_dir = get_base_dir()
+                current_dir = Path.cwd()
+                error_msg = f"未找到任何日誌檔案:\n"
+                error_msg += f"基礎目錄: {base_dir}\n"
+                error_msg += f"當前工作目錄: {current_dir}\n"
+                error_msg += f"嘗試讀取的檔案:\n"
+                for log_path in self.log_file_paths:
+                    error_msg += f"- {log_path.absolute()}\n"
+                error_msg += f"\n請確保應用程式已運行並產生日誌。"
+                self.terminal_log_text.setPlainText(error_msg)
                 return
             
             # 按時間戳排序所有日誌行
