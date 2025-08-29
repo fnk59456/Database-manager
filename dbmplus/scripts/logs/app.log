@@ -1,0 +1,238 @@
+2025-08-28 13:19:29,704 - database_manager - INFO - 已載入資料庫快取: 2 產品, 11 批次, 1242 元件
+2025-08-28 13:19:29,706 - online_monitor - INFO - 檔案監控已設置：掃描間隔=5秒，重新掃描間隔=60秒
+2025-08-28 13:19:29,709 - retry_manager - INFO - 為組件 TEST_COMPONENT_001 創建重試任務
+2025-08-28 13:19:29,712 - retry_manager - INFO - 已清除所有重試任務
+2025-08-28 13:28:52,979 - database_manager - INFO - 已載入資料庫快取: 2 產品, 11 批次, 1242 元件
+2025-08-28 13:28:52,979 - online_monitor - INFO - 檔案監控已設置：掃描間隔=5秒，重新掃描間隔=60秒
+2025-08-28 13:28:52,979 - retry_manager - INFO - 為組件 TEST_COMPONENT_001 創建重試任務
+2025-08-28 13:28:52,990 - retry_manager - INFO - 已清除所有重試任務
+2025-08-28 13:43:12,944 - database_manager - INFO - 已載入資料庫快取: 2 產品, 11 批次, 1242 元件
+2025-08-28 13:43:12,944 - online_monitor - INFO - 檔案監控已設置：掃描間隔=5秒，重新掃描間隔=60秒
+2025-08-28 13:45:10,482 - database_manager - INFO - 已載入資料庫快取: 2 產品, 11 批次, 1242 元件
+2025-08-28 13:45:10,488 - retry_manager - INFO - 沒有找到持久化的重試任務文件
+2025-08-28 13:45:10,488 - online_monitor - INFO - 檔案監控已設置：掃描間隔=5秒，重新掃描間隔=60秒
+2025-08-28 13:45:10,494 - retry_manager - INFO - 已清除所有重試任務
+2025-08-28 13:45:10,495 - retry_manager - INFO - 為組件 WLPF80030001 創建重試任務
+2025-08-28 13:45:10,496 - retry_manager - INFO - 為組件 WLPF80030002 創建重試任務
+2025-08-28 13:45:10,508 - retry_manager - INFO - 已載入 2 個持久化的重試任務
+2025-08-28 15:56:40,904 - database_manager - INFO - 已載入資料庫快取: 2 產品, 11 批次, 1242 元件
+2025-08-28 15:56:54,245 - database_manager - INFO - 已載入資料庫快取: 2 產品, 11 批次, 1242 元件
+2025-08-28 16:03:40,933 - database_manager - INFO - 已載入資料庫快取: 2 產品, 11 批次, 1242 元件
+2025-08-28 16:03:41,011 - retry_manager - INFO - 已載入 7 個持久化的重試任務
+2025-08-28 16:03:41,011 - online_monitor - INFO - 檔案監控已設置：掃描間隔=5秒，重新掃描間隔=60秒
+2025-08-28 16:06:11,132 - database_manager - INFO - 已載入資料庫快取: 2 產品, 11 批次, 1242 元件
+2025-08-28 16:06:11,198 - retry_manager - INFO - 已載入 7 個持久化的重試任務
+2025-08-28 16:06:11,198 - online_monitor - INFO - 檔案監控已設置：掃描間隔=5秒，重新掃描間隔=60秒
+2025-08-28 16:06:20,356 - database_manager - INFO - 已載入資料庫快取: 2 產品, 11 批次, 1242 元件
+2025-08-28 16:06:20,441 - retry_manager - INFO - 已載入 7 個持久化的重試任務
+2025-08-28 16:06:20,441 - online_monitor - INFO - 檔案監控已設置：掃描間隔=5秒，重新掃描間隔=60秒
+2025-08-28 16:25:31,488 - database_manager - INFO - 已載入資料庫快取: 2 產品, 11 批次, 1242 元件
+2025-08-28 16:25:31,561 - retry_manager - INFO - 已載入 7 個持久化的重試任務
+2025-08-28 16:25:31,561 - online_monitor - INFO - 檔案監控已設置：掃描間隔=5秒，重新掃描間隔=60秒
+2025-08-28 16:34:12,671 - database_manager - INFO - 已載入資料庫快取: 2 產品, 11 批次, 1242 元件
+2025-08-28 16:34:12,726 - retry_manager - INFO - 已載入 7 個持久化的重試任務
+2025-08-28 16:34:12,728 - online_monitor - INFO - 檔案監控已設置：掃描間隔=5秒，重新掃描間隔=60秒
+2025-08-28 16:41:10,209 - database_manager - INFO - 已載入資料庫快取: 2 產品, 11 批次, 1242 元件
+2025-08-28 16:41:10,269 - retry_manager - INFO - 已載入 7 個持久化的重試任務
+2025-08-28 16:41:10,269 - online_monitor - INFO - 檔案監控已設置：掃描間隔=5秒，重新掃描間隔=60秒
+2025-08-28 16:44:05,682 - database_manager - INFO - 已載入資料庫快取: 2 產品, 11 批次, 1242 元件
+2025-08-28 16:48:09,934 - database_manager - INFO - 已載入資料庫快取: 2 產品, 11 批次, 1242 元件
+2025-08-28 16:48:26,053 - database_manager - INFO - 已載入資料庫快取: 2 產品, 11 批次, 1242 元件
+2025-08-28 16:49:22,041 - database_manager - INFO - 已載入資料庫快取: 2 產品, 11 批次, 1242 元件
+2025-08-28 16:49:22,043 - retry_manager - INFO - 已載入 7 個持久化的重試任務
+2025-08-28 16:49:22,043 - online_monitor - INFO - 檔案監控已設置：掃描間隔=5秒，重新掃描間隔=60秒
+2025-08-29 09:26:57,267 - database_manager - INFO - 已載入資料庫快取: 2 產品, 11 批次, 1242 元件
+2025-08-29 09:26:57,269 - online_monitor - INFO - 檔案監控已設置：掃描間隔=5秒，重新掃描間隔=60秒
+2025-08-29 09:26:57,269 - data_processor - INFO - 延遲移動管理器已初始化
+2025-08-29 09:26:57,269 - data_processor - INFO - 全局延遲移動管理器實例已設置
+2025-08-29 09:26:57,269 - data_processor - INFO - 已添加到延遲移動隊列: TEST_COMPONENT_001
+2025-08-29 09:44:53,369 - database_manager - INFO - 已載入資料庫快取: 2 產品, 11 批次, 1242 元件
+2025-08-29 09:44:53,374 - online_monitor - INFO - 檔案監控已設置：掃描間隔=5秒，重新掃描間隔=60秒
+2025-08-29 09:44:53,374 - data_processor - INFO - 延遲移動管理器已初始化
+2025-08-29 09:44:53,374 - data_processor - INFO - 全局延遲移動管理器實例已設置
+2025-08-29 09:46:37,088 - database_manager - INFO - 已載入資料庫快取: 2 產品, 11 批次, 1242 元件
+2025-08-29 09:46:37,088 - online_monitor - INFO - 檔案監控已設置：掃描間隔=5秒，重新掃描間隔=60秒
+2025-08-29 09:46:37,094 - data_processor - INFO - 延遲移動管理器已初始化
+2025-08-29 09:46:37,095 - data_processor - INFO - 全局延遲移動管理器實例已設置
+2025-08-29 09:46:37,096 - data_processor - WARNING - 記錄組件 TEST_COMPONENT_001 移動失敗: 找不到組件
+2025-08-29 09:46:37,096 - config_manager - ERROR - 格式化路徑失敗，缺少參數: 'component'
+2025-08-29 09:46:37,096 - config_manager - ERROR - 格式化路徑失敗，缺少參數: 'component'
+2025-08-29 09:46:37,096 - data_processor - WARNING - 組件 TEST_COMPONENT_001 的 org 路徑不存在: None
+2025-08-29 09:46:37,096 - data_processor - WARNING - 組件 TEST_COMPONENT_001 的 roi 路徑不存在: None
+2025-08-29 09:46:37,096 - config_manager - ERROR - 格式化路徑失敗，缺少參數: 'component'
+2025-08-29 09:46:37,097 - data_processor - ERROR - 查找文件路徑時發生錯誤: argument should be a str or an os.PathLike object where __fspath__ returns a str, not 'NoneType'
+2025-08-29 09:46:37,098 - retry_manager - ERROR - 載入重試任務失敗: 'list' object has no attribute 'items'
+2025-08-29 09:46:37,098 - retry_manager - INFO - 重試管理器已初始化
+2025-08-29 09:46:37,098 - retry_manager - INFO - 創建組件 TEST_COMPONENT_001 的重試任務
+2025-08-29 09:58:19,674 - database_manager - INFO - 已載入資料庫快取: 2 產品, 11 批次, 1242 元件
+2025-08-29 09:58:19,674 - online_monitor - INFO - 檔案監控已設置：掃描間隔=5秒，重新掃描間隔=60秒
+2025-08-29 09:58:19,674 - retry_manager - INFO - 載入了 1 個重試任務
+2025-08-29 09:58:19,674 - retry_manager - INFO - 重試管理器已初始化
+2025-08-29 09:58:19,674 - data_processor - INFO - 延遲移動管理器已初始化
+2025-08-29 09:58:19,685 - config_manager - ERROR - 格式化路徑失敗，缺少參數: 'component'
+2025-08-29 09:58:19,685 - config_manager - ERROR - 格式化路徑失敗，缺少參數: 'component'
+2025-08-29 09:58:19,685 - data_processor - WARNING - 組件 WLPF80030004 的 org 路徑不存在: None
+2025-08-29 09:58:19,685 - data_processor - WARNING - 組件 WLPF80030004 的 roi 路徑不存在: None
+2025-08-29 09:58:19,686 - config_manager - ERROR - 格式化路徑失敗，缺少參數: 'component'
+2025-08-29 09:58:19,686 - config_manager - ERROR - 格式化路徑失敗，缺少參數: 'component'
+2025-08-29 09:58:19,686 - data_processor - WARNING - 組件 WLPF80030005 的 org 路徑不存在: None
+2025-08-29 09:58:19,687 - data_processor - WARNING - 組件 WLPF80030005 的 roi 路徑不存在: None
+2025-08-29 09:58:19,687 - config_manager - ERROR - 格式化路徑失敗，缺少參數: 'component'
+2025-08-29 09:58:19,688 - config_manager - ERROR - 格式化路徑失敗，缺少參數: 'component'
+2025-08-29 09:58:19,688 - data_processor - WARNING - 組件 WLPF80030006 的 org 路徑不存在: None
+2025-08-29 09:58:19,688 - data_processor - WARNING - 組件 WLPF80030006 的 roi 路徑不存在: None
+2025-08-29 09:59:55,927 - database_manager - INFO - 已載入資料庫快取: 2 產品, 11 批次, 1242 元件
+2025-08-29 09:59:55,927 - online_monitor - INFO - 檔案監控已設置：掃描間隔=5秒，重新掃描間隔=60秒
+2025-08-29 09:59:55,935 - retry_manager - INFO - 載入了 1 個重試任務
+2025-08-29 09:59:55,935 - retry_manager - INFO - 重試管理器已初始化
+2025-08-29 09:59:55,935 - data_processor - INFO - 延遲移動管理器已初始化
+2025-08-29 09:59:55,937 - data_processor - WARNING - 組件 WLPF80030005 的 org 路徑不存在: E:/Database-PC/temp/org/WLPF800300/MT/WLPF80030005
+2025-08-29 09:59:55,937 - data_processor - WARNING - 組件 WLPF80030005 的 roi 路徑不存在: E:/Database-PC/temp/roi/WLPF800300/MT/WLPF80030005
+2025-08-29 09:59:55,939 - data_processor - WARNING - 組件 WLPF80030006 的 org 路徑不存在: E:/Database-PC/temp/org/WLPF800300/DC2/WLPF80030006
+2025-08-29 09:59:55,939 - data_processor - WARNING - 組件 WLPF80030006 的 roi 路徑不存在: E:/Database-PC/temp/roi/WLPF800300/DC2/WLPF80030006
+2025-08-29 10:10:27,565 - database_manager - INFO - 已載入資料庫快取: 2 產品, 11 批次, 1242 元件
+2025-08-29 10:10:27,565 - online_monitor - INFO - 檔案監控已設置：掃描間隔=5秒，重新掃描間隔=60秒
+2025-08-29 10:10:27,565 - data_processor - INFO - 開始批量移動 5 個組件的檔案 (多線程模式)
+2025-08-29 10:10:27,565 - data_processor - INFO - 批量移動進度: 處理進度: 1/5 (成功: 0, 失敗: 1)
+2025-08-29 10:10:27,565 - data_processor - INFO - 批量移動進度: 處理進度: 2/5 (成功: 0, 失敗: 2)
+2025-08-29 10:10:27,565 - data_processor - INFO - 批量移動進度: 處理進度: 3/5 (成功: 0, 失敗: 3)
+2025-08-29 10:10:27,565 - data_processor - INFO - 批量移動進度: 處理進度: 4/5 (成功: 0, 失敗: 4)
+2025-08-29 10:10:27,565 - data_processor - INFO - 批量移動進度: 處理進度: 5/5 (成功: 0, 失敗: 5)
+2025-08-29 10:10:27,565 - data_processor - WARNING - 批量移動失敗的組件: ['WLPF80030001: 找不到組件: WLPF80030001', 'WLPF80030003: 找不到組件: WLPF80030003', 'WLPF80030002: 找不到組件: WLPF80030002', 'WLPF80030004: 找不到組件: WLPF80030004', 'WLPF80030005: 找不到組件: WLPF80030005']
+2025-08-29 10:12:34,340 - database_manager - INFO - 已載入資料庫快取: 2 產品, 11 批次, 1242 元件
+2025-08-29 10:12:34,340 - online_monitor - INFO - 檔案監控已設置：掃描間隔=5秒，重新掃描間隔=60秒
+2025-08-29 10:12:34,350 - data_processor - INFO - 延遲移動管理器已初始化
+2025-08-29 10:12:34,381 - data_processor - WARNING - 組件 WLPF80030001 的 org 路徑不存在: E:/Database-PC/temp/org/WLPF800300/RDL/WLPF80030001
+2025-08-29 10:12:34,381 - data_processor - WARNING - 組件 WLPF80030001 的 roi 路徑不存在: E:/Database-PC/temp/roi/WLPF800300/RDL/WLPF80030001
+2025-08-29 10:12:34,401 - data_processor - WARNING - 組件 WLPF80030002 的 org 路徑不存在: E:/Database-PC/temp/org/WLPF800300/RDL/WLPF80030002
+2025-08-29 10:12:34,411 - data_processor - WARNING - 組件 WLPF80030002 的 roi 路徑不存在: E:/Database-PC/temp/roi/WLPF800300/RDL/WLPF80030002
+2025-08-29 10:12:34,432 - data_processor - WARNING - 組件 WLPF80030003 的 org 路徑不存在: E:/Database-PC/temp/org/WLPF800300/RDL/WLPF80030003
+2025-08-29 10:12:34,432 - data_processor - WARNING - 組件 WLPF80030003 的 roi 路徑不存在: E:/Database-PC/temp/roi/WLPF800300/RDL/WLPF80030003
+2025-08-29 10:12:34,453 - data_processor - WARNING - 組件 WLPF80030004 的 org 路徑不存在: E:/Database-PC/temp/org/WLPF800300/RDL/WLPF80030004
+2025-08-29 10:12:34,463 - data_processor - WARNING - 組件 WLPF80030004 的 roi 路徑不存在: E:/Database-PC/temp/roi/WLPF800300/RDL/WLPF80030004
+2025-08-29 10:12:34,483 - data_processor - WARNING - 組件 WLPF80030005 的 org 路徑不存在: E:/Database-PC/temp/org/WLPF800300/RDL/WLPF80030005
+2025-08-29 10:12:34,493 - data_processor - WARNING - 組件 WLPF80030005 的 roi 路徑不存在: E:/Database-PC/temp/roi/WLPF800300/RDL/WLPF80030005
+2025-08-29 10:18:23,514 - database_manager - INFO - 已載入資料庫快取: 2 產品, 11 批次, 1242 元件
+2025-08-29 10:18:23,520 - online_monitor - INFO - 檔案監控已設置：掃描間隔=5秒，重新掃描間隔=60秒
+2025-08-29 10:18:23,520 - data_processor - INFO - 延遲移動管理器已初始化
+2025-08-29 10:18:23,524 - data_processor - WARNING - 組件 WLPF80030001 的 org 路徑不存在: E:/Database-PC/temp/org/WLPF800300/RDL/WLPF80030001
+2025-08-29 10:18:23,524 - data_processor - WARNING - 組件 WLPF80030001 的 roi 路徑不存在: E:/Database-PC/temp/roi/WLPF800300/RDL/WLPF80030001
+2025-08-29 10:18:23,525 - data_processor - WARNING - 組件 WLPF80030002 的 org 路徑不存在: E:/Database-PC/temp/org/WLPF800300/RDL/WLPF80030002
+2025-08-29 10:18:23,525 - data_processor - WARNING - 組件 WLPF80030002 的 roi 路徑不存在: E:/Database-PC/temp/roi/WLPF800300/RDL/WLPF80030002
+2025-08-29 10:18:23,525 - data_processor - WARNING - 組件 WLPF80030003 的 org 路徑不存在: E:/Database-PC/temp/org/WLPF800300/RDL/WLPF80030003
+2025-08-29 10:18:23,525 - data_processor - WARNING - 組件 WLPF80030003 的 roi 路徑不存在: E:/Database-PC/temp/roi/WLPF800300/RDL/WLPF80030003
+2025-08-29 10:18:23,527 - data_processor - WARNING - 組件 WLPF80030005 的 org 路徑不存在: E:/Database-PC/temp/org/WLPF800300/RDL/WLPF80030005
+2025-08-29 10:18:23,527 - data_processor - WARNING - 組件 WLPF80030005 的 roi 路徑不存在: E:/Database-PC/temp/roi/WLPF800300/RDL/WLPF80030005
+2025-08-29 10:25:23,791 - database_manager - INFO - 已載入資料庫快取: 2 產品, 11 批次, 1242 元件
+2025-08-29 10:25:23,793 - online_monitor - INFO - 檔案監控已設置：掃描間隔=5秒，重新掃描間隔=60秒
+2025-08-29 10:25:23,795 - data_processor - INFO - 延遲移動管理器已初始化
+2025-08-29 10:25:23,795 - data_processor - WARNING - 組件 WLPF80030001 的 org 路徑不存在: E:/Database-PC/temp/org/WLPF800300/RDL/WLPF80030001
+2025-08-29 10:25:23,798 - data_processor - WARNING - 組件 WLPF80030001 的 roi 路徑不存在: E:/Database-PC/temp/roi/WLPF800300/RDL/WLPF80030001
+2025-08-29 10:25:23,798 - data_processor - WARNING - 組件 WLPF80030002 的 org 路徑不存在: E:/Database-PC/temp/org/WLPF800300/RDL/WLPF80030002
+2025-08-29 10:25:23,799 - data_processor - WARNING - 組件 WLPF80030002 的 roi 路徑不存在: E:/Database-PC/temp/roi/WLPF800300/RDL/WLPF80030002
+2025-08-29 10:25:23,800 - data_processor - WARNING - 組件 WLPF80030003 的 org 路徑不存在: E:/Database-PC/temp/org/WLPF800300/RDL/WLPF80030003
+2025-08-29 10:25:23,800 - data_processor - WARNING - 組件 WLPF80030003 的 roi 路徑不存在: E:/Database-PC/temp/roi/WLPF800300/RDL/WLPF80030003
+2025-08-29 10:25:23,802 - data_processor - WARNING - 組件 WLPF80030005 的 org 路徑不存在: E:/Database-PC/temp/org/WLPF800300/RDL/WLPF80030005
+2025-08-29 10:25:23,802 - data_processor - WARNING - 組件 WLPF80030005 的 roi 路徑不存在: E:/Database-PC/temp/roi/WLPF800300/RDL/WLPF80030005
+2025-08-29 10:40:36,672 - database_manager - INFO - 已載入資料庫快取: 2 產品, 11 批次, 1242 元件
+2025-08-29 10:40:36,672 - online_monitor - INFO - 檔案監控已設置：掃描間隔=5秒，重新掃描間隔=60秒
+2025-08-29 10:40:36,681 - data_processor - INFO - 延遲移動管理器已初始化
+2025-08-29 10:41:30,734 - database_manager - INFO - 已載入資料庫快取: 2 產品, 11 批次, 1242 元件
+2025-08-29 10:41:30,734 - online_monitor - INFO - 檔案監控已設置：掃描間隔=5秒，重新掃描間隔=60秒
+2025-08-29 10:41:30,734 - data_processor - WARNING - 組件 WLPF80030001 的 org 源路徑不存在: E:/Database-PC/temp/org/WLPF800300/RDL/WLPF80030001
+2025-08-29 10:41:30,743 - data_processor - WARNING - 組件 WLPF80030001 的 roi 源路徑不存在: E:/Database-PC/temp/roi/WLPF800300/RDL/WLPF80030001
+2025-08-29 10:41:30,744 - data_processor - WARNING - 組件 WLPF80030002 的 org 源路徑不存在: E:/Database-PC/temp/org/WLPF800300/RDL/WLPF80030002
+2025-08-29 10:41:30,744 - data_processor - WARNING - 組件 WLPF80030002 的 roi 源路徑不存在: E:/Database-PC/temp/roi/WLPF800300/RDL/WLPF80030002
+2025-08-29 10:41:30,746 - data_processor - WARNING - 組件 WLPF80030003 的 org 源路徑不存在: E:/Database-PC/temp/org/WLPF800300/RDL/WLPF80030003
+2025-08-29 10:41:30,746 - data_processor - WARNING - 組件 WLPF80030003 的 roi 源路徑不存在: E:/Database-PC/temp/roi/WLPF800300/RDL/WLPF80030003
+2025-08-29 10:41:30,747 - data_processor - WARNING - 組件 WLPF80030005 的 org 源路徑不存在: E:/Database-PC/temp/org/WLPF800300/RDL/WLPF80030005
+2025-08-29 10:41:30,747 - data_processor - WARNING - 組件 WLPF80030005 的 roi 源路徑不存在: E:/Database-PC/temp/roi/WLPF800300/RDL/WLPF80030005
+2025-08-29 11:00:36,428 - database_manager - INFO - 已載入資料庫快取: 2 產品, 11 批次, 1242 元件
+2025-08-29 11:00:36,428 - online_monitor - INFO - 檔案監控已設置：掃描間隔=5秒，重新掃描間隔=60秒
+2025-08-29 11:00:36,428 - data_processor - WARNING - 組件 WLPF80030001 的 org 源路徑不存在: E:/Database-PC/temp/org/WLPF800300/RDL/WLPF80030001
+2025-08-29 11:00:36,436 - data_processor - WARNING - 組件 WLPF80030001 的 roi 源路徑不存在: E:/Database-PC/temp/roi/WLPF800300/RDL/WLPF80030001
+2025-08-29 11:00:36,437 - data_processor - WARNING - 組件 WLPF80030002 的 org 源路徑不存在: E:/Database-PC/temp/org/WLPF800300/RDL/WLPF80030002
+2025-08-29 11:00:36,438 - data_processor - WARNING - 組件 WLPF80030002 的 roi 源路徑不存在: E:/Database-PC/temp/roi/WLPF800300/RDL/WLPF80030002
+2025-08-29 11:00:36,438 - data_processor - WARNING - 組件 WLPF80030003 的 org 源路徑不存在: E:/Database-PC/temp/org/WLPF800300/RDL/WLPF80030003
+2025-08-29 11:00:36,438 - data_processor - WARNING - 組件 WLPF80030003 的 roi 源路徑不存在: E:/Database-PC/temp/roi/WLPF800300/RDL/WLPF80030003
+2025-08-29 11:00:36,441 - data_processor - WARNING - 組件 WLPF80030005 的 org 源路徑不存在: E:/Database-PC/temp/org/WLPF800300/RDL/WLPF80030005
+2025-08-29 11:00:36,443 - data_processor - WARNING - 組件 WLPF80030005 的 roi 源路徑不存在: E:/Database-PC/temp/roi/WLPF800300/RDL/WLPF80030005
+2025-08-29 11:03:05,008 - database_manager - INFO - 已載入資料庫快取: 2 產品, 11 批次, 1242 元件
+2025-08-29 11:03:05,009 - online_monitor - INFO - 檔案監控已設置：掃描間隔=5秒，重新掃描間隔=60秒
+2025-08-29 11:03:05,015 - data_processor - INFO - 組件 TEST001 已添加到重試隊列，原因: 測試重試功能，重試時間: 2025-08-29 11:03:10.015009
+2025-08-29 11:04:00,242 - database_manager - INFO - 已載入資料庫快取: 2 產品, 11 批次, 1242 元件
+2025-08-29 11:04:00,246 - online_monitor - INFO - 檔案監控已設置：掃描間隔=5秒，重新掃描間隔=60秒
+2025-08-29 11:04:00,246 - data_processor - INFO - 組件 TEST001 已添加到重試隊列，原因: 測試重試功能，重試時間: 2025-08-29 11:04:05.246238
+2025-08-29 13:33:32,946 - database_manager - INFO - 已載入資料庫快取: 2 產品, 11 批次, 1242 元件
+2025-08-29 13:33:32,948 - online_monitor - INFO - 檔案監控已設置：掃描間隔=5秒，重新掃描間隔=60秒
+2025-08-29 13:33:32,978 - data_processor - INFO - 組件 TEST001 已添加到重試隊列，原因: 測試重試功能，重試時間: 2025-08-29 13:33:37.978067
+2025-08-29 13:33:38,509 - database_manager - INFO - 已載入資料庫快取: 2 產品, 11 批次, 1242 元件
+2025-08-29 13:33:38,513 - online_monitor - INFO - 檔案監控已設置：掃描間隔=5秒，重新掃描間隔=60秒
+2025-08-29 13:33:38,518 - data_processor - WARNING - 組件 WLPF80030001 的 org 源路徑不存在: E:/Database-PC/temp/org/WLPF800300/RDL/WLPF80030001
+2025-08-29 13:33:38,518 - data_processor - WARNING - 組件 WLPF80030001 的 roi 源路徑不存在: E:/Database-PC/temp/roi/WLPF800300/RDL/WLPF80030001
+2025-08-29 13:33:38,518 - data_processor - WARNING - 組件 WLPF80030002 的 org 源路徑不存在: E:/Database-PC/temp/org/WLPF800300/RDL/WLPF80030002
+2025-08-29 13:33:38,519 - data_processor - WARNING - 組件 WLPF80030002 的 roi 源路徑不存在: E:/Database-PC/temp/roi/WLPF800300/RDL/WLPF80030002
+2025-08-29 13:33:38,520 - data_processor - WARNING - 組件 WLPF80030003 的 org 源路徑不存在: E:/Database-PC/temp/org/WLPF800300/RDL/WLPF80030003
+2025-08-29 13:33:38,520 - data_processor - WARNING - 組件 WLPF80030003 的 roi 源路徑不存在: E:/Database-PC/temp/roi/WLPF800300/RDL/WLPF80030003
+2025-08-29 13:33:38,522 - data_processor - WARNING - 組件 WLPF80030005 的 org 源路徑不存在: E:/Database-PC/temp/org/WLPF800300/RDL/WLPF80030005
+2025-08-29 13:33:38,522 - data_processor - WARNING - 組件 WLPF80030005 的 roi 源路徑不存在: E:/Database-PC/temp/roi/WLPF800300/RDL/WLPF80030005
+2025-08-29 13:51:43,175 - database_manager - INFO - 已載入資料庫快取: 2 產品, 11 批次, 1242 元件
+2025-08-29 13:51:43,175 - online_monitor - INFO - 檔案監控已設置：掃描間隔=5秒，重新掃描間隔=60秒
+2025-08-29 13:51:43,181 - data_processor - WARNING - 組件 WLPF80030001 的 org 源路徑不存在: E:/Database-PC/temp/org/WLPF800300/RDL/WLPF80030001
+2025-08-29 13:51:43,182 - data_processor - WARNING - 組件 WLPF80030001 的 roi 源路徑不存在: E:/Database-PC/temp/roi/WLPF800300/RDL/WLPF80030001
+2025-08-29 13:51:43,183 - data_processor - WARNING - 組件 WLPF80030002 的 org 源路徑不存在: E:/Database-PC/temp/org/WLPF800300/RDL/WLPF80030002
+2025-08-29 13:51:43,183 - data_processor - WARNING - 組件 WLPF80030002 的 roi 源路徑不存在: E:/Database-PC/temp/roi/WLPF800300/RDL/WLPF80030002
+2025-08-29 13:51:43,183 - data_processor - WARNING - 組件 WLPF80030003 的 org 源路徑不存在: E:/Database-PC/temp/org/WLPF800300/RDL/WLPF80030003
+2025-08-29 13:51:43,184 - data_processor - WARNING - 組件 WLPF80030003 的 roi 源路徑不存在: E:/Database-PC/temp/roi/WLPF800300/RDL/WLPF80030003
+2025-08-29 13:51:43,186 - data_processor - WARNING - 組件 WLPF80030005 的 org 源路徑不存在: E:/Database-PC/temp/org/WLPF800300/RDL/WLPF80030005
+2025-08-29 13:51:43,186 - data_processor - WARNING - 組件 WLPF80030005 的 roi 源路徑不存在: E:/Database-PC/temp/roi/WLPF800300/RDL/WLPF80030005
+2025-08-29 13:52:07,890 - database_manager - INFO - 已載入資料庫快取: 2 產品, 11 批次, 1242 元件
+2025-08-29 13:52:07,890 - online_monitor - INFO - 檔案監控已設置：掃描間隔=5秒，重新掃描間隔=60秒
+2025-08-29 13:52:07,897 - data_processor - INFO - 開始批量移動 1 個組件的檔案 (多線程模式)
+2025-08-29 13:52:07,898 - data_processor - INFO - [線程20208] 🔍 延遲移動前檢查 - 組件 WLPF80030004 (1/1)
+2025-08-29 13:52:07,900 - data_processor - INFO - [線程20208] 🚀 開始移動組件 WLPF80030004...
+2025-08-29 13:52:07,900 - data_processor - INFO - 🔍 開始查找組件: WLPF80030004
+2025-08-29 13:52:07,900 - data_processor - INFO -   批次ID: temp_WLPF800300
+2025-08-29 13:52:07,900 - data_processor - INFO -   站點: RDL
+2025-08-29 13:52:07,900 - data_processor - INFO -   源產品: temp
+2025-08-29 13:52:07,900 - data_processor - WARNING - ❌ 通過 lot_id=temp_WLPF800300 找不到組件: WLPF80030004
+2025-08-29 13:52:07,900 - data_processor - INFO - 🔄 嘗試通過原始批次ID查找: WLPF800300
+2025-08-29 13:52:07,900 - data_processor - INFO - ✅ 通過原始批次ID找到組件: WLPF80030004
+2025-08-29 13:52:07,900 - config_manager - ERROR - 格式化路徑失敗，缺少參數: 'component'
+2025-08-29 13:52:07,900 - config_manager - ERROR - 格式化路徑失敗，缺少參數: 'component'
+2025-08-29 13:52:07,914 - database_manager - INFO - 已保存資料庫快取: C:\Users\sebas\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-08-29 13:52:07,914 - data_processor - WARNING - 移動失敗的檔案: ["org移動失敗: argument should be a str or an os.PathLike object where __fspath__ returns a str, not 'NoneType'", "roi移動失敗: argument should be a str or an os.PathLike object where __fspath__ returns a str, not 'NoneType'"]
+2025-08-29 13:52:07,914 - data_processor - WARNING - [線程20208] ❌ 組件 WLPF80030004 移動失敗: 失敗 2 個檔案
+2025-08-29 13:52:07,915 - data_processor - INFO - 📊 批量移動進度: 處理進度: 1/1 (成功: 0, 失敗: 1)
+2025-08-29 13:52:07,915 - data_processor - WARNING - ❌ 組件 WLPF80030004 處理失敗: WLPF80030004: 失敗 2 個檔案
+2025-08-29 13:52:07,915 - data_processor - WARNING - 批量移動失敗的組件: ['WLPF80030004: 失敗 2 個檔案']
+2025-08-29 13:53:11,725 - database_manager - INFO - 已載入資料庫快取: 2 產品, 11 批次, 1242 元件
+2025-08-29 13:53:11,727 - online_monitor - INFO - 檔案監控已設置：掃描間隔=5秒，重新掃描間隔=60秒
+2025-08-29 13:53:11,731 - data_processor - INFO - 開始批量移動 1 個組件的檔案 (多線程模式)
+2025-08-29 13:53:11,732 - data_processor - INFO - [線程33168] 🔍 延遲移動前檢查 - 組件 WLPF80030004 (1/1)
+2025-08-29 13:53:11,734 - data_processor - INFO - [線程33168] 🚀 開始移動組件 WLPF80030004...
+2025-08-29 13:53:11,734 - data_processor - INFO - 🔍 開始查找組件: WLPF80030004
+2025-08-29 13:53:11,734 - data_processor - INFO -   批次ID: temp_WLPF800300
+2025-08-29 13:53:11,734 - data_processor - INFO -   站點: RDL
+2025-08-29 13:53:11,734 - data_processor - INFO -   源產品: temp
+2025-08-29 13:53:11,734 - data_processor - WARNING - ❌ 通過 lot_id=temp_WLPF800300 找不到組件: WLPF80030004
+2025-08-29 13:53:11,734 - data_processor - INFO - 🔄 嘗試通過原始批次ID查找: WLPF800300
+2025-08-29 13:53:11,735 - data_processor - INFO - ✅ 通過原始批次ID找到組件: WLPF80030004
+2025-08-29 13:53:11,735 - data_processor - INFO - 組件 WLPF80030004 的 ORG 路徑檢查結果: complete
+2025-08-29 13:53:11,735 - data_processor - INFO -   基礎路徑: E:\Database-PC\temp\org\WLPF800300\RDL\WLPF80030004
+2025-08-29 13:53:11,735 - data_processor - INFO -   源路徑: E:\Database-PC\temp\org\WLPF800300\RDL\WLPF80030004
+2025-08-29 13:53:11,735 - data_processor - INFO -   目標路徑: E:\Database-PC\i-Pixel\org\WLPF800300\RDL\WLPF80030004
+2025-08-29 13:53:11,735 - data_processor - INFO - 組件 WLPF80030004 的 ORG 路徑完整，開始移動...
+2025-08-29 13:53:11,802 - data_processor - INFO - ✅ 組件 WLPF80030004 的 ORG 移動成功
+2025-08-29 13:53:11,802 - data_processor - INFO - 組件 WLPF80030004 的 ROI 路徑檢查結果: complete
+2025-08-29 13:53:11,802 - data_processor - INFO -   基礎路徑: E:\Database-PC\temp\roi\WLPF800300\RDL\WLPF80030004
+2025-08-29 13:53:11,802 - data_processor - INFO -   源路徑: E:\Database-PC\temp\roi\WLPF800300\RDL\WLPF80030004
+2025-08-29 13:53:11,802 - data_processor - INFO -   目標路徑: E:\Database-PC\i-Pixel\roi\WLPF800300\RDL\WLPF80030004
+2025-08-29 13:53:11,802 - data_processor - INFO - 組件 WLPF80030004 的 ROI 路徑完整，開始移動...
+2025-08-29 13:53:11,812 - data_processor - INFO - ✅ 組件 WLPF80030004 的 ROI 移動成功
+2025-08-29 13:53:11,819 - database_manager - INFO - 已保存資料庫快取: C:\Users\sebas\Desktop\Frank\Database-manager\dbmplus\data\db_cache.json
+2025-08-29 13:53:11,819 - data_processor - INFO - 成功移動的檔案: ['Org: E:\\Database-PC\\temp\\org\\WLPF800300\\RDL\\WLPF80030004 -> E:\\Database-PC\\i-Pixel\\org\\WLPF800300\\RDL\\WLPF80030004', 'ROI: E:\\Database-PC\\temp\\roi\\WLPF800300\\RDL\\WLPF80030004 -> E:\\Database-PC\\i-Pixel\\roi\\WLPF800300\\RDL\\WLPF80030004']
+2025-08-29 13:53:11,819 - data_processor - INFO - [線程33168] ✅ 組件 WLPF80030004 移動成功: 成功移動 2 個檔案
+2025-08-29 13:53:11,819 - data_processor - INFO - 📊 批量移動進度: 處理進度: 1/1 (成功: 1, 失敗: 0)
+2025-08-29 13:53:11,819 - data_processor - INFO - ✅ 組件 WLPF80030004 處理完成: WLPF80030004: 成功移動 2 個檔案
+2025-08-29 13:53:11,828 - data_processor - INFO - 批量移動成功的組件: ['WLPF80030004: 成功移動 2 個檔案']

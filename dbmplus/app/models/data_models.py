@@ -103,6 +103,7 @@ class ComponentInfo:
     original_filename: Optional[str] = None
     processed_filename: Optional[str] = None
     org_path: Optional[str] = None
+    roi_path: Optional[str] = None
     csv_path: Optional[str] = None
     original_csv_path: Optional[str] = None  # 存儲processed_csv目錄中的原始CSV文件路徑
     basemap_path: Optional[str] = None
@@ -133,6 +134,7 @@ class ComponentInfo:
             "original_filename": self.original_filename,
             "processed_filename": self.processed_filename,
             "org_path": self.org_path,
+            "roi_path": self.roi_path,
             "csv_path": self.csv_path,
             "original_csv_path": self.original_csv_path,
             "basemap_path": self.basemap_path,

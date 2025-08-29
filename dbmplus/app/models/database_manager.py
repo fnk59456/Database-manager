@@ -335,6 +335,11 @@ class DatabaseManager:
         fpy_path = self.base_path / product_id / "map" / lot_id / "FPY" / f"{component_id}.png"
         if fpy_path.exists():
             component.fpy_path = str(fpy_path)
+        
+        # 檢查 roi 檔案
+        roi_path = self.base_path / product_id / "roi" / lot_id / station / component_id
+        if roi_path.exists() and roi_path.is_dir():
+            component.roi_path = str(roi_path)
     
     def get_products(self) -> List[ProductInfo]:
         """獲取所有產品信息"""

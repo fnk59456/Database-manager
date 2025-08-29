@@ -1,0 +1,19 @@
+{
+  "TEST_COMPONENT_001": {
+    "component_id": "TEST_COMPONENT_001",
+    "lot_id": "TEST_LOT_001",
+    "station": "MT",
+    "source_product": "TestProduct",
+    "target_product": "TargetProduct",
+    "file_types": [
+      "org",
+      "roi"
+    ],
+    "failure_reason": "找不到組件",
+    "retry_count": 1,
+    "first_failure_time": "2025-08-29T09:46:37.098671",
+    "last_failure_time": "2025-08-29T09:46:37.098671",
+    "next_retry_time": "2025-08-29T09:51:37.098671",
+    "max_retry_count": 3
+  }
+}

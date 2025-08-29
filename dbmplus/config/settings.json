@@ -1,6 +1,6 @@
 {
     "database": {
-        "base_path": "D:/Database-PC",
+        "base_path": "E:/Database-PC",
         "structure": {
             "csv_root": "{base_path}/{product}/csv",
             "csv": "{base_path}/{product}/csv/{lot}/{station}",
@@ -13,7 +13,9 @@
     "monitoring": {
         "scan_interval": 5,
         "rescan_interval": 60,
-        "enable_debug_logs": false
+        "enable_debug_logs": true,
+        "enable_detailed_path_debug": true,
+        "path_debug_output": "terminal"
     },
     "processing": {
         "station_order": [
@@ -169,26 +171,33 @@
             "enabled": true,
             "file_types": ["org", "roi"],
             "schedule": {
-                "time": "15:55",
+                "time": "14:05",
                 "days": ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]
             }
+        },
+        "retry_mechanism": {
+            "enabled": true,
+            "max_retry_count": 3,
+            "retry_intervals_minutes": [5, 5, 5],
+            "retry_on_partial_failure": true,
+            "description": "移動失敗重試機制設定"
         }
     },
     "storage_management": {
         "enabled": true,
         "monitoring": {
-            "scan_interval_seconds": 60,
+            "scan_interval_seconds": 60,    
             "error_retry_interval_seconds": 60,
             "scheduler_check_interval_seconds": 60,
             "description": "存儲監控掃描頻率設定"
         },
         "local_storage": {
-            "path": "D:/Database-PC",
+            "path": "E:/Database-PC",
             "warning_threshold_percent": 37,
             "critical_threshold_percent": 50
         },
         "archive_storage": {
-            "path": "E:/Database-PC",
+            "path": "D:/Database-PC",
             "structure": "{product}/org/{lot}/{station}/{component}"
         },
         "file_formats": {

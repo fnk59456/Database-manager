@@ -118,10 +118,13 @@ class MainWindow(QMainWindow):
     
     def init_delayed_move_manager(self):
         """初始化延遲移動管理器"""
-        from ..controllers.data_processor import DelayedMoveManager
+        from ..controllers.data_processor import DelayedMoveManager, set_global_delayed_move_manager
         
         # 創建延遲移動管理器（在主線程中）
         self.delayed_move_manager = DelayedMoveManager()
+        
+        # 設置為全局實例，確保其他模塊可以訪問
+        set_global_delayed_move_manager(self.delayed_move_manager)
         
         # 如果延遲移動啟用，啟動調度器
         if config.get("auto_move.delayed.enabled", False):

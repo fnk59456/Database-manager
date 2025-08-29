@@ -95,11 +95,26 @@ class DelayedMoveManager(QObject):
         self.scheduler.setSingleShot(True)  # 設置為單次觸發
         self.scheduler.timeout.connect(self.process_delayed_moves)
         self.is_running = False
+        
+        # 重試機制相關
+        self.failed_components = {}  # 記錄失敗的組件
+        self.retry_enabled = config.get("auto_move.retry_mechanism.enabled", True)
+        self.retry_on_partial_failure = config.get("auto_move.retry_mechanism.retry_on_partial_failure", True)
+        
         logger.info("延遲移動管理器已初始化")
         
     def add_to_delayed_queue(self, component_id: str, lot_id: str, station: str, 
                             source_product: str, target_product: str):
         """添加到延遲移動隊列"""
+        # 檢查是否為重試任務
+        if hasattr(self, 'failed_components') and component_id in self.failed_components:
+            failure_info = self.failed_components[component_id]
+            if failure_info['retry_count'] < config.get("auto_move.retry_mechanism.max_retry_count", 3):
+                logger.info(f"組件 {component_id} 為重試任務，重試次數: {failure_info['retry_count']}")
+            else:
+                logger.warning(f"組件 {component_id} 已超過最大重試次數，跳過")
+                return
+        
         self.move_queue.put({
             'component_id': component_id,
             'lot_id': lot_id,
@@ -109,6 +124,112 @@ class DelayedMoveManager(QObject):
             'timestamp': datetime.datetime.now()
         })
         logger.info(f"已添加到延遲移動隊列: {component_id}")
+    
+    def record_component_failure(self, component_id: str, lot_id: str, station: str, 
+                                source_product: str, target_product: str, failure_reason: str):
+        """記錄組件移動失敗"""
+        if not self.retry_enabled:
+            return
+            
+        if component_id not in self.failed_components:
+            self.failed_components[component_id] = {
+                'lot_id': lot_id,
+                'station': station,
+                'source_product': source_product,
+                'target_product': target_product,
+                'failure_reason': failure_reason,
+                'retry_count': 0,
+                'first_failure_time': datetime.datetime.now(),
+                'last_failure_time': datetime.datetime.now()
+            }
+        else:
+            self.failed_components[component_id]['retry_count'] += 1
+            self.failed_components[component_id]['last_failure_time'] = datetime.datetime.now()
+            self.failed_components[component_id]['failure_reason'] = failure_reason
+            
+        logger.warning(f"記錄組件 {component_id} 移動失敗: {failure_reason}")
+    
+    def get_failed_components_summary(self) -> dict:
+        """獲取失敗組件摘要"""
+        summary = {
+            'total_failed': len(self.failed_components),
+            'components': {}
+        }
+        
+        for component_id, info in self.failed_components.items():
+            summary['components'][component_id] = {
+                'retry_count': info['retry_count'],
+                'failure_reason': info['failure_reason'],
+                'last_failure_time': info['last_failure_time'].isoformat()
+            }
+            
+        return summary
+    
+    def cleanup_expired_failures(self):
+        """清理過期的失敗記錄（24小時後自動清理）"""
+        current_time = datetime.datetime.now()
+        expired_components = []
+        
+        for component_id, info in self.failed_components.items():
+            time_diff = current_time - info['first_failure_time']
+            if time_diff.total_seconds() > 24 * 3600:  # 24小時
+                expired_components.append(component_id)
+                
+        for component_id in expired_components:
+            del self.failed_components[component_id]
+            logger.info(f"清理過期的失敗記錄: {component_id}")
+    
+    def reset_failure_record(self, component_id: str):
+        """重置組件的失敗記錄"""
+        if component_id in self.failed_components:
+            del self.failed_components[component_id]
+            logger.info(f"重置組件 {component_id} 的失敗記錄")
+    
+    def get_failure_statistics(self) -> dict:
+        """獲取失敗統計信息"""
+        retry_distribution = {}
+        for info in self.failed_components.values():
+            retry_count = info['retry_count']
+            retry_distribution[retry_count] = retry_distribution.get(retry_count, 0) + 1
+            
+        return {
+            'total_failed': len(self.failed_components),
+            'retry_distribution': retry_distribution
+        }
+    
+    def _find_actual_file_path(self, component_id: str, lot_id: str, station: str, 
+                               source_product: str, file_type: str) -> Optional[str]:
+        """智能查找實際文件路徑"""
+        try:
+            # 提取原始 lot_id（移除 temp_ 前綴）
+            original_lot_id = lot_id.replace('temp_', '') if lot_id.startswith('temp_') else lot_id
+            
+            # 構建標準路徑
+            standard_path = config.get_path(
+                f"database.structure.{file_type}",
+                product=source_product,
+                lot=original_lot_id,
+                station=station
+            )
+            
+            # 檢查標準路徑是否存在
+            if Path(standard_path).exists():
+                return str(standard_path)
+            
+            # 如果標準路徑不存在，嘗試在其他產品目錄中查找
+            base_path = Path(config.get("database.base_path", "D:/Database-PC"))
+            for product_dir in base_path.iterdir():
+                if product_dir.is_dir() and product_dir.name != source_product:
+                    test_path = product_dir / original_lot_id / station / file_type
+                    if test_path.exists():
+                        logger.info(f"在產品 {product_dir.name} 中找到 {file_type} 文件: {test_path}")
+                        return str(test_path)
+            
+            return None
+            
+        except Exception as e:
+            logger.error(f"查找文件路徑時發生錯誤: {e}")
+            return None
     
     def start_scheduler(self, interval_hours: int = 24):
         """啟動定時器（根據配置的時間執行）"""
@@ -249,6 +370,298 @@ class DataProcessor:
         self.signaler = TaskSignaler()
         
         # 注意：延遲移動管理器現在在主視窗中初始化，以確保在正確的線程中運行
+        
+        # 重試隊列和路徑監控
+        self.retry_queue = {}  # 重試隊列
+        self.path_monitors = {}  # 路徑監控器
+        
+        # 注意：定時器需要在Qt主線程中啟動，這裡只初始化數據結構
+        # 實際的定時器啟動將在主視窗中進行
+    
+    def _check_path_development_stage(self, base_path: Path, target_path: Path) -> str:
+        """檢查路徑的發展階段"""
+        try:
+            if target_path.exists():
+                return "complete"  # 完整路徑存在
+            elif target_path.parent.exists():
+                return "partial"    # 部分路徑存在（批次或站點目錄）
+            elif base_path.exists():
+                return "base"       # 基礎目錄存在
+            else:
+                return "none"       # 完全不存在
+        except Exception as e:
+            logger.error(f"檢查路徑發展階段時發生錯誤: {e}")
+            return "error"
+    
+    def _add_to_retry_queue(self, component_id: str, lot_id: str, station: str, 
+                           source_product: str, target_product: str, file_types: List[str], 
+                           reason: str, retry_delay: int = 300):
+        """將組件添加到重試隊列"""
+        try:
+            retry_time = datetime.datetime.now() + datetime.timedelta(seconds=retry_delay)
+            self.retry_queue[component_id] = {
+                'lot_id': lot_id,
+                'station': station,
+                'source_product': source_product,
+                'target_product': target_product,
+                'file_types': file_types,
+                'reason': reason,
+                'retry_time': retry_time,
+                'retry_count': 0,
+                'max_retries': 5
+            }
+            logger.info(f"組件 {component_id} 已添加到重試隊列，原因: {reason}，重試時間: {retry_time}")
+        except Exception as e:
+            logger.error(f"添加組件 {component_id} 到重試隊列時發生錯誤: {e}")
+    
+    def _process_retry_queue(self):
+        """處理重試隊列"""
+        try:
+            current_time = datetime.datetime.now()
+            components_to_retry = []
+            
+            for component_id, retry_info in list(self.retry_queue.items()):
+                if current_time >= retry_info['retry_time']:
+                    components_to_retry.append((component_id, retry_info))
+            
+            for component_id, retry_info in components_to_retry:
+                if retry_info['retry_count'] < retry_info['max_retries']:
+                    logger.info(f"重試移動組件 {component_id} (第 {retry_info['retry_count'] + 1} 次)")
+                    self._retry_component_move(component_id, retry_info)
+                else:
+                    logger.warning(f"組件 {component_id} 已超過最大重試次數，從重試隊列中移除")
+                    del self.retry_queue[component_id]
+                    
+        except Exception as e:
+            logger.error(f"處理重試隊列時發生錯誤: {e}")
+    
+    def _retry_component_move(self, component_id: str, retry_info: dict):
+        """重試組件移動"""
+        try:
+            success, message = self.move_files(
+                component_id=component_id,
+                lot_id=retry_info['lot_id'],
+                station=retry_info['station'],
+                source_product=retry_info['source_product'],
+                target_product=retry_info['target_product'],
+                file_types=retry_info['file_types']
+            )
+            
+            if success:
+                logger.info(f"組件 {component_id} 重試移動成功: {message}")
+                del self.retry_queue[component_id]
+            else:
+                # 增加重試次數，設置下次重試時間
+                retry_info['retry_count'] += 1
+                retry_delay = min(300 * (2 ** retry_info['retry_count']), 3600)  # 指數退避，最大1小時
+                retry_info['retry_time'] = datetime.datetime.now() + datetime.timedelta(seconds=retry_delay)
+                logger.info(f"組件 {component_id} 重試移動失敗，將在 {retry_delay} 秒後重試")
+                
+        except Exception as e:
+            logger.error(f"重試組件 {component_id} 移動時發生錯誤: {e}")
+    
+    def _monitor_path_completion(self, component_id: str, lot_id: str, station: str, 
+                                source_product: str, target_product: str, file_types: List[str]):
+        """監控路徑完成狀態"""
+        try:
+            # 檢查所有文件類型的路徑完成狀態
+            all_paths_complete = True
+            incomplete_paths = []
+            
+            for file_type in file_types:
+                if file_type in ['org', 'roi']:
+                    source_path = Path(config.get_path(
+                        f"database.structure.{file_type}",
+                        product=source_product,
+                        lot=lot_id.replace('temp_', '') if lot_id.startswith('temp_') else lot_id,
+                        station=station,
+                        component=component_id
+                    ))
+                    
+                    if not source_path.exists():
+                        all_paths_complete = False
+                        incomplete_paths.append(f"{file_type}: {source_path}")
+            
+            if all_paths_complete:
+                logger.info(f"組件 {component_id} 的所有路徑已完成，自動觸發移動")
+                # 自動觸發移動
+                success, message = self.move_files(
+                    component_id=component_id,
+                    lot_id=lot_id,
+                    station=station,
+                    source_product=source_product,
+                    target_product=target_product,
+                    file_types=file_types
+                )
+                
+                if success:
+                    logger.info(f"組件 {component_id} 自動移動成功: {message}")
+                    # 從監控列表中移除
+                    if component_id in self.path_monitors:
+                        del self.path_monitors[component_id]
+                else:
+                    logger.warning(f"組件 {component_id} 自動移動失敗: {message}")
+                    # 添加到重試隊列
+                    self._add_to_retry_queue(component_id, lot_id, station, source_product, 
+                                           target_product, file_types, f"自動移動失敗: {message}")
+            else:
+                # 路徑未完成，繼續監控
+                if component_id not in self.path_monitors:
+                    self.path_monitors[component_id] = {
+                        'lot_id': lot_id,
+                        'station': station,
+                        'source_product': source_product,
+                        'target_product': target_product,
+                        'file_types': file_types,
+                        'start_time': datetime.datetime.now()
+                    }
+                    
+        except Exception as e:
+            logger.error(f"監控組件 {component_id} 路徑完成狀態時發生錯誤: {e}")
+    
+    def _check_path_completion(self):
+        """檢查路徑完成狀態"""
+        try:
+            for component_id, monitor_info in list(self.path_monitors.items()):
+                self._monitor_path_completion(
+                    component_id=component_id,
+                    lot_id=monitor_info['lot_id'],
+                    station=monitor_info['station'],
+                    source_product=monitor_info['source_product'],
+                    target_product=monitor_info['target_product'],
+                    file_types=monitor_info['file_types']
+                )
+        except Exception as e:
+            logger.error(f"檢查路徑完成狀態時發生錯誤: {e}")
+    
+    def _debug_component_files(self, component_id: str, lot_id: str, station: str, 
+                              source_product: str, target_product: str, file_types: List[str]) -> None:
+        """調試組件檔案狀態（詳細版本，可配置輸出詳細信息）"""
+        try:
+            # 檢查是否啟用詳細調試
+            enable_detailed_debug = config.get("monitoring.enable_detailed_path_debug", False)
+            debug_output = config.get("monitoring.path_debug_output", "terminal")
+            
+            # 🔍 使用與 move_files 一致的邏輯獲取原始批次ID
+            try:
+                lot_obj = db_manager.get_lot(lot_id)
+                if lot_obj and hasattr(lot_obj, 'original_lot_id'):
+                    original_lot_id = lot_obj.original_lot_id
+                else:
+                    # 備用方案：移除 temp_ 前綴
+                    original_lot_id = lot_id.replace('temp_', '') if lot_id.startswith('temp_') else lot_id
+            except:
+                # 備用方案：移除 temp_ 前綴
+                original_lot_id = lot_id.replace('temp_', '') if lot_id.startswith('temp_') else lot_id
+            
+            if enable_detailed_debug:
+                print(f"\n🔍 詳細路徑調試 - 組件: {component_id}")
+                print(f"   批次ID: {lot_id} → 原始批次ID: {original_lot_id}")
+                print(f"   站點: {station}")
+                print(f"   源產品: {source_product}")
+                print(f"   目標產品: {target_product}")
+                print(f"   文件類型: {file_types}")
+                print("   " + "="*60)
+            
+            # 🔍 構建源路徑和目標路徑（與 move_files 完全一致）
+            source_paths = {}
+            target_paths = {}
+            for file_type in file_types:
+                if file_type == 'org':
+                    source_paths[file_type] = config.get_path(
+                        "database.structure.org",
+                        product=source_product,
+                        lot=original_lot_id,
+                        station=station,
+                        component=component_id
+                    )
+                    target_paths[file_type] = config.get_path(
+                        "database.structure.org",
+                        product=target_product,
+                        lot=original_lot_id,
+                        station=station,
+                        component=component_id
+                    )
+                elif file_type == 'roi':
+                    source_paths[file_type] = config.get_path(
+                        "database.structure.roi",
+                        product=source_product,
+                        lot=original_lot_id,
+                        station=station,
+                        component=component_id
+                    )
+                    target_paths[file_type] = config.get_path(
+                        "database.structure.roi",
+                        product=target_product,
+                        lot=original_lot_id,
+                        station=station,
+                        component=component_id
+                    )
+                
+                if enable_detailed_debug:
+                    print(f"   📁 {file_type.upper()} 路徑生成:")
+                    print(f"      配置模板: database.structure.{file_type}")
+                    print(f"      參數: product={source_product}, lot={original_lot_id}, station={station}")
+                    print(f"      源路徑: {source_paths[file_type]}")
+                    print(f"      目標路徑: {target_paths[file_type]}")
+            
+            # 🔍 檢查源路徑和目標路徑狀態
+            for file_type in file_types:
+                source_path = source_paths.get(file_type)
+                target_path = target_paths.get(file_type)
+                
+                if source_path and Path(source_path).exists():
+                    try:
+                        # 使用 os.listdir 進行快速檢查
+                        files = os.listdir(source_path)
+                        file_count = len(files)
+                        
+                        if enable_detailed_debug:
+                            print(f"   ✅ {file_type.upper()} 源路徑存在:")
+                            print(f"      源路徑: {source_path}")
+                            print(f"      文件數量: {file_count}")
+                            
+                            # 顯示樣本文件（最多5個）
+                            if file_count > 0:
+                                sample_files = files[:5]
+                                print(f"      樣本文件: {sample_files}")
+                                if file_count > 5:
+                                    print(f"      ... 還有 {file_count - 5} 個文件")
+                            else:
+                                print(f"      ⚠️  目錄為空")
+                        
+                        # 記錄到日誌
+                        if file_count == 0:
+                            logger.warning(f"組件 {component_id} 的 {file_type} 資料夾為空: {source_path}")
+                        
+                    except OSError as e:
+                        error_msg = f"無法讀取 {file_type} 資料夾 {source_path}: {e}"
+                        if enable_detailed_debug:
+                            print(f"   ❌ {file_type.upper()} 讀取錯誤: {error_msg}")
+                        logger.error(error_msg)
+                else:
+                    error_msg = f"組件 {component_id} 的 {file_type} 源路徑不存在: {source_path}"
+                    if enable_detailed_debug:
+                        print(f"   ❌ {file_type.upper()} 源路徑不存在: {error_msg}")
+                    logger.warning(error_msg)
+                
+                # 🔍 檢查目標路徑
+                if target_path:
+                    if enable_detailed_debug:
+                        if Path(target_path).exists():
+                            print(f"   ⚠️  {file_type.upper()} 目標路徑已存在: {target_path}")
+                        else:
+                            print(f"   📝 {file_type.upper()} 目標路徑將創建: {target_path}")
+            
+            if enable_detailed_debug:
+                print("   " + "="*60)
+                print(f"   📊 調試完成 - 組件: {component_id}\n")
+                    
+        except Exception as e:
+            error_msg = f"調試組件 {component_id} 檔案時發生錯誤: {e}"
+            if config.get("monitoring.enable_detailed_path_debug", False):
+                print(f"   💥 調試錯誤: {error_msg}")
+            logger.error(error_msg)
     
     def _load_mask_rules(self, station):
         """載入指定站點的遮罩規則"""
@@ -1125,10 +1538,34 @@ class DataProcessor:
                 # 批量移動檔案任務
                 if hasattr(task, 'batch_move_params'):
                     params = task.batch_move_params
+                    
+                    # 🔍 詳細路徑調試：在批量移動前檢查每個組件的實際文件結構
+                    components_data = params['components_data']
+                    target_product = params['target_product']
+                    file_types = params['file_types']
+                    
+                    print(f"\n🔍 延遲移動前檢查 - 批量移動 {len(components_data)} 個組件")
+                    print(f"   目標產品: {target_product}")
+                    print(f"   文件類型: {file_types}")
+                    print("   " + "="*60)
+                    
+                    for index, (component_id, lot_id, station, source_product) in enumerate(components_data):
+                        print(f"\n🔍 延遲移動前檢查 - 組件 {component_id} ({index+1}/{len(components_data)})")
+                        self._debug_component_files(
+                            component_id=component_id,
+                            lot_id=lot_id,
+                            station=station,
+                            source_product=source_product,
+                            target_product=target_product,
+                            file_types=file_types
+                        )
+                    
+                    print(f"\n🚀 開始執行批量移動...")
+                    
                     success, message = self.batch_move_files(
-                        components_data=params['components_data'],
-                        target_product=params['target_product'],
-                        file_types=params['file_types']
+                        components_data=components_data,
+                        target_product=target_product,
+                        file_types=file_types
                     )
                 else:
                     success, message = False, "批量移動檔案任務缺少必要參數"
@@ -1456,15 +1893,48 @@ class DataProcessor:
             Tuple[bool, str]: (成功狀態, 訊息)
         """
         try:
+            # 🔍 詳細記錄組件查找過程
+            logger.info(f"🔍 開始查找組件: {component_id}")
+            logger.info(f"  批次ID: {lot_id}")
+            logger.info(f"  站點: {station}")
+            logger.info(f"  源產品: {source_product}")
+            
             # 獲取組件信息
             component = db_manager.get_component(lot_id, station, component_id)
+            if not component:
+                logger.warning(f"❌ 通過 lot_id={lot_id} 找不到組件: {component_id}")
+                
+                # 嘗試通過原始批次ID查找
+                try:
+                    lot_obj = db_manager.get_lot(lot_id)
+                    if lot_obj and hasattr(lot_obj, 'original_lot_id'):
+                        original_lot_id = lot_obj.original_lot_id
+                        logger.info(f"🔄 嘗試通過原始批次ID查找: {original_lot_id}")
+                        component = db_manager.get_component(original_lot_id, station, component_id)
+                        if component:
+                            logger.info(f"✅ 通過原始批次ID找到組件: {component_id}")
+                        else:
+                            logger.warning(f"❌ 通過原始批次ID也找不到組件: {component_id}")
+                    else:
+                        logger.warning(f"❌ 無法獲取批次信息: {lot_id}")
+                        return False, f"找不到組件: {component_id}"
+                except Exception as e:
+                    logger.error(f"💥 嘗試原始批次ID查找時發生錯誤: {e}")
+                    return False, f"找不到組件: {component_id}"
+            
             if not component:
                 return False, f"找不到組件: {component_id}"
             
             # 獲取批次信息以取得原始批次ID
             lot_obj = db_manager.get_lot(lot_id)
             if not lot_obj:
-                return False, f"找不到批次: {lot_id}"
+                # 如果當前批次ID找不到，嘗試原始批次ID
+                if 'original_lot_id' in locals():
+                    lot_obj = db_manager.get_lot(original_lot_id)
+                    if not lot_obj:
+                        return False, f"找不到批次: {lot_id} 或 {original_lot_id}"
+                else:
+                    return False, f"找不到批次: {lot_id}"
             
             original_lot_id = lot_obj.original_lot_id
             
@@ -1535,7 +2005,7 @@ class DataProcessor:
                                 setattr(component, attr_name, str(target_map))
                     
                     elif file_type == 'org':
-                        # Org資料夾移動
+                        # Org資料夾移動 - 使用智能路徑檢查
                         source_org = Path(config.get_path(
                             "database.structure.org",
                             product=source_product,
@@ -1551,15 +2021,57 @@ class DataProcessor:
                             component=component_id
                         ))
                         
-                        if source_org.exists():
-                            ensure_directory(target_org.parent)
-                            shutil.move(str(source_org), str(target_org))
-                            moved_files.append(f"Org: {source_org} -> {target_org}")
+                        # 檢查基礎路徑
+                        base_org_path = Path(config.get_path(
+                            "database.structure.org",
+                            product=source_product,
+                            lot=original_lot_id,
+                            station=station,
+                            component=component_id
+                        ))
+                        
+                        # 使用智能路徑檢查
+                        path_stage = self._check_path_development_stage(base_org_path, source_org)
+                        
+                        # 🔍 詳細記錄智能路徑檢查結果
+                        logger.info(f"組件 {component_id} 的 ORG 路徑檢查結果: {path_stage}")
+                        logger.info(f"  基礎路徑: {base_org_path}")
+                        logger.info(f"  源路徑: {source_org}")
+                        logger.info(f"  目標路徑: {target_org}")
+                        
+                        if path_stage == "complete":
+                            # 路徑完整，執行移動
+                            logger.info(f"組件 {component_id} 的 ORG 路徑完整，開始移動...")
+                            try:
+                                ensure_directory(target_org.parent)
+                                shutil.move(str(source_org), str(target_org))
+                                moved_files.append(f"Org: {source_org} -> {target_org}")
+                                logger.info(f"✅ 組件 {component_id} 的 ORG 移動成功")
+                            except Exception as e:
+                                error_msg = f"ORG移動失敗: {str(e)}"
+                                failed_files.append(error_msg)
+                                logger.error(f"❌ 組件 {component_id} 的 {error_msg}")
+                        elif path_stage == "partial":
+                            # 路徑部分存在，添加到路徑監控
+                            logger.info(f"🔄 組件 {component_id} 的 ORG 路徑部分存在，添加到路徑監控")
+                            self._monitor_path_completion(component_id, lot_id, station, source_product, 
+                                                       target_product, file_types)
+                            failed_files.append(f"ORG路徑部分存在，已添加到路徑監控: {source_org}")
+                        elif path_stage == "base":
+                            # 基礎路徑存在，添加到路徑監控
+                            logger.info(f"🔄 組件 {component_id} 的 ORG 基礎路徑存在，添加到路徑監控")
+                            self._monitor_path_completion(component_id, lot_id, station, source_product, 
+                                                       target_product, file_types)
+                            failed_files.append(f"ORG基礎路徑存在，已添加到路徑監控: {source_org}")
                         else:
-                            failed_files.append(f"Org資料夾不存在: {source_org}")
+                            # 路徑不存在，添加到重試隊列
+                            logger.info(f"⏰ 組件 {component_id} 的 ORG 路徑不存在，添加到重試隊列")
+                            self._add_to_retry_queue(component_id, lot_id, station, source_product, 
+                                                   target_product, file_types, f"ORG路徑不存在: {source_org}")
+                            failed_files.append(f"ORG路徑不存在，已添加到重試隊列: {source_org}")
                     
                     elif file_type == 'roi':
-                        # ROI資料夾移動
+                        # ROI資料夾移動 - 使用智能路徑檢查
                         source_roi = Path(config.get_path(
                             "database.structure.roi",
                             product=source_product,
@@ -1575,12 +2087,54 @@ class DataProcessor:
                             component=component_id
                         ))
                         
-                        if source_roi.exists():
-                            ensure_directory(target_roi.parent)
-                            shutil.move(str(source_roi), str(target_roi))
-                            moved_files.append(f"ROI: {source_roi} -> {target_roi}")
+                        # 檢查基礎路徑
+                        base_roi_path = Path(config.get_path(
+                            "database.structure.roi",
+                            product=source_product,
+                            lot=original_lot_id,
+                            station=station,
+                            component=component_id
+                        ))
+                        
+                        # 使用智能路徑檢查
+                        path_stage = self._check_path_development_stage(base_roi_path, source_roi)
+                        
+                        # 🔍 詳細記錄智能路徑檢查結果
+                        logger.info(f"組件 {component_id} 的 ROI 路徑檢查結果: {path_stage}")
+                        logger.info(f"  基礎路徑: {base_roi_path}")
+                        logger.info(f"  源路徑: {source_roi}")
+                        logger.info(f"  目標路徑: {target_roi}")
+                        
+                        if path_stage == "complete":
+                            # 路徑完整，執行移動
+                            logger.info(f"組件 {component_id} 的 ROI 路徑完整，開始移動...")
+                            try:
+                                ensure_directory(target_roi.parent)
+                                shutil.move(str(source_roi), str(target_roi))
+                                moved_files.append(f"ROI: {source_roi} -> {target_roi}")
+                                logger.info(f"✅ 組件 {component_id} 的 ROI 移動成功")
+                            except Exception as e:
+                                error_msg = f"ROI移動失敗: {str(e)}"
+                                failed_files.append(error_msg)
+                                logger.error(f"❌ 組件 {component_id} 的 {error_msg}")
+                        elif path_stage == "partial":
+                            # 路徑部分存在，添加到路徑監控
+                            logger.info(f"🔄 組件 {component_id} 的 ROI 路徑部分存在，添加到路徑監控")
+                            self._monitor_path_completion(component_id, lot_id, station, source_product, 
+                                                       target_product, file_types)
+                            failed_files.append(f"ROI路徑部分存在，已添加到路徑監控: {source_roi}")
+                        elif path_stage == "base":
+                            # 基礎路徑存在，添加到路徑監控
+                            logger.info(f"🔄 組件 {component_id} 的 ROI 基礎路徑存在，添加到路徑監控")
+                            self._monitor_path_completion(component_id, lot_id, station, source_product, 
+                                                       target_product, file_types)
+                            failed_files.append(f"ROI基礎路徑存在，已添加到路徑監控: {source_roi}")
                         else:
-                            failed_files.append(f"ROI資料夾不存在: {source_roi}")
+                            # 路徑不存在，添加到重試隊列
+                            logger.info(f"⏰ 組件 {component_id} 的 ROI 路徑不存在，添加到重試隊列")
+                            self._add_to_retry_queue(component_id, lot_id, station, source_product, 
+                                                   target_product, file_types, f"ROI路徑不存在: {source_roi}")
+                            failed_files.append(f"ROI路徑不存在，已添加到重試隊列: {source_roi}")
                             
                 except Exception as e:
                     failed_files.append(f"{file_type}移動失敗: {str(e)}")
@@ -1630,6 +2184,7 @@ class DataProcessor:
             from concurrent.futures import ThreadPoolExecutor, as_completed
             from ..controllers.online_monitor import online_manager
             import time
+            import threading
             
             total_components = len(components_data)
             success_count = 0
@@ -1651,6 +2206,7 @@ class DataProcessor:
             def move_single_component(component_data, index):
                 """移動單個組件的檔案"""
                 component_id, lot_id, station, source_product = component_data
+                thread_id = threading.current_thread().ident
                 
                 try:
                     # 為每個組件創建單獨的日誌
@@ -1662,7 +2218,20 @@ class DataProcessor:
                     )
                     component_log.start_processing(f"移動檔案 ({index+1}/{total_components})")
                     
+                    # 🔍 詳細路徑調試：在移動前檢查實際文件結構
+                    if hasattr(self, '_debug_component_files'):
+                        logger.info(f"[線程{thread_id}] 🔍 延遲移動前檢查 - 組件 {component_id} ({index+1}/{total_components})")
+                        self._debug_component_files(
+                            component_id=component_id,
+                            lot_id=lot_id,
+                            station=station,
+                            source_product=source_product,
+                            target_product=target_product,
+                            file_types=file_types
+                        )
+                    
                     # 調用單個檔案移動功能
+                    logger.info(f"[線程{thread_id}] 🚀 開始移動組件 {component_id}...")
                     success, message = self.move_files(
                         component_id=component_id,
                         lot_id=lot_id,
@@ -1673,17 +2242,19 @@ class DataProcessor:
                     )
                     
                     if success:
+                        logger.info(f"[線程{thread_id}] ✅ 組件 {component_id} 移動成功: {message}")
                         component_log.complete(f"移動成功: {message}")
                         online_manager.log_updated.emit(component_log)  # 觸發組件日誌更新
                         return True, f"{component_id}: {message}"
                     else:
+                        logger.warning(f"[線程{thread_id}] ❌ 組件 {component_id} 移動失敗: {message}")
                         component_log.fail(f"移動失敗: {message}")
                         online_manager.log_updated.emit(component_log)  # 觸發組件日誌更新
                         return False, f"{component_id}: {message}"
                         
                 except Exception as e:
                     error_msg = f"{component_id}: 處理失敗 - {str(e)}"
-                    logger.error(f"移動組件 {component_id} 時發生錯誤: {e}")
+                    logger.error(f"[線程{thread_id}] 💥 移動組件 {component_id} 時發生錯誤: {e}")
                     
                     # 更新組件日誌
                     if 'component_log' in locals():
@@ -1723,7 +2294,13 @@ class DataProcessor:
                         progress_msg = f"處理進度: {processed_count}/{total_components} (成功: {success_count}, 失敗: {fail_count})"
                         batch_log.update_status("processing", progress_msg)
                         online_manager.log_updated.emit(batch_log)  # 手動觸發更新信號
-                        logger.info(f"批量移動進度: {progress_msg}")
+                        logger.info(f"📊 批量移動進度: {progress_msg}")
+                        
+                        # 記錄詳細的成功/失敗信息
+                        if success:
+                            logger.info(f"✅ 組件 {component_id} 處理完成: {message}")
+                        else:
+                            logger.warning(f"❌ 組件 {component_id} 處理失敗: {message}")
                         
                     except Exception as e:
                         fail_count += 1
@@ -1735,6 +2312,7 @@ class DataProcessor:
                         progress_msg = f"處理進度: {processed_count}/{total_components} (成功: {success_count}, 失敗: {fail_count})"
                         batch_log.update_status("processing", progress_msg)
                         online_manager.log_updated.emit(batch_log)  # 手動觸發更新信號
+                        logger.warning(f"💥 組件 {component_id} 執行異常: {str(e)}")
             
             # 構建結果訊息
             result_parts = []
@@ -1824,23 +2402,16 @@ class DataProcessor:
                 
                 # 添加到延遲移動隊列（如果啟用）
                 if config.get("auto_move.delayed.enabled", False):
-                    # 嘗試從主視窗獲取延遲移動管理器
-                    try:
-                        from PySide6.QtWidgets import QApplication
-                        app = QApplication.instance()
-                        if app:
-                            main_window = app.activeWindow()
-                            if hasattr(main_window, 'delayed_move_manager'):
-                                main_window.delayed_move_manager.add_to_delayed_queue(
-                                    component_id, component.lot_id, station, 
-                                    source_product, target_product
-                                )
-                            else:
-                                logger.warning("主視窗中沒有延遲移動管理器")
-                        else:
-                            logger.warning("無法獲取應用程式實例")
-                    except Exception as e:
-                        logger.error(f"添加到延遲移動隊列時發生錯誤: {e}")
+                    # 使用全局延遲移動管理器
+                    delayed_manager = get_global_delayed_move_manager()
+                    if delayed_manager:
+                        delayed_manager.add_to_delayed_queue(
+                            component_id, component.lot_id, station, 
+                            source_product, target_product
+                        )
+                        logger.info(f"已添加到延遲移動隊列: {component_id}")
+                    else:
+                        logger.warning("全局延遲移動管理器未初始化")
             else:
                 logger.error(f"自動移動即時檔案失敗: {message}")
                 
@@ -1877,3 +2448,16 @@ class DataProcessor:
 
 # 創建全局數據處理器實例
 data_processor = DataProcessor() 
+
+# 全局延遲移動管理器實例管理
+_global_delayed_move_manager = None
+
+def get_global_delayed_move_manager() -> Optional['DelayedMoveManager']:
+    """獲取全局延遲移動管理器實例"""
+    return _global_delayed_move_manager
+
+def set_global_delayed_move_manager(manager: 'DelayedMoveManager'):
+    """設置全局延遲移動管理器實例"""
+    global _global_delayed_move_manager
+    _global_delayed_move_manager = manager
+    logger.info("全局延遲移動管理器實例已設置")
