@@ -1,6 +1,6 @@
 {
     "database": {
-        "base_path": "E:/Database-PC",
+        "base_path": "D:/Database-PC",
         "structure": {
             "csv_root": "{base_path}/{product}/csv",
             "csv": "{base_path}/{product}/csv/{lot}/{station}",
@@ -15,7 +15,8 @@
         "rescan_interval": 60,
         "enable_debug_logs": true,
         "enable_detailed_path_debug": true,
-        "path_debug_output": "terminal"
+        "path_debug_output": "terminal",
+        "enable_detailed_roi_check": false
     },
     "processing": {
         "station_order": [
@@ -192,12 +193,12 @@
             "description": "存儲監控掃描頻率設定"
         },
         "local_storage": {
-            "path": "E:/Database-PC",
+            "path": "D:/Database-PC",
             "warning_threshold_percent": 37,
             "critical_threshold_percent": 50
         },
         "archive_storage": {
-            "path": "D:/Database-PC",
+            "path": "E:/Database-PC",
             "structure": "{product}/org/{lot}/{station}/{component}"
         },
         "file_formats": {

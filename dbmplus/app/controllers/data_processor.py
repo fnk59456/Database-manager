@@ -611,34 +611,69 @@ class DataProcessor:
                 target_path = target_paths.get(file_type)
                 
                 if source_path and Path(source_path).exists():
-                    try:
-                        # 使用 os.listdir 進行快速檢查
-                        files = os.listdir(source_path)
-                        file_count = len(files)
+                    # 🚀 性能優化：ROI文件數量過多時跳過詳細檢查
+                    if file_type == 'roi':
+                        # 檢查是否啟用ROI詳細檢查
+                        enable_roi_detailed_check = config.get("monitoring.enable_detailed_roi_check", False)
                         
-                        if enable_detailed_debug:
-                            print(f"   ✅ {file_type.upper()} 源路徑存在:")
-                            print(f"      源路徑: {source_path}")
-                            print(f"      文件數量: {file_count}")
+                        if enable_roi_detailed_check:
+                            # 用戶選擇啟用ROI詳細檢查（可能較慢）
+                            try:
+                                files = os.listdir(source_path)
+                                file_count = len(files)
+                                
+                                if enable_detailed_debug:
+                                    print(f"   ✅ {file_type.upper()} 源路徑存在:")
+                                    print(f"      源路徑: {source_path}")
+                                    print(f"      📊 文件數量: {file_count} (已啟用詳細檢查)")
+                                    print(f"      ⚠️  警告: ROI目錄包含大量文件，詳細檢查可能較慢")
+                                
+                                # 記錄到日誌
+                                if file_count == 0:
+                                    logger.warning(f"組件 {component_id} 的 {file_type} 資料夾為空: {source_path}")
+                                    
+                            except OSError as e:
+                                error_msg = f"無法讀取 {file_type} 資料夾 {source_path}: {e}"
+                                if enable_detailed_debug:
+                                    print(f"   ❌ {file_type.upper()} 讀取錯誤: {error_msg}")
+                                logger.error(error_msg)
+                        else:
+                            # 默認跳過ROI詳細檢查以提升性能
+                            if enable_detailed_debug:
+                                print(f"   ✅ {file_type.upper()} 源路徑存在:")
+                                print(f"      源路徑: {source_path}")
+                                print(f"      📊 文件數量: 大量文件（已跳過詳細檢查以提升性能）")
+                                print(f"      💡 提示: ROI目錄包含大量文件，為避免性能問題已跳過遍歷")
+                                print(f"      🔧 如需詳細檢查，請在配置中設置 monitoring.enable_detailed_roi_check: true")
+                    else:
+                        try:
+                            # 使用 os.listdir 進行快速檢查（僅對非ROI文件類型）
+                            files = os.listdir(source_path)
+                            file_count = len(files)
                             
-                            # 顯示樣本文件（最多5個）
-                            if file_count > 0:
-                                sample_files = files[:5]
-                                print(f"      樣本文件: {sample_files}")
-                                if file_count > 5:
-                                    print(f"      ... 還有 {file_count - 5} 個文件")
-                            else:
-                                print(f"      ⚠️  目錄為空")
-                        
-                        # 記錄到日誌
-                        if file_count == 0:
-                            logger.warning(f"組件 {component_id} 的 {file_type} 資料夾為空: {source_path}")
-                        
-                    except OSError as e:
-                        error_msg = f"無法讀取 {file_type} 資料夾 {source_path}: {e}"
-                        if enable_detailed_debug:
-                            print(f"   ❌ {file_type.upper()} 讀取錯誤: {error_msg}")
-                        logger.error(error_msg)
+                            if enable_detailed_debug:
+                                print(f"   ✅ {file_type.upper()} 源路徑存在:")
+                                print(f"      源路徑: {source_path}")
+                                print(f"      文件數量: {file_count}")
+                                
+                                # 顯示樣本文件（最多5個）
+                                if file_count > 0:
+                                    sample_files = files[:5]
+                                    print(f"      樣本文件: {sample_files}")
+                                    if file_count > 5:
+                                        print(f"      ... 還有 {file_count - 5} 個文件")
+                                else:
+                                    print(f"      ⚠️  目錄為空")
+                            
+                            # 記錄到日誌
+                            if file_count == 0:
+                                logger.warning(f"組件 {component_id} 的 {file_type} 資料夾為空: {source_path}")
+                            
+                        except OSError as e:
+                            error_msg = f"無法讀取 {file_type} 資料夾 {source_path}: {e}"
+                            if enable_detailed_debug:
+                                print(f"   ❌ {file_type.upper()} 讀取錯誤: {error_msg}")
+                            logger.error(error_msg)
                 else:
                     error_msg = f"組件 {component_id} 的 {file_type} 源路徑不存在: {source_path}"
                     if enable_detailed_debug:
